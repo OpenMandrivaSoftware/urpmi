@@ -146,7 +146,7 @@ sub toMb {
     int $nb + 0.5;
 }
 
-my @format_line_field_sizes = (30, 12, 13, 7, 0);
+my @format_line_field_sizes = (30, 12, 7, 7, 9, 0);
 my $format_line_format = '  ' . join(' ', map { '%-' . $_ . 's' } @format_line_field_sizes);
 
 sub format_line_selected_packages {
@@ -167,7 +167,7 @@ sub format_line_selected_packages {
     }
     $flush->();
 
-    (sprintf($format_line_format, map { " $_" } N("Package"), N("Version"), N("Release"), N("Arch")),
+    (sprintf($format_line_format, map { "$_" } N("Package"), N("Version"), N("Release"), N("Disttag"), N("Distepoch"), N("Arch")),
      @lines);
 }
 sub _format_line_selected_packages {
