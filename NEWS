@@ -1,3 +1,7 @@
+Version 6.40 -  9 Januar 2011
+
+- add disttag & distepoch to output printed together with version, release etc.
+
 Version 6.39 - 21 November 2010
 
 - install zeroconf documentation and example files.
