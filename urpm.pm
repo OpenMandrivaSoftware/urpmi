@@ -291,9 +291,8 @@ sub db_open_or_die_ {
     my ($urpm, $b_write_perm) = @_;
     my $db;
 
-    my @migrate_rpmdb_db_version = 
-      urpm::select::should_we_migrate_rpmdb_db_version($urpm);
-      urpm::sys::migrate_rpmdb_db_version($urpm, $urpm->{root}, @migrate_rpmdb_db_version, 1);
+    my @migrate_rpmdb_db_version = urpm::select::should_we_migrate_rpmdb_db_version($urpm);
+    urpm::sys::migrate_rpmdb_db_version($urpm, $urpm->{root}, @migrate_rpmdb_db_version, 1);
 
     if ($urpm->{env_rpmdb}) {
 	#- URPM has same methods as URPM::DB and empty URPM will be seen as empty URPM::DB.

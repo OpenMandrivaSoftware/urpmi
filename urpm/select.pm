@@ -688,7 +688,7 @@ sub should_we_migrate_rpmdb_db_version {
     }
     my ($urpmi_librpm_version, $urpmi_bdb_version) = _librpm_bdb_version_ldd(scalar `ldd /bin/rpm`);
 
-    if ($rooted_bdb_version lt 4.6 or ($urpmi_librpm_version eq 5.3 and $rooted_librpm_version le 5.3)) {
+    if (!$urpm->{root} && $rooted_bdb_version lt 4.6 or ($urpmi_librpm_version eq 5.3 and $rooted_librpm_version le 5.3)) {
 	    return ($rooted_librpm_version, $rooted_bdb_version, $urpmi_librpm_version, $urpmi_bdb_version);
     }
     0;
