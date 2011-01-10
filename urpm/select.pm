@@ -661,38 +661,35 @@ sub _libdb_version { $_[0] =~ /libdb-(\S+)\.so/ ? $1 : () }
 sub _librpm_bdb_version_pkg {
     my ($urpm, $state, @name) = @_;
     my ($librpm, $librpm_version) = $name[0] =~ /(librpm-(\S+)\.so.*)/ ? ("$1", "$2") : return;
-    my ($pkg) = urpm::select::selected_packages_providing($urpm, $state, $librpm) or return;
+    my ($pkg) = $urpm->packages_providing($librpm);
     my ($bdb_version) = map { _libdb_version($_) } $pkg->requires or return;
 
-    return ("v$librpm_version", "v$bdb_version");
+    return ($librpm_version, $bdb_version);
 }
 sub _librpm_bdb_version_ldd {
     my (@name) = @_;
     my ($librpm_version) = $name[0] =~ /librpm-(\S+)\.so/ ? $1 : return;
     my ($bdb_version) = $name[0] =~ /libdb-(\S+)\.so/ ? $1 : return;
 
-    return ("v$librpm_version", "v$bdb_version");
+    return ($librpm_version, $bdb_version);
 }
 
-sub should_we_migrate_back_rpmdb_db_version {
+sub should_we_migrate_rpmdb_db_version {
     my ($urpm, $state) = @_;
 
-    my ($pkg) = urpm::select::selected_packages_providing($urpm, $state, 'rpm') or return;
-    urpm::select::was_pkg_name_installed($state->{rejected}, 'rpm') and return;
-    my ($rooted_librpm_version, $rooted_bdb_version) = map { _librpm_bdb_version_pkg($urpm, $state, $_) } $pkg->requires;
+    my ($rooted_librpm_version, $rooted_bdb_version);
+    if(!defined($state)) {
+	my $root = $urpm->{root};
+	($rooted_librpm_version, $rooted_bdb_version) = _librpm_bdb_version_ldd(scalar `LD_LIBRARY_PATH=$root/usr/lib:$root/usr/lib64 ldd $root/bin/rpm`);
+    } else {
+	my ($pkg) = urpm::select::selected_packages_providing($urpm, $state, 'rpm') or return;
+	urpm::select::was_pkg_name_installed($state->{rejected}, 'rpm') and return;
+	($rooted_librpm_version, $rooted_bdb_version) = map { _librpm_bdb_version_pkg($urpm, $state, $_) } $pkg->requires;
+    }
     my ($urpmi_librpm_version, $urpmi_bdb_version) = _librpm_bdb_version_ldd(scalar `ldd /bin/rpm`);
 
-    if ($urpmi_bdb_version ge v4.6) {
-	if ($rooted_bdb_version && $rooted_bdb_version ge v4.6) {
-	    $urpm->{debug} and $urpm->{debug}("chrooted db version used by librpm is at least as good as non-rooted one");
-	} else {
-	    foreach my $bin ('db_dump', 'db42_load') {
-		urpm::sys::whereis_binary($bin) 
-		  or $urpm->{error}("can not migrate rpm db from Hash version 9 to Hash version 8 without $bin"), 
-		    return;
-	    }
-	    return 1;
-	}
+    if ($rooted_bdb_version lt 4.6 or ($urpmi_librpm_version eq 5.3 and $rooted_librpm_version le 5.3)) {
+	    return ($rooted_librpm_version, $rooted_bdb_version, $urpmi_librpm_version, $urpmi_bdb_version);
     }
     0;
 }

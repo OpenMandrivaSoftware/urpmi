@@ -236,20 +236,127 @@ sub print_need_restart() {
     print "$_\n" foreach values %$h;
 }
 
-sub migrate_back_rpmdb_db_version {
-    my ($urpm, $root) = @_;
+sub migrate_rpmdb {
+    my ($db, $dbnew, $btree, $byte_order, $bdb_version_from, $bdb_version_to) = @_;
 
-    $urpm->{info}("migrating back the created rpm db from Hash version 9 to Hash version 8");
+    my ($db_stat, $db_dump, $db_load);
+    for("db_stat", "db_dump", "db_load") {
+	my $version = ($_ ne "db_load") ? $bdb_version_from : $bdb_version_to;
+	my $shortver = $version;
+	$shortver =~ s/\.//;
+	my $verbin = $_;
+	$verbin	=~ s/db_/db$shortver\_/;
+	my $bin = `which $verbin 2>/dev/null || which $_ 2>/dev/null`;
+	chomp($bin);
+	`$bin -V 2>/dev/null` =~ /$version\.\d+/ ? eval("\$$_ = \$bin;") : next;
+    }
 
-    foreach my $db_file (glob("$root/var/lib/rpm/[A-Z]*")) {
-	rename $db_file, "$db_file.";
-	system("db_dump $db_file. | db42_load $db_file");
-	if (-e $db_file) {
-	    unlink "$db_file.";
+    my $stat = scalar `$db_stat -f -d $db`;
+    my $keys = 0;
+    if($stat =~ /\d+\WBtree magic number/) {
+	if ($btree == 1) {
+	    $btree = -1;
 	} else {
-	    rename "$db_file.", $db_file;
-	    $urpm->{error}("rpm db migration failed on $db_file. You will not be able to run rpm chrooted");
-	    return;
+	    ($keys) = scalar(`$db_stat -d $db`) =~ /\d+\WNumber of unique keys/;
+	}
+    } elsif($stat =~ /\d+\WHash magic number/) {
+	if ($btree == 0) {
+	    $btree = -1;
+	}
+    }
+
+    open(my $dump, "$db_dump $db|");
+    open(my $out, "|$db_load -c db_lorder=$byte_order $dbnew");
+
+    my $header = 0;
+    my $lorder = 0;
+    while( readline *$dump ) {
+	if ($header) {
+	    my ($line) = $_ =~ /\W(\S+)/;
+	    if(not $lorder) {
+		if(hex($line) > 0) {
+		    $lorder = (hex($line) > 10000000) ? 1234 : 4321;
+		}
+	    }
+	    if($lorder and $byte_order and $lorder != $byte_order) {
+		$_ =~ s/^ (..)(..)(..)(..)$/ $4$3$2$1/;
+	    }
+	} else {
+	    if($btree == 1) {
+		$_ =~ s/^type=hash$/type=btree/;
+		if($_ =~ /^h_nelem=\d+/) {
+		    next;
+		}
+	    } elsif($btree == 0) {
+		$_ =~s/^type=btree/type=hash\nh_nelem=$keys/;
+	    }
+	    if ($_ =~ /^HEADER=END$/) {
+		$header = 1;
+	    }
+	}
+	print $out $_;
+    }
+
+    close($dump);
+    close($out);
+}
+
+sub migrate_rpmdb_db_version {
+    my ($urpm, $root, ($rooted_librpm_version, $rooted_bdb_version, $urpmi_librpm_version, $urpmi_bdb_version), $init) = @_;
+
+    if($init and !($urpmi_librpm_version ge 5.3 and $rooted_librpm_version ge 5.3)) {
+	return;
+    }
+
+    my $dbpath = "$root/var/lib/rpm";
+    my $__dbi_txn = `rpm --eval %{__dbi_txn}`;
+    chomp($__dbi_txn);
+    if($urpmi_librpm_version ge 5.3) {
+	$__dbi_txn .= " nofsync";
+    }
+    if($urpmi_librpm_version ge 5.3 and $rooted_librpm_version ge 5.3) {
+	if(system("rpm --define \"__dbi_txn $__dbi_txn\" --dbpath=$dbpath -q glibc &> /dev/null")) {
+	    $urpm->{info}("migrating rpm db...");
+	    rename "$dbpath/Packages", "$dbpath/Packages.orig";
+	    migrate_rpmdb("$dbpath/Packages.orig", "$dbpath/Packages", 1, 4321, $urpmi_bdb_version, $urpmi_bdb_version);
+	    if(system("rpm --dbpath=$dbpath --define \"__dbi_txn $__dbi_txn\" --rebuilddb -vv && rpm --dbpath=$dbpath -qa > /dev/null && rpm --dbpath=$dbpath -q rpm > /dev/null")) {
+		$urpm->{fatal}("rpm db restoration failed, no currently working rpmdb seems to exist, d'oh! :(");		
+
+	    } else {
+		unlink "$dbpath/Packages.orig";
+	    }
+	}
+    } elsif($urpmi_librpm_version ge 5.3 and $rooted_librpm_version le 5.3) {
+	rename "$dbpath/Packages", "$dbpath/Packages.orig";
+	migrate_rpmdb("$dbpath/Packages.orig", "$dbpath/Packages", 0, 1234, $urpmi_bdb_version, $rooted_bdb_version);
+	if(system("chroot $root sh -c 'rpm --rebuilddb -vv && rpm -qa > /dev/null && rpm -q rpm > /dev/null'")) {
+	    $urpm->{error}("rpm db migration failed on $dbpath/Packages. You will not be able to run rpm chrooted");
+	    $urpm->{info}("restoring rpmdb...");
+
+	    if (-e "$dbpath/Packages") {
+		unlink "$dbpath/Packages";
+	    }
+	    rename "$dbpath/Packages.orig", "$dbpath/Packages";
+	    if(system("rpm --dbpath=$dbpath --define \"__dbi_txn $__dbi_txn\" --rebuilddb -vv && rpm --dbpath=$dbpath -qa > /dev/null && rpm --dbpath=$dbpath -q rpm > /dev/null")) {
+		$urpm->{error}("rpm db restoration failed, no currently working rpmdb in chroot exists, d'oh! :(");
+	    }
+	} else {
+	    unlink "$dbpath/Packages.orig";
+	}
+    }
+    elsif($urpmi_librpm_version lt 5.3 and $rooted_bdb_version lt 4.6) {
+	$urpm->{info}("migrating back the created rpm db from Hash version 9 to Hash version 8");
+
+	foreach my $db_file (glob("$dbpath/[A-Z]*")) {
+	    rename $db_file, "$db_file.";
+	    system("db_dump $db_file. | db42_load $db_file");
+	    if (-e $db_file) {
+		unlink "$db_file.";
+	    } else {
+		rename "$db_file.", $db_file;
+		$urpm->{error}("rpm db migration failed on $db_file. You will not be able to run rpm chrooted");
+		return;
+	    }
 	}
     }
     clean_rpmdb_shared_regions($root);

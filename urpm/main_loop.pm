@@ -149,9 +149,9 @@ sub run {
     my (@errors, @formatted_errors);
     my $exit_code = 0;
 
-    my $migrate_back_rpmdb_db_version = 
-      $urpm->{root} && urpm::select::should_we_migrate_back_rpmdb_db_version($urpm, $state);
-
+    my @migrate_rpmdb_db_version = 
+      $urpm->{root} && urpm::select::should_we_migrate_rpmdb_db_version($urpm, $state);
+    
     foreach my $set (@{$state->{transaction} || []}) {
 
         #- put a blank line to separate with previous transaction or user question.
@@ -319,8 +319,8 @@ sub run {
         }
     }
 
-    if ($migrate_back_rpmdb_db_version) {
-        urpm::sys::migrate_back_rpmdb_db_version($urpm, $urpm->{root});
+    if (@migrate_rpmdb_db_version) {
+        urpm::sys::migrate_rpmdb_db_version($urpm, $urpm->{root}, @migrate_rpmdb_db_version, 0);
     }
 
     $callbacks->{completed} and $callbacks->{completed}->();

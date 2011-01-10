@@ -1,3 +1,7 @@
+Version 6.41 -    Januar 2011
+
+- implement support for rpmdb migration to rpm and from 5.3.
+
 Version 6.40 -  9 Januar 2011
 
 - add disttag & distepoch to output printed together with version, release etc.
