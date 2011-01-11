@@ -677,21 +677,26 @@ sub _librpm_bdb_version_ldd {
 sub should_we_migrate_rpmdb_db_version {
     my ($urpm, $state) = @_;
 
+    my $root = $urpm->{root};
+
+    my ($urpmi_librpm_version, $urpmi_bdb_version) = _librpm_bdb_version_ldd(scalar `ldd /bin/rpm`) or return;
     my ($rooted_librpm_version, $rooted_bdb_version);
-    if(!defined($state)) {
-	my $root = $urpm->{root};
-	($rooted_librpm_version, $rooted_bdb_version) = _librpm_bdb_version_ldd(scalar `LD_LIBRARY_PATH=$root/usr/lib:$root/usr/lib64 ldd $root/bin/rpm`);
-    } else {
+    if(!defined($state) and -e "$root/bin/rpm") {
+	if($root) {
+	    ($rooted_librpm_version, $rooted_bdb_version) = _librpm_bdb_version_ldd(scalar `LD_LIBRARY_PATH=$root/usr/lib:$root/usr/lib64 ldd $root/bin/rpm`);
+	} else {
+	    ($rooted_librpm_version, $rooted_bdb_version) = ($urpmi_librpm_version, $urpmi_bdb_version);
+	}
+    } elsif(defined($state)) {
 	my ($pkg) = urpm::select::selected_packages_providing($urpm, $state, 'rpm') or return;
 	urpm::select::was_pkg_name_installed($state->{rejected}, 'rpm') and return;
 	($rooted_librpm_version, $rooted_bdb_version) = map { _librpm_bdb_version_pkg($urpm, $state, $_) } $pkg->requires;
     }
-    my ($urpmi_librpm_version, $urpmi_bdb_version) = _librpm_bdb_version_ldd(scalar `ldd /bin/rpm`);
 
-    if (!$urpm->{root} && $rooted_bdb_version lt 4.6 or ($urpmi_librpm_version eq 5.3 and $rooted_librpm_version le 5.3)) {
-	    return ($rooted_librpm_version, $rooted_bdb_version, $urpmi_librpm_version, $urpmi_bdb_version);
+    if ($rooted_bdb_version and ($rooted_bdb_version lt 4.6 or ($urpmi_librpm_version ge 5.3 and $rooted_librpm_version le 5.3))) {
+	return ($rooted_librpm_version, $rooted_bdb_version, $urpmi_librpm_version, $urpmi_bdb_version);
     }
-    0;
+    return ();
 }
 
 1;
