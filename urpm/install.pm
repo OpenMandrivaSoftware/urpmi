@@ -160,6 +160,41 @@ sub install {
     my ($urpm, $remove, $install, $upgrade, %options) = @_;
     $options{translate_message} = 1;
 
+    my ($update, @errors) = 0;
+    my @produced_deltas;
+
+    my @trans_remove;
+    foreach (@$remove) {
+	push @trans_remove, $_;
+    }
+    my %trans_pkgs = ();
+    foreach my $mode ($install, $upgrade) {
+	foreach (keys %$mode) {
+	    my $pkg = $urpm->{depslist}[$_];
+	    $pkg->update_header($mode->{$_}, keep_all_tags => 1);
+	    if ($pkg->payload_format eq 'drpm') { #- handle deltarpms
+		my $true_rpm = urpm::sys::apply_delta_rpm($mode->{$_}, "$urpm->{cachedir}/rpms", $pkg);
+		if ($true_rpm) {
+		    push @produced_deltas, ($mode->{$_} = $true_rpm); #- fix path
+		} else {
+		    $urpm->{error}(N("unable to extract rpm from delta-rpm package %s", $mode->{$_}));
+		}
+	    }
+	    if(!($options{excludepath} and (excludepath => [ split /,/, $options{excludepath} ]))) {
+		my %pair = (
+		    pkg => $pkg,
+		    path => $mode->{$_},
+		);
+		push(@{$trans_pkgs{$_}}, \%pair);
+	    }
+	}
+    }
+
+    if(!(scalar(values %trans_pkgs) + scalar(values @trans_remove))) {
+	$urpm->{debug} and $urpm->{debug}("no packages to remove/install/upgrade, refusing to create transaction");
+	return;
+    }
+
     my $db = urpm::db_open_or_die_($urpm, !$options{test}); #- open in read/write mode unless testing installation.
 
     my $trans = $db->create_transaction($urpm->{root});
@@ -173,40 +208,26 @@ sub install {
 
     $trans->set_script_fd($options{script_fd}) if $options{script_fd};
 
-    my ($update, @errors) = 0;
-    my @produced_deltas;
-
-    foreach (@$remove) {
+    foreach (@trans_remove) {
 	if ($trans->remove($_)) {
 	    $urpm->{debug} and $urpm->{debug}("trans: scheduling removal of $_");
 	} else {
 	    $urpm->{error}("unable to remove package " . $_);
 	}
     }
-    my @trans_pkgs;
-    foreach my $mode ($install, $upgrade) {
-	foreach (keys %$mode) {
-	    my $pkg = $urpm->{depslist}[$_];
-	    $pkg->update_header($mode->{$_}, keep_all_tags => 1);
-	    if ($pkg->payload_format eq 'drpm') { #- handle deltarpms
-		my $true_rpm = urpm::sys::apply_delta_rpm($mode->{$_}, "$urpm->{cachedir}/rpms", $pkg);
-		if ($true_rpm) {
-		    push @produced_deltas, ($mode->{$_} = $true_rpm); #- fix path
-		} else {
-		    $urpm->{error}(N("unable to extract rpm from delta-rpm package %s", $mode->{$_}));
-		}
-	    }
-	    if ($trans->add($pkg, update => $update,
-		    $options{excludepath} ? (excludepath => [ split /,/, $options{excludepath} ]) : ()
-	    )) {
+
+    foreach my $key (keys %trans_pkgs) {
+	$update = $key eq "install";
+	foreach (@{$trans_pkgs{$key}}) {
+	    my %pair = %$_;
+	    my ($pkg, $path) = ($pair{pkg}, $pair{path});
+	    if ($trans->add($pkg, update => $update, 1)) {
 		$urpm->{debug} and $urpm->{debug}(
 		    sprintf('trans: scheduling %s of %s (id=%d, file=%s)', 
-		      $update ? 'update' : 'install', 
-		      scalar($pkg->fullname), $_, $mode->{$_}));
-		push @trans_pkgs, $pkg;
-
+			$update ? 'update' : 'install', 
+			scalar($pkg->fullname), $key, $path));
 	    } else {
-		$urpm->{error}(N("unable to install package %s", $mode->{$_}));
+		$urpm->{error}(N("unable to install package %s", $path));
 		my $cachefile = "$urpm->{cachedir}/rpms/" . $pkg->filename;
 		if (-e $cachefile) {
 		    $urpm->{error}(N("removing bad rpm (%s) from %s", $pkg->name, "$urpm->{cachedir}/rpms"));
@@ -214,8 +235,10 @@ sub install {
 		}
 	    }
 	}
-	++$update;
     }
+    
+    my ($update, @errors) = 0;
+    my @produced_deltas;
     if (!$options{nodeps} && (@errors = $trans->check(%options))) {
     } elsif (!$options{noorder} && (@errors = $trans->order)) {
     } else {
@@ -261,7 +284,7 @@ sub install {
 		$index++;
 	    }
 	};
-	if ($options{verbose} >= 0 && @trans_pkgs) {
+	if ($options{verbose} >= 0) {
 	    $options{callback_inst}  ||= \&install_logger;
 	    $options{callback_trans} ||= \&install_logger;
 	}
@@ -271,7 +294,10 @@ sub install {
 	if (!@errors && !$options{test} && $options{post_clean_cache}) {
 	    #- examine the local cache to delete packages which were part of this transaction
 	    my $cachedir = "$urpm->{cachedir}/rpms";
-	    my @pkgs = grep { -e "$cachedir/$_" } map { $_->filename } @trans_pkgs;
+	    my @pkgs;
+	    foreach(keys %trans_pkgs) {
+		push @pkgs, grep { -e "$cachedir/$_" } map { $_->filename } $trans_pkgs{$_};
+	    }
 	    $urpm->{log}(N("removing installed rpms (%s) from %s", join(' ', @pkgs), $cachedir)) if @pkgs;
 	    foreach (@pkgs) {
 		unlink "$cachedir/$_" or $urpm->{fatal}(1, N("removing %s failed: %s", $_, $!));

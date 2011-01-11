@@ -1,16 +1,18 @@
-Version 6.41 -    Januar 2011
+Version 6.41 -    Januar 2011, by Per Øyvind Karlsen
 
-- implement support for rpmdb migration to rpm and from 5.3.
+- don't create and try running empty transactions (prevents
+  'Invalid number of transaction elements' error, #61752)
+- implement support for rpmdb migration to rpm and from 5.3
 
-Version 6.40 -  9 Januar 2011
+Version 6.40 -  9 Januar 2011, by Per Øyvind Karlsen
 
 - add disttag & distepoch to output printed together with version, release etc.
 
 Version 6.39 - 21 November 2010
 
-- install zeroconf documentation and example files.
+- install zeroconf documentation and example files
 - resurrect urpmi.recover now that the required functionality has been brought
-  back with rpm5.
+  back with rpm5
 
 Version 6.38 - 18 June 2010
 
