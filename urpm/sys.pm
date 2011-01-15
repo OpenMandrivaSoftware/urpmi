@@ -304,6 +304,7 @@ sub migrate_rpmdb {
 sub migrate_rpmdb_db_version {
     my ($urpm, $root, ($rooted_librpm_version, $rooted_bdb_version, $urpmi_librpm_version, $urpmi_bdb_version), $init) = @_;
 
+    return;
     if($init and !($urpmi_librpm_version ge 5.3 and $rooted_librpm_version ge 5.3)) {
 	return;
     }

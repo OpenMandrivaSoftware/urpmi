@@ -291,9 +291,15 @@ sub db_open_or_die_ {
     my ($urpm, $b_write_perm) = @_;
     my $db;
 
-    my @migrate_rpmdb_db_version = urpm::select::should_we_migrate_rpmdb_db_version($urpm);
-    if(@migrate_rpmdb_db_version) {
-	urpm::sys::migrate_rpmdb_db_version($urpm, $urpm->{root}, @migrate_rpmdb_db_version, 1);
+    my @rpmdb_info = URPM::DB::info($urpm->{root});
+    if(@rpmdb_info && ($rpmdb_info[0] ne "btree" or $rpmdb_info[1] eq "littleendian")) {
+	if(!$urpm->{root} or $urpm->{root} eq "/") {
+	    $urpm->{log} and $urpm->{log}("Converting system rpmdb to new rpmdb version...");
+    	    URPM::db::convert($urpm->{root}, $rpmdb_info[0] ne "btree", $rpmdb_info[1] eq "littleendian" ? -1 : 0);
+	} else {
+	    # todo: automate for known safe conditions
+	    $urpm->{fatal}(1, "rpmdb version in chroot is different from chroot, conversion is needed...");
+	}
     }
 
     if ($urpm->{env_rpmdb}) {
