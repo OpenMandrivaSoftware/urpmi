@@ -1,8 +1,9 @@
 Version 6.41 -    Januar 2011, by Per Øyvind Karlsen
 
+- drop support for rpmdb migration on ancient releases
 - don't create and try running empty transactions (prevents
   'Invalid number of transaction elements' error, #61752)
-- implement support for rpmdb migration to rpm and from 5.3
+- implement support for rpmdb migration both to and from rpm 5.3
 
 Version 6.40 -  9 Januar 2011, by Per Øyvind Karlsen
 
