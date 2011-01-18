@@ -378,6 +378,11 @@ urpm::media::configure($urpm,
     download_callback => \&urpm::download::sync_logger,
 );
 
+my ($urpm_mandriva_release) = $urpm->packages_providing("mandriva-release");
+if ($urpm_mandriva_release && URPM::rpmvercmp($urpm_mandriva_release->version, "2011.0") < 0) {
+    URPM::expand("%_legacy_compat_all");
+}
+
 if ($bug) {
     require urpm::bug_report;
     urpm::bug_report::rpmdb_to_synthesis($urpm, "$bug/rpmdb.cz");
