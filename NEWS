@@ -1,5 +1,7 @@
 Version 6.41 -    Januar 2011, by Per Øyvind Karlsen
 
+- enable legacy compatibility mode for older releases (< 2011.0) with
+  %_legacy_compat_all
 - drop support for rpmdb migration on ancient releases
 - don't create and try running empty transactions (prevents
   'Invalid number of transaction elements' error, #61752)
