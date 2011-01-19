@@ -304,10 +304,9 @@ sub migrate_rpmdb {
 sub migrate_rpmdb_db_version {
     my ($urpm, $root, ($dbtype, $endianness, $rebuild)) = @_;
 
-
+    $urpm->{info}("migrating rpm db...");
     my $convert = URPM::DB::convert($root, $dbtype, $endianness, $rebuild);
     if(!$convert) {
-	$urpm->{info}("migrating rpm db...");
 	if(system("chroot $root sh -c 'rpm --rebuilddb -vv && rpm -qa > /dev/null && rpm -q rpm > /dev/null'")) {
 	    $urpm->{error}("rpm db migration failed in $root. You will not be able to run rpm chrooted");
 	}

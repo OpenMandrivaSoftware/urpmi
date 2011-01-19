@@ -295,8 +295,15 @@ sub install {
 	    #- examine the local cache to delete packages which were part of this transaction
 	    my $cachedir = "$urpm->{cachedir}/rpms";
 	    my @pkgs;
-	    foreach(keys %trans_pkgs) {
-		push @pkgs, grep { -e "$cachedir/$_" } map { $_->filename } $trans_pkgs{$_};
+
+	    foreach my $key (keys %trans_pkgs) {
+		foreach (@{$trans_pkgs{$key}}) {
+		    my %pair = %$_;
+		    my ($pkg, $path) = ($pair{pkg}, $pair{path});
+		    if ( -e "$cachedir/$pkg" ) {
+		    push @pkgs, "$pkg->filename"; # } @{$trans_pkgs{$key}};
+		}
+		}
 	    }
 	    $urpm->{log}(N("removing installed rpms (%s) from %s", join(' ', @pkgs), $cachedir)) if @pkgs;
 	    foreach (@pkgs) {

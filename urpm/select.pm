@@ -659,14 +659,15 @@ sub translate_why_removed_one {
 sub should_we_migrate_rpmdb_db_version {
     my ($urpm, $state) = @_;
 
+    if ($urpm->{root}) {
+	my ($pkg) = urpm::select::selected_packages_providing($urpm, $state, 'rpm') or return;
+	urpm::select::was_pkg_name_installed($state->{rejected}, 'rpm') and return;
 
-    my ($pkg) = urpm::select::selected_packages_providing($urpm, $state, 'rpm') or return;
-    urpm::select::was_pkg_name_installed($state->{rejected}, 'rpm') and return;
+	my $evrcmp = URPM::rpmvercmp($pkg->version, "5.3");
 
-    my $evrcmp = URPM::rpmvercmp($pkg->version, "5.3");
-
-    if($evrcmp < 0) {
-	return ("hash", -1, 0);
+	if($evrcmp < 0) {
+	    return ("hash", -1, 0);
+	}
     }
     return ();
 }
