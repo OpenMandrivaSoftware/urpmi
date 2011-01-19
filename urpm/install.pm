@@ -296,13 +296,14 @@ sub install {
 	    my $cachedir = "$urpm->{cachedir}/rpms";
 	    my @pkgs;
 
+	    #- fugly, jeje.. :p
 	    foreach my $key (keys %trans_pkgs) {
 		foreach (@{$trans_pkgs{$key}}) {
 		    my %pair = %$_;
 		    my ($pkg, $path) = ($pair{pkg}, $pair{path});
-		    if ( -e "$cachedir/$pkg" ) {
-		    push @pkgs, "$pkg->filename"; # } @{$trans_pkgs{$key}};
-		}
+		    if ( -e "$cachedir/" . $pkg->filename ) {
+			push @pkgs, $pkg->filename;
+		    }
 		}
 	    }
 	    $urpm->{log}(N("removing installed rpms (%s) from %s", join(' ', @pkgs), $cachedir)) if @pkgs;
