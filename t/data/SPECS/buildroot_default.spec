@@ -24,7 +24,7 @@ Release: 2
 x
 
 %install
-wanted=$(echo %{_buildrootdir}/buildroot-1-1.%{_arch} | sed 's!//!/!')
+wanted=$(echo %{_buildrootdir}/buildroot-1-1.%{_arch}-buildroot | sed 's!//!/!')
 [ "%buildroot" = $wanted ] || { echo "buildroot should be $wanted instead of %buildroot"; exit 1; }
 [ "$RPM_BUILD_ROOT" = $wanted ] || { echo "RPM_BUILD_ROOT should be $wanted instead of $RPM_BUILD_ROOT"; exit 1; }
 [ "%macro_using_buildroot" = $wanted ] || { echo "macro_using_buildroot should be $wanted instead of %buildroot"; exit 1; }
