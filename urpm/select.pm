@@ -398,48 +398,10 @@ sub find_packages_to_remove {
 	    foreach (@$l) {
 		my ($n, $found);
 
-		#- check if name-version-release.architecture was given.
-		if (($n) = $_ =~ $fullname2name_re) {
-		    $db->traverse_tag('name', [ $n ], sub {
-			    my ($p) = @_;
-			    $p->fullname eq $_ or return;
-			    $urpm->resolve_rejected($db, $state, $p, removed => 1);
-			    push @m, scalar $p->fullname;
-			    $found = 1;
-			});
-		    $found and next;
-		}
-
-		#- check if name-version-release was given.
-		if (($n) = /^(.*)-[^\-]*-[^\-]*$/) {
-		    $db->traverse_tag('name', [ $n ], sub {
-			    my ($p) = @_;
-			    my ($name, $version, $release) = $p->fullname;
-			    "$name-$version-$release" eq $_ or return;
-			    $urpm->resolve_rejected($db, $state, $p, removed => 1);
-			    push @m, scalar $p->fullname;
-			    $found = 1;
-			});
-		    $found and next;
-		}
-
-		#- check if name-version was given.
-		if (($n) = /^(.*)-[^\-]*$/) {
-		    $db->traverse_tag('name', [ $n ], sub {
-			    my ($p) = @_;
-			    my ($name, $version) = $p->fullname;
-			    "$name-$version" eq $_ or return;
-			    $urpm->resolve_rejected($db, $state, $p, removed => 1);
-			    push @m, scalar $p->fullname;
-			    $found = 1;
-			});
-		    $found and next;
-		}
-
-		#- check if only name was given.
-		$db->traverse_tag('name', [ $_ ], sub {
+		#- XXX:	get_tag("hdrid") would be better to use than fullname for
+		#	passing to URPM::Transaction->remove()...
+		$db->traverse_tag('nvra', [ $_ ], sub {
 			my ($p) = @_;
-			$p->name eq $_ or return;
 			$urpm->resolve_rejected($db, $state, $p, removed => 1);
 			push @m, scalar $p->fullname;
 			$found = 1;
@@ -450,7 +412,7 @@ sub find_packages_to_remove {
 	    }
 	    if (!$options{force} && @notfound && @$l > 1) {
 		$options{callback_notfound} && $options{callback_notfound}->($urpm, @notfound)
-		  or return ();
+		    or return ();
 	    }
 	}
 	if ($options{matches} || @notfound) {
