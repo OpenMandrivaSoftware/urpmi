@@ -378,6 +378,7 @@ urpm::media::configure($urpm,
     download_callback => \&urpm::download::sync_logger,
 );
 
+#- this will enable various legacy hacks in rpm to make installation of older releases work
 my ($urpm_mandriva_release) = $urpm->packages_providing("mandriva-release");
 if ($urpm_mandriva_release && URPM::rpmvercmp($urpm_mandriva_release->version, "2011.0") < 0) {
     URPM::expand("%_legacy_compat_all");
