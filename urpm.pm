@@ -295,7 +295,7 @@ sub db_open_or_die_ {
     if(@rpmdb_info && ($rpmdb_info[0] ne "btree" or $rpmdb_info[1] eq "littleendian")) {
 	if(!$urpm->{root} or $urpm->{root} eq "/") {
 	    $urpm->{log} and $urpm->{log}("Converting system rpmdb to new rpmdb version...");
-    	    URPM::db::convert($urpm->{root}, $rpmdb_info[0] ne "btree", $rpmdb_info[1] eq "littleendian" ? -1 : 0);
+    	    URPM::DB::convert($urpm->{root}, $rpmdb_info[0] ne "btree", $rpmdb_info[1] eq "littleendian" ? -1 : 0);
 	} else {
 	    # todo: automate for known safe conditions
 	    $urpm->{fatal}(1, "rpmdb version in chroot is different from chroot, conversion is needed...");
