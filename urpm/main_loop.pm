@@ -319,7 +319,7 @@ sub run {
     }
 
     if (@migrate_rpmdb_db_version) {
-	urpm::sys::migrate_rpmdb_db_version($urpm, $urpm->{root}, @migrate_rpmdb_db_version);
+	urpm::sys::migrate_rpmdb_db_version($urpm, $urpm->{root}, $migrate_rpmdb_db_version[0], $migrate_rpmdb_db_version[1], $migrate_rpmdb_db_version[2]);
     }
 
     $callbacks->{completed} and $callbacks->{completed}->();

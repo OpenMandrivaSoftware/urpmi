@@ -237,8 +237,6 @@ sub install {
 	}
     }
     
-    my ($update, @errors) = 0;
-    my @produced_deltas;
     if (!$options{nodeps} && (@errors = $trans->check(%options))) {
     } elsif (!$options{noorder} && (@errors = $trans->order)) {
     } else {

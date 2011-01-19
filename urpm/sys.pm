@@ -237,7 +237,7 @@ sub print_need_restart() {
 }
 
 sub migrate_rpmdb_db_version {
-    my ($urpm, $root, ($dbtype, $endianness, $rebuild)) = @_;
+    my ($urpm, $root, $dbtype, $endianness, $rebuild) = @_;
 
     $urpm->{info}("migrating rpm db...");
     my $convert = URPM::DB::convert($root, $dbtype, $endianness, $rebuild);
