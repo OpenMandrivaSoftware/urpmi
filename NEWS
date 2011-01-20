@@ -1,3 +1,8 @@
+Version 6.42 - 20 Januar 2011, by Per Øyvind Karlsen
+
+- fix regression in previous release causing urpmi to try install rather than
+  upgrading package updates
+
 Version 6.41 - 19 Januar 2011, by Per Øyvind Karlsen
 
 - enable legacy compatibility mode for older releases (< 2011.0) with

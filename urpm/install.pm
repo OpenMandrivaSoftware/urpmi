@@ -184,10 +184,12 @@ sub install {
 		my %pair = (
 		    pkg => $pkg,
 		    path => $mode->{$_},
+		    update => $update,
 		);
 		push(@{$trans_pkgs{$_}}, \%pair);
 	    }
 	}
+	++$update;
     }
 
     if(!(scalar(values %trans_pkgs) + scalar(values @trans_remove))) {
@@ -217,10 +219,9 @@ sub install {
     }
 
     foreach my $key (keys %trans_pkgs) {
-	$update = $key eq "install";
 	foreach (@{$trans_pkgs{$key}}) {
 	    my %pair = %$_;
-	    my ($pkg, $path) = ($pair{pkg}, $pair{path});
+	    my ($pkg, $path, $update) = ($pair{pkg}, $pair{path}, $pair{update});
 	    if ($trans->add($pkg, update => $update, 1)) {
 		$urpm->{debug} and $urpm->{debug}(
 		    sprintf('trans: scheduling %s of %s (id=%d, file=%s)', 
