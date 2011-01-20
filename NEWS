@@ -1,6 +1,6 @@
 Version 6.43 -    Januar 2011, by Per Øyvind Karlsen
 
-- don't perform rpmdb for chroot when --test is used
+- don't perform rpmdb conversion for chroot when --test is used
 
 Version 6.42 - 20 Januar 2011, by Per Øyvind Karlsen
 
