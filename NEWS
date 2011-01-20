@@ -1,3 +1,7 @@
+Version 6.43 -    Januar 2011, by Per Øyvind Karlsen
+
+- don't perform rpmdb for chroot when --test is used
+
 Version 6.42 - 20 Januar 2011, by Per Øyvind Karlsen
 
 - fix regression in previous release causing urpmi to try install rather than
