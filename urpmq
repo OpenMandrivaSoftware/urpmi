@@ -147,10 +147,7 @@ my $pkg_to_string = sub {
     my ($pkg) = @_;
     my $str = '';
     $options{group} and $str .= $pkg->group . '/';
-    $str .= $pkg->name;
-    $options{version} and $str .= '-' . $pkg->version;
-    $options{release} and $str .= '-' . $pkg->release;
-    $options{arch} and $str .= '.' . $pkg->arch;
+    $str = $pkg->fullname;
     $str;
 };
 
