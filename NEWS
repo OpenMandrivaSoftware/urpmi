@@ -1,5 +1,6 @@
-Version 6.43 -    Januar 2011, by Per Øyvind Karlsen
+Version 6.43 - 21 Januar 2011, by Per Øyvind Karlsen
 
+- fix db conversion of chroot being run error return value
 - don't perform rpmdb conversion for chroot when --test is used
 
 Version 6.42 - 20 Januar 2011, by Per Øyvind Karlsen
