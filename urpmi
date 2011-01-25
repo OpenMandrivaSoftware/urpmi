@@ -280,7 +280,7 @@ if ($bug) {
 if ($env) {
     urpm::set_env($urpm, $env);
 } else {
-    if ($< != 0 && !$options{debug__do_not_install}) {
+    if ($< != 0 && !$test && !$options{debug__do_not_install}) {
 	#- need to be root if binary rpms are to be installed
 	$auto_select || @names || @files and $urpm->{fatal}(1, N("Only superuser is allowed to install packages"));
     }

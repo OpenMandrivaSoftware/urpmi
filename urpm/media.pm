@@ -598,7 +598,7 @@ sub configure {
 	$urpm->{root} = $options{root} if $options{root};
     }
 
-    if ($urpm->{root} && ! -c "$urpm->{root}/dev/null") {
+    if ($urpm->{root} && !$::test && ! -c "$urpm->{root}/dev/null") {
 	mkdir "$urpm->{root}/dev";
 	system("/bin/cp", "-a", '/dev/null', "$urpm->{root}/dev");
     }

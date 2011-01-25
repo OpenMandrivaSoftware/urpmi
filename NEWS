@@ -1,3 +1,7 @@
+Version 6.45 -    Januar 2011, by Per Øyvind Karlsen
+
+- allow to run 'urpmi --test' as non-root user
+
 Version 6.44 - 21 Januar 2011, by Per Øyvind Karlsen
 
 - use URPM::Package->fullname to return pkg as string for urpmq to get full
