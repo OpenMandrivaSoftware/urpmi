@@ -2,7 +2,7 @@
 
 # $Id$
 
-#- Copyright (C) 2006-2010 Mandriva SA
+#- Copyright (C) 2006-2011 Mandriva SA
 
 use strict;
 
@@ -26,7 +26,7 @@ our $disable;
 
 sub usage () {
     print N("urpmi.recover version %s
-Copyright (C) 2006-2010 Mandriva.
+Copyright (C) 2006-2011 Mandriva.
 This is free software and may be redistributed under the terms of the GNU GPL.
 
 usage:

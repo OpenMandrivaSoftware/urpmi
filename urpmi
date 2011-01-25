@@ -74,7 +74,7 @@ sub dudf_invoke {
 
 sub usage () {
     print N("urpmi version %s
-Copyright (C) 1999-2010 Mandriva.
+Copyright (C) 1999-2011 Mandriva.
 This is free software and may be redistributed under the terms of the GNU GPL.
 
 usage:
