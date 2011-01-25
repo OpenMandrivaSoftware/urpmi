@@ -624,6 +624,12 @@ sub should_we_migrate_rpmdb_db_version {
     if ($urpm->{root}) {
 	my ($pkg) = urpm::select::selected_packages_providing($urpm, $state, 'rpm') or return;
 	urpm::select::was_pkg_name_installed($state->{rejected}, 'rpm') and return;
+	my $installed = 0;
+	my $db = urpm::db_open_or_die_($urpm);
+	$db->traverse_tag_find("nvra", "rpm", sub {$installed = 1;});
+	if (!$installed) {
+	    return;
+	}
 
 	my $evrcmp = URPM::rpmvercmp($pkg->version, "5.3");
 

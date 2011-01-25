@@ -1,5 +1,6 @@
 Version 6.45 -    Januar 2011, by Per Øyvind Karlsen
 
+- verify that rpm actually was *really* installed before migrating rpmdb
 - allow to run 'urpmi --test' as non-root user
 
 Version 6.44 - 21 Januar 2011, by Per Øyvind Karlsen
