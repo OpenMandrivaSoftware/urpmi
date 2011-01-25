@@ -131,7 +131,8 @@ my $urpm = urpm->new_parse_cmdline or exit(1);
 $urpm->{info} = sub { print STDERR "$_[0]\n" };
 $urpm->{log} = sub { print STDERR "$_[0]\n" } if $options{verbose} > 0;
 
-my $only_list_name = $options{list} && !($options{version} || $options{release} || $options{arch} || $options{group});
+my $only_list_name = $options{list} && !($options{nvra} || $options{version} || $options{release}
+    || $options{disttag} || $options{distepoch} || $options{arch} || $options{group});
 
 #- improve speed if using any list_... options.
 $options{nodepslist} = $options{list_aliases}
@@ -146,8 +147,17 @@ $options{nolock} = 1 if $options{nodepslist};
 my $pkg_to_string = sub {
     my ($pkg) = @_;
     my $str = '';
+    if ($options{nvra}) {
+	$str = $pkg->fullname;
+    } else {
+	$str .= $pkg->name;
+	$options{version} and $str .= '-' . $pkg->version;	 
+	$options{release} and $str .= '-' . $pkg->release;	 
+	$options{disttag} and $str .= '-' . $pkg->disttag;
+	$options{distepoch} and $str .=  $pkg->distepoch;
+	$options{arch} and $str .= '.' . $pkg->arch;
+    }
     $options{group} and $str .= $pkg->group . '/';
-    $str = $pkg->fullname;
     $str;
 };
 

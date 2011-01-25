@@ -298,7 +298,7 @@ my %options_spec = (
 	    $options{version} = $options{release} = 1;
 	},
 	f => sub {
-	    $options{version} = $options{release} = $options{arch} = 1;
+	    $options{nvra} = $options{version} = $options{release} = $options{disttag} = $options{distepoch} = $options{arch} = 1;
 	},
 	'<>' => sub {
 	    my $x = $_[0];

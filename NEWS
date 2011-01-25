@@ -1,4 +1,8 @@
-Version 6.45 -    Januar 2011, by Per Øyvind Karlsen
+Version 6.46 - 25 Januar 2011, by Per Øyvind Karlsen
+
+- fix urpmq regression introduced in 6.44
+
+Version 6.45 - 25 Januar 2011, by Per Øyvind Karlsen
 
 - verify that rpm actually was *really* installed before migrating rpmdb
 - allow to run 'urpmi --test' as non-root user
