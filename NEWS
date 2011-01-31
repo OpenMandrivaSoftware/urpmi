@@ -1,3 +1,13 @@
+Version 6.48 - 31 Januar 2011, by Per Øyvind Karlsen
+
+- print suggests column
+- increase width of release colum
+
+Version 6.47 - 26 Januar 2011, by Per Øyvind Karlsen
+
+- revert check for rpm in rpmdb before migrating which caused regression,
+  be happy with check on --test for now...
+
 Version 6.46 - 25 Januar 2011, by Per Øyvind Karlsen
 
 - fix urpmq regression introduced in 6.44

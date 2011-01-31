@@ -146,7 +146,7 @@ sub toMb {
     int $nb + 0.5;
 }
 
-my @format_line_field_sizes = (30, 12, 13, 7, 9, 0);
+my @format_line_field_sizes = (30, 12, 13, 7, 9, 0, 0);
 my $format_line_format = '  ' . join(' ', map { '%-' . $_ . 's' } @format_line_field_sizes);
 
 sub format_line_selected_packages {
