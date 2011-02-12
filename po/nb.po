@@ -2716,7 +2716,7 @@ msgstr "  --prozilla     – bruk prozilla for hente fjerntliggende filer.\n"
 #: ../urpmi.addmedia:58 ../urpmi.update:36
 #, c-format
 msgid "  --aria2        - use aria2 to retrieve distant files.\n"
-msgstr "  --aria2         – bruk aria2 for å hente fjerntliggende filer.\n"
+msgstr "  --aria2        – bruk aria2 for å hente fjerntliggende filer.\n"
 
 #: ../urpmi.addmedia:65
 #, c-format
