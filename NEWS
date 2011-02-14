@@ -1,3 +1,8 @@
+Version 6.49 - 14 February 2011, by Per Øyvind Karlsen
+
+- require exclusive rpmdb lock for urpme to prevent concurrent rpmdb access
+  with urpmi
+
 Version 6.48 - 31 Januar 2011, by Per Øyvind Karlsen
 
 - print suggests column
