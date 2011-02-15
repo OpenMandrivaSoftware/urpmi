@@ -2271,7 +2271,7 @@ msgid ""
 "  --downloader   - program to use to retrieve distant files. \n"
 "                   known programs: %s\n"
 msgstr ""
-"  --downloader   - program som skal brukes for hente fjerntliggende filer. \n"
+"  --downloader   – program som skal brukes for hente fjerntliggende filer. \n"
 "\t\t  Kjente program: %s\n"
 
 #: ../urpmi:128
