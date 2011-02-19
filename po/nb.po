@@ -2131,12 +2131,12 @@ msgstr "  --auto-update  – oppdater medier, og deretter systemet.\n"
 #: ../urpmi:91
 #, c-format
 msgid "    --no-md5sum    - disable MD5SUM file checking.\n"
-msgstr "  --no-md5sum    – ikke utfør kontroll av MD5SUM.\n"
+msgstr "    --no-md5sum    – ikke utfør kontroll av MD5SUM.\n"
 
 #: ../urpmi:92
 #, c-format
 msgid "    --force-key    - force update of gpg key.\n"
-msgstr "  --force-key    – tving oppdatering av GPG-nøkkel.\n"
+msgstr "    --force-key    – tving oppdatering av GPG-nøkkel.\n"
 
 #: ../urpmi:93
 #, c-format
