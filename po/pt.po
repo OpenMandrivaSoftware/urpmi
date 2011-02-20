@@ -1595,7 +1595,7 @@ msgstr "O pacote %s já se encontra instalado"
 #: ../urpm/select.pm:546
 #, c-format
 msgid "Packages %s are already installed"
-msgstr "Os pacote %s já se encontram instalados"
+msgstr "Os pacotes %s já se encontram instalados"
 
 #: ../urpm/select.pm:563 ../urpm/select.pm:650
 #, c-format
@@ -1839,8 +1839,8 @@ msgstr[1] "(pacotes órfãos)"
 #, c-format
 msgid "Remove %d package?"
 msgid_plural "Remove %d packages?"
-msgstr[0] "Remover o pacote %d?"
-msgstr[1] "Remover os pacotes %d?"
+msgstr[0] "Deseja remover o pacote %d?"
+msgstr[1] "Deseja remover os pacotes %d?"
 
 #: ../urpme:168
 #, c-format
