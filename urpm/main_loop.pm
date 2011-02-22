@@ -303,7 +303,7 @@ sub run {
                             goto install;
                         }
                     }
-                    $urpm->{log}($msg);
+                    $urpm->{print}($msg);
 
                     ++$nok;
                     push @errors, @l;

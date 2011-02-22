@@ -1,3 +1,8 @@
+Version 6.51 -    February 2011, by Per Øyvind Karlsen
+
+- always print "Installation failed" messages when installing packages using
+  several transactions and not only when using one transaction.
+
 Version 6.50 - 19 February 2011, by Per Øyvind Karlsen
 
 - fix broken 'urpmi --no-md5sum' (#62557)
