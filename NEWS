@@ -1,3 +1,7 @@
+Version 6.52 -    March 2011, by Per Øyvind Karlsen
+
+- don't modify /var/lib/rpm/installed-through-deps.list when using --test
+
 Version 6.51 - 22 February 2011, by Per Øyvind Karlsen
 
 - adjust formatting to better fit 80 character column width (#62572)

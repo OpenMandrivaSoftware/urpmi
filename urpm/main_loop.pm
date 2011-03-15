@@ -272,7 +272,9 @@ sub run {
                     raw_message => 1,
                 );
 	    
-                urpm::orphans::add_unrequested($urpm, $state);
+		if (!$test) {
+		    urpm::orphans::add_unrequested($urpm, $state);
+		}
 
               install:
                 my @l = urpm::install::install($urpm,
