@@ -1,4 +1,4 @@
-Version 6.52 -    March 2011, by Per Øyvind Karlsen
+Version 6.52 - 16 March 2011, by Per Øyvind Karlsen
 
 - only enable legacy compatibility when all packages providing mandriva-release
   in available medias has older version than 2011.0
