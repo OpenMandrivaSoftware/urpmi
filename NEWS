@@ -1,5 +1,7 @@
 Version 6.52 -    March 2011, by Per Øyvind Karlsen
 
+- only enable legacy compatibility when all packages providing mandriva-release
+  in available medias has older version than 2011.0
 - don't exit on errors with DUDF unless user tells to
 - don't modify /var/lib/rpm/installed-through-deps.list when using --test
 
