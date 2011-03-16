@@ -68,6 +68,9 @@ sub dudf_invoke {
 
     if ($dudf) {
         $dudf->$methodname(@args);
+    } elsif ($methodname == "dudf_exit") {
+	my ($exit_code) = @args;
+	exit($exit_code);
     }
 }
 
@@ -516,9 +519,9 @@ that are older than the installed ones:\n%s", $list);
 	print "$msg\n";
     } else {
 	my $noexpr = N("Nn");
-	dudf_invoke($dudf, "dudf_exit", 17, $msg);
 	$msg .= N("\nContinue installation anyway?");
-	$force || message_input_($msg . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/ or exit 17;
+	$force || message_input_($msg . N("\nContinue installation anyway?") . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/
+	    or dudf_invoke($dudf, "dudf_exit", 17, $msg);
     }
 }
 
@@ -532,9 +535,8 @@ if (@ask_unselect) {
 	print "$msg\n";
     } else {
 	my $noexpr = N("Nn");
-	dudf_invoke($dudf, "dudf_exit", 17, $msg);
-	$msg .= N("\nContinue installation anyway?");
-	$force || message_input_($msg . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/ or exit 17;
+	$force || message_input_($msg . N("\nContinue installation anyway?") . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/
+	    or dudf_invoke($dudf, "dudf_exit", 17, $msg);;
     }
 }
 
@@ -559,7 +561,6 @@ has to be removed for others to be upgraded:\n%s\n", $list)
 have to be removed for others to be upgraded:\n%s\n", $list);
 	print "$msg\n";
 	dudf_invoke($dudf, "dudf_exit", 0, $msg);
-	exit 0;
     }
 
     my $msg = urpm::select::conflicting_packages_msg_($urpm, $state, \@conflicting_pkgs_msgs);
@@ -745,5 +746,3 @@ if ($pid_err || $pid_out) {
 }
 
 dudf_invoke($dudf, "dudf_exit", $exit_code);
-
-exit($exit_code);
