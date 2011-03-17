@@ -1,3 +1,8 @@
+Version 6.53 - 17 March 2011, by Per Øyvind Karlsen
+
+- fix string comparision bug causing urpmi to exit right away if urpmi-dudf
+  package isn't installed
+
 Version 6.52 - 16 March 2011, by Per Øyvind Karlsen
 
 - only enable legacy compatibility when all packages providing mandriva-release

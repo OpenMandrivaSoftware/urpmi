@@ -68,7 +68,7 @@ sub dudf_invoke {
 
     if ($dudf) {
         $dudf->$methodname(@args);
-    } elsif ($methodname == "dudf_exit") {
+    } elsif ($methodname eq "dudf_exit") {
 	my ($exit_code) = @args;
 	exit($exit_code);
     }
