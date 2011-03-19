@@ -18,6 +18,7 @@ our @EXPORT = qw(min max quotespace unquotespace
     file_size cat_ cat_utf8 wc_l
     output_safe append_to_file dirname basename
     file2absolute_file
+    every
 );
 
 (our $VERSION) = q($Revision$) =~ /(\d+)/;
@@ -185,6 +186,12 @@ sub append_to_file {
     my $f = shift; 
     open(my $F, '>>', $f) or die "writing to file $f failed: $!\n";
     print $F $_ foreach @_;
+    1;
+}
+
+sub every(&@) {
+    my $f = shift;
+    $f->($_) or return 0 foreach @_;
     1;
 }
 

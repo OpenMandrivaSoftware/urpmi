@@ -25,9 +25,8 @@ use urpm::args;
 use urpm::msg;
 use urpm::media;
 use urpm::select;
-use urpm::util qw(untaint difference2 member partition cat_);
+use urpm::util qw(untaint difference2 member partition cat_ every);
 use urpm::main_loop;
-use MDK::Common::Func;
 
 #- default options.
 our $update = 0;
@@ -384,7 +383,7 @@ urpm::media::configure($urpm,
 
 #- this will enable various legacy hacks in rpm to make installation of older releases work
 my @urpm_mandriva_releases = $urpm->packages_providing("mandriva-release");
-my $enable_legacy_compat = MDK::Common::Func::every
+my $enable_legacy_compat = every
   { URPM::rpmvercmp($_->version, "2011.0") < 0 }
   @urpm_mandriva_releases;
 if ($enable_legacy_compat) {
