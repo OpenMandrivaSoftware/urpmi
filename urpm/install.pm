@@ -261,7 +261,9 @@ sub install {
 	    my ($urpm, undef, $pkgid) = @_;
 	    return unless defined $pkgid;
 	    $callback_close_helper and $callback_close_helper->($db, @_);
-	    get_README_files($urpm, $trans, $urpm->{depslist}[$pkgid]);
+	    if (!$options{test}) {
+		get_README_files($urpm, $trans, $urpm->{depslist}[$pkgid]);
+	    }
 	    close $fh if defined $fh;
 	};
 	#- ensure perl does not create a circular reference below, otherwise all this won't be collected,
