@@ -1,5 +1,6 @@
 Version 6.56 - 30 March 2011, by Per Øyvind Karlsen
 
+- explicitly close transaction and rpmdb after completion
 - drop '-' in middle of option name from --*debug to really be consistent
 
 Version 6.55 - 29 March 2011, by Per Øyvind Karlsen

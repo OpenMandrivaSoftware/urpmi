@@ -326,6 +326,10 @@ sub install {
 
     urpm::sys::may_clean_rpmdb_shared_regions($urpm, $options{test});
 
+    #- FIXME: circular reference leak, explicitly close transaction and rpmdb
+    undef $trans;
+    undef $db;
+
     @errors;
 }
 
