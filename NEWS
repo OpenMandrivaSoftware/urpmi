@@ -1,3 +1,7 @@
+Version 6.56 - 30 March 2011, by Per Øyvind Karlsen
+
+- drop '-' in middle of option name from --*debug to really be consistent
+
 Version 6.55 - 29 March 2011, by Per Øyvind Karlsen
 
 - add various --rpm*-debug options corresponding to what rpm provides
