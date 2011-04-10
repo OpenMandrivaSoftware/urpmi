@@ -75,8 +75,6 @@ if ($env) {
     $urpm->{fatal}(1, N("Only superuser is allowed to remove packages"));
 }
 
-my $rpm_lock = !$env && !$options{nolock} && urpm::lock::rpm_db($urpm, 'exclusive', wait => $options{wait_lock});
-
 #- rurpme checks
 if ($options{restricted}) {
     urpm::error_restricted($urpm) if $urpm->{root} || $options{usedistrib} || $urpm->{options}{noscripts} || $parallel;
@@ -171,11 +169,6 @@ print $test ?
   N("removing %s", join(' ', sort @toremove)), "\n";
 
 exit 0 if $env;
-
-unless ($env || $options{nolock}) {
-    $urpmi_lock->unlock;
-    $rpm_lock->unlock if $rpm_lock;
-}
 
 my %remove_options = (
     test => $test,

@@ -1,8 +1,9 @@
-Version 6.57 -    April 2011, by Per Øyvind Karlsen
+Version 6.57 - 10 April 2011, by Per Øyvind Karlsen
 
-- Drop clean_rpmdb_shared_regions() hacks which seems responsible for rpmdb
+- drop rpm locking from urpme now that it's safe
+- drop clean_rpmdb_shared_regions() hacks which seems responsible for rpmdb
   locking & corruption issues
-- Allow querying dependencies in urpmf --qf (Pascal Terjan)
+- allow querying dependencies in urpmf --qf (Pascal Terjan)
 
 Version 6.56 - 30 March 2011, by Per Øyvind Karlsen
 
