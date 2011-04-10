@@ -320,7 +320,7 @@ sub run {
         }
     }
 
-    if (@migrate_rpmdb_db_version && !$test) {
+    if (!$nok && @migrate_rpmdb_db_version && !$test) {
 	urpm::sys::migrate_rpmdb_db_version($urpm, $urpm->{root}, $migrate_rpmdb_db_version[0], $migrate_rpmdb_db_version[1], $migrate_rpmdb_db_version[2]);
     }
 

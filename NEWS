@@ -1,3 +1,7 @@
+Version 6.58 -    April 2011, by Per Øyvind Karlsen
+
+- don't run rpmdb conversion in case of any failures.
+
 Version 6.57 - 10 April 2011, by Per Øyvind Karlsen
 
 - drop rpm locking from urpme now that it's safe
