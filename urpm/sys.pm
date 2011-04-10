@@ -129,20 +129,6 @@ sub whereis_binary {
     }
 }
 
-sub may_clean_rpmdb_shared_regions {
-    my ($urpm, $test) = @_;
-
-    if ($urpm->{root} && !$test || $urpm->{tune_rpm}{private}) {
-	$urpm->{root} && $urpm->{debug} and $urpm->{debug}("workaround bug in rpmlib by removing $urpm->{root}/var/lib/rpm/__db*");
-	clean_rpmdb_shared_regions($urpm->{root});
-    }
-}
-
-sub clean_rpmdb_shared_regions {
-    my ($prefix) = @_;
-    unlink glob("$prefix/var/lib/rpm/__db.*");
-}
-
 sub proc_mounts() {
     my @l = cat_('/proc/mounts') or warn "Can't read /proc/mounts: $!\n";
     @l;
@@ -246,7 +232,6 @@ sub migrate_rpmdb_db_version {
 	    $urpm->{error}("rpm db migration failed in $root. You will not be able to run rpm chrooted");
 	}
     }
-    clean_rpmdb_shared_regions($root);
 }
 
 #- create a plain rpm from an installed rpm and a delta rpm (in the current directory)

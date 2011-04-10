@@ -7,7 +7,6 @@ use urpm;
 use urpm::msg;
 use urpm::util;
 
-
 # size of the installation progress bar
 my $progress_size = 45;
 eval {
@@ -323,8 +322,6 @@ sub install {
 	}
     }
     unlink @produced_deltas;
-
-    urpm::sys::may_clean_rpmdb_shared_regions($urpm, $options{test});
 
     #- FIXME: circular reference leak, explicitly close transaction and rpmdb
     undef $trans;

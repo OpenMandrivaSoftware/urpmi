@@ -12,7 +12,7 @@ use urpm::sys;
 use urpm::cfg;
 use urpm::md5sum;
 
-our $VERSION = '6.56';
+our $VERSION = '6.57';
 our @ISA = qw(URPM Exporter);
 our @EXPORT_OK = ('file_from_local_url', 'file_from_local_medium', 'is_local_medium');
 
@@ -231,7 +231,6 @@ sub tune_rpm {
 	modify_rpm_macro('__dbi_other', 'fsync', 'nofsync');
     }
     if ($urpm->{tune_rpm}{private}) {
-	urpm::sys::clean_rpmdb_shared_regions($urpm->{root});
 	modify_rpm_macro('__dbi_other', 'usedbenv', 'private');
     }
 }
