@@ -1,3 +1,7 @@
+Version 6.57 -    April 2011, by Per Øyvind Karlsen
+
+- Allow querying dependencies in urpmf --qf (Pascal Terjan)
+
 Version 6.56 - 30 March 2011, by Per Øyvind Karlsen
 
 - explicitly close transaction and rpmdb after completion
