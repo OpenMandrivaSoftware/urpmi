@@ -1070,7 +1070,7 @@ msgstr "Forçar instalação (--force)?"
 #: ../urpm/main_loop.pm:342
 #, c-format
 msgid "Packages are up to date"
-msgstr "Pacotes estão atualizados"
+msgstr "O seu sistema está atualizado"
 
 #: ../urpm/main_loop.pm:353 ../urpm/parallel.pm:299
 #, c-format
