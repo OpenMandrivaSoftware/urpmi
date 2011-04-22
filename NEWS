@@ -1,7 +1,11 @@
-Version 6.58 -    April 2011, by Per Øyvind Karlsen
+Version 6.59 - 22 April 2011, by Per Øyvind Karlsen
+
+- revert archscore() hack as it's now fixed properly
+
+Version 6.58 - 21 April 2011, by Per Øyvind Karlsen
 
 - don't run rpmdb conversion in case of any failures.
-- remove archscore(), waiting for platformscrore implementation (Antoine Ginies)
+- remove archscore(), waiting for platformscore implementation (Antoine Ginies)
 
 Version 6.57 - 10 April 2011, by Per Øyvind Karlsen
 

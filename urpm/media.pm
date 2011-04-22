@@ -999,9 +999,7 @@ sub add_distrib_media {
         my $media_name = $distribconf->getvalue($media, 'name') || '';
 
         if (my $media_arch = $distribconf->getvalue($media, 'arch')) {
-#		waiting for platformscrore() archscore is no more available since rpm-4.4.7.
-#		https://qa.mandriva.com/show_bug.cgi?id=62877
-	    if ($media_arch != m/ppc|i586|x86_64/ ) {
+	    if (!URPM::archscore($media_arch)) {
                 $urpm->{log}(N("skipping non compatible media `%s' (for %s)",
 			       $media, $media_arch));
                 next;
