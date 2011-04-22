@@ -341,7 +341,7 @@ sub upload_synthesis_file {
     my $check_result = `$cmd_synthesis_check`;
 
     if ($check_result eq 1) {
-        print N("\nThe synthesis file (media '") . $media . N("', $md5sum) is already available on the Mandriva DUDF server.\n");
+        print N("\nThe synthesis file (media '%s', %s) is already available on the Mandriva DUDF server.\n", $media, $md5sum);
     } else {
         print N("\nUploading synthesis file ...");
         my $cmd_synthesis_upload = join(" ", map { "'$_'" } "/usr/bin/curl",
