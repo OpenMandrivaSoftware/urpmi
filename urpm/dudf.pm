@@ -3,7 +3,7 @@ package urpm::dudf;
 # $Id: dudf.pm 639 2009-04-17 14:32:03Z orosello $
 
 our @ISA = qw();
-#use strict;
+use strict;
 use Exporter;
 use URPM;
 use urpm;
