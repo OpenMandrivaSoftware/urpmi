@@ -3,7 +3,7 @@ package urpm::dudf;
 # $Id: dudf.pm 639 2009-04-17 14:32:03Z orosello $
 
 our @ISA = qw();
-use strict;
+#use strict;
 use Exporter;
 use URPM;
 use urpm;
@@ -19,6 +19,8 @@ use File::Path;
 use Compress::Zlib;
 use XML::Writer;
 use Data::UUID;
+use Digest::MD5 'md5_hex';
+use dudfrpmstatus;
 
 #- Timeout for curl connection and wget operations
 our $CONNECT_TIMEOUT = 60; #-  (in seconds)
@@ -41,6 +43,7 @@ use fields qw(
     installer_name
     installer_version
     log_file
+    log_msg
     metainstaller_name
     metainstaller_version
     package_universe_synthesis
@@ -51,8 +54,6 @@ use fields qw(
     pkgs_user_install
     pkgs_user_upgrade
     version
-    xmlns
-    xmlnsdudf
     );
 
 my @package_status;
@@ -67,7 +68,24 @@ sub dudf_exit {
     if ($o_exit_msg) {
         $self->set_exit_msg($o_exit_msg);
     }
-    $self->write_dudf;
+    
+    my $noexpr = N("Nn");
+    my $msg = N("A problem occurred. You can contribute to the improvement of the Mandriva upgrade\nprocess by uploading an automatically generated report to a Mandriva server.\nNo personal information will be transmitted. More information is available at\nhttp://doc4.mandriva.org/bin/dudf/.\n");
+    $msg .= N("Do you want to generate and upload a report?");
+
+    if ( (!${$self->{dudf_urpm}}->{options}{auto}) &&
+         ( ($self->{exit_code} > 9) ||
+           (!$self->{exit_code} && $self->{force_dudf}) ) ) {
+       
+      if ($self->{force_dudf} || message_input_($msg . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/) {           
+      
+        $self->upload_synthesis_files;
+        $self->write_dudf;
+        $self->upload_dudf;
+        
+      }
+        
+    }
     exit($exit_code);
 }
 
@@ -141,6 +159,14 @@ sub get_package_universe {
     @{$self->{package_universe_synthesis}} = grep { !$_->{ignore} } @{$urpm->{media}};
 }
 
+sub get_synthesis_md5 {
+    my ($self, $file) = @_;
+    open(SYNTFILE, $file) or die "Can't open '$file': $!";
+    binmode(SYNTFILE);
+    my $md5sum = Digest::MD5->new->addfile(*SYNTFILE)->hexdigest;
+    return $md5sum;
+}
+
 # Parse a synthesis file
 sub get_synthesis {
     my ($self, $file, $doc) = @_;
@@ -167,19 +193,19 @@ sub new {
         exit_code => 0,
         metainstaller_name => $0,
         metainstaller_version => $urpm::VERSION,
-        xmlns => "http://www.mancoosi.org/2008/cudf/dudf",
-        xmlnsdudf => "http://www.mancoosi.org/2008/cudf/dudf",
         version => "1.0",
         dudf_time => undef
     };
 
-    my $base_url = "http://dudf.forge.mandriva.com";
-    $self->{access_url} = $base_url . "/file/";
+    my $base_url = "http://doc4.mandriva.org:8087/dudf";
+    $self->{access_url} = "http://doc4.mandriva.org/bin/view/dudf/instance";
     $self->{upload_url} = $base_url . "/upload";
+    $self->{synthesis_base_url} = "http://doc4.mandriva.org:8087/synthesis/";
     $self->{metainstaller_name} =~ s/.*\///;
-    ${$self->{dudf_urpm}}->{fatal} = sub { printf STDERR "%s\n", $_[1]; $self->set_exit_msg($_[1]);  $self->set_exit_code($_[0]); $self->write_dudf; exit($_[0]) };
+
+    ${$self->{dudf_urpm}}->{fatal} = sub { printf STDERR "%s\n", $_[1]; $self->set_exit_msg($_[1]);  $self->set_exit_code($_[0]); $self->dudf_exit(10); };
     ${$self->{dudf_urpm}}->{error} = sub { printf STDERR "%s\n", $self->set_exit_msg($_[0]); $_[0] };
-    #${$self->{dudf_urpm}}->{log}   = sub { printf STDERR "%s\n", $_[0] };
+    ${$self->{dudf_urpm}}->{log}   = sub { $self->add_log_msg($_[0]); };
 
     $urpm = ${$self->{dudf_urpm}};
     $self->{dudf_dir} = $urpm->{cachedir} . "/dudf";
@@ -189,15 +215,12 @@ sub new {
     }
 
     # If there is no log file, we create the default content here
-    if (! -f $self->{log_file})
-    {
+    if (! -f $self->{log_file})  {
 	output_safe($self->{log_file}, 
-                    N("# Here are logs of your DUDF uploads.\n# Line format is : <date time of generation> <uid>\n# You can use uids to see the content of your uploads at this url :\n# http://dudf.forge.mandriva.com/"));
+                    N("# Here are logs of your DUDF uploads.\n# Line format is : <date time of generation> <uid>\n# You can use uids to see the content of your uploads at this url :\n# http://dudf.forge.mandriva.com/\n"));
     }
     my $ug = new Data::UUID;
     $self->{dudf_uid} = $ug->to_string($ug->create_str);
-    $self->{dudf_filename} = "dudf_" . $self->{dudf_uid} . ".dudf.xml";
-    $self->{dudf_file} = $self->{dudf_dir} . "/" . $self->{dudf_filename};
 
     bless($self,$class);
     return $self;
@@ -208,29 +231,43 @@ sub set_error_msg {
     $self->{exit_msg} .= $m;
 }
 
+sub get_error_msg {
+    my ($self) = @_;
+    return $self->{exit_msg} if defined($self->{exit_msg});
+    return '';
+}
+
 sub set_exit_msg {
     my ($self, $m) = @_;
     $self->{exit_msg} .= $m;
 }
 
+sub add_log_msg {
+    my ($self, $m) = @_;
+    $self->{log_msg} .= $m . "\n";
+}
+
+sub get_log_msg {
+    my ($self) = @_;
+    return $self->{log_msg} if defined($self->{log_msg});
+    return '';
+}
+
 # store the exit code
 sub set_exit_code {
     my ($self, $exit_code) = @_;
-
     $self->{exit_code} = $exit_code;
 }
 
 # Store the list of packages the user wants to install (given to urpmi)
 sub store_userpkgs {
     my ($self, @pkgs) = @_;
-
     @{$self->{pkgs_user}} = @pkgs;
 }
 
 # Store a list of packages selected by urpmi to install
 sub store_toinstall {
     my ($self, @pkgs) = @_;
-
     @{$self->{pkgs_toinstall}} = @pkgs;
 }
 
@@ -266,10 +303,12 @@ sub upload_dudf {
         "-f", 
         "--anyauth",
         (defined $options->{'curl-options'} ? split /\s+/, $options->{'curl-options'} : ()),
-        "-F file=@" . $self->{dudf_file} . ".gz",
-        "-F id=" . $self->{dudf_uid},
+        "-Ffile=@" . $self->{dudf_file} . ".gz",
+        "-Fid=" . $self->{dudf_uid},
         $self->{upload_url},
         );
+    print N("\nCommand:");
+    print $cmd;
     urpm::download::_curl_action($cmd, $options, @l, 1);
     unlink $self->{dudf_file} . ".gz";
     unlink $self->{dudf_file};
@@ -279,44 +318,69 @@ sub upload_dudf {
     print N("You can access a log of your uploads in\n\t") . $self->{log_file} . "\n";
 }
 
-sub xml_pkgs {
-    my ($doc, $pk) = @_;
+sub upload_synthesis_file {
+    -x "/usr/bin/curl" or do { print N("curl is missing, cannot upload DUDF file.\n"); return };
+    my ($self, $options, $media, $filename, $md5sum) = @_;
 
-    if ($pk->epoch) {
-        $doc->startTag("package", "name" => $pk->name, "version" => $pk->version, "arch" => $pk->arch, "release" => $pk->release, "epoch" => $pk->epoch);
+    print N("Testing synthesis file presence ...");
+    my $cmd_synthesis_check = join(" ", map { "'$_'" } "/usr/bin/curl",
+        "-q", # don't read .curlrc; some toggle options might interfer
+        ($options->{proxy} ? urpm::download::set_proxy({ type => "curl", proxy => $options->{proxy} }) : ()),
+        ($options->{retry} ? ('--retry', $options->{retry}) : ()),
+        "--stderr", "-", # redirect everything to stdout
+        "--connect-timeout", $CONNECT_TIMEOUT,
+        "-s",
+        "-f", 
+        "--anyauth",
+        (defined $options->{'curl-options'} ? split /\s+/, $options->{'curl-options'} : ()),
+        $self->{synthesis_base_url} . "$md5sum/exists",
+    );
+
+    #print N("\nCommand:");
+    #print $cmd_synthesis_check;
+    my $check_result = `$cmd_synthesis_check`;
+
+    if ($check_result eq 1) {
+        print N("\nThe synthesis file (media '") . $media . N("', $md5sum) is already available on the Mandriva DUDF server.\n");
+    } else {
+        print N("\nUploading synthesis file ...");
+        my $cmd_synthesis_upload = join(" ", map { "'$_'" } "/usr/bin/curl",
+            "-q", # don't read .curlrc; some toggle options might interfer
+            ($options->{proxy} ? urpm::download::set_proxy({ type => "curl", proxy => $options->{proxy} }) : ()),
+            ($options->{retry} ? ('--retry', $options->{retry}) : ()),
+            "--stderr", "-", # redirect everything to stdout
+            "--connect-timeout", $CONNECT_TIMEOUT,
+            #                "-s",
+            "-f", 
+            "--anyauth",
+            (defined $options->{'curl-options'} ? split /\s+/, $options->{'curl-options'} : ()),
+            "-Ffile=@" . $filename,
+            "-Fmd5=" . $md5sum,
+            $self->{synthesis_base_url} . "upload",
+        );
+        #print N("\nCommand:");
+        #print $cmd_synthesis_upload;
+        urpm::download::_curl_action($cmd_synthesis_upload, $options, (), 1);
+        print N("\nSynthesis successfully uploaded. It can be downloaded from") . " " . $self->{synthesis_base_url} . $md5sum . "/download\n";
     }
-    else {
-        $doc->startTag("package", "name" => $pk->name, "version" => $pk->version, "arch" => $pk->arch, "release" => $pk->release);
+}
+
+sub upload_synthesis_files {
+    my ($self) = @_;
+
+    $self->get_package_status;
+    $self->get_package_universe;
+    $self->compute_pkgs_user;
+
+    foreach my $media (@{$self->{package_universe_synthesis}}) {
+        my $options = ();
+        my $file = $media->{name};
+        my $url = $media->{url};
+        my $filename = urpm::media::any_synthesis(${$self->{dudf_urpm}}, $media);
+        my $md5sum = $self->get_synthesis_md5($filename);
+
+        $self->upload_synthesis_file($options, $file, $filename, $md5sum);
     }
-    if ($pk->provides) {
-        $doc->startTag("provides");
-        foreach my $i ($pk->provides) {
-            $doc->characters("@" . $i);
-        }
-        $doc->endTag;
-    }
-    if ($pk->requires) {
-        $doc->startTag("requires");
-        foreach my $i ($pk->requires) {
-            $doc->characters("@" . $i);
-        }
-        $doc->endTag;
-    }
-    if ($pk->conflicts) {
-        $doc->startTag("conflicts");
-        foreach my $i ($pk->conflicts) {
-            $doc->characters("@" . $i);
-        }
-        $doc->endTag;
-    }
-    if ($pk->obsoletes) {
-        $doc->startTag("obsoletes");
-        foreach my $i ($pk->obsoletes) {
-            $doc->characters("@" . $i);
-        }
-        $doc->endTag;
-    }
-    $doc->endTag;
 }
 
 sub compute_pkgs_user {
@@ -353,145 +417,64 @@ sub compute_pkgs_user {
 # Generate DUDF data
 sub write_dudf {
     my ($self) = @_;
+    
+	print N("\nGenerating DUDF... ");
+	
+	my $urpm = ${$self->{dudf_urpm}};
+	my $choices = $urpm->{_dudf};
 
-    if ( (!${$self->{dudf_urpm}}->{options}{auto}) &&
-         ( ($self->{exit_code} > 9) ||
-           (!$self->{exit_code} && $self->{force_dudf}) ) ) {
-        my $noexpr = N("Nn");
-        my $msg = N("A problem has been encountered. You can help Mandriva to improve package\ninstallation by uploading a DUDF report file.\nThis is a part of the Mancoosi european research project.\nMore at http://www.mancoosi.org\n");
-        $msg .= N("Do you want to upload a DUDF report to Mandriva?");
-        if ($self->{force_dudf} || message_input_($msg . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/) {
-            print N("\nGenerating DUDF... ");
+	my $GlobalDUDF = dudfrpmstatus::GlobalDudf->new();
 
-            urpm::db_open_or_die(urpm->new)->traverse_tag("name", [ "rpm" ], sub { my ($p) = @_; $self->{installer_name} = $p->name; $self->{installer_version} = $p->version });
-            $self->get_package_status;
-            $self->get_package_universe;
-            $self->compute_pkgs_user;
+	$GlobalDUDF->setUrpmiConfig($urpm->{config});
+	$GlobalDUDF->setUrpmiMediaCfgDir($urpm->{mediacfgdir});
+	$GlobalDUDF->setUrpmiSkiplist($urpm->{skiplist});
+	$GlobalDUDF->setUrpmiInstlist($urpm->{instlist});
+	$GlobalDUDF->setUrpmiPreferList($urpm->{prefer_list});
+	$GlobalDUDF->setUrpmiPreferVendorlist($urpm->{prefer_vendor_list});
+	$GlobalDUDF->setUrpmiPrivateNetrc($urpm->{private_netrc});
+	$GlobalDUDF->setUrpmiStateDir($urpm->{statedir});
+	$GlobalDUDF->setUrpmiCacheDir($urpm->{cachedir});
+	$GlobalDUDF->setUrpmiRoot($urpm->{root});
+	$GlobalDUDF->setRpmStateDir("/var/lib/rpm/");
+	$GlobalDUDF->urpmiEnvSet();
 
-            my $output = new IO::File;
-            if ($output->open(">" . $self->{dudf_file})) {
-                my $doc = new XML::Writer(OUTPUT => $output, DATA_MODE => 1, DATA_INDENT => 1, NEW_LINES => 1, ENCODING => 'utf-8');
-                $doc->xmlDecl("UTF-8");
+	$GlobalDUDF->SetDistro();
+	$GlobalDUDF->AddMsgError($self->get_error_msg());
+	$GlobalDUDF->AddMsgLog($self->get_log_msg());
+	$GlobalDUDF->setUrpmiRequest($self->{action});
+	$GlobalDUDF->setUrpmiRequestStatus( ($self->{exit_code} > 9 ? 0 : 1) );
+	$GlobalDUDF->setUrpmiForceDudf($self->{force_dudf});
+	$GlobalDUDF->setMetaInstallerName($self->{metainstaller_name});
+	$GlobalDUDF->setMetaInstallerVersion($self->{metainstaller_version});
 
-                $self->get_distribution;
+	foreach my $h (@{$choices}) {
+		my $depname = $h->{virtualpkgname};
+		my $list = $h->{list};
+		$list =~ s/^<//g;
+		$list =~ s/>$//g;
+		my $chosen = $h->{chosen};
+		my $prefered = $h->{prefered};
+		my $properties = $h->{properties};
 
-                my $old_locale = setlocale(LC_CTYPE);
-                setlocale(LC_TIME, "C");
-                my $now = time();
+		$GlobalDUDF->setVirtualPackageNameDependency($depname);
+		$GlobalDUDF->setVirtualPackageNameSelection($list);
 
-                $doc->startTag("dudf", version => $self->{version}, xmlns => $self->{xmlns}, "xmlns:dudf" => $self->{xmlnsdudf});
-                $doc->dataElement(timestamp => strftime("%a, %d %b %Y %H:%M:%S %z", localtime($now)));
-                $self->{dudf_time} = strftime("%Y%m%d %H:%M:%S %z", localtime($now));
+		map {
+			my $fname = "" . $_->fullname;
+			$GlobalDUDF->pushVirtualPackageNameChoice($fname);
+		} @$chosen;
+		
+		$GlobalDUDF->commitVirtualPackageSelection();
+	}
 
-                setlocale(LC_CTYPE, $old_locale);
+	$GlobalDUDF->DumpToFile();
 
-                # From here, the indent is special : a new ident is made for each XML tag opening
-                # It's easier to debug XML with this
-                $doc->dataElement(uid => $self->{dudf_uid});
+	$self->{dudf_time} = strftime("%Y-%m-%dT%H:%M:%S%Z", localtime());
+	$self->{dudf_filename} = "dudf_" . $GlobalDUDF->GetFilenameFingerprint() . ".xml";
+	$self->{dudf_file} = $self->{dudf_dir} . "/" . $self->{dudf_filename};
 
-                    $doc->startTag("distribution");
-                        $doc->characters($self->{distribution_name});
-    # Following lines removed because these elements are not specified into dudf for now (leave comment in code for future usage)
-    #                    $doc->dataElement(name => "$self->{distribution_name}");
-    #                    $doc->dataElement(release => "$self->{distribution_release}");
-    #                    $doc->dataElement(codename => "$self->{distribution_codename}");
-    #                    $doc->dataElement(description => "$self->{distribution_description}");
-                    $doc->endTag;
-                    $doc->startTag("installer");
-                        $doc->dataElement(name => $self->{installer_name});
-                        $doc->dataElement(version => $self->{installer_version});
-                    $doc->endTag;
-                    $doc->startTag("meta-installer");
-                        $doc->dataElement(name => $self->{metainstaller_name});
-                        $doc->dataElement(version => $self->{metainstaller_version});
-                    $doc->endTag;
-                    $doc->startTag("problem");
-                        $doc->startTag("package-status");
-                            $doc->startTag("installer");
-                                # packages removed by urpmi are added back
-                                foreach my $pkg (@{$self->{packages_removed}}) {
-                                    foreach my $pk (@$pkg) {
-                                        xml_pkgs($doc,$pk);
-                                    }
-                                }
-                                # packages upgraded by urpmi are restored in the list (version before upgrade)
-                                foreach my $pkg (@{$self->{packages_upgraded}}) {
-                                    foreach my $pk (@$pkg) {
-                                        xml_pkgs($doc,$pk);
-                                    }
-                                }
-                                # packages already installed before the launch of urpmi
-                                foreach my $pk (@package_status) {
-                                    # packages installed by urpmi are removed from the list 
-                                    if (@{$self->{pkgs_toinstall}}) {
-                                        foreach my $pkg (@{$self->{pkgs_toinstall}}) {
-                                            if (($pkg->name ne $pk->name ||
-                                                 $pkg->version ne $pk->version ||
-                                                 $pkg->arch ne $pk->arch ||
-                                                 $pkg->release ne $pk->release ||
-                                                 $pkg->epoch ne $pk->epoch)) {
-                                                xml_pkgs($doc,$pk);
-                                            }
-                                        }
-                                    }
-                                    else {
-                                        xml_pkgs($doc,$pk);
-                                    }
-                                }
-                            $doc->endTag;
-                            $doc->dataElement("meta-installer" => "meta installer package status");
-                        $doc->endTag;
-                        $doc->startTag("package-universe");
-                            foreach my $media (@{$self->{package_universe_synthesis}}) {
-                                my $file = $media->{name};
-                                my $url = $media->{url};
-                                my $filename = urpm::media::any_synthesis(${$self->{dudf_urpm}},$media);
-                                $doc->startTag("package-list", "dudf:format" => "synthesis", "dudf:filetype" => $file, "dudf:filename" => $filename, "dudf:url" => $url);
-                                $self->get_synthesis($filename, $doc);
-                                $doc->endTag;
-                            }
-                        $doc->endTag;
-                        $doc->startTag("action");
-                            $doc->startTag("upgrade");
-                                    foreach my $pkg (@{$self->{pkgs_user_upgrade}}) {
-                                        $doc->startTag("package", "name" => $pkg);
-                                        $doc->endTag;
-                                    }
-                            $doc->endTag;
-                            $doc->startTag("install");
-                                    foreach my $pkg (@{$self->{pkgs_user_install}}) {
-                                        $doc->startTag("package", "name" => $pkg);
-                                        $doc->endTag;
-                                    }
-                            $doc->endTag;
-                            $doc->startTag("command");
-                                $doc->characters($self->{action});
-                            $doc->endTag;
-                        $doc->endTag;
-                        $doc->startTag("desiderata");
-                        $doc->endTag;
-                    $doc->endTag;
-                    $doc->startTag("outcome");
-                        $doc->startTag("dudf:result");
-                            $doc->characters(($self->{exit_code} == 0 ? "success" : "failure"));
-                        $doc->endTag;
-                        if ($self->{exit_code}) {
-                            $doc->startTag("error");
-                                $doc->characters($self->{exit_msg});
-                            $doc->endTag;
-                        }
-                    $doc->endTag;
-                $doc->endTag;
-                $doc->end;
-                $output->close;
-                print N("OK\n");
-                $self->upload_dudf;
-            }
-            else {
-                print N("Cannot write DUDF file.\n");
-            }
-        }
-    }
+	print N("OK\n");
+
 }
 
 1;

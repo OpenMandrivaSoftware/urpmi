@@ -1,5 +1,6 @@
 Version 6.59 - 22 April 2011, by Per Øyvind Karlsen
 
+- merge DUDF changes from Alexandre Lissy
 - revert archscore() hack as it's now fixed properly
 
 Version 6.58 - 21 April 2011, by Per Øyvind Karlsen
