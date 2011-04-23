@@ -93,6 +93,7 @@ pod/urpmi.files.5.pod
 pod/urpmi.recover.8.pod
 pod/urpmi.removemedia.8.pod
 pod/urpmi.update.8.pod
+pod/urpmi-dudf.8.pod
 pod/urpmihowto.8.pod
 pod/urpmq.8.pod
 rpm-find-leaves
