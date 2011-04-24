@@ -9,14 +9,14 @@
 # Thomas Backlund <tmb@mandrake.org>, 2002, 2003, 2004, 2005.
 # Thomas Backlund <tmb@mandriva.org>, 2005, 2009.
 # Anssi Hannula <anssi@mandriva.org>, 2007, 2008, 2009.
-# Jani Välimaa <jani.valimaa@gmail.com>, 2009.
-# Jani Välimaa <wally@mandriva.org>, 2009.
+# Jani Välimaa <wally@mandriva.org>, 2009, 2011.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-22 19:28+0200\n"
-"PO-Revision-Date: 2009-11-04 17:15+0200\n"
+"PO-Revision-Date: 2011-04-24 20:35+0300\n"
 "Last-Translator: Jani Välimaa <wally@mandriva.org>\n"
 "Language-Team: Finnish <cooker-i18n@mandrivalinux.org>\n"
 "Language: fi\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../gurpmi:32
 #, c-format
@@ -114,7 +114,7 @@ msgid "Choose location to save file"
 msgstr "Valitse tallennettavalle tiedostolle sijainti"
 
 #: ../gurpmi.pm:39
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -124,7 +124,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi versio %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
+"Copyright (C) 1999-2010 Mandriva.\n"
 "Tämä on vapaa ohjelmisto, jota saa levittää GNU GPL -lisenssin mukaisesti.\n"
 "\n"
 "Käyttö:\n"
@@ -769,9 +769,9 @@ msgid ""
 msgstr ""
 
 #: ../urpm/dudf.pm:74
-#, fuzzy, c-format
+#, c-format
 msgid "Do you want to generate and upload a report?"
-msgstr "Siirretäänkö DUDF-raportti Mandrivan palvelimelle?"
+msgstr "Luodaanko ja siirretäänkö raportti?"
 
 #: ../urpm/dudf.pm:80 ../urpmi:524 ../urpmi:539 ../urpmi:645
 #: ../urpmi.addmedia:136
@@ -780,7 +780,7 @@ msgid " (Y/n) "
 msgstr " (K/e) "
 
 #: ../urpm/dudf.pm:220
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "# Here are logs of your DUDF uploads.\n"
 "# Line format is : <date time of generation> <uid>\n"
@@ -790,7 +790,7 @@ msgstr ""
 "# DUFD-siirron lokit.\n"
 "# Rivit ovat muotoa <luontipäivämäärä> <uid>.\n"
 "# Siirron sisällön näkee antamalla uid:n osoitteessa\n"
-"# http://dudf.forge.mandriva.com/"
+"# http://dudf.forge.mandriva.com/\n"
 
 #: ../urpm/dudf.pm:276 ../urpm/dudf.pm:322
 #, c-format
@@ -823,6 +823,8 @@ msgid ""
 "\n"
 "Command:"
 msgstr ""
+"\n"
+"Komento:"
 
 #: ../urpm/dudf.pm:315
 #, c-format
@@ -845,9 +847,9 @@ msgstr ""
 "\t"
 
 #: ../urpm/dudf.pm:325
-#, fuzzy, c-format
+#, c-format
 msgid "Testing synthesis file presence ..."
-msgstr "Tutkitaan synthesis-tiedostoa [%s]"
+msgstr "Tutkitaan synthesis-tiedoston olemassaoloa ..."
 
 #: ../urpm/dudf.pm:344
 #, c-format
@@ -856,13 +858,18 @@ msgid ""
 "The synthesis file (media '%s', %s) is already available on the Mandriva "
 "DUDF server.\n"
 msgstr ""
+"\n"
+"Synthesis-tiedosto (media %s, %s) on jo olemassa Mandriva DUDF -"
+"palvelimella.\n"
 
 #: ../urpm/dudf.pm:346
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Uploading synthesis file ..."
-msgstr "Tutkitaan synthesis-tiedostoa [%s]"
+msgstr ""
+"\n"
+"Siirretään synthesis-tiedostoa ..."
 
 #: ../urpm/dudf.pm:364
 #, c-format
@@ -870,6 +877,9 @@ msgid ""
 "\n"
 "Synthesis successfully uploaded. It can be downloaded from"
 msgstr ""
+"\n"
+"Synthesis-tiedosto siirrettiin onnistuneesti. Tiedoston voi ladata "
+"osoitteesta"
 
 #: ../urpm/dudf.pm:421
 #, c-format
@@ -903,7 +913,7 @@ msgstr "[uudelleenpaketoidaan]"
 #: ../urpm/install.pm:179
 #, c-format
 msgid "unable to extract rpm from delta-rpm package %s"
-msgstr "Paketin %s purkaminen Delta-RPM-paketista ei onnistu"
+msgstr "Paketin purkaminen Delta-RPM-paketista %s ei onnistu"
 
 #: ../urpm/install.pm:204
 #, c-format
@@ -1217,9 +1227,9 @@ msgid "skipping non compatible media `%s' (for %s)"
 msgstr "Ohitetaan yhteensopimaton media \"%s\" (%s)"
 
 #: ../urpm/media.pm:1018
-#, fuzzy, c-format
+#, c-format
 msgid "ignoring non-free medium `%s'"
-msgstr "Ohitetaan media \"%s\""
+msgstr "Ohitetaan epävapaa media \"%s\""
 
 #: ../urpm/media.pm:1061
 #, c-format
@@ -1431,12 +1441,12 @@ msgstr "Julkaisu"
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "Dist"
-msgstr ""
+msgstr "Dist"
 
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "DEpoch"
-msgstr ""
+msgstr "DEpoch"
 
 #: ../urpm/msg.pm:170
 #, c-format
@@ -1732,7 +1742,7 @@ msgid "Can't move file %s to %s"
 msgstr "Tiedostoa %s ei voi siirtää kohteeseen %s"
 
 #: ../urpme:41
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpme version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -1742,7 +1752,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpme versio %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
+"Copyright (C) 1999-2010 Mandriva.\n"
 "Tämä on vapaa ohjelmisto, jota saa levittää GNU GPL -lisenssin mukaisesti.\n"
 "\n"
 "Käyttö:\n"
@@ -1888,7 +1898,7 @@ msgid "Removal is possible"
 msgstr "Poistaminen on mahdollista"
 
 #: ../urpmf:29
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmf version %s\n"
 "Copyright (C) 2002-2011 Mandriva.\n"
@@ -1898,7 +1908,7 @@ msgid ""
 "usage: urpmf [options] pattern-expression\n"
 msgstr ""
 "urpmf versio %s\n"
-"Copyright (C) 2002-2006 Mandriva.\n"
+"Copyright (C) 2002-2011 Mandriva.\n"
 "Tämä on vapaa ohjelmisto, jota saa levittää GNU GPL -lisenssin mukaisesti.\n"
 "\n"
 "Käyttö: urpmf [valitsimet] hakulauseke\n"
@@ -2188,7 +2198,7 @@ msgid "no xml-info available for medium \"%s\""
 msgstr "Medialle \"%s\" ei löydy xml-info -tiedostoa"
 
 #: ../urpmi:78
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -2198,7 +2208,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi versio %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "Tämä on vapaa ohjelmisto, jota saa levittää GNU GPL -lisenssin mukaisesti.\n"
 "\n"
 "Käyttö:\n"
@@ -2751,7 +2761,7 @@ msgstr "Paina Enter liittämisen jälkeen..."
 #. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
 #. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
 #: ../urpmi.addmedia:36
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "usage: urpmi.addmedia [options] <name> <url>\n"
 "where <url> is one of\n"
@@ -2789,6 +2799,7 @@ msgstr ""
 "\n"
 "  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
 "  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
+"  urpmi.addmedia --distrib -- zeroconf\n"
 "\n"
 "\n"
 "ja [valitsimet] ovat\n"
@@ -2967,7 +2978,7 @@ msgid "Can't use %s with remote medium"
 msgstr "%s ei voida käyttää etämedian kanssa"
 
 #: ../urpmi.recover:28
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi.recover version %s\n"
 "Copyright (C) 2006-2011 Mandriva.\n"
@@ -2977,10 +2988,10 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi.recover version %s\n"
-"Copyright (C) 2006 Mandriva.\n"
+"Copyright (C) 2006-2011 Mandriva.\n"
 "Tämä on vapaa ohjelmisto, jota saa levittää GNU GPL -lisenssin mukaisesti.\n"
 "\n"
-"käyttö:\n"
+"Käyttö:\n"
 
 #: ../urpmi.recover:34
 #, c-format
@@ -3060,17 +3071,17 @@ msgstr "Virheellinen komentorivi [%s]\n"
 #: ../urpmi.recover:84
 #, c-format
 msgid "You can't specify --checkpoint and --rollback at the same time\n"
-msgstr "--checkpoint- ja --rollback -valitsimia ei voi käyttää yhtaikaa\n"
+msgstr "--checkpoint- ja --rollback -valitsimia ei voi käyttää samanaikaisesti\n"
 
 #: ../urpmi.recover:86
 #, c-format
 msgid "You can't specify --checkpoint and --list at the same time\n"
-msgstr "--checkpoint- ja --list -valitsimia ei voi käyttää yhtaikaa\n"
+msgstr "--checkpoint- ja --list -valitsimia ei voi käyttää samanaikaisesti\n"
 
 #: ../urpmi.recover:88
 #, c-format
 msgid "You can't specify --rollback and --list at the same time\n"
-msgstr "--rollback- ja --list -valitsimia ei voi käyttää yhtaikaa\n"
+msgstr "--rollback- ja --list -valitsimia ei voi käyttää samanaikaisesti\n"
 
 #: ../urpmi.recover:90
 #, c-format
@@ -3085,7 +3096,7 @@ msgstr "Toimenpiteitä ei löydetty %s jälkeen\n"
 #: ../urpmi.recover:130
 #, c-format
 msgid "You must be superuser to do this"
-msgstr "Sinun pitää olla pääkäyttäjä tämän toiminnon suorittamiseksi"
+msgstr "Toiminto vaatii pääkäyttäjän oikeudet"
 
 #: ../urpmi.recover:143 ../urpmi.recover:209
 #, c-format
@@ -3236,7 +3247,7 @@ msgid "enabling media %s"
 msgstr "Otetaan media \"%s\" käyttöön"
 
 #: ../urpmq:40
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmq version %s\n"
 "Copyright (C) 2000-2011 Mandriva.\n"
@@ -3246,7 +3257,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmq versio %s\n"
-"Copyright (C) 2000-2006 Mandriva.\n"
+"Copyright (C) 2000-2011 Mandriva.\n"
 "Tämä on vapaa ohjelmisto, jota saa levittää GNU GPL -lisenssin mukaisesti.\n"
 "\n"
 "Käyttö:\n"
@@ -3324,9 +3335,9 @@ msgstr ""
 "-s).\n"
 
 #: ../urpmq:67
-#, fuzzy, c-format
+#, c-format
 msgid "  --sources      - print source URLs of selected packages\n"
-msgstr "  --sourcerpm    - tulosta lähdekoodipaketin nimi.\n"
+msgstr "  --sources      - näytä valittujen pakettien lähdeosoite (URL)\n"
 
 #: ../urpmq:69
 #, c-format
