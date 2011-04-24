@@ -46,10 +46,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-ro\n"
 "Report-Msgid-Bugs-To: https://qa.mandriva.com/\n"
-"POT-Creation-Date: 2011-04-10 16:21+0200\n"
+"POT-Creation-Date: 2011-04-22 19:28+0200\n"
 "PO-Revision-Date: 2011-04-18 12:32+0000\n"
 "Last-Translator: Cătălin Florin RUSSEN <cfrussen@yahoo.co.uk>\n"
 "Language-Team: Romanian <cooker-i18n@mandrivalinux.org>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -420,7 +421,7 @@ msgstr "Totul este deja instalat"
 msgid "Installation finished"
 msgstr "Instalare terminată"
 
-#: ../gurpmi2:407 ../urpme:171
+#: ../gurpmi2:407 ../urpme:169
 #, c-format
 msgid "removing %s"
 msgstr "se înlătură %s"
@@ -787,45 +788,80 @@ msgstr "nu s-a găsit webfech, versiunile suportate sînt: %s\n"
 msgid "unable to handle protocol: %s"
 msgstr "nu se poate folosi protocolul: %s"
 
-#: ../urpm/dudf.pm:195
+#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:522 ../urpmi:538 ../urpmi:644
 #, c-format
+msgid "Nn"
+msgstr "Nn"
+
+#: ../urpm/dudf.pm:73
+#, c-format
+msgid ""
+"A problem occurred. You can contribute to the improvement of the Mandriva "
+"upgrade\n"
+"process by uploading an automatically generated report to a Mandriva "
+"server.\n"
+"No personal information will be transmitted. More information is available "
+"at\n"
+"http://doc4.mandriva.org/bin/dudf/.\n"
+msgstr ""
+
+#: ../urpm/dudf.pm:74
+#, fuzzy, c-format
+msgid "Do you want to generate and upload a report?"
+msgstr "Doriți să trimiteți un raport DUDF la Mandriva?"
+
+#: ../urpm/dudf.pm:80 ../urpmi:524 ../urpmi:539 ../urpmi:645
+#: ../urpmi.addmedia:136
+#, c-format
+msgid " (Y/n) "
+msgstr " (D/n) "
+
+#: ../urpm/dudf.pm:220
+#, fuzzy, c-format
 msgid ""
 "# Here are logs of your DUDF uploads.\n"
 "# Line format is : <date time of generation> <uid>\n"
 "# You can use uids to see the content of your uploads at this url :\n"
-"# http://dudf.forge.mandriva.com/"
+"# http://dudf.forge.mandriva.com/\n"
 msgstr ""
 "# Aici vă sînt jurnalele încărcărilor DUDF.\n"
 "# Formatul liniei este : <data generării> <uid>\n"
 "# Puteți folosi UID-ul să vizualizați încărcările voastre la adresa URL:\n"
 "# http://dudf.forge.mandriva.com/"
 
-#: ../urpm/dudf.pm:239
+#: ../urpm/dudf.pm:276 ../urpm/dudf.pm:322
 #, c-format
 msgid "curl is missing, cannot upload DUDF file.\n"
 msgstr "curl lipsește, nu se poate încărca fișierul DUDF.\n"
 
-#: ../urpm/dudf.pm:242
+#: ../urpm/dudf.pm:279
 #, c-format
 msgid "Compressing DUDF data... "
 msgstr "Se compresează datele DUDF..."
 
-#: ../urpm/dudf.pm:244 ../urpm/dudf.pm:245
+#: ../urpm/dudf.pm:281 ../urpm/dudf.pm:282
 #, c-format
 msgid "NOT OK\n"
 msgstr "EROARE\n"
 
-#: ../urpm/dudf.pm:253 ../urpm/dudf.pm:487
+#: ../urpm/dudf.pm:290 ../urpm/dudf.pm:476
 #, c-format
 msgid "OK\n"
 msgstr "OK\n"
 
-#: ../urpm/dudf.pm:255
+#: ../urpm/dudf.pm:292
 #, c-format
 msgid "Uploading DUDF data:\n"
 msgstr "Se încarcă datele DUDF:\n"
 
-#: ../urpm/dudf.pm:276
+#: ../urpm/dudf.pm:310
+#, c-format
+msgid ""
+"\n"
+"Command:"
+msgstr ""
+
+#: ../urpm/dudf.pm:315
 #, c-format
 msgid ""
 "\n"
@@ -836,7 +872,7 @@ msgstr ""
 "Vă puteți consulta raportul DUDF la următoarea adresă URL:\n"
 "\t"
 
-#: ../urpm/dudf.pm:279
+#: ../urpm/dudf.pm:318
 #, c-format
 msgid ""
 "You can access a log of your uploads in\n"
@@ -845,37 +881,34 @@ msgstr ""
 "Vă puteți accesa jurnalul încărcărilor în\n"
 "\t"
 
-#: ../urpm/dudf.pm:360 ../urpm/msg.pm:76 ../urpmi:522 ../urpmi:538
-#: ../urpmi:644
-#, c-format
-msgid "Nn"
-msgstr "Nn"
+#: ../urpm/dudf.pm:325
+#, fuzzy, c-format
+msgid "Testing synthesis file presence ..."
+msgstr "se examinează fișierul synthesis [%s]"
 
-#: ../urpm/dudf.pm:361
+#: ../urpm/dudf.pm:344
 #, c-format
 msgid ""
-"A problem has been encountered. You can help Mandriva to improve package\n"
-"installation by uploading a DUDF report file.\n"
-"This is a part of the Mancoosi european research project.\n"
-"More at http://www.mancoosi.org\n"
+"\n"
+"The synthesis file (media '%s', %s) is already available on the Mandriva "
+"DUDF server.\n"
 msgstr ""
-"S-a întîlnit o problemă. Puteți ajuta Mandriva să-și amelioreze instalarea\n"
-"pachetelor prin trimiterea unui fișier de raport DUDF.\n"
-"Aceasta este o parte din proiectul european de cercetare Mancoosi.\n"
-"Mai multe la http://www.mancoosi.org\n"
 
-#: ../urpm/dudf.pm:362
-#, c-format
-msgid "Do you want to upload a DUDF report to Mandriva?"
-msgstr "Doriți să trimiteți un raport DUDF la Mandriva?"
-
-#: ../urpm/dudf.pm:363 ../urpmi:524 ../urpmi:539 ../urpmi:645
-#: ../urpmi.addmedia:136
-#, c-format
-msgid " (Y/n) "
-msgstr " (D/n) "
+#: ../urpm/dudf.pm:346
+#, fuzzy, c-format
+msgid ""
+"\n"
+"Uploading synthesis file ..."
+msgstr "se examinează fișierul synthesis [%s]"
 
 #: ../urpm/dudf.pm:364
+#, c-format
+msgid ""
+"\n"
+"Synthesis successfully uploaded. It can be downloaded from"
+msgstr ""
+
+#: ../urpm/dudf.pm:421
 #, c-format
 msgid ""
 "\n"
@@ -883,11 +916,6 @@ msgid ""
 msgstr ""
 "\n"
 "Generare DUDF..."
-
-#: ../urpm/dudf.pm:491
-#, c-format
-msgid "Cannot write DUDF file.\n"
-msgstr "Nu se poate crea fișierul DUDF.\n"
 
 #: ../urpm/get_pkgs.pm:16
 #, c-format
@@ -1414,7 +1442,7 @@ msgstr "se preia lista de servere alternative de la %s"
 msgid "Yy"
 msgstr "Dd"
 
-#: ../urpm/msg.pm:107 ../urpme:165 ../urpmi.addmedia:136
+#: ../urpm/msg.pm:107 ../urpme:163 ../urpmi.addmedia:136
 #, c-format
 msgid " (y/N) "
 msgstr " (d/N) "
@@ -1618,7 +1646,7 @@ msgstr ""
 msgid "No package named %s"
 msgstr "Nici un pachet numit %s"
 
-#: ../urpm/select.pm:178 ../urpme:119
+#: ../urpm/select.pm:178 ../urpme:117
 #, c-format
 msgid "The following packages contain %s: %s"
 msgstr "Următoarele pachete conțin %s: %s"
@@ -1837,17 +1865,17 @@ msgstr ""
 msgid "Only superuser is allowed to remove packages"
 msgstr "Doar administratorul poate înlătura pachete"
 
-#: ../urpme:110
+#: ../urpme:108
 #, c-format
 msgid "unknown packages"
 msgstr "pachete necunoscute "
 
-#: ../urpme:110
+#: ../urpme:108
 #, c-format
 msgid "unknown package"
 msgstr "pachet necunoscut "
 
-#: ../urpme:125
+#: ../urpme:123
 #, c-format
 msgid "Removing the following package will break your system:"
 msgid_plural "Removing the following packages will break your system:"
@@ -1855,17 +1883,17 @@ msgstr[0] "Înlăturarea următorului pachet va corupe sistemul:"
 msgstr[1] "Înlăturarea următoarelor pachete va corupe sistemul:"
 msgstr[2] "Înlăturarea următoarelor pachete va corupe sistemul:"
 
-#: ../urpme:130
+#: ../urpme:128
 #, c-format
 msgid "Nothing to remove"
 msgstr "Nimic de înlăturat"
 
-#: ../urpme:147
+#: ../urpme:145
 #, c-format
 msgid "No orphans to remove"
 msgstr "Nu sînt pachete orfane de înlăturat"
 
-#: ../urpme:153
+#: ../urpme:151
 #, c-format
 msgid "To satisfy dependencies, the following package will be removed"
 msgid_plural ""
@@ -1876,7 +1904,7 @@ msgstr[1] ""
 msgstr[2] ""
 "Pentru satisfacerea dependențelor, următoarele pachete %d vor fi înlăturate"
 
-#: ../urpme:158
+#: ../urpme:156
 #, c-format
 msgid "(orphan package)"
 msgid_plural "(orphan packages)"
@@ -1884,7 +1912,7 @@ msgstr[0] "(pachet orfan)"
 msgstr[1] "(pachete orfane)"
 msgstr[2] "(pachete orfane)"
 
-#: ../urpme:165
+#: ../urpme:163
 #, c-format
 msgid "Remove %d package?"
 msgid_plural "Remove %d packages?"
@@ -1892,17 +1920,17 @@ msgstr[0] "Se înlătură pachetul %d?"
 msgstr[1] "Se înlătură pachetele %d?"
 msgstr[2] "Se înlătură pachetele %d?"
 
-#: ../urpme:170
+#: ../urpme:168
 #, c-format
 msgid "testing removal of %s"
 msgstr "se testează înlăturarea lui %s"
 
-#: ../urpme:192
+#: ../urpme:185
 #, c-format
 msgid "Removal failed"
 msgstr "Înlăturare eșuată"
 
-#: ../urpme:194
+#: ../urpme:187
 #, c-format
 msgid "Removal is possible"
 msgstr "Înlăturarea este posibilă"
@@ -2768,10 +2796,8 @@ msgstr "Anulează"
 msgid "Press Enter when mounted..."
 msgstr "Apăsați „Enter” după montare..."
 
-#. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not
-#. be translated!
-#. -PO: neither the ``with''.  Only what is between <brackets> can be
-#. translated.
+#. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
+#. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
 #: ../urpmi.addmedia:36
 #, c-format
 msgid ""
@@ -3563,3 +3589,18 @@ msgstr "Interfața grafică pentru instalarea fișierelor RPM"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Instalator de programe"
+
+#~ msgid ""
+#~ "A problem has been encountered. You can help Mandriva to improve package\n"
+#~ "installation by uploading a DUDF report file.\n"
+#~ "This is a part of the Mancoosi european research project.\n"
+#~ "More at http://www.mancoosi.org\n"
+#~ msgstr ""
+#~ "S-a întîlnit o problemă. Puteți ajuta Mandriva să-și amelioreze "
+#~ "instalarea\n"
+#~ "pachetelor prin trimiterea unui fișier de raport DUDF.\n"
+#~ "Aceasta este o parte din proiectul european de cercetare Mancoosi.\n"
+#~ "Mai multe la http://www.mancoosi.org\n"
+
+#~ msgid "Cannot write DUDF file.\n"
+#~ msgstr "Nu se poate crea fișierul DUDF.\n"
