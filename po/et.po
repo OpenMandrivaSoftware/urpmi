@@ -1,15 +1,15 @@
 # Translation of urpmi.po to Estonian.
 # Copyright (C) 1999, 2003 Free Software Foundation, Inc.
 # Riho Kurg <rx@linux.ee>, 1999.
-# Marek Laane <bald@starman.ee>, 2003-2009
+# Marek Laane <bald@smail.ee>, 2003-2009, 2011
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-22 19:28+0200\n"
-"PO-Revision-Date: 2009-10-21 15:55+0300\n"
-"Last-Translator: Marek Laane <bald@starman.ee>\n"
+"PO-Revision-Date: 2011-04-25 14:18+0300\n"
+"Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian <linux-ee@lists.eenet.ee>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
@@ -105,7 +105,7 @@ msgid "Choose location to save file"
 msgstr "Valige faili salvestamise koht"
 
 #: ../gurpmi.pm:39
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -115,7 +115,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi versioon %s\n"
-"Autoriõigus © 1999-2008 Mandriva.\n"
+"Autoriõigus © 1999-2010 Mandriva.\n"
 "See on vaba tarkvara, mida võib levitada vastavalt GNU Üldise Avaliku "
 "Litsentsi tingimustele.\n"
 "\n"
@@ -752,11 +752,15 @@ msgid ""
 "at\n"
 "http://doc4.mandriva.org/bin/dudf/.\n"
 msgstr ""
+"Tekkis probleem. Te võite aidata parandada Mandriva uuendamisprotsessi,\n"
+"laadides Mandriva serverisse automaatselt loodud aruande.\n"
+"Sellega ei edastata mingit isiklikku teavet.\n"
+"Täpsemalt kõneldakse sellest aadressil http://doc4.mandriva.org/bin/dudf/.\n"
 
 #: ../urpm/dudf.pm:74
-#, fuzzy, c-format
+#, c-format
 msgid "Do you want to generate and upload a report?"
-msgstr "Kas soovite saata Mandrivale DUDF-i aruande?"
+msgstr "Kas soovite luua ja saata aruande?"
 
 #: ../urpm/dudf.pm:80 ../urpmi:524 ../urpmi:539 ../urpmi:645
 #: ../urpmi.addmedia:136
@@ -765,7 +769,7 @@ msgid " (Y/n) "
 msgstr " (J/e) "
 
 #: ../urpm/dudf.pm:220
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "# Here are logs of your DUDF uploads.\n"
 "# Line format is : <date time of generation> <uid>\n"
@@ -775,7 +779,7 @@ msgstr ""
 "# Need on Teie DUDF-i üleslaadimiste logid.\n"
 "# Rea vorming on järgmine : <loomise kuupäev kellaaeg> <uid>\n"
 "# UID-de järgi võib oma üleslaadimise sisu näha aadressil:\n"
-"# http://dudf.forge.mandriva.com/"
+"# http://dudf.forge.mandriva.com/\n"
 
 #: ../urpm/dudf.pm:276 ../urpm/dudf.pm:322
 #, c-format
@@ -808,6 +812,8 @@ msgid ""
 "\n"
 "Command:"
 msgstr ""
+"\n"
+"Käsk:"
 
 #: ../urpm/dudf.pm:315
 #, c-format
@@ -830,9 +836,9 @@ msgstr ""
 "\t"
 
 #: ../urpm/dudf.pm:325
-#, fuzzy, c-format
+#, c-format
 msgid "Testing synthesis file presence ..."
-msgstr "sünteesifaili [%s] uurimine"
+msgstr "Sünteesifaili olemasolu testimine..."
 
 #: ../urpm/dudf.pm:344
 #, c-format
@@ -841,13 +847,17 @@ msgid ""
 "The synthesis file (media '%s', %s) is already available on the Mandriva "
 "DUDF server.\n"
 msgstr ""
+"\n"
+"Sünteesifail (andmekandja '%s', %s) on juba Mandriva DUDF serveris olemas.\n"
 
 #: ../urpm/dudf.pm:346
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Uploading synthesis file ..."
-msgstr "sünteesifaili [%s] uurimine"
+msgstr ""
+"\n"
+"Sünteesifaili üleslaadimine..."
 
 #: ../urpm/dudf.pm:364
 #, c-format
@@ -855,6 +865,8 @@ msgid ""
 "\n"
 "Synthesis successfully uploaded. It can be downloaded from"
 msgstr ""
+"\n"
+"Sünteesifail laaditi edukalt üles. Selle saab alla laadida aadressilt"
 
 #: ../urpm/dudf.pm:421
 #, c-format
@@ -1203,9 +1215,9 @@ msgid "skipping non compatible media `%s' (for %s)"
 msgstr "jäetakse vahele mitteühilduv andmekandja '%s' (%s)"
 
 #: ../urpm/media.pm:1018
-#, fuzzy, c-format
+#, c-format
 msgid "ignoring non-free medium `%s'"
-msgstr "andmekandja %s ignoreerimine"
+msgstr "mittevaba tarkvara andmekandja %s ignoreerimine"
 
 #: ../urpm/media.pm:1061
 #, c-format
@@ -1417,17 +1429,17 @@ msgstr "Väljalase"
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "Dist"
-msgstr ""
+msgstr "Dist"
 
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "DEpoch"
-msgstr ""
+msgstr "DEpohh"
 
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "Arch"
-msgstr "Arhit."
+msgstr "Arhit"
 
 #: ../urpm/msg.pm:179
 #, c-format
@@ -1712,7 +1724,7 @@ msgid "Can't move file %s to %s"
 msgstr "Faili %s liigutamine asukohta %s ei ole võimalik"
 
 #: ../urpme:41
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpme version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -1722,7 +1734,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpme versioon %s\n"
-"Autoriõigus © 1999-2008 Mandriva.\n"
+"Autoriõigus © 1999-2010 Mandriva.\n"
 "See on vaba tarkvara, mida võib levitada vastavalt GNU Üldise Avaliku "
 "Litsentsi tingimustele.\n"
 "\n"
@@ -1871,7 +1883,7 @@ msgid "Removal is possible"
 msgstr "Eemaldamine on võimalik"
 
 #: ../urpmf:29
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmf version %s\n"
 "Copyright (C) 2002-2011 Mandriva.\n"
@@ -1881,7 +1893,7 @@ msgid ""
 "usage: urpmf [options] pattern-expression\n"
 msgstr ""
 "urpmf versioon %s\n"
-"Autoriõigus (C) 2002-2006 Mandriva.\n"
+"Autoriõigus (C) 2002-2011 Mandriva.\n"
 "See on vaba tarkvara, mida võib levitada vastavalt GNU Üldise Avaliku "
 "Litsentsi tingimustele.\n"
 "\n"
@@ -2168,7 +2180,7 @@ msgid "no xml-info available for medium \"%s\""
 msgstr "andmekandjale \"%s\" ei leitud XML-infot"
 
 #: ../urpmi:78
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -2178,7 +2190,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi versioon %s\n"
-"Autoriõigus © 1999-2008 Mandriva.\n"
+"Autoriõigus © 1999-2011 Mandriva.\n"
 "See on vaba tarkvara, mida võib levitada vastavalt GNU Üldise Avaliku "
 "Litsentsi tingimustele.\n"
 "\n"
@@ -2720,7 +2732,7 @@ msgstr "Vajutage Enter, kui see on tehtud..."
 #. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
 #. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
 #: ../urpmi.addmedia:36
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "usage: urpmi.addmedia [options] <name> <url>\n"
 "where <url> is one of\n"
@@ -2758,6 +2770,7 @@ msgstr ""
 "\n"
 "  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
 "  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
+"  urpmi.addmedia --distrib --zeroconf\n"
 "\n"
 "\n"
 "ja [võti] on üks järgmistest\n"
@@ -2935,7 +2948,7 @@ msgid "Can't use %s with remote medium"
 msgstr "%s kasutamine ei ole võimalik võrguandmekandjaga"
 
 #: ../urpmi.recover:28
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi.recover version %s\n"
 "Copyright (C) 2006-2011 Mandriva.\n"
@@ -2945,7 +2958,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi.recover versioon %s\n"
-"Autoriõigus © 2006 Mandriva.\n"
+"Autoriõigus © 2006-2011 Mandriva.\n"
 "See on vaba tarkvara, mida võib levitada vastavalt GNU Üldise Avaliku "
 "Litsentsi tingimustele.\n"
 "\n"
@@ -3202,7 +3215,7 @@ msgid "enabling media %s"
 msgstr "andmekandja %s arvestamine"
 
 #: ../urpmq:40
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmq version %s\n"
 "Copyright (C) 2000-2011 Mandriva.\n"
@@ -3212,7 +3225,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmq versioon %s\n"
-"Autoriõigus (C) 2000-2006 Mandriva.\n"
+"Autoriõigus (C) 2000-2011 Mandriva.\n"
 "See on vaba tarkvara, mida võib levitada vastavalt GNU Üldise Avaliku "
 "Litsentsi tingimustele.\n"
 "\n"
@@ -3288,9 +3301,9 @@ msgstr ""
 "  --src          - järgmine pakett on lähtetekstipakett (sama, mis -s).\n"
 
 #: ../urpmq:67
-#, fuzzy, c-format
+#, c-format
 msgid "  --sources      - print source URLs of selected packages\n"
-msgstr "  --sourcerpm    - näitab lähtekoodi RPM-i nime.\n"
+msgstr "  --sources      - näitab valitud pakettide lähtekoodi URL-i.\n"
 
 #: ../urpmq:69
 #, c-format
