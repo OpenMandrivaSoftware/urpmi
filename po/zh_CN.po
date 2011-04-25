@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-22 19:28+0200\n"
-"PO-Revision-Date: 2008-03-30 14:22+0800\n"
+"PO-Revision-Date: 2011-04-25 9:45+0800\n"
 "Last-Translator: 汤诗语 <shiyu@mandriva.org>\n"
 "Language-Team: Mandriva Linux Simplified Chinese <cooker-i18n@mandrivalinux."
 "org>\n"
@@ -111,7 +111,7 @@ msgid "Choose location to save file"
 msgstr "选择保存文件的位置"
 
 #: ../gurpmi.pm:39
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -121,7 +121,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi 版本 %s\n"
-"版权 (C) 1999-2008 Mandriva。\n"
+"版权 (C) 1999-2010 Mandriva。\n"
 "这是自由软件，可以依照 GNU GPL 重新发布。\n"
 "\n"
 "用法:\n"
@@ -745,9 +745,9 @@ msgid ""
 msgstr ""
 
 #: ../urpm/dudf.pm:74
-#, fuzzy, c-format
+#, c-format
 msgid "Do you want to generate and upload a report?"
-msgstr "您是否想要将 DUDF 报告上传到 Mandriva 吗?"
+msgstr "您想要生成并上传报告吗?"
 
 #: ../urpm/dudf.pm:80 ../urpmi:524 ../urpmi:539 ../urpmi:645
 #: ../urpmi.addmedia:136
@@ -756,7 +756,7 @@ msgid " (Y/n) "
 msgstr "(是(Y)/否(n))[是]"
 
 #: ../urpm/dudf.pm:220
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "# Here are logs of your DUDF uploads.\n"
 "# Line format is : <date time of generation> <uid>\n"
@@ -766,7 +766,7 @@ msgstr ""
 "# 这是您 DUDF 上传的日志。\n"
 "# 每一行的格式都是: <生成的时间> <uid>\n"
 "# 您可以在下面的网站使用 uid 查看您上传的内容:\n"
-"# http://dudf.forge.mandriva.com/"
+"# http://dudf.forge.mandriva.com/\n"
 
 #: ../urpm/dudf.pm:276 ../urpm/dudf.pm:322
 #, c-format
@@ -798,7 +798,7 @@ msgstr "上传 DUDF 数据:\n"
 msgid ""
 "\n"
 "Command:"
-msgstr ""
+msgstr "\n命令："
 
 #: ../urpm/dudf.pm:315
 #, c-format
@@ -821,9 +821,9 @@ msgstr ""
 "\t"
 
 #: ../urpm/dudf.pm:325
-#, fuzzy, c-format
+#, c-format
 msgid "Testing synthesis file presence ..."
-msgstr "正在检查综合文件 [%s]"
+msgstr "正在测试综合文件是否存在..."
 
 #: ../urpm/dudf.pm:344
 #, c-format
@@ -834,11 +834,11 @@ msgid ""
 msgstr ""
 
 #: ../urpm/dudf.pm:346
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Uploading synthesis file ..."
-msgstr "正在检查综合文件 [%s]"
+msgstr "\n正在上传综合文件..."
 
 #: ../urpm/dudf.pm:364
 #, c-format
@@ -1191,9 +1191,9 @@ msgid "skipping non compatible media `%s' (for %s)"
 msgstr "跳过不兼容的介质“%s”(原因是 %s)"
 
 #: ../urpm/media.pm:1018
-#, fuzzy, c-format
+#, c-format
 msgid "ignoring non-free medium `%s'"
-msgstr "忽略介质 %s"
+msgstr "忽略非自由软件介质“%s”"
 
 #: ../urpm/media.pm:1061
 #, c-format
@@ -1405,12 +1405,12 @@ msgstr "释放"
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "Dist"
-msgstr ""
+msgstr "厂商"
 
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "DEpoch"
-msgstr ""
+msgstr "厂标"
 
 #: ../urpm/msg.pm:170
 #, c-format
@@ -1691,7 +1691,7 @@ msgid "Can't move file %s to %s"
 msgstr "无法将文件 %s 移动到 %s"
 
 #: ../urpme:41
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpme version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -1701,7 +1701,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmf 版本 %s\n"
-"版权 (C) 1999-2008 Mandriva。\n"
+"版权 (C) 1999-2010 Mandriva。\n"
 "这是自由软件，可以依照 GNU GPL 重新发布。\n"
 "\n"
 "用法:\n"
@@ -1837,7 +1837,7 @@ msgid "Removal is possible"
 msgstr "可以删除"
 
 #: ../urpmf:29
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmf version %s\n"
 "Copyright (C) 2002-2011 Mandriva.\n"
@@ -1847,7 +1847,7 @@ msgid ""
 "usage: urpmf [options] pattern-expression\n"
 msgstr ""
 "urpmf 版本 %s\n"
-"版权 (C) 2002-2006 Mandriva。\n"
+"版权 (C) 2002-2011 Mandriva。\n"
 "这是自由软件，可以依照 GNU GPL 重新发布。\n"
 "\n"
 "用法:\n"
@@ -2120,7 +2120,7 @@ msgid "no xml-info available for medium \"%s\""
 msgstr "介质“%s”没有可用的 xml-info"
 
 #: ../urpmi:78
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -2130,7 +2130,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi 版本 %s\n"
-"版权 (C) 1999-2008 Mandriva。\n"
+"版权 (C) 1999-2011 Mandriva。\n"
 "这是自由软件，可以依照 GNU GPL 重新发布。\n"
 "\n"
 "用法:\n"
@@ -2844,7 +2844,7 @@ msgid "Can't use %s with remote medium"
 msgstr "远程介质无法使用 %s"
 
 #: ../urpmi.recover:28
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi.recover version %s\n"
 "Copyright (C) 2006-2011 Mandriva.\n"
@@ -2853,8 +2853,8 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpmq 版本 %s\n"
-"版权 (C) 2000-2006 Mandriva。\n"
+"urpmi.recover 版本 %s\n"
+"版权 (C) 2006-2011 Mandriva。\n"
 "这是自由软件，可以依照 GNU GPL 重新发布。\n"
 "\n"
 "用法:\n"
@@ -2865,9 +2865,9 @@ msgid "  --checkpoint   - set repackaging start now\n"
 msgstr ""
 
 #: ../urpmi.recover:35
-#, fuzzy, c-format
+#, c-format
 msgid "  --noclean      - don't clean repackage directory on checkpoint\n"
-msgstr "  --noclean      - 不从缓存中清除 rpm。\n"
+msgstr "  --noclean      - 到达检查点时不清除再打包目录\n"
 
 #: ../urpmi.recover:37
 #, c-format
@@ -2964,14 +2964,14 @@ msgid "Writing rpm macros file [%s]...\n"
 msgstr "正在获取 rpm 文件[%s]..."
 
 #: ../urpmi.recover:185
-#, fuzzy, c-format
+#, c-format
 msgid "No rollback date found\n"
-msgstr "没有找到更新日志\n"
+msgstr "没有找到回滚日期\n"
 
 #: ../urpmi.recover:188
 #, c-format
 msgid "Rollback until %s...\n"
-msgstr ""
+msgstr "正在回滚至 %s...\n"
 
 #: ../urpmi.recover:195
 #, fuzzy, c-format
@@ -3100,7 +3100,7 @@ msgid "enabling media %s"
 msgstr "启用介质 %s"
 
 #: ../urpmq:40
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmq version %s\n"
 "Copyright (C) 2000-2011 Mandriva.\n"
@@ -3110,7 +3110,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmq 版本 %s\n"
-"版权 (C) 2000-2006 Mandriva。\n"
+"版权 (C) 2000-2011 Mandriva。\n"
 "这是自由软件，可以依照 GNU GPL 重新发布。\n"
 "\n"
 "用法:\n"
@@ -3178,9 +3178,9 @@ msgid "  --src          - next package is a source package (same as -s).\n"
 msgstr "  --src          - 下一个软件包是源程序包(和 -s 一样)。\n"
 
 #: ../urpmq:67
-#, fuzzy, c-format
+#, c-format
 msgid "  --sources      - print source URLs of selected packages\n"
-msgstr "  --sourcerpm    - 打印源 rpm 名称。\n"
+msgstr "  --sources      - 打印选中软件包的源 URL\n"
 
 #: ../urpmq:69
 #, c-format
@@ -3372,21 +3372,3 @@ msgstr "图形化安装 RPM 软件包"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "软件安装程序"
-
-#~ msgid ""
-#~ "A problem has been encountered. You can help Mandriva to improve package\n"
-#~ "installation by uploading a DUDF report file.\n"
-#~ "This is a part of the Mancoosi european research project.\n"
-#~ "More at http://www.mancoosi.org\n"
-#~ msgstr ""
-#~ "发生了问题。要帮助 Mandriva 改进软件包安装，您可以上传 DUDF 报告文件。\n"
-#~ "这是 Mancoosi 欧洲研究计划的一部分。\n"
-#~ "更多内容请看 http://www.mancoosi.org\n"
-
-#~ msgid "Cannot write DUDF file.\n"
-#~ msgstr "无法写入 DUDF 文件。\n"
-
-#~ msgid ""
-#~ "  --sources      - give all source packages before downloading (root "
-#~ "only).\n"
-#~ msgstr "  --sources      - 下载前给出所有的源文件包(root 专用)。\n"
