@@ -44,11 +44,11 @@
 # Cristian GHERMAN <c_gherman@yahoo.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: urpmi-ro\n"
+"Project-Id-Version: Test - Mandriva Linux 2011 Translation\n"
 "Report-Msgid-Bugs-To: https://qa.mandriva.com/\n"
 "POT-Creation-Date: 2011-04-22 19:28+0200\n"
-"PO-Revision-Date: 2011-04-25 17:03+0000\n"
-"Last-Translator: Cătălin Florin RUSSEN <cfrussen@yahoo.co.uk>\n"
+"PO-Revision-Date: 2011-04-25 19:57+0000\n"
+"Last-Translator: Piratu <cfrussen@yahoo.co.uk>\n"
 "Language-Team: Romanian <cooker-i18n@mandrivalinux.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -158,7 +158,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi versiunea %s\n"
-"Drepturi de autor (C) 1999-2010 Mandriva.\n"
+"Drepturi de autor (C) 1999-2011 Mandriva.\n"
 "Acesta este un program liber și poate fi redistribuit în termenii GNU GPL.\n"
 "\n"
 "utilizare:\n"
@@ -313,7 +313,7 @@ msgstr " (pentru instalare)"
 #: ../gurpmi2:187
 #, c-format
 msgid "Package choice"
-msgstr "Alegerea pachetor"
+msgstr "Alegerea pachetelor"
 
 #: ../gurpmi2:188
 #, c-format
@@ -584,8 +584,8 @@ msgstr "nici o expresie pentru închidere"
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
-"urpmf așteaptă implicit un regexp. ar trebui să utilizați opțiunea „--"
-"literal”"
+"urpmf așteaptă implicit o expresie regulată; ar trebui să utilizați opțiunea "
+"„--literal”"
 
 #: ../urpm/args.pm:496
 #, c-format
@@ -845,7 +845,7 @@ msgstr "curl lipsește, nu se poate încărca fișierul DUDF.\n"
 #: ../urpm/dudf.pm:279
 #, c-format
 msgid "Compressing DUDF data... "
-msgstr "Se compresează datele DUDF..."
+msgstr "Se compresează datele DUDF... "
 
 #: ../urpm/dudf.pm:281 ../urpm/dudf.pm:282
 #, c-format
@@ -894,7 +894,7 @@ msgstr ""
 #: ../urpm/dudf.pm:325
 #, c-format
 msgid "Testing synthesis file presence ..."
-msgstr "Se testează prezența fișierului de sinteză..."
+msgstr "Se testează prezența fișierului synthesis..."
 
 #: ../urpm/dudf.pm:344
 #, c-format
@@ -904,7 +904,7 @@ msgid ""
 "DUDF server.\n"
 msgstr ""
 "\n"
-"Fișierul de sinteză (mediul „%s”, %s) este deja disponibil pe serverul "
+"Fișierul synthesis (mediul „%s”, %s) este deja disponibil pe serverul "
 "Mandriva DUDF.\n"
 
 #: ../urpm/dudf.pm:346
@@ -914,7 +914,7 @@ msgid ""
 "Uploading synthesis file ..."
 msgstr ""
 "\n"
-"Se încarcă fișierul de sinteză..."
+"Se încarcă fișierul synthesis..."
 
 #: ../urpm/dudf.pm:364
 #, c-format
@@ -923,7 +923,7 @@ msgid ""
 "Synthesis successfully uploaded. It can be downloaded from"
 msgstr ""
 "\n"
-"Fișierul de sinteză a fost încărcat cu succes. Poate fi descărcat de la"
+"Fișierul synthesis a fost încărcat cu succes. Poate fi descărcat de la"
 
 #: ../urpm/dudf.pm:421
 #, c-format
@@ -1010,12 +1010,12 @@ msgstr "Informații suplimentare despre pachetul %s"
 #: ../urpm/ldap.pm:71
 #, c-format
 msgid "Cannot create ldap cache directory"
-msgstr "Nu se poate crea directorul LDAP de pretampon"
+msgstr "Nu se poate crea directorul LDAP de pre-tampon"
 
 #: ../urpm/ldap.pm:73
 #, c-format
 msgid "Cannot write cache file for ldap\n"
-msgstr "Nu se poate scrie fișierul pretampon pentru LDAP\n"
+msgstr "Nu se poate scrie fișierul pre-tampon pentru LDAP\n"
 
 #: ../urpm/ldap.pm:162
 #, c-format
@@ -1497,7 +1497,7 @@ msgstr "DEpoch"
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "Arch"
-msgstr "Arhit"
+msgstr "Arh."
 
 #: ../urpm/msg.pm:179
 #, c-format
@@ -1798,7 +1798,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpme versiunea %s\n"
-"Drepturi de autor (C) 1999-2010 Mandriva.\n"
+"Drepturi de autor (C) 1999-2011 Mandriva.\n"
 "Acesta este un program liber și poate fi redistribuit în termenii GNU GPL.\n"
 "\n"
 "utilizare:\n"
@@ -2054,8 +2054,8 @@ msgstr "Expresii regulate:\n"
 #, c-format
 msgid "  text           - any text is parsed as a regexp, unless -l is used.\n"
 msgstr ""
-"  text         - orice text este analizat ca regexp, cu excepția utilizării "
-"lui -l.\n"
+"  text         - orice text este analizat ca expresie regulată, cu excepția "
+"utilizării lui -l.\n"
 
 #: ../urpmf:53
 #, c-format
@@ -2349,12 +2349,13 @@ msgstr "  --install-src  - instalează numai pachetele sursă (fără binare).\n
 #, c-format
 msgid "  --clean        - remove rpm from cache before anything else.\n"
 msgstr ""
-"  --clean        - șterge pachetele din pretampon înainte de orice altceva.\n"
+"  --clean        - șterge pachetele din pre-tampon înainte de orice "
+"altceva.\n"
 
 #: ../urpmi:111
 #, c-format
 msgid "  --noclean      - don't clean rpms from cache.\n"
-msgstr "  --noclean      - nu se șterg pachetele din pretampon.\n"
+msgstr "  --noclean      - nu se șterg pachetele din pre-tampon.\n"
 
 #: ../urpmi:113
 #, c-format
@@ -3155,7 +3156,7 @@ msgstr "Nu s-au găsit tranzacții de la %s\n"
 #: ../urpmi.recover:130
 #, c-format
 msgid "You must be superuser to do this"
-msgstr "Trebuie să fiți administratro pentru a face asta"
+msgstr "Trebuie să fiți administrator pentru a face asta"
 
 #: ../urpmi.recover:143 ../urpmi.recover:209
 #, c-format
@@ -3251,8 +3252,8 @@ msgstr "  --no-ignore    - fără actualizare, se marchează mediul ca activat.\
 #, c-format
 msgid "  --probe-rpms   - do not use synthesis, use rpm files directly\n"
 msgstr ""
-"  --probe-rpms   - nu se utilizează synthesis, se utilizeză direct fișierele "
-"rpm\n"
+"  --probe-rpms   - nu se utilizează synthesis, se utilizează direct "
+"fișierele rpm\n"
 
 #: ../urpmi.update:50
 #, c-format
@@ -3382,7 +3383,7 @@ msgstr "  --list-aliases - listează aliasurile paralele disponibile.\n"
 msgid ""
 "  --dump-config  - dump the config in form of urpmi.addmedia argument.\n"
 msgstr ""
-"  --dump-config  - afișează configurarea in formatul argumentului urpmi."
+"  --dump-config  - afișează configurarea în formatul argumentului urpmi."
 "addmedia.\n"
 
 #: ../urpmq:66
@@ -3599,7 +3600,7 @@ msgstr ""
 #: ../urpmq:503
 #, c-format
 msgid "No changelog found\n"
-msgstr "Nu s-a gasit jurnalul de modificări\n"
+msgstr "Nu s-a găsit jurnalul de modificări\n"
 
 #: ../gurpmi.desktop.in.h:1
 msgid "Graphical front end to install RPM files"
