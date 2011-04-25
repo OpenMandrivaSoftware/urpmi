@@ -47,7 +47,7 @@ msgstr ""
 "Project-Id-Version: urpmi-ro\n"
 "Report-Msgid-Bugs-To: https://qa.mandriva.com/\n"
 "POT-Creation-Date: 2011-04-22 19:28+0200\n"
-"PO-Revision-Date: 2011-04-18 12:32+0000\n"
+"PO-Revision-Date: 2011-04-25 17:03+0000\n"
 "Last-Translator: Cătălin Florin RUSSEN <cfrussen@yahoo.co.uk>\n"
 "Language-Team: Romanian <cooker-i18n@mandrivalinux.org>\n"
 "Language: ro\n"
@@ -804,11 +804,18 @@ msgid ""
 "at\n"
 "http://doc4.mandriva.org/bin/dudf/.\n"
 msgstr ""
+"S-a ivit o problemă. Puteți contribui la ameliorarea procesului de "
+"actualizare majoră\n"
+"a distribuției Mandriva prin încărcarea pe serverul Mandriva al unui raport "
+"generat automat.\n"
+"Nu se va transmite nici o informație personală. Mai multe detalii sînt "
+"disponibile la\n"
+"http://doc4.mandriva.org/bin/dudf/.\n"
 
 #: ../urpm/dudf.pm:74
-#, fuzzy, c-format
+#, c-format
 msgid "Do you want to generate and upload a report?"
-msgstr "Doriți să trimiteți un raport DUDF la Mandriva?"
+msgstr "Doriți să generați un raport de încărcare?"
 
 #: ../urpm/dudf.pm:80 ../urpmi:524 ../urpmi:539 ../urpmi:645
 #: ../urpmi.addmedia:136
@@ -817,17 +824,18 @@ msgid " (Y/n) "
 msgstr " (D/n) "
 
 #: ../urpm/dudf.pm:220
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "# Here are logs of your DUDF uploads.\n"
 "# Line format is : <date time of generation> <uid>\n"
 "# You can use uids to see the content of your uploads at this url :\n"
 "# http://dudf.forge.mandriva.com/\n"
 msgstr ""
-"# Aici vă sînt jurnalele încărcărilor DUDF.\n"
-"# Formatul liniei este : <data generării> <uid>\n"
-"# Puteți folosi UID-ul să vizualizați încărcările voastre la adresa URL:\n"
-"# http://dudf.forge.mandriva.com/"
+"# Aici sînt jurnalele încărcărilor voastre DUDF.\n"
+"# Formatul liniei este: <data și ora generării> <uid>\n"
+"# Puteți utiliza uid pentru a vedea conținutul încărcărilor voastre la "
+"această adresă:\n"
+"# http://dudf.forge.mandriva.com/\n"
 
 #: ../urpm/dudf.pm:276 ../urpm/dudf.pm:322
 #, c-format
@@ -860,6 +868,8 @@ msgid ""
 "\n"
 "Command:"
 msgstr ""
+"\n"
+"Comandă:"
 
 #: ../urpm/dudf.pm:315
 #, c-format
@@ -882,9 +892,9 @@ msgstr ""
 "\t"
 
 #: ../urpm/dudf.pm:325
-#, fuzzy, c-format
+#, c-format
 msgid "Testing synthesis file presence ..."
-msgstr "se examinează fișierul synthesis [%s]"
+msgstr "Se testează prezența fișierului de sinteză..."
 
 #: ../urpm/dudf.pm:344
 #, c-format
@@ -893,13 +903,18 @@ msgid ""
 "The synthesis file (media '%s', %s) is already available on the Mandriva "
 "DUDF server.\n"
 msgstr ""
+"\n"
+"Fișierul de sinteză (mediul „%s”, %s) este deja disponibil pe serverul "
+"Mandriva DUDF.\n"
 
 #: ../urpm/dudf.pm:346
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Uploading synthesis file ..."
-msgstr "se examinează fișierul synthesis [%s]"
+msgstr ""
+"\n"
+"Se încarcă fișierul de sinteză..."
 
 #: ../urpm/dudf.pm:364
 #, c-format
@@ -907,6 +922,8 @@ msgid ""
 "\n"
 "Synthesis successfully uploaded. It can be downloaded from"
 msgstr ""
+"\n"
+"Fișierul de sinteză a fost încărcat cu succes. Poate fi descărcat de la"
 
 #: ../urpm/dudf.pm:421
 #, c-format
@@ -2796,8 +2813,10 @@ msgstr "Anulează"
 msgid "Press Enter when mounted..."
 msgstr "Apăsați „Enter” după montare..."
 
-#. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
-#. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
+#. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not
+#. be translated!
+#. -PO: neither the ``with''.  Only what is between <brackets> can be
+#. translated.
 #: ../urpmi.addmedia:36
 #, c-format
 msgid ""
@@ -3589,18 +3608,3 @@ msgstr "Interfața grafică pentru instalarea fișierelor RPM"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Instalator de programe"
-
-#~ msgid ""
-#~ "A problem has been encountered. You can help Mandriva to improve package\n"
-#~ "installation by uploading a DUDF report file.\n"
-#~ "This is a part of the Mancoosi european research project.\n"
-#~ "More at http://www.mancoosi.org\n"
-#~ msgstr ""
-#~ "S-a întîlnit o problemă. Puteți ajuta Mandriva să-și amelioreze "
-#~ "instalarea\n"
-#~ "pachetelor prin trimiterea unui fișier de raport DUDF.\n"
-#~ "Aceasta este o parte din proiectul european de cercetare Mancoosi.\n"
-#~ "Mai multe la http://www.mancoosi.org\n"
-
-#~ msgid "Cannot write DUDF file.\n"
-#~ msgstr "Nu se poate crea fișierul DUDF.\n"
