@@ -1,5 +1,6 @@
-Version 6.59 - 22 April 2011, by Per Øyvind Karlsen
+Version 6.59 - 25 April 2011, by Per Øyvind Karlsen
 
+- add support for --nofdigests & --notriggers
 - merge DUDF changes from Alexandre Lissy
 - revert archscore() hack as it's now fixed properly
 

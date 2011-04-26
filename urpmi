@@ -150,6 +150,8 @@ usage:
 ") . N("  --ignoresize   - don't verify disk space before installation.
 ") . N("  --ignorearch   - allow to install rpms for unmatched architectures.
 ") . N("  --noscripts    - do not execute package scriptlet(s)
+") . N("  --notriggers   - do not execute package trigger(s)
+") . N("  --nofdigests   - do not verify digest of file(s)
 ") . N("  --replacefiles - ignore file conflicts
 ") . N("  --repackage    - Re-package the files before erasing
 ") . N("  --skip         - packages which installation should be skipped
@@ -259,7 +261,7 @@ if ($restricted) {
     foreach (qw(keep verify-rpm)) { $urpm->{options}{$_} = 1 }
     #- forbid some other options
     urpm::error_restricted($urpm) if $urpm->{root} || $options{usedistrib} || $force || $env || $parallel || $options{synthesis} || $auto_update || $options{auto_orphans};
-    foreach (qw(allow-nodeps allow-force curl-options rsync-options wget-options prozilla-options noscripts)) {
+    foreach (qw(allow-nodeps allow-force curl-options rsync-options wget-options prozilla-options noscripts notriggers nofdigests)) {
 	urpm::error_restricted($urpm) if $urpm->{options}{$_};
     }
 }

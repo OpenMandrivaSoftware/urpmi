@@ -144,6 +144,8 @@ sub options {
 	nosize => $urpm->{options}{ignoresize},
 	ignorearch => $urpm->{options}{ignorearch},
 	noscripts => $urpm->{options}{noscripts},
+	notriggers => $urpm->{options}{notriggers},
+	nofdigests => $urpm->{options}{nofdigests},
 	replacefiles => $urpm->{options}{replacefiles},
     );
 }
@@ -154,7 +156,7 @@ sub options {
 #-      callback_inst, callback_trans, callback_report_uninst,
 #-      post_clean_cache, verbose
 #-   (more options for trans->run)
-#-      excludedocs, nosize, noscripts, oldpackage, repackage, replacepkgs, justdb, ignorearch
+#-      excludedocs, nosize, noscripts, notriggers, nofdigests, oldpackage, repackage, replacepkgs, justdb, ignorearch
 sub install {
     my ($urpm, $remove, $install, $upgrade, %options) = @_;
     $options{translate_message} = 1;

@@ -461,6 +461,7 @@ urpm/parallel.pm
 urpm/parallel_ka_run.pm
 urpm/parallel_ssh.pm
 urpm/prompt.pm
+urpm/README.dudf
 urpm/README.ka-run
 urpm/README.ssh
 urpm/removable.pm

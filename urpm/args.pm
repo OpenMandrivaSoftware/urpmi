@@ -194,6 +194,8 @@ my %options_spec = (
 	'ignoresize' => sub { $urpm->{options}{ignoresize} = 1 },
 	'ignorearch' => sub { $urpm->{options}{ignorearch} = 1 },
 	noscripts => sub { $urpm->{options}{noscripts} = 1 },
+	notriggers => sub { $urpm->{options}{notriggers} = 1 },
+	nofdigests => sub { $urpm->{options}{nofdigests} = 1 },
 	replacefiles => sub { $urpm->{options}{replacefiles} = 1 },
 	repackage => sub { $urpm->{options}{repackage} = 1 },
 	'more-choices' => sub { $urpm->{options}{morechoices} = 1 },

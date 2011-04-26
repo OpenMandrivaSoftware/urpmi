@@ -54,6 +54,7 @@ usage:
 ") . N("  --urpmi-root   - use another root for urpmi db & rpm installation.
 ") . N("  --justdb       - update only the rpm db, not the filesystem.
 ") . N("  --noscripts    - do not execute package scriptlet(s).
+") . N("  --triggers     - do not execute package trigger(s).
 ") . N("  --use-distrib  - configure urpme on the fly from a distrib tree, useful
                    to (un)install a chroot with --root option.
 ") . N("  --verbose, -v  - verbose mode.
@@ -77,7 +78,7 @@ if ($env) {
 
 #- rurpme checks
 if ($options{restricted}) {
-    urpm::error_restricted($urpm) if $urpm->{root} || $options{usedistrib} || $urpm->{options}{noscripts} || $parallel;
+    urpm::error_restricted($urpm) if $urpm->{root} || $options{usedistrib} || $urpm->{options}{noscripts} || $urpm->{options}{notriggers} || $parallel;
 }
 
 unless ($test) {
