@@ -3,21 +3,21 @@
 # EUSKARA: Mandriva Linux translation.
 # Copyright (C) 2001-2002, 2004, 2005, 2006, 2008, 2009 Free Software Foundation, Inc.
 #
-# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2001-2002, 2003, 2004, 2005, 2006, 2008, 2009.
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2001-2002, 2003, 2004, 2005, 2006, 2008, 2009, 2011.
 # Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>, 2004.
 msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-22 19:28+0200\n"
-"PO-Revision-Date: 2009-11-01 09:36+0100\n"
-"Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
-"Language-Team: Basque <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2011-04-28 11:10+0200\n"
+"Last-Translator: Ignigo Salvador Azurmendi <xalba@euskalnet.net>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 0.3\n"
+"X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../gurpmi:32
@@ -107,7 +107,7 @@ msgid "Choose location to save file"
 msgstr "Aukeratu fitxategiko gordetzeko kokalekua"
 
 #: ../gurpmi.pm:39
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -117,7 +117,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi %s bertsioa\n"
-"Copyright © 1999-2005 Mandriva.\n"
+"Copyright © 1999-2010 Mandriva.\n"
 "Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
 "birbanatu daiteke.\n"
 "\n"
@@ -758,11 +758,17 @@ msgid ""
 "at\n"
 "http://doc4.mandriva.org/bin/dudf/.\n"
 msgstr ""
+"Arazo bat gertatu da. Mandrivaren hobekuntza prozesuan lagundu dezakezu, "
+"automatikoki\n"
+"sortutako txosten bat Mandriva zerbitzari batera igota.\n"
+"Ez da informazio pertsonalik bidaliko. Informazio gehiago eskuragarri dago"
+"hemen\n"
+"http://doc4.mandriva.org/bin/dudf/.\n"
 
 #: ../urpm/dudf.pm:74
-#, fuzzy, c-format
+#, c-format
 msgid "Do you want to generate and upload a report?"
-msgstr "Mandrivara DUDF txosten bat igo nahi duzu?"
+msgstr "Txosten bat sortu eta igo nahi duzu?"
 
 #: ../urpm/dudf.pm:80 ../urpmi:524 ../urpmi:539 ../urpmi:645
 #: ../urpmi.addmedia:136
@@ -771,17 +777,17 @@ msgid " (Y/n) "
 msgstr " (B/e) "
 
 #: ../urpm/dudf.pm:220
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "# Here are logs of your DUDF uploads.\n"
 "# Line format is : <date time of generation> <uid>\n"
 "# You can use uids to see the content of your uploads at this url :\n"
 "# http://dudf.forge.mandriva.com/\n"
 msgstr ""
-"# Hemen daude zure DUDF igoeren egunkari sarrerak.\n"
+"# Hemen daude zure DUDF igoeren egunkariak.\n"
 "# Lerroaren formatua: <sorrera data ordua> <uid>\n"
 "# uid-ak erabili ditzakezu zure igoeren edukia ikusteko url honetan:\n"
-"# http://dudf.forge.mandriva.com/"
+"# http://dudf.forge.mandriva.com/\n"
 
 #: ../urpm/dudf.pm:276 ../urpm/dudf.pm:322
 #, c-format
@@ -814,6 +820,8 @@ msgid ""
 "\n"
 "Command:"
 msgstr ""
+"\n"
+"Komandoa:"
 
 #: ../urpm/dudf.pm:315
 #, c-format
@@ -836,9 +844,9 @@ msgstr ""
 "\t"
 
 #: ../urpm/dudf.pm:325
-#, fuzzy, c-format
+#, c-format
 msgid "Testing synthesis file presence ..."
-msgstr "[%s] laburpen-fitxategia aztertzen"
+msgstr "Sintesi fitxategien presentzia aztertzen ..."
 
 #: ../urpm/dudf.pm:344
 #, c-format
@@ -847,13 +855,18 @@ msgid ""
 "The synthesis file (media '%s', %s) is already available on the Mandriva "
 "DUDF server.\n"
 msgstr ""
+"\n"
+"Sintesi fitxategia ('%s' euskarria, %s) dagoeneko eskuragarri dago Mandriva "
+"DUDF zerbitzarian.\n"
 
 #: ../urpm/dudf.pm:346
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Uploading synthesis file ..."
-msgstr "[%s] laburpen-fitxategia aztertzen"
+msgstr ""
+"\n"
+"Sintesi fitxategia igotzen ..."
 
 #: ../urpm/dudf.pm:364
 #, c-format
@@ -861,6 +874,8 @@ msgid ""
 "\n"
 "Synthesis successfully uploaded. It can be downloaded from"
 msgstr ""
+"\n"
+"Sistesiren igoera arrakastatsua. Hemendik jaitsi daiteke"
 
 #: ../urpm/dudf.pm:421
 #, c-format
@@ -1215,9 +1230,9 @@ msgid "skipping non compatible media `%s' (for %s)"
 msgstr "alboratu '%s' euskarri ez bateragarria (%s-rentzako)"
 
 #: ../urpm/media.pm:1018
-#, fuzzy, c-format
+#, c-format
 msgid "ignoring non-free medium `%s'"
-msgstr "%s euskarria baztertzen"
+msgstr "`%s' euskarri ez-askea baztertzen"
 
 #: ../urpm/media.pm:1061
 #, c-format
@@ -1429,17 +1444,17 @@ msgstr "Askapena"
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "Dist"
-msgstr ""
+msgstr "Bana"
 
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "DEpoch"
-msgstr ""
+msgstr "BGarai"
 
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "Arch"
-msgstr "Arkitektura"
+msgstr "Arki"
 
 #: ../urpm/msg.pm:179
 #, c-format
@@ -1729,7 +1744,7 @@ msgid "Can't move file %s to %s"
 msgstr "Ezin da %s fitxategiar %s-ra mugitu"
 
 #: ../urpme:41
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpme version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -1739,7 +1754,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpme %s bertsioa\n"
-"Copyright © 1999-2008 Mandriva.\n"
+"Copyright © 1999-2010 Mandriva.\n"
 "Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
 "birbanatu daiteke.\n"
 "\n"
@@ -1884,7 +1899,7 @@ msgid "Removal is possible"
 msgstr "Ezabatzea posible da"
 
 #: ../urpmf:29
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmf version %s\n"
 "Copyright (C) 2002-2011 Mandriva.\n"
@@ -1894,11 +1909,11 @@ msgid ""
 "usage: urpmf [options] pattern-expression\n"
 msgstr ""
 "urpmf %s bertsioa\n"
-"Copyright © 2002-2006 Mandriva.\n"
+"Copyright © 2002-2011 Mandriva.\n"
 "Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
 "birbanatu daiteke.\n"
 "\n"
-"erabilera: urpmf [aukerak] adierazpen-patroia\n"
+"erabilera: urpmf [aukerak] adierazpen-eredua\n"
 
 #: ../urpmf:36
 #, c-format
@@ -2181,7 +2196,7 @@ msgid "no xml-info available for medium \"%s\""
 msgstr "ez dago \"%s\" euskarriarentzako xml-info eskuragarri"
 
 #: ../urpmi:78
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -2191,7 +2206,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi %s bertsioa\n"
-"Copyright © 1999-2005 Mandriva.\n"
+"Copyright © 1999-2011 Mandriva.\n"
 "Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
 "birbanatu daiteke.\n"
 "\n"
@@ -2738,7 +2753,7 @@ msgstr "Sakatu 'Sartu' muntatuta dagoenean..."
 #. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
 #. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
 #: ../urpmi.addmedia:36
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "usage: urpmi.addmedia [options] <name> <url>\n"
 "where <url> is one of\n"
@@ -2776,6 +2791,7 @@ msgstr ""
 "\n"
 "  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
 "  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
+"  urpmi.addmedia --distrib --zeroconf\n"
 "\n"
 "\n"
 "eta [aukerak] hemengoak diren\n"
@@ -2952,7 +2968,7 @@ msgid "Can't use %s with remote medium"
 msgstr "Urruneko euskarriekin ezin da %s erabili"
 
 #: ../urpmi.recover:28
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi.recover version %s\n"
 "Copyright (C) 2006-2011 Mandriva.\n"
@@ -2961,8 +2977,8 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpmq %s bertsioa\n"
-"Copyright © 2000-2006 Mandriva.\n"
+"urpmi.recover %s bertsioa\n"
+"Copyright © 2006-2011 Mandriva.\n"
 "Hau software askea da eta birbanatu egin daiteke GNU GLParen baldintzak "
 "betetzen badira.\n"
 "\n"
@@ -2971,30 +2987,33 @@ msgstr ""
 #: ../urpmi.recover:34
 #, c-format
 msgid "  --checkpoint   - set repackaging start now\n"
-msgstr ""
+msgstr "  --checkpoint   - ezarri birpaketatzea orain hasteko\n"
 
 #: ../urpmi.recover:35
-#, fuzzy, c-format
+#, c-format
 msgid "  --noclean      - don't clean repackage directory on checkpoint\n"
-msgstr "  --noclean      - ez garbitu rpm-ak katxetik.\n"
+msgstr ""
+"  --noclean      - ez garbitu birpaketatzeko direktorioa kontrol-puntua "
+"ezartzerakoan.\n"
 
 #: ../urpmi.recover:37
 #, c-format
 msgid ""
 "  --list         - list transactions since provided date/duration argument\n"
 msgstr ""
+"  --list         - zerrendatu transakzioak adierazitako data/iraupen "
+"argumentuetatik hona\n"
 
 #: ../urpmi.recover:38
-#, fuzzy, c-format
+#, c-format
 msgid "  --list-all     - list all transactions in rpmdb (long)\n"
-msgstr ""
-"  --list-url  - erabilgarri dauden euskarriak eta haien url-a zerrendatzen "
-"ditu.\n"
+msgstr "  --list-all     - zerrendatu rpmdb-ko transakzio guztiak (luzea)\n"
 
 #: ../urpmi.recover:39
 #, c-format
 msgid "  --list-safe    - list transactions since checkpoint\n"
 msgstr ""
+"  --list-safe    - zerrendatu kontrol-puntuaren ondorengo transakzioak\n"
 
 #: ../urpmi.recover:40
 #, c-format
@@ -3002,93 +3021,95 @@ msgid ""
 "  --rollback     - rollback until specified date,\n"
 "                   or rollback the specified number of transactions\n"
 msgstr ""
+"  --rollback     - zehaztutako data arte atzera egin,\n"
+"                   edo zehaztutako eragiketa kopurua desegin\n"
 
 #: ../urpmi.recover:42
-#, fuzzy, c-format
+#, c-format
 msgid "  --disable      - turn off repackaging\n"
-msgstr "  --filename     - paketearen fitxategi izena\n"
+msgstr "  --disable     - berpaketatzea ezgaitu\n"
 
 #: ../urpmi.recover:57
-#, fuzzy, c-format
+#, c-format
 msgid "Invalid date or duration [%s]\n"
-msgstr "%s direktorioarentzako jabe baliogabea"
+msgstr "Data edo iraupen baliogabea [%s]\n"
 
 #: ../urpmi.recover:65
-#, fuzzy, c-format
+#, c-format
 msgid "Repackage directory not defined\n"
-msgstr "ez da %s paketea aurkitu."
+msgstr "Birpaketatzeko direktorioa ez da zehaztu\n"
 
 #: ../urpmi.recover:68
-#, fuzzy, c-format
+#, c-format
 msgid "Can't write to repackage directory [%s]\n"
-msgstr "%s direktorioa sortzeak huts egin du"
+msgstr "Ezin da birpaketatzeko direktoriora [%s] idatzi\n"
 
 #: ../urpmi.recover:70
-#, fuzzy, c-format
+#, c-format
 msgid "Cleaning up repackage directory [%s]...\n"
-msgstr "%s direktorioa sortzeak huts egin du"
+msgstr "Birpaketatzeko direktorioa [%s] garbitzen...\n"
 
 #: ../urpmi.recover:72
 #, c-format
 msgid "%d file removed\n"
 msgid_plural "%d files removed\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "fitxategi %d ezabatuta\n"
+msgstr[1] "%d fitxategi ezabatuta\n"
 
 #: ../urpmi.recover:82
 #, c-format
 msgid "Spurious command-line arguments [%s]\n"
-msgstr ""
+msgstr "Komando-lerro argumentu okerrak [%s]\n"
 
 #: ../urpmi.recover:84
 #, c-format
 msgid "You can't specify --checkpoint and --rollback at the same time\n"
-msgstr ""
+msgstr "Ezin dituzu --checkpoint eta --rollback aukerak batera zehaztu\n"
 
 #: ../urpmi.recover:86
 #, c-format
 msgid "You can't specify --checkpoint and --list at the same time\n"
-msgstr ""
+msgstr "Ezin dituzu --checkpoint eta --list aukerak batera zehaztu\n"
 
 #: ../urpmi.recover:88
 #, c-format
 msgid "You can't specify --rollback and --list at the same time\n"
-msgstr ""
+msgstr "Ezin dituzu --rollback eta --list aukerak batera zehaztu\n"
 
 #: ../urpmi.recover:90
 #, c-format
 msgid "You can't specify --disable along with another option"
-msgstr ""
+msgstr "Ezin duzu --disable beste aukera batekin zehaztu"
 
 #: ../urpmi.recover:115
 #, c-format
 msgid "No transaction found since %s\n"
-msgstr ""
+msgstr "%s ondoren ez da beste transakziorik aurkitu\n"
 
 #: ../urpmi.recover:130
 #, c-format
 msgid "You must be superuser to do this"
-msgstr ""
+msgstr "Superrerabiltzailea izan behar duzu hau egiteko"
 
 #: ../urpmi.recover:143 ../urpmi.recover:209
-#, fuzzy, c-format
+#, c-format
 msgid "Writing rpm macros file [%s]...\n"
-msgstr "[%s] rpm fitxategia berreskuratzen..."
+msgstr "rpm macro fitxategia [%s] idazten...\n"
 
 #: ../urpmi.recover:185
-#, fuzzy, c-format
+#, c-format
 msgid "No rollback date found\n"
-msgstr "Ez da changelog  aurkitu\n"
+msgstr "Ez da aurkitu atzera bueltatzeko datarik\n"
 
 #: ../urpmi.recover:188
 #, c-format
 msgid "Rollback until %s...\n"
-msgstr ""
+msgstr "Atzera bueltatu %s arte...\n"
 
 #: ../urpmi.recover:195
-#, fuzzy, c-format
+#, c-format
 msgid "Disabling repackaging\n"
-msgstr "[birpaketatzen]"
+msgstr "Birpaketatzea ezgaitzen\n"
 
 #: ../urpmi.removemedia:38
 #, c-format
@@ -3214,7 +3235,7 @@ msgid "enabling media %s"
 msgstr "%s euskarria gaitzen"
 
 #: ../urpmq:40
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmq version %s\n"
 "Copyright (C) 2000-2011 Mandriva.\n"
@@ -3224,7 +3245,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmq %s bertsioa\n"
-"Copyright © 2000-2006 Mandriva.\n"
+"Copyright © 2000-2011 Mandriva.\n"
 "Hau software askea da eta birbanatu egin daiteke GNU GLParen baldintzak "
 "betetzen badira.\n"
 "\n"
@@ -3302,9 +3323,9 @@ msgstr ""
 "  --src          - hurrengo paketea iturburu-pakete bat da (-s bezala).\n"
 
 #: ../urpmq:67
-#, fuzzy, c-format
+#, c-format
 msgid "  --sources      - print source URLs of selected packages\n"
-msgstr "  --sourcerpm    - sourcerpm erakutsi.\n"
+msgstr "  --sources    - inprimatu hautatutako paketeen URL-ak\n"
 
 #: ../urpmq:69
 #, c-format
