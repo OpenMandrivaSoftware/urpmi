@@ -12,20 +12,21 @@
 # Roberto Rosselli Del Turco <rosselli@ling.unipi.it>, 2002,2003.
 # Ruggero Tonelli <ruggero@valtellinux.it>, 1999, 2000, 2004, 2005, 2006.
 # Andrea Celli <andrea.celli@libero.it>, 2006,  2007, 2008, 2009.
-# Moreno Manzini <moreno.mg@gmail.com>, 2009.
+# Moreno Manzini <moreno.mg@gmail.com>, 2009, 2011.
+# Moreno Manzini <moreno@mediacom.it>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-22 19:28+0200\n"
-"PO-Revision-Date: 2009-10-22 06:09+0200\n"
-"Last-Translator: Moreno Manzini <moreno.mg@gmail.com>\n"
+"PO-Revision-Date: 2011-04-25 18:00+0200\n"
+"Last-Translator: Moreno Manzini <moreno@mediacom.it>\n"
 "Language-Team: Italian <timl@freelist.org>\n"
-"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: it\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../gurpmi:32
@@ -115,7 +116,7 @@ msgid "Choose location to save file"
 msgstr "Scegli dove salvare il file"
 
 #: ../gurpmi.pm:39
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -125,7 +126,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi versione %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
+"Copyright (C) 1999-2010 Mandriva.\n"
 "Questo è software libero e può essere ridistribuito secondo i termini della "
 "licenza GNU GPL.\n"
 "\n"
@@ -774,11 +775,18 @@ msgid ""
 "at\n"
 "http://doc4.mandriva.org/bin/dudf/.\n"
 msgstr ""
+"Si è presentato un problema. Puoi contribuire al miglioramento del processo "
+"di aggiornamento \n"
+"di Mandriva inviando un rapporto, generato automaticamente, al server di "
+"Mandriva.\n"
+"Non sarà trasmessa alcuna informazione personale. Maggiori informazioni sono "
+"disponibili a \n"
+"http://doc4.mandriva.org/bin/dudf/.\n"
 
 #: ../urpm/dudf.pm:74
-#, fuzzy, c-format
+#, c-format
 msgid "Do you want to generate and upload a report?"
-msgstr "Desideri inviare il rapporto DUDF a Mandriva?"
+msgstr "Desideri generare ed inviare il rapporto?"
 
 #: ../urpm/dudf.pm:80 ../urpmi:524 ../urpmi:539 ../urpmi:645
 #: ../urpmi.addmedia:136
@@ -787,7 +795,7 @@ msgid " (Y/n) "
 msgstr " (S/n) "
 
 #: ../urpm/dudf.pm:220
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "# Here are logs of your DUDF uploads.\n"
 "# Line format is : <date time of generation> <uid>\n"
@@ -797,8 +805,8 @@ msgstr ""
 "# Questo è il log degli invii di file DUDF effettuati.\n"
 "# Il formato della linea è : <date ed ora di generazione> <uid>\n"
 "# Puoi usare gli uid per controllare il contenuto degli invii al seguente "
-"URL :\n"
-"# http://dudf.forge.mandriva.com/"
+"URL:\n"
+"# http://dudf.forge.mandriva.com/\n"
 
 #: ../urpm/dudf.pm:276 ../urpm/dudf.pm:322
 #, c-format
@@ -831,6 +839,8 @@ msgid ""
 "\n"
 "Command:"
 msgstr ""
+"\n"
+"Comando:"
 
 #: ../urpm/dudf.pm:315
 #, c-format
@@ -853,9 +863,9 @@ msgstr ""
 "\t"
 
 #: ../urpm/dudf.pm:325
-#, fuzzy, c-format
+#, c-format
 msgid "Testing synthesis file presence ..."
-msgstr "esamino il file synthesis [%s]"
+msgstr "esamino la presenza del file synthesis ..."
 
 #: ../urpm/dudf.pm:344
 #, c-format
@@ -864,13 +874,18 @@ msgid ""
 "The synthesis file (media '%s', %s) is already available on the Mandriva "
 "DUDF server.\n"
 msgstr ""
+"\n"
+"Il file synthesis (media '%s', %s) è già disponibile sul server DUDF di "
+"Mandriva.\n"
 
 #: ../urpm/dudf.pm:346
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Uploading synthesis file ..."
-msgstr "esamino il file synthesis [%s]"
+msgstr ""
+"\n"
+"Invio del file synthesis ..."
 
 #: ../urpm/dudf.pm:364
 #, c-format
@@ -878,6 +893,8 @@ msgid ""
 "\n"
 "Synthesis successfully uploaded. It can be downloaded from"
 msgstr ""
+"\n"
+"Synthesis inviato correttamente. Può essere scaricato da"
 
 #: ../urpm/dudf.pm:421
 #, c-format
@@ -918,8 +935,8 @@ msgstr "impossibile estrarre un rpm dal pacchetto delta-rpm %s"
 msgid ""
 "created transaction for installing on %s (remove=%d, install=%d, upgrade=%d)"
 msgstr ""
-"creata transazione per installare su %s (rimuove=%d, installa=%d, aggiorna="
-"%d)"
+"creata transazione per installare su %s (rimuove=%d, installa=%d, aggiorna=%"
+"d)"
 
 #: ../urpm/install.pm:207
 #, c-format
@@ -1041,8 +1058,8 @@ msgid ""
 "needed, %s available).\n"
 "Are you sure you want to continue?"
 msgstr ""
-"Non c'è abbastanza spazio nel filesistem per recuperare tutti i pacchetti "
-"(%s necessario, %s disponibile).\n"
+"Non c'è abbastanza spazio nel filesistem per recuperare tutti i pacchetti (%"
+"s necessario, %s disponibile).\n"
 "Desideri comunque continuare?"
 
 #: ../urpm/main_loop.pm:171 ../urpm/main_loop.pm:211 ../urpm/main_loop.pm:294
@@ -1229,9 +1246,9 @@ msgid "skipping non compatible media `%s' (for %s)"
 msgstr "ignoro il supporto non compatibile \"%s\" (per %s)"
 
 #: ../urpm/media.pm:1018
-#, fuzzy, c-format
+#, c-format
 msgid "ignoring non-free medium `%s'"
-msgstr "Ignoro il supporto %s"
+msgstr "Ignoro il supporto non-free `%s'"
 
 #: ../urpm/media.pm:1061
 #, c-format
@@ -1443,12 +1460,12 @@ msgstr "Release"
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "Dist"
-msgstr ""
+msgstr "Dist"
 
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "DEpoch"
-msgstr ""
+msgstr "DEpoch"
 
 #: ../urpm/msg.pm:170
 #, c-format
@@ -1740,7 +1757,7 @@ msgid "Can't move file %s to %s"
 msgstr "Impossibile spostare il file %s a %s"
 
 #: ../urpme:41
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpme version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -1750,7 +1767,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpme versione %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
+"Copyright (C) 1999-2010 Mandriva.\n"
 "Questo è software libero e può essere ridistribuito secondo i termini della "
 "licenza GNU GPL.\n"
 "\n"
@@ -1901,7 +1918,7 @@ msgid "Removal is possible"
 msgstr "La rimozione è possibile"
 
 #: ../urpmf:29
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmf version %s\n"
 "Copyright (C) 2002-2011 Mandriva.\n"
@@ -1911,11 +1928,11 @@ msgid ""
 "usage: urpmf [options] pattern-expression\n"
 msgstr ""
 "urpmf versione %s\n"
-"Copyright (C) 2002-2006 Mandriva.\n"
+"Copyright (C) 2002-2011 Mandriva.\n"
 "Questo è software libero e può essere ridistribuito secondo i termini della "
 "licenza GNU GPL.\n"
 "\n"
-"uso: urpmf [options] chiave-ricerca\n"
+"uso: urpmf [opzioni] chiave-di-ricerca\n"
 
 #: ../urpmf:36
 #, c-format
@@ -2198,7 +2215,7 @@ msgid "no xml-info available for medium \"%s\""
 msgstr "manca il file xml-info per il supporto \"%s\""
 
 #: ../urpmi:78
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -2208,7 +2225,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi versione %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "Questo è software libero e può essere ridistribuito secondo i termini della "
 "licenza GNU GPL.\n"
 "\n"
@@ -2280,8 +2297,8 @@ msgstr ""
 #, c-format
 msgid "  --split-length - small transaction length, default is %d.\n"
 msgstr ""
-"  --split-length - per avere transazione più corte, il valore predefinito è "
-"%d.\n"
+"  --split-length - per avere transazione più corte, il valore predefinito è %"
+"d.\n"
 
 #: ../urpmi:107
 #, c-format
@@ -2767,7 +2784,7 @@ msgstr "Premi Invio dopo averlo montato..."
 #. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
 #. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
 #: ../urpmi.addmedia:36
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "usage: urpmi.addmedia [options] <name> <url>\n"
 "where <url> is one of\n"
@@ -2797,13 +2814,14 @@ msgstr ""
 "       http://<host>/<percorso>\n"
 "       cdrom://<path>\n"
 "\n"
-"uso: urpmi.addmedia [options] --distrib --mirrorlist <url>\n"
-"uso: urpmi.addmedia [options] --mirrorlist <url> <name> <percorso relativo>\n"
+"uso: urpmi.addmedia [opzioni] --distrib --mirrorlist <url>\n"
+"uso: urpmi.addmedia [opzioni] --mirrorlist <url> <name> <percorso relativo>\n"
 "\n"
 "esempi:\n"
 "\n"
 "  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
 "  urpmi.addmedia --mirrorlist '$MIRRORLIST' ripristina media/main/backports\n"
+"  urpmi.addmedia --distrib --zeroconf\n"
 "\n"
 "\n"
 "e [le opzioni sono] una combinazione di\n"
@@ -2977,7 +2995,7 @@ msgid "Can't use %s with remote medium"
 msgstr "Non si può usare %s con un supporto remoto"
 
 #: ../urpmi.recover:28
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi.recover version %s\n"
 "Copyright (C) 2006-2011 Mandriva.\n"
@@ -2987,7 +3005,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmq versione %s\n"
-"Copyright (C) 2000-2006 Mandriva.\n"
+"Copyright (C) 2000-2011 Mandriva.\n"
 "Questo è software libero e può essere ridistribuito secondo i termini della "
 "licenza GNU GPL.\n"
 "\n"
@@ -2996,28 +3014,31 @@ msgstr ""
 #: ../urpmi.recover:34
 #, c-format
 msgid "  --checkpoint   - set repackaging start now\n"
-msgstr ""
+msgstr "  --checkpoint   - Imposta l'avvio del repackage ora\n"
 
 #: ../urpmi.recover:35
-#, fuzzy, c-format
+#, c-format
 msgid "  --noclean      - don't clean repackage directory on checkpoint\n"
-msgstr "  --noclean      - mantieni nella cache i pacchetti rpm scaricati\n"
+msgstr ""
+"  --noclean      - non ripulisce la cartella repackage su di un checkpoint\n"
 
 #: ../urpmi.recover:37
 #, c-format
 msgid ""
 "  --list         - list transactions since provided date/duration argument\n"
 msgstr ""
+"  --list         - Lista tutte le transazioni a partire da una data / durata "
+"fornita come argomento\n"
 
 #: ../urpmi.recover:38
-#, fuzzy, c-format
+#, c-format
 msgid "  --list-all     - list all transactions in rpmdb (long)\n"
-msgstr "  --list-url   - elenca i supporti disponibili e la loro url.\n"
+msgstr "  --list-all     - elenca tutte le transazioni in rpmdb (lungo)\n"
 
 #: ../urpmi.recover:39
 #, c-format
 msgid "  --list-safe    - list transactions since checkpoint\n"
-msgstr ""
+msgstr "  --list-safe    - elenca le transazioni a partire da un checkpoint\n"
 
 #: ../urpmi.recover:40
 #, c-format
@@ -3025,93 +3046,96 @@ msgid ""
 "  --rollback     - rollback until specified date,\n"
 "                   or rollback the specified number of transactions\n"
 msgstr ""
+"  --rollback     - rollback fino ad una data specifica,\n"
+"                   o rollback di uno specifico numero di transazioni\n"
 
 #: ../urpmi.recover:42
-#, fuzzy, c-format
+#, c-format
 msgid "  --disable      - turn off repackaging\n"
-msgstr "  --filename           - nome dei pacchetti.\n"
+msgstr "  --disable      - disabilita il repackaging\n"
 
 #: ../urpmi.recover:57
-#, fuzzy, c-format
+#, c-format
 msgid "Invalid date or duration [%s]\n"
-msgstr "proprietario errato per la directory %s"
+msgstr "Data o durata errata [%s]\n"
 
 #: ../urpmi.recover:65
-#, fuzzy, c-format
+#, c-format
 msgid "Repackage directory not defined\n"
-msgstr "il pacchetto %s non è stato trovato."
+msgstr "Cartella repackage non definita\n"
 
 #: ../urpmi.recover:68
-#, fuzzy, c-format
+#, c-format
 msgid "Can't write to repackage directory [%s]\n"
-msgstr "Impossibile creare la directory %s"
+msgstr "Impossibile scrivere nella cartella repackage [%s]\n"
 
 #: ../urpmi.recover:70
-#, fuzzy, c-format
+#, c-format
 msgid "Cleaning up repackage directory [%s]...\n"
-msgstr "Impossibile creare la directory %s"
+msgstr "Impossibile ripulire la cartella repackage [%s]...\n"
 
 #: ../urpmi.recover:72
 #, c-format
 msgid "%d file removed\n"
 msgid_plural "%d files removed\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d file rimosso\n"
+msgstr[1] "%d file rimossi\n"
 
 #: ../urpmi.recover:82
 #, c-format
 msgid "Spurious command-line arguments [%s]\n"
-msgstr ""
+msgstr "Argomenti della riga di comando spuri [%s]\n"
 
 #: ../urpmi.recover:84
 #, c-format
 msgid "You can't specify --checkpoint and --rollback at the same time\n"
 msgstr ""
+"Non è possibile specificare contemporaneamente --checkpoint e --rollback\n"
 
 #: ../urpmi.recover:86
 #, c-format
 msgid "You can't specify --checkpoint and --list at the same time\n"
-msgstr ""
+msgstr "Non è possibile specificare contemporaneamente --checkpoint e --list\n"
 
 #: ../urpmi.recover:88
 #, c-format
 msgid "You can't specify --rollback and --list at the same time\n"
-msgstr ""
+msgstr "Non è possibile specificare contemporaneamente --rollback e --list\n"
 
 #: ../urpmi.recover:90
 #, c-format
 msgid "You can't specify --disable along with another option"
-msgstr ""
+msgstr "Non è possibile specificare --disable insieme ad un altra opzione"
 
 #: ../urpmi.recover:115
 #, c-format
 msgid "No transaction found since %s\n"
-msgstr ""
+msgstr "Nessuna transazione trovato dal %s\n"
 
 #: ../urpmi.recover:130
 #, c-format
 msgid "You must be superuser to do this"
-msgstr ""
+msgstr "Devi essere superuser per fare questo"
 
 #: ../urpmi.recover:143 ../urpmi.recover:209
-#, fuzzy, c-format
+#, c-format
 msgid "Writing rpm macros file [%s]...\n"
-msgstr "recupero il file rpm [%s] ..."
+msgstr "Scrittura file macro dello rpm  [%s]...\n"
 
 #: ../urpmi.recover:185
-#, fuzzy, c-format
+#, c-format
 msgid "No rollback date found\n"
-msgstr "Nessun elenco delle modifiche trovato\n"
+msgstr "Nessuna data di rollback trovata\n"
 
 #: ../urpmi.recover:188
 #, c-format
 msgid "Rollback until %s...\n"
-msgstr ""
+msgstr "Rollback fino a %s...\n"
 
 #: ../urpmi.recover:195
-#, fuzzy, c-format
+#, c-format
 msgid "Disabling repackaging\n"
-msgstr "[rimpacchetto]"
+msgstr "Disabilitazione del repackage\n"
 
 #: ../urpmi.removemedia:38
 #, c-format
@@ -3237,7 +3261,7 @@ msgid "enabling media %s"
 msgstr "rendo disponibile il supporto %s"
 
 #: ../urpmq:40
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmq version %s\n"
 "Copyright (C) 2000-2011 Mandriva.\n"
@@ -3247,7 +3271,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmq versione %s\n"
-"Copyright (C) 2000-2006 Mandriva.\n"
+"Copyright (C) 2000-2011 Mandriva.\n"
 "Questo è software libero e può essere ridistribuito secondo i termini della "
 "licenza GNU GPL.\n"
 "\n"
@@ -3324,9 +3348,9 @@ msgstr ""
 "s).\n"
 
 #: ../urpmq:67
-#, fuzzy, c-format
+#, c-format
 msgid "  --sources      - print source URLs of selected packages\n"
-msgstr "  --sourcerpm    - stampa il nome del pacchetto rpm sorgente.\n"
+msgstr "  --sources      - stampa gli URL sorgente dei pacchetti selezionati\n"
 
 #: ../urpmq:69
 #, c-format
