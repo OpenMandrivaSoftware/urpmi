@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: pt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-22 19:28+0200\n"
-"PO-Revision-Date: 2011-04-26 08:58+0100\n"
+"PO-Revision-Date: 2011-04-28 20:28+0100\n"
 "Last-Translator: Zé <ze@mandriva.org>\n"
 "Language-Team: Portuguese <>\n"
 "Language: pt\n"
@@ -1331,7 +1331,7 @@ msgstr "cópia de [%s] falhada (o ficheiro é suspeitosamente pequeno)"
 #: ../urpm/media.pm:1519
 #, c-format
 msgid "computing md5sum of retrieved source synthesis"
-msgstr "a calcular o md5sum da fonte synthesis transferida"
+msgstr "a calcular o md5sum do ficheiro synthesis transferido"
 
 #: ../urpm/media.pm:1521 ../urpm/media.pm:1961
 #, c-format
@@ -1371,7 +1371,7 @@ msgstr "nenhum dado meta encontrado para a média \"%s\""
 #: ../urpm/media.pm:1677
 #, c-format
 msgid "retrieving source synthesis of \"%s\"..."
-msgstr "a transferir a fonte synthesis de \"%s\"..."
+msgstr "a transferir o ficheiro synthesis de \"%s\"..."
 
 #: ../urpm/media.pm:1743
 #, c-format
@@ -2362,13 +2362,13 @@ msgid ""
 "  --use-distrib  - configure urpmi on the fly from a distrib tree, useful\n"
 "                   to install a chroot with --root option.\n"
 msgstr ""
-"  --use-distrib  - configura o urpmi para outra fonte, útil para\n"
-"         (des)instalar um chroot com a opção --root.\n"
+"  --use-distrib  - configura o urpmi através de uma árvore de distribuição,\n"
+"                   útil para (des)instalar um chroot com a opção --root.\n"
 
 #: ../urpmi:125 ../urpmi.addmedia:60 ../urpmi.update:37
 #, c-format
 msgid "  --metalink     - generate and use a local metalink.\n"
-msgstr "  --metalink     - gera e usa um 'metalink' local.\n"
+msgstr "  --metalink     - gera e usa uma meta-ligação (metalink) local.\n"
 
 #: ../urpmi:126
 #, c-format
@@ -2391,17 +2391,17 @@ msgstr ""
 #: ../urpmi:130
 #, c-format
 msgid "  --curl-options - additional options to pass to curl\n"
-msgstr "  --curl-options - opções adicionais para passar para curl\n"
+msgstr "  --curl-options - opções adicionais para passar para o curl\n"
 
 #: ../urpmi:131
 #, c-format
 msgid "  --rsync-options- additional options to pass to rsync\n"
-msgstr "  --rsync-options - opções adicionais para passar para rsync\n"
+msgstr "  --rsync-options - opções adicionais para passar para o rsync\n"
 
 #: ../urpmi:132
 #, c-format
 msgid "  --wget-options - additional options to pass to wget\n"
-msgstr "  --wget-options - opções adicionais para passar para wget\n"
+msgstr "  --wget-options - opções adicionais para passar para o wget\n"
 
 #: ../urpmi:133
 #, c-format
@@ -2426,8 +2426,8 @@ msgid ""
 msgstr ""
 "  --resume       - resume a transferência dos ficheiros parcialmente "
 "transferidos\n"
-"                   (--no-resume desactiva o resumo, activo por "
-"predefinição).\n"
+"                   (--no-resume desactiva o resumo, activo por predefinição)."
+"\n"
 
 #: ../urpmi:138 ../urpmi.addmedia:62 ../urpmi.update:39 ../urpmq:78
 #, c-format
@@ -2437,8 +2437,8 @@ msgid ""
 msgstr ""
 "  --proxy        - usa o 'proxy' HTTP indicado, por predefinição assume-se "
 "que\n"
-"                    o numero do porto seja 1080 (o formato é <maquinaproxy[:"
-"porto]>).\n"
+"                    o numero da porta seja 1080 (o formato é <"
+"maquinaproxy[:porta]>).\n"
 
 #: ../urpmi:140 ../urpmi.addmedia:64 ../urpmi.update:41 ../urpmq:80
 #, c-format
