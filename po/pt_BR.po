@@ -14,20 +14,20 @@
 # Arthur R. Mello <renato@conectiva.com.br>, 2005.
 # Wanderlei Antonio Cavassin <cavassin@mandriva.com>, 2006, 2007, 2008.
 # Felipe Arruda <felipemiguel@gmail.com>, 2006, 2008.
-# Sergio Rafael Lemke <sergio@mandriva.com.br>, 2009, 2010.
+# Sergio Rafael Lemke <sergio@mandriva.com.br>, 2009, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-22 19:28+0200\n"
-"PO-Revision-Date: 2010-03-15 18:45-0300\n"
+"PO-Revision-Date: 2011-04-28 17:08-0300\n"
 "Last-Translator: Sergio Rafael Lemke <sergio@mandriva.com.br>\n"
 "Language-Team: Brazilian Portuguese <cooker-i18n@mandrivalinux.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms:  nplurals=2; plural=(n > 1);\n"
 
 #: ../gurpmi:32
@@ -120,7 +120,7 @@ msgid "Choose location to save file"
 msgstr "Escolha o local para salvar o arquivo"
 
 #: ../gurpmi.pm:39
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -130,7 +130,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi versão %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
+"Copyright (C) 1999-2010 Mandriva.\n"
 "Este é um software livre, e pode ser redistribuído sob os termos da GNU "
 "GPL.\n"
 "\n"
@@ -769,11 +769,19 @@ msgid ""
 "at\n"
 "http://doc4.mandriva.org/bin/dudf/.\n"
 msgstr ""
+"Um problema ocorreu. Você pode contribuir para melhorarmos o processo de "
+"upgrade\n"
+"do Mandriva enviando um relatório gerado automaticamente ao servidor da "
+"Mandriva.\n"
+"Nenhuma informação pessoal será transmitida. Mais informações estão "
+"disponíveis "
+"em\n"
+"http://doc4.mandriva.org/bin/dudf/.\n"
 
 #: ../urpm/dudf.pm:74
-#, fuzzy, c-format
+#, c-format
 msgid "Do you want to generate and upload a report?"
-msgstr "Você deseja enviar para a Mandriva um relatório DUDF ?"
+msgstr "Você deseja gerar e enviar um relatório?"
 
 #: ../urpm/dudf.pm:80 ../urpmi:524 ../urpmi:539 ../urpmi:645
 #: ../urpmi.addmedia:136
@@ -782,7 +790,7 @@ msgid " (Y/n) "
 msgstr " (S/n) "
 
 #: ../urpm/dudf.pm:220
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "# Here are logs of your DUDF uploads.\n"
 "# Line format is : <date time of generation> <uid>\n"
@@ -792,7 +800,7 @@ msgstr ""
 "# Aqui estão os logs dos seus envios DUDF.\n"
 "# O formato da linha é: <data hora de geração> <uid>\n"
 "# Você pode usar uids para ver o conteúdo dos seus uploads nessa url: \n"
-"# http://dudf.forge.mandriva.com/"
+"# http://dudf.forge.mandriva.com/\n"
 
 #: ../urpm/dudf.pm:276 ../urpm/dudf.pm:322
 #, c-format
@@ -825,6 +833,8 @@ msgid ""
 "\n"
 "Command:"
 msgstr ""
+"\n"
+"Comando:"
 
 #: ../urpm/dudf.pm:315
 #, c-format
@@ -847,9 +857,9 @@ msgstr ""
 "\t"
 
 #: ../urpm/dudf.pm:325
-#, fuzzy, c-format
+#, c-format
 msgid "Testing synthesis file presence ..."
-msgstr "examinando arquivo synthesis [%s]"
+msgstr "Testando a presença do arquivo synthesis ..."
 
 #: ../urpm/dudf.pm:344
 #, c-format
@@ -858,13 +868,18 @@ msgid ""
 "The synthesis file (media '%s', %s) is already available on the Mandriva "
 "DUDF server.\n"
 msgstr ""
+"\n"
+"O arquivo synthesis (media '%s', %s) já está disponível no servidor"
+"DUDF Mandriva.\n"
 
 #: ../urpm/dudf.pm:346
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Uploading synthesis file ..."
-msgstr "examinando arquivo synthesis [%s]"
+msgstr ""
+"\n"
+"Enviando arquivo synthesis ..."
 
 #: ../urpm/dudf.pm:364
 #, c-format
@@ -872,6 +887,8 @@ msgid ""
 "\n"
 "Synthesis successfully uploaded. It can be downloaded from"
 msgstr ""
+"\n"
+"Synthesis enviado com sucesso. Poderá ser baixado de "
 
 #: ../urpm/dudf.pm:421
 #, c-format
@@ -1220,9 +1237,9 @@ msgid "skipping non compatible media `%s' (for %s)"
 msgstr "ignorando mídias não compatívieis `%s' (para %s)"
 
 #: ../urpm/media.pm:1018
-#, fuzzy, c-format
+#, c-format
 msgid "ignoring non-free medium `%s'"
-msgstr "ignorando mídia \"%s\""
+msgstr "ignorando mídia non-free `%s'"
 
 #: ../urpm/media.pm:1061
 #, c-format
@@ -1434,12 +1451,12 @@ msgstr "Release"
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "Dist"
-msgstr ""
+msgstr "Dist"
 
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "DEpoch"
-msgstr ""
+msgstr "DEpoch"
 
 #: ../urpm/msg.pm:170
 #, c-format
@@ -1728,7 +1745,7 @@ msgid "Can't move file %s to %s"
 msgstr "Não é possível mover arquivo %s para %s"
 
 #: ../urpme:41
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpme version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -1738,7 +1755,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpme versão %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
+"Copyright (C) 1999-2010 Mandriva.\n"
 "Este é um software livre, e pode ser redistribuído sob os termos da GNU "
 "GPL.\n"
 "\n"
@@ -1883,7 +1900,7 @@ msgid "Removal is possible"
 msgstr "A remoção é possível"
 
 #: ../urpmf:29
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmf version %s\n"
 "Copyright (C) 2002-2011 Mandriva.\n"
@@ -1893,11 +1910,11 @@ msgid ""
 "usage: urpmf [options] pattern-expression\n"
 msgstr ""
 "urpmf versão %s\n"
-"Copyright (C) 2002-2006 Mandriva.\n"
+"Copyright (C) 2002-2011 Mandriva.\n"
 "Este é um software livre, e pode ser redistribuído sob os termos da GNU "
 "GPL.\n"
 "\n"
-"uso: urpmf [opções] expressão\n"
+"uso: urpmf [opções] pattern-expression\n"
 
 #: ../urpmf:36
 #, c-format
@@ -2178,7 +2195,7 @@ msgid "no xml-info available for medium \"%s\""
 msgstr "xml-info não disponível para a mídia \"%s\""
 
 #: ../urpmi:78
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -2188,7 +2205,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi versão %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "Este é um software livre, e pode ser redistribuído sob os termos da GNU "
 "GPL.\n"
 "\n"
@@ -2729,7 +2746,7 @@ msgstr "Tecle Enter quando montado..."
 #. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
 #. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
 #: ../urpmi.addmedia:36
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "usage: urpmi.addmedia [options] <name> <url>\n"
 "where <url> is one of\n"
@@ -2753,19 +2770,20 @@ msgid ""
 msgstr ""
 "uso: urpmi.addmedia [opções] <nome> <url>\n"
 "onde <url> é um entre:\n"
-"       [file:/]/<caminho_para_arquivo>\n"
+"       [file:/]/<caminho>\n"
 "       ftp://<login>:<senha>@<máquina>/<caminho>\n"
 "       ftp://<máquina>/<caminho>\n"
 "       http://<máquina>/<caminho>\n"
 "       cdrom://<caminho>\n"
 "\n"
-"uso: urpmi.addmedia [opções] --distrib --mirrorlist <url>\n"
-"uso: urpmi.addmedia [opções] --mirrorlist <url> <nome> <caminho relativo>\n"
+"uso: urpmi.addmedia [options] --distrib --mirrorlist <url>\n"
+"uso: urpmi.addmedia [options] --mirrorlist <url> <name> <relative path>\n"
 "\n"
 "exemplos:\n"
 "\n"
 "  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
 "  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
+"  urpmi.addmedia --distrib --zeroconf\n"
 "\n"
 "\n"
 "e [opções] vêm de\n"
@@ -2936,7 +2954,7 @@ msgid "Can't use %s with remote medium"
 msgstr "Não se pode usar %s com mídia remota"
 
 #: ../urpmi.recover:28
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi.recover version %s\n"
 "Copyright (C) 2006-2011 Mandriva.\n"
@@ -2946,7 +2964,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi.recover version %s\n"
-"Copyright (C) 2006 Mandriva.\n"
+"Copyright (C) 2006-2011 Mandriva.\n"
 "Este é um software livre, e pode ser redistribuído sob os termos da GNU "
 "GPL.\n"
 "\n"
@@ -3197,7 +3215,7 @@ msgid "enabling media %s"
 msgstr "habilitando mídia \"%s\""
 
 #: ../urpmq:40
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmq version %s\n"
 "Copyright (C) 2000-2011 Mandriva.\n"
@@ -3207,7 +3225,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmq version %s\n"
-"Copyright (C) 2000-2006 Mandriva.\n"
+"Copyright (C) 2000-2011 Mandriva.\n"
 "Este é um software livre, e pode ser redistribuído sob os termos da GNU "
 "GPL.\n"
 "\n"
@@ -3282,9 +3300,9 @@ msgstr ""
 "  --src          - o próximo pacote é um pacote fonte (o mesmo que -s).\n"
 
 #: ../urpmq:67
-#, fuzzy, c-format
+#, c-format
 msgid "  --sources      - print source URLs of selected packages\n"
-msgstr "  --src, -s      - o próximo pacote é um pacote fonte.\n"
+msgstr "  --sources      - Mostra URL's do fonte do pacote selecionado\n"
 
 #: ../urpmq:69
 #, c-format
