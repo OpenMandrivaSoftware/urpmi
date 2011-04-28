@@ -12,20 +12,20 @@
 # Gregor Pirnaver <gregor.pirnaver@sdm-si.org>, 2005.
 # Jaka Kranjc <jakakranjc@email.si>, 2005, 2006.
 # Matjaž Kaše <matjaz.kase@telemach.net>, 2006.
-# Jure Repinc <jlp@holodeck1.com>, 2007, 2008, 2009.
+# Jure Repinc <jlp@holodeck1.com>, 2007, 2008, 2009, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-22 19:28+0200\n"
-"PO-Revision-Date: 2009-10-21 19:22+0200\n"
+"PO-Revision-Date: 2011-04-28 03:40+0200\n"
 "Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms:  nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3);\n"
 
@@ -116,7 +116,7 @@ msgid "Choose location to save file"
 msgstr "Izberite mesto za shranjevanje datoteke"
 
 #: ../gurpmi.pm:39
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -125,12 +125,12 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpmi različica %s\n"
-"Avtorske pravice (C) 1999-2008 Mandriva.\n"
+"urpmi različice %s\n"
+"Avtorske pravice © 1999–2010 Mandriva.\n"
 "To je prosta programska oprema in se sme razmnoževati pod dovoljenjem GNU "
 "GPL\n"
 "\n"
-"uporaba:\n"
+"Uporaba:\n"
 
 #: ../gurpmi.pm:45
 #, c-format
@@ -762,11 +762,17 @@ msgid ""
 "at\n"
 "http://doc4.mandriva.org/bin/dudf/.\n"
 msgstr ""
+"Prišlo je do težave. Imate priložnost prispevati k izboljšanju nadgradnje. To "
+"lahko\n"
+"storite tako, da Mandrivi pošljete samodejno ustvarjeno poročilo. Osebni "
+"podatki\n"
+"ne bodo poslani. Več informacij je na voljo na spletni strani:\n"
+"http://doc4.mandriva.org/bin/dudf/.\n"
 
 #: ../urpm/dudf.pm:74
-#, fuzzy, c-format
+#, c-format
 msgid "Do you want to generate and upload a report?"
-msgstr "Ali želite Mandrivi poslati poročilo DUDF?"
+msgstr "Ali želite ustvariti in poslati poročilo?"
 
 #: ../urpm/dudf.pm:80 ../urpmi:524 ../urpmi:539 ../urpmi:645
 #: ../urpmi.addmedia:136
@@ -775,7 +781,7 @@ msgid " (Y/n) "
 msgstr " (D/n) "
 
 #: ../urpm/dudf.pm:220
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "# Here are logs of your DUDF uploads.\n"
 "# Line format is : <date time of generation> <uid>\n"
@@ -785,7 +791,7 @@ msgstr ""
 "# Tu so dnevniški zapiski pošiljanj DUDF.\n"
 "# Oblika vrstic je: <datum in čas ustvaritve> <UID>\n"
 "# UID-je lahko uporabite za ogled pošiljanj na tej strani:\n"
-"# http://dudf.forge.mandriva.com/"
+"# http://dudf.forge.mandriva.com/\n"
 
 #: ../urpm/dudf.pm:276 ../urpm/dudf.pm:322
 #, c-format
@@ -818,6 +824,8 @@ msgid ""
 "\n"
 "Command:"
 msgstr ""
+"\n"
+"Ukaz:"
 
 #: ../urpm/dudf.pm:315
 #, c-format
@@ -840,9 +848,9 @@ msgstr ""
 "\t"
 
 #: ../urpm/dudf.pm:325
-#, fuzzy, c-format
+#, c-format
 msgid "Testing synthesis file presence ..."
-msgstr "preverjanje synthesis datoteke [%s]"
+msgstr "Preverjanje obstoja datoteke synthesis ..."
 
 #: ../urpm/dudf.pm:344
 #, c-format
@@ -851,13 +859,17 @@ msgid ""
 "The synthesis file (media '%s', %s) is already available on the Mandriva "
 "DUDF server.\n"
 msgstr ""
+"\n"
+"Datoteka synthesis (vir »%s«, %s) je že na Mandrivinem strežniku DUDF.\n"
 
 #: ../urpm/dudf.pm:346
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Uploading synthesis file ..."
-msgstr "preverjanje synthesis datoteke [%s]"
+msgstr ""
+"\n"
+"Pošiljanje datoteke synthesis ..."
 
 #: ../urpm/dudf.pm:364
 #, c-format
@@ -865,6 +877,8 @@ msgid ""
 "\n"
 "Synthesis successfully uploaded. It can be downloaded from"
 msgstr ""
+"\n"
+"Datoteka synthesis je bila uspešno poslana. Dobite jo lahko na"
 
 #: ../urpm/dudf.pm:421
 #, c-format
@@ -1217,9 +1231,9 @@ msgid "skipping non compatible media `%s' (for %s)"
 msgstr "spuščam nezdružljivi vir »%s« (za %s)"
 
 #: ../urpm/media.pm:1018
-#, fuzzy, c-format
+#, c-format
 msgid "ignoring non-free medium `%s'"
-msgstr "onemogočanje vira %s"
+msgstr "preziranje ne-prostega vira »%s«"
 
 #: ../urpm/media.pm:1061
 #, c-format
@@ -1431,12 +1445,12 @@ msgstr "Izdaja"
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "Dist"
-msgstr ""
+msgstr "Dist."
 
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "DEpoch"
-msgstr ""
+msgstr "Epoha"
 
 #: ../urpm/msg.pm:170
 #, c-format
@@ -1737,7 +1751,7 @@ msgid "Can't move file %s to %s"
 msgstr "Ni moč premakniti datoteke %s v %s"
 
 #: ../urpme:41
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpme version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -1746,12 +1760,12 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpme različica %s\n"
-"Avtorske pravice (C) 1999-2008 Mandriva.\n"
+"urpme različice %s\n"
+"Avtorske pravice © 1999–2010 Mandriva.\n"
 "To je prosta programska oprema in se sme razmnoževati pod dovoljenjem GNU "
 "GPL\n"
 "\n"
-"uporaba:\n"
+"Uporaba:\n"
 
 #: ../urpme:47
 #, c-format
@@ -1902,7 +1916,7 @@ msgid "Removal is possible"
 msgstr "Odstranitev je mogoča"
 
 #: ../urpmf:29
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmf version %s\n"
 "Copyright (C) 2002-2011 Mandriva.\n"
@@ -1911,12 +1925,12 @@ msgid ""
 "\n"
 "usage: urpmf [options] pattern-expression\n"
 msgstr ""
-"urpmf različica %s\n"
-"Avtorske pravice (C) 2002-2006 Mandriva.\n"
+"urpmf različice %s\n"
+"Avtorske pravice © 2002–2011 Mandriva.\n"
 "To je prosta programska oprema in se sme razmnoževati pod dovoljenjem GNU "
 "GPL\n"
 "\n"
-"uporaba: urpmf [možnosti] vzorec(regularni izraz)\n"
+"Uporaba: urpmf [možnosti] vzorec(regularni izraz)\n"
 
 #: ../urpmf:36
 #, c-format
@@ -2195,7 +2209,7 @@ msgid "no xml-info available for medium \"%s\""
 msgstr "ni bilo moč najti datoteke xml-info za vir »%s«"
 
 #: ../urpmi:78
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -2204,12 +2218,12 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpmi različica %s\n"
-"Avtorske pravice (C) 1999-2008 Mandriva.\n"
+"urpmi različice %s\n"
+"Avtorske pravice © 1999–2011 Mandriva.\n"
 "To je prosta programska oprema in se sme razmnoževati pod dovoljenjem GNU "
 "GPL\n"
 "\n"
-"uporaba:\n"
+"Uporaba:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -2748,7 +2762,7 @@ msgstr "Pritisnite Enter, ko bo priklopljeno ..."
 #. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
 #. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
 #: ../urpmi.addmedia:36
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "usage: urpmi.addmedia [options] <name> <url>\n"
 "where <url> is one of\n"
@@ -2770,7 +2784,7 @@ msgid ""
 "\n"
 "and [options] are from\n"
 msgstr ""
-"uporaba: urpmi.addmedia [možnosti] <ime> <url>\n"
+"Uporaba: urpmi.addmedia [možnosti] <ime> <url>\n"
 "kjer je <url> eno izmed\n"
 "       [file:/]/<pot>\n"
 "       ftp://<uporabniško_ime>:<geslo>@<gostitelj>/<pot>\n"
@@ -2778,13 +2792,14 @@ msgstr ""
 "       http://<gostitelj>/<pot>\n"
 "       cdrom://<pot>\n"
 "\n"
-"uporaba: urpmi.addmedia [možnosti] --distrib --mirrorlist <url>\n"
-"uporaba: urpmi.addmedia [možnosti] --mirrorlist <url> <ime> <relativna_pot>\n"
+"Uporaba: urpmi.addmedia [možnosti] --distrib --mirrorlist <url>\n"
+"Uporaba: urpmi.addmedia [možnosti] --mirrorlist <url> <ime> <relativna_pot>\n"
 "\n"
-"primeri:\n"
+"Primeri:\n"
 "\n"
 "  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
 "  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
+"  urpmi.addmedia --distrib --zeroconf\n"
 "\n"
 "\n"
 "[možnosti] izbirate izmed:\n"
@@ -2954,7 +2969,7 @@ msgid "Can't use %s with remote medium"
 msgstr "Ni moč uporabiti %s z oddaljenim virom"
 
 #: ../urpmi.recover:28
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi.recover version %s\n"
 "Copyright (C) 2006-2011 Mandriva.\n"
@@ -2963,12 +2978,12 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpmi.recover različica %s\n"
-"Avtorske pravice (C) 1999-2008 Mandriva.\n"
+"urpmi.recover različice %s\n"
+"Avtorske pravice © 1999–2011 Mandriva.\n"
 "To je prosta programska oprema in se sme razmnoževati pod dovoljenjem GNU "
 "GPL\n"
 "\n"
-"uporaba:\n"
+"Uporaba:\n"
 
 #: ../urpmi.recover:34
 #, c-format
@@ -3225,7 +3240,7 @@ msgid "enabling media %s"
 msgstr "omogočanje vira %s"
 
 #: ../urpmq:40
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmq version %s\n"
 "Copyright (C) 2000-2011 Mandriva.\n"
@@ -3234,12 +3249,12 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpmq različica%s\n"
-"Avtorske pravice (C) 2000-2006 Mandriva.\n"
+"urpmq različice %s\n"
+"Avtorske pravice © 2000–2011 Mandriva.\n"
 "To je prosta programska oprema in se sme razmnoževati pod dovoljenjem GNU "
 "GPL\n"
 "\n"
-"uporaba:\n"
+"Uporaba:\n"
 
 #: ../urpmq:48
 #, c-format
@@ -3312,9 +3327,9 @@ msgstr ""
 "  --src          - naslednji paket je paket z izvorno kodo (isto kot -s).\n"
 
 #: ../urpmq:67
-#, fuzzy, c-format
+#, c-format
 msgid "  --sources      - print source URLs of selected packages\n"
-msgstr "  --sourcerpm    - izpiše ime izvornega rpm paketa.\n"
+msgstr "  --sources      - izpiše izvorne URL-je izbranih paketov.\n"
 
 #: ../urpmq:69
 #, c-format
