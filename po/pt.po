@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: pt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-22 19:28+0200\n"
-"PO-Revision-Date: 2011-04-28 20:28+0100\n"
+"PO-Revision-Date: 2011-04-29 01:08+0100\n"
 "Last-Translator: Zé <ze@mandriva.org>\n"
 "Language-Team: Portuguese <>\n"
 "Language: pt\n"
@@ -1529,13 +1529,13 @@ msgid_plural ""
 "are now orphaned, if you wish to remove them, you can use \"urpme --auto-"
 "orphans\""
 msgstr[0] ""
-"O seguinte pacote:\n"
+"O seguinte pacote está agora órfão, se o deseja remover, pode usar \"urpme "
+"--auto-orphans\"\n"
 "%s\n"
-"está agora órfão, se o desejar remover, pode usar \"urpme --auto-orphans\""
 msgstr[1] ""
-"Os seguintes pacotes:\n"
+"Os seguintes pacotes estão agora órfãos, se os deseja remover, pode usar "
+"\"urpme --auto-orphans\"\n"
 "%s\n"
-"estão agora órfãos, se os desejar remover, pode usar \"urpme --auto-orphans\""
 
 #: ../urpm/parallel.pm:15
 #, c-format
@@ -2249,7 +2249,7 @@ msgstr "    --force-key    - força a actualização da chave gpg.\n"
 #: ../urpmi:95
 #, c-format
 msgid "  --auto-orphans - remove orphans without asking\n"
-msgstr "  --auto-orphans - remove os órfãos sem perguntar\n"
+msgstr "  --auto-orphans - remove os pacotes órfãos sem perguntar\n"
 
 #: ../urpmi:96 ../urpmq:56
 #, c-format
