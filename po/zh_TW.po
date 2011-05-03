@@ -1307,7 +1307,7 @@ msgstr "正在比對 %s 與 %s"
 #: ../urpm/media.pm:1576
 #, c-format
 msgid "invalid hdlist file %s for medium \"%s\""
-msgstr "媒體 \"%s\" 的 hdlist 檔案是無效的"
+msgstr "媒體 \"%2$s\" 的 hdlist 檔案 %1$s 是無效的"
 
 #: ../urpm/media.pm:1602
 #, c-format
