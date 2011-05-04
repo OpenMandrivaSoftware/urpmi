@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: pt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-22 19:28+0200\n"
-"PO-Revision-Date: 2011-04-29 01:08+0100\n"
+"PO-Revision-Date: 2011-05-04 23:55+0100\n"
 "Last-Translator: Zé <ze@mandriva.org>\n"
 "Language-Team: Portuguese <>\n"
 "Language: pt\n"
@@ -1517,7 +1517,7 @@ msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr "A marcar %s como manualmente instalado, não será auto-orfanizado"
 
 #: ../urpm/orphans.pm:440
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "The following package:\n"
 "%s\n"
@@ -1530,12 +1530,12 @@ msgid_plural ""
 "orphans\""
 msgstr[0] ""
 "O seguinte pacote está agora órfão, se o deseja remover, pode usar \"urpme "
-"--auto-orphans\"\n"
-"%s\n"
+"--auto-orphans\".\n"
+"%s"
 msgstr[1] ""
 "Os seguintes pacotes estão agora órfãos, se os deseja remover, pode usar "
-"\"urpme --auto-orphans\"\n"
-"%s\n"
+"\"urpme --auto-orphans\".\n"
+"%s"
 
 #: ../urpm/parallel.pm:15
 #, c-format
