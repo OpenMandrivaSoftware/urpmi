@@ -1517,7 +1517,7 @@ msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr "A marcar %s como manualmente instalado, não será auto-orfanizado"
 
 #: ../urpm/orphans.pm:440
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "The following package:\n"
 "%s\n"
