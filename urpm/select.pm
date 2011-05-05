@@ -475,7 +475,7 @@ sub _prohibit_packages_that_would_be_removed {
     my @dont_remove = ('basesystem', 'basesystem-minimal', 
 		       split /,\s*/, $urpm->{global_config}{'prohibit-remove'});
     my (@base_fn, %base);
-    $db->traverse_tag('whatprovides', \@dont_remove, sub {
+    $db->traverse_tag('providename', \@dont_remove, sub {
 	my ($p) = @_;
 	$base{$p->name} = 1;
 	push @base_fn, scalar $p->fullname;

@@ -1,5 +1,6 @@
-Version 6.60 -  4 May 2011, by Per Øyvind Karlsen
+Version 6.60 -  5 May 2011, by Per Øyvind Karlsen
 
+- follow some URPM api changes to use proper tag names for requirename & providename
 - update translations
 
 Version 6.59 - 25 April 2011, by Per Øyvind Karlsen
