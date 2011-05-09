@@ -84,7 +84,9 @@ sub preferred_downloader {
     }
     # in some cases, we may want not to use metalink (aria2) since it can 
     # cause issues, see #53434 for example
-    if ($metalink_disabled && member($preferred, @metalink_downloaders)) {
+    # proyvind: disabled this hack, suspecting it's no longer required, and not using
+    # aria2 + metalink are giving issues finding latest updated metadata...
+    if (0 && $metalink_disabled && member($preferred, @metalink_downloaders)) {
 	$urpm->{log}("not using $preferred since metalink has been disabled");
 	my @no_metalink = urpm::util::difference2(\@available, \@metalink_downloaders);
 	$preferred = $no_metalink[0];
