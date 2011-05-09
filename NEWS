@@ -1,3 +1,7 @@
+Version 6.62 -  7 May 2011, by Per Øyvind Karlsen
+
+- add --nitronothing option as an alias for options trading safety for performance
+
 Version 6.61 -  5 May 2011, by Per Øyvind Karlsen
 
 - follow some URPM api changes to use proper tag names for requirename & providename
