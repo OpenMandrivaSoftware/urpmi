@@ -1425,12 +1425,12 @@ msgstr "Utgivelse"
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "Dist"
-msgstr ""
+msgstr "Dist"
 
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "DEpoch"
-msgstr ""
+msgstr "DEpoch"
 
 #: ../urpm/msg.pm:170
 #, c-format
