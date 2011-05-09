@@ -196,7 +196,7 @@ my %options_spec = (
 	noscripts => sub { $urpm->{options}{noscripts} = 1 },
 	notriggers => sub { $urpm->{options}{notriggers} = 1 },
 	nofdigests => sub { $urpm->{options}{nofdigests} = 1 },
-	nitronothing => sub { $urpm->{options}{nofdigests} = 1; urpm::set_tune_rpm($urpm, "nofsync"); $urpm->{options}{'verify-rpm'} = 0; }
+	nitronothing => sub { $urpm->{options}{nofdigests} = 1; urpm::set_tune_rpm($urpm, "nofsync"); $urpm->{options}{'verify-rpm'} = 0; },
 	replacefiles => sub { $urpm->{options}{replacefiles} = 1 },
 	repackage => sub { $urpm->{options}{repackage} = 1 },
 	'more-choices' => sub { $urpm->{options}{morechoices} = 1 },
