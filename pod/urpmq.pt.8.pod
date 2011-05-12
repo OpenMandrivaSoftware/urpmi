@@ -1,12 +1,12 @@
-=head1 NAME
+=head1 NOME
 
 urpmq - ferramenta de consulta da base de dados urpmi.
 
 =head1 SYNOPSIS
 
-    urpmq [options] [nomes_dos_pacotes | ficheiros_rpm...]
+    urpmq [opções] [nomes_dos_pacotes | ficheiros_rpm...]
 
-=head1 DESCRIPTION
+=head1 DESCRIÇÃO
 
 O urpmq é uma ferramenta para aceder e consultar a base de dados urpmi.
 Podeser usada para listar os pacotes disponíveis nas várias médias urpmi, ou
@@ -16,7 +16,7 @@ ajustado de acordo com as opções da linha de comandos que forem usadas:
 
     [group/]nome_do_pacote[-version][-release][.arch]
 
-=head1 OPTIONS
+=head1 OPÇÕES
 
 =over
 
@@ -54,7 +54,7 @@ actualizações (e.g. que foi criada com C<urpmi.addmedia --update>).
 
 =item B<--media> I<média1,...,médiaN>
 
-SElecciona médias especificas para serem usadas, em vez de usar a predefinição
+Selecciona médias especificas para serem usadas, em vez de usar a predefinição
 de todas as médias disponíveis (ou todas as médias de actualização se for
 usada a opção B<--update>).
 Nenhum ficheiro rpm será encontrada noutras médias.
