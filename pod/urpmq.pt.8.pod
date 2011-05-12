@@ -210,71 +210,71 @@ Pode também incluir padrões entre //, tal como em F</etc/urpmi/skip.list>
 
 =item B<--prefer> I<padrão,...>
 
-You can specify a list of packages which installation should be preferred
-(especially useful with B<--auto>).
-You can also include patterns between //, just like in
-F</etc/urpmi/prefer.list> (see urpmi.files(5)).
+Pode especificar uma lista de pacotes da instalação que deve ser preferida
+(isto é especialmente útil para B<--auto>). Pode também incluir os padrões
+entre //, tal como em F</etc/urpmi/prefer.list> (veja urpmi.files(5)).
 
 =item B<--wait-lock>
 
-If the urpmi or rpm db is busy, wait until it is available
+Se a base de dados urpmi ou rpm estiver ocupada,
+espere até que fique disponível.
 
 =item B<--changelog>
 
-Prints the package changelog.
+Mostra todas as entradas de registo (changelog) do pacote.
 
 =item B<--conflicts>
 
-Prints the package conflicts.
+Mostra os conflitos do pacote.
 
 =item B<--obsoletes>
 
-Prints the package obsoletes.
+Mostra os obsoletos do pacote.
 
 =item B<--provides>
 
-Prints the package provides.
+Mostra os providenciamentos do pacote.
 
 =item B<--requires>
 
-Prints the package requires.
+Mostra os requerimentos do pacote.
 
 =item B<--suggests>
 
-Prints the package suggests.
+Mostra as sugestões do pacote.
 
 =item B<--sourcerpm>
 
-Prints the sourcerpm of the package
+Mostra o pacote fonte (sourcerpm) do pacote.
 
 =item B<--summary>
 
-Prints concise information about the package.
+Mostra informação concisa acerca do pacote.
 
 =item B<--verbose>
 
-Activate verbose mode.
+Activa o modo detalhado/verboso.
 
 =item B<-v>
 
-This is the same as B<--verbose>.
+Isto é o mesmo que B<--verbose>.
 
 =item B<-d>
 
-This is the same as B<--requires-recursive>.
+Isto é o mesmo que B<--requires-recursive>.
 
 =item B<-u>
 
-Deselect packages if a better version is already installed.
+Desselecciona pacotes se uma versão melhor já estiver seleccionada.
 
 =item B<-m>
 
-Equivalent to B<-du>.
+Equivalente a B<-du>.
 
 =item B<-a>
 
-Select all matches on command line; that's useful when one gives an
-incomplete package name and when using B<-f> or B<-r>.
+Selecciona todos as correspondências da linha de comandos; isto é útil quando
+indica um nome incompleto do pacote e quando usa B<-f> ou B<-r>.
 
 =item B<-c>
 
@@ -284,73 +284,77 @@ may correct unresolved dependencies on the rpm database.
 
 =item B<--requires-recursive>
 
-Print dependencies (maximal closure).
+Mostra as dependências (aproximação máxima).
 
 =item B<--whatprovides>
 
-Search in provides to find package.
+Procura nos providenciamentos (provides) para encontrar o pacote pacote.
 
 =item B<--whatrequires>
 
-Reverse search to what requires the package given.
+Procura reversa para o que requer o pacote indicado.
 
 =item B<--whatrequires-recursive>
 
-Reverse search to what requires recursively the package given
-(looking through virtual packages).
+Procura reversa para o que requer recursivamente o pacote indicado
+(procurar através de pacotes virtuais).
 
 =item B<-S>
 
-Same as B<--summary>.
+O mesmo que B<--summary>.
 
 =item B<-y>
 
-This is the same as B<--fuzzy>.
+Isto é o mesmo que B<--fuzzy>.
 
 =item B<-Y>
 
-Like B<-y>, but forces to match case-insensitively.
+Como B<-y>, mas força a correspondência não sensitiva.
 
 =item B<-s>
 
-This is the same as B<--src>.
+É o mesmo que B<--src>.
 
 =item B<-p>
 
-This is the same as B<--whatprovides>.
+Isto é o mesmo que B<--whatprovides>.
 
 =item B<-i>
 
-Prints useful information in human readable form, as for I<rpm -qi>.
+Mostra informação útil de uma forma sucinta, tal como I<rpm -qi>.
 
 =item B<-g>
 
-Prints groups of each package listed.
+Mostra os grupos para cada pacote listado.
 
 =item B<-r>
 
-Prints also version and release of each package listed.
+Mostra também a versão e lançamento de cada pacote listado.
 
 =item B<-f>
 
-Prints also version, release and arch of each package listed.
+Mostra também a versão, lançamento e arquitectura de cada pacote listado.
 
 =item B<-l>
 
-Lists files in packages.
+Lista os ficheiros dos pacotes.
 
 =back
 
-=head1 FILES
+=head1 FICHEIROS
 
-See urpmi.files(5).
+Veja urpmi.files(5).
 
-=head1 SEE ALSO
+=head1 VER TAMBÉM
 
 urpmi.addmedia(8), urpmi.update(8), urpmi.removemedia(8), urpmf(8),
 urpmi(8), urpmi.files(5).
 
-=head1 AUTHOR
+=head1 AUTOR
 
-Pascal Rigaux <pixel@mandriva.com> (original author and current maintainer), 
+Pascal Rigaux <pixel@mandriva.com> (autor original e programador actual), 
 FranE<ccedil>ois Pons, Rafael Garcia-Suarez 
+
+=head1 TRADUTOR
+Zé <ze@mandriva.org>
+
