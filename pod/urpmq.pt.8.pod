@@ -2,14 +2,14 @@
 
 urpmq - ferramenta de consulta da base de dados urpmi.
 
-=head1 SYNOPSIS
+=head1 SINOPSE
 
     urpmq [opções] [nomes_dos_pacotes | ficheiros_rpm...]
 
 =head1 DESCRIÇÃO
 
 O urpmq é uma ferramenta para aceder e consultar a base de dados urpmi.
-Podeser usada para listar os pacotes disponíveis nas várias médias urpmi, ou
+Pode ser usada para listar os pacotes disponíveis nas várias médias urpmi, ou
 para listar todas as dependências de um pacote, ou para listar os pacotes que
 serão instalados se iniciar o urpmi. A saída do urpmq tem o seguinte formato,
 ajustado de acordo com as opções da linha de comandos que forem usadas:
@@ -72,8 +72,8 @@ As dependências destes pacotes pode ser ainda encontrada noutras médias.
 =item B<--sortmedia> I<média1,...,médiaN>
 
 Ordena as médias especificadas, pode usar sub-expressões para simplificar o
-agrupamento. Desta maneira, a média C<media1> será considerada em primeiro
-lugar,depois a média C<media2>, e por ai adiante. As médias que não estão
+agrupamento. Desta maneira, a média C<média1> será considerada em primeiro
+lugar,depois a média C<média2>, e por ai adiante. As médias que não estão
 listadas são tomadas em consideração após as outras.
 
 =item B<--synthesis> I<ficheiro>
@@ -278,9 +278,10 @@ indica um nome incompleto do pacote e quando usa B<-f> ou B<-r>.
 
 =item B<-c>
 
-If maximal closure is used, assume that a package listed may have wrong or
-not up-to-date dependencies. This causes more packages to be upgraded and
-may correct unresolved dependencies on the rpm database.
+Se for usada uma aproximação máxima, assume que um pacote listado pode ter
+dependências erradas ou não actualizadas. Isto faz com que mais pacotes sejam
+actualizados e pode corrigir algumas dependências não resolvidas na base de
+dados rpm.
 
 =item B<--requires-recursive>
 
@@ -297,7 +298,7 @@ Procura reversa para o que requer o pacote indicado.
 =item B<--whatrequires-recursive>
 
 Procura reversa para o que requer recursivamente o pacote indicado
-(procurar através de pacotes virtuais).
+(procura através de pacotes virtuais).
 
 =item B<-S>
 
@@ -329,11 +330,11 @@ Mostra os grupos para cada pacote listado.
 
 =item B<-r>
 
-Mostra também a versão e lançamento de cada pacote listado.
+Mostra também a versão e o lançamento de cada pacote listado.
 
 =item B<-f>
 
-Mostra também a versão, lançamento e arquitectura de cada pacote listado.
+Mostra também a versão, lançamento e a arquitectura de cada pacote listado.
 
 =item B<-l>
 
@@ -356,5 +357,6 @@ Pascal Rigaux <pixel@mandriva.com> (autor original e programador actual),
 FranE<ccedil>ois Pons, Rafael Garcia-Suarez 
 
 =head1 TRADUTOR
+
 Zé <ze@mandriva.org>
 
