@@ -57,7 +57,7 @@ actualizações (e.g. que foi criada com C<urpmi.addmedia --update>).
 Selecciona médias especificas para serem usadas, em vez de usar a predefinição
 de todas as médias disponíveis (ou todas as médias de actualização se for
 usada a opção B<--update>).
-Nenhum ficheiro rpm será encontrada noutras médias.
+Nenhum ficheiro rpm será encontrado noutras médias.
 
 =item B<--excludemedia> I<média1,...,médiaN>
 
@@ -89,7 +89,7 @@ registadas.
 
 =item B<--auto-orphans>
 
-Lista os pacotes orfãos.
+Lista os pacotes órfãos.
 
 =item B<--not-available>
 
