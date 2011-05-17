@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-22 19:28+0200\n"
+"POT-Creation-Date: 2011-05-05 01:02+0200\n"
 "PO-Revision-Date: 2005-01-04 21:27+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -148,13 +148,13 @@ msgstr ""
 msgid "  --media        - use only the given media, separated by comma.\n"
 msgstr "  --update       - koristi samo medije za dogradnju.\n"
 
-#: ../gurpmi.pm:53 ../urpmi:162
+#: ../gurpmi.pm:53 ../urpmi:164
 #, c-format
 msgid "  -p             - allow search in provides to find package.\n"
 msgstr ""
 "  -p             - dozvoli pretraživanje u provides kako bi pronašao paket.\n"
 
-#: ../gurpmi.pm:54 ../urpmi:163
+#: ../gurpmi.pm:54 ../urpmi:165
 #, c-format
 msgid "  -P             - do not search in provides to find package.\n"
 msgstr ""
@@ -223,7 +223,7 @@ msgstr ""
 msgid "Warning"
 msgstr "Upozorenje"
 
-#: ../gurpmi2:146 ../urpmi:659
+#: ../gurpmi2:146 ../urpmi:661
 #, c-format
 msgid "Ok"
 msgstr "U redu"
@@ -261,14 +261,14 @@ msgid ""
 "Continue installation anyway?"
 msgstr "Slijedeći paketi će biti uklonjeni"
 
-#: ../gurpmi2:267 ../urpmi:624
+#: ../gurpmi2:267 ../urpmi:626
 #, fuzzy, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
 msgstr ""
 "Kako bi zadovoljili ovisnosti, slijedeći paketi će biti uklonjeni (%d MB)"
 
-#: ../gurpmi2:268 ../urpmi:625
+#: ../gurpmi2:268 ../urpmi:627
 #, fuzzy, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
@@ -298,7 +298,7 @@ msgstr "Pripremam..."
 msgid "Installing package `%s' (%s/%s)..."
 msgstr "Instaliram paket `%s' (%s/%s)..."
 
-#: ../gurpmi2:334 ../urpmi:654
+#: ../gurpmi2:334 ../urpmi:656
 #, fuzzy, c-format
 msgid "Please insert the medium named \"%s\""
 msgstr "Molim umetnite medij pod nazivom \"%s\" u uređaj [%s]"
@@ -345,12 +345,12 @@ msgstr "sve je već instalirano"
 msgid "Installation finished"
 msgstr "Instalirano"
 
-#: ../gurpmi2:407 ../urpme:169
+#: ../gurpmi2:407 ../urpme:170
 #, fuzzy, c-format
 msgid "removing %s"
 msgstr "Uklanjam %s"
 
-#: ../gurpmi2:415 ../urpmi:725
+#: ../gurpmi2:415 ../urpmi:727
 #, c-format
 msgid "restarting urpmi"
 msgstr "restartam urpmi"
@@ -391,7 +391,7 @@ msgstr ""
 msgid "   -f             - output rpm full name (NVRA)\n"
 msgstr "  -f             - ispiši verziju, izdanje i arhitekturu sa imenom.\n"
 
-#: ../rurpmi:11 ../urpmi:287
+#: ../rurpmi:11 ../urpmi:289
 #, c-format
 msgid "Only superuser is allowed to install packages"
 msgstr "Samo je administratoru dozvoljeno da instalira pakete"
@@ -481,57 +481,57 @@ msgstr ""
 msgid "bad proxy declaration on command line\n"
 msgstr "pogrešna deklaracija proxyja u komandnom retku\n"
 
-#: ../urpm/args.pm:320
+#: ../urpm/args.pm:322
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq: ne mogu pročitati rpm datoteku \"%s\"\n"
 
-#: ../urpm/args.pm:402
+#: ../urpm/args.pm:404
 #, c-format
 msgid "unexpected expression %s"
 msgstr ""
 
-#: ../urpm/args.pm:403
+#: ../urpm/args.pm:405
 #, fuzzy, c-format
 msgid "missing expression before %s"
 msgstr "Nedostaje potpis (%s)"
 
-#: ../urpm/args.pm:409
+#: ../urpm/args.pm:411
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr ""
 
-#: ../urpm/args.pm:413
+#: ../urpm/args.pm:415
 #, c-format
 msgid "no expression to close"
 msgstr ""
 
-#: ../urpm/args.pm:422
+#: ../urpm/args.pm:424
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
 
-#: ../urpm/args.pm:496
+#: ../urpm/args.pm:498
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr ""
 
-#: ../urpm/args.pm:519
+#: ../urpm/args.pm:521
 #, c-format
 msgid "Can't use %s without %s"
 msgstr ""
 
-#: ../urpm/args.pm:522 ../urpm/args.pm:525 ../urpmq:166
+#: ../urpm/args.pm:524 ../urpm/args.pm:527 ../urpmq:166
 #, c-format
 msgid "Can't use %s with %s"
 msgstr ""
 
-#: ../urpm/args.pm:533
+#: ../urpm/args.pm:535
 #, c-format
 msgid "Too many arguments\n"
 msgstr ""
 
-#: ../urpm/bug_report.pm:55 ../urpmi:277
+#: ../urpm/bug_report.pm:55 ../urpmi:279
 #, fuzzy, c-format
 msgid "Copying failed"
 msgstr "...kopiranje neuspješno"
@@ -708,7 +708,7 @@ msgstr ""
 msgid "unable to handle protocol: %s"
 msgstr "ne mogu pristupiti rpm datoteci [%s]"
 
-#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:522 ../urpmi:538 ../urpmi:644
+#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:524 ../urpmi:540 ../urpmi:646
 #, c-format
 msgid "Nn"
 msgstr "Nn"
@@ -730,7 +730,7 @@ msgstr ""
 msgid "Do you want to generate and upload a report?"
 msgstr ""
 
-#: ../urpm/dudf.pm:80 ../urpmi:524 ../urpmi:539 ../urpmi:645
+#: ../urpm/dudf.pm:80 ../urpmi:526 ../urpmi:541 ../urpmi:647
 #: ../urpmi.addmedia:136
 #, c-format
 msgid " (Y/n) "
@@ -846,12 +846,12 @@ msgstr "ne mogu pročitati rpm datoteku [%s] sa medija \"%s\""
 msgid "[repackaging]"
 msgstr ""
 
-#: ../urpm/install.pm:179
+#: ../urpm/install.pm:181
 #, fuzzy, c-format
 msgid "unable to extract rpm from delta-rpm package %s"
 msgstr "Izaberite vaše pakete"
 
-#: ../urpm/install.pm:204
+#: ../urpm/install.pm:206
 #, c-format
 msgid ""
 "created transaction for installing on %s (remove=%d, install=%d, upgrade=%d)"
@@ -859,42 +859,42 @@ msgstr ""
 "Napravljena razmjena za instalaciju na %s (makni=%d, instaliraj=%d, "
 "unaprijedi=%d)"
 
-#: ../urpm/install.pm:207
+#: ../urpm/install.pm:209
 #, fuzzy, c-format
 msgid "unable to create transaction"
 msgstr "Ne mogu napraviti ssh identitet"
 
-#: ../urpm/install.pm:230
+#: ../urpm/install.pm:232
 #, fuzzy, c-format
 msgid "unable to install package %s"
 msgstr "Problem prilikom instaliranja paketa %s"
 
-#: ../urpm/install.pm:233
+#: ../urpm/install.pm:235
 #, fuzzy, c-format
 msgid "removing bad rpm (%s) from %s"
 msgstr "instaliram %s\n"
 
-#: ../urpm/install.pm:234 ../urpm/install.pm:311
+#: ../urpm/install.pm:236 ../urpm/install.pm:313
 #, fuzzy, c-format
 msgid "removing %s failed: %s"
 msgstr "...dohvaćanje neuspješno: %s"
 
-#: ../urpm/install.pm:281
+#: ../urpm/install.pm:283
 #, fuzzy, c-format
 msgid "Removing package %s"
 msgstr "Instaliram paket %s"
 
-#: ../urpm/install.pm:282
+#: ../urpm/install.pm:284
 #, fuzzy, c-format
 msgid "removing package %s"
 msgstr "Instaliram paket %s"
 
-#: ../urpm/install.pm:309
+#: ../urpm/install.pm:311
 #, fuzzy, c-format
 msgid "removing installed rpms (%s) from %s"
 msgstr "instaliram %s\n"
 
-#: ../urpm/install.pm:318
+#: ../urpm/install.pm:320
 #, fuzzy, c-format
 msgid "More information on package %s"
 msgstr "Izaberite vaše pakete"
@@ -1337,13 +1337,13 @@ msgid "getting mirror list from %s"
 msgstr "nisu pronađene rpm datoteke u [%s]"
 
 #. -PO: Add here the keys which might be pressed in the "Yes"-case.
-#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:574 ../urpmi:682 ../urpmi:692
+#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:576 ../urpmi:684 ../urpmi:694
 #: ../urpmi.addmedia:133
 #, c-format
 msgid "Yy"
 msgstr "YyDd"
 
-#: ../urpm/msg.pm:107 ../urpme:163 ../urpmi.addmedia:136
+#: ../urpm/msg.pm:107 ../urpme:164 ../urpmi.addmedia:136
 #, c-format
 msgid " (y/N) "
 msgstr " (d/N) "
@@ -1532,7 +1532,7 @@ msgstr ""
 msgid "No package named %s"
 msgstr "Ne postoji paket pod nazivom %s"
 
-#: ../urpm/select.pm:178 ../urpme:117
+#: ../urpm/select.pm:178 ../urpme:118
 #, c-format
 msgid "The following packages contain %s: %s"
 msgstr "Slijedeći paketi sadrže %s: %s"
@@ -1687,7 +1687,7 @@ msgstr " --test         - potvrdi da instalacija može biti dostignuta točno.\n
 msgid "  --parallel     - distributed urpmi across machines of alias.\n"
 msgstr ""
 
-#: ../urpme:52 ../urpmi:154
+#: ../urpme:52 ../urpmi:156
 #, fuzzy, c-format
 msgid "  --repackage    - Re-package the files before erasing\n"
 msgstr "  --group         -ispisuje oznaku group: grupu."
@@ -1714,38 +1714,43 @@ msgid "  --noscripts    - do not execute package scriptlet(s).\n"
 msgstr "  --description   - ispisuje oznaku description: opis."
 
 #: ../urpme:57
+#, fuzzy, c-format
+msgid "  --triggers     - do not execute package trigger(s).\n"
+msgstr "  --description   - ispisuje oznaku description: opis."
+
+#: ../urpme:58
 #, c-format
 msgid ""
 "  --use-distrib  - configure urpme on the fly from a distrib tree, useful\n"
 "                   to (un)install a chroot with --root option.\n"
 msgstr ""
 
-#: ../urpme:59 ../urpmi:165 ../urpmq:91
+#: ../urpme:60 ../urpmi:167 ../urpmq:91
 #, fuzzy, c-format
 msgid "  --verbose, -v  - verbose mode.\n"
 msgstr "  -v             - opširan mod.\n"
 
-#: ../urpme:60
+#: ../urpme:61
 #, fuzzy, c-format
 msgid "  -a             - select all packages matching expression.\n"
 msgstr "  -a             - odabire sve odgovarajuće na komandnoj liniji.\n"
 
-#: ../urpme:75
+#: ../urpme:76
 #, fuzzy, c-format
 msgid "Only superuser is allowed to remove packages"
 msgstr "Samo je administratoru dozvoljeno da instalira pakete"
 
-#: ../urpme:108
+#: ../urpme:109
 #, fuzzy, c-format
 msgid "unknown packages"
 msgstr "Izaberite vaše pakete"
 
-#: ../urpme:108
+#: ../urpme:109
 #, fuzzy, c-format
 msgid "unknown package"
 msgstr "Nepoznata greška"
 
-#: ../urpme:123
+#: ../urpme:124
 #, fuzzy, c-format
 msgid "Removing the following package will break your system:"
 msgid_plural "Removing the following packages will break your system:"
@@ -1753,17 +1758,17 @@ msgstr[0] "uklanjanje paketa %s će pokvariti vaš sustav\n"
 msgstr[1] "uklanjanje paketa %s će pokvariti vaš sustav\n"
 msgstr[2] "uklanjanje paketa %s će pokvariti vaš sustav\n"
 
-#: ../urpme:128
+#: ../urpme:129
 #, fuzzy, c-format
 msgid "Nothing to remove"
 msgstr "Nema oznake za uklanjanje"
 
-#: ../urpme:145
+#: ../urpme:146
 #, fuzzy, c-format
 msgid "No orphans to remove"
 msgstr "Nema oznake za uklanjanje"
 
-#: ../urpme:151
+#: ../urpme:152
 #, fuzzy, c-format
 msgid "To satisfy dependencies, the following package will be removed"
 msgid_plural ""
@@ -1775,7 +1780,7 @@ msgstr[1] ""
 msgstr[2] ""
 "Kako bi zadovoljili ovisnosti, slijedeći paketi će biti uklonjeni (%d MB)"
 
-#: ../urpme:156
+#: ../urpme:157
 #, fuzzy, c-format
 msgid "(orphan package)"
 msgid_plural "(orphan packages)"
@@ -1783,7 +1788,7 @@ msgstr[0] "Nepoznata greška"
 msgstr[1] "Nepoznata greška"
 msgstr[2] "Nepoznata greška"
 
-#: ../urpme:163
+#: ../urpme:164
 #, fuzzy, c-format
 msgid "Remove %d package?"
 msgid_plural "Remove %d packages?"
@@ -1791,17 +1796,17 @@ msgstr[0] "Instaliram paket %s"
 msgstr[1] "Instaliram paket %s"
 msgstr[2] "Instaliram paket %s"
 
-#: ../urpme:168
+#: ../urpme:169
 #, fuzzy, c-format
 msgid "testing removal of %s"
 msgstr "uzimam prenosivi uređaj kao \"%s\""
 
-#: ../urpme:185
+#: ../urpme:186
 #, fuzzy, c-format
 msgid "Removal failed"
 msgstr "Prijava nije uspjela"
 
-#: ../urpme:187
+#: ../urpme:188
 #, fuzzy, c-format
 msgid "Removal is possible"
 msgstr "Prijava nije uspjela"
@@ -2369,105 +2374,115 @@ msgstr "  --description   - ispisuje oznaku description: opis."
 
 #: ../urpmi:153
 #, fuzzy, c-format
+msgid "  --notriggers   - do not execute package trigger(s)\n"
+msgstr "  --description   - ispisuje oznaku description: opis."
+
+#: ../urpmi:154
+#, fuzzy, c-format
+msgid "  --nofdigests   - do not verify digest of file(s)\n"
+msgstr "  --description   - ispisuje oznaku description: opis."
+
+#: ../urpmi:155
+#, fuzzy, c-format
 msgid "  --replacefiles - ignore file conflicts\n"
 msgstr ""
 "  --conflicts     - ispisuje oznaku conflicts: sve konflikte (više linija)."
 
-#: ../urpmi:155
+#: ../urpmi:157
 #, fuzzy, c-format
 msgid "  --skip         - packages which installation should be skipped\n"
 msgstr " --test         - potvrdi da instalacija može biti dostignuta točno.\n"
 
-#: ../urpmi:156
+#: ../urpmi:158
 #, fuzzy, c-format
 msgid "  --prefer       - packages which should be preferred\n"
 msgstr " --test         - potvrdi da instalacija može biti dostignuta točno.\n"
 
-#: ../urpmi:157
+#: ../urpmi:159
 #, c-format
 msgid ""
 "  --more-choices - when several packages are found, propose more choices\n"
 "                   than the default.\n"
 msgstr ""
 
-#: ../urpmi:159
+#: ../urpmi:161
 #, fuzzy, c-format
 msgid "  --nolock       - don't lock rpm db.\n"
 msgstr "  --noclean      - zadrži rpm koji nije korišten u međuspremniku.\n"
 
-#: ../urpmi:160
+#: ../urpmi:162
 #, c-format
 msgid "  --strict-arch  - upgrade only packages with the same architecture.\n"
 msgstr ""
 
-#: ../urpmi:161 ../urpmq:99
+#: ../urpmi:163 ../urpmq:99
 #, c-format
 msgid "  -a             - select all matches on command line.\n"
 msgstr "  -a             - odabire sve odgovarajuće na komandnoj liniji.\n"
 
-#: ../urpmi:164
+#: ../urpmi:166
 #, fuzzy, c-format
 msgid "  --quiet, -q    - quiet mode.\n"
 msgstr "  -q             - tihi mod.\n"
 
-#: ../urpmi:166
+#: ../urpmi:168
 #, fuzzy, c-format
 msgid "  --debug        - very verbose mode.\n"
 msgstr "  -v             - opširan mod.\n"
 
-#: ../urpmi:167
+#: ../urpmi:169
 #, fuzzy, c-format
 msgid "  names or rpm files given on command line will be installed.\n"
 msgstr "  imena ili rpm datoteke dane na komandnoj liniji se ispituju.\n"
 
-#: ../urpmi:201
+#: ../urpmi:203
 #, c-format
 msgid "Error: can't use --auto-select along with package list.\n"
 msgstr ""
 
-#: ../urpmi:208
+#: ../urpmi:210
 #, c-format
 msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
 "along with --bug.\n"
 msgstr ""
 
-#: ../urpmi:238
+#: ../urpmi:240
 #, fuzzy, c-format
 msgid "You can't install binary rpm files when using --install-src"
 msgstr ""
 "Što može biti učinjeno s binarnim rpm datotekama kad se korsiti opcija --"
 "install-src"
 
-#: ../urpmi:239
+#: ../urpmi:241
 #, c-format
 msgid "You can't install spec files"
 msgstr ""
 
-#: ../urpmi:246
+#: ../urpmi:248
 #, c-format
 msgid "defaulting to --buildrequires"
 msgstr ""
 
-#: ../urpmi:251
+#: ../urpmi:253
 #, c-format
 msgid ""
 "please use --buildrequires or --install-src, defaulting to --buildrequires"
 msgstr ""
 
-#: ../urpmi:271
+#: ../urpmi:273
 #, fuzzy, c-format
 msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
 "or delete it"
 msgstr "Grupa već postoji, molimo odaberite drugo ime grupe"
 
-#: ../urpmi:272
+#: ../urpmi:274
 #, fuzzy, c-format
 msgid "Unable to create directory [%s] for bug report"
 msgstr "Nije uspjelo stvaranje direktorija %s"
 
-#: ../urpmi:293
+#: ../urpmi:295
 #, c-format
 msgid ""
 "Error: %s appears to be mounted read-only.\n"
@@ -2475,30 +2490,30 @@ msgid ""
 msgstr ""
 
 #. -PO: here format is "<package_name>: <summary> (to upgrade)"
-#: ../urpmi:456
+#: ../urpmi:458
 #, fuzzy, c-format
 msgid "%s: %s (to upgrade)"
 msgstr "Dogradnja"
 
 #. -PO: here format is "<package_name> (to upgrade)"
-#: ../urpmi:458
+#: ../urpmi:460
 #, fuzzy, c-format
 msgid "%s (to upgrade)"
 msgstr "Dogradnja"
 
 #. -PO: here format is "<package_name>: <summary> (to install)"
-#: ../urpmi:462
+#: ../urpmi:464
 #, fuzzy, c-format
 msgid "%s: %s (to install)"
 msgstr "Izlaz iz instalacije"
 
 #. -PO: here format is "<package_name> (to install)"
-#: ../urpmi:464
+#: ../urpmi:466
 #, fuzzy, c-format
 msgid "%s (to install)"
 msgstr "Izlaz iz instalacije"
 
-#: ../urpmi:470
+#: ../urpmi:472
 #, fuzzy, c-format
 msgid ""
 "In order to satisfy the '%s' dependency, one of the following packages is "
@@ -2506,12 +2521,12 @@ msgid ""
 msgstr ""
 "Kako bi zadovoljili ovisnosti, slijedeći paketi će biti uklonjeni (%d MB)"
 
-#: ../urpmi:473
+#: ../urpmi:475
 #, c-format
 msgid "What is your choice? (1-%d) "
 msgstr "Izaberite jedan? (1-%d) "
 
-#: ../urpmi:515
+#: ../urpmi:517
 #, c-format
 msgid ""
 "The following package cannot be installed because it depends on packages\n"
@@ -2519,7 +2534,7 @@ msgid ""
 "%s"
 msgstr ""
 
-#: ../urpmi:517
+#: ../urpmi:519
 #, c-format
 msgid ""
 "The following packages can't be installed because they depend on packages\n"
@@ -2527,14 +2542,14 @@ msgid ""
 "%s"
 msgstr ""
 
-#: ../urpmi:523 ../urpmi:524 ../urpmi:539
+#: ../urpmi:525 ../urpmi:526 ../urpmi:541
 #, fuzzy, c-format
 msgid ""
 "\n"
 "Continue installation anyway?"
 msgstr "Da ipak nastavim?"
 
-#: ../urpmi:533
+#: ../urpmi:535
 #, fuzzy, c-format
 msgid ""
 "A requested package cannot be installed:\n"
@@ -2543,7 +2558,7 @@ msgstr ""
 "Naki traženi paketi ne mogu biti instalirani:\n"
 "%s"
 
-#: ../urpmi:534
+#: ../urpmi:536
 #, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
@@ -2552,12 +2567,12 @@ msgstr ""
 "Naki traženi paketi ne mogu biti instalirani:\n"
 "%s"
 
-#: ../urpmi:551
+#: ../urpmi:553
 #, fuzzy, c-format
 msgid "removing package %s will break your system"
 msgstr "uklanjanje paketa %s će pokvariti vaš sustav\n"
 
-#: ../urpmi:559
+#: ../urpmi:561
 #, fuzzy, c-format
 msgid ""
 "The installation cannot continue because the following package\n"
@@ -2567,7 +2582,7 @@ msgstr ""
 "neki paketi moraju biti uklonjeni da bi mogli biti nadograđeni, ovo još "
 "uvijek nije podržano\n"
 
-#: ../urpmi:561
+#: ../urpmi:563
 #, fuzzy, c-format
 msgid ""
 "The installation cannot continue because the following packages\n"
@@ -2577,12 +2592,12 @@ msgstr ""
 "neki paketi moraju biti uklonjeni da bi mogli biti nadograđeni, ovo još "
 "uvijek nije podržano\n"
 
-#: ../urpmi:569
+#: ../urpmi:571
 #, c-format
 msgid "(test only, removal will not be actually done)"
 msgstr ""
 
-#: ../urpmi:589
+#: ../urpmi:591
 #, fuzzy, c-format
 msgid ""
 "You must first call urpmi with --buildrequires to install the following "
@@ -2592,7 +2607,7 @@ msgstr ""
 "Morate biti administrator(root) kako bi instalirali slijedeće ovisnosti:\n"
 "%s\n"
 
-#: ../urpmi:599
+#: ../urpmi:601
 #, fuzzy, c-format
 msgid "The following orphan package will be removed."
 msgid_plural "The following orphan packages will be removed."
@@ -2603,27 +2618,27 @@ msgstr[1] ""
 msgstr[2] ""
 "Kako bi zadovoljili ovisnosti, slijedeći paketi će biti uklonjeni (%d MB)"
 
-#: ../urpmi:627
+#: ../urpmi:629
 #, c-format
 msgid "(test only, installation will not be actually done)"
 msgstr ""
 
-#: ../urpmi:633
+#: ../urpmi:635
 #, c-format
 msgid "%s of additional disk space will be used."
 msgstr ""
 
-#: ../urpmi:634
+#: ../urpmi:636
 #, c-format
 msgid "%s of disk space will be freed."
 msgstr ""
 
-#: ../urpmi:635
+#: ../urpmi:637
 #, c-format
 msgid "%s of packages will be retrieved."
 msgstr ""
 
-#: ../urpmi:636
+#: ../urpmi:638
 #, c-format
 msgid "Proceed with the installation of one package?"
 msgid_plural "Proceed with the installation of the %d packages?"
@@ -2631,12 +2646,12 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: ../urpmi:659
+#: ../urpmi:661
 #, c-format
 msgid "Cancel"
 msgstr "Odustani"
 
-#: ../urpmi:667
+#: ../urpmi:669
 #, fuzzy, c-format
 msgid "Press Enter when mounted..."
 msgstr "Pritisnite Enter kada ste gotovi..."

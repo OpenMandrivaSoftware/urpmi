@@ -307,7 +307,7 @@ msgid ""
 msgstr "Untuk memenuhi ketergantungan, paket-paket berikut juga akan diinstal:"
 
 #: ../gurpmi2:270
-#, c-format
+#, fuzzy, c-format
 msgid "(%d package, %d MB)"
 msgid_plural "(%d packages, %d MB)"
 msgstr[0] "(%d paket, %d MB)"
@@ -1804,7 +1804,7 @@ msgid "No orphans to remove"
 msgstr "Tidak ada yang dihapus"
 
 #: ../urpme:151
-#, c-format
+#, fuzzy, c-format
 msgid "To satisfy dependencies, the following package will be removed"
 msgid_plural ""
 "To satisfy dependencies, the following %d packages will be removed"
@@ -1818,7 +1818,7 @@ msgid_plural "(orphan packages)"
 msgstr[0] "paket tidak dikenal"
 
 #: ../urpme:163
-#, c-format
+#, fuzzy, c-format
 msgid "Remove %d package?"
 msgid_plural "Remove %d packages?"
 msgstr[0] "Hapus %d paket?"
@@ -2668,7 +2668,7 @@ msgid "%s of packages will be retrieved."
 msgstr ""
 
 #: ../urpmi:636
-#, c-format
+#, fuzzy, c-format
 msgid "Proceed with the installation of one package?"
 msgid_plural "Proceed with the installation of the %d packages?"
 msgstr[0] "Lanjutkan dengan installasi satu paket?"
@@ -2963,7 +2963,7 @@ msgid "Cleaning up repackage directory [%s]...\n"
 msgstr "Membersihkan direktori repackage [%s]...\n"
 
 #: ../urpmi.recover:72
-#, c-format
+#, fuzzy, c-format
 msgid "%d file removed\n"
 msgid_plural "%d files removed\n"
 msgstr[0] "%d file dihapus\n"

@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: da\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-22 19:28+0200\n"
+"POT-Creation-Date: 2011-05-05 01:02+0200\n"
 "PO-Revision-Date: 2011-05-05 22:37+0200\n"
 "Last-Translator: Keld Simonsen <keld@keldix.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -181,12 +181,12 @@ msgstr ""
 msgid "  --media        - use only the given media, separated by comma.\n"
 msgstr "  --media        - brug kun de opgivne medier, adskilt med komma.\n"
 
-#: ../gurpmi.pm:53 ../urpmi:162
+#: ../gurpmi.pm:53 ../urpmi:164
 #, c-format
 msgid "  -p             - allow search in provides to find package.\n"
 msgstr "  -p             - tillad søgning i 'provides' for at finde pakke.\n"
 
-#: ../gurpmi.pm:54 ../urpmi:163
+#: ../gurpmi.pm:54 ../urpmi:165
 #, c-format
 msgid "  -P             - do not search in provides to find package.\n"
 msgstr "  -P             - søg ikke i 'provides' for at finde pakke.\n"
@@ -257,7 +257,7 @@ msgstr ""
 msgid "Warning"
 msgstr "Advarsel"
 
-#: ../gurpmi2:146 ../urpmi:659
+#: ../gurpmi2:146 ../urpmi:661
 #, c-format
 msgid "Ok"
 msgstr "O.k."
@@ -298,14 +298,14 @@ msgstr ""
 "%s\n"
 "Skal installationen fortsættes alligevel?"
 
-#: ../gurpmi2:267 ../urpmi:624
+#: ../gurpmi2:267 ../urpmi:626
 #, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
 msgstr ""
 "For at tilfredsstille afhængigheder vil den følgende pakke blive installeret "
 
-#: ../gurpmi2:268 ../urpmi:625
+#: ../gurpmi2:268 ../urpmi:627
 #, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
@@ -334,7 +334,7 @@ msgstr "Forbereder..."
 msgid "Installing package `%s' (%s/%s)..."
 msgstr "Installerer pakke `%s' (%s/%s)..."
 
-#: ../gurpmi2:334 ../urpmi:654
+#: ../gurpmi2:334 ../urpmi:656
 #, c-format
 msgid "Please insert the medium named \"%s\""
 msgstr "Vær venlig at indsætte mediet med navnet %s"
@@ -382,12 +382,12 @@ msgstr "alting er allerede installeret"
 msgid "Installation finished"
 msgstr "Installationen færdig"
 
-#: ../gurpmi2:407 ../urpme:169
+#: ../gurpmi2:407 ../urpme:170
 #, c-format
 msgid "removing %s"
 msgstr "fjerner %s"
 
-#: ../gurpmi2:415 ../urpmi:725
+#: ../gurpmi2:415 ../urpmi:727
 #, c-format
 msgid "restarting urpmi"
 msgstr "genstarter urpmi"
@@ -426,7 +426,7 @@ msgstr "                    standard er %s.\n"
 msgid "   -f             - output rpm full name (NVRA)\n"
 msgstr "  -f             - Vis fuldt rpm-navn (NVRA).\n"
 
-#: ../rurpmi:11 ../urpmi:287
+#: ../rurpmi:11 ../urpmi:289
 #, c-format
 msgid "Only superuser is allowed to install packages"
 msgstr "Kun superbrugeren har lov til at installere pakker"
@@ -516,57 +516,57 @@ msgstr "Denne handling er forbudt ved kørsel i begrænset tilstand"
 msgid "bad proxy declaration on command line\n"
 msgstr "Forkert proxy-erklæring på kommandolinje\n"
 
-#: ../urpm/args.pm:320
+#: ../urpm/args.pm:322
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq: kan ikke læse rpm-fil \"%s\"\n"
 
-#: ../urpm/args.pm:402
+#: ../urpm/args.pm:404
 #, c-format
 msgid "unexpected expression %s"
 msgstr "Uventet udtryk %s"
 
-#: ../urpm/args.pm:403
+#: ../urpm/args.pm:405
 #, c-format
 msgid "missing expression before %s"
 msgstr "manglende udtryk før %s"
 
-#: ../urpm/args.pm:409
+#: ../urpm/args.pm:411
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr "uventet udtryk %s (forslag: brug -a eller -o ?)"
 
-#: ../urpm/args.pm:413
+#: ../urpm/args.pm:415
 #, c-format
 msgid "no expression to close"
 msgstr "intet udtryk at lukke"
 
-#: ../urpm/args.pm:422
+#: ../urpm/args.pm:424
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr "normalt venter urpmf en regexp. du bør bruge parameteren \"--literal\""
 
-#: ../urpm/args.pm:496
+#: ../urpm/args.pm:498
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr "chroot-katalog eksisterer ikke"
 
-#: ../urpm/args.pm:519
+#: ../urpm/args.pm:521
 #, c-format
 msgid "Can't use %s without %s"
 msgstr "Kan ikke bruge %s uden %s."
 
-#: ../urpm/args.pm:522 ../urpm/args.pm:525 ../urpmq:166
+#: ../urpm/args.pm:524 ../urpm/args.pm:527 ../urpmq:166
 #, c-format
 msgid "Can't use %s with %s"
 msgstr "Kan ikke bruge '%s' med '%s'."
 
-#: ../urpm/args.pm:533
+#: ../urpm/args.pm:535
 #, c-format
 msgid "Too many arguments\n"
 msgstr "For mange argumenter\n"
 
-#: ../urpm/bug_report.pm:55 ../urpmi:277
+#: ../urpm/bug_report.pm:55 ../urpmi:279
 #, c-format
 msgid "Copying failed"
 msgstr "Kopiering mislykkedes"
@@ -746,7 +746,7 @@ msgstr "Ingen webhentning fundet, understøttede webhentninger er: %s\n"
 msgid "unable to handle protocol: %s"
 msgstr "kunne ikke behandle protokol: %s"
 
-#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:522 ../urpmi:538 ../urpmi:644
+#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:524 ../urpmi:540 ../urpmi:646
 #, c-format
 msgid "Nn"
 msgstr "Nn"
@@ -762,8 +762,8 @@ msgid ""
 "at\n"
 "http://doc4.mandriva.org/bin/dudf/.\n"
 msgstr ""
-"Der opstod et problem. Du kan bidrage til forbedring af Mandrivas"
-"opgraderingsproces\n"
+"Der opstod et problem. Du kan bidrage til forbedring af "
+"Mandrivasopgraderingsproces\n"
 "ved at lægge en automatisk genereret rapport op på en Mandriva-server.\n"
 "Ingen personlig information vil blive overført. Mere information er "
 "tilgængelig på\n"
@@ -774,7 +774,7 @@ msgstr ""
 msgid "Do you want to generate and upload a report?"
 msgstr "Ønsker du at genererer og lægge en rapport op?"
 
-#: ../urpm/dudf.pm:80 ../urpmi:524 ../urpmi:539 ../urpmi:645
+#: ../urpm/dudf.pm:80 ../urpmi:526 ../urpmi:541 ../urpmi:647
 #: ../urpmi.addmedia:136
 #, c-format
 msgid " (Y/n) "
@@ -824,7 +824,7 @@ msgstr "Oplægger DUDF-data:\n"
 msgid ""
 "\n"
 "Command:"
-msgstr
+msgstr ""
 "\n"
 "Kommando:"
 
@@ -861,8 +861,8 @@ msgid ""
 "DUDF server.\n"
 msgstr ""
 "\n"
-"Syntesefilen (medie '%s', %s) er allerede tilgængelig på Mandrivas"
-"DUDF-server.\n"
+"Syntesefilen (medie '%s', %s) er allerede tilgængelig på MandrivasDUDF-"
+"server.\n"
 
 #: ../urpm/dudf.pm:346
 #, c-format
@@ -911,12 +911,12 @@ msgstr "henter rpm-filer fra medie '%s'..."
 msgid "[repackaging]"
 msgstr "[genpakning]"
 
-#: ../urpm/install.pm:179
+#: ../urpm/install.pm:181
 #, c-format
 msgid "unable to extract rpm from delta-rpm package %s"
 msgstr "kan ikke udpakke rpm fra delta-rpm pakke %s"
 
-#: ../urpm/install.pm:204
+#: ../urpm/install.pm:206
 #, c-format
 msgid ""
 "created transaction for installing on %s (remove=%d, install=%d, upgrade=%d)"
@@ -924,42 +924,42 @@ msgstr ""
 "oprettede transaktion for installering på %s (fjern=%d, installér=%d, "
 "opgradér=%d)"
 
-#: ../urpm/install.pm:207
+#: ../urpm/install.pm:209
 #, c-format
 msgid "unable to create transaction"
 msgstr "kan ikke oprette transaktion"
 
-#: ../urpm/install.pm:230
+#: ../urpm/install.pm:232
 #, c-format
 msgid "unable to install package %s"
 msgstr "kunne ikke installere pakke %s"
 
-#: ../urpm/install.pm:233
+#: ../urpm/install.pm:235
 #, c-format
 msgid "removing bad rpm (%s) from %s"
 msgstr "fjerner dårlig rpm-pakke (%s) fra %s"
 
-#: ../urpm/install.pm:234 ../urpm/install.pm:311
+#: ../urpm/install.pm:236 ../urpm/install.pm:313
 #, c-format
 msgid "removing %s failed: %s"
 msgstr "fjernelse af %s mislykkedes: %s"
 
-#: ../urpm/install.pm:281
+#: ../urpm/install.pm:283
 #, c-format
 msgid "Removing package %s"
 msgstr "Fjerner pakke %s"
 
-#: ../urpm/install.pm:282
+#: ../urpm/install.pm:284
 #, c-format
 msgid "removing package %s"
 msgstr "fjerner pakke %s"
 
-#: ../urpm/install.pm:309
+#: ../urpm/install.pm:311
 #, c-format
 msgid "removing installed rpms (%s) from %s"
 msgstr "fjerner installerede pakker (%s) fra %s"
 
-#: ../urpm/install.pm:318
+#: ../urpm/install.pm:320
 #, c-format
 msgid "More information on package %s"
 msgstr "Mere information om pakke %s"
@@ -1409,13 +1409,13 @@ msgid "getting mirror list from %s"
 msgstr "får spejlliste fra %s"
 
 #. -PO: Add here the keys which might be pressed in the "Yes"-case.
-#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:574 ../urpmi:682 ../urpmi:692
+#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:576 ../urpmi:684 ../urpmi:694
 #: ../urpmi.addmedia:133
 #, c-format
 msgid "Yy"
 msgstr "YyJj"
 
-#: ../urpm/msg.pm:107 ../urpme:163 ../urpmi.addmedia:136
+#: ../urpm/msg.pm:107 ../urpme:164 ../urpmi.addmedia:136
 #, c-format
 msgid " (y/N) "
 msgstr " (j/N) "
@@ -1617,7 +1617,7 @@ msgstr ""
 msgid "No package named %s"
 msgstr "Ingen pakke kaldet %s"
 
-#: ../urpm/select.pm:178 ../urpme:117
+#: ../urpm/select.pm:178 ../urpme:118
 #, c-format
 msgid "The following packages contain %s: %s"
 msgstr "Følgende pakker indeholder %s: %s"
@@ -1776,7 +1776,7 @@ msgstr "  --test         - afprøv om fjernelsen kan udføres korrekt.\n"
 msgid "  --parallel     - distributed urpmi across machines of alias.\n"
 msgstr "  --parallel     - distribueret urpmi over maskiner med alias.\n"
 
-#: ../urpme:52 ../urpmi:154
+#: ../urpme:52 ../urpmi:156
 #, c-format
 msgid "  --repackage    - Re-package the files before erasing\n"
 msgstr "  --repackage    - Ompak filer før sletning\n"
@@ -1804,6 +1804,11 @@ msgid "  --noscripts    - do not execute package scriptlet(s).\n"
 msgstr "  --noscripts    - udfør ikke pakke-småskripter.\n"
 
 #: ../urpme:57
+#, fuzzy, c-format
+msgid "  --triggers     - do not execute package trigger(s).\n"
+msgstr "  --noscripts    - udfør ikke pakke-småskripter.\n"
+
+#: ../urpme:58
 #, c-format
 msgid ""
 "  --use-distrib  - configure urpme on the fly from a distrib tree, useful\n"
@@ -1812,49 +1817,49 @@ msgstr ""
 "  --use-distrib  - konfigurér urpme løbende fra et distrib træ, "
 "nyttigt               til at (af)installere en chroot med root-tilvalget.\n"
 
-#: ../urpme:59 ../urpmi:165 ../urpmq:91
+#: ../urpme:60 ../urpmi:167 ../urpmq:91
 #, c-format
 msgid "  --verbose, -v  - verbose mode.\n"
 msgstr "  --verbose, -v  - udførlig tilstand.\n"
 
-#: ../urpme:60
+#: ../urpme:61
 #, c-format
 msgid "  -a             - select all packages matching expression.\n"
 msgstr "  -a             - vælg alle pakker matchende udtryk.\n"
 
-#: ../urpme:75
+#: ../urpme:76
 #, c-format
 msgid "Only superuser is allowed to remove packages"
 msgstr "Kun superbrugeren har lov til at fjerne pakker"
 
-#: ../urpme:108
+#: ../urpme:109
 #, c-format
 msgid "unknown packages"
 msgstr "ukendte pakker"
 
-#: ../urpme:108
+#: ../urpme:109
 #, c-format
 msgid "unknown package"
 msgstr "ukendt pakke"
 
-#: ../urpme:123
+#: ../urpme:124
 #, c-format
 msgid "Removing the following package will break your system:"
 msgid_plural "Removing the following packages will break your system:"
 msgstr[0] "Fjernelse af den følgende pakke vil skade dit system:"
 msgstr[1] "Fjernelse af de følgende pakker vil skade dit system:"
 
-#: ../urpme:128
+#: ../urpme:129
 #, c-format
 msgid "Nothing to remove"
 msgstr "Ingenting at fjerne"
 
-#: ../urpme:145
+#: ../urpme:146
 #, c-format
 msgid "No orphans to remove"
 msgstr "Ingen forældreløse at fjerne"
 
-#: ../urpme:151
+#: ../urpme:152
 #, c-format
 msgid "To satisfy dependencies, the following package will be removed"
 msgid_plural ""
@@ -1864,31 +1869,31 @@ msgstr[0] ""
 msgstr[1] ""
 "For at tilfredsstille afhængigheder vil de følgende %d pakker blive fjernet"
 
-#: ../urpme:156
+#: ../urpme:157
 #, c-format
 msgid "(orphan package)"
 msgid_plural "(orphan packages)"
 msgstr[0] "(forældreløs pakke)"
 msgstr[1] "(forældreløse pakkee)"
 
-#: ../urpme:163
+#: ../urpme:164
 #, c-format
 msgid "Remove %d package?"
 msgid_plural "Remove %d packages?"
 msgstr[0] "Skal %d pakke fjernes?"
 msgstr[1] "Skal %d pakker fjernes?"
 
-#: ../urpme:168
+#: ../urpme:169
 #, c-format
 msgid "testing removal of %s"
 msgstr "afprøver fjernelse af %s"
 
-#: ../urpme:185
+#: ../urpme:186
 #, c-format
 msgid "Removal failed"
 msgstr "Fjernelse mislykkedes"
 
-#: ../urpme:187
+#: ../urpme:188
 #, c-format
 msgid "Removal is possible"
 msgstr "Fjernelse er mulig"
@@ -2450,21 +2455,31 @@ msgid "  --noscripts    - do not execute package scriptlet(s)\n"
 msgstr "  --noscripts    - kør ikke pakkers skript\n"
 
 #: ../urpmi:153
+#, fuzzy, c-format
+msgid "  --notriggers   - do not execute package trigger(s)\n"
+msgstr "  --noscripts    - kør ikke pakkers skript\n"
+
+#: ../urpmi:154
+#, fuzzy, c-format
+msgid "  --nofdigests   - do not verify digest of file(s)\n"
+msgstr "  --noscripts    - kør ikke pakkers skript\n"
+
+#: ../urpmi:155
 #, c-format
 msgid "  --replacefiles - ignore file conflicts\n"
 msgstr "  --replacefiles - ignorér filkonflikter\n"
 
-#: ../urpmi:155
+#: ../urpmi:157
 #, c-format
 msgid "  --skip         - packages which installation should be skipped\n"
 msgstr "  --skip         - pakker hvis installation bør overspringes\n"
 
-#: ../urpmi:156
+#: ../urpmi:158
 #, c-format
 msgid "  --prefer       - packages which should be preferred\n"
 msgstr "  --prefer       - Pakker som skal foretrækkes.\n"
 
-#: ../urpmi:157
+#: ../urpmi:159
 #, c-format
 msgid ""
 "  --more-choices - when several packages are found, propose more choices\n"
@@ -2473,43 +2488,43 @@ msgstr ""
 "  --more-choices - når flere pakker er fundet, så foreslå flere muligheder\n"
 "                   end normalt.\n"
 
-#: ../urpmi:159
+#: ../urpmi:161
 #, c-format
 msgid "  --nolock       - don't lock rpm db.\n"
 msgstr "  --nolock       - lås ikke rpm-database.\n"
 
-#: ../urpmi:160
+#: ../urpmi:162
 #, c-format
 msgid "  --strict-arch  - upgrade only packages with the same architecture.\n"
 msgstr "  --strict-arch  - opgradér kun pakker med den samme arkitektur.\n"
 
-#: ../urpmi:161 ../urpmq:99
+#: ../urpmi:163 ../urpmq:99
 #, c-format
 msgid "  -a             - select all matches on command line.\n"
 msgstr "  -a             - vælg alle træffere på kommandolinje.\n"
 
-#: ../urpmi:164
+#: ../urpmi:166
 #, c-format
 msgid "  --quiet, -q    - quiet mode.\n"
 msgstr "  --quiet, -q    - stille udgave.\n"
 
-#: ../urpmi:166
+#: ../urpmi:168
 #, c-format
 msgid "  --debug        - very verbose mode.\n"
 msgstr "  --debug        - meget udførlig tilstand.\n"
 
-#: ../urpmi:167
+#: ../urpmi:169
 #, c-format
 msgid "  names or rpm files given on command line will be installed.\n"
 msgstr ""
 "  navne eller rpm-filer givne på kommandolinjen vil blive installeret.\n"
 
-#: ../urpmi:201
+#: ../urpmi:203
 #, c-format
 msgid "Error: can't use --auto-select along with package list.\n"
 msgstr "Fejl: Kan ikke bruge 'auto-select' sammen med pakkeliste.\n"
 
-#: ../urpmi:208
+#: ../urpmi:210
 #, c-format
 msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
@@ -2518,28 +2533,28 @@ msgstr ""
 "Fejl: For at generere en fejlrapport skal du specificere de almindelige "
 "kommandolinjeargumenter med --bug.\n"
 
-#: ../urpmi:238
+#: ../urpmi:240
 #, c-format
 msgid "You can't install binary rpm files when using --install-src"
 msgstr "Du kan ikke installere binære rpm-filer ved brug af --install-src"
 
-#: ../urpmi:239
+#: ../urpmi:241
 #, c-format
 msgid "You can't install spec files"
 msgstr "Du kan ikke installere spec-filer"
 
-#: ../urpmi:246
+#: ../urpmi:248
 #, c-format
 msgid "defaulting to --buildrequires"
 msgstr "Normalt er dette --buildrequires"
 
-#: ../urpmi:251
+#: ../urpmi:253
 #, c-format
 msgid ""
 "please use --buildrequires or --install-src, defaulting to --buildrequires"
 msgstr "brug --buildrequires eller --install-src, forvalgt er --buildrequires"
 
-#: ../urpmi:271
+#: ../urpmi:273
 #, c-format
 msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
@@ -2548,12 +2563,12 @@ msgstr ""
 "Kataloget [%s] eksisterer allerede, brug venligst et andet katalog til "
 "fejlrapporten, eller slet det"
 
-#: ../urpmi:272
+#: ../urpmi:274
 #, c-format
 msgid "Unable to create directory [%s] for bug report"
 msgstr "kunne ikke oprette katalog [%s] til fejlrapport"
 
-#: ../urpmi:293
+#: ../urpmi:295
 #, c-format
 msgid ""
 "Error: %s appears to be mounted read-only.\n"
@@ -2563,30 +2578,30 @@ msgstr ""
 "Brug --allow-force for at gennemtvinge handlingen."
 
 #. -PO: here format is "<package_name>: <summary> (to upgrade)"
-#: ../urpmi:456
+#: ../urpmi:458
 #, c-format
 msgid "%s: %s (to upgrade)"
 msgstr "%s: %s (skal opgraderes)"
 
 #. -PO: here format is "<package_name> (to upgrade)"
-#: ../urpmi:458
+#: ../urpmi:460
 #, c-format
 msgid "%s (to upgrade)"
 msgstr "%s (skal opgraderes)"
 
 #. -PO: here format is "<package_name>: <summary> (to install)"
-#: ../urpmi:462
+#: ../urpmi:464
 #, c-format
 msgid "%s: %s (to install)"
 msgstr "%s: %s (skal installeres)"
 
 #. -PO: here format is "<package_name> (to install)"
-#: ../urpmi:464
+#: ../urpmi:466
 #, c-format
 msgid "%s (to install)"
 msgstr "%s (skal installeres)"
 
-#: ../urpmi:470
+#: ../urpmi:472
 #, c-format
 msgid ""
 "In order to satisfy the '%s' dependency, one of the following packages is "
@@ -2595,12 +2610,12 @@ msgstr ""
 "For at tilfredsstille afhængigheden af %s er én af de følgende pakker "
 "nødvendig:"
 
-#: ../urpmi:473
+#: ../urpmi:475
 #, c-format
 msgid "What is your choice? (1-%d) "
 msgstr "Hvad er dit valg? (1-%d) "
 
-#: ../urpmi:515
+#: ../urpmi:517
 #, c-format
 msgid ""
 "The following package cannot be installed because it depends on packages\n"
@@ -2611,7 +2626,7 @@ msgstr ""
 "som er ældre end de installerede:\n"
 "%s"
 
-#: ../urpmi:517
+#: ../urpmi:519
 #, c-format
 msgid ""
 "The following packages can't be installed because they depend on packages\n"
@@ -2622,7 +2637,7 @@ msgstr ""
 "som er ældre end de installerede:\n"
 "%s"
 
-#: ../urpmi:523 ../urpmi:524 ../urpmi:539
+#: ../urpmi:525 ../urpmi:526 ../urpmi:541
 #, c-format
 msgid ""
 "\n"
@@ -2631,7 +2646,7 @@ msgstr ""
 "\n"
 "Fortsæt installationen alligevel?"
 
-#: ../urpmi:533
+#: ../urpmi:535
 #, c-format
 msgid ""
 "A requested package cannot be installed:\n"
@@ -2640,7 +2655,7 @@ msgstr ""
 "En forespurgt pakke kan ikke installeres:\n"
 "%s"
 
-#: ../urpmi:534
+#: ../urpmi:536
 #, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
@@ -2649,12 +2664,12 @@ msgstr ""
 "Nogen forespurgte pakker kan ikke installeres:\n"
 "%s"
 
-#: ../urpmi:551
+#: ../urpmi:553
 #, c-format
 msgid "removing package %s will break your system"
 msgstr "fjernelse af pakke %s vil skade dit system"
 
-#: ../urpmi:559
+#: ../urpmi:561
 #, c-format
 msgid ""
 "The installation cannot continue because the following package\n"
@@ -2665,7 +2680,7 @@ msgstr ""
 "skal fjernes for at andre kan opgraderes:\n"
 "%s\n"
 
-#: ../urpmi:561
+#: ../urpmi:563
 #, c-format
 msgid ""
 "The installation cannot continue because the following packages\n"
@@ -2676,12 +2691,12 @@ msgstr ""
 "skal fjernes for at andre kan opgraderes:\n"
 "%s\n"
 
-#: ../urpmi:569
+#: ../urpmi:571
 #, c-format
 msgid "(test only, removal will not be actually done)"
 msgstr "(kun test, fjernelse vil egentlig ikke blive gennemført)"
 
-#: ../urpmi:589
+#: ../urpmi:591
 #, c-format
 msgid ""
 "You must first call urpmi with --buildrequires to install the following "
@@ -2692,46 +2707,46 @@ msgstr ""
 "afhængigheder:\n"
 "%s\n"
 
-#: ../urpmi:599
+#: ../urpmi:601
 #, c-format
 msgid "The following orphan package will be removed."
 msgid_plural "The following orphan packages will be removed."
 msgstr[0] "Den følgende forældreløse pakke vil blive fjernet."
 msgstr[1] "De følgende forældreløse pakker vil blive fjernet."
 
-#: ../urpmi:627
+#: ../urpmi:629
 #, c-format
 msgid "(test only, installation will not be actually done)"
 msgstr "(kun test, installation vil egentlig ikke blive gennemført)"
 
-#: ../urpmi:633
+#: ../urpmi:635
 #, c-format
 msgid "%s of additional disk space will be used."
 msgstr "%s mere diskplads vil blive brugt."
 
-#: ../urpmi:634
+#: ../urpmi:636
 #, c-format
 msgid "%s of disk space will be freed."
 msgstr "%s diskplads vil blive frigjort."
 
-#: ../urpmi:635
+#: ../urpmi:637
 #, c-format
 msgid "%s of packages will be retrieved."
 msgstr "%s pakker vil blive hentet."
 
-#: ../urpmi:636
+#: ../urpmi:638
 #, c-format
 msgid "Proceed with the installation of one package?"
 msgid_plural "Proceed with the installation of the %d packages?"
 msgstr[0] "Fortsæt installationen med %d pakke?"
 msgstr[1] "Fortsæt installationen med de %d pakker?"
 
-#: ../urpmi:659
+#: ../urpmi:661
 #, c-format
 msgid "Cancel"
 msgstr "Annullér"
 
-#: ../urpmi:667
+#: ../urpmi:669
 #, c-format
 msgid "Press Enter when mounted..."
 msgstr "Tryk Enter når det er monteret..."
@@ -2770,8 +2785,8 @@ msgstr ""
 "       cdrom://<sti>\n"
 "\n"
 "brug: urpmi.addmedia [valgmuligheder] --distrib --mirrorlist <url>\n"
-"brug: urpmi.addmedia [valgmuligheder] --mirrorlist <url> <navn> <relativ sti>"
-"\n"
+"brug: urpmi.addmedia [valgmuligheder] --mirrorlist <url> <navn> <relativ "
+"sti>\n"
 "\n"
 "eksempler:\n"
 "\n"
@@ -2979,8 +2994,8 @@ msgstr "  --noclean      - ryd ikke op i genpakningskatalog ved checkpoint.\n"
 msgid ""
 "  --list         - list transactions since provided date/duration argument\n"
 msgstr ""
-"  --list         - vis transaktioner siden angivet argument med "
-"tidspunkt/varighed\n"
+"  --list         - vis transaktioner siden angivet argument med tidspunkt/"
+"varighed\n"
 
 #: ../urpmi.recover:38
 #, c-format

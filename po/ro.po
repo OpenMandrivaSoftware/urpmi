@@ -46,7 +46,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Test - Mandriva Linux 2011 Translation\n"
 "Report-Msgid-Bugs-To: https://qa.mandriva.com/\n"
-"POT-Creation-Date: 2011-04-22 19:28+0200\n"
+"POT-Creation-Date: 2011-05-05 01:02+0200\n"
 "PO-Revision-Date: 2011-04-25 19:57+0000\n"
 "Last-Translator: Piratu <cfrussen@yahoo.co.uk>\n"
 "Language-Team: Romanian <cooker-i18n@mandrivalinux.org>\n"
@@ -214,13 +214,13 @@ msgid "  --media        - use only the given media, separated by comma.\n"
 msgstr ""
 "  --media        - utilizează numai mediile date, separate prin virgulă.\n"
 
-#: ../gurpmi.pm:53 ../urpmi:162
+#: ../gurpmi.pm:53 ../urpmi:164
 #, c-format
 msgid "  -p             - allow search in provides to find package.\n"
 msgstr ""
 "  -p             - permite căutarea în furnizori pentru găsirea pachetelor.\n"
 
-#: ../gurpmi.pm:54 ../urpmi:163
+#: ../gurpmi.pm:54 ../urpmi:165
 #, c-format
 msgid "  -P             - do not search in provides to find package.\n"
 msgstr ""
@@ -295,7 +295,7 @@ msgstr ""
 msgid "Warning"
 msgstr "Avertisment"
 
-#: ../gurpmi2:146 ../urpmi:659
+#: ../gurpmi2:146 ../urpmi:661
 #, c-format
 msgid "Ok"
 msgstr "OK"
@@ -337,13 +337,13 @@ msgstr ""
 "%s\n"
 "Continuați totuși instalarea?"
 
-#: ../gurpmi2:267 ../urpmi:624
+#: ../gurpmi2:267 ../urpmi:626
 #, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
 msgstr "Pentru satisfacerea dependențelor, următorul pachet va fi instalat:"
 
-#: ../gurpmi2:268 ../urpmi:625
+#: ../gurpmi2:268 ../urpmi:627
 #, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
@@ -373,7 +373,7 @@ msgstr "Pregătire..."
 msgid "Installing package `%s' (%s/%s)..."
 msgstr "Se instalează pachetul „%s” (%s/%s)..."
 
-#: ../gurpmi2:334 ../urpmi:654
+#: ../gurpmi2:334 ../urpmi:656
 #, c-format
 msgid "Please insert the medium named \"%s\""
 msgstr "Inserați mediul numit „%s”"
@@ -421,12 +421,12 @@ msgstr "Totul este deja instalat"
 msgid "Installation finished"
 msgstr "Instalare terminată"
 
-#: ../gurpmi2:407 ../urpme:169
+#: ../gurpmi2:407 ../urpme:170
 #, c-format
 msgid "removing %s"
 msgstr "se înlătură %s"
 
-#: ../gurpmi2:415 ../urpmi:725
+#: ../gurpmi2:415 ../urpmi:727
 #, c-format
 msgid "restarting urpmi"
 msgstr "se repornește urpmi"
@@ -465,7 +465,7 @@ msgstr "                   implicit este %s \n"
 msgid "   -f             - output rpm full name (NVRA)\n"
 msgstr "   -f             - afișează numele complet al pachetului (NVRA)\n"
 
-#: ../rurpmi:11 ../urpmi:287
+#: ../rurpmi:11 ../urpmi:289
 #, c-format
 msgid "Only superuser is allowed to install packages"
 msgstr "Doar administratorul poate instala pachete"
@@ -555,59 +555,59 @@ msgstr "Această operație este interzisă cînd rulați în modul restricționa
 msgid "bad proxy declaration on command line\n"
 msgstr "declarație greșită de proxy în linia de comandă\n"
 
-#: ../urpm/args.pm:320
+#: ../urpm/args.pm:322
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq: nu se poate citi fișierul rpm „%s”\n"
 
-#: ../urpm/args.pm:402
+#: ../urpm/args.pm:404
 #, c-format
 msgid "unexpected expression %s"
 msgstr "expresie neprevăzută %s"
 
-#: ../urpm/args.pm:403
+#: ../urpm/args.pm:405
 #, c-format
 msgid "missing expression before %s"
 msgstr "lipsește expresia înaintea lui %s"
 
-#: ../urpm/args.pm:409
+#: ../urpm/args.pm:411
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr "expresie neprevăzută %s (sugestie: utilizați -a sau -o ?)"
 
-#: ../urpm/args.pm:413
+#: ../urpm/args.pm:415
 #, c-format
 msgid "no expression to close"
 msgstr "nici o expresie pentru închidere"
 
-#: ../urpm/args.pm:422
+#: ../urpm/args.pm:424
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
 "urpmf așteaptă implicit o expresie regulată; ar trebui să utilizați opțiunea "
 "„--literal”"
 
-#: ../urpm/args.pm:496
+#: ../urpm/args.pm:498
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr "directorul chroot nu există"
 
-#: ../urpm/args.pm:519
+#: ../urpm/args.pm:521
 #, c-format
 msgid "Can't use %s without %s"
 msgstr "Nu se poate utiliza %s fără %s"
 
-#: ../urpm/args.pm:522 ../urpm/args.pm:525 ../urpmq:166
+#: ../urpm/args.pm:524 ../urpm/args.pm:527 ../urpmq:166
 #, c-format
 msgid "Can't use %s with %s"
 msgstr "Nu se poate utiliza %s cu %s"
 
-#: ../urpm/args.pm:533
+#: ../urpm/args.pm:535
 #, c-format
 msgid "Too many arguments\n"
 msgstr "Prea multe argumente\n"
 
-#: ../urpm/bug_report.pm:55 ../urpmi:277
+#: ../urpm/bug_report.pm:55 ../urpmi:279
 #, c-format
 msgid "Copying failed"
 msgstr "Copiere eșuată"
@@ -788,7 +788,7 @@ msgstr "nu s-a găsit webfech, versiunile suportate sînt: %s\n"
 msgid "unable to handle protocol: %s"
 msgstr "nu se poate folosi protocolul: %s"
 
-#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:522 ../urpmi:538 ../urpmi:644
+#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:524 ../urpmi:540 ../urpmi:646
 #, c-format
 msgid "Nn"
 msgstr "Nn"
@@ -817,7 +817,7 @@ msgstr ""
 msgid "Do you want to generate and upload a report?"
 msgstr "Doriți să generați un raport de încărcare?"
 
-#: ../urpm/dudf.pm:80 ../urpmi:524 ../urpmi:539 ../urpmi:645
+#: ../urpm/dudf.pm:80 ../urpmi:526 ../urpmi:541 ../urpmi:647
 #: ../urpmi.addmedia:136
 #, c-format
 msgid " (Y/n) "
@@ -954,12 +954,12 @@ msgstr "se preiau fișierele rpm de pe mediul „%s”..."
 msgid "[repackaging]"
 msgstr "[reîmpachetare]"
 
-#: ../urpm/install.pm:179
+#: ../urpm/install.pm:181
 #, c-format
 msgid "unable to extract rpm from delta-rpm package %s"
 msgstr "nu se poate extrage fișierul rpm din pachetul delta-rpm %s"
 
-#: ../urpm/install.pm:204
+#: ../urpm/install.pm:206
 #, c-format
 msgid ""
 "created transaction for installing on %s (remove=%d, install=%d, upgrade=%d)"
@@ -967,42 +967,42 @@ msgstr ""
 "tranzacție creată pentru instalarea pe %s (înlăturate=%d, instalate=%d, "
 "actualizate=%d)"
 
-#: ../urpm/install.pm:207
+#: ../urpm/install.pm:209
 #, c-format
 msgid "unable to create transaction"
 msgstr "nu se poate crea tranzacția"
 
-#: ../urpm/install.pm:230
+#: ../urpm/install.pm:232
 #, c-format
 msgid "unable to install package %s"
 msgstr "nu se poate instala pachetul %s"
 
-#: ../urpm/install.pm:233
+#: ../urpm/install.pm:235
 #, c-format
 msgid "removing bad rpm (%s) from %s"
 msgstr "se înlătură pachetul deteriorat (%s) din %s"
 
-#: ../urpm/install.pm:234 ../urpm/install.pm:311
+#: ../urpm/install.pm:236 ../urpm/install.pm:313
 #, c-format
 msgid "removing %s failed: %s"
 msgstr "înlăturarea lui %s a eșuat: %s"
 
-#: ../urpm/install.pm:281
+#: ../urpm/install.pm:283
 #, c-format
 msgid "Removing package %s"
 msgstr "Se înlătură pachetul %s"
 
-#: ../urpm/install.pm:282
+#: ../urpm/install.pm:284
 #, c-format
 msgid "removing package %s"
 msgstr "se înlătură pachetul %s"
 
-#: ../urpm/install.pm:309
+#: ../urpm/install.pm:311
 #, c-format
 msgid "removing installed rpms (%s) from %s"
 msgstr "se înlătură pachetele instalate (%s) din %s"
 
-#: ../urpm/install.pm:318
+#: ../urpm/install.pm:320
 #, c-format
 msgid "More information on package %s"
 msgstr "Informații suplimentare despre pachetul %s"
@@ -1453,13 +1453,13 @@ msgid "getting mirror list from %s"
 msgstr "se preia lista de servere alternative de la %s"
 
 #. -PO: Add here the keys which might be pressed in the "Yes"-case.
-#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:574 ../urpmi:682 ../urpmi:692
+#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:576 ../urpmi:684 ../urpmi:694
 #: ../urpmi.addmedia:133
 #, c-format
 msgid "Yy"
 msgstr "Dd"
 
-#: ../urpm/msg.pm:107 ../urpme:163 ../urpmi.addmedia:136
+#: ../urpm/msg.pm:107 ../urpme:164 ../urpmi.addmedia:136
 #, c-format
 msgid " (y/N) "
 msgstr " (d/N) "
@@ -1663,7 +1663,7 @@ msgstr ""
 msgid "No package named %s"
 msgstr "Nici un pachet numit %s"
 
-#: ../urpm/select.pm:178 ../urpme:117
+#: ../urpm/select.pm:178 ../urpme:118
 #, c-format
 msgid "The following packages contain %s: %s"
 msgstr "Următoarele pachete conțin %s: %s"
@@ -1824,7 +1824,7 @@ msgstr ""
 msgid "  --parallel     - distributed urpmi across machines of alias.\n"
 msgstr "  --parallel     - urpmi distribuit între mașinile de alias.\n"
 
-#: ../urpme:52 ../urpmi:154
+#: ../urpme:52 ../urpmi:156
 #, c-format
 msgid "  --repackage    - Re-package the files before erasing\n"
 msgstr "  --repackage    - reîmpachetează fișierele înaintea ștergerii\n"
@@ -1857,6 +1857,12 @@ msgstr ""
 "  --noscripts    - nu se execută scripturile suplimentare ale pachetului.\n"
 
 #: ../urpme:57
+#, fuzzy, c-format
+msgid "  --triggers     - do not execute package trigger(s).\n"
+msgstr ""
+"  --noscripts    - nu se execută scripturile suplimentare ale pachetului.\n"
+
+#: ../urpme:58
 #, c-format
 msgid ""
 "  --use-distrib  - configure urpme on the fly from a distrib tree, useful\n"
@@ -1866,33 +1872,33 @@ msgstr ""
 "distribuție, utilă\n"
 "                   pentru (dez)instalarea chroot cu opțiunea --root .\n"
 
-#: ../urpme:59 ../urpmi:165 ../urpmq:91
+#: ../urpme:60 ../urpmi:167 ../urpmq:91
 #, c-format
 msgid "  --verbose, -v  - verbose mode.\n"
 msgstr "   --verbose , -v  - mod detaliat.\n"
 
-#: ../urpme:60
+#: ../urpme:61
 #, c-format
 msgid "  -a             - select all packages matching expression.\n"
 msgstr ""
 "  -a             - selectează toate pachetele ce se potrivesc cu expresia.\n"
 
-#: ../urpme:75
+#: ../urpme:76
 #, c-format
 msgid "Only superuser is allowed to remove packages"
 msgstr "Doar administratorul poate înlătura pachete"
 
-#: ../urpme:108
+#: ../urpme:109
 #, c-format
 msgid "unknown packages"
 msgstr "pachete necunoscute "
 
-#: ../urpme:108
+#: ../urpme:109
 #, c-format
 msgid "unknown package"
 msgstr "pachet necunoscut "
 
-#: ../urpme:123
+#: ../urpme:124
 #, c-format
 msgid "Removing the following package will break your system:"
 msgid_plural "Removing the following packages will break your system:"
@@ -1900,17 +1906,17 @@ msgstr[0] "Înlăturarea următorului pachet va corupe sistemul:"
 msgstr[1] "Înlăturarea următoarelor pachete va corupe sistemul:"
 msgstr[2] "Înlăturarea următoarelor pachete va corupe sistemul:"
 
-#: ../urpme:128
+#: ../urpme:129
 #, c-format
 msgid "Nothing to remove"
 msgstr "Nimic de înlăturat"
 
-#: ../urpme:145
+#: ../urpme:146
 #, c-format
 msgid "No orphans to remove"
 msgstr "Nu sînt pachete orfane de înlăturat"
 
-#: ../urpme:151
+#: ../urpme:152
 #, c-format
 msgid "To satisfy dependencies, the following package will be removed"
 msgid_plural ""
@@ -1921,7 +1927,7 @@ msgstr[1] ""
 msgstr[2] ""
 "Pentru satisfacerea dependențelor, următoarele pachete %d vor fi înlăturate"
 
-#: ../urpme:156
+#: ../urpme:157
 #, c-format
 msgid "(orphan package)"
 msgid_plural "(orphan packages)"
@@ -1929,7 +1935,7 @@ msgstr[0] "(pachet orfan)"
 msgstr[1] "(pachete orfane)"
 msgstr[2] "(pachete orfane)"
 
-#: ../urpme:163
+#: ../urpme:164
 #, c-format
 msgid "Remove %d package?"
 msgid_plural "Remove %d packages?"
@@ -1937,17 +1943,17 @@ msgstr[0] "Se înlătură pachetul %d?"
 msgstr[1] "Se înlătură pachetele %d?"
 msgstr[2] "Se înlătură pachetele %d?"
 
-#: ../urpme:168
+#: ../urpme:169
 #, c-format
 msgid "testing removal of %s"
 msgstr "se testează înlăturarea lui %s"
 
-#: ../urpme:185
+#: ../urpme:186
 #, c-format
 msgid "Removal failed"
 msgstr "Înlăturare eșuată"
 
-#: ../urpme:187
+#: ../urpme:188
 #, c-format
 msgid "Removal is possible"
 msgstr "Înlăturarea este posibilă"
@@ -2519,21 +2525,33 @@ msgstr ""
 "  --noscripts    - nu se execută scripturile suplimentare ale pachetului\n"
 
 #: ../urpmi:153
+#, fuzzy, c-format
+msgid "  --notriggers   - do not execute package trigger(s)\n"
+msgstr ""
+"  --noscripts    - nu se execută scripturile suplimentare ale pachetului\n"
+
+#: ../urpmi:154
+#, fuzzy, c-format
+msgid "  --nofdigests   - do not verify digest of file(s)\n"
+msgstr ""
+"  --noscripts    - nu se execută scripturile suplimentare ale pachetului\n"
+
+#: ../urpmi:155
 #, c-format
 msgid "  --replacefiles - ignore file conflicts\n"
 msgstr "  --replacefiles - ignoră conflictele de fișiere\n"
 
-#: ../urpmi:155
+#: ../urpmi:157
 #, c-format
 msgid "  --skip         - packages which installation should be skipped\n"
 msgstr "  --skip         - pachete a căror instalare ar trebui omisă\n"
 
-#: ../urpmi:156
+#: ../urpmi:158
 #, c-format
 msgid "  --prefer       - packages which should be preferred\n"
 msgstr "  --prefer       - pachete care ar trebui preferate\n"
 
-#: ../urpmi:157
+#: ../urpmi:159
 #, c-format
 msgid ""
 "  --more-choices - when several packages are found, propose more choices\n"
@@ -2543,46 +2561,46 @@ msgstr ""
 "opțiuni\n"
 "                   decît în mod implicit.\n"
 
-#: ../urpmi:159
+#: ../urpmi:161
 #, c-format
 msgid "  --nolock       - don't lock rpm db.\n"
 msgstr "  --nolock       - nu se blochează rpm db.\n"
 
-#: ../urpmi:160
+#: ../urpmi:162
 #, c-format
 msgid "  --strict-arch  - upgrade only packages with the same architecture.\n"
 msgstr ""
 "  --strict-arch  - actualizează numai pachetele pentru aceeași arhitectură.\n"
 
-#: ../urpmi:161 ../urpmq:99
+#: ../urpmi:163 ../urpmq:99
 #, c-format
 msgid "  -a             - select all matches on command line.\n"
 msgstr ""
 "  -a             - selectează toate potrivirile din linia de comandă.\n"
 
-#: ../urpmi:164
+#: ../urpmi:166
 #, c-format
 msgid "  --quiet, -q    - quiet mode.\n"
 msgstr "  --quiet, -q    - mod silențios.\n"
 
-#: ../urpmi:166
+#: ../urpmi:168
 #, c-format
 msgid "  --debug        - very verbose mode.\n"
 msgstr "  --debug        - mod detaliat.\n"
 
-#: ../urpmi:167
+#: ../urpmi:169
 #, c-format
 msgid "  names or rpm files given on command line will be installed.\n"
 msgstr ""
 "  numele sau fișierele rpm date în linia de comandă vor fi instalate.\n"
 
-#: ../urpmi:201
+#: ../urpmi:203
 #, c-format
 msgid "Error: can't use --auto-select along with package list.\n"
 msgstr ""
 "Eroare: nu se poate utiliza --auto-select împreună cu lista de pachete.\n"
 
-#: ../urpmi:208
+#: ../urpmi:210
 #, c-format
 msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
@@ -2592,22 +2610,22 @@ msgstr ""
 "consolă\n"
 "împreună cu --bug.\n"
 
-#: ../urpmi:238
+#: ../urpmi:240
 #, c-format
 msgid "You can't install binary rpm files when using --install-src"
 msgstr "Nu se pot instala fișierele rpm binare cînd se folosește --install-src"
 
-#: ../urpmi:239
+#: ../urpmi:241
 #, c-format
 msgid "You can't install spec files"
 msgstr "Nu puteți instala fișierele spec"
 
-#: ../urpmi:246
+#: ../urpmi:248
 #, c-format
 msgid "defaulting to --buildrequires"
 msgstr "revenire implicită la --buildrequires"
 
-#: ../urpmi:251
+#: ../urpmi:253
 #, c-format
 msgid ""
 "please use --buildrequires or --install-src, defaulting to --buildrequires"
@@ -2615,7 +2633,7 @@ msgstr ""
 "utilizați --buildrequires sau --install-src, revenire implicită la --"
 "buildrequires"
 
-#: ../urpmi:271
+#: ../urpmi:273
 #, c-format
 msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
@@ -2624,12 +2642,12 @@ msgstr ""
 "Directorul [%s] există deja, utilizați un alt director pentru raportarea "
 "erorilor sau ștergeți-l"
 
-#: ../urpmi:272
+#: ../urpmi:274
 #, c-format
 msgid "Unable to create directory [%s] for bug report"
 msgstr "Nu se poate crea directorul [%s] pentru raportul de erori"
 
-#: ../urpmi:293
+#: ../urpmi:295
 #, c-format
 msgid ""
 "Error: %s appears to be mounted read-only.\n"
@@ -2639,30 +2657,30 @@ msgstr ""
 "Utilizați --allow-force pentru forțarea operației."
 
 #. -PO: here format is "<package_name>: <summary> (to upgrade)"
-#: ../urpmi:456
+#: ../urpmi:458
 #, c-format
 msgid "%s: %s (to upgrade)"
 msgstr "%s: %s (de actualizat)"
 
 #. -PO: here format is "<package_name> (to upgrade)"
-#: ../urpmi:458
+#: ../urpmi:460
 #, c-format
 msgid "%s (to upgrade)"
 msgstr "%s (de actualizat)"
 
 #. -PO: here format is "<package_name>: <summary> (to install)"
-#: ../urpmi:462
+#: ../urpmi:464
 #, c-format
 msgid "%s: %s (to install)"
 msgstr "%s: %s (de instalat)"
 
 #. -PO: here format is "<package_name> (to install)"
-#: ../urpmi:464
+#: ../urpmi:466
 #, c-format
 msgid "%s (to install)"
 msgstr "%s (de instalat)"
 
-#: ../urpmi:470
+#: ../urpmi:472
 #, c-format
 msgid ""
 "In order to satisfy the '%s' dependency, one of the following packages is "
@@ -2671,12 +2689,12 @@ msgstr ""
 "Pentru satisfacerea dependențelor lui „%s”, unul din pachetele următoare "
 "este necesar: "
 
-#: ../urpmi:473
+#: ../urpmi:475
 #, c-format
 msgid "What is your choice? (1-%d) "
 msgstr "Ce alegeți? (1-%d) "
 
-#: ../urpmi:515
+#: ../urpmi:517
 #, c-format
 msgid ""
 "The following package cannot be installed because it depends on packages\n"
@@ -2687,7 +2705,7 @@ msgstr ""
 "mai vechi decît cele instalate:\n"
 "%s"
 
-#: ../urpmi:517
+#: ../urpmi:519
 #, c-format
 msgid ""
 "The following packages can't be installed because they depend on packages\n"
@@ -2698,7 +2716,7 @@ msgstr ""
 "mai vechi decît cele instalate:\n"
 "%s"
 
-#: ../urpmi:523 ../urpmi:524 ../urpmi:539
+#: ../urpmi:525 ../urpmi:526 ../urpmi:541
 #, c-format
 msgid ""
 "\n"
@@ -2707,7 +2725,7 @@ msgstr ""
 "\n"
 "Continuați totuși instalarea?"
 
-#: ../urpmi:533
+#: ../urpmi:535
 #, c-format
 msgid ""
 "A requested package cannot be installed:\n"
@@ -2716,7 +2734,7 @@ msgstr ""
 "Un pachet cerut nu poate fi instalat:\n"
 "%s"
 
-#: ../urpmi:534
+#: ../urpmi:536
 #, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
@@ -2725,12 +2743,12 @@ msgstr ""
 "Cîteva pachete cerute nu pot fi instalate:\n"
 "%s"
 
-#: ../urpmi:551
+#: ../urpmi:553
 #, c-format
 msgid "removing package %s will break your system"
 msgstr "înlăturarea pachetului %s va corupe sistemul"
 
-#: ../urpmi:559
+#: ../urpmi:561
 #, c-format
 msgid ""
 "The installation cannot continue because the following package\n"
@@ -2741,7 +2759,7 @@ msgstr ""
 "trebuie înlăturat pentru ca celelalte să fie actualizate:\n"
 "%s\n"
 
-#: ../urpmi:561
+#: ../urpmi:563
 #, c-format
 msgid ""
 "The installation cannot continue because the following packages\n"
@@ -2752,12 +2770,12 @@ msgstr ""
 "trebuiesc înlăturate pentru ca celelalte să fie actualizate:\n"
 "%s\n"
 
-#: ../urpmi:569
+#: ../urpmi:571
 #, c-format
 msgid "(test only, removal will not be actually done)"
 msgstr "(doar test, fără înlăturare de pachete)"
 
-#: ../urpmi:589
+#: ../urpmi:591
 #, c-format
 msgid ""
 "You must first call urpmi with --buildrequires to install the following "
@@ -2768,7 +2786,7 @@ msgstr ""
 "dependențe:\n"
 "%s\n"
 
-#: ../urpmi:599
+#: ../urpmi:601
 #, c-format
 msgid "The following orphan package will be removed."
 msgid_plural "The following orphan packages will be removed."
@@ -2776,27 +2794,27 @@ msgstr[0] "Următorul pachet orfan va fi înlăturat."
 msgstr[1] "Următoarele pachete orfane vor fi înlăturate."
 msgstr[2] "Următoarele pachete orfane vor fi înlăturate."
 
-#: ../urpmi:627
+#: ../urpmi:629
 #, c-format
 msgid "(test only, installation will not be actually done)"
 msgstr "(doar test, fără instalare de pachete)"
 
-#: ../urpmi:633
+#: ../urpmi:635
 #, c-format
 msgid "%s of additional disk space will be used."
 msgstr "Vor fi utilizați %s adiționali din spațiul de pe disc."
 
-#: ../urpmi:634
+#: ../urpmi:636
 #, c-format
 msgid "%s of disk space will be freed."
 msgstr "Vor fi eliberați %s din spațiul de pe disc."
 
-#: ../urpmi:635
+#: ../urpmi:637
 #, c-format
 msgid "%s of packages will be retrieved."
 msgstr "%s de pachete vor fi preluați."
 
-#: ../urpmi:636
+#: ../urpmi:638
 #, c-format
 msgid "Proceed with the installation of one package?"
 msgid_plural "Proceed with the installation of the %d packages?"
@@ -2804,20 +2822,18 @@ msgstr[0] "Continuați cu instalarea pachetului?"
 msgstr[1] "Continuați cu instalarea celor %d pachete?"
 msgstr[2] "Continuați cu instalarea celor %d de pachete?"
 
-#: ../urpmi:659
+#: ../urpmi:661
 #, c-format
 msgid "Cancel"
 msgstr "Anulează"
 
-#: ../urpmi:667
+#: ../urpmi:669
 #, c-format
 msgid "Press Enter when mounted..."
 msgstr "Apăsați „Enter” după montare..."
 
-#. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not
-#. be translated!
-#. -PO: neither the ``with''.  Only what is between <brackets> can be
-#. translated.
+#. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
+#. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
 #: ../urpmi.addmedia:36
 #, c-format
 msgid ""
