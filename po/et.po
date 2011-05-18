@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-05 01:02+0200\n"
-"PO-Revision-Date: 2011-04-25 14:18+0300\n"
+"PO-Revision-Date: 2011-05-18 15:52+0300\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian <linux-ee@lists.eenet.ee>\n"
 "Language: et\n"
@@ -1791,12 +1791,12 @@ msgstr ""
 #: ../urpme:56
 #, c-format
 msgid "  --noscripts    - do not execute package scriptlet(s).\n"
-msgstr "  --noscripts    - pakettide skripte ei käivitata.\n"
+msgstr "  --noscripts    - pakettide käivitusskripte ei käivitata.\n"
 
 #: ../urpme:57
-#, fuzzy, c-format
+#, c-format
 msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr "  --noscripts    - pakettide skripte ei käivitata.\n"
+msgstr "  --triggers     - pakettide skripte ei käivitata.\n"
 
 #: ../urpme:58
 #, c-format
@@ -2449,14 +2449,14 @@ msgid "  --noscripts    - do not execute package scriptlet(s)\n"
 msgstr "  --noscripts    - pakettide skripte ei käivitata.\n"
 
 #: ../urpmi:153
-#, fuzzy, c-format
+#, c-format
 msgid "  --notriggers   - do not execute package trigger(s)\n"
-msgstr "  --noscripts    - pakettide skripte ei käivitata.\n"
+msgstr "  --notriggers   - pakettide käivitusskripte ei käivitata.\n"
 
 #: ../urpmi:154
-#, fuzzy, c-format
+#, c-format
 msgid "  --nofdigests   - do not verify digest of file(s)\n"
-msgstr "  --noscripts    - pakettide skripte ei käivitata.\n"
+msgstr "  --nofdigests   - failide räsi ei kontrollita.\n"
 
 #: ../urpmi:155
 #, c-format
