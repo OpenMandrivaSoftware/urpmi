@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: pt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-05 01:02+0200\n"
-"PO-Revision-Date: 2011-05-04 23:55+0100\n"
+"PO-Revision-Date: 2011-05-19 08:06+0100\n"
 "Last-Translator: Zé <ze@mandriva.org>\n"
 "Language-Team: Portuguese <>\n"
 "Language: pt\n"
@@ -301,7 +301,7 @@ msgid ""
 "%s\n"
 "Continue installation anyway?"
 msgstr ""
-"Os seguintes pacotes têm que ser removidos para os outros serem "
+"Os seguintes pacotes têm que ser removidos para que outros possam ser "
 "actualizados:\n"
 "%s\n"
 "Continuar a instalação?"
@@ -310,14 +310,14 @@ msgstr ""
 #, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
-msgstr "Para satisfazer as dependências, o seguinte pacote irá ser instalado:"
+msgstr "Para satisfazer as dependências, o seguinte pacote será instalado:"
 
 #: ../gurpmi2:268 ../urpmi:627
 #, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
 msgstr ""
-"Para satisfazer as dependências, os seguintes pacotes irão ser instalados:"
+"Para satisfazer as dependências, os seguintes pacotes serão instalados:"
 
 #: ../gurpmi2:270
 #, c-format
@@ -1827,9 +1827,9 @@ msgid "  --noscripts    - do not execute package scriptlet(s).\n"
 msgstr "  --noscripts    - não executa o(s) script(s) do pacote.\n"
 
 #: ../urpme:57
-#, fuzzy, c-format
+#, c-format
 msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr "  --noscripts    - não executa o(s) script(s) do pacote.\n"
+msgstr "  --triggers     - executa o(s) 'trigger(s)' do pacote.\n"
 
 #: ../urpme:58
 #, c-format
@@ -1871,8 +1871,8 @@ msgstr "pacote desconhecido"
 #, c-format
 msgid "Removing the following package will break your system:"
 msgid_plural "Removing the following packages will break your system:"
-msgstr[0] "A remoção do seguinte pacote irá danificar o seu sistema:"
-msgstr[1] "A remoção dos seguintes pacotes irá danificar o seu sistema:"
+msgstr[0] "A remoção do seguinte pacote danificará o seu sistema:"
+msgstr[1] "A remoção dos seguintes pacotes danificará o seu sistema:"
 
 #: ../urpme:129
 #, c-format
@@ -2491,14 +2491,15 @@ msgid "  --noscripts    - do not execute package scriptlet(s)\n"
 msgstr "  --noscripts    - não executa o 'scriptlet' do pacote\n"
 
 #: ../urpmi:153
-#, fuzzy, c-format
+#, c-format
 msgid "  --notriggers   - do not execute package trigger(s)\n"
-msgstr "  --noscripts    - não executa o 'scriptlet' do pacote\n"
+msgstr "  --notriggers   - não executa o(s) 'trigger(s)' do pacote\n"
 
 #: ../urpmi:154
-#, fuzzy, c-format
+#, c-format
 msgid "  --nofdigests   - do not verify digest of file(s)\n"
-msgstr "  --noscripts    - não executa o 'scriptlet' do pacote\n"
+msgstr ""
+"  --nofdigests   - não verifica o 'digest' (resumo MD5) do(s) ficheiro(s)\n"
 
 #: ../urpmi:155
 #, c-format
