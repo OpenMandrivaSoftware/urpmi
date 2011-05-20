@@ -1,5 +1,6 @@
-Version 6.63 -  9 May 2011, by Per Øyvind Karlsen
+Version 6.63 - 20 May 2011, by Per Øyvind Karlsen
 
+- make 'urpmq --not-available' print fullname
 - try tune and improve aria2 parameters for more reliable and faster downloads
 - reenable aria2 + metalink for downloading metadata by default to make it more reliable
 
