@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-05 01:02+0200\n"
+"POT-Creation-Date: 2011-05-27 08:27+0200\n"
 "PO-Revision-Date: 2010-02-07 16:49+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -167,12 +167,12 @@ msgstr ""
 msgid "  --media        - use only the given media, separated by comma.\n"
 msgstr "  --media        – Bruk berre valt medium (kommadelt liste).\n"
 
-#: ../gurpmi.pm:53 ../urpmi:164
+#: ../gurpmi.pm:53 ../urpmi:168
 #, c-format
 msgid "  -p             - allow search in provides to find package.\n"
 msgstr "  -p             – Tillat søk i tilbod for å finna pakkar.\n"
 
-#: ../gurpmi.pm:54 ../urpmi:165
+#: ../gurpmi.pm:54 ../urpmi:169
 #, c-format
 msgid "  -P             - do not search in provides to find package.\n"
 msgstr "  -P             – Ikkje søk i tilbod for å finna pakkar.\n"
@@ -241,7 +241,7 @@ msgstr ""
 msgid "Warning"
 msgstr "Åtvaring"
 
-#: ../gurpmi2:146 ../urpmi:661
+#: ../gurpmi2:146 ../urpmi:665
 #, c-format
 msgid "Ok"
 msgstr "OK"
@@ -282,13 +282,13 @@ msgstr ""
 "%s\n"
 "Vil du likevel halda fram?"
 
-#: ../gurpmi2:267 ../urpmi:626
+#: ../gurpmi2:267 ../urpmi:630
 #, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
 msgstr "Grunna avhengnader vert denne pakken installert:"
 
-#: ../gurpmi2:268 ../urpmi:627
+#: ../gurpmi2:268 ../urpmi:631
 #, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
@@ -316,7 +316,7 @@ msgstr "Førebur ... "
 msgid "Installing package `%s' (%s/%s)..."
 msgstr "Installerer pakken «%s» (%s/%s) ..."
 
-#: ../gurpmi2:334 ../urpmi:656
+#: ../gurpmi2:334 ../urpmi:660
 #, c-format
 msgid "Please insert the medium named \"%s\""
 msgstr "Set inn mediet «%s»"
@@ -326,7 +326,7 @@ msgstr "Set inn mediet «%s»"
 msgid "Downloading package `%s'..."
 msgstr "Lastar ned pakken «%s» ..."
 
-#: ../gurpmi2:360 ../urpm.pm:346 ../urpm/download.pm:830
+#: ../gurpmi2:360 ../urpm.pm:346 ../urpm/download.pm:836
 #: ../urpm/get_pkgs.pm:262 ../urpm/media.pm:981 ../urpm/media.pm:1493
 #: ../urpm/media.pm:1644
 #, c-format
@@ -369,7 +369,7 @@ msgstr "Installeringa er fullført"
 msgid "removing %s"
 msgstr "Fjernar «%s»."
 
-#: ../gurpmi2:415 ../urpmi:727
+#: ../gurpmi2:415 ../urpmi:731
 #, c-format
 msgid "restarting urpmi"
 msgstr "Startar urpmi på nytt."
@@ -408,7 +408,7 @@ msgstr "                    Standardverdi: %s.\n"
 msgid "   -f             - output rpm full name (NVRA)\n"
 msgstr "  -f             – Vis fullt rpm-namn (NVRA).\n"
 
-#: ../rurpmi:11 ../urpmi:289
+#: ../rurpmi:11 ../urpmi:293
 #, c-format
 msgid "Only superuser is allowed to install packages"
 msgstr "Berre superbrukaren kan installera pakkar."
@@ -498,59 +498,59 @@ msgstr "Du kan ikkje køyra denne operasjonen i avgrensa modus."
 msgid "bad proxy declaration on command line\n"
 msgstr "Ugyldig mellomtenardeklarasjon på kommandolinja.\n"
 
-#: ../urpm/args.pm:322
+#: ../urpm/args.pm:323
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq: Klarer ikkje lesa rpm-fila «%s».\n"
 
-#: ../urpm/args.pm:404
+#: ../urpm/args.pm:405
 #, c-format
 msgid "unexpected expression %s"
 msgstr "Uventa uttrykk: %s"
 
-#: ../urpm/args.pm:405
+#: ../urpm/args.pm:406
 #, c-format
 msgid "missing expression before %s"
 msgstr "Manglar uttrykk før «%s»."
 
-#: ../urpm/args.pm:411
+#: ../urpm/args.pm:412
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr "Uventa uttrykk: %s (forslag: bruk «-a» eller «-o»)."
 
-#: ../urpm/args.pm:415
+#: ../urpm/args.pm:416
 #, c-format
 msgid "no expression to close"
 msgstr "Ingen uttrykk å lukka."
 
-#: ../urpm/args.pm:424
+#: ../urpm/args.pm:425
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
 "Som standard ventar urpmf eit regulært uttrykk. Du bør bruka valet «--"
 "literal»."
 
-#: ../urpm/args.pm:498
+#: ../urpm/args.pm:499
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr "«chroot»-mappa finst ikkje."
 
-#: ../urpm/args.pm:521
+#: ../urpm/args.pm:522
 #, c-format
 msgid "Can't use %s without %s"
 msgstr "Kan ikkje bruka «%s» utan «%s»."
 
-#: ../urpm/args.pm:524 ../urpm/args.pm:527 ../urpmq:166
+#: ../urpm/args.pm:525 ../urpm/args.pm:528 ../urpmq:166
 #, c-format
 msgid "Can't use %s with %s"
 msgstr "Kan ikkje bruka «%s» med «%s»."
 
-#: ../urpm/args.pm:535
+#: ../urpm/args.pm:536
 #, c-format
 msgid "Too many arguments\n"
 msgstr "For mange argument.\n"
 
-#: ../urpm/bug_report.pm:55 ../urpmi:279
+#: ../urpm/bug_report.pm:55 ../urpmi:283
 #, c-format
 msgid "Copying failed"
 msgstr " mislukka kopiering."
@@ -604,134 +604,134 @@ msgstr "Klarte ikkje skriva oppsettfila [%s]."
 msgid "%s is not available, falling back on %s"
 msgstr "«%s» er ikkje tilgjengeleg. Fell tilbake på «%s»."
 
-#: ../urpm/download.pm:165
+#: ../urpm/download.pm:167
 #, c-format
 msgid "can not read proxy settings (not enough rights to read %s)"
 msgstr ""
 "Klarte ikkje lesa mellomtenar-innstillingar (har ikkje løyve til å lesa "
 "«%s»)."
 
-#: ../urpm/download.pm:190
+#: ../urpm/download.pm:192
 #, c-format
 msgid "Please enter your credentials for accessing proxy\n"
 msgstr "Skriv inn brukarnamn og passord for tilgang til mellomtenar\n"
 
-#: ../urpm/download.pm:191
+#: ../urpm/download.pm:193
 #, c-format
 msgid "User name:"
 msgstr "Brukarnamn:"
 
-#: ../urpm/download.pm:191
+#: ../urpm/download.pm:193
 #, c-format
 msgid "Password:"
 msgstr "Passord:"
 
-#: ../urpm/download.pm:267
+#: ../urpm/download.pm:269
 #, c-format
 msgid "Unknown webfetch `%s' !!!\n"
 msgstr "Ukjend vevhenting «%s».\n"
 
-#: ../urpm/download.pm:275
+#: ../urpm/download.pm:277
 #, c-format
 msgid "%s failed: exited with signal %d"
 msgstr "%s-feil: Avslutta med signalet %d."
 
-#: ../urpm/download.pm:276
+#: ../urpm/download.pm:278
 #, c-format
 msgid "%s failed: exited with %d"
 msgstr "%s-feil: Avslutta med %d."
 
-#: ../urpm/download.pm:310
+#: ../urpm/download.pm:312
 #, c-format
 msgid "copy failed"
 msgstr "mislukka kopiering."
 
-#: ../urpm/download.pm:316
+#: ../urpm/download.pm:318
 #, c-format
 msgid "wget is missing\n"
 msgstr "wget manglar.\n"
 
-#: ../urpm/download.pm:383
+#: ../urpm/download.pm:385
 #, c-format
 msgid "curl is missing\n"
 msgstr "curl manglar.\n"
 
-#: ../urpm/download.pm:519
+#: ../urpm/download.pm:521
 #, c-format
 msgid "curl failed: upload canceled\n"
 msgstr "curl-feil: Opplasting avbroten.\n"
 
-#: ../urpm/download.pm:520
+#: ../urpm/download.pm:522
 #, c-format
 msgid "curl failed: download canceled\n"
 msgstr "curl-feil: Nedlasting avbroten.\n"
 
-#: ../urpm/download.pm:555
+#: ../urpm/download.pm:557
 #, c-format
 msgid "rsync is missing\n"
 msgstr "rsync manglar.\n"
 
-#: ../urpm/download.pm:623
+#: ../urpm/download.pm:625
 #, c-format
 msgid "ssh is missing\n"
 msgstr "ssh manglar.\n"
 
-#: ../urpm/download.pm:642
+#: ../urpm/download.pm:644
 #, c-format
 msgid "prozilla is missing\n"
 msgstr "prozilla manglar.\n"
 
-#: ../urpm/download.pm:658
+#: ../urpm/download.pm:660
 #, c-format
 msgid "Couldn't execute prozilla\n"
 msgstr "Klarte ikkje køyra prozilla.\n"
 
-#: ../urpm/download.pm:668
+#: ../urpm/download.pm:670
 #, c-format
 msgid "aria2 is missing\n"
 msgstr "aria2 manglar.\n"
 
-#: ../urpm/download.pm:712
+#: ../urpm/download.pm:718
 #, c-format
 msgid "Failed to download %s"
 msgstr "Klarte ikkje lasta ned %s"
 
-#: ../urpm/download.pm:807
+#: ../urpm/download.pm:813
 #, c-format
 msgid "        %s%% of %s completed, ETA = %s, speed = %s"
 msgstr "        %s %% av %s fullført. Tid igjen: %s. Fart: %s."
 
-#: ../urpm/download.pm:808
+#: ../urpm/download.pm:814
 #, c-format
 msgid "        %s%% completed, speed = %s"
 msgstr "        %s %% fullført. Fart: %s."
 
-#: ../urpm/download.pm:882
+#: ../urpm/download.pm:888
 #, c-format
 msgid "retrieving %s"
 msgstr "Hentar «%s»."
 
-#: ../urpm/download.pm:889
+#: ../urpm/download.pm:895
 #, c-format
 msgid "retrieved %s"
 msgstr "Henta «%s»."
 
-#: ../urpm/download.pm:953
+#: ../urpm/download.pm:959
 #, c-format
 msgid "unknown protocol defined for %s"
 msgstr "Ukjend protokoll definert for «%s»."
 
-#: ../urpm/download.pm:965
+#: ../urpm/download.pm:971
 #, c-format
 msgid "no webfetch found, supported webfetch are: %s\n"
 msgstr "Fann ingen «webfetch». Støtta «webfetch»-ar er: %s\n"
 
-#: ../urpm/download.pm:982
+#: ../urpm/download.pm:988
 #, c-format
 msgid "unable to handle protocol: %s"
 msgstr "Kan ikkje bruka protokollen: %s."
 
-#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:524 ../urpmi:540 ../urpmi:646
+#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:528 ../urpmi:544 ../urpmi:650
 #, c-format
 msgid "Nn"
 msgstr "Nn"
@@ -753,7 +753,7 @@ msgstr ""
 msgid "Do you want to generate and upload a report?"
 msgstr "Ønskjer du å lasta opp ein DUDF-rapport til Mandriva?"
 
-#: ../urpm/dudf.pm:80 ../urpmi:526 ../urpmi:541 ../urpmi:647
+#: ../urpm/dudf.pm:80 ../urpmi:530 ../urpmi:545 ../urpmi:651
 #: ../urpmi.addmedia:136
 #, c-format
 msgid " (Y/n) "
@@ -1379,7 +1379,7 @@ msgid "getting mirror list from %s"
 msgstr "Hentar spegelliste frå %s."
 
 #. -PO: Add here the keys which might be pressed in the "Yes"-case.
-#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:576 ../urpmi:684 ../urpmi:694
+#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:580 ../urpmi:688 ../urpmi:698
 #: ../urpmi.addmedia:133
 #, c-format
 msgid "Yy"
@@ -1749,7 +1749,7 @@ msgstr "  --test         – Kontroller at fjerninga kan fungera.\n"
 msgid "  --parallel     - distributed urpmi across machines of alias.\n"
 msgstr "  --parallel     – Distribuert urpmi over maskiner med alias.\n"
 
-#: ../urpme:52 ../urpmi:156
+#: ../urpme:52 ../urpmi:160
 #, c-format
 msgid "  --repackage    - Re-package the files before erasing\n"
 msgstr "  --repackage    – Pakk om filer før sletting.\n"
@@ -1791,7 +1791,7 @@ msgstr ""
 "  --use-distrib  – Set opp urpme direkte frå eit «distrib»-tre.\n"
 "Nyttig for å (av)installera ei «chroot» med «--root»-valet.\n"
 
-#: ../urpme:60 ../urpmi:167 ../urpmq:91
+#: ../urpme:60 ../urpmi:171 ../urpmq:91
 #, c-format
 msgid "  --verbose, -v  - verbose mode.\n"
 msgstr "  --verbose, -v  – Utvida meldingar.\n"
@@ -2431,20 +2431,30 @@ msgstr "  --noscripts    – Ikkje køyr pakkeskript.\n"
 
 #: ../urpmi:155
 #, c-format
+msgid ""
+"  --nitronothing - trade verification and reliability for performance, "
+"alias:\n"
+"                   --tune-rpm=nofsync\n"
+"                   --nofdigests\n"
+"                   --no-verify-rpm\n"
+msgstr ""
+
+#: ../urpmi:159
+#, c-format
 msgid "  --replacefiles - ignore file conflicts\n"
 msgstr "  --replacefiles – Ignorer filkonfliktar.\n"
 
-#: ../urpmi:157
+#: ../urpmi:161
 #, c-format
 msgid "  --skip         - packages which installation should be skipped\n"
 msgstr "  --skip         – Pakkar som installasjonen skal hoppa over.\n"
 
-#: ../urpmi:158
+#: ../urpmi:162
 #, c-format
 msgid "  --prefer       - packages which should be preferred\n"
 msgstr "  --prefer       – Pakkar som skal føretrekkast.\n"
 
-#: ../urpmi:159
+#: ../urpmi:163
 #, c-format
 msgid ""
 "  --more-choices - when several packages are found, propose more choices\n"
@@ -2452,42 +2462,42 @@ msgid ""
 msgstr ""
 "  --more-choices – Vis fleire val enn standard ved treff på fleire pakkar.\n"
 
-#: ../urpmi:161
+#: ../urpmi:165
 #, c-format
 msgid "  --nolock       - don't lock rpm db.\n"
 msgstr "  --nolock       – Ikkje lås pakkedatabasen.\n"
 
-#: ../urpmi:162
+#: ../urpmi:166
 #, c-format
 msgid "  --strict-arch  - upgrade only packages with the same architecture.\n"
 msgstr "  --strict-arch  – Berre oppgrader pakkar med same arkitektur.\n"
 
-#: ../urpmi:163 ../urpmq:99
+#: ../urpmi:167 ../urpmq:99
 #, c-format
 msgid "  -a             - select all matches on command line.\n"
 msgstr "  -a             – Vel alle treff på kommandolinja.\n"
 
-#: ../urpmi:166
+#: ../urpmi:170
 #, c-format
 msgid "  --quiet, -q    - quiet mode.\n"
 msgstr "  --quiet, -q    – Stillemodus.\n"
 
-#: ../urpmi:168
+#: ../urpmi:172
 #, c-format
 msgid "  --debug        - very verbose mode.\n"
 msgstr "  --debug        – Veldig mange utvida meldingar.\n"
 
-#: ../urpmi:169
+#: ../urpmi:173
 #, c-format
 msgid "  names or rpm files given on command line will be installed.\n"
 msgstr "  Namn og rpm-filer valt på kommandolinja vert installerte.\n"
 
-#: ../urpmi:203
+#: ../urpmi:207
 #, c-format
 msgid "Error: can't use --auto-select along with package list.\n"
 msgstr "Feil: Kan ikkje bruka «auto-select» saman med pakkeliste.\n"
 
-#: ../urpmi:210
+#: ../urpmi:214
 #, c-format
 msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
@@ -2496,29 +2506,29 @@ msgstr ""
 "Feil: For å laga ein feilrapport kan du bruka dei vanlege "
 "kommandolinjeargumenta, og så leggja til «--bug».\n"
 
-#: ../urpmi:240
+#: ../urpmi:244
 #, c-format
 msgid "You can't install binary rpm files when using --install-src"
 msgstr "Du kan ikkje installera binærpakkar med «--install-src»."
 
-#: ../urpmi:241
+#: ../urpmi:245
 #, c-format
 msgid "You can't install spec files"
 msgstr "Du kan ikkje installera spec-filer."
 
-#: ../urpmi:248
+#: ../urpmi:252
 #, c-format
 msgid "defaulting to --buildrequires"
 msgstr "Brukar standardvalet --buildrequires"
 
-#: ../urpmi:253
+#: ../urpmi:257
 #, c-format
 msgid ""
 "please use --buildrequires or --install-src, defaulting to --buildrequires"
 msgstr ""
 "Bruk «--buildrequires» eller «--install-src». Standard er «--buildrequires»."
 
-#: ../urpmi:273
+#: ../urpmi:277
 #, c-format
 msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
@@ -2527,12 +2537,12 @@ msgstr ""
 "Mappa [%s] finst allerie. Bruk ei anna mappe for feilrapport, eller slett "
 "denne."
 
-#: ../urpmi:274
+#: ../urpmi:278
 #, c-format
 msgid "Unable to create directory [%s] for bug report"
 msgstr "Klarte ikkje laga mappe [%s] for feilrapport."
 
-#: ../urpmi:295
+#: ../urpmi:299
 #, c-format
 msgid ""
 "Error: %s appears to be mounted read-only.\n"
@@ -2542,42 +2552,42 @@ msgstr ""
 "Bruk «--allow-force» for å tvinga gjennom operasjonen."
 
 #. -PO: here format is "<package_name>: <summary> (to upgrade)"
-#: ../urpmi:458
+#: ../urpmi:462
 #, c-format
 msgid "%s: %s (to upgrade)"
 msgstr "%s: %s (oppgradering)"
 
 #. -PO: here format is "<package_name> (to upgrade)"
-#: ../urpmi:460
+#: ../urpmi:464
 #, c-format
 msgid "%s (to upgrade)"
 msgstr "%s (oppgradering)"
 
 #. -PO: here format is "<package_name>: <summary> (to install)"
-#: ../urpmi:464
+#: ../urpmi:468
 #, c-format
 msgid "%s: %s (to install)"
 msgstr "%s: %s (installering)"
 
 #. -PO: here format is "<package_name> (to install)"
-#: ../urpmi:466
+#: ../urpmi:470
 #, c-format
 msgid "%s (to install)"
 msgstr "%s (installering)"
 
-#: ../urpmi:472
+#: ../urpmi:476
 #, c-format
 msgid ""
 "In order to satisfy the '%s' dependency, one of the following packages is "
 "needed:"
 msgstr "På grunn av avhengnader til «%s» treng du éin av desse pakkane:"
 
-#: ../urpmi:475
+#: ../urpmi:479
 #, c-format
 msgid "What is your choice? (1-%d) "
 msgstr "Kven av dei vil du ha? (1–%d) "
 
-#: ../urpmi:517
+#: ../urpmi:521
 #, c-format
 msgid ""
 "The following package cannot be installed because it depends on packages\n"
@@ -2588,7 +2598,7 @@ msgstr ""
 "som er eldre enn dei installerte pakkane:\n"
 "%s"
 
-#: ../urpmi:519
+#: ../urpmi:523
 #, c-format
 msgid ""
 "The following packages can't be installed because they depend on packages\n"
@@ -2599,7 +2609,7 @@ msgstr ""
 "som er eldre enn dei installerte pakkane:\n"
 "%s"
 
-#: ../urpmi:525 ../urpmi:526 ../urpmi:541
+#: ../urpmi:529 ../urpmi:530 ../urpmi:545
 #, c-format
 msgid ""
 "\n"
@@ -2608,7 +2618,7 @@ msgstr ""
 "\n"
 "Vil du likevel halda fram?"
 
-#: ../urpmi:535
+#: ../urpmi:539
 #, c-format
 msgid ""
 "A requested package cannot be installed:\n"
@@ -2617,7 +2627,7 @@ msgstr ""
 "Éin av pakkane kan ikkje installerast:\n"
 "%s"
 
-#: ../urpmi:536
+#: ../urpmi:540
 #, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
@@ -2626,12 +2636,12 @@ msgstr ""
 "Nokre av pakkane kan ikkje installerast:\n"
 "%s"
 
-#: ../urpmi:553
+#: ../urpmi:557
 #, c-format
 msgid "removing package %s will break your system"
 msgstr "Du vil øydeleggja systemet viss du fjernar pakken «%s»."
 
-#: ../urpmi:561
+#: ../urpmi:565
 #, c-format
 msgid ""
 "The installation cannot continue because the following package\n"
@@ -2642,7 +2652,7 @@ msgstr ""
 "for at andre skal kunna oppgraderast:\n"
 "%s\n"
 
-#: ../urpmi:563
+#: ../urpmi:567
 #, c-format
 msgid ""
 "The installation cannot continue because the following packages\n"
@@ -2653,12 +2663,12 @@ msgstr ""
 "for at andre skal kunna oppgraderast:\n"
 "%s\n"
 
-#: ../urpmi:571
+#: ../urpmi:575
 #, c-format
 msgid "(test only, removal will not be actually done)"
 msgstr "(Berre ein test. Pakkane vert ikkje fjerna.)"
 
-#: ../urpmi:591
+#: ../urpmi:595
 #, c-format
 msgid ""
 "You must first call urpmi with --buildrequires to install the following "
@@ -2669,46 +2679,46 @@ msgstr ""
 "avhengnadene:\n"
 "%s\n"
 
-#: ../urpmi:601
+#: ../urpmi:605
 #, c-format
 msgid "The following orphan package will be removed."
 msgid_plural "The following orphan packages will be removed."
 msgstr[0] "Denne foreldrelause pakken vert fjerna."
 msgstr[1] "Desse foreldrelause pakkane vert fjerna."
 
-#: ../urpmi:629
+#: ../urpmi:633
 #, c-format
 msgid "(test only, installation will not be actually done)"
 msgstr "(Berre ein test. Pakkane vert ikkje installerte.)"
 
-#: ../urpmi:635
+#: ../urpmi:639
 #, c-format
 msgid "%s of additional disk space will be used."
 msgstr "Det vert brukt %s meir diskplass."
 
-#: ../urpmi:636
+#: ../urpmi:640
 #, c-format
 msgid "%s of disk space will be freed."
 msgstr "Det vert frigjort %s diskplass."
 
-#: ../urpmi:637
+#: ../urpmi:641
 #, c-format
 msgid "%s of packages will be retrieved."
 msgstr "%s pakkar vert henta ned."
 
-#: ../urpmi:638
+#: ../urpmi:642
 #, c-format
 msgid "Proceed with the installation of one package?"
 msgid_plural "Proceed with the installation of the %d packages?"
 msgstr[0] "Vil du halda fram med installeringa av pakken?"
 msgstr[1] "Vil du halda fram med installeringa av dei %d pakkane?"
 
-#: ../urpmi:661
+#: ../urpmi:665
 #, c-format
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: ../urpmi:669
+#: ../urpmi:673
 #, c-format
 msgid "Press Enter when mounted..."
 msgstr "Trykk «Enter» når han er montert ..."
@@ -3443,32 +3453,32 @@ msgstr "Kan berre bruka «--list-nodes« saman med «--parallel»."
 msgid "use -l to list files"
 msgstr "Bruk «-l» for å visa filer."
 
-#: ../urpmq:431
+#: ../urpmq:427
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for package %s"
 msgstr "Ingen xml-info for mediet «%s». Berre delvis resultat for pakken «%s»."
 
-#: ../urpmq:432
+#: ../urpmq:428
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for packages %s"
 msgstr ""
 "Ingen xml-info for mediet «%s». Berre delvis resultat for pakkane «%s»."
 
-#: ../urpmq:435
+#: ../urpmq:431
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for package %s"
 msgstr ""
 "Ingen xml-info for mediet «%s». Kan ikkje visa resultat for pakken «%s»."
 
-#: ../urpmq:436
+#: ../urpmq:432
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for packages %s"
 msgstr ""
 "Ingen  xml-info for mediet «%s». Kan ikkje visa resultat for pakkane «%s»."
 
-#: ../urpmq:503
+#: ../urpmq:499
 #, c-format
 msgid "No changelog found\n"
 msgstr "Fann ikkje endringslogg.\n"

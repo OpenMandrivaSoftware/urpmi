@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-05 01:02+0200\n"
+"POT-Creation-Date: 2011-05-27 08:27+0200\n"
 "PO-Revision-Date: 2008-03-22 15:41+0200\n"
 "Last-Translator: Dotan Kamber <kamberd@yahoo.com>\n"
 "Language-Team: Hebrew\n"
@@ -173,12 +173,12 @@ msgstr ""
 msgid "  --media        - use only the given media, separated by comma.\n"
 msgstr "  --media        - שימוש רק במקורות המסופקים, מופרדים ע\"י פסיק\n"
 
-#: ../gurpmi.pm:53 ../urpmi:164
+#: ../gurpmi.pm:53 ../urpmi:168
 #, c-format
 msgid "  -p             - allow search in provides to find package.\n"
 msgstr "  -p             - allow search in provides to find package.\n"
 
-#: ../gurpmi.pm:54 ../urpmi:165
+#: ../gurpmi.pm:54 ../urpmi:169
 #, c-format
 msgid "  -P             - do not search in provides to find package.\n"
 msgstr "  -P             - do not search in provides to find package.\n"
@@ -247,7 +247,7 @@ msgstr ""
 msgid "Warning"
 msgstr "אזהרה"
 
-#: ../gurpmi2:146 ../urpmi:661
+#: ../gurpmi2:146 ../urpmi:665
 #, c-format
 msgid "Ok"
 msgstr "אישור"
@@ -288,13 +288,13 @@ msgstr ""
 "%s\n"
 "האם להמשיך בכל זאת?"
 
-#: ../gurpmi2:267 ../urpmi:626
+#: ../gurpmi2:267 ../urpmi:630
 #, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
 msgstr "כדי לספק את התלויות, החבילה הבאה הותקן:"
 
-#: ../gurpmi2:268 ../urpmi:627
+#: ../gurpmi2:268 ../urpmi:631
 #, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
@@ -322,7 +322,7 @@ msgstr "הכנה..."
 msgid "Installing package `%s' (%s/%s)..."
 msgstr "מתקין חבילה `%s' (%s/%s)..."
 
-#: ../gurpmi2:334 ../urpmi:656
+#: ../gurpmi2:334 ../urpmi:660
 #, c-format
 msgid "Please insert the medium named \"%s\""
 msgstr "נא להכניס את המדיה בשם \"%s\""
@@ -332,7 +332,7 @@ msgstr "נא להכניס את המדיה בשם \"%s\""
 msgid "Downloading package `%s'..."
 msgstr "מוריד חבילה `%s'..."
 
-#: ../gurpmi2:360 ../urpm.pm:346 ../urpm/download.pm:830
+#: ../gurpmi2:360 ../urpm.pm:346 ../urpm/download.pm:836
 #: ../urpm/get_pkgs.pm:262 ../urpm/media.pm:981 ../urpm/media.pm:1493
 #: ../urpm/media.pm:1644
 #, c-format
@@ -375,7 +375,7 @@ msgstr "ההתקנה הסתיימה"
 msgid "removing %s"
 msgstr "מסיר %s"
 
-#: ../gurpmi2:415 ../urpmi:727
+#: ../gurpmi2:415 ../urpmi:731
 #, c-format
 msgid "restarting urpmi"
 msgstr "מפעיל מחדש את urpmi"
@@ -414,7 +414,7 @@ msgstr "                    ברירת המחדל היא %s.\n"
 msgid "   -f             - output rpm full name (NVRA)\n"
 msgstr "   -f             - הצג שם מלא של ה-RPM (NVRA).\n"
 
-#: ../rurpmi:11 ../urpmi:289
+#: ../rurpmi:11 ../urpmi:293
 #, c-format
 msgid "Only superuser is allowed to install packages"
 msgstr "רק מנהל מערכת מורשה להתקין חבילות"
@@ -504,57 +504,57 @@ msgstr "פעולה זו אינה מותרת באופן עבודה מוגבל"
 msgid "bad proxy declaration on command line\n"
 msgstr "הכרזת proxy לא תקנית בשורת הפקודה\n"
 
-#: ../urpm/args.pm:322
+#: ../urpm/args.pm:323
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq: לא יכול קובץ RPM \"%s\"\n"
 
-#: ../urpm/args.pm:404
+#: ../urpm/args.pm:405
 #, c-format
 msgid "unexpected expression %s"
 msgstr ""
 
-#: ../urpm/args.pm:405
+#: ../urpm/args.pm:406
 #, fuzzy, c-format
 msgid "missing expression before %s"
 msgstr "חתימה חסרה (%s)"
 
-#: ../urpm/args.pm:411
+#: ../urpm/args.pm:412
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr ""
 
-#: ../urpm/args.pm:415
+#: ../urpm/args.pm:416
 #, c-format
 msgid "no expression to close"
 msgstr ""
 
-#: ../urpm/args.pm:424
+#: ../urpm/args.pm:425
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
 
-#: ../urpm/args.pm:498
+#: ../urpm/args.pm:499
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr "ספרית ה-chroot אינה קיימת"
 
-#: ../urpm/args.pm:521
+#: ../urpm/args.pm:522
 #, c-format
 msgid "Can't use %s without %s"
 msgstr "לא ניתן להשתמש ב-%s ללא %s"
 
-#: ../urpm/args.pm:524 ../urpm/args.pm:527 ../urpmq:166
+#: ../urpm/args.pm:525 ../urpm/args.pm:528 ../urpmq:166
 #, c-format
 msgid "Can't use %s with %s"
 msgstr "לא ניתן להשתמש ב-%s עם %s"
 
-#: ../urpm/args.pm:535
+#: ../urpm/args.pm:536
 #, c-format
 msgid "Too many arguments\n"
 msgstr "יותר מדי משתנים\n"
 
-#: ../urpm/bug_report.pm:55 ../urpmi:279
+#: ../urpm/bug_report.pm:55 ../urpmi:283
 #, c-format
 msgid "Copying failed"
 msgstr "ההעתקה נכשלה"
@@ -606,132 +606,132 @@ msgstr "כתיבת קובץ ההגדרות [%s] נכשלה"
 msgid "%s is not available, falling back on %s"
 msgstr "%s אינו זמין, נופל חזרה אל %s"
 
-#: ../urpm/download.pm:165
+#: ../urpm/download.pm:167
 #, c-format
 msgid "can not read proxy settings (not enough rights to read %s)"
 msgstr ""
 
-#: ../urpm/download.pm:190
+#: ../urpm/download.pm:192
 #, c-format
 msgid "Please enter your credentials for accessing proxy\n"
 msgstr "עליך להגדיר את פרטי ההתחברות לשרת המתווך\n"
 
-#: ../urpm/download.pm:191
+#: ../urpm/download.pm:193
 #, c-format
 msgid "User name:"
 msgstr "שם משתמש:"
 
-#: ../urpm/download.pm:191
+#: ../urpm/download.pm:193
 #, c-format
 msgid "Password:"
 msgstr "ססמה:"
 
-#: ../urpm/download.pm:267
+#: ../urpm/download.pm:269
 #, c-format
 msgid "Unknown webfetch `%s' !!!\n"
 msgstr ""
 
-#: ../urpm/download.pm:275
+#: ../urpm/download.pm:277
 #, c-format
 msgid "%s failed: exited with signal %d"
 msgstr "%s כשל: הסתיים עם אות %d"
 
-#: ../urpm/download.pm:276
+#: ../urpm/download.pm:278
 #, c-format
 msgid "%s failed: exited with %d"
 msgstr "%s כשל: הסתיים עם %d"
 
-#: ../urpm/download.pm:310
+#: ../urpm/download.pm:312
 #, c-format
 msgid "copy failed"
 msgstr "העתקה נכשלה"
 
-#: ../urpm/download.pm:316
+#: ../urpm/download.pm:318
 #, c-format
 msgid "wget is missing\n"
 msgstr "wget חסר\n"
 
-#: ../urpm/download.pm:383
+#: ../urpm/download.pm:385
 #, c-format
 msgid "curl is missing\n"
 msgstr "curl חסר\n"
 
-#: ../urpm/download.pm:519
+#: ../urpm/download.pm:521
 #, fuzzy, c-format
 msgid "curl failed: upload canceled\n"
 msgstr "curl כשל: ההורדה בוטלה\n"
 
-#: ../urpm/download.pm:520
+#: ../urpm/download.pm:522
 #, c-format
 msgid "curl failed: download canceled\n"
 msgstr "curl כשל: ההורדה בוטלה\n"
 
-#: ../urpm/download.pm:555
+#: ../urpm/download.pm:557
 #, c-format
 msgid "rsync is missing\n"
 msgstr "rsync חסר\n"
 
-#: ../urpm/download.pm:623
+#: ../urpm/download.pm:625
 #, c-format
 msgid "ssh is missing\n"
 msgstr "ssh חסר\n"
 
-#: ../urpm/download.pm:642
+#: ../urpm/download.pm:644
 #, c-format
 msgid "prozilla is missing\n"
 msgstr "prozilla חסר\n"
 
-#: ../urpm/download.pm:658
+#: ../urpm/download.pm:660
 #, c-format
 msgid "Couldn't execute prozilla\n"
 msgstr "לא ניתן להפעיל את prozilla\n"
 
-#: ../urpm/download.pm:668
+#: ../urpm/download.pm:670
 #, c-format
 msgid "aria2 is missing\n"
 msgstr ""
 
-#: ../urpm/download.pm:712
+#: ../urpm/download.pm:718
 #, c-format
 msgid "Failed to download %s"
 msgstr ""
 
-#: ../urpm/download.pm:807
+#: ../urpm/download.pm:813
 #, c-format
 msgid "        %s%% of %s completed, ETA = %s, speed = %s"
 msgstr "        %s%% מ-%s הושלמו, זמן נותר = %s, מהירות = %s"
 
-#: ../urpm/download.pm:808
+#: ../urpm/download.pm:814
 #, c-format
 msgid "        %s%% completed, speed = %s"
 msgstr "        %s%% הורדו, מהירות = %s"
 
-#: ../urpm/download.pm:882
+#: ../urpm/download.pm:888
 #, c-format
 msgid "retrieving %s"
 msgstr "מאחזר %s"
 
-#: ../urpm/download.pm:889
+#: ../urpm/download.pm:895
 #, c-format
 msgid "retrieved %s"
 msgstr "אוחזרו %s"
 
-#: ../urpm/download.pm:953
+#: ../urpm/download.pm:959
 #, c-format
 msgid "unknown protocol defined for %s"
 msgstr "פרוטוקול לא מזוהה הוגדר עבור %s"
 
-#: ../urpm/download.pm:965
+#: ../urpm/download.pm:971
 #, c-format
 msgid "no webfetch found, supported webfetch are: %s\n"
 msgstr "לא נמצא webfetch מבין אלו הנתמכים: %s\n"
 
-#: ../urpm/download.pm:982
+#: ../urpm/download.pm:988
 #, c-format
 msgid "unable to handle protocol: %s"
 msgstr "השימוש בפרוטוקול : %s נכשל"
 
-#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:524 ../urpmi:540 ../urpmi:646
+#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:528 ../urpmi:544 ../urpmi:650
 #, c-format
 msgid "Nn"
 msgstr "Nn"
@@ -753,7 +753,7 @@ msgstr ""
 msgid "Do you want to generate and upload a report?"
 msgstr ""
 
-#: ../urpm/dudf.pm:80 ../urpmi:526 ../urpmi:541 ../urpmi:647
+#: ../urpm/dudf.pm:80 ../urpmi:530 ../urpmi:545 ../urpmi:651
 #: ../urpmi.addmedia:136
 #, c-format
 msgid " (Y/n) "
@@ -1365,7 +1365,7 @@ msgid "getting mirror list from %s"
 msgstr "מייבא רשימת אתרי מראה מ- %s"
 
 #. -PO: Add here the keys which might be pressed in the "Yes"-case.
-#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:576 ../urpmi:684 ../urpmi:694
+#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:580 ../urpmi:688 ../urpmi:698
 #: ../urpmi.addmedia:133
 #, c-format
 msgid "Yy"
@@ -1719,7 +1719,7 @@ msgstr "  --test         - בדיקה האם הסרת החבילה יכולה ל
 msgid "  --parallel     - distributed urpmi across machines of alias.\n"
 msgstr "  --parallel     - הפעלה מבוזרת מול מספר מכונות שתוכנן זהה.\n"
 
-#: ../urpme:52 ../urpmi:156
+#: ../urpme:52 ../urpmi:160
 #, c-format
 msgid "  --repackage    - Re-package the files before erasing\n"
 msgstr "  --repackage    - אריזה מחדש של הקובץ לפני מחיקה\n"
@@ -1760,7 +1760,7 @@ msgstr ""
 "  --use-distrib  - הגדרת urpme בזמן ריצה לפי עץ ההפצה, שימושי\n"
 "                  להוסיף/להסיר מערכת chroot עם האפשרות --root.\n"
 
-#: ../urpme:60 ../urpmi:167 ../urpmq:91
+#: ../urpme:60 ../urpmi:171 ../urpmq:91
 #, c-format
 msgid "  --verbose, -v  - verbose mode.\n"
 msgstr ""
@@ -2389,21 +2389,31 @@ msgid "  --nofdigests   - do not verify digest of file(s)\n"
 msgstr "  --noscripts    - אל תפעיל תסריטונים של החבילה.\n"
 
 #: ../urpmi:155
+#, c-format
+msgid ""
+"  --nitronothing - trade verification and reliability for performance, "
+"alias:\n"
+"                   --tune-rpm=nofsync\n"
+"                   --nofdigests\n"
+"                   --no-verify-rpm\n"
+msgstr ""
+
+#: ../urpmi:159
 #, fuzzy, c-format
 msgid "  --replacefiles - ignore file conflicts\n"
 msgstr "  --conflicts    - הדפס את ההתנגשויות.\n"
 
-#: ../urpmi:157
+#: ../urpmi:161
 #, c-format
 msgid "  --skip         - packages which installation should be skipped\n"
 msgstr "  --skip         - חבילות שיש לדלג על ההתקנה שלהן\n"
 
-#: ../urpmi:158
+#: ../urpmi:162
 #, c-format
 msgid "  --prefer       - packages which should be preferred\n"
 msgstr ""
 
-#: ../urpmi:159
+#: ../urpmi:163
 #, c-format
 msgid ""
 "  --more-choices - when several packages are found, propose more choices\n"
@@ -2412,70 +2422,70 @@ msgstr ""
 "  --more-choices - כאשר קיימות מספר חבילות מתאימות, הצע מגוון אפשרויות\n"
 "                   ולא רק את ברירת המחדל.\n"
 
-#: ../urpmi:161
+#: ../urpmi:165
 #, c-format
 msgid "  --nolock       - don't lock rpm db.\n"
 msgstr ""
 
-#: ../urpmi:162
+#: ../urpmi:166
 #, c-format
 msgid "  --strict-arch  - upgrade only packages with the same architecture.\n"
 msgstr "  --strict-arch  - עדכן רק חבילות בעלות אותה ארכיטקטורה.\n"
 
-#: ../urpmi:163 ../urpmq:99
+#: ../urpmi:167 ../urpmq:99
 #, c-format
 msgid "  -a             - select all matches on command line.\n"
 msgstr "  -a             - select all matches on command line.\n"
 
-#: ../urpmi:166
+#: ../urpmi:170
 #, c-format
 msgid "  --quiet, -q    - quiet mode.\n"
 msgstr "  --quiet, -q    - מצב שקט.\n"
 
-#: ../urpmi:168
+#: ../urpmi:172
 #, c-format
 msgid "  --debug        - very verbose mode.\n"
 msgstr "  --debug        - מצב עם פלט רב.\n"
 
-#: ../urpmi:169
+#: ../urpmi:173
 #, c-format
 msgid "  names or rpm files given on command line will be installed.\n"
 msgstr " שמות או קובצי RPM שניתנו בשורת הפקודה יותקנו.\n"
 
-#: ../urpmi:203
+#: ../urpmi:207
 #, c-format
 msgid "Error: can't use --auto-select along with package list.\n"
 msgstr ""
 
-#: ../urpmi:210
+#: ../urpmi:214
 #, c-format
 msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
 "along with --bug.\n"
 msgstr ""
 
-#: ../urpmi:240
+#: ../urpmi:244
 #, c-format
 msgid "You can't install binary rpm files when using --install-src"
 msgstr ""
 
-#: ../urpmi:241
+#: ../urpmi:245
 #, c-format
 msgid "You can't install spec files"
 msgstr ""
 
-#: ../urpmi:248
+#: ../urpmi:252
 #, c-format
 msgid "defaulting to --buildrequires"
 msgstr ""
 
-#: ../urpmi:253
+#: ../urpmi:257
 #, c-format
 msgid ""
 "please use --buildrequires or --install-src, defaulting to --buildrequires"
 msgstr ""
 
-#: ../urpmi:273
+#: ../urpmi:277
 #, c-format
 msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
@@ -2483,12 +2493,12 @@ msgid ""
 msgstr ""
 "הספרייה [%s] כבר קיימת, עליך לבחור ספרייה אחרת לדיווח על תקלה או למחוק אותה"
 
-#: ../urpmi:274
+#: ../urpmi:278
 #, c-format
 msgid "Unable to create directory [%s] for bug report"
 msgstr "יצירת הספרייה. [%s] עבור דיווחי תקלות נכשלה"
 
-#: ../urpmi:295
+#: ../urpmi:299
 #, c-format
 msgid ""
 "Error: %s appears to be mounted read-only.\n"
@@ -2498,42 +2508,42 @@ msgstr ""
 "עליך להשתמש ב --allow-force לאלץ פעולה זו."
 
 #. -PO: here format is "<package_name>: <summary> (to upgrade)"
-#: ../urpmi:458
+#: ../urpmi:462
 #, c-format
 msgid "%s: %s (to upgrade)"
 msgstr "%s: %s (לשדרג)"
 
 #. -PO: here format is "<package_name> (to upgrade)"
-#: ../urpmi:460
+#: ../urpmi:464
 #, c-format
 msgid "%s (to upgrade)"
 msgstr "%s (לשדרג)"
 
 #. -PO: here format is "<package_name>: <summary> (to install)"
-#: ../urpmi:464
+#: ../urpmi:468
 #, c-format
 msgid "%s: %s (to install)"
 msgstr "%s: %s (להתקין)"
 
 #. -PO: here format is "<package_name> (to install)"
-#: ../urpmi:466
+#: ../urpmi:470
 #, c-format
 msgid "%s (to install)"
 msgstr "%s (להתקין)"
 
-#: ../urpmi:472
+#: ../urpmi:476
 #, c-format
 msgid ""
 "In order to satisfy the '%s' dependency, one of the following packages is "
 "needed:"
 msgstr "בכדי לענות על התלות '%s' דרושה אחת החבילות הבאות:"
 
-#: ../urpmi:475
+#: ../urpmi:479
 #, c-format
 msgid "What is your choice? (1-%d) "
 msgstr "מה היא בחירתך? (1-%d)"
 
-#: ../urpmi:517
+#: ../urpmi:521
 #, c-format
 msgid ""
 "The following package cannot be installed because it depends on packages\n"
@@ -2544,7 +2554,7 @@ msgstr ""
 "מגרסאות קודמות לאלו המותקנות:\n"
 "%s"
 
-#: ../urpmi:519
+#: ../urpmi:523
 #, c-format
 msgid ""
 "The following packages can't be installed because they depend on packages\n"
@@ -2555,7 +2565,7 @@ msgstr ""
 "מגרסאות קודמות מאלו המותקנות במחשבך:\n"
 "%s"
 
-#: ../urpmi:525 ../urpmi:526 ../urpmi:541
+#: ../urpmi:529 ../urpmi:530 ../urpmi:545
 #, c-format
 msgid ""
 "\n"
@@ -2564,7 +2574,7 @@ msgstr ""
 "\n"
 "האם להמשיך בכל זאת?"
 
-#: ../urpmi:535
+#: ../urpmi:539
 #, c-format
 msgid ""
 "A requested package cannot be installed:\n"
@@ -2573,7 +2583,7 @@ msgstr ""
 "לא ניתן להתקין חבילה מבוקשת:\n"
 "%s"
 
-#: ../urpmi:536
+#: ../urpmi:540
 #, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
@@ -2582,12 +2592,12 @@ msgstr ""
 "לא יכול להתקין כמה חבילות מבוקשות:\n"
 "%s"
 
-#: ../urpmi:553
+#: ../urpmi:557
 #, c-format
 msgid "removing package %s will break your system"
 msgstr "הסרת החבילה %s תגרום נזק למערכת"
 
-#: ../urpmi:561
+#: ../urpmi:565
 #, c-format
 msgid ""
 "The installation cannot continue because the following package\n"
@@ -2598,7 +2608,7 @@ msgstr ""
 "כדי לשדרג אחרות:\n"
 "%s\n"
 
-#: ../urpmi:563
+#: ../urpmi:567
 #, c-format
 msgid ""
 "The installation cannot continue because the following packages\n"
@@ -2609,12 +2619,12 @@ msgstr ""
 "יש צורך להסיר אותן, בכדי לשדרג את האחרות:\n"
 "%s\n"
 
-#: ../urpmi:571
+#: ../urpmi:575
 #, c-format
 msgid "(test only, removal will not be actually done)"
 msgstr "(בדיקה בלבד, ההסרה לא תבוצע למעשה)"
 
-#: ../urpmi:591
+#: ../urpmi:595
 #, c-format
 msgid ""
 "You must first call urpmi with --buildrequires to install the following "
@@ -2624,46 +2634,46 @@ msgstr ""
 "יש צורך לקרוא ל-urpmi עם --buildrequires תחילה כדי להתקין את התלויות הבאות:\n"
 "%s\n"
 
-#: ../urpmi:601
+#: ../urpmi:605
 #, fuzzy, c-format
 msgid "The following orphan package will be removed."
 msgid_plural "The following orphan packages will be removed."
 msgstr[0] "בכדי לענות על התלויות החבילה הבאה תוסר"
 msgstr[1] "כדי לענות על התלויות, %d החבילות הבאות ייוסרו"
 
-#: ../urpmi:629
+#: ../urpmi:633
 #, c-format
 msgid "(test only, installation will not be actually done)"
 msgstr "(בדיקה בלבד, ההתקנה לא תבוצע למעשה)"
 
-#: ../urpmi:635
+#: ../urpmi:639
 #, c-format
 msgid "%s of additional disk space will be used."
 msgstr "יעשה שימוש ב-%s שטח כונן נוסף."
 
-#: ../urpmi:636
+#: ../urpmi:640
 #, c-format
 msgid "%s of disk space will be freed."
 msgstr "%s שטח בכונן יפונה."
 
-#: ../urpmi:637
+#: ../urpmi:641
 #, c-format
 msgid "%s of packages will be retrieved."
 msgstr "%s של חבילות יאוחזרו."
 
-#: ../urpmi:638
+#: ../urpmi:642
 #, c-format
 msgid "Proceed with the installation of one package?"
 msgid_plural "Proceed with the installation of the %d packages?"
 msgstr[0] "להמשיך בהתקנת החבילה?"
 msgstr[1] "להמשיך בהתקנת %d החבילות?"
 
-#: ../urpmi:661
+#: ../urpmi:665
 #, c-format
 msgid "Cancel"
 msgstr "ביטול"
 
-#: ../urpmi:669
+#: ../urpmi:673
 #, c-format
 msgid "Press Enter when mounted..."
 msgstr ""
@@ -3349,29 +3359,29 @@ msgstr "--list-nodes ניתן לשימוש רק עם --parallel"
 msgid "use -l to list files"
 msgstr ""
 
-#: ../urpmq:431
+#: ../urpmq:427
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for package %s"
 msgstr "אין מידע ב-xml למקור \"%s\", תוצאה חלקית בלבד עבור החבילה %s"
 
-#: ../urpmq:432
+#: ../urpmq:428
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for packages %s"
 msgstr "אין מידע ב-xml למקור \"%s\", תוצאה חלקית בלבד עבור החבילות %s"
 
-#: ../urpmq:435
+#: ../urpmq:431
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for package %s"
 msgstr "אין מידע ב-xml למקור \"%s\", אין כל תוצאה עבור החבילה %s"
 
-#: ../urpmq:436
+#: ../urpmq:432
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for packages %s"
 msgstr "אין מידע ב-xml למקור \"%s\", אין כל תוצאה עבור החבילות %s"
 
-#: ../urpmq:503
+#: ../urpmq:499
 #, c-format
 msgid "No changelog found\n"
 msgstr "לא נמצאה רשימת שינויים\n"

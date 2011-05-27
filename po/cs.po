@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-05 01:02+0200\n"
+"POT-Creation-Date: 2011-05-27 08:27+0200\n"
 "PO-Revision-Date: 2009-10-21 21:56+0200\n"
 "Last-Translator: Michal Bukovjan <bukm@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -178,12 +178,12 @@ msgstr ""
 msgid "  --media        - use only the given media, separated by comma.\n"
 msgstr "  --media         - použít pouze uvedené zdroje, oddělené čárkou\n"
 
-#: ../gurpmi.pm:53 ../urpmi:164
+#: ../gurpmi.pm:53 ../urpmi:168
 #, c-format
 msgid "  -p             - allow search in provides to find package.\n"
 msgstr "  -p             - pokusí se najít balíček v položkách provides\n"
 
-#: ../gurpmi.pm:54 ../urpmi:165
+#: ../gurpmi.pm:54 ../urpmi:169
 #, c-format
 msgid "  -P             - do not search in provides to find package.\n"
 msgstr "  -P             - nehledá balíček v položkách provides\n"
@@ -256,7 +256,7 @@ msgstr ""
 msgid "Warning"
 msgstr "Varování"
 
-#: ../gurpmi2:146 ../urpmi:661
+#: ../gurpmi2:146 ../urpmi:665
 #, c-format
 msgid "Ok"
 msgstr "OK"
@@ -297,13 +297,13 @@ msgstr ""
 "%s\n"
 "Pokračovat i přesto v instalaci?"
 
-#: ../gurpmi2:267 ../urpmi:626
+#: ../gurpmi2:267 ../urpmi:630
 #, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
 msgstr "Aby byly splněny závislosti, bude nainstalován následující balíček:"
 
-#: ../gurpmi2:268 ../urpmi:627
+#: ../gurpmi2:268 ../urpmi:631
 #, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
@@ -332,7 +332,7 @@ msgstr "Připravuji..."
 msgid "Installing package `%s' (%s/%s)..."
 msgstr "Instaluji balíček `%s' (%s/%s)..."
 
-#: ../gurpmi2:334 ../urpmi:656
+#: ../gurpmi2:334 ../urpmi:660
 #, c-format
 msgid "Please insert the medium named \"%s\""
 msgstr "Prosím vložte médium nazvané \"%s\""
@@ -342,7 +342,7 @@ msgstr "Prosím vložte médium nazvané \"%s\""
 msgid "Downloading package `%s'..."
 msgstr "Stahuje se balíček `%s'..."
 
-#: ../gurpmi2:360 ../urpm.pm:346 ../urpm/download.pm:830
+#: ../gurpmi2:360 ../urpm.pm:346 ../urpm/download.pm:836
 #: ../urpm/get_pkgs.pm:262 ../urpm/media.pm:981 ../urpm/media.pm:1493
 #: ../urpm/media.pm:1644
 #, c-format
@@ -385,7 +385,7 @@ msgstr "Instalace dokončena"
 msgid "removing %s"
 msgstr "odstraňuje se %s"
 
-#: ../gurpmi2:415 ../urpmi:727
+#: ../gurpmi2:415 ../urpmi:731
 #, c-format
 msgid "restarting urpmi"
 msgstr "restartuje se urpmi"
@@ -424,7 +424,7 @@ msgstr "                    výchozí je %s\n"
 msgid "   -f             - output rpm full name (NVRA)\n"
 msgstr "   -f             - vypíše plný název RPM balíčku (NVRA)\n"
 
-#: ../rurpmi:11 ../urpmi:289
+#: ../rurpmi:11 ../urpmi:293
 #, c-format
 msgid "Only superuser is allowed to install packages"
 msgstr "Instalovat balíčky může pouze uživatel root"
@@ -514,57 +514,57 @@ msgstr "Tato operace je zakázána při běhu v omezeném režimu"
 msgid "bad proxy declaration on command line\n"
 msgstr "špatně zadaná proxy na příkazové řádce\n"
 
-#: ../urpm/args.pm:322
+#: ../urpm/args.pm:323
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq: nemohu přečíst rpm soubor \"%s\"\n"
 
-#: ../urpm/args.pm:404
+#: ../urpm/args.pm:405
 #, c-format
 msgid "unexpected expression %s"
 msgstr "neočekávaný výraz %s"
 
-#: ../urpm/args.pm:405
+#: ../urpm/args.pm:406
 #, c-format
 msgid "missing expression before %s"
 msgstr "chybí výraz před %s"
 
-#: ../urpm/args.pm:411
+#: ../urpm/args.pm:412
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr "neočekávaný výraz %s (návrh: použijte -a nebo -o ?)"
 
-#: ../urpm/args.pm:415
+#: ../urpm/args.pm:416
 #, c-format
 msgid "no expression to close"
 msgstr "chybí výraz pro zavření"
 
-#: ../urpm/args.pm:424
+#: ../urpm/args.pm:425
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr "urpmf očekává implicitně regulární výraz, použijte volbu \"--literal\""
 
-#: ../urpm/args.pm:498
+#: ../urpm/args.pm:499
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr "adresář chroot neexistuje"
 
-#: ../urpm/args.pm:521
+#: ../urpm/args.pm:522
 #, c-format
 msgid "Can't use %s without %s"
 msgstr "Nelze použít %s bez %s"
 
-#: ../urpm/args.pm:524 ../urpm/args.pm:527 ../urpmq:166
+#: ../urpm/args.pm:525 ../urpm/args.pm:528 ../urpmq:166
 #, c-format
 msgid "Can't use %s with %s"
 msgstr "Nelze použít %s zároveň s %s"
 
-#: ../urpm/args.pm:535
+#: ../urpm/args.pm:536
 #, c-format
 msgid "Too many arguments\n"
 msgstr "Příliš mnoho parametrů\n"
 
-#: ../urpm/bug_report.pm:55 ../urpmi:279
+#: ../urpm/bug_report.pm:55 ../urpmi:283
 #, c-format
 msgid "Copying failed"
 msgstr "Kopírování selhalo"
@@ -618,132 +618,132 @@ msgstr "nelze zapsat soubor s nastavením [%s]"
 msgid "%s is not available, falling back on %s"
 msgstr "%s není k dispozici, návrat k %s"
 
-#: ../urpm/download.pm:165
+#: ../urpm/download.pm:167
 #, c-format
 msgid "can not read proxy settings (not enough rights to read %s)"
 msgstr "nelze načíst nastavení proxy (nejsou dostatečná práva ke čtení %s)"
 
-#: ../urpm/download.pm:190
+#: ../urpm/download.pm:192
 #, c-format
 msgid "Please enter your credentials for accessing proxy\n"
 msgstr "Zadejte prosím své přístupové informace k proxy\n"
 
-#: ../urpm/download.pm:191
+#: ../urpm/download.pm:193
 #, c-format
 msgid "User name:"
 msgstr "Jméno uživatele:"
 
-#: ../urpm/download.pm:191
+#: ../urpm/download.pm:193
 #, c-format
 msgid "Password:"
 msgstr "Heslo:"
 
-#: ../urpm/download.pm:267
+#: ../urpm/download.pm:269
 #, c-format
 msgid "Unknown webfetch `%s' !!!\n"
 msgstr "Neznámý stahovač `%s'!!!\n"
 
-#: ../urpm/download.pm:275
+#: ../urpm/download.pm:277
 #, c-format
 msgid "%s failed: exited with signal %d"
 msgstr "%s selhal: skončil se signálem %d"
 
-#: ../urpm/download.pm:276
+#: ../urpm/download.pm:278
 #, c-format
 msgid "%s failed: exited with %d"
 msgstr "%s selhal: skončil s výsledkem %d"
 
-#: ../urpm/download.pm:310
+#: ../urpm/download.pm:312
 #, c-format
 msgid "copy failed"
 msgstr "kopírování selhalo"
 
-#: ../urpm/download.pm:316
+#: ../urpm/download.pm:318
 #, c-format
 msgid "wget is missing\n"
 msgstr "chybí wget\n"
 
-#: ../urpm/download.pm:383
+#: ../urpm/download.pm:385
 #, c-format
 msgid "curl is missing\n"
 msgstr "chybí curl\n"
 
-#: ../urpm/download.pm:519
+#: ../urpm/download.pm:521
 #, c-format
 msgid "curl failed: upload canceled\n"
 msgstr "curl selhal: nahrávání bylo přerušeno\n"
 
-#: ../urpm/download.pm:520
+#: ../urpm/download.pm:522
 #, c-format
 msgid "curl failed: download canceled\n"
 msgstr "curl selhal: stahování bylo přerušeno\n"
 
-#: ../urpm/download.pm:555
+#: ../urpm/download.pm:557
 #, c-format
 msgid "rsync is missing\n"
 msgstr "chybí rsync\n"
 
-#: ../urpm/download.pm:623
+#: ../urpm/download.pm:625
 #, c-format
 msgid "ssh is missing\n"
 msgstr "chybí ssh\n"
 
-#: ../urpm/download.pm:642
+#: ../urpm/download.pm:644
 #, c-format
 msgid "prozilla is missing\n"
 msgstr "chybí prozilla\n"
 
-#: ../urpm/download.pm:658
+#: ../urpm/download.pm:660
 #, c-format
 msgid "Couldn't execute prozilla\n"
 msgstr "Nelze spustit aplikaci prozilla\n"
 
-#: ../urpm/download.pm:668
+#: ../urpm/download.pm:670
 #, c-format
 msgid "aria2 is missing\n"
 msgstr "chybí aria2\n"
 
-#: ../urpm/download.pm:712
+#: ../urpm/download.pm:718
 #, c-format
 msgid "Failed to download %s"
 msgstr "Nepodařilo se stáhnout %s"
 
-#: ../urpm/download.pm:807
+#: ../urpm/download.pm:813
 #, c-format
 msgid "        %s%% of %s completed, ETA = %s, speed = %s"
 msgstr "        %s%% z %s hotovo, ETA = %s, rychlost = %s"
 
-#: ../urpm/download.pm:808
+#: ../urpm/download.pm:814
 #, c-format
 msgid "        %s%% completed, speed = %s"
 msgstr "        %s%% hotovo, rychlost = %s"
 
-#: ../urpm/download.pm:882
+#: ../urpm/download.pm:888
 #, c-format
 msgid "retrieving %s"
 msgstr "přijímám %s"
 
-#: ../urpm/download.pm:889
+#: ../urpm/download.pm:895
 #, c-format
 msgid "retrieved %s"
 msgstr "přijato %s"
 
-#: ../urpm/download.pm:953
+#: ../urpm/download.pm:959
 #, c-format
 msgid "unknown protocol defined for %s"
 msgstr "neznámý protokol definovaný pro %s"
 
-#: ../urpm/download.pm:965
+#: ../urpm/download.pm:971
 #, c-format
 msgid "no webfetch found, supported webfetch are: %s\n"
 msgstr "nebyla nalezena aplikace pro stažení přes web, podporované jsou: %s\n"
 
-#: ../urpm/download.pm:982
+#: ../urpm/download.pm:988
 #, c-format
 msgid "unable to handle protocol: %s"
 msgstr "nelze zpracovat protokol: %s"
 
-#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:524 ../urpmi:540 ../urpmi:646
+#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:528 ../urpmi:544 ../urpmi:650
 #, c-format
 msgid "Nn"
 msgstr "Nn"
@@ -765,7 +765,7 @@ msgstr ""
 msgid "Do you want to generate and upload a report?"
 msgstr "Chcete poslat společnosti Mandriva hlášení DUDF?"
 
-#: ../urpm/dudf.pm:80 ../urpmi:526 ../urpmi:541 ../urpmi:647
+#: ../urpm/dudf.pm:80 ../urpmi:530 ../urpmi:545 ../urpmi:651
 #: ../urpmi.addmedia:136
 #, c-format
 msgid " (Y/n) "
@@ -1391,7 +1391,7 @@ msgid "getting mirror list from %s"
 msgstr "získává se seznam zrcadel z %s"
 
 #. -PO: Add here the keys which might be pressed in the "Yes"-case.
-#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:576 ../urpmi:684 ../urpmi:694
+#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:580 ../urpmi:688 ../urpmi:698
 #: ../urpmi.addmedia:133
 #, c-format
 msgid "Yy"
@@ -1761,7 +1761,7 @@ msgid "  --parallel     - distributed urpmi across machines of alias.\n"
 msgstr ""
 "  --parallel     - distribuovaný program urpmi na počítačích s přezdívkou\n"
 
-#: ../urpme:52 ../urpmi:156
+#: ../urpme:52 ../urpmi:160
 #, c-format
 msgid "  --repackage    - Re-package the files before erasing\n"
 msgstr "  --repackage    - Před smazáním soubory znovu zabalí\n"
@@ -1804,7 +1804,7 @@ msgstr ""
 "  --use-distrib  - nastavit urpme za provozu ze stromu distribuce, užitečné\n"
 "                   při (od)instalaci chroot s volbou --root\n"
 
-#: ../urpme:60 ../urpmi:167 ../urpmq:91
+#: ../urpme:60 ../urpmi:171 ../urpmq:91
 #, c-format
 msgid "  --verbose, -v  - verbose mode.\n"
 msgstr "  --verbose, -v  - užvaněný režim\n"
@@ -2457,20 +2457,30 @@ msgstr "  --noscripts    - nespustí skript(y) balíčku\n"
 
 #: ../urpmi:155
 #, c-format
+msgid ""
+"  --nitronothing - trade verification and reliability for performance, "
+"alias:\n"
+"                   --tune-rpm=nofsync\n"
+"                   --nofdigests\n"
+"                   --no-verify-rpm\n"
+msgstr ""
+
+#: ../urpmi:159
+#, c-format
 msgid "  --replacefiles - ignore file conflicts\n"
 msgstr "  --replacefiles - ignorovat konflikty v souborech\n"
 
-#: ../urpmi:157
+#: ../urpmi:161
 #, c-format
 msgid "  --skip         - packages which installation should be skipped\n"
 msgstr "  --skip         - balíčky, jejichž instalace by měla být přeskočena\n"
 
-#: ../urpmi:158
+#: ../urpmi:162
 #, c-format
 msgid "  --prefer       - packages which should be preferred\n"
 msgstr "  --prefer       - balíčky, které by měly být upřednostněny\n"
 
-#: ../urpmi:159
+#: ../urpmi:163
 #, c-format
 msgid ""
 "  --more-choices - when several packages are found, propose more choices\n"
@@ -2479,43 +2489,43 @@ msgstr ""
 "  --more-choices - pokud je nalezeno více balíčků, bude se nabízet "
 "více                    voleb než implicitně\n"
 
-#: ../urpmi:161
+#: ../urpmi:165
 #, c-format
 msgid "  --nolock       - don't lock rpm db.\n"
 msgstr "  --nolock       - nezamkne se databáze RPM balíčků \n"
 
-#: ../urpmi:162
+#: ../urpmi:166
 #, c-format
 msgid "  --strict-arch  - upgrade only packages with the same architecture.\n"
 msgstr ""
 "  --strict-arch  - aktualizovat pouze balíčky se shodnou architekturou\n"
 
-#: ../urpmi:163 ../urpmq:99
+#: ../urpmi:167 ../urpmq:99
 #, c-format
 msgid "  -a             - select all matches on command line.\n"
 msgstr "  -a             - vybere všechny vyhovující z příkazové řádky\n"
 
-#: ../urpmi:166
+#: ../urpmi:170
 #, c-format
 msgid "  --quiet, -q    - quiet mode.\n"
 msgstr "  --quiet, -q    - režim bez výpisů\n"
 
-#: ../urpmi:168
+#: ../urpmi:172
 #, c-format
 msgid "  --debug        - very verbose mode.\n"
 msgstr "  --debug        - velmi užvaněný režim\n"
 
-#: ../urpmi:169
+#: ../urpmi:173
 #, c-format
 msgid "  names or rpm files given on command line will be installed.\n"
 msgstr "  názvy nebo RPM soubory zadané na příkazové řádce budou instalovány\n"
 
-#: ../urpmi:203
+#: ../urpmi:207
 #, c-format
 msgid "Error: can't use --auto-select along with package list.\n"
 msgstr "Chyba: nelze použít --auto-select spolu se seznamem balíčků.\n"
 
-#: ../urpmi:210
+#: ../urpmi:214
 #, c-format
 msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
@@ -2524,22 +2534,22 @@ msgstr ""
 "Chyba: Chcete-li vygenerovat hlášení o chybě, zadejte obvyklé parametry na\n"
 "příkazovém řádku a přidejte parametr --bug.\n"
 
-#: ../urpmi:240
+#: ../urpmi:244
 #, c-format
 msgid "You can't install binary rpm files when using --install-src"
 msgstr "Při použití --install-src nelze instalovat binární RPM balíčky"
 
-#: ../urpmi:241
+#: ../urpmi:245
 #, c-format
 msgid "You can't install spec files"
 msgstr "Nelze instalovat spec soubory"
 
-#: ../urpmi:248
+#: ../urpmi:252
 #, c-format
 msgid "defaulting to --buildrequires"
 msgstr "použije se --buildrequires"
 
-#: ../urpmi:253
+#: ../urpmi:257
 #, c-format
 msgid ""
 "please use --buildrequires or --install-src, defaulting to --buildrequires"
@@ -2547,7 +2557,7 @@ msgstr ""
 "použijte prosím --buildrequires nebo --install-src, použije se --"
 "buildrequires"
 
-#: ../urpmi:273
+#: ../urpmi:277
 #, c-format
 msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
@@ -2556,12 +2566,12 @@ msgstr ""
 "Adresář [%s] již existuje, použijte prosím pro hlášení o chybě jiný adresář "
 "nebo jej odstraňte"
 
-#: ../urpmi:274
+#: ../urpmi:278
 #, c-format
 msgid "Unable to create directory [%s] for bug report"
 msgstr "Nelze vytvořit adresář [%s] pro uložení hlášení o chybě"
 
-#: ../urpmi:295
+#: ../urpmi:299
 #, c-format
 msgid ""
 "Error: %s appears to be mounted read-only.\n"
@@ -2571,30 +2581,30 @@ msgstr ""
 "Použijte --allow-force, chcete-li operaci provést."
 
 #. -PO: here format is "<package_name>: <summary> (to upgrade)"
-#: ../urpmi:458
+#: ../urpmi:462
 #, c-format
 msgid "%s: %s (to upgrade)"
 msgstr "%s: %s (k aktualizaci)"
 
 #. -PO: here format is "<package_name> (to upgrade)"
-#: ../urpmi:460
+#: ../urpmi:464
 #, c-format
 msgid "%s (to upgrade)"
 msgstr "%s (k aktualizaci)"
 
 #. -PO: here format is "<package_name>: <summary> (to install)"
-#: ../urpmi:464
+#: ../urpmi:468
 #, c-format
 msgid "%s: %s (to install)"
 msgstr "%s: %s (k instalaci)"
 
 #. -PO: here format is "<package_name> (to install)"
-#: ../urpmi:466
+#: ../urpmi:470
 #, c-format
 msgid "%s (to install)"
 msgstr "%s (k instalaci)"
 
-#: ../urpmi:472
+#: ../urpmi:476
 #, c-format
 msgid ""
 "In order to satisfy the '%s' dependency, one of the following packages is "
@@ -2602,12 +2612,12 @@ msgid ""
 msgstr ""
 "Aby byly splněna závislost '%s', je třeba jeden z následujících balíčků:"
 
-#: ../urpmi:475
+#: ../urpmi:479
 #, c-format
 msgid "What is your choice? (1-%d) "
 msgstr "Jaká je vaše volba? (1-%d) "
 
-#: ../urpmi:517
+#: ../urpmi:521
 #, c-format
 msgid ""
 "The following package cannot be installed because it depends on packages\n"
@@ -2618,7 +2628,7 @@ msgstr ""
 "které jsou starší než instalovaná verze:\n"
 "%s"
 
-#: ../urpmi:519
+#: ../urpmi:523
 #, c-format
 msgid ""
 "The following packages can't be installed because they depend on packages\n"
@@ -2629,7 +2639,7 @@ msgstr ""
 "které jsou starší než instalovaná verze:\n"
 "%s"
 
-#: ../urpmi:525 ../urpmi:526 ../urpmi:541
+#: ../urpmi:529 ../urpmi:530 ../urpmi:545
 #, c-format
 msgid ""
 "\n"
@@ -2638,7 +2648,7 @@ msgstr ""
 "\n"
 "Přesto pokračovat v instalaci?"
 
-#: ../urpmi:535
+#: ../urpmi:539
 #, c-format
 msgid ""
 "A requested package cannot be installed:\n"
@@ -2647,7 +2657,7 @@ msgstr ""
 "Požadovaný balíček nelze nainstalovat:\n"
 "%s"
 
-#: ../urpmi:536
+#: ../urpmi:540
 #, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
@@ -2656,12 +2666,12 @@ msgstr ""
 "Některé požadované balíčky nebylo možné nainstalovat:\n"
 "%s"
 
-#: ../urpmi:553
+#: ../urpmi:557
 #, c-format
 msgid "removing package %s will break your system"
 msgstr "odebrání balíčku %s naruší funkčnost vašeho systému"
 
-#: ../urpmi:561
+#: ../urpmi:565
 #, c-format
 msgid ""
 "The installation cannot continue because the following package\n"
@@ -2672,7 +2682,7 @@ msgstr ""
 "být odstraněn, aby bylo možné jiné aktualizovat:\n"
 "%s\n"
 
-#: ../urpmi:563
+#: ../urpmi:567
 #, c-format
 msgid ""
 "The installation cannot continue because the following packages\n"
@@ -2683,12 +2693,12 @@ msgstr ""
 "být odstraněny, aby bylo možné jiné aktualizovat:\n"
 "%s\n"
 
-#: ../urpmi:571
+#: ../urpmi:575
 #, c-format
 msgid "(test only, removal will not be actually done)"
 msgstr "(pouze test, k odstranění ve skutečnosti nedojde)"
 
-#: ../urpmi:591
+#: ../urpmi:595
 #, c-format
 msgid ""
 "You must first call urpmi with --buildrequires to install the following "
@@ -2699,7 +2709,7 @@ msgstr ""
 "následující závislosti:\n"
 "%s\n"
 
-#: ../urpmi:601
+#: ../urpmi:605
 #, c-format
 msgid "The following orphan package will be removed."
 msgid_plural "The following orphan packages will be removed."
@@ -2707,27 +2717,27 @@ msgstr[0] "Bude odstraněn následující sirotek."
 msgstr[1] "Budou odstraněni následující sirotci."
 msgstr[2] "Budou odstraněni následující sirotci."
 
-#: ../urpmi:629
+#: ../urpmi:633
 #, c-format
 msgid "(test only, installation will not be actually done)"
 msgstr "(pouze test, k instalaci ve skutečnosti nedojde)"
 
-#: ../urpmi:635
+#: ../urpmi:639
 #, c-format
 msgid "%s of additional disk space will be used."
 msgstr "Navíc bude použito %s diskového prostoru."
 
-#: ../urpmi:636
+#: ../urpmi:640
 #, c-format
 msgid "%s of disk space will be freed."
 msgstr "Bude uvolněno %s diskového prostoru."
 
-#: ../urpmi:637
+#: ../urpmi:641
 #, c-format
 msgid "%s of packages will be retrieved."
 msgstr "Bude staženo %s balíčků."
 
-#: ../urpmi:638
+#: ../urpmi:642
 #, c-format
 msgid "Proceed with the installation of one package?"
 msgid_plural "Proceed with the installation of the %d packages?"
@@ -2735,12 +2745,12 @@ msgstr[0] "Pokračovat v instalaci %d balíčku?"
 msgstr[1] "Pokračovat v instalaci %d balíčků?"
 msgstr[2] "Pokračovat v instalaci %d balíčků?"
 
-#: ../urpmi:661
+#: ../urpmi:665
 #, c-format
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: ../urpmi:669
+#: ../urpmi:673
 #, c-format
 msgid "Press Enter when mounted..."
 msgstr "Po připojení stiskněte Enter..."
@@ -3468,20 +3478,20 @@ msgstr "volbu --list-nodes lze použít pouze s volbou --parallel"
 msgid "use -l to list files"
 msgstr "použijte -l pro seznam souborů"
 
-#: ../urpmq:431
+#: ../urpmq:427
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for package %s"
 msgstr ""
 "pro zdroj \"%s\" neexistuje xml info, pouze částečný výsledek pro balíček %s"
 
-#: ../urpmq:432
+#: ../urpmq:428
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for packages %s"
 msgstr ""
 "pro zdroj \"%s\" neexistuje soubor xml info, pouze částečný výsledek pro "
 "balíčky %s"
 
-#: ../urpmq:435
+#: ../urpmq:431
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for package %s"
@@ -3489,7 +3499,7 @@ msgstr ""
 "pro zdroj \"%s\" neexistuje soubor xml info, nelze vrátit žádný výsledek pro "
 "balíček %s"
 
-#: ../urpmq:436
+#: ../urpmq:432
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for packages %s"
@@ -3497,7 +3507,7 @@ msgstr ""
 "pro zdroj \"%s\" neexistuje soubor xml info, nelze vrátit žádný výsledek pro "
 "balíčky %s"
 
-#: ../urpmq:503
+#: ../urpmq:499
 #, c-format
 msgid "No changelog found\n"
 msgstr "Nebyl nalezen záznam změn\n"

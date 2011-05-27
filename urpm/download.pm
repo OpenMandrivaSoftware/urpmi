@@ -712,7 +712,7 @@ sub sync_aria2 {
     if (!close $aria2) {
 	my $raw_msg = _error_msg('aria2');
 	my $want_retry;
-	if (!$options->{is_retry} & $options->{is_versioned}) {
+	if ($? != 9 && !$options->{is_retry} & $options->{is_versioned}) {
 	    $want_retry = 1;
 	} else {
 	    my $msg = N("Failed to download %s", $rel_files->[0]);
