@@ -1725,7 +1725,7 @@ msgid "Can't move file %s to %s"
 msgstr "Kan ikke flytte filen %s til %s"
 
 #: ../urpme:41
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpme version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -1789,7 +1789,7 @@ msgid "  --noscripts    - do not execute package scriptlet(s).\n"
 msgstr "  --noscripts    – ikke kjør pakkeskript.\n"
 
 #: ../urpme:57
-#, fuzzy, c-format
+#, c-format
 msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --notriggers   – ikke kjør noen skriptlets som utløses av pakker\n"
 
