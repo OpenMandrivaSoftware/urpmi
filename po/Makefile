@@ -19,7 +19,7 @@ GOALS = $(PGOAL).pot $(MOFILES)
 all: $(GOALS)
 
 %.mo: %.po
-	msgfmt -o $@ $<
+	msgfmt -c -o $@ $<
 
 update_n_merge: $(PGOAL).pot merge
 
