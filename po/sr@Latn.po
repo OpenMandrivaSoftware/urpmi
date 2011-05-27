@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-sr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2004-02-01 19:27+0100\n"
 "Last-Translator: Toma Jankovic <webmaster@mandrake.co.yu>\n"
 "Language-Team: serbian <mdk@linux.rs.sr>\n"
@@ -96,11 +96,11 @@ msgstr "_Poništi"
 msgid "Choose location to save file"
 msgstr "Izaberite fajl"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1673,7 +1673,7 @@ msgstr "Kopiranje nije uspelo"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1734,7 +1734,7 @@ msgstr "  --description   - prikazuje tag opisa: opis.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description   - prikazuje tag opisa: opis.\n"
 
 #: ../urpme:58
@@ -2123,22 +2123,6 @@ msgstr "kreiram hdlist simteznu datoteku za medij \"%s\""
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "upisujem listu fajlova za medij \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi verzija %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
-"Ovo je besplatan softver i može biti redistribuiran pod uslovima GNU GPL.\n"
-"\n"
-"upotreba:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3417,6 +3401,26 @@ msgstr "Grafički interfejs za instalaciju RPM paketa"
 #, fuzzy
 msgid "Software Installer"
 msgstr "Instaler softvera"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi verzija %s\n"
+#~ "Copyright (C) 1999-2008 Mandriva.\n"
+#~ "Ovo je besplatan softver i može biti redistribuiran pod uslovima GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "upotreba:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description   - prikazuje tag opisa: opis.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

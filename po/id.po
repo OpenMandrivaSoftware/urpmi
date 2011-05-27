@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2007-03-22 08:14+0700\n"
 "Last-Translator: Willy Sudiarto Raharjo <willysr@gmail.com>\n"
 "Language-Team: Indonesia <mdk-id@yahoogroups.com>\n"
@@ -110,11 +110,11 @@ msgstr "_Batal"
 msgid "Choose location to save file"
 msgstr "Pilih lokasi penyimpanan file"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1691,7 +1691,7 @@ msgstr "Tidak bisa menggunakan %s dengan %s"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1754,8 +1754,8 @@ msgstr "  --noscripts   - tidak menjalankan script paket.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr "  --noscripts   - tidak menjalankan script paket.\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
+msgstr "  --noscripts   - tidak menjalankan script paket\n"
 
 #: ../urpme:58
 #, c-format
@@ -2143,23 +2143,6 @@ msgstr "membangun file sintesa hdlist untuk media \"%s\""
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "menulis ke file list untuk media \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi versi %s\n"
-"Hak cipta (C) 1999-2008 Mandriva.\n"
-"Ini adalah software bebas dan boleh didistribusikan ulang di bawah syarat "
-"GPL GNU.\n"
-"\n"
-"pemakaian:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3466,6 +3449,26 @@ msgstr "Tampilan grafis untuk menginstall file RPM"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Penginstall perangkat lunak"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi versi %s\n"
+#~ "Hak cipta (C) 1999-2008 Mandriva.\n"
+#~ "Ini adalah software bebas dan boleh didistribusikan ulang di bawah syarat "
+#~ "GPL GNU.\n"
+#~ "\n"
+#~ "pemakaian:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --noscripts   - tidak menjalankan script paket.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

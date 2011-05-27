@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2009-10-05 18:16+0200\n"
 "Last-Translator: Alejo Pacín Jul <alejopj@gmail.com>\n"
 "Language-Team: Galician <cooker-i18n@mandrivalinux.org>\n"
@@ -110,11 +110,11 @@ msgstr "_Cancelar"
 msgid "Choose location to save file"
 msgstr "Escolla a localización onde se gardará o ficheiro"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1705,7 +1705,7 @@ msgstr "Non se puido mover o ficheiro %s a %s"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1772,7 +1772,7 @@ msgstr ""
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr ""
 "  --no-suggests  - non seleccionar automaticamente os paquetes \"suxeridos"
 "\".\n"
@@ -2163,22 +2163,6 @@ msgstr "non hai un synthesis dispoñible para o soporte \"%s\""
 #, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "non hai xml-info dispoñible para o soporte \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi versión %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
-"Isto é software libre e pode redistribuírse baixo os termos da GNU GPL.\n"
-"\n"
-"uso:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3498,6 +3482,27 @@ msgstr "Interface gráfica para instalar ficheiros RPM"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Instalador de Software"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi versión %s\n"
+#~ "Copyright (C) 1999-2008 Mandriva.\n"
+#~ "Isto é software libre e pode redistribuírse baixo os termos da GNU GPL.\n"
+#~ "\n"
+#~ "uso:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr ""
+#~ "  --no-suggests  - non seleccionar automaticamente os paquetes \"suxeridos"
+#~ "\".\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

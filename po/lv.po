@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2002-09-27 17:43+0200\n"
 "Last-Translator: Raivo Saars <spaiks@inbox.lv>\n"
 "Language-Team: ll10nt <ll10nt@listes.murds.lv>\n"
@@ -92,11 +92,11 @@ msgstr "At_celt"
 msgid "Choose location to save file"
 msgstr "Izvēlieties failu"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1651,7 +1651,7 @@ msgstr "Neveiksmīga Pieteikšanās"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1712,7 +1712,7 @@ msgstr "  --description   - drukāt iezīmui: apraksts."
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description   - drukāt iezīmui: apraksts."
 
 #: ../urpme:58
@@ -2093,22 +2093,6 @@ msgstr "uzbūvēju hdlist synthesis failu priekš datu nesēja \"%s\""
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "netika atrasts hdlist fails priekš datu nesēja \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"mdkupdate versija %s\n"
-"Autortiesības (C) %s Mandriva.\n"
-"Šī ir brīva programmatūra, ko var izplatīt saskaņā ar GNU GPL noteikumiem.\n"
-"\n"
-"Pielietojums:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3343,6 +3327,26 @@ msgstr "Ghostscript priekšgals, lai vizualizētu PostScript failus"
 #, fuzzy
 msgid "Software Installer"
 msgstr "Programmatūras instalētājs"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "mdkupdate versija %s\n"
+#~ "Autortiesības (C) %s Mandriva.\n"
+#~ "Šī ir brīva programmatūra, ko var izplatīt saskaņā ar GNU GPL "
+#~ "noteikumiem.\n"
+#~ "\n"
+#~ "Pielietojums:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description   - drukāt iezīmui: apraksts."
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

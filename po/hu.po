@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-2010.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2009-10-26 09:01+0100\n"
 "Last-Translator: Gergely Lónyai <aleph@mandriva.org>\n"
 "Language-Team: Hungarian <aleph@mandriva.org>\n"
@@ -112,11 +112,11 @@ msgstr "_Mégsem"
 msgid "Choose location to save file"
 msgstr "Válasszon helyet a fájlnak"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1744,7 +1744,7 @@ msgstr "%s nem mozgatható ide: %s"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1811,7 +1811,7 @@ msgstr "  --noscripts    - a csomagok szkriptjei ne legyenek végrehajtva\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --noscripts    - a csomagok szkriptjei ne legyenek végrehajtva\n"
 
 #: ../urpme:58
@@ -2203,22 +2203,6 @@ msgstr "a \"%s\" adatforrás kiterjesztett függőséglistája nem elérhető"
 #, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "a(z) \"%s\" adatforrás listafájlja nem elérhető"
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi %s\n"
-"Copyright (C) Mandriva, 1999-2008.\n"
-"Ez a program szabad szoftver; a GNU GPL feltételei szerint terjeszthető.\n"
-"\n"
-"Használat:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3593,6 +3577,25 @@ msgstr "Grafikus felület RPM csomagok telepítéséhez"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Szoftvertelepítő"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi %s\n"
+#~ "Copyright (C) Mandriva, 1999-2008.\n"
+#~ "Ez a program szabad szoftver; a GNU GPL feltételei szerint terjeszthető.\n"
+#~ "\n"
+#~ "Használat:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --noscripts    - a csomagok szkriptjei ne legyenek végrehajtva\n"
 
 #~ msgid ""
 #~ "A problem has been encountered. You can help Mandriva to improve package\n"

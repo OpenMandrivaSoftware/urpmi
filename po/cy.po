@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mandriva Linux\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2009-08-24 20:33-0000\n"
 "Last-Translator: Rhoslyn Prys <rprys@yahoo.com>\n"
 "Language-Team: Cymraeg\n"
@@ -107,11 +107,11 @@ msgstr "_Dileu"
 msgid "Choose location to save file"
 msgstr "Dewiswch leoliad i gadw'r ffeil"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1715,7 +1715,7 @@ msgstr "Methu symud ffeil %s i %s"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1778,8 +1778,8 @@ msgstr "  --noscripts    - peidio gweithredu sgriptledi'r pecyn(au).\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr "  --noscripts    - peidio gweithredu sgriptledi'r pecyn(au).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
+msgstr "  --noscripts    - peidio gweithredu sgripledi pecyn(au)\n"
 
 #: ../urpme:58
 #, c-format
@@ -2164,22 +2164,6 @@ msgstr "adeiladu ffeil synthesis file ar gyfer cyfrwng \"%s\""
 #, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "dim xml-info ar gyfer cyfrwng \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmf fersiwn %s\n"
-"Hawlfraint © 1999 - 2006 Mandriva.\n"
-"Meddalwedd rhydd yw hwn a gall gael ei ddosbarthu o dan amodau'r GPL GNU.\n"
-"\n"
-"defnydd:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3504,6 +3488,26 @@ msgstr "Blaen graffigol ar gyfer gosod ffeiliau RPM"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Gosodwr Meddalwedd"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmf fersiwn %s\n"
+#~ "Hawlfraint © 1999 - 2006 Mandriva.\n"
+#~ "Meddalwedd rhydd yw hwn a gall gael ei ddosbarthu o dan amodau'r GPL "
+#~ "GNU.\n"
+#~ "\n"
+#~ "defnydd:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --noscripts    - peidio gweithredu sgriptledi'r pecyn(au).\n"
 
 #~ msgid ""
 #~ "A problem has been encountered. You can help Mandriva to improve package\n"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-fa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2005-02-06 08:42-0500\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -107,11 +107,11 @@ msgstr "_لغو"
 msgid "Choose location to save file"
 msgstr "مکان ذخیره‌ی پرونده را انتخاب کنید"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1681,7 +1681,7 @@ msgstr "کپی کردن شکست خورد"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1742,7 +1742,7 @@ msgstr "  --description  - چاپ برچسب توضیحات: توضیحات.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description  - چاپ برچسب توضیحات: توضیحات.\n"
 
 #: ../urpme:58
@@ -2117,22 +2117,6 @@ msgstr "ساختن پرونده ترکیب hdlist برای رسانه \"%s\""
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "نگارش پرونده لیست برای رسانه \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi version %s\n"
-"Copyright © 1999-2008 Mandriva.\n"
-"این نرم‌افزار آزاد است ممکن است تحت شرایط GNU GPL پخش مجدد گردد.\n"
-"\n"
-"طرز استفاده:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3411,6 +3395,25 @@ msgstr "ظاهر تصویری برای نصب پرونده‌های RPM"
 #, fuzzy
 msgid "Software Installer"
 msgstr "نصب‌گر نرم‌افزار"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi version %s\n"
+#~ "Copyright © 1999-2008 Mandriva.\n"
+#~ "این نرم‌افزار آزاد است ممکن است تحت شرایط GNU GPL پخش مجدد گردد.\n"
+#~ "\n"
+#~ "طرز استفاده:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description  - چاپ برچسب توضیحات: توضیحات.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

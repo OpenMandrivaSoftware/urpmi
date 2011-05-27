@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: da\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2011-05-05 22:37+0200\n"
 "Last-Translator: Keld Simonsen <keld@keldix.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -116,18 +116,18 @@ msgstr "_Annullér"
 msgid "Choose location to save file"
 msgstr "Vælg sted at gemme filen"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
 "usage:\n"
 msgstr ""
 "urpmi version %s\n"
-"Ophavsret © 1999-2010 Mandriva.\n"
+"Ophavsret © 1999-2011 Mandriva.\n"
 "Dette er frit programmel og kan redistribueres under vilkårene for GNU GPL.\n"
 "\n"
 "brug:\n"
@@ -1741,10 +1741,10 @@ msgid "Can't move file %s to %s"
 msgstr "Kan ikke flytte fil %s til %s."
 
 #: ../urpme:41
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1805,8 +1805,8 @@ msgstr "  --noscripts    - udfør ikke pakke-småskripter.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr "  --noscripts    - udfør ikke pakke-småskripter.\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
+msgstr "  --noscripts    - kør ikke pakkers skript\n"
 
 #: ../urpme:58
 #, c-format
@@ -2191,22 +2191,6 @@ msgstr "ingen syntese-fil tilgængelig for medie \"%s\""
 #, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "ingen xml-info-fil tilgængelig for medie \"%s\""
-
-#: ../urpmi:78
-#, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi version %s\n"
-"Ophavsret © 1999-2011 Mandriva.\n"
-"Dette er frit programmel og kan redistribueres under vilkårene for GNU GPL.\n"
-"\n"
-"brug:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3519,6 +3503,25 @@ msgstr "Grafisk frontend til installation af rpm-filer"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Programmel-installering"
+
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi version %s\n"
+#~ "Ophavsret © 1999-2010 Mandriva.\n"
+#~ "Dette er frit programmel og kan redistribueres under vilkårene for GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "brug:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --noscripts    - udfør ikke pakke-småskripter.\n"
 
 #~ msgid ""
 #~ "A problem has been encountered. You can help Mandriva to improve package\n"

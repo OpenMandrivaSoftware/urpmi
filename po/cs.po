@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2009-10-21 21:56+0200\n"
 "Last-Translator: Michal Bukovjan <bukm@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -114,11 +114,11 @@ msgstr "_Přerušit"
 msgid "Choose location to save file"
 msgstr "Vyberte, kam chcete uložit soubor"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1727,7 +1727,7 @@ msgstr "Nelze přesunout soubor %s na %s"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1792,8 +1792,8 @@ msgstr "  --noscripts    - nespustí skriptlet(y) balíčku\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr "  --noscripts    - nespustí skriptlet(y) balíčku\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
+msgstr "  --noscripts    - nespustí skript(y) balíčku\n"
 
 #: ../urpme:58
 #, c-format
@@ -2179,23 +2179,6 @@ msgstr "není k dispozici žádný soubor se syntézou pro zdroj \"%s\""
 #, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "není k dispozici žádné xml-info pro zdroj \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi verze %s\n"
-"Copyright ©1999-2008 Mandriva.\n"
-"Toto je svobodný software a je volně šiřitelný dle podmínek licence GNU "
-"GPL.\n"
-"\n"
-"použití:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3519,6 +3502,26 @@ msgstr "Grafické rozhraní pro instalaci balíčků RPM"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Instalace software"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi verze %s\n"
+#~ "Copyright ©1999-2008 Mandriva.\n"
+#~ "Toto je svobodný software a je volně šiřitelný dle podmínek licence GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "použití:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --noscripts    - nespustí skriptlet(y) balíčku\n"
 
 #~ msgid ""
 #~ "A problem has been encountered. You can help Mandriva to improve package\n"

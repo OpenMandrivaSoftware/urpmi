@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2002-11-25 13:52-0500\n"
 "Last-Translator: Wachara Chinsettawong <wachara@yahoo.com>\n"
 "Language-Team: Thai <th@li.org>\n"
@@ -90,11 +90,11 @@ msgstr "_ยกเลิก"
 msgid "Choose location to save file"
 msgstr ""
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1643,7 +1643,7 @@ msgstr "ล็อกอินล้มเหลว"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1703,7 +1703,7 @@ msgstr "  --description  - พิมพ์ tag รายละเอียด  :
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description  - พิมพ์ tag รายละเอียด  : รายละเอียด"
 
 #: ../urpme:58
@@ -2070,22 +2070,6 @@ msgstr "สร้าง hdlist synthesis file สำหรับ อุปกร
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "กำลังเขียน list file สำหรับอุปกรณ์\"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi เวอร์ชั่นที่ %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
-"ซอฟท์แวร์นี่เป็นฟรีซอฟท์แวร์และแจกจ่ายภายใต้ระเบียบของ GNU GPL.\n"
-"\n"
-"วิธีใช้:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3297,6 +3281,25 @@ msgstr "ส่วนติดต่อผู้ใช้แบบ graphic ขอ
 #, fuzzy
 msgid "Software Installer"
 msgstr "เครื่องมือติดตั้งโปรแกรม"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi เวอร์ชั่นที่ %s\n"
+#~ "Copyright (C) 1999-2008 Mandriva.\n"
+#~ "ซอฟท์แวร์นี่เป็นฟรีซอฟท์แวร์และแจกจ่ายภายใต้ระเบียบของ GNU GPL.\n"
+#~ "\n"
+#~ "วิธีใช้:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description  - พิมพ์ tag รายละเอียด  : รายละเอียด"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

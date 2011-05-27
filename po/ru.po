@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2011-05-25 22:44+0300\n"
 "Last-Translator: Alexander Kazancev <kazancas@mandriva.ru>\n"
 "Language-Team: Russian <gnu@mx.ru>\n"
@@ -111,18 +111,18 @@ msgstr "_Отмена"
 msgid "Choose location to save file"
 msgstr "Укажите местоположение для сохранения файла"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
 "usage:\n"
 msgstr ""
 "urpmi версия %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "Это свободное программное обеспечение и может распространяться согласно "
 "условиям GNU GPL.\n"
 "\n"
@@ -1740,10 +1740,10 @@ msgid "Can't move file %s to %s"
 msgstr "Не удаётся переместить файл %s в %s"
 
 #: ../urpme:41
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1808,9 +1808,9 @@ msgid "  --noscripts    - do not execute package scriptlet(s).\n"
 msgstr "  --noscripts    - не выполнять scriptlet'ы пакета\n"
 
 #: ../urpme:57
-#, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr "  --triggers    - не выполнять триггер(ы) пакета\n"
+#, fuzzy, c-format
+msgid "  --notriggers   - do not execute package trigger(s).\n"
+msgstr "  --notriggers  - не выполнять триггер(ы) пакета\n"
 
 #: ../urpme:58
 #, c-format
@@ -2196,23 +2196,6 @@ msgstr "для источника «%s» не найден файл synthesis"
 #, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "для источника «%s» не найден файл xml-info"
-
-#: ../urpmi:78
-#, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi версия %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"Это свободное программное обеспечение и может распространяться согласно "
-"условиям GNU GPL.\n"
-"\n"
-"использование:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3561,6 +3544,24 @@ msgstr "Графический интерфейс для установки фа
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Инсталлятор программ"
+
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi версия %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "Это свободное программное обеспечение и может распространяться согласно "
+#~ "условиям GNU GPL.\n"
+#~ "\n"
+#~ "использование:\n"
+
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --triggers    - не выполнять триггер(ы) пакета\n"
 
 #~ msgid ""
 #~ "A problem has been encountered. You can help Mandriva to improve package\n"

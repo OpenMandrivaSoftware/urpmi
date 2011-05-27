@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2004-08-08 20:26+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -109,11 +109,11 @@ msgstr "_Rinoncî"
 msgid "Choose location to save file"
 msgstr "Tchoezixhoz l' plaece wice schaper l' fitchî"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1707,7 +1707,7 @@ msgstr "Dji n' sai eployî %s avou %s"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1771,8 +1771,8 @@ msgstr "  --noscripts    - èn nén enonder les scripes do pacaedje.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr "  --noscripts    - èn nén enonder les scripes do pacaedje.\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
+msgstr "  --noscripts    - èn nén enonder les scripres do pacaedje.\n"
 
 #: ../urpme:58
 #, c-format
@@ -2173,23 +2173,6 @@ msgstr "dji fwai li fitchî d' sinteze hdlist pol sopoirt «%s»"
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "dji screye li fitchî d' djivêye («list») pol sopoirt «%s»"
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi modêye %s\n"
-"Copyright © 1999-2008 Mandriva.\n"
-"Çouci est on libe programe et pout esse cossemé so les termes del licince "
-"GPL.\n"
-"\n"
-"Po s' è siervi:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3523,6 +3506,26 @@ msgstr "Ene eterface grafike po-z astaler des pacaedjes RPM"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Astaleu di programes"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi modêye %s\n"
+#~ "Copyright © 1999-2008 Mandriva.\n"
+#~ "Çouci est on libe programe et pout esse cossemé so les termes del licince "
+#~ "GPL.\n"
+#~ "\n"
+#~ "Po s' è siervi:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --noscripts    - èn nén enonder les scripes do pacaedje.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

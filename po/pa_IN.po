@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2005-03-23 21:55+0530\n"
 "Last-Translator: Kanwaljeet Singh Brar <kanwaljeetbrar@yahoo.co.in>\n"
 "Language-Team: Panjabi <fedora-trans-pa@redhat.com>\n"
@@ -104,11 +104,11 @@ msgstr "ਰੱਦ(_C)"
 msgid "Choose location to save file"
 msgstr "ਫਾਇਲ਼ ਸੰਭਾਲਣ ਲਈ ਟਿਕਾਣਾ ਦਿਓ"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1680,7 +1680,7 @@ msgstr "ਨਕਲ ਕਰਨੀ ਅਸਫਲ"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1740,7 +1740,7 @@ msgstr "  --description  - print tag description: description.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description  - print tag description: description.\n"
 
 #: ../urpme:58
@@ -2120,22 +2120,6 @@ msgstr "ਮਾਧਿਅਮ \"%s\" ਲਈ hdlist ਸੰਸਲੇਸ਼ਕ ਫਾਇ�
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "\"%s\" ਮਾਧਿਅਮ ਲਈ list ਫਾਇਲ ਲਿਖੀ ਜਾ ਰਹੀ ਹੈ"
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi ਵਰਜਨ %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
-"ਇਹ ਮੁਫਤ ਹੈ ਅਤੇ ਇਸ ਨੂੰ GNU GPL ਹੇਠ ਮੁੜ ਵੰਡਿਆ ਜਾ ਸਕਦਾ ਹੈ।\n"
-"\n"
-"ਵਰਤੋਂ:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3412,6 +3396,25 @@ msgstr ""
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi ਵਰਜਨ %s\n"
+#~ "Copyright (C) 1999-2008 Mandriva.\n"
+#~ "ਇਹ ਮੁਫਤ ਹੈ ਅਤੇ ਇਸ ਨੂੰ GNU GPL ਹੇਠ ਮੁੜ ਵੰਡਿਆ ਜਾ ਸਕਦਾ ਹੈ।\n"
+#~ "\n"
+#~ "ਵਰਤੋਂ:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description  - print tag description: description.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

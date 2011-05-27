@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2007-09-13 16:43+0200\n"
 "Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
 "Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
@@ -97,11 +97,11 @@ msgstr "_Bekor qilish"
 msgid "Choose location to save file"
 msgstr "Faylni qaerga saqlash joyini tanlang"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1678,7 +1678,7 @@ msgstr "%s amalidan %s amali bilan birga foydalanib bo'lmaydi"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1740,7 +1740,7 @@ msgstr ""
 
 #: ../urpme:57
 #, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr ""
 
 #: ../urpme:58
@@ -2110,22 +2110,6 @@ msgstr "to'plam uchun hdlist synthesis fayli yaratildi: \"%s\""
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "to'plam uchun ro'yxat fayli yozilmoqda: \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi, versiya %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
-"Bu erkin dastur va GNU GPL shartlari asosida tarqatilishi mumkin.\n"
-"\n"
-"Foydalanish:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3367,6 +3351,21 @@ msgstr "RPM fayllarini oʻrnatish uchun grafik interfeys"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Dastur oʻrnatuvchisi"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi, versiya %s\n"
+#~ "Copyright (C) 1999-2008 Mandriva.\n"
+#~ "Bu erkin dastur va GNU GPL shartlari asosida tarqatilishi mumkin.\n"
+#~ "\n"
+#~ "Foydalanish:\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-sv\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2009-10-21 18:34+0300\n"
 "Last-Translator: Thomas Backlund <tmb@mandriva.org>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -115,11 +115,11 @@ msgstr "Av_bryt"
 msgid "Choose location to save file"
 msgstr "Välj var filen ska sparas"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1725,7 +1725,7 @@ msgstr "Kan inte flytta fil %s till %s"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1785,8 +1785,8 @@ msgstr "  --noscripts    - kör inga skript i paket(en).\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr "  --noscripts    - kör inga skript i paket(en).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
+msgstr "  --noscripts    - kör inte paketens skript\n"
 
 #: ../urpme:58
 #, c-format
@@ -2168,22 +2168,6 @@ msgstr "ingen synthesis-fil tillgänglig för media \"%s\""
 #, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "ingen xml-info tillgänglig för media \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2008, Mandriva.\n"
-"Det här är fri programvara och får distribueras enligt villkoren i GNU GPL.\n"
-"\n"
-"användning:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3502,6 +3486,26 @@ msgstr "Grafiskt gränssnitt för RPM-installation"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Programinstallerare"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2008, Mandriva.\n"
+#~ "Det här är fri programvara och får distribueras enligt villkoren i GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "användning:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --noscripts    - kör inga skript i paket(en).\n"
 
 #~ msgid ""
 #~ "A problem has been encountered. You can help Mandriva to improve package\n"

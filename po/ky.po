@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-ky\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2005-07-13 13:23+0000\n"
 "Last-Translator: Timur Jamakeev <ztimur@mail..ru>\n"
 "Language-Team: Kyrgyz\n"
@@ -104,11 +104,11 @@ msgstr "_Калтыруу"
 msgid "Choose location to save file"
 msgstr "Сактоо үчүн орун тандаңыз"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1687,7 +1687,7 @@ msgstr "Көчүрүү ишке ашпады"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1749,7 +1749,7 @@ msgstr "  --description  - description: баяны тэгин чыгаруу.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description  - description: баяны тэгин чыгаруу.\n"
 
 #: ../urpme:58
@@ -2136,23 +2136,6 @@ msgstr "\"%s\" булагы үчүн hdlist synthesis файлы түзүлдү"
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "\"%s\" булагы үчүн тизме файлы жазылууда"
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi версиясы %s\n"
-"Copyright (C) 1999-2005 Mandriva.\n"
-"Бул эркин программалык жабдуу жана аны GNU GPL\n"
-"шартынын негизинде таркатууга болот.\n"
-"\n"
-"колдонулушу:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3461,6 +3444,26 @@ msgstr "RPM файлдарын орнотуу үчүн графикалык ин
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Программа орноткуч"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi версиясы %s\n"
+#~ "Copyright (C) 1999-2005 Mandriva.\n"
+#~ "Бул эркин программалык жабдуу жана аны GNU GPL\n"
+#~ "шартынын негизинде таркатууга болот.\n"
+#~ "\n"
+#~ "колдонулушу:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description  - description: баяны тэгин чыгаруу.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

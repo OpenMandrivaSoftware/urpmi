@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-mk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2005-07-18 01:58+0200\n"
 "Last-Translator: Зоран Димовски <decata@mt.net.mk>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
@@ -107,11 +107,11 @@ msgstr "_Откажи"
 msgid "Choose location to save file"
 msgstr "Изберете локација за зачувување на датотека"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1694,7 +1694,7 @@ msgstr "Копирањето не успеа"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1756,7 +1756,7 @@ msgstr "  --description  - го испишува тагот на описот: �
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description  - го испишува тагот на описот: опис.\n"
 
 #: ../urpme:58
@@ -2158,23 +2158,6 @@ msgstr "изградена е hdlist synthesis датотека за медиу�
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "запишувам датотека со листа за медиумот \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi верзија %s\n"
-"Авторски права (C) 1999-2005 Mandriva.\n"
-"Овој софтвер е бесплатен и може да се редистрибуира под условите на GNU "
-"GPL.\n"
-"\n"
-"употреба:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3499,6 +3482,26 @@ msgstr "Графички интерфејс за инсталирање на RPM
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Инсталирање софтвер"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi верзија %s\n"
+#~ "Авторски права (C) 1999-2005 Mandriva.\n"
+#~ "Овој софтвер е бесплатен и може да се редистрибуира под условите на GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "употреба:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description  - го испишува тагот на описот: опис.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

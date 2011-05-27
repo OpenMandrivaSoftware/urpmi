@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2005-08-18 23:34+0200\n"
 "Last-Translator: Arvydas Svirka <arvydas@arvis.lt>\n"
 "Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
@@ -107,11 +107,11 @@ msgstr "_Atšaukti"
 msgid "Choose location to save file"
 msgstr "Pasirinkite vietą bylos išsaugojimui"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1687,7 +1687,7 @@ msgstr "Kopijavimas nepavyko"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1750,7 +1750,7 @@ msgstr "  --description  - spausdinti žymens aprašymą: aprašymas.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description  - spausdinti žymens aprašymą: aprašymas.\n"
 
 #: ../urpme:58
@@ -2141,23 +2141,6 @@ msgstr "\"%s\" laikmenai sudaryta hdlist sintezės byla"
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "įrašoma laikmenos \"%s\" sąrašo byla"
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi versija %s\n"
-"Autorinės teisės (C) 1999-2005 Mandriva.\n"
-"Tai yra nemokama programa, kuri gali būti platinama pagal GNU GPL "
-"licenciją.\n"
-"\n"
-"naudojimas:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3464,6 +3447,26 @@ msgstr "Grafinės sąsaja paketų įdiegimui"
 #, fuzzy
 msgid "Software Installer"
 msgstr "Programinės įrangos įdiegimas"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi versija %s\n"
+#~ "Autorinės teisės (C) 1999-2005 Mandriva.\n"
+#~ "Tai yra nemokama programa, kuri gali būti platinama pagal GNU GPL "
+#~ "licenciją.\n"
+#~ "\n"
+#~ "naudojimas:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description  - spausdinti žymens aprašymą: aprašymas.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

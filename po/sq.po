@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2002-12-04 23:55+0200\n"
 "Last-Translator: Naim Daka <naim70@freesurf.ch>\n"
 "Language-Team: Albanian <LL@li.org>\n"
@@ -87,11 +87,11 @@ msgstr "_Anulo"
 msgid "Choose location to save file"
 msgstr "Zgjedhe një skedare"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1671,7 +1671,7 @@ msgstr "Kopjimi dështoi"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1736,7 +1736,7 @@ msgstr "  --description   - çfaqe etiketën description: përshkrimi.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description   - çfaqe etiketën description: përshkrimi.\n"
 
 #: ../urpme:58
@@ -2119,22 +2119,6 @@ msgstr "krijimi i skedares sintezë për burimin \"%s\""
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "shkruarja e skedares për listën e burimit \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi versioni %s\n"
-"E drejtë autori (C) 1999-2008 Mandriva.\n"
-"Ky është software gratis dhe mund të shpërndahet ndër termet e GNU GPL.\n"
-"\n"
-"përdorim:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3412,6 +3396,25 @@ msgstr "Interfac grafike dhe për instalimin e skedareve RPM"
 #, fuzzy
 msgid "Software Installer"
 msgstr "Instalues për Softver"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi versioni %s\n"
+#~ "E drejtë autori (C) 1999-2008 Mandriva.\n"
+#~ "Ky është software gratis dhe mund të shpërndahet ndër termet e GNU GPL.\n"
+#~ "\n"
+#~ "përdorim:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description   - çfaqe etiketën description: përshkrimi.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

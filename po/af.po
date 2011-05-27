@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: Fri May 19 2000 13:02:12+0200\n"
 "Last-Translator: Schalk W. Cronjé <schalkc@ntaba.co.za>\n"
 "Language-Team: Afrikaans <mandrake@af.org.za>\n"
@@ -88,11 +88,11 @@ msgstr "Kanselleer"
 msgid "Choose location to save file"
 msgstr "Kies 'n lêer"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1663,7 +1663,7 @@ msgstr "Aanteken gevaal"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1723,9 +1723,9 @@ msgid "  --noscripts    - do not execute package scriptlet(s).\n"
 msgstr ""
 
 #: ../urpme:57
-#, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr ""
+#, fuzzy, c-format
+msgid "  --notriggers   - do not execute package trigger(s).\n"
+msgstr "Konsole opstelling module"
 
 #: ../urpme:58
 #, c-format
@@ -2110,23 +2110,6 @@ msgstr "Kopieer die lêer vir media '%s'..."
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "Kopieer die lêer vir media '%s'..."
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi uitgawe %s\n"
-"Kopiereg (C) 1999-2008 Mandriva.\n"
-"Hierdie is vry sagteware en mag versprei word onder die terme van die GNU "
-"GPL.\n"
-"\n"
-"gebruik:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3338,6 +3321,22 @@ msgstr "'n Grafiese voorkant om pakkette te installeer"
 #, fuzzy
 msgid "Software Installer"
 msgstr "Software Media Manager"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi uitgawe %s\n"
+#~ "Kopiereg (C) 1999-2008 Mandriva.\n"
+#~ "Hierdie is vry sagteware en mag versprei word onder die terme van die GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "gebruik:\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

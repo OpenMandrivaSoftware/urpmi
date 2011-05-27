@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ca\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2005-09-19 23:29+0200\n"
 "Last-Translator: Albert Astals Cid <astals11@terra.es>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -109,11 +109,11 @@ msgstr "_Cancel·la"
 msgid "Choose location to save file"
 msgstr "Escolliu la ubicació un desar el fitxer"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1700,7 +1700,7 @@ msgstr "La còpia ha fallat"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1762,7 +1762,7 @@ msgstr "  --description   - mostra l'etiqueta description: descripció.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description   - mostra l'etiqueta description: descripció.\n"
 
 #: ../urpme:58
@@ -2154,23 +2154,6 @@ msgstr "s'ha construït el fitxer de síntesi hdlist per a la font \"%s\""
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "s'està escrivint el fitxer list per la font \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi versió %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
-"Aquest programa és lliure i es pot redistribuir sota els termes de la GPL de "
-"GNU.\n"
-"\n"
-"sintaxi:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3457,6 +3440,26 @@ msgstr "Frontal gràfic per instal·lar fitxers RPM"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Instal·lador de programari"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi versió %s\n"
+#~ "Copyright (C) 1999-2008 Mandriva.\n"
+#~ "Aquest programa és lliure i es pot redistribuir sota els termes de la GPL "
+#~ "de GNU.\n"
+#~ "\n"
+#~ "sintaxi:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description   - mostra l'etiqueta description: descripció.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

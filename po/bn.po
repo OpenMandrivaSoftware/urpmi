@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2005-02-13 13:39+0600\n"
 "Last-Translator: Jamil Ahmed <jamil@bengalinux.org>\n"
 "Language-Team: Bangla <mdk-translation@bengalinux.org>\n"
@@ -121,11 +121,11 @@ msgstr "বাতিল (_ত)"
 msgid "Choose location to save file"
 msgstr "ফাইল সংরক্ষণ করার অবস্থান বেছে নিন"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1699,7 +1699,7 @@ msgstr "কপি করতে ব্যর্থ"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1759,7 +1759,7 @@ msgstr "  --epoch        - description: description ট্যাগ ছাপা
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --epoch        - description: description ট্যাগ ছাপাও।\n"
 
 #: ../urpme:58
@@ -2135,22 +2135,6 @@ msgstr "\"%s\" মাধ্যমের জন্য hdlist synthesis ফাই�
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "\"%s\"-এর তালিকা ফাইল লিখছি..."
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi সংস্করণ %s\n"
-"কপিরাইট (C) ১৯৯৯-২০০৬ ম্যান্ড্রিব।\n"
-"এটি মুক্ত সফ্টওয়্যার এবং GNU GPL এর নিয়মানুযায়ী হয়তো এটা পুনঃবিতরণ করা যাবে।\n"
-"\n"
-"ব্যবহার:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3427,6 +3411,25 @@ msgstr "আর.পি.এম. ফাইল ইনস্টলের জন্য
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "সফ্টওয়্যার ইনস্টলকারী"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi সংস্করণ %s\n"
+#~ "কপিরাইট (C) ১৯৯৯-২০০৬ ম্যান্ড্রিব।\n"
+#~ "এটি মুক্ত সফ্টওয়্যার এবং GNU GPL এর নিয়মানুযায়ী হয়তো এটা পুনঃবিতরণ করা যাবে।\n"
+#~ "\n"
+#~ "ব্যবহার:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --epoch        - description: description ট্যাগ ছাপাও।\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

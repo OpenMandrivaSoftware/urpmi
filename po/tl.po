@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-tl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2005-03-08 20:24+0800\n"
 "Last-Translator: Eric Pareja <xenos@upm.edu.ph>\n"
 "Language-Team: Filipino <salinpinoy@comitus.net>\n"
@@ -107,11 +107,11 @@ msgstr "_Cancel"
 msgid "Choose location to save file"
 msgstr "Piliin ang lugar kung saan ise-save ang file"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1697,7 +1697,7 @@ msgstr "Pagkokopya nabigo"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1763,7 +1763,7 @@ msgstr "  --description  - i-print ang tag description: paglalarawan.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description  - i-print ang tag description: paglalarawan.\n"
 
 #: ../urpme:58
@@ -2164,23 +2164,6 @@ msgstr "nakabuo ng hdlist synthesis file para sa medium na \"%s\""
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "isinusulat ang list file para sa medium na \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
-"Ito ay libreng software at maaaring ipamahagi ayon sa mga nasasaad sa GNU "
-"GPL.\n"
-"\n"
-"paggamit:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3511,6 +3494,26 @@ msgstr ""
 #, fuzzy
 msgid "Software Installer"
 msgstr "Pang-install ng Software"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2008 Mandriva.\n"
+#~ "Ito ay libreng software at maaaring ipamahagi ayon sa mga nasasaad sa GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "paggamit:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description  - i-print ang tag description: paglalarawan.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

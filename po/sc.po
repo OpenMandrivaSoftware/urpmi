@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-sc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2005-09-07 15:57+0100\n"
 "Last-Translator: Antoni Pistis <antonio.pistis@virgilio.it>\n"
 "Language-Team: Sardu\n"
@@ -106,11 +106,11 @@ msgstr "A_nnudda"
 msgid "Choose location to save file"
 msgstr "Sçobera anca sarvai su file"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1688,7 +1688,7 @@ msgstr "Còpia faddia"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1751,7 +1751,7 @@ msgstr "  --description  - amosta su tag description: descriidura.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description  - amosta su tag description: descriidura.\n"
 
 #: ../urpme:58
@@ -2145,23 +2145,6 @@ msgstr "apu fraigau sa hdlist synthesis po su mèdiu \"%s\""
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "scriu sa llist po su mèdiu \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi versioni %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
-"Custu est programa lìberu e fait a du spainai basçu is tèrminis de sa GNU "
-"GPL.\n"
-"\n"
-"impreu:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3457,6 +3440,26 @@ msgstr "Bisori gràfigu po aposentai file RPM"
 #, fuzzy
 msgid "Software Installer"
 msgstr "Aposentadori de Programas"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi versioni %s\n"
+#~ "Copyright (C) 1999-2008 Mandriva.\n"
+#~ "Custu est programa lìberu e fait a du spainai basçu is tèrminis de sa GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "impreu:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description  - amosta su tag description: descriidura.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

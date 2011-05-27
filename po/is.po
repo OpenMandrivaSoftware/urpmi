@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2009-03-30 17:08+0000\n"
 "Last-Translator: Pjetur G. Hjaltason <pjetur@pjetur.net>\n"
 "Language-Team: Icelandic <kde-isl@molar.is>\n"
@@ -106,11 +106,11 @@ msgstr "Hætta _við"
 msgid "Choose location to save file"
 msgstr "Veldu stað til að vista skrá"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1696,7 +1696,7 @@ msgstr "Get ekki flutt skrána %s til %s"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1757,8 +1757,8 @@ msgstr "  --noscripts    - ekki keyra uppsetninga-skriftur í pakka.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr "  --noscripts    - ekki keyra uppsetninga-skriftur í pakka.\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
+msgstr "  --noscripts    - ekki keyra uppsetninga-skriftur í pakka\n"
 
 #: ../urpme:58
 #, c-format
@@ -2142,22 +2142,6 @@ msgstr "engin samantektarskrá er til fyrir miðil \"%s\""
 #, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "engin XML-info skrá er til fyrir miðil \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi útgáfa %s\n"
-"Höfundaréttur © 1999-2008 Mandriva.\n"
-"Þetta er frjáls hugbúnaður og má dreifa samkvæmt skilmálum GNU GPL.\n"
-"\n"
-"notkun:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3465,6 +3449,25 @@ msgstr "Grrafískt viðmót til aðstoðar við innsetningu RPM skráa"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Hugbúnaðar-uppsetning"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi útgáfa %s\n"
+#~ "Höfundaréttur © 1999-2008 Mandriva.\n"
+#~ "Þetta er frjáls hugbúnaður og má dreifa samkvæmt skilmálum GNU GPL.\n"
+#~ "\n"
+#~ "notkun:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --noscripts    - ekki keyra uppsetninga-skriftur í pakka.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

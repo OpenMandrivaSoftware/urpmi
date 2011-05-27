@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-nl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2009-04-05 19:57+0200\n"
 "Last-Translator: Reinout van Schouwen <reinout@gmail.com>\n"
 "Language-Team: Nederlands <vertaling@vrijschrift.org>\n"
@@ -115,11 +115,11 @@ msgstr "_Annuleren"
 msgid "Choose location to save file"
 msgstr "Kies locatie om bestand in op te slaan"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1725,7 +1725,7 @@ msgstr "Kan bestand %s niet verplaatsen naar %s"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1793,8 +1793,8 @@ msgstr "  --noscripts    - de pakketscriptlet(s) niet uitvoeren.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr "  --noscripts    - de pakketscriptlet(s) niet uitvoeren.\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
+msgstr "  --noscripts    - de pakketscriptlet(s) niet uivoeren\n"
 
 #: ../urpme:58
 #, c-format
@@ -2184,23 +2184,6 @@ msgstr "geen synthesis beschikbaar voor medium \"%s\""
 #, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "geen xml-info beschikbaar voor medium \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi versie %s\n"
-"Copyright © 1999-2008 Mandriva.\n"
-"Dit is vrije software en mag worden verspreid onder de voorwaarden van de "
-"GNU GPL.\n"
-"\n"
-"gebruik:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3540,6 +3523,26 @@ msgstr "Grafische schil voor het installeren van RPM bestanden"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Software-installatie"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi versie %s\n"
+#~ "Copyright © 1999-2008 Mandriva.\n"
+#~ "Dit is vrije software en mag worden verspreid onder de voorwaarden van de "
+#~ "GNU GPL.\n"
+#~ "\n"
+#~ "gebruik:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --noscripts    - de pakketscriptlet(s) niet uitvoeren.\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

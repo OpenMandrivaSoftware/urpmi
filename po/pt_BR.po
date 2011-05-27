@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2011-04-28 17:08-0300\n"
 "Last-Translator: Sergio Rafael Lemke <sergio@mandriva.com.br>\n"
 "Language-Team: Brazilian Portuguese <cooker-i18n@mandrivalinux.org>\n"
@@ -119,18 +119,18 @@ msgstr "_Cancelar"
 msgid "Choose location to save file"
 msgstr "Escolha o local para salvar o arquivo"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
 "usage:\n"
 msgstr ""
 "urpmi versão %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "Este é um software livre, e pode ser redistribuído sob os termos da GNU "
 "GPL.\n"
 "\n"
@@ -1744,10 +1744,10 @@ msgid "Can't move file %s to %s"
 msgstr "Não é possível mover arquivo %s para %s"
 
 #: ../urpme:41
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1810,8 +1810,8 @@ msgstr "  --noscripts    - não executa script(s) dos pacotes.\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr "  --noscripts    - não executa script(s) dos pacotes.\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
+msgstr "  --noscripts    - não executa script(s) dos pacotes\n"
 
 #: ../urpme:58
 #, c-format
@@ -2197,23 +2197,6 @@ msgstr "synthesis não disponível para a mídia \"%s\""
 #, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "xml-info não disponível para a mídia \"%s\""
-
-#: ../urpmi:78
-#, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi versão %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"Este é um software livre, e pode ser redistribuído sob os termos da GNU "
-"GPL.\n"
-"\n"
-"uso:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3529,6 +3512,25 @@ msgstr "Interface gráfica para instalar pacotes RPM"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Instalador de Programas"
+
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi versão %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "Este é um software livre, e pode ser redistribuído sob os termos da GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "uso:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --noscripts    - não executa script(s) dos pacotes.\n"
 
 #~ msgid ""
 #~ "A problem has been encountered. You can help Mandriva to improve package\n"

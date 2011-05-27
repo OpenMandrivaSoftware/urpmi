@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2011-04-28 11:10+0200\n"
 "Last-Translator: Ignigo Salvador Azurmendi <xalba@euskalnet.net>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
@@ -106,18 +106,18 @@ msgstr "_Utzi"
 msgid "Choose location to save file"
 msgstr "Aukeratu fitxategiko gordetzeko kokalekua"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
 "usage:\n"
 msgstr ""
 "urpmi %s bertsioa\n"
-"Copyright © 1999-2010 Mandriva.\n"
+"Copyright © 1999-2011 Mandriva.\n"
 "Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
 "birbanatu daiteke.\n"
 "\n"
@@ -1744,10 +1744,10 @@ msgid "Can't move file %s to %s"
 msgstr "Ezin da %s fitxategiar %s-ra mugitu"
 
 #: ../urpme:41
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1809,7 +1809,7 @@ msgstr "  --noscripts    - ez du scriptlet(s) paketea exekutatzen\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --noscripts    - ez du scriptlet(s) paketea exekutatzen\n"
 
 #: ../urpme:58
@@ -2199,23 +2199,6 @@ msgstr "ez dago \"%s\" euskarriarentzako synthesis eskuragarri"
 #, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "ez dago \"%s\" euskarriarentzako xml-info eskuragarri"
-
-#: ../urpmi:78
-#, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi %s bertsioa\n"
-"Copyright © 1999-2011 Mandriva.\n"
-"Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
-"birbanatu daiteke.\n"
-"\n"
-"erabilera:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3564,6 +3547,25 @@ msgstr "RPM fitxategiak instalatzeko interfaze grafikoa"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Software Instalatzailea"
+
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi %s bertsioa\n"
+#~ "Copyright © 1999-2010 Mandriva.\n"
+#~ "Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
+#~ "birbanatu daiteke.\n"
+#~ "\n"
+#~ "erabilera:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --noscripts    - ez du scriptlet(s) paketea exekutatzen\n"
 
 #~ msgid ""
 #~ "A problem has been encountered. You can help Mandriva to improve package\n"

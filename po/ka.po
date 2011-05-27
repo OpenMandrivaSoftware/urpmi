@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2003-01-29 23:47+0400\n"
 "Last-Translator: Aiet Kolkhi <aiet@gmx.net>\n"
 "Language-Team: Georgian\n"
@@ -88,11 +88,11 @@ msgstr "_გაუქმება"
 msgid "Choose location to save file"
 msgstr ""
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1645,7 +1645,7 @@ msgstr "შესვლა ვერ განხორციელდა"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1706,7 +1706,7 @@ msgstr ""
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --update       - განახლების კვანძები\n"
 
 #: ../urpme:58
@@ -2076,23 +2076,6 @@ msgstr "პრობლემა synthesis-ის ფაილის ან მ�
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "პრობლემა synthesis-ის ფაილის ან მედიუმის კითხვისას \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"mdkupdate ვერსია %s\n"
-"საავტორო უფლებები (C) %s Mandriva.\n"
-"პროგრამა უფასო გახლავთ და ნებადართულია მისი GNU GPL ლიცენზიის პირობების "
-"თანახმად გავრცელება.\n"
-"\n"
-"გამოყენება:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3285,6 +3268,26 @@ msgstr ""
 #, fuzzy
 msgid "Software Installer"
 msgstr "პროგრამათა მენეჯმენტი"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "mdkupdate ვერსია %s\n"
+#~ "საავტორო უფლებები (C) %s Mandriva.\n"
+#~ "პროგრამა უფასო გახლავთ და ნებადართულია მისი GNU GPL ლიცენზიის პირობების "
+#~ "თანახმად გავრცელება.\n"
+#~ "\n"
+#~ "გამოყენება:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --update       - განახლების კვანძები\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

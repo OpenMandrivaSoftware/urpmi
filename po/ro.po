@@ -46,7 +46,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Test - Mandriva Linux 2011 Translation\n"
 "Report-Msgid-Bugs-To: https://qa.mandriva.com/\n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2011-04-25 19:57+0000\n"
 "Last-Translator: Piratu <cfrussen@yahoo.co.uk>\n"
 "Language-Team: Romanian <cooker-i18n@mandrivalinux.org>\n"
@@ -147,18 +147,18 @@ msgstr "_Anulează"
 msgid "Choose location to save file"
 msgstr "Alegeți locația unde se salvează fișierul"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
 "usage:\n"
 msgstr ""
 "urpmi versiunea %s\n"
-"Drepturi de autor (C) 1999-2011 Mandriva.\n"
+"Drepturi de autor (C) 2002-2011 Mandriva.\n"
 "Acesta este un program liber și poate fi redistribuit în termenii GNU GPL.\n"
 "\n"
 "utilizare:\n"
@@ -1788,10 +1788,10 @@ msgid "Can't move file %s to %s"
 msgstr "Nu se poate muta fișierul %s la %s"
 
 #: ../urpme:41
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1858,9 +1858,9 @@ msgstr ""
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr ""
-"  --noscripts    - nu se execută scripturile suplimentare ale pachetului.\n"
+"  --noscripts    - nu se execută scripturile suplimentare ale pachetului\n"
 
 #: ../urpme:58
 #, c-format
@@ -2254,22 +2254,6 @@ msgstr "nu este disponibil un synthesis pentru mediul „%s”"
 #, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "nu sînt disponibile informațiile XML pentru mediul „%s”"
-
-#: ../urpmi:78
-#, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi versiunea %s\n"
-"Drepturi de autor (C) 2002-2011 Mandriva.\n"
-"Acesta este un program liber și poate fi redistribuit în termenii GNU GPL.\n"
-"\n"
-"utilizare:\n"
 
 #: ../urpmi:92
 #, c-format
@@ -3635,3 +3619,24 @@ msgstr "Interfața grafică pentru instalarea fișierelor RPM"
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "Instalator de programe"
+
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi versiunea %s\n"
+#~ "Drepturi de autor (C) 1999-2011 Mandriva.\n"
+#~ "Acesta este un program liber și poate fi redistribuit în termenii GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "utilizare:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr ""
+#~ "  --noscripts    - nu se execută scripturile suplimentare ale "
+#~ "pachetului.\n"

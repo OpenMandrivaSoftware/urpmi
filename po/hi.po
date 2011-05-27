@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-hi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2005-08-23 20:11+0530\n"
 "Last-Translator: धनञ्जय शर्मा (Dhananjaya Sharma)\n"
 "Language-Team: Hindi, India\n"
@@ -105,11 +105,11 @@ msgstr "खत्म करें (_C)"
 msgid "Choose location to save file"
 msgstr "संचिका को सुरक्षित करने के स्थान का चयन करें"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1688,7 +1688,7 @@ msgstr "प्रतिलिपि बनना असफ़ल"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1750,7 +1750,7 @@ msgstr "  --description  - टैग विवरण मुद्रित क�
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description  - टैग विवरण मुद्रित करें: विवरण\n"
 
 #: ../urpme:58
@@ -2135,23 +2135,6 @@ msgstr "\"%s\" माध्यम के लिए हार्डडिस्�
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "\"%s\" माध्यम के लिए संचिका-सूची लिखी जा रही है"
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"यू०आर०पी०एम०आई० संस्मरण %s\n"
-"सर्वाधिकार (C) १९९९-२००४ मैनड्रिव सॉफ़्ट ।\n"
-"यह एक मुक्त सॉफ़्टवेयर है और जी०एन०यू० सामान्य जन अधिकार-पत्र के अन्तर्गत पुनः वितरित "
-"किया जा सकता है।\n"
-"\n"
-"उपयोग विधि:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3443,6 +3426,26 @@ msgstr "आरपीएम संचिकाओं के संसाधित
 #: ../gurpmi.desktop.in.h:2
 msgid "Software Installer"
 msgstr "सॉफ़्टवेयर स्थापन-कर्ता"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "यू०आर०पी०एम०आई० संस्मरण %s\n"
+#~ "सर्वाधिकार (C) १९९९-२००४ मैनड्रिव सॉफ़्ट ।\n"
+#~ "यह एक मुक्त सॉफ़्टवेयर है और जी०एन०यू० सामान्य जन अधिकार-पत्र के अन्तर्गत पुनः वितरित "
+#~ "किया जा सकता है।\n"
+#~ "\n"
+#~ "उपयोग विधि:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description  - टैग विवरण मुद्रित करें: विवरण\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"

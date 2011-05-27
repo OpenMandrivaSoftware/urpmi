@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 08:27+0200\n"
+"POT-Creation-Date: 2011-05-27 11:38+0200\n"
 "PO-Revision-Date: 2004-09-07 05:59+0200\n"
 "Last-Translator: Ramon Casha <ramon.casha@linux.org.mt>\n"
 "Language-Team: Maltese <mt@li.org>\n"
@@ -108,11 +108,11 @@ msgstr "I_kkanċella"
 msgid "Choose location to save file"
 msgstr "Agħżel fejn tikteb il-fajl"
 
-#: ../gurpmi.pm:39
+#: ../gurpmi.pm:39 ../urpmi:78
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1686,7 +1686,7 @@ msgstr "Ikkupjar falla"
 #, fuzzy, c-format
 msgid ""
 "urpme version %s\n"
-"Copyright (C) 1999-2010 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -1747,7 +1747,7 @@ msgstr "  --description   - uri t-tag \"description\": deskrizzjoni\n"
 
 #: ../urpme:57
 #, fuzzy, c-format
-msgid "  --triggers     - do not execute package trigger(s).\n"
+msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --description   - uri t-tag \"description\": deskrizzjoni\n"
 
 #: ../urpme:58
@@ -2130,23 +2130,6 @@ msgstr "ibni l-fajl ta' sintesi tal-hdlist għas-sors \"%s\""
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "qed jinkiteb il-fajl b'lista għas-sors \"%s\""
-
-#: ../urpmi:78
-#, fuzzy, c-format
-msgid ""
-"urpmi version %s\n"
-"Copyright (C) 1999-2011 Mandriva.\n"
-"This is free software and may be redistributed under the terms of the GNU "
-"GPL.\n"
-"\n"
-"usage:\n"
-msgstr ""
-"urpmi verżjoni %s\n"
-"Copyright (C) 1999-2005 Mandriva.\n"
-"Dan huwa softwer ħieles u jista' jiġi distribwit taħt it-termini tal-GNU "
-"GPL.\n"
-"\n"
-"użu:\n"
 
 #: ../urpmi:92
 #, fuzzy, c-format
@@ -3440,6 +3423,26 @@ msgstr "Interfaċċja grafika biex tinstalla pakketti RPM"
 #, fuzzy
 msgid "Software Installer"
 msgstr "Installatur ta' softwer"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2010 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi verżjoni %s\n"
+#~ "Copyright (C) 1999-2005 Mandriva.\n"
+#~ "Dan huwa softwer ħieles u jista' jiġi distribwit taħt it-termini tal-GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "użu:\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description   - uri t-tag \"description\": deskrizzjoni\n"
 
 #, fuzzy
 #~ msgid "Cannot write DUDF file.\n"
