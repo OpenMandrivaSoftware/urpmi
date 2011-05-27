@@ -8,7 +8,7 @@
 # Per Øyvind Karlsen <peroyvind@sintrax.net>, 2003, 2004.
 # Per Øyvind Karlsen <peroyvind@linux-mandrake.com>, 2004, 2005.
 # Eskild Hustvedt <zerodogg@skolelinux.no>, 2005.
-# Per Øyvind Karlsen <pkarlsen@mandriva.com>, 2005, 2006.
+# Per Øyvind Karlsen <pkarlsen@mandriva.com>, 2005, 2006, 2011.
 # Per Øyvind Karlsen <peroyvind@mandriva.org>, 2007.
 # Olav Dahlum <odahlum@gmail.com>, 2009, 2010.
 msgid ""
@@ -16,8 +16,8 @@ msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-27 08:27+0200\n"
-"PO-Revision-Date: 2010-04-02 02:40+0200\n"
-"Last-Translator: Olav Dahlum <odahlum@gmail.com>\n"
+"PO-Revision-Date: 2010-05-27 10:41+0200\n"
+"Last-Translator: Per Øyvind Karlsen <pkarlsen@mandriva.com>\n"
 "Language-Team: Norwegian Bokmål <cooker-i18n@mandrivalinux.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -114,7 +114,7 @@ msgid "Choose location to save file"
 msgstr "Velg hvor fila skal lagres."
 
 #: ../gurpmi.pm:39
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -124,7 +124,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi – versjon %s\n"
-"Alle rettigheter © 1999-2008 Mandriva.\n"
+"Alle rettigheter © 1999-2011 Mandriva.\n"
 "Dette er fri programvare og kan redistribueres under vilkårene til GNU GPL.\n"
 "\n"
 "bruk:\n"
@@ -761,9 +761,9 @@ msgid ""
 msgstr ""
 
 #: ../urpm/dudf.pm:74
-#, fuzzy, c-format
+#, c-format
 msgid "Do you want to generate and upload a report?"
-msgstr "Vil du laste opp en DUDF-rapport til Mandriva?"
+msgstr "Vil du generere og laste opp en DUDF-rapport til Mandriva?"
 
 #: ../urpm/dudf.pm:80 ../urpmi:530 ../urpmi:545 ../urpmi:651
 #: ../urpmi.addmedia:136
@@ -772,17 +772,17 @@ msgid " (Y/n) "
 msgstr " (J/n) "
 
 #: ../urpm/dudf.pm:220
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "# Here are logs of your DUDF uploads.\n"
 "# Line format is : <date time of generation> <uid>\n"
 "# You can use uids to see the content of your uploads at this url :\n"
 "# http://dudf.forge.mandriva.com/\n"
 msgstr ""
-"# Her er loggene for DUDF-nedlastingene.\n"
+"# Her er loggene for dine DUDF-opplastninger.\n"
 "# Linjeformatet er  <dato tid for opprettelse> <uid>\n"
-"#Du kan bruke uid-er for å se innholdet i opplastingene på denne URL-en:\n"
-"# http://dudf.forge.mandriva.com/"
+"# Du kan bruke uid-er for å se innholdet i opplastingene på denne URL-en:\n"
+"# http://dudf.forge.mandriva.com/\n"
 
 #: ../urpm/dudf.pm:276 ../urpm/dudf.pm:322
 #, c-format
@@ -815,6 +815,8 @@ msgid ""
 "\n"
 "Command:"
 msgstr ""
+"\n"
+"Kommando:"
 
 #: ../urpm/dudf.pm:315
 #, c-format
@@ -837,9 +839,9 @@ msgstr ""
 "\t"
 
 #: ../urpm/dudf.pm:325
-#, fuzzy, c-format
+#, c-format
 msgid "Testing synthesis file presence ..."
-msgstr "undersøker syntesefil [%s]."
+msgstr "Undersøker om syntesefil er tilstede …"
 
 #: ../urpm/dudf.pm:344
 #, c-format
@@ -850,11 +852,13 @@ msgid ""
 msgstr ""
 
 #: ../urpm/dudf.pm:346
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Uploading synthesis file ..."
-msgstr "undersøker syntesefil [%s]."
+msgstr ""
+"\n"
+"Laster opp syntesefil ..."
 
 #: ../urpm/dudf.pm:364
 #, c-format
@@ -1211,9 +1215,9 @@ msgid "skipping non compatible media `%s' (for %s)"
 msgstr "overser inkompatibelt medie «%s» (for %s)"
 
 #: ../urpm/media.pm:1018
-#, fuzzy, c-format
+#, c-format
 msgid "ignoring non-free medium `%s'"
-msgstr "Overser mediet %s"
+msgstr "overser ikke-fritt medium «%s»"
 
 #: ../urpm/media.pm:1061
 #, c-format
@@ -1308,7 +1312,7 @@ msgstr "henting av [%s] mislyktes (md5sum stemmer ikke)"
 #: ../urpm/media.pm:1536
 #, c-format
 msgid "genhdlist2 failed on %s"
-msgstr "genhdlistfil2 feilet på %s"
+msgstr "genhdlist2 feilet på %s"
 
 #: ../urpm/media.pm:1546
 #, c-format
@@ -1721,7 +1725,7 @@ msgid "Can't move file %s to %s"
 msgstr "Kan ikke flytte filen %s til %s"
 
 #: ../urpme:41
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpme version %s\n"
 "Copyright (C) 1999-2010 Mandriva.\n"
@@ -1731,7 +1735,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpme – versjon %s\n"
-"Copyright © 1999-2008 Mandriva.\n"
+"Copyright © 1999-2011 Mandriva.\n"
 "Dette er fri programvare, og kan re-distribueres under vilkårene til GNU GPL-"
 "lisensen.\n"
 "\n"
@@ -1785,9 +1789,9 @@ msgid "  --noscripts    - do not execute package scriptlet(s).\n"
 msgstr "  --noscripts    – ikke kjør pakkeskript.\n"
 
 #: ../urpme:57
-#, fuzzy, c-format
+#, c-format
 msgid "  --triggers     - do not execute package trigger(s).\n"
-msgstr "  --noscripts    – ikke kjør pakkeskript.\n"
+msgstr "  --notriggers   – ikke kjør noen skriptlets som utløses av pakker.\n"
 
 #: ../urpme:58
 #, c-format
@@ -1878,7 +1882,7 @@ msgid "Removal is possible"
 msgstr "Fjerning er mulig"
 
 #: ../urpmf:29
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmf version %s\n"
 "Copyright (C) 2002-2011 Mandriva.\n"
@@ -1888,7 +1892,7 @@ msgid ""
 "usage: urpmf [options] pattern-expression\n"
 msgstr ""
 "urpmf – versjon %s\n"
-"Copyright © 2002-2006 Mandriva.\n"
+"Copyright © 2002-2011 Mandriva.\n"
 "Dette er fri programvare og kan videredistribueres under vilkårene til GNU "
 "GPL.\n"
 "\n"
@@ -2172,7 +2176,7 @@ msgid "no xml-info available for medium \"%s\""
 msgstr "ingen xml-info tilgjengelig for mediet «%s»"
 
 #: ../urpmi:78
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -2182,7 +2186,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi – versjon %s\n"
-"Alle rettigheter © 1999-2008 Mandriva.\n"
+"Alle rettigheter © 1999-2011 Mandriva.\n"
 "Dette er fri programvare og kan redistribueres under vilkårene til GNU GPL.\n"
 "\n"
 "bruk:\n"
@@ -2433,14 +2437,14 @@ msgid "  --noscripts    - do not execute package scriptlet(s)\n"
 msgstr "  --noscripts    – ikke kjør pakkeskript\n"
 
 #: ../urpmi:153
-#, fuzzy, c-format
+#, c-format
 msgid "  --notriggers   - do not execute package trigger(s)\n"
-msgstr "  --noscripts    – ikke kjør pakkeskript\n"
+msgstr "  --notriggers   – ikke kjør noen skriptlets som utløses av pakker\n"
 
 #: ../urpmi:154
-#, fuzzy, c-format
+#, c-format
 msgid "  --nofdigests   - do not verify digest of file(s)\n"
-msgstr "  --noscripts    – ikke kjør pakkeskript\n"
+msgstr "  --nofdigests   – ikke sjekk filsignaturer\n"
 
 #: ../urpmi:155
 #, c-format
@@ -2451,6 +2455,11 @@ msgid ""
 "                   --nofdigests\n"
 "                   --no-verify-rpm\n"
 msgstr ""
+"  --nitronothing – ofre kontrollering og pålitelighet for ytelse, "
+"alias:\n"
+"                   --tune-rpm=nofsync\n"
+"                   --nofdigests\n"
+"                   --no-verify-rpm\n"
 
 #: ../urpmi:159
 #, c-format
@@ -2742,7 +2751,7 @@ msgstr "Trykk på Enter når montert …"
 #. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
 #. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
 #: ../urpmi.addmedia:36
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "usage: urpmi.addmedia [options] <name> <url>\n"
 "where <url> is one of\n"
@@ -2779,6 +2788,7 @@ msgstr ""
 "\n"
 "  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
 "  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
+"  urpmi.addmedia --distrib --zeroconf\n"
 "\n"
 "\n"
 "og [valg] er fra\n"
@@ -2884,12 +2894,12 @@ msgstr ""
 #: ../urpmi.addmedia:82 ../urpmi.removemedia:43 ../urpmi.update:53
 #, c-format
 msgid "  -q             - quiet mode.\n"
-msgstr "  -q             – stille modus.\n"
+msgstr "  -q             – stillemodus.\n"
 
 #: ../urpmi.addmedia:83 ../urpmi.removemedia:44 ../urpmi.update:54
 #, c-format
 msgid "  -v             - verbose mode.\n"
-msgstr "  -v             – utvidete meldinger.\n"
+msgstr "  -v             – utvidede meldinger.\n"
 
 #: ../urpmi.addmedia:96
 #, c-format
@@ -2951,7 +2961,7 @@ msgid "Can't use %s with remote medium"
 msgstr "Kan ikke bruke %s med eksternt medie"
 
 #: ../urpmi.recover:28
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi.recover version %s\n"
 "Copyright (C) 2006-2011 Mandriva.\n"
@@ -2961,31 +2971,31 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmq versjon %s \n"
-" Copyright © 2000-2006 Mandriva.\n"
+" Copyright © 2000-2011 Mandriva.\n"
 "Dette er fri programvare og kan redistribueres under vilkårene til GNU GPL.\n"
 "Bruk:\n"
 
 #: ../urpmi.recover:34
 #, c-format
 msgid "  --checkpoint   - set repackaging start now\n"
-msgstr ""
+msgstr "  --checkpoint   - sett ompakkingstart nå\n"
 
 #: ../urpmi.recover:35
-#, fuzzy, c-format
+#, c-format
 msgid "  --noclean      - don't clean repackage directory on checkpoint\n"
-msgstr "  --noclean      – ikke fjern rpm-pakker fra mellomlageret.\n"
+msgstr "  --noclean      – ikke fjern ompakkingskatalog på sjekkpunk\n"
 
 #: ../urpmi.recover:37
 #, c-format
 msgid ""
 "  --list         - list transactions since provided date/duration argument\n"
 msgstr ""
+"  --list         – vis transaksjoner siden oppgitt dato/varighet-argument\n"
 
 #: ../urpmi.recover:38
-#, fuzzy, c-format
+#, c-format
 msgid "  --list-all     - list all transactions in rpmdb (long)\n"
-msgstr ""
-"  --list-url     – vis oversikt over tilgjengelige media, med adresser.\n"
+msgstr "  --list-all     – vis alle transaksjoner i rpmdb (lang)\n"
 
 #: ../urpmi.recover:39
 #, c-format
@@ -3000,81 +3010,81 @@ msgid ""
 msgstr ""
 
 #: ../urpmi.recover:42
-#, fuzzy, c-format
+#, c-format
 msgid "  --disable      - turn off repackaging\n"
-msgstr "  --filename     – filnavnet til pakka\n"
+msgstr "  --disable     – deaktiver ompakking\n"
 
 #: ../urpmi.recover:57
-#, fuzzy, c-format
+#, c-format
 msgid "Invalid date or duration [%s]\n"
-msgstr "feil eier av mappe %s"
+msgstr "Ugyldig dato eller varighet [%s]\n"
 
 #: ../urpmi.recover:65
-#, fuzzy, c-format
+#, c-format
 msgid "Repackage directory not defined\n"
-msgstr "fant ikke pakka «%s»."
+msgstr "Ompakkingskatalog ikke definert\n"
 
 #: ../urpmi.recover:68
-#, fuzzy, c-format
+#, c-format
 msgid "Can't write to repackage directory [%s]\n"
-msgstr "klarte ikke å opprette %s"
+msgstr "Kunne ikke skrive til ompakkingskatalog [%s]\n"
 
 #: ../urpmi.recover:70
-#, fuzzy, c-format
+#, c-format
 msgid "Cleaning up repackage directory [%s]...\n"
-msgstr "klarte ikke å opprette %s"
+msgstr "Rensker opp ompakkingskatalog [%s] …\n"
 
 #: ../urpmi.recover:72
 #, c-format
 msgid "%d file removed\n"
 msgid_plural "%d files removed\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d fil fjernet\n"
+msgstr[1] "%d filer fjernet\n"
 
 #: ../urpmi.recover:82
 #, c-format
 msgid "Spurious command-line arguments [%s]\n"
-msgstr ""
+msgstr "Ugyldige kommandolinjeargumenter [%s]\n"
 
 #: ../urpmi.recover:84
 #, c-format
 msgid "You can't specify --checkpoint and --rollback at the same time\n"
-msgstr ""
+msgstr "Du kan ikke spesifisere --checkpoint og --rollback samtidig\n"
 
 #: ../urpmi.recover:86
 #, c-format
 msgid "You can't specify --checkpoint and --list at the same time\n"
-msgstr ""
+msgstr "Du kan ikke spesifisere --checkpoint og --list samtidig\n"
 
 #: ../urpmi.recover:88
 #, c-format
 msgid "You can't specify --rollback and --list at the same time\n"
-msgstr ""
+msgstr "Du kan ikke spesifisere --rollback og --list samtidig\n"
 
 #: ../urpmi.recover:90
 #, c-format
 msgid "You can't specify --disable along with another option"
-msgstr ""
+msgstr "Du kan ikke spesifisere --disable samen med andre valg"
 
 #: ../urpmi.recover:115
 #, c-format
 msgid "No transaction found since %s\n"
-msgstr ""
+msgstr "Ingen transaksjon funnet siden %s\n"
 
 #: ../urpmi.recover:130
 #, c-format
 msgid "You must be superuser to do this"
-msgstr ""
+msgstr "Du må være superbruker for å kunne gjøre dette"
 
 #: ../urpmi.recover:143 ../urpmi.recover:209
-#, fuzzy, c-format
+#, c-format
 msgid "Writing rpm macros file [%s]...\n"
-msgstr "henter filen [%s]  … "
+msgstr "Skriver rpm-makrofil [%s] …\n"
 
 #: ../urpmi.recover:185
-#, fuzzy, c-format
+#, c-format
 msgid "No rollback date found\n"
-msgstr "Fant ingen endringslogg\n"
+msgstr "Ingen tilbakerullingsdato funnet\n"
 
 #: ../urpmi.recover:188
 #, c-format
@@ -3082,9 +3092,9 @@ msgid "Rollback until %s...\n"
 msgstr ""
 
 #: ../urpmi.recover:195
-#, fuzzy, c-format
+#, c-format
 msgid "Disabling repackaging\n"
-msgstr "[ompakking]"
+msgstr "Deaktiverer ompakking\n"
 
 #: ../urpmi.removemedia:38
 #, c-format
@@ -3098,22 +3108,22 @@ msgstr ""
 #: ../urpmi.removemedia:41
 #, c-format
 msgid "  -a             - select all media.\n"
-msgstr "  -a             – velg alle medium.\n"
+msgstr "  -a             – velg alle medier.\n"
 
 #: ../urpmi.removemedia:42
 #, c-format
 msgid "  -y             - fuzzy match on media names.\n"
-msgstr "  -y             – uklart treff på mediumnavn.\n"
+msgstr "  -y             – uklart treff på medienavn.\n"
 
 #: ../urpmi.removemedia:59
 #, c-format
 msgid "Only superuser is allowed to remove media"
-msgstr "Bare superbruker har adgang til å fjerne medium"
+msgstr "Bare superbruker har adgang til å fjerne medie"
 
 #: ../urpmi.removemedia:71
 #, c-format
 msgid "nothing to remove (use urpmi.addmedia to add a media)\n"
-msgstr "ingenting å fjerne (bruk urpmi.addmedia for å legge til et medium)\n"
+msgstr "ingenting å fjerne (bruk urpmi.addmedia for å legge til et medie)\n"
 
 #: ../urpmi.removemedia:77
 #, c-format
@@ -3136,7 +3146,7 @@ msgstr ""
 #: ../urpmi.update:43
 #, c-format
 msgid "  --update       - update only update media.\n"
-msgstr "  --update       – oppdater kun oppdateringsmedium.\n"
+msgstr "  --update       – oppdater kun oppdateringsmedie.\n"
 
 #: ../urpmi.update:45
 #, c-format
@@ -3209,7 +3219,7 @@ msgid "enabling media %s"
 msgstr "Slår på mediet %s"
 
 #: ../urpmq:40
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmq version %s\n"
 "Copyright (C) 2000-2011 Mandriva.\n"
@@ -3219,7 +3229,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmq versjon %s \n"
-" Copyright © 2000-2006 Mandriva.\n"
+" Copyright © 2000-2011 Mandriva.\n"
 "Dette er fri programvare og kan redistribueres under vilkårene til GNU GPL.\n"
 "Bruk:\n"
 
@@ -3289,9 +3299,9 @@ msgid "  --src          - next package is a source package (same as -s).\n"
 msgstr "  --src          – neste pakke er en kildepakke (samme som -s).\n"
 
 #: ../urpmq:67
-#, fuzzy, c-format
+#, c-format
 msgid "  --sources      - print source URLs of selected packages\n"
-msgstr "  --sourcerpm    – vis kilde-rpm.\n"
+msgstr "  --sources      – vis kildeadresser til valgte pakker\n"
 
 #: ../urpmq:69
 #, c-format
@@ -3353,7 +3363,9 @@ msgstr "  --summary, -S  – vis sammendrag.\n"
 msgid ""
 "  --requires-recursive, -d\n"
 "                   - query package dependencies.\n"
-msgstr "  -d             – spør om pakkeavhengigheter.\n"
+msgstr
+"  --requires-recursive, -d\n"
+"                   – spør om pakkeavhengigheter.\n"
 
 #: ../urpmq:94
 #, c-format
