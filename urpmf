@@ -89,15 +89,16 @@ usage: urpmf [options] pattern-expression
 
 my %tags_per_media_info = (
   everywhere => [ qw(
-    arch
     epoch
     filename
-    name
-    release
-    version
    ) ],
 
    synthesis => [ qw(
+    arch
+    name
+    release
+    version
+
     conflicts
     group
     obsoletes
