@@ -392,7 +392,7 @@ sub is_delta_installable {
     my $v_installed;
     $db->traverse(sub {
 	my ($p) = @_;
-	$p->name eq $n and $v_installed = $p->version . '-' . $p->release . ($p->disttag ? "-" . $p->disttag . $p->distepoch . "");
+	$p->name eq $n and $v_installed = $p->version . '-' . $p->release . ($p->disttag ? "-" . $p->disttag . $p->distepoch : "");
     });
     $v_match eq $v_installed;
 }
