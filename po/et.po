@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-27 11:38+0200\n"
-"PO-Revision-Date: 2011-05-18 15:52+0300\n"
+"PO-Revision-Date: 2011-05-30 13:37+0300\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian <linux-ee@lists.eenet.ee>\n"
 "Language: et\n"
@@ -1724,7 +1724,7 @@ msgid "Can't move file %s to %s"
 msgstr "Faili %s liigutamine asukohta %s ei ole võimalik"
 
 #: ../urpme:41
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpme version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -1734,7 +1734,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpme versioon %s\n"
-"Autoriõigus © 1999-2010 Mandriva.\n"
+"Autoriõigus © 1999-2011 Mandriva.\n"
 "See on vaba tarkvara, mida võib levitada vastavalt GNU Üldise Avaliku "
 "Litsentsi tingimustele.\n"
 "\n"
@@ -1794,7 +1794,7 @@ msgid "  --noscripts    - do not execute package scriptlet(s).\n"
 msgstr "  --noscripts    - pakettide käivitusskripte ei käivitata.\n"
 
 #: ../urpme:57
-#, fuzzy, c-format
+#, c-format
 msgid "  --notriggers   - do not execute package trigger(s).\n"
 msgstr "  --notriggers   - pakettide käivitusskripte ei käivitata.\n"
 
@@ -1914,7 +1914,7 @@ msgstr "  --version      - näitab programmi versiooni.\n"
 msgid "  --env          - use specific environment (typically a bug report).\n"
 msgstr ""
 "  --env          - kasutatakse spetsiifilist keskkonda (tavaliselt\n"
-"                   vearaportideks).\n"
+"                   veateadeteks).\n"
 
 #: ../urpmf:38 ../urpmi:85 ../urpmq:49
 #, c-format
@@ -2401,7 +2401,7 @@ msgid ""
 "  --bug          - output a bug report in directory indicated by\n"
 "                   next arg.\n"
 msgstr ""
-"  --bug          - väljastab vearaporti kataloogi, mis on ära näidatud\n"
+"  --bug          - väljastab veateate kataloogis, mis on ära näidatud\n"
 "                   järgnevas argumendis.\n"
 
 #: ../urpmi:148
@@ -2450,6 +2450,11 @@ msgid ""
 "                   --nofdigests\n"
 "                   --no-verify-rpm\n"
 msgstr ""
+"  --nitronothing - jõudluse eelistamine kontrollimisele ja usaldusväärsusele, "
+"vastab käskudele:\n"
+"                   --tune-rpm=nofsync\n"
+"                   --nofdigests\n"
+"                   --no-verify-rpm\n"
 
 #: ../urpmi:159
 #, c-format
@@ -2516,7 +2521,7 @@ msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
 "along with --bug.\n"
 msgstr ""
-"Viga: vearaporti loomiseks kasutage koos võtmega --bug\n"
+"Viga: veateate loomiseks kasutage koos võtmega --bug\n"
 "tavalisi käsureaargumente.\n"
 
 #: ../urpmi:244
@@ -2548,13 +2553,13 @@ msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
 "or delete it"
 msgstr ""
-"Kataloog [%s] on juba olemas, palun kasutage vearaportideks muud kataloogi "
+"Kataloog [%s] on juba olemas, palun kasutage veateadeteks muud kataloogi "
 "või kustutage see"
 
 #: ../urpmi:278
 #, c-format
 msgid "Unable to create directory [%s] for bug report"
-msgstr "Kataloogi [%s] loomine vearaportideks nurjus"
+msgstr "Kataloogi [%s] loomine veateadeteks nurjus"
 
 #: ../urpmi:299
 #, c-format
