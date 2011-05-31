@@ -1,3 +1,8 @@
+Version 6.65 - 31 May 2011, by Per Øyvind Karlsen
+
+- revert workaround in previous version and implement proper support for
+  parsing using updated metadata format
+
 Version 6.64 - 28 May 2011, by Per Øyvind Karlsen
 
 - use synthesis for getting name, version, release & arch with urpmf for now,

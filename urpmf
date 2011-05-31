@@ -89,16 +89,15 @@ usage: urpmf [options] pattern-expression
 
 my %tags_per_media_info = (
   everywhere => [ qw(
+    arch
     epoch
     filename
-   ) ],
-
-   synthesis => [ qw(
-    arch
     name
     release
     version
+   ) ],
 
+   synthesis => [ qw(
     conflicts
     group
     obsoletes
@@ -327,11 +326,15 @@ if ($needed_media_info{hdlist}) {
 	    # special version for speed (3x faster), hopefully fully compatible
 	    my $code = sprintf(<<'EOF', $expr, $expr);
 	    my $F = urpm::xml_info::open_lzma($xml_info_file);
-	    my $fn;    
+	    my $fn;
+	    my $disttag;
+	    my $distepoch;
 	    local $_;
 	    while (<$F>) {
 		if (m!^<!) { 
-		    ($fn) = /fn="(.*)"/;
+		    ($fn) = /fn="(.*?)"/;
+		    ($disttag) = /disttag='(.*?)'/;
+		    ($distepoch) = /distepoch='(.*?)'/;
 		} elsif (%s || ($fn =~ %s)) {
                     $fn or $urpm->{fatal}(1, "fast algorithm is broken, please report a bug");
                     my $pkg = urpm::xml_info_pkg->new({ fn => $fn });
