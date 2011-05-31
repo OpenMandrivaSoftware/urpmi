@@ -200,11 +200,9 @@ sub _unrequested_orphans_after_remove_once {
     # first we get the list of requires/suggests that may be unneeded after removing $toremove
     my @requires;
     foreach my $fn (keys %$toremove) {
-	my ($n) = $fn =~ $fullname2name_re;
 
-	$db->traverse_tag('name', [ $n ], sub {
+	$db->traverse_tag('nvra', [ $fn ], sub {
 	    my ($p) = @_;
-	    $p->fullname eq $fn or return;
 	    push @requires, $p->requires, $p->suggests;
 	});
     }
