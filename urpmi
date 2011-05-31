@@ -152,7 +152,7 @@ usage:
 ") . N("  --noscripts    - do not execute package scriptlet(s)
 ") . N("  --notriggers   - do not execute package trigger(s)
 ") . N("  --nofdigests   - do not verify digest of file(s)
-") . N("  --nitronothing - trade verification and reliability for performance, alias:
+") . N("  --fastunsafe   - trade verification and reliability for performance, alias:
                    --tune-rpm=nofsync
                    --nofdigests
                    --no-verify-rpm
