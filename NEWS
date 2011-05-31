@@ -1,5 +1,7 @@
 Version 6.65 - 31 May 2011, by Per Øyvind Karlsen
 
+- fix orphaned packages not being printed when depending packages has been
+  removed
 - fix an attempt to create and run an empty transaction
 - rename --nitronothing to --fastunsafe (more intuitive and less cheezy;)
 - fix bug in urpmf, which makes it believe epoch can be found in all metadata
