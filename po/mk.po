@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-mk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2005-07-18 01:58+0200\n"
 "Last-Translator: Зоран Димовски <decata@mt.net.mk>\n"
 "Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
@@ -1464,7 +1464,7 @@ msgstr ""
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr ""
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2425,7 +2425,7 @@ msgstr "  --description  - го испишува тагот на описот: �
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

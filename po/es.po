@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2011-04-28 13:13-0300\n"
 "Last-Translator: Diego Bello <dbello@gmail.com>\n"
 "Language-Team: Spanish <cooker-i18n@mandrivalinux.org >\n"
@@ -1514,7 +1514,7 @@ msgstr "TB"
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr "Marcando %s como instalado a mano, no se marcara como huerfano"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2489,7 +2489,7 @@ msgstr "  --noscripts    - no ejecutar los scriplets del paquete\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

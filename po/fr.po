@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2009-10-21 18:20+0200\n"
 "Last-Translator: Christophe Berthelé <berthy@mandriva.org>\n"
 "Language-Team: French <cooker-i18n@mandrivalinux.org>\n"
@@ -1514,7 +1514,7 @@ msgstr ""
 "Marque %s comme étant manuellement installé, il ne sera pas considéré comme "
 "un paquet orphelin"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2506,7 +2506,7 @@ msgstr "  --noscripts    - ne pas exécuter les scripts d'installation\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2004-08-08 20:26+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -1476,7 +1476,7 @@ msgstr ""
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr ""
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2438,7 +2438,7 @@ msgstr "  --noscripts    - èn nén enonder les scripres do pacaedje.\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

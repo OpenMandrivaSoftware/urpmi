@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-2010.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2009-10-26 09:01+0100\n"
 "Last-Translator: Gergely Lónyai <aleph@mandriva.org>\n"
 "Language-Team: Hungarian <aleph@mandriva.org>\n"
@@ -1500,7 +1500,7 @@ msgstr ""
 "Meg lett jelölve a %s, mint kézzel telepített, így az automatikus elárvulás "
 "nem vonatkozik rá"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2481,7 +2481,7 @@ msgstr "  --noscripts    - a csomagok szkriptjei ne legyenek végrehajtva\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

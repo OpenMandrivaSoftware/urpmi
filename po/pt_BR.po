@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2011-04-28 17:08-0300\n"
 "Last-Translator: Sergio Rafael Lemke <sergio@mandriva.com.br>\n"
 "Language-Team: Brazilian Portuguese <cooker-i18n@mandrivalinux.org>\n"
@@ -1507,7 +1507,7 @@ msgstr "TB"
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr "Marcando %s como instalado manualmente, não será orfanizado"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2456,7 +2456,7 @@ msgstr "  --noscripts    - não executa script(s) dos pacotes\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

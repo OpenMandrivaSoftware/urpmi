@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2011-05-25 22:44+0300\n"
 "Last-Translator: Alexander Kazancev <kazancas@mandriva.ru>\n"
 "Language-Team: Russian <gnu@mx.ru>\n"
@@ -1502,7 +1502,7 @@ msgstr ""
 "%s помечается как установленный вручную; он не будет учитываться при "
 "определении пакетов-сирот"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2462,7 +2462,7 @@ msgstr "  --nofdigests   - не проверять дайджест файла(�
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

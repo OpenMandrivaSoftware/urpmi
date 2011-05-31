@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2009-10-26 22:46+0300\n"
 "Last-Translator: Ma'moun Diraneyya <mamoun.diraneyya@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -1474,7 +1474,7 @@ msgstr "TB"
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr "Marking %s as manually installed, it won't be auto-orphaned"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2447,7 +2447,7 @@ msgstr "  --noscripts    - do not execute package scriptlet(s)\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

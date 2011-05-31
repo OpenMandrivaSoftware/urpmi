@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2010-01-11 22:17+0100\n"
 "Last-Translator: Marek Walczak <kubdat@poczta.fm>\n"
 "Language-Team:  <pl@li.org>\n"
@@ -1506,7 +1506,7 @@ msgstr ""
 "%s oznaczono jako zainstalowany ręcznie i nie będzie brany pod uwagę przez "
 "funkcję wyszukiwania osieroconych pakietów"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2476,7 +2476,7 @@ msgstr "  --noscripts    - nie uruchamiaj skryptów pakietu\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

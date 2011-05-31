@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mandriva Linux\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2009-08-24 20:33-0000\n"
 "Last-Translator: Rhoslyn Prys <rprys@yahoo.com>\n"
 "Language-Team: Cymraeg\n"
@@ -1476,7 +1476,7 @@ msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr ""
 "Marcio %s fel ei fod wedi ei osod â llaw, ni fydd yn cael ei awto-amddifadu"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2418,7 +2418,7 @@ msgstr "  --noscripts    - peidio gweithredu sgripledi pecyn(au)\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

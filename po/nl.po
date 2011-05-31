@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-nl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2009-04-05 19:57+0200\n"
 "Last-Translator: Reinout van Schouwen <reinout@gmail.com>\n"
 "Language-Team: Nederlands <vertaling@vrijschrift.org>\n"
@@ -1486,7 +1486,7 @@ msgstr ""
 "Markeren van %s als handmatig geïnstalleerd. Het zal niet automatisch wees "
 "gemaakt worden."
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, fuzzy, c-format
 msgid ""
 "The following package:\n"
@@ -2448,7 +2448,7 @@ msgstr "  --noscripts    - de pakketscriptlet(s) niet uivoeren\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2010-04-30 18:41+0200\n"
 "Last-Translator: Oliver Burger <oliver.burger@wizard-fire.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -1512,7 +1512,7 @@ msgstr ""
 "%s wird als manuell installiert markiert, es wird von der auto-orphan-"
 "Funktion ignoriert"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2494,7 +2494,7 @@ msgstr "  --noscripts    - Paket-Skripte nicht ausführen\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

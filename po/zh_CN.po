@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2011-04-25 9:45+0800\n"
 "Last-Translator: 汤诗语 <shiyu@mandriva.org>\n"
 "Language-Team: Mandriva Linux Simplified Chinese <cooker-i18n@mandrivalinux."
@@ -1466,7 +1466,7 @@ msgstr "TB"
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr "将 %s 标记为手动安装，该软件包不会被标为自动孤立"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2372,7 +2372,7 @@ msgstr "  --noscripts    - 不执行软件包脚本。\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

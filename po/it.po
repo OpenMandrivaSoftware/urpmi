@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2011-04-25 18:00+0200\n"
 "Last-Translator: Moreno Manzini <moreno@mediacom.it>\n"
 "Language-Team: Italian <timl@freelist.org>\n"
@@ -1517,7 +1517,7 @@ msgstr "TB"
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr "Se segni %s come installato manualmente, non diventerà «auto-orphaned»"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2492,7 +2492,7 @@ msgstr "  --noscripts    - non esegue gli script contenuti nei pacchetti\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

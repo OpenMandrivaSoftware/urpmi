@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nb\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2010-05-27 10:41+0200\n"
 "Last-Translator: Per Øyvind Karlsen <pkarlsen@mandriva.com>\n"
 "Language-Team: Norwegian Bokmål <cooker-i18n@mandrivalinux.org>\n"
@@ -1487,7 +1487,7 @@ msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr ""
 "Markerer %s som manuelt installert, den vil ikke bli automatisk foreldreløs"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2431,9 +2431,9 @@ msgid "  --nofdigests   - do not verify digest of file(s)\n"
 msgstr "  --nofdigests   – ikke sjekk filsignaturer\n"
 
 #: ../urpmi:155
-#, c-format
+#, fuzzy, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-sv\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2009-10-21 18:34+0300\n"
 "Last-Translator: Thomas Backlund <tmb@mandriva.org>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -1486,7 +1486,7 @@ msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr ""
 "Markerar %s som manuellt installerad, så det inte blir märkt som obehövligt"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2429,7 +2429,7 @@ msgstr "  --noscripts    - kör inte paketens skript\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

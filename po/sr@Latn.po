@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-sr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2004-02-01 19:27+0100\n"
 "Last-Translator: Toma Jankovic <webmaster@mandrake.co.yu>\n"
 "Language-Team: serbian <mdk@linux.rs.sr>\n"
@@ -1442,7 +1442,7 @@ msgstr ""
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr ""
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2381,7 +2381,7 @@ msgstr "  --description   - prikazuje tag opisa: opis.\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2010-06-13 20:29+0200\n"
 "Last-Translator: Dimitrios Glentadakis\n"
 "Language-Team: Greek <translators_team@mandrivalinux.gr>\n"
@@ -1515,7 +1515,7 @@ msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr ""
 "Σημείωση του %s ως εγκατεστημένο χειροκίνητα, δεν θα θεωρείται ορφανό πακέτο"
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2502,7 +2502,7 @@ msgstr "  --noscripts    - να μην εκτελεστούν τα scripts εγ�
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

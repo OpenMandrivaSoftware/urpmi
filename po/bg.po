@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-bg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2003-08-18 15:59+0300\n"
 "Last-Translator: Boyan Ivanov <boyan17@bulgaria.com>\n"
 "Language-Team: Bulgarian <dict@linux.zonebg.com>\n"
@@ -1467,7 +1467,7 @@ msgstr ""
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr ""
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2393,7 +2393,7 @@ msgstr "  --description   - отпечатва описание на тага: d
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

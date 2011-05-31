@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2011-05-17 17:08+0300\n"
 "Last-Translator: Jani Välimaa <wally@mandriva.org>\n"
 "Language-Team: Finnish <cooker-i18n@mandrivalinux.org>\n"
@@ -1500,7 +1500,7 @@ msgstr ""
 "Merkitään paketti %s käsin asennetuksi. Paketista ei tule tarpeetonta "
 "(orphan)."
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2469,7 +2469,7 @@ msgstr "  --nofdigests   - älä varmista pakettien tiivistettä.\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"

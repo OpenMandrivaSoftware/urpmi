@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ca\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-27 11:38+0200\n"
+"POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2005-09-19 23:29+0200\n"
 "Last-Translator: Albert Astals Cid <astals11@terra.es>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -1470,7 +1470,7 @@ msgstr ""
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr ""
 
-#: ../urpm/orphans.pm:440
+#: ../urpm/orphans.pm:438
 #, c-format
 msgid ""
 "The following package:\n"
@@ -2417,7 +2417,7 @@ msgstr "  --description   - mostra l'etiqueta description: descripció.\n"
 #: ../urpmi:155
 #, c-format
 msgid ""
-"  --nitronothing - trade verification and reliability for performance, "
+"  --fastunsafe   - trade verification and reliability for performance, "
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 "                   --nofdigests\n"
