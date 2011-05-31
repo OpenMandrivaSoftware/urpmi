@@ -38,15 +38,19 @@ sub changelogs  { exists $_[0]{changelogs} ? @{$_[0]{changelogs}} : $_[0]{pkg}->
 
 sub files { exists $_[0]{files} ? split("\n", $_[0]{files}) : $_[0]{pkg}->files }
 
-my $fullname_re = qr/^(.*)-([^\-]*)-([^\-]*)%s\.([^\.\-]*)$/;
+sub fullname_parts {
+    my $re = sprintf(qr/^(.*)-([^\-]*)-([^\-]*)%s\.([^\.\-]*)$/, (exists $_[0]{disttag} ? "-" . $_[0]{disttag} . (exists $_[0]{distepoch} ? $_[0]{distepoch} : "" ) : ""));
+    my @kos = $_[0]{fn} =~ $re;
+    return $kos[$_[1]];
+}
 
 # available in both {pkg} and {fn}
-sub name      { exists $_[0]{pkg} ? $_[0]{pkg}->name    : $_[0]{fn} =~ sprintf($fullname_re, (exists $_[0]{disttag} ? "-" . $_[0]{disttag} . (exists $_[0]{distepoch} ? $_[0]{distepoch} : "" ) : "")) && $1 }
-sub version   { exists $_[0]{pkg} ? $_[0]{pkg}->version : $_[0]{fn} =~ sprintf($fullname_re, (exists $_[0]{disttag} ? "-" . $_[0]{disttag} . (exists $_[0]{distepoch} ? $_[0]{distepoch} : "" ) : "")) && $2 }
-sub release   { exists $_[0]{pkg} ? $_[0]{pkg}->release : $_[0]{fn} =~ sprintf($fullname_re, (exists $_[0]{disttag} ? "-" . $_[0]{disttag} . (exists $_[0]{distepoch} ? $_[0]{distepoch} : "" ) : "")) && $3 }
-sub arch      { exists $_[0]{pkg} ? $_[0]{pkg}->arch    : $_[0]{fn} =~ sprintf($fullname_re, (exists $_[0]{disttag} ? "-" . $_[0]{disttag} . (exists $_[0]{distepoch} ? $_[0]{distepoch} : "" ) : "")) && $4 }
-sub disttag   { exists $_[0]{disttag}       ? $_[0]{disttag}         : $_[0]{pkg}->disttag }
-sub distepoch { exists $_[0]{distepoch}     ? $_[0]{distepoch}       : $_[0]{pkg}->distepoch }
+sub name      { exists $_[0]{pkg} ? $_[0]{pkg}->name    : fullname_parts(@_, 0) }
+sub version   { exists $_[0]{pkg} ? $_[0]{pkg}->version : fullname_parts(@_, 1) }
+sub release   { exists $_[0]{pkg} ? $_[0]{pkg}->release : fullname_parts(@_, 2) }
+sub arch      { exists $_[0]{pkg} ? $_[0]{pkg}->arch    : fullname_parts(@_, 3) }
+sub disttag   { exists $_[0]{disttag}       ? $_[0]{disttag}     : $_[0]{pkg}->disttag }
+sub distepoch { exists $_[0]{distepoch}     ? $_[0]{distepoch}   : $_[0]{pkg}->distepoch }
 
 sub fullname { wantarray ? $_[0]{pkg}->fullname : $_[0]{fn} }
 sub filename { $_[0]{fn} . '.rpm' }
