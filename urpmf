@@ -337,7 +337,7 @@ if ($needed_media_info{hdlist}) {
 		    ($distepoch) = /distepoch='(.*?)'/;
 		} elsif (%s || ($fn =~ %s)) {
                     $fn or $urpm->{fatal}(1, "fast algorithm is broken, please report a bug");
-                    my $pkg = urpm::xml_info_pkg->new({ fn => $fn });
+                    my $pkg = urpm::xml_info_pkg->new({ fn => $fn, disttag => $disttag, distepoch => $distepoch });
 		    print $pkg->name, ':', $_;		    
 		}
 	    }
