@@ -45,8 +45,8 @@ sub name      { exists $_[0]{pkg} ? $_[0]{pkg}->name    : $_[0]{fn} =~ sprintf($
 sub version   { exists $_[0]{pkg} ? $_[0]{pkg}->version : $_[0]{fn} =~ sprintf($fullname_re, (exists $_[0]{disttag} ? "-" . $_[0]{disttag} . (exists $_[0]{distepoch} ? $_[0]{distepoch} : "" ) : "")) && $2 }
 sub release   { exists $_[0]{pkg} ? $_[0]{pkg}->release : $_[0]{fn} =~ sprintf($fullname_re, (exists $_[0]{disttag} ? "-" . $_[0]{disttag} . (exists $_[0]{distepoch} ? $_[0]{distepoch} : "" ) : "")) && $3 }
 sub arch      { exists $_[0]{pkg} ? $_[0]{pkg}->arch    : $_[0]{fn} =~ sprintf($fullname_re, (exists $_[0]{disttag} ? "-" . $_[0]{disttag} . (exists $_[0]{distepoch} ? $_[0]{distepoch} : "" ) : "")) && $4 }
-sub disttag   { $_[0]{disttag} }
-sub distepoch { $_[0]{distepoch} }
+sub disttag   { exists $_[0]{disttag}       ? $_[0]{disttag}         : $_[0]{pkg}->disttag }
+sub distepoch { exists $_[0]{distepoch}     ? $_[0]{distepoch}       : $_[0]{pkg}->distepoch }
 
 sub fullname { wantarray ? $_[0]{pkg}->fullname : $_[0]{fn} }
 sub filename { $_[0]{fn} . '.rpm' }
