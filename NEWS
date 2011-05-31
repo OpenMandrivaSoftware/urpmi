@@ -1,5 +1,6 @@
 Version 6.65 - 31 May 2011, by Per Øyvind Karlsen
 
+- fix bug in urpmf, which makes it believe epoch can be found in all metadata
 - revert workaround in previous version and implement proper support for
   parsing using updated metadata format
 

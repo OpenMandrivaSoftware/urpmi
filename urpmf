@@ -90,7 +90,6 @@ usage: urpmf [options] pattern-expression
 my %tags_per_media_info = (
   everywhere => [ qw(
     arch
-    epoch
     filename
     name
     release
@@ -99,6 +98,7 @@ my %tags_per_media_info = (
 
    synthesis => [ qw(
     conflicts
+    epoch
     group
     obsoletes
     provides
