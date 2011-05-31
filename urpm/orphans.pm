@@ -4,10 +4,9 @@ use strict;
 use urpm::util;
 use urpm::msg;
 use urpm;
+use URPM::Resolve;
 
 # $Id: select.pm 243120 2008-07-01 12:24:34Z pixel $
-
-my $fullname2name_re = qr/^(.*)-[^\-]*-[^\-]*\.[^\.\-]*$/;
 
 #- side-effects: none
 sub installed_packages_packed {
@@ -139,11 +138,11 @@ sub _renamed_unrequested {
 
     my %l;
     foreach my $fn (@obsoleted) {
-	my ($n) = $fn =~ $fullname2name_re;
+	my ($n) = URPM::fullname_parts($rejected->{$fn}, $fn);
 	$current->{$n} or next;
 
 	my ($new_fn) = keys %{$rejected->{$fn}{closure}};
-	my ($new_n) = $new_fn =~ $fullname2name_re;
+	my ($new_n) = URPM::fullname_parts($rejected->{$fn}{closure}{$new_fn}, $new_fn);
 
 	grep { my $pkg = $urpm->{depslist}[$_]; ($pkg->name eq $new_n) && $pkg->flag_installed && $pkg->flag_upgrade } keys %$selected and next;
 	if ($new_n ne $n) {

@@ -1,5 +1,6 @@
 Version 6.65 - 31 May 2011, by Per Øyvind Karlsen
 
+- fix orphaning of obsolete packages
 - fix orphaned packages not being printed when depending packages has been
   removed
 - fix an attempt to create and run an empty transaction
