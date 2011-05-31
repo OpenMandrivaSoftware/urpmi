@@ -1,6 +1,7 @@
 package urpm::xml_info_pkg;
 
 use strict;
+use URPM::Resolve;
 
 # proxy object: returns the xml info if available, otherwise redirects to URPM::Package
 
@@ -38,17 +39,11 @@ sub changelogs  { exists $_[0]{changelogs} ? @{$_[0]{changelogs}} : $_[0]{pkg}->
 
 sub files { exists $_[0]{files} ? split("\n", $_[0]{files}) : $_[0]{pkg}->files }
 
-sub fullname_parts {
-    my $re = sprintf(qr/^(.*)-([^\-]*)-([^\-]*)%s\.([^\.\-]*)$/, (exists $_[0]{disttag} ? "-" . $_[0]{disttag} . (exists $_[0]{distepoch} ? $_[0]{distepoch} : "" ) : ""));
-    my @kos = $_[0]{fn} =~ $re;
-    return $kos[$_[1]];
-}
-
 # available in both {pkg} and {fn}
-sub name      { exists $_[0]{pkg} ? $_[0]{pkg}->name    : fullname_parts(@_, 0) }
-sub version   { exists $_[0]{pkg} ? $_[0]{pkg}->version : fullname_parts(@_, 1) }
-sub release   { exists $_[0]{pkg} ? $_[0]{pkg}->release : fullname_parts(@_, 2) }
-sub arch      { exists $_[0]{pkg} ? $_[0]{pkg}->arch    : fullname_parts(@_, 3) }
+sub name      { exists $_[0]{pkg} ? $_[0]{pkg}->name    : (URPM::fullname_parts(@_, $_[0]{fn}))[0] }
+sub version   { exists $_[0]{pkg} ? $_[0]{pkg}->version : (URPM::fullname_parts(@_, $_[0]{fn}))[1] }
+sub release   { exists $_[0]{pkg} ? $_[0]{pkg}->release : (URPM::fullname_parts(@_, $_[0]{fn}))[2] }
+sub arch      { exists $_[0]{pkg} ? $_[0]{pkg}->arch    : (URPM::fullname_parts(@_, $_[0]{fn}))[3] }
 sub disttag   { exists $_[0]{disttag}       ? $_[0]{disttag}     : $_[0]{pkg}->disttag }
 sub distepoch { exists $_[0]{distepoch}     ? $_[0]{distepoch}   : $_[0]{pkg}->distepoch }
 
