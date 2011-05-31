@@ -254,6 +254,12 @@ sub run {
                     }
                 }
                 my $to_remove = $urpm->{options}{'allow-force'} ? [] : $set->{remove} || [];
+		#- if no packages to remove or to install, we jump to the end to prevent any
+		#  attempts of creating and running any empty transactions
+		if (!(($to_remove && @$to_remove)|| values %transaction_sources_install || values %$transaction_sources)) {
+		    last;
+		}
+
                 bug_log(scalar localtime(), " ", join(' ', values %transaction_sources_install, values %$transaction_sources), "\n");
                 $urpm->{log}("starting installing packages");
                 my %install_options_common = (
