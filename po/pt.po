@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: pt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-31 16:36+0200\n"
-"PO-Revision-Date: 2011-06-12 07:42+0100\n"
+"PO-Revision-Date: 2011-06-12 18:31+0100\n"
 "Last-Translator: Zé <mmodem00@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-doc@kde.org>\n"
 "Language: pt\n"
@@ -1529,11 +1529,11 @@ msgid_plural ""
 "are now orphaned, if you wish to remove them, you can use \"urpme --auto-"
 "orphans\""
 msgstr[0] ""
-"O seguinte pacote está agora órfão, se o deseja remover, pode usar \"urpme --"
+"O seguinte pacote agora está órfão, se o deseja remover, pode usar \"urpme --"
 "auto-orphans\".\n"
 "%s"
 msgstr[1] ""
-"Os seguintes pacotes estão agora órfãos, se os deseja remover, pode usar "
+"Os seguintes pacotes agora estão órfãos, se os deseja remover, pode usar "
 "\"urpme --auto-orphans\".\n"
 "%s"
 
@@ -1545,12 +1545,12 @@ msgstr "não é possível analisar \"%s\" no ficheiro [%s]"
 #: ../urpm/parallel.pm:24
 #, c-format
 msgid "examining parallel handler in file [%s]"
-msgstr "a examinar o uso paralelo no ficheiro [%s]"
+msgstr "a examinar o manipulador paralelo no ficheiro [%s]"
 
 #: ../urpm/parallel.pm:35
 #, c-format
 msgid "found parallel handler for nodes: %s"
-msgstr "encontrado uso paralelo para nós: %s"
+msgstr "foi encontrado um manipulador paralelo para os nós: %s"
 
 #: ../urpm/parallel.pm:39
 #, c-format
@@ -1781,7 +1781,7 @@ msgstr ""
 #: ../urpme:48
 #, c-format
 msgid "  --auto-orphans - remove orphans\n"
-msgstr "  --auto-orphans - remove os órfãos\n"
+msgstr "  --auto-orphans - remove os pacotes órfãos\n"
 
 #: ../urpme:49
 #, c-format
@@ -1792,14 +1792,12 @@ msgstr ""
 #: ../urpme:51 ../urpmi:120 ../urpmq:70
 #, c-format
 msgid "  --parallel     - distributed urpmi across machines of alias.\n"
-msgstr ""
-"  --parallel     - urpmi distribuído através das máquinas dos apelidos.\n"
+msgstr "  --parallel     - urpmi distribuído através das máquinas das alias.\n"
 
 #: ../urpme:52 ../urpmi:160
 #, c-format
 msgid "  --repackage    - Re-package the files before erasing\n"
-msgstr ""
-"  --repackage    - Empacota novamente os ficheiros antes de os apagar\n"
+msgstr "  --repackage    - volta a empacotar os ficheiros antes de os apagar\n"
 
 #: ../urpme:53
 #, c-format
@@ -1882,7 +1880,7 @@ msgstr "Nada a remover"
 #: ../urpme:146
 #, c-format
 msgid "No orphans to remove"
-msgstr "Sem órfãos para remover"
+msgstr "Nenhum órfão para remover"
 
 #: ../urpme:152
 #, c-format
@@ -1920,7 +1918,7 @@ msgstr "Remoção falhada"
 #: ../urpme:188
 #, c-format
 msgid "Removal is possible"
-msgstr "A remoção é possível"
+msgstr "Remoção possível"
 
 #: ../urpmf:29
 #, c-format
@@ -1947,40 +1945,41 @@ msgstr "  --version      - mostra o número da versão desta ferramenta.\n"
 #, c-format
 msgid "  --env          - use specific environment (typically a bug report).\n"
 msgstr ""
-"  --env          - usa um ambiente especifico (geralmente um relatório de "
+"  --env          - usa um ambiente específico (geralmente um relatório de "
 "erro).\n"
 
 #: ../urpmf:38 ../urpmi:85 ../urpmq:49
 #, c-format
 msgid "  --excludemedia - do not use the given media, separated by comma.\n"
-msgstr "  --excludemedia - não usa a média indicada, separada por vírgula.\n"
+msgstr ""
+"  --excludemedia - não usa as médias indicadas, separadas por vírgula.\n"
 
 #: ../urpmf:39
 #, c-format
 msgid ""
 "  --literal, -l  - don't match patterns, use argument as a literal string.\n"
 msgstr ""
-"  --literal, -l  - não combina médias padrões, usa o argumento como uma "
-"string literal.\n"
+"  --literal, -l  - não combina os padrões, usa o argumento como uma "
+"'string' literal.\n"
 
 #: ../urpmf:42 ../urpmi:88 ../urpmq:50
 #, c-format
 msgid ""
 "  --sortmedia    - sort media according to substrings separated by comma.\n"
 msgstr ""
-"  --sortmedia    - organiza as médias de acordo com as substrings separadas "
+"  --sortmedia    - organiza as médias de acordo com os sub-textos separadas "
 "por vírgula.\n"
 
 #: ../urpmf:43
 #, c-format
 msgid "  --use-distrib  - use the given path to access media\n"
-msgstr "  --use-distrib  - usa a localização dada para aceder à média\n"
+msgstr "  --use-distrib  - usa a localização indicada para aceder à média\n"
 
 #: ../urpmf:44 ../urpmi:89 ../urpmq:51
 #, c-format
 msgid "  --synthesis    - use the given synthesis instead of urpmi db.\n"
 msgstr ""
-"  --synthesis    - usa o ficheiro synthesis dado em vez da base de dados "
+"  --synthesis    - usa o ficheiro synthesis indicado em vez da base de dados "
 "urpmi.\n"
 
 #: ../urpmf:45
@@ -2001,21 +2000,19 @@ msgstr "  -verbose      - modo detalhado.\n"
 #: ../urpmf:48
 #, c-format
 msgid "  -i             - ignore case distinctions in patterns.\n"
-msgstr ""
-"  -i            - ignora as diferenças de capitalização em todos os "
-"padrões.\n"
+msgstr "  -i            - ignora as diferenças de capitalização nos padrões.\n"
 
 #: ../urpmf:49
 #, c-format
 msgid "  -I             - honor case distinctions in patterns (default).\n"
 msgstr ""
 "  -I             - honra as diferenças de capitalização em todos os padrões "
-"(predefinição).\n"
+"(predefinido).\n"
 
 #: ../urpmf:50
 #, c-format
 msgid "  -F<str>        - change field separator (defaults to ':').\n"
-msgstr "  -F<str>        - muda o campo separador (predefinido para ':').\n"
+msgstr "  -F<str>        - muda o campo separador (predefine para ':').\n"
 
 #: ../urpmf:51
 #, c-format
@@ -2026,8 +2023,9 @@ msgstr "Expressões padrão:\n"
 #, c-format
 msgid "  text           - any text is parsed as a regexp, unless -l is used.\n"
 msgstr ""
-"  text           - qualquer texto é analisado como uma expressão regular, a "
-"não ser que -l seja usado .\n"
+"  text           - qualquer texto é analisado como uma expressão regular, "
+"excepto"
+"se usar a opção -l .\n"
 
 #: ../urpmf:53
 #, c-format
@@ -2077,7 +2075,7 @@ msgstr "  --arch         - arquitectura\n"
 #: ../urpmf:62
 #, c-format
 msgid "  --buildhost    - build host\n"
-msgstr "  --buildhost    - endereço de compilação\n"
+msgstr "  --buildhost    - hospedeiro de compilação\n"
 
 #: ../urpmf:63
 #, c-format
@@ -2147,12 +2145,12 @@ msgstr "  --packager     - empacotador\n"
 #: ../urpmf:76
 #, c-format
 msgid "  --provides     - provides tags\n"
-msgstr "  --provides     - marcas de fornecimentos (provides)\n"
+msgstr "  --provides     - marcas de fornecer\n"
 
 #: ../urpmf:77
 #, c-format
 msgid "  --requires     - requires tags\n"
-msgstr "  --requires     - marcas de requerimentos (requires).\n"
+msgstr "  --requires     - marcas de requerer.\n"
 
 #: ../urpmf:78
 #, c-format
@@ -2162,12 +2160,12 @@ msgstr "  --size         - tamanho instalado\n"
 #: ../urpmf:79
 #, c-format
 msgid "  --sourcerpm    - source rpm name\n"
-msgstr "  --sourcerpm    - nome do rpm com código fonte (src.rpm)\n"
+msgstr "  --sourcerpm    - nome do rpm fonte (src.rpm)\n"
 
 #: ../urpmf:80
 #, c-format
 msgid "  --suggests     - suggests tags\n"
-msgstr "  --suggests     - marcas sugeridas\n"
+msgstr "  --suggests     - marcas de sugerir\n"
 
 #: ../urpmf:81
 #, c-format
@@ -2193,7 +2191,8 @@ msgstr "  -m             - a média onde o pacote foi encontrado\n"
 #, c-format
 msgid "  -f             - print version, release and arch with name.\n"
 msgstr ""
-"  -f             - mostra a versão, a saída e a arquitectura com o nome.\n"
+"  -f             - mostra a versão, o lançamento e a arquitectura com o nome."
+"\n"
 
 #: ../urpmf:153
 #, c-format
@@ -2266,7 +2265,7 @@ msgid ""
 "  --keep         - keep existing packages if possible, reject requested\n"
 "                   packages that lead to removals.\n"
 msgstr ""
-"  --keep         - guarda os pacotes existentes se possível, recusa os\n"
+"  --keep         - mantém os pacotes existentes se possível, rejeita os\n"
 "                   pacotes pedidos que levam à remoção.\n"
 
 #: ../urpmi:101
@@ -2276,15 +2275,15 @@ msgid ""
 "                   are going to be installed or upgraded,\n"
 "                   default is %d.\n"
 msgstr ""
-"  --split-level  - divide em pequenas transacções se mais do que os pacotes\n"
-"                   dados forem instalados ou actualizados,\n"
-"                   o predefinido é %d.\n"
+"  --split-level  - divide em pequenas transacções se vão ser instalados\n"
+"                   ou actualizados mas pacotes do que os indicados,\n"
+"                   a predefinição é %d.\n"
 
 #: ../urpmi:105
 #, c-format
 msgid "  --split-length - small transaction length, default is %d.\n"
 msgstr ""
-"  --split-length - pequeno comprimento de transacção, predefinido é %d.\n"
+"  --split-length - comprimento de pequena transacção, a predefinição é %d.\n"
 
 #: ../urpmi:107
 #, c-format
@@ -2295,8 +2294,7 @@ msgstr "  --fuzzy, -y    - impõe uma procura aproximada.\n"
 #, c-format
 msgid "  --buildrequires - install the buildrequires of the packages\n"
 msgstr ""
-"  --buildrequires - instala os requerimentos de compilação (buildrequires) "
-"dos pacotes.\n"
+"  --buildrequires - instala os \"requerimentos de compilação\" dos pacotes.\n"
 
 #: ../urpmi:109
 #, c-format
@@ -2306,12 +2304,14 @@ msgstr "  --install-src  - instala apenas o pacote fonte (nenhum binário).\n"
 #: ../urpmi:110
 #, c-format
 msgid "  --clean        - remove rpm from cache before anything else.\n"
-msgstr "  --clean        - remove os rpm da caixa antes de qualquer coisa.\n"
+msgstr ""
+"  --clean        - remove os pacotes da caixa (cache), antes de qualquer "
+"coisa.\n"
 
 #: ../urpmi:111
 #, c-format
 msgid "  --noclean      - don't clean rpms from cache.\n"
-msgstr "  --noclean      - não apaga os rpms da caixa.\n"
+msgstr "  --noclean      - não remove pacotes os rpms da caixa (cache).\n"
 
 #: ../urpmi:113
 #, c-format
@@ -2327,7 +2327,7 @@ msgid ""
 "  --allow-nodeps - allow asking user to install packages without\n"
 "                   dependencies checking.\n"
 msgstr ""
-"  --allow-nodeps - permite perguntar ao utilizador se deseja instalar\n"
+"  --allow-nodeps - permite consultar o utilizador se deseja instalar\n"
 "                   os pacotes sem verificar as dependências.\n"
 
 #: ../urpmi:117
@@ -2336,7 +2336,7 @@ msgid ""
 "  --allow-force  - allow asking user to install packages without\n"
 "                   dependencies checking and integrity.\n"
 msgstr ""
-"  --allow-force  - permite perguntar ao utilizador se deseja instalar\n"
+"  --allow-force  - permite consultar o utilizador se deseja instalar\n"
 "                   os pacotes sem verificar as dependências e integridade.\n"
 
 #: ../urpmi:119
@@ -2352,7 +2352,7 @@ msgid ""
 "                   to install a chroot with --root option.\n"
 msgstr ""
 "  --use-distrib  - configura o urpmi através de uma árvore de distribuição,\n"
-"                   útil para (des)instalar um chroot com a opção --root.\n"
+"                   útil para instalar um chroot com a opção --root.\n"
 
 #: ../urpmi:125 ../urpmi.addmedia:60 ../urpmi.update:37
 #, c-format
@@ -2374,7 +2374,7 @@ msgid ""
 "  --downloader   - program to use to retrieve distant files. \n"
 "                   known programs: %s\n"
 msgstr ""
-"  --downloader   - programa a usar para transferir ficheiros distantes.\n"
+"  --downloader   - programa a usar para transferir os ficheiros distantes.\n"
 "                   programas conhecidos: %s\n"
 
 #: ../urpmi:130
@@ -2424,9 +2424,9 @@ msgid ""
 "  --proxy        - use specified HTTP proxy, the port number is assumed\n"
 "                   to be 1080 by default (format is <proxyhost[:port]>).\n"
 msgstr ""
-"  --proxy        - usa o 'proxy' HTTP indicado, por predefinição assume-se "
-"que\n"
-"                    o numero da porta seja 1080 (o formato é <maquinaproxy[:"
+"  --proxy        - usa o 'proxy' HTTP especificado, por predefinição "
+"assume-se\n"
+"                    que o numero da porta seja 1080 (formato: <maquinaproxy[:"
 "porta]>).\n"
 
 #: ../urpmi:140 ../urpmi.addmedia:64 ../urpmi.update:41 ../urpmq:80
@@ -2436,8 +2436,7 @@ msgid ""
 "                   authentication (format is <user:password>).\n"
 msgstr ""
 "  --proxy-user   - indica o utilizador e a senha para usar na\n"
-"                   autenticação do 'proxy' (o formato é <utilizador:"
-"senha>).\n"
+"                   autenticação do 'proxy' (formato: <utilizador:senha>).\n"
 
 #: ../urpmi:142
 #, c-format
@@ -2446,7 +2445,7 @@ msgid ""
 "                   next arg.\n"
 msgstr ""
 "  --bug          - escreve um relatório de erro na pasta indicada\n"
-"                   no próximo argumento.\n"
+"                   pelo próximo argumento.\n"
 
 #: ../urpmi:148
 #, c-format
@@ -2467,7 +2466,8 @@ msgstr ""
 #: ../urpmi:151
 #, c-format
 msgid "  --ignorearch   - allow to install rpms for unmatched architectures.\n"
-msgstr "  --ignorearch   - permite instalar rpms de arquitecturas diferentes\n"
+msgstr ""
+"  --ignorearch   - permite instalar pacotes de arquitecturas diferentes\n"
 
 #: ../urpmi:152
 #, c-format
@@ -2524,7 +2524,7 @@ msgid ""
 "                   than the default.\n"
 msgstr ""
 "  --more-choices - quando encontra vários pacotes, propõe mais\n"
-"                   escolhas do que por predefinição.\n"
+"                   escolhas do as predefinidas.\n"
 
 #: ../urpmi:165
 #, c-format
@@ -2571,7 +2571,7 @@ msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
 "along with --bug.\n"
 msgstr ""
-"Erro: para gerar um relatório de erro, indique os argumentos usuais da "
+"Erro: para gerar um relatório de erro, especifique os argumentos usuais da "
 "linha de comandos com a opção --bug.\n"
 
 #: ../urpmi:244
