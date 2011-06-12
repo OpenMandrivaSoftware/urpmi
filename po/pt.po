@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: pt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-31 16:36+0200\n"
-"PO-Revision-Date: 2011-06-11 21:31+0100\n"
+"PO-Revision-Date: 2011-06-12 07:42+0100\n"
 "Last-Translator: Zé <mmodem00@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-doc@kde.org>\n"
 "Language: pt\n"
@@ -2504,7 +2504,7 @@ msgstr ""
 #: ../urpmi:159
 #, c-format
 msgid "  --replacefiles - ignore file conflicts\n"
-msgstr "  --replacefiles - ignora conflitos dos ficheiros\n"
+msgstr "  --replacefiles - ignora os conflitos dos ficheiros\n"
 
 #: ../urpmi:161
 #, c-format
@@ -2523,8 +2523,8 @@ msgid ""
 "  --more-choices - when several packages are found, propose more choices\n"
 "                   than the default.\n"
 msgstr ""
-"  --more-choices - quando vários pacotes são encontrados, propõe mais\n"
-"                   escolhas do que o está predefinido.\n"
+"  --more-choices - quando encontra vários pacotes, propõe mais\n"
+"                   escolhas do que por predefinição.\n"
 
 #: ../urpmi:165
 #, c-format
@@ -2535,13 +2535,13 @@ msgstr "  --nolock       - não tranca a base de dados rpm.\n"
 #, c-format
 msgid "  --strict-arch  - upgrade only packages with the same architecture.\n"
 msgstr ""
-"  --strict-arch  - apenas actualiza os pacotes com a mesma arquitectura.\n"
+"  --strict-arch  - actualiza apenas os pacotes com a mesma arquitectura.\n"
 
 #: ../urpmi:167 ../urpmq:99
 #, c-format
 msgid "  -a             - select all matches on command line.\n"
 msgstr ""
-"  -a             - escolhe todas as correspondências na linha de comando.\n"
+"  -a             - selecciona todas as correspondências na linha de comando.\n"
 
 #: ../urpmi:170
 #, c-format
@@ -2557,7 +2557,8 @@ msgstr "  --debug        - modo muito detalhado.\n"
 #, c-format
 msgid "  names or rpm files given on command line will be installed.\n"
 msgstr ""
-"  os nomes ou os ficheiros rpm dados na linha de comando serão instalados.\n"
+"  serão instalados os nomes ou os ficheiros rpm indicados na linha de comando."
+"\n"
 
 #: ../urpmi:207
 #, c-format
@@ -2570,7 +2571,7 @@ msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
 "along with --bug.\n"
 msgstr ""
-"Erro: para gerar um relatório de erros, indique os argumentos usuais da "
+"Erro: para gerar um relatório de erro, indique os argumentos usuais da "
 "linha de comandos com a opção --bug.\n"
 
 #: ../urpmi:244
@@ -2676,7 +2677,7 @@ msgid ""
 "%s"
 msgstr ""
 "Os seguintes pacotes não podem ser instalados porque dependem de\n"
-"pacotes que são mais antigos do que os instalados:\n"
+"pacotes que são mais antigos do que os que estão instalados:\n"
 "%s"
 
 #: ../urpmi:529 ../urpmi:530 ../urpmi:545
@@ -2764,7 +2765,7 @@ msgstr "(testa apenas, a instalação não será realmente executada)"
 #: ../urpmi:639
 #, c-format
 msgid "%s of additional disk space will be used."
-msgstr "%s adicionais de espaço em disco serão usados."
+msgstr "%s de espaço em disco serão usados."
 
 #: ../urpmi:640
 #, c-format
@@ -2774,7 +2775,7 @@ msgstr "%s de espaço em disco serão libertados"
 #: ../urpmi:641
 #, c-format
 msgid "%s of packages will be retrieved."
-msgstr "%s dos pacotes serão transferidos."
+msgstr "%s (pacotes) serão transferidos."
 
 #: ../urpmi:642
 #, c-format
