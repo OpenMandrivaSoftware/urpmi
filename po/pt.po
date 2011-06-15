@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: pt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-31 16:36+0200\n"
-"PO-Revision-Date: 2011-06-12 18:31+0100\n"
+"PO-Revision-Date: 2011-06-15 05:42+0100\n"
 "Last-Translator: Zé <mmodem00@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-doc@kde.org>\n"
 "Language: pt\n"
@@ -37,7 +37,7 @@ msgstr "Instalação RPM"
 #: ../gurpmi:46
 #, c-format
 msgid "Error: unable to find file %s, will cancel operation"
-msgstr "Erro: não é possível encontrar o ficheiro %s, cancelar a operação"
+msgstr "Erro: não é possível encontrar o ficheiro %s, cancelará a operação"
 
 #: ../gurpmi:47 ../gurpmi2:187 ../gurpmi2:212
 #, c-format
@@ -471,7 +471,7 @@ msgstr "a usar um ambiente específico em %s\n"
 #: ../urpm.pm:321
 #, c-format
 msgid "unable to open rpmdb"
-msgstr "não é possível abrir rpmdb"
+msgstr "não é possível abrir o rpmdb"
 
 #: ../urpm.pm:335
 #, c-format
@@ -633,8 +633,8 @@ msgstr "%s não está disponível, a voltar a usar %s"
 #, c-format
 msgid "can not read proxy settings (not enough rights to read %s)"
 msgstr ""
-"não é possível ler as configurações do 'proxy' (sem permissões suficientes "
-"para ler %s)"
+"não é possível ler as configurações do 'proxy' (não tem permissões "
+"suficientes para ler %s)"
 
 #: ../urpm/download.pm:192
 #, c-format
@@ -984,7 +984,7 @@ msgstr "Não é possível criar o directório de caixa ldap"
 #: ../urpm/ldap.pm:73
 #, c-format
 msgid "Cannot write cache file for ldap\n"
-msgstr "Não é possível gravar o ficheiro de caixa para ldap\n"
+msgstr "Não é possível gravar o ficheiro de caixa para o ldap\n"
 
 #: ../urpm/ldap.pm:162
 #, c-format
@@ -1744,7 +1744,7 @@ msgstr "Deve reiniciar %s para o %s"
 #: ../urpm/sys.pm:310
 #, c-format
 msgid "Can't write file"
-msgstr "Não é possível escrever gravar o ficheiro"
+msgstr "Não é possível gravar o ficheiro"
 
 #: ../urpm/sys.pm:310
 #, c-format
@@ -2444,7 +2444,7 @@ msgid ""
 "  --bug          - output a bug report in directory indicated by\n"
 "                   next arg.\n"
 msgstr ""
-"  --bug          - escreve um relatório de erro na pasta indicada\n"
+"  --bug          - grava um relatório de erro na pasta indicada\n"
 "                   pelo próximo argumento.\n"
 
 #: ../urpmi:148
@@ -2563,7 +2563,9 @@ msgstr ""
 #: ../urpmi:207
 #, c-format
 msgid "Error: can't use --auto-select along with package list.\n"
-msgstr "Erro: não é possível usar --auto-select com a lista de pacotes.\n"
+msgstr ""
+"Erro: não é possível usar a opção --auto-select com especificação de pacotes."
+"\n"
 
 #: ../urpmi:214
 #, c-format
@@ -3084,7 +3086,7 @@ msgstr "Directório de reempacotamento não definido\n"
 #: ../urpmi.recover:68
 #, c-format
 msgid "Can't write to repackage directory [%s]\n"
-msgstr "Não é possível escrever no directório de reempacotamento [%s]\n"
+msgstr "Não é possível gravar no directório de reempacotamento [%s]\n"
 
 #: ../urpmi.recover:70
 #, c-format
@@ -3106,22 +3108,22 @@ msgstr "Argumentos de linha de comando inválidos [%s]\n"
 #: ../urpmi.recover:84
 #, c-format
 msgid "You can't specify --checkpoint and --rollback at the same time\n"
-msgstr "Não pode indicar --checkpoint e --rollback ao mesmo tempo\n"
+msgstr "Não pode especificar --checkpoint e --rollback ao mesmo tempo\n"
 
 #: ../urpmi.recover:86
 #, c-format
 msgid "You can't specify --checkpoint and --list at the same time\n"
-msgstr "Não pode indicar --checkpoint e --list ao mesmo tempo\n"
+msgstr "Não pode especificar --checkpoint e --list ao mesmo tempo\n"
 
 #: ../urpmi.recover:88
 #, c-format
 msgid "You can't specify --rollback and --list at the same time\n"
-msgstr "Não pode indicar --rollback e --list ao mesmo tempo\n"
+msgstr "Não pode especificar --rollback e --list ao mesmo tempo\n"
 
 #: ../urpmi.recover:90
 #, c-format
 msgid "You can't specify --disable along with another option"
-msgstr "Não pode indicar --disable com outra opção"
+msgstr "Não pode especificar --disable com outra opção"
 
 #: ../urpmi.recover:115
 #, c-format
@@ -3131,27 +3133,27 @@ msgstr "Nenhuma transacção encontrada desde %s\n"
 #: ../urpmi.recover:130
 #, c-format
 msgid "You must be superuser to do this"
-msgstr "Deve ser superutilizador para poder fazer isto"
+msgstr "Tem que ser administrador para poder fazer isto"
 
 #: ../urpmi.recover:143 ../urpmi.recover:209
 #, c-format
 msgid "Writing rpm macros file [%s]...\n"
-msgstr "A escrever os ficheiros macro rpm [%s]...\n"
+msgstr "A gravar os ficheiros macro rpm [%s]...\n"
 
 #: ../urpmi.recover:185
 #, c-format
 msgid "No rollback date found\n"
-msgstr "Nenhuma data para voltar atrás encontrada\n"
+msgstr "Nenhuma data de retorno encontrada\n"
 
 #: ../urpmi.recover:188
 #, c-format
 msgid "Rollback until %s...\n"
-msgstr "Voltar atrás até %s...\n"
+msgstr "Retornar até %s...\n"
 
 #: ../urpmi.recover:195
 #, c-format
 msgid "Disabling repackaging\n"
-msgstr "A desactivar reempacotamento\n"
+msgstr "A desactivar o reempacotamento\n"
 
 #: ../urpmi.removemedia:38
 #, c-format
@@ -3188,7 +3190,7 @@ msgid ""
 "the entry to remove is missing\n"
 "(one of %s)\n"
 msgstr ""
-"a entrada para remover está em falta\n"
+"a entrada para remover não existe\n"
 "(um de %s)\n"
 
 #: ../urpmi.update:30
@@ -3234,12 +3236,13 @@ msgstr "  -a             - selecciona todas as médias não removíveis.\n"
 #: ../urpmi.update:51
 #, c-format
 msgid "  -f             - force updating synthesis\n"
-msgstr "  -f             - força a actualização de synthesis.\n"
+msgstr "  -f             - força a actualização do ficheiro synthesis.\n"
 
 #: ../urpmi.update:52
 #, c-format
 msgid "  -ff            - really force updating synthesis\n"
-msgstr "  -ff            - força realmente a actualização de synthesis\n"
+msgstr ""
+"  -ff            - força realmente a actualização do ficheiro synthesis\n"
 
 #: ../urpmi.update:69
 #, c-format
@@ -3257,8 +3260,8 @@ msgid ""
 "the entry to update is missing\n"
 "(one of %s)\n"
 msgstr ""
-"a entrada para actualizar está em falta\n"
-"(um de %s)\n"
+"a entrada para actualizar não existe\n"
+"(uma de %s)\n"
 
 #: ../urpmi.update:98
 #, c-format
@@ -3297,7 +3300,7 @@ msgid ""
 "  --searchmedia  - use only the given media to search requested (or updated) "
 "packages.\n"
 msgstr ""
-"  --searchmedia  - use apenas a média indicada para procurar os pacotes "
+"  --searchmedia  - usa apenas a média indicada para procurar os pacotes "
 "pedidos (ou actualizados).\n"
 
 #: ../urpmq:53
@@ -3333,12 +3336,13 @@ msgstr "  --list-media   - lista as médias disponíveis\n"
 #: ../urpmq:62
 #, c-format
 msgid "  --list-url     - list available media and their url.\n"
-msgstr "  --list-url     - lista as médias disponíveis e as suas url\n"
+msgstr "  --list-url     - lista as médias disponíveis e os seus URL\n"
 
 #: ../urpmq:63
 #, c-format
 msgid "  --list-nodes   - list available nodes when using --parallel.\n"
-msgstr "  --list-nodes   - lista os nós disponíveis quando usa --parallel.\n"
+msgstr ""
+"  --list-nodes   - lista os nós disponíveis quando usa a opção --parallel.\n"
 
 #: ../urpmq:64
 #, c-format
@@ -3362,7 +3366,7 @@ msgstr ""
 #: ../urpmq:67
 #, c-format
 msgid "  --sources      - print source URLs of selected packages\n"
-msgstr "  --sources    - mostra os URL's fonte dos pacotes seleccionados\n"
+msgstr "  --sources    - mostra os URL dos pacotes seleccionados\n"
 
 #: ../urpmq:69
 #, c-format
@@ -3387,7 +3391,7 @@ msgstr "  --changelog    - mostra o registo das mudanças (changelog)\n"
 #: ../urpmq:84
 #, c-format
 msgid "  --conflicts    - print conflicts.\n"
-msgstr "  --conflicts    - mostra os conflitos (conflicts)\n"
+msgstr "  --conflicts    - mostra os conflitos\n"
 
 #: ../urpmq:85
 #, c-format
@@ -3397,17 +3401,17 @@ msgstr "  --obsoletes    - mostra os obsoletos\n"
 #: ../urpmq:86
 #, c-format
 msgid "  --provides     - print provides.\n"
-msgstr "  --provides     - mostra os fornecimentos (provides)\n"
+msgstr "  --provides     - mostra os fornecimentos\n"
 
 #: ../urpmq:87
 #, c-format
 msgid "  --requires     - print requires.\n"
-msgstr "  --requires     - mostra os requerimentos (requires)\n"
+msgstr "  --requires     - mostra os requerimentos\n"
 
 #: ../urpmq:88
 #, c-format
 msgid "  --suggests     - print suggests.\n"
-msgstr "  --suggests     - mostra as sugestões (suggestions)\n"
+msgstr "  --suggests     - mostra as sugestões\n"
 
 #: ../urpmq:89
 #, c-format
@@ -3431,7 +3435,9 @@ msgstr ""
 #: ../urpmq:94
 #, c-format
 msgid "  --whatrequires - reverse search to what requires package.\n"
-msgstr "  --whatrequires - reverte a procura para o que o pacote requer.\n"
+msgstr ""
+"  --whatrequires - procura revertida para mostrar os requerimentos do pacote."
+"\n"
 
 #: ../urpmq:95
 #, c-format
@@ -3464,7 +3470,7 @@ msgstr "  -g             - mostra os grupos com o nome também.\n"
 #: ../urpmq:103
 #, c-format
 msgid "  -i             - print useful information in human readable form.\n"
-msgstr "  -i             - mostra as informações úteis de maneira legível.\n"
+msgstr "  -i             - mostra informações úteis de maneira legível.\n"
 
 #: ../urpmq:104
 #, c-format
@@ -3479,7 +3485,8 @@ msgstr "  -m             - equivalente a -du\n"
 #: ../urpmq:106
 #, c-format
 msgid "  -r             - print version and release with name also.\n"
-msgstr "  -r             - mostra a versão e o lançamento com o nome também.\n"
+msgstr ""
+"  -r             - mostra a versão e o lançamento com o nome do pacote.\n"
 
 #: ../urpmq:107
 #, c-format
@@ -3506,7 +3513,8 @@ msgstr ""
 #, c-format
 msgid "  -Y             - like -y, but forces to match case-insensitively.\n"
 msgstr ""
-"  -Y             - como -y, mas força para corresponder sem capitalização.\n"
+"  -Y             - como a opção -y, mas força para uma correspondência "
+"insensitiva\n"
 
 #: ../urpmq:111
 #, c-format
@@ -3522,7 +3530,7 @@ msgstr "uso: \"urpmq --auto-orphans\" sem argumento"
 #: ../urpmq:218
 #, c-format
 msgid "--list-nodes can only be used with --parallel"
-msgstr "--list-nodes pode apenas ser usada com a opção --parallel"
+msgstr "a opção --list-nodes pode apenas ser usada com --parallel"
 
 #: ../urpmq:242
 #, c-format
