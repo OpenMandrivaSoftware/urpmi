@@ -1,3 +1,8 @@
+Version 6.66 - 23 June 2011, by Per Øyvind Karlsen
+
+- fix disttag/distepoch workaround in previous version resulting in bogus
+  problem messages
+
 Version 6.65 - 31 May 2011, by Per Øyvind Karlsen
 
 - fix orphaning of obsolete packages
