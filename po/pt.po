@@ -7,13 +7,10 @@
 # Fernando Ribeiro <fa.ribeiro(at)gmx.net>, 2003.
 # Fernando Moreira <fmoreira@netc.pt>, 2000.
 # Jorge Costa <Jorgercosta@netc.pt>, 2001.
-# Jose Jorge <jose.jorge@oreka.com>, 2003.
 # Jose Carlos D. S. Saraiva <jose.d.s.saraiva@clix.pt>, 2004.
-# Zé <mmodem00@netvisao.pt>, 2004.
-# Jose Jorge <jjorge@free.fr>, 2004.
-# Zé <mmodem00@netvisao.pt>, 2004, 2005, 2006.
-# Zé <mmodem00@gmail.com>, 2005. 2008, 2010, 2011.
-# Zé <ze@mandriva.org>, 2006, 2007, 2008, 2010, 2011.
+# Jose Jorge <jjorge@free.fr>, 2003, 2004.
+# Zé <ze@mandriva.org>, 2004, 2005, 2006, 2007, 2008, 2010, 2011.
+
 msgid ""
 msgstr ""
 "Project-Id-Version: pt\n"
@@ -21,7 +18,7 @@ msgstr ""
 "POT-Creation-Date: 2011-05-31 16:36+0200\n"
 "PO-Revision-Date: 2011-06-19 07:41+0100\n"
 "Last-Translator: Zé <ze@mandriva.org>\n"
-"Language-Team: Portuguese <kde-i18n-doc@kde.org>\n"
+"Language-Team: Portuguese <cooker-i18n@mandrivalinux.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -989,7 +986,7 @@ msgstr "Não é possível gravar o ficheiro de caixa para o ldap\n"
 #: ../urpm/ldap.pm:162
 #, c-format
 msgid "No server defined, missing uri or host"
-msgstr "Nenhum servidor definido, falta o url ou endereço"
+msgstr "Nenhum servidor definido, uri ou hospedeiro em falta"
 
 #: ../urpm/ldap.pm:163
 #, c-format
@@ -1580,12 +1577,12 @@ msgstr "mput falhado, talvez um nó esteja inalcançável"
 #: ../urpm/parallel_ssh.pm:27
 #, c-format
 msgid "scp failed on host %s (%d)"
-msgstr "scp falhado na máquina %s (%d)"
+msgstr "scp falhado no hospedeiro %s (%d)"
 
 #: ../urpm/parallel_ssh.pm:39
 #, c-format
 msgid "cp failed on host %s (%d)"
-msgstr "cp falhado na máquina %s (%d)"
+msgstr "cp falhado no hospedeiro %s (%d)"
 
 #: ../urpm/parallel_ssh.pm:86
 #, c-format
@@ -1593,7 +1590,7 @@ msgid ""
 "%s failed on host %s (maybe it does not have a good version of urpmi?) (exit "
 "code: %d)"
 msgstr ""
-"%s falhado na máquina %s (talvez não tenha uma versão urpmi correcta?) "
+"%s falhado no hospedeiro %s (talvez não tenha uma boa versão urpmi?) "
 "(código de saída: %d)"
 
 #: ../urpm/removable.pm:33
@@ -2274,8 +2271,8 @@ msgid ""
 "                   are going to be installed or upgraded,\n"
 "                   default is %d.\n"
 msgstr ""
-"  --split-level  - divide em pequenas transacções se vão ser instalados\n"
-"                   ou actualizados mas pacotes do que os indicados,\n"
+"  --split-level  - divide em pequenas transacções se forem instalados ou\n"
+"                   actualizados mais pacotes do que aqueles que são indicados,\n"
 "                   a predefinição é %d\n"
 
 #: ../urpmi:105
@@ -2825,7 +2822,7 @@ msgstr ""
 "       [file:/]/<localização>\n"
 "       ftp://<utilizador>:<senha>@<endereço>/<localização>\n"
 "       ftp://<endereço>/<localização>\n"
-"       http://<endereço>/<localização>\n"
+"       http://<hospedeiro>/<localização>\n"
 "       cdrom://<localização>\n"
 "\n"
 "uso: urpmi.addmedia [opções] --distrib --mirrorlist <url>\n"
