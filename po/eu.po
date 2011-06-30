@@ -5,12 +5,13 @@
 #
 # Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2001-2002, 2003, 2004, 2005, 2006, 2008, 2009, 2011.
 # Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>, 2004.
+# Ignigo Salvador Azurmendi <xalba@euskalnet.net>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-31 16:36+0200\n"
-"PO-Revision-Date: 2011-04-28 11:10+0200\n"
+"PO-Revision-Date: 2011-06-30 02:54+0200\n"
 "Last-Translator: Ignigo Salvador Azurmendi <xalba@euskalnet.net>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "Language: eu\n"
@@ -1744,7 +1745,7 @@ msgid "Can't move file %s to %s"
 msgstr "Ezin da %s fitxategiar %s-ra mugitu"
 
 #: ../urpme:41
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpme version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -1754,7 +1755,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpme %s bertsioa\n"
-"Copyright © 1999-2010 Mandriva.\n"
+"Copyright © 1999-2011 Mandriva.\n"
 "Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
 "birbanatu daiteke.\n"
 "\n"
@@ -1808,9 +1809,9 @@ msgid "  --noscripts    - do not execute package scriptlet(s).\n"
 msgstr "  --noscripts    - ez du scriptlet(s) paketea exekutatzen\n"
 
 #: ../urpme:57
-#, fuzzy, c-format
+#, c-format
 msgid "  --notriggers   - do not execute package trigger(s).\n"
-msgstr "  --noscripts    - ez du scriptlet(s) paketea exekutatzen\n"
+msgstr "  --notriggers   - ez exekutatu paketeen kiskagailua(k).\n"
 
 #: ../urpme:58
 #, c-format
@@ -2451,14 +2452,14 @@ msgid "  --noscripts    - do not execute package scriptlet(s)\n"
 msgstr "  --noscripts    - ez du scriptlet(s) paketea exekutatzen\n"
 
 #: ../urpmi:153
-#, fuzzy, c-format
+#, c-format
 msgid "  --notriggers   - do not execute package trigger(s)\n"
-msgstr "  --noscripts    - ez du scriptlet(s) paketea exekutatzen\n"
+msgstr "  --notriggers   - ez exekutatu paketeen kiskagailua(k)\n"
 
 #: ../urpmi:154
-#, fuzzy, c-format
+#, c-format
 msgid "  --nofdigests   - do not verify digest of file(s)\n"
-msgstr "  --noscripts    - ez du scriptlet(s) paketea exekutatzen\n"
+msgstr ""
 
 #: ../urpmi:155
 #, c-format
