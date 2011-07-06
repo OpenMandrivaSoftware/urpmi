@@ -10,14 +10,13 @@
 # Jose Carlos D. S. Saraiva <jose.d.s.saraiva@clix.pt>, 2004.
 # Jose Jorge <jjorge@free.fr>, 2003, 2004.
 # Zé <ze@mandriva.org>, 2004, 2005, 2006, 2007, 2008, 2010, 2011.
-
 msgid ""
 msgstr ""
 "Project-Id-Version: pt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-31 16:36+0200\n"
-"PO-Revision-Date: 2011-06-19 07:41+0100\n"
-"Last-Translator: Zé <ze@mandriva.org>\n"
+"PO-Revision-Date: 2011-07-05 00:24+0100\n"
+"Last-Translator: Zé <ze@mageia.org>\n"
 "Language-Team: Portuguese <cooker-i18n@mandrivalinux.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
@@ -213,7 +212,7 @@ msgid ""
 "  --searchmedia  - use only the given media to search requested packages.\n"
 msgstr ""
 "  --searchmedia  - usa apenas a média indicada para procurar os pacotes "
-"pedidos\n"
+"requeridos\n"
 
 #: ../gurpmi.pm:100
 #, c-format
@@ -252,7 +251,7 @@ msgid ""
 "%s\n"
 "Continue installation anyway?"
 msgstr ""
-"Alguns pacotes pedidos não podem ser instalados:\n"
+"Alguns pacotes requeridos não podem ser instalados:\n"
 "%s\n"
 "Deseja continuar a instalação?"
 
@@ -1511,7 +1510,7 @@ msgstr "TB"
 #: ../urpm/orphans.pm:51
 #, c-format
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
-msgstr "A marcar %s como manualmente instalado, não será auto-orfanizado"
+msgstr "A marcar %s como instalado manualmente, não será auto-orfanizado"
 
 #: ../urpm/orphans.pm:438
 #, c-format
@@ -1641,7 +1640,8 @@ msgstr "Deve usar a opção \"-a\" para escolher todos"
 #, c-format
 msgid "found package(s) %s in urpmi db, but none are installed"
 msgstr ""
-"encontrado(s) %s pacote(s) na base de dados urpmi, mas nenhum se encontra "
+"foram encontrado(s) %s pacote(s) na base de dados urpmi, mas nenhum se "
+"encontra "
 "instalado"
 
 #: ../urpm/select.pm:507
@@ -2262,7 +2262,7 @@ msgid ""
 "                   packages that lead to removals.\n"
 msgstr ""
 "  --keep         - mantém os pacotes existentes se possível, rejeita os\n"
-"                   pacotes pedidos que levam à remoção\n"
+"                   pacotes requeridos que levam à remoção\n"
 
 #: ../urpmi:101
 #, c-format
@@ -2272,7 +2272,8 @@ msgid ""
 "                   default is %d.\n"
 msgstr ""
 "  --split-level  - divide em pequenas transacções se forem instalados ou\n"
-"                   actualizados mais pacotes do que aqueles que são indicados,\n"
+"                   actualizados mais pacotes do que aqueles que são "
+"indicados,\n"
 "                   a predefinição é %d\n"
 
 #: ../urpmi:105
@@ -2693,7 +2694,7 @@ msgid ""
 "A requested package cannot be installed:\n"
 "%s"
 msgstr ""
-"O pacote pedido não pode ser instalado:\n"
+"O pacote requerido não pode ser instalado:\n"
 "%s"
 
 #: ../urpmi:540
@@ -2702,7 +2703,7 @@ msgid ""
 "Some requested packages cannot be installed:\n"
 "%s"
 msgstr ""
-"Alguns pacotes pedidos não podem ser instalados:\n"
+"Alguns pacotes requeridos não podem ser instalados:\n"
 "%s"
 
 #: ../urpmi:557
@@ -3297,7 +3298,7 @@ msgid ""
 "packages.\n"
 msgstr ""
 "  --searchmedia  - usa apenas a média indicada para procurar os pacotes "
-"pedidos (ou actualizados)\n"
+"requeridos (ou actualizados)\n"
 
 #: ../urpmq:53
 #, c-format
