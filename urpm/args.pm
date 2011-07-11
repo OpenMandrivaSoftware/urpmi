@@ -213,6 +213,7 @@ my %options_spec = (
 
     urpme => {
 	a => \$options{matches},
+	'nitronothing|fastunsafe' => sub { urpm::set_tune_rpm($urpm, "nofsync"); },
 	restricted => \$options{restricted},
     },
 
