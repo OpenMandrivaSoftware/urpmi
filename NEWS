@@ -1,3 +1,7 @@
+Version 6.67 - 12 July 2011, by Per Øyvind Karlsen
+
+- add --fastunsafe for urpme
+
 Version 6.66 - 23 June 2011, by Per Øyvind Karlsen
 
 - fix disttag/distepoch workaround in previous version resulting in bogus

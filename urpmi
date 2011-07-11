@@ -154,8 +154,6 @@ usage:
 ") . N("  --nofdigests   - do not verify digest of file(s)
 ") . N("  --fastunsafe   - trade verification and reliability for performance, alias:
                    --tune-rpm=nofsync
-                   --nofdigests
-                   --no-verify-rpm
 ") . N("  --replacefiles - ignore file conflicts
 ") . N("  --repackage    - Re-package the files before erasing
 ") . N("  --skip         - packages which installation should be skipped
