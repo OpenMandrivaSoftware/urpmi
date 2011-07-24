@@ -57,7 +57,6 @@ usage:
 ") . N("  --notriggers   - do not execute package trigger(s).
 ") . N("  --fastunsafe   - trade verification and reliability for performance, alias:
                    --tune-rpm=nofsync
-") . N("  --replacefiles - ignore file conflicts
 ") . N("  --use-distrib  - configure urpme on the fly from a distrib tree, useful
                    to (un)install a chroot with --root option.
 ") . N("  --verbose, -v  - verbose mode.
