@@ -1,3 +1,8 @@
+Version 6.68 - 26 July 2011, by Per Øyvind Karlsen
+
+- suppress aria2's printing of summaries to avoid it confusing urpmi parsing
+  the output
+
 Version 6.67 - 24 July 2011, by Per Øyvind Karlsen
 
 - update translations

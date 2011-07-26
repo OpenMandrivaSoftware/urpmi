@@ -680,6 +680,7 @@ sub sync_aria2 {
 	"--auto-file-renaming=false",
 	'--ftp-pasv',
 	"--follow-metalink=mem",
+	'--summary-interval=0',
       $medium->{mirrorlist} ? (
 	'--metalink-enable-unique-protocol=true', # do not try to connect to the same server using the same protocol
 	'--metalink-preferred-protocol=http', # try http as first protocol as they're stateless and
