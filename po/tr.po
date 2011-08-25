@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-31 16:36+0200\n"
-"PO-Revision-Date: 2011-06-24 22:47+0200\n"
+"PO-Revision-Date: 2011-08-26 00:45+0200\n"
 "Last-Translator: Atilla ÖNTAŞ <atilla_ontas@mandriva.org>\n"
 "Language-Team: Turkish <kde-i18n-doc@kde.org>\n"
 "Language: tr\n"
@@ -118,7 +118,7 @@ msgstr "Dosyayı kaydetmek için bir yer seçin"
 
 #: ../gurpmi.pm:39
 #: ../urpmi:78
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -127,7 +127,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpmi sürüm %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "Bu bir özgür yazılımdır ve GNU GPL lisansı altında tekrar dağıtılabilinir.\n"
 "\n"
 "kullanımı:\n"
@@ -789,11 +789,15 @@ msgid ""
 "No personal information will be transmitted. More information is available at\n"
 "http://doc4.mandriva.org/bin/dudf/.\n"
 msgstr ""
+"Bir sorun oluştu. Otomatik olarak üretilmiş bir hata bildirim raporunu Mandriva sunucusuna\n"
+"göndererek Mandriva yükseltme işlevinin geliştirilmesine katkıda bulunabilirsiniz.\n"
+"Kişisel hiçbir bilgi gönderilmeyecektir. Daha fazla bilgi için şu adresi ziyaret edin:\n"
+"http://doc4.mandriva.org/bin/dudf/.\n"
 
 #: ../urpm/dudf.pm:74
-#, fuzzy, c-format
+#, c-format
 msgid "Do you want to generate and upload a report?"
-msgstr "Mandriva' ya bir DUDF bildirimi göndermek istiyor musunuz?"
+msgstr "Hata bildirimi üretmek ve göndermek istiyor musunuz?"
 
 #: ../urpm/dudf.pm:80
 #: ../urpmi:530
@@ -805,7 +809,7 @@ msgid " (Y/n) "
 msgstr " (E/h) "
 
 #: ../urpm/dudf.pm:220
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "# Here are logs of your DUDF uploads.\n"
 "# Line format is : <date time of generation> <uid>\n"
@@ -814,8 +818,8 @@ msgid ""
 msgstr ""
 "# Burada DUDF gönderme kayıtlarınız bulunmaktadır.\n"
 "# Satır biçimi : <oluşturulma günü zamanı> <uid> şeklindedir.\n"
-"#Şu bağlantıdan uid numaranız ile gönderimlerinizin içeriğine göz atabilirsiniz:\n"
-"# http://dudf.forge.mandriva.com/"
+"# Şu bağlantıdan uid numaranız ile gönderimlerinizin içeriğine göz atabilirsiniz:\n"
+"# http://dudf.forge.mandriva.com/\n"
 
 #: ../urpm/dudf.pm:276
 #: ../urpm/dudf.pm:322
@@ -851,6 +855,8 @@ msgid ""
 "\n"
 "Command:"
 msgstr ""
+"\n"
+"Komut:"
 
 #: ../urpm/dudf.pm:315
 #, c-format
@@ -873,9 +879,9 @@ msgstr ""
 "\t"
 
 #: ../urpm/dudf.pm:325
-#, fuzzy, c-format
+#, c-format
 msgid "Testing synthesis file presence ..."
-msgstr "sentez dosyası [%s] inceleniyor"
+msgstr "Sentez dosyası varlığı denetleniyor ..."
 
 #: ../urpm/dudf.pm:344
 #, c-format
@@ -883,13 +889,17 @@ msgid ""
 "\n"
 "The synthesis file (media '%s', %s) is already available on the Mandriva DUDF server.\n"
 msgstr ""
+"\n"
+"Sentez dosyası (veri kaynağı '%s', %s) zaten Mandriva DUDF sunucusunda mevcut.\n"
 
 #: ../urpm/dudf.pm:346
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Uploading synthesis file ..."
-msgstr "sentez dosyası [%s] inceleniyor"
+msgstr ""
+"\n"
+"Sentez dosyası gönderiliyor ..."
 
 #: ../urpm/dudf.pm:364
 #, c-format
@@ -897,6 +907,8 @@ msgid ""
 "\n"
 "Synthesis successfully uploaded. It can be downloaded from"
 msgstr ""
+"\n"
+"Sentez dosyası başarıyla gönderildi. Şuradan indirilebilir durumda:"
 
 #: ../urpm/dudf.pm:421
 #, c-format
@@ -1241,9 +1253,9 @@ msgid "skipping non compatible media `%s' (for %s)"
 msgstr "desteklenmeyen ortam atlanıyor `%s' (for %s)"
 
 #: ../urpm/media.pm:1018
-#, fuzzy, c-format
+#, c-format
 msgid "ignoring non-free medium `%s'"
-msgstr "%s ortamı yoksayılıyor."
+msgstr "`%s'  non-free ortamı yoksayılıyor."
 
 #: ../urpm/media.pm:1061
 #, c-format
@@ -1467,12 +1479,12 @@ msgstr "Yayım"
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "Dist"
-msgstr ""
+msgstr "Dist"
 
 #: ../urpm/msg.pm:170
 #, c-format
 msgid "DEpoch"
-msgstr ""
+msgstr "DEpoch"
 
 #: ../urpm/msg.pm:170
 #, c-format
@@ -1757,7 +1769,7 @@ msgid "Can't move file %s to %s"
 msgstr "%s dosyası%s 'e taşınamıyor."
 
 #: ../urpme:41
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpme version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -1766,7 +1778,7 @@ msgid ""
 "usage:\n"
 msgstr ""
 "urpme sürüm %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "Bu bir özgür yazılımdır ve GNU GPL lisansı altında tekrar dağıtılabilir.\n"
 "\n"
 "kullanımı:\n"
@@ -1828,9 +1840,9 @@ msgid "  --noscripts    - do not execute package scriptlet(s).\n"
 msgstr "  --noscripts    - paket betiklerini çalıştıma.\n"
 
 #: ../urpme:57
-#, fuzzy, c-format
+#, c-format
 msgid "  --notriggers   - do not execute package trigger(s).\n"
-msgstr "  --noscripts    - hiç bir paket betiğini çalıştırma.\n"
+msgstr " --notriggers   - hiç bir paket tetikleyiciyi çalıştırma.\n"
 
 #: ../urpme:58
 #, c-format
@@ -1922,7 +1934,7 @@ msgid "Removal is possible"
 msgstr "Kaldırma uygulanabilir"
 
 #: ../urpmf:29
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmf version %s\n"
 "Copyright (C) 2002-2011 Mandriva.\n"
@@ -1931,7 +1943,7 @@ msgid ""
 "usage: urpmf [options] pattern-expression\n"
 msgstr ""
 "urpmf sürüm %s\n"
-"Copyright (C) 2002-2006 Mandriva.\n"
+"Copyright (C) 2002-2011 Mandriva.\n"
 "Bu bir özgür yazılımdır ve GNU GPL lisansı altında tekrar dağıtılabilir.\n"
 "\n"
 "kullanımı: urpmf [seçenekler] örnek-ifade\n"
@@ -2457,14 +2469,14 @@ msgid "  --noscripts    - do not execute package scriptlet(s)\n"
 msgstr "  --noscripts    - hiç bir paket betiğini çalıştırma.\n"
 
 #: ../urpmi:153
-#, fuzzy, c-format
+#, c-format
 msgid "  --notriggers   - do not execute package trigger(s)\n"
-msgstr "  --noscripts    - hiç bir paket betiğini çalıştırma.\n"
+msgstr "  --notriggers   - hiç bir paket tetikleyiciyi çalıştırma.\n"
 
 #: ../urpmi:154
-#, fuzzy, c-format
+#, c-format
 msgid "  --nofdigests   - do not verify digest of file(s)\n"
-msgstr "  --noscripts    - hiç bir paket betiğini çalıştırma.\n"
+msgstr "  --nofdigests   - dosyaların özetlerini doğrulama\n"
 
 #: ../urpmi:155
 #, c-format
@@ -2474,6 +2486,10 @@ msgid ""
 "                   --nofdigests\n"
 "                   --no-verify-rpm\n"
 msgstr ""
+"  --fastunsafe   - verimlilik için doğrulama ve güvenilirlik takası:\n"
+"                   --tune-rpm=nofsync\n"
+"                   --nofdigests\n"
+"                   --no-verify-rpm\n"
 
 #: ../urpmi:159
 #, c-format
@@ -2756,7 +2772,7 @@ msgstr "Hazır olduğunuzda Enter'a basın..."
 #. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
 #. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
 #: ../urpmi.addmedia:36
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "usage: urpmi.addmedia [options] <name> <url>\n"
 "where <url> is one of\n"
@@ -2793,6 +2809,7 @@ msgstr ""
 "\n"
 "  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
 "  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
+"  urpmi.addmedia --distrib --zeroconf\n"
 "\n"
 "\n"
 "ve [seçenekler] de şunlardan biridir:\n"
@@ -2972,7 +2989,7 @@ msgid "Can't use %s with remote medium"
 msgstr "%s , uzak ortam ile birlikte kullanılamıyor."
 
 #: ../urpmi.recover:28
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi.recover version %s\n"
 "Copyright (C) 2006-2011 Mandriva.\n"
@@ -2980,8 +2997,8 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpmq sürüm %s\n"
-"Copyright (C) 2000-2006 Mandriva.\n"
+"urpm.recover sürüm %s\n"
+"Copyright (C) 2006-2011 Mandriva.\n"
 "Bu bir özgür yazılımdır ve GNU GPL lisansı altında tekrar dağıtılabilir.\n"
 "\n"
 "kullanımı:\n"
@@ -2989,27 +3006,27 @@ msgstr ""
 #: ../urpmi.recover:34
 #, c-format
 msgid "  --checkpoint   - set repackaging start now\n"
-msgstr ""
+msgstr "  --checkpoint   - yeniden paketleme başlangıcını şimdi ayarlar\n"
 
 #: ../urpmi.recover:35
-#, fuzzy, c-format
+#, c-format
 msgid "  --noclean      - don't clean repackage directory on checkpoint\n"
-msgstr "  --noclean      - rpm'yi ön bellekte kullanılmadan sakla\n"
+msgstr "  --noclean      - denetleme noktasında yeniden paketleme dizinini temizleme\n"
 
 #: ../urpmi.recover:37
 #, c-format
 msgid "  --list         - list transactions since provided date/duration argument\n"
-msgstr ""
+msgstr "  --list         - list transactions since provided date/duration argument\n"
 
 #: ../urpmi.recover:38
-#, fuzzy, c-format
+#, c-format
 msgid "  --list-all     - list all transactions in rpmdb (long)\n"
-msgstr "  --list-url     - erişilebilir kurulum kaynaklarını ve bağlantılarını gösterir.\n"
+msgstr "  --list-all     - rpmdb (uzun) içindeki tüm işlemleri listele\n"
 
 #: ../urpmi.recover:39
 #, c-format
 msgid "  --list-safe    - list transactions since checkpoint\n"
-msgstr ""
+msgstr "  --list-safe    - denetleme noktasından beri gerçekleşen işlemleri listele\n"
 
 #: ../urpmi.recover:40
 #, c-format
@@ -3017,6 +3034,8 @@ msgid ""
 "  --rollback     - rollback until specified date,\n"
 "                   or rollback the specified number of transactions\n"
 msgstr ""
+"  --rollback     - belirtilen güne geri al\n"
+"                   veya belirtilen sayıda işlemi geri al\n"
 
 #: ../urpmi.recover:42
 #, c-format
@@ -3047,43 +3066,43 @@ msgstr "Yeniden paketleme dizini [%s] temizleniyor...\n"
 #, c-format
 msgid "%d file removed\n"
 msgid_plural "%d files removed\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d adet dosya kaldırıldı\n"
+msgstr[1] "%d adet dosya kaldırıldı\n"
 
 #: ../urpmi.recover:82
 #, c-format
 msgid "Spurious command-line arguments [%s]\n"
-msgstr ""
+msgstr "Sahte komut satırı argümanları [%s]\n"
 
 #: ../urpmi.recover:84
 #, c-format
 msgid "You can't specify --checkpoint and --rollback at the same time\n"
-msgstr ""
+msgstr "Aynı anda hem --checkpoint hem de --rollback seçeneklerini kullanamazsınız\n"
 
 #: ../urpmi.recover:86
 #, c-format
 msgid "You can't specify --checkpoint and --list at the same time\n"
-msgstr ""
+msgstr "Aynı anda hem --checkpoint hem de --list seçeneklerini kullanamazsınız\n"
 
 #: ../urpmi.recover:88
 #, c-format
 msgid "You can't specify --rollback and --list at the same time\n"
-msgstr ""
+msgstr "Aynı anda hem --rollback hem de --list seçeneklerini kullanamazsınız\n"
 
 #: ../urpmi.recover:90
 #, c-format
 msgid "You can't specify --disable along with another option"
-msgstr ""
+msgstr "Bir başka seçenekle birlikte --disable seçeneğini kullanamazsınız"
 
 #: ../urpmi.recover:115
 #, c-format
 msgid "No transaction found since %s\n"
-msgstr ""
+msgstr "Şundan beri gerçekleşen işlem bulunamadı: %s\n"
 
 #: ../urpmi.recover:130
 #, c-format
 msgid "You must be superuser to do this"
-msgstr ""
+msgstr "Bunu yapabilmek için süper kullanıcı olmalısınız"
 
 #: ../urpmi.recover:143
 #: ../urpmi.recover:209
@@ -3099,7 +3118,7 @@ msgstr "Geri döndürme tarihi bulunamadı\n"
 #: ../urpmi.recover:188
 #, c-format
 msgid "Rollback until %s...\n"
-msgstr ""
+msgstr "Şuna kadar geri al... : %s\n"
 
 #: ../urpmi.recover:195
 #, c-format
