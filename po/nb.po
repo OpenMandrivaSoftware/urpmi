@@ -3227,7 +3227,7 @@ msgstr "  --searchmedia  – bare søk etter pakker i dette mediumet.\n"
 #: ../urpmq:53
 #, c-format
 msgid "  --auto-orphans - list orphans\n"
-msgstr "--auto-orphans – vis foreldreløse pakker\n"
+msgstr "  --auto-orphans – vis foreldreløse pakker\n"
 
 #: ../urpmq:54
 #, c-format
@@ -3237,7 +3237,7 @@ msgid ""
 msgstr ""
 "  --not-available\n"
 "                 – vis installerte pakker som ikke er tilgjengelige på noen "
-"mediumer.\n"
+"                   medier.\n"
 
 #: ../urpmq:57
 #, c-format
