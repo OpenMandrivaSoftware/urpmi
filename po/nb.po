@@ -3320,7 +3320,7 @@ msgstr "  --obsoletes    – viser utdaterte.\n"
 #: ../urpmq:86
 #, c-format
 msgid "  --provides     - print provides.\n"
-msgstr "  --provides     - vis tilbud.\n"
+msgstr "  --provides     – vis tilbud.\n"
 
 #: ../urpmq:87
 #, c-format
