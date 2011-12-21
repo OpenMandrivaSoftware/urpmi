@@ -75,6 +75,8 @@ sub manifypods {
     my $inherited = shift->SUPER::manifypods(@_);
     #- TODO repartition of man pages in sections by pod2man is incorrect
     #- TODO as more languages are added adapt the following quick hack
+    # Adjust captions to make them look less like perl packages
+    $inherited =~ s/^(POD2MAN_EXE\s*=\s*)(.+)$/$1$2 -c "Mandriva Package Management" -r "Mandriva Linux"/m;
     $inherited;
 }
 
@@ -160,10 +162,10 @@ WriteMakefile(
 	map {
 	    my $targ = $_;
 	    $targ =~ s{^pod/}{};
-	    $targ =~ s/\.(\d)\.pod$//;
+	    $targ =~ s{^(\d)/(.*)\.pod$}{$2};
 	    my $section = $1 || 1;
 	    ( $_ => "\$(INST_MAN${section}DIR)/$targ.$section" );
-	} <pod/*.pod>, $with_po ? <pod/*/*.pod> : ()
+	} <pod/*/*.pod>, $with_po ? <pod/*/*.pod> : ()
     },
     dist		=> { COMPRESS => "xz -f", SUFFIX => ".xz" },
 );
