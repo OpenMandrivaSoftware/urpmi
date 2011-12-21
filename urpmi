@@ -220,7 +220,7 @@ along with --bug.\n");
 
 
 # Prepare exit code.  If you change this, the exiting with a failure and the message given will be postponed to the end of the overall processing.
-my $postponed_msg = '';
+my $postponed_msg = N("While some packages may have been installed, there were failures.\n");
 my $postponed_code = 0;
 
 my @spec_files;
@@ -536,7 +536,7 @@ that are older than the installed ones:\n%s", $list);
 	    or dudf_invoke($dudf, "dudf_exit", 17, $msg);
     }
     # Whatever option we selected, the overall installation should fail if some packages are unselected
-    $postponed_msg .= N("While some packages have been installed, there were failures: %s\n",$msg);
+    $postponed_msg .= $msg."\n";
     $postponed_code = 17;
 }
 
@@ -554,7 +554,7 @@ if (@ask_unselect) {
 	    or dudf_invoke($dudf, "dudf_exit", 17, $msg);;
     }
     # Whatever option we selected, the overall installation should fail if some packages are unselected
-    $postponed_msg .= N("While some packages have been installed, there were failures: %s\n",$msg);
+    $postponed_msg .= $msg."\n";
     $postponed_code = 17;
 }
 

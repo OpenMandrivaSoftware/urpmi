@@ -63,7 +63,7 @@ my @all_rpms = gurpmi::parse_command_line();
 $> and fatal(N("Must be root"));
 
 # Prepare exit code.  If you change this, the exiting with a failure and the message given will be postponed to the end of the overall processing.
-my $postponed_msg = '';
+my $postponed_msg = N("While some packages may have been installed, there were failures.\n");
 my $postponed_code = 0;
 
 #- Now, the graphical stuff.
@@ -117,7 +117,7 @@ my $unselect_msg = N("Some requested packages cannot be installed:\n%s",
 
 # If there are some unselected packages, designate that we are going to return nonzero code.
 if (@ask_unselect){
-    $postponed_msg .= N("While some packages have been installed, there were failures.\n%s\n",$unselect_msg);
+    $postponed_msg .= $unselect_msg."\n";
     $postponed_code = 17;
 }
 

@@ -239,6 +239,11 @@ msgstr "Подождите, пожалуйста..."
 msgid "Must be root"
 msgstr "Необходимы права пользователя «root»"
 
+#: ../gurpmi2:66 ../urpmi:223
+#, c-format
+msgid "While some packages may have been installed, there were failures.\n"
+msgstr "Хоть часть пакетов и могла быть установлена, произошли ошибки.\n"
+
 #: ../gurpmi2:70
 #, c-format
 msgid "Distribution Upgrade"
@@ -258,12 +263,14 @@ msgstr "Подготовка к установке пакетов..."
 #, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
-"%s\n"
-"Continue installation anyway?"
+"%s"
 msgstr ""
 "Некоторые запрошенные пакеты не могут быть установлены:\n"
-"%s\n"
-"Продолжить установку?"
+"%s"
+
+#: ../gurpmi2:125
+msgid "Continue installation anyway?"
+msgstr "Продолжить установку?"
 
 #: ../gurpmi2:146
 #, c-format
@@ -2691,15 +2698,6 @@ msgid ""
 "%s"
 msgstr ""
 "Не удаётся установить запрошенный пакет:\n"
-"%s"
-
-#: ../urpmi:540
-#, c-format
-msgid ""
-"Some requested packages cannot be installed:\n"
-"%s"
-msgstr ""
-"Не удаётся установить некоторые из запрошенных пакетов:\n"
 "%s"
 
 #: ../urpmi:557

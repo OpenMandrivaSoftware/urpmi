@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-05-31 16:36+0200\n"
+"POT-Creation-Date: 2011-12-09 14:00+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "Error: unable to find file %s, will cancel operation"
 msgstr ""
 
-#: ../gurpmi:47 ../gurpmi2:187 ../gurpmi2:212
+#: ../gurpmi:47 ../gurpmi2:199 ../gurpmi2:224
 #, c-format
 msgid "_Ok"
 msgstr ""
@@ -73,7 +73,7 @@ msgstr ""
 msgid "_Save"
 msgstr ""
 
-#: ../gurpmi:101 ../gurpmi2:187
+#: ../gurpmi:101 ../gurpmi2:199
 #, c-format
 msgid "_Cancel"
 msgstr ""
@@ -179,65 +179,74 @@ msgstr ""
 msgid "Must be root"
 msgstr ""
 
-#: ../gurpmi2:70
+#: ../gurpmi2:66 ../urpmi:223
+#, c-format
+msgid "While some packages may have been installed, there were failures.\n"
+msgstr ""
+
+#: ../gurpmi2:74
 #, c-format
 msgid "Distribution Upgrade"
 msgstr ""
 
-#: ../gurpmi2:70
+#: ../gurpmi2:74
 #, c-format
 msgid "Packages installation"
 msgstr ""
 
-#: ../gurpmi2:97
+#: ../gurpmi2:101
 #, c-format
 msgid "Preparing packages installation..."
 msgstr ""
 
-#: ../gurpmi2:111
+#: ../gurpmi2:114 ../urpmi:548
 #, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
-"%s\n"
-"Continue installation anyway?"
+"%s"
 msgstr ""
 
-#: ../gurpmi2:146
+#: ../gurpmi2:125
+#, c-format
+msgid "Continue installation anyway?"
+msgstr ""
+
+#: ../gurpmi2:158
 #, c-format
 msgid "Warning"
 msgstr ""
 
-#: ../gurpmi2:146 ../urpmi:665
+#: ../gurpmi2:158 ../urpmi:676
 #, c-format
 msgid "Ok"
 msgstr ""
 
-#: ../gurpmi2:183
+#: ../gurpmi2:195
 #, c-format
 msgid " (to upgrade)"
 msgstr ""
 
-#: ../gurpmi2:184
+#: ../gurpmi2:196
 #, c-format
 msgid " (to install)"
 msgstr ""
 
-#: ../gurpmi2:187
+#: ../gurpmi2:199
 #, c-format
 msgid "Package choice"
 msgstr ""
 
-#: ../gurpmi2:188
+#: ../gurpmi2:200
 #, c-format
 msgid "One of the following packages is needed:"
 msgstr ""
 
-#: ../gurpmi2:213
+#: ../gurpmi2:225
 #, c-format
 msgid "_Abort"
 msgstr ""
 
-#: ../gurpmi2:248
+#: ../gurpmi2:260
 #, c-format
 msgid ""
 "The following packages have to be removed for others to be upgraded:\n"
@@ -245,63 +254,63 @@ msgid ""
 "Continue installation anyway?"
 msgstr ""
 
-#: ../gurpmi2:267 ../urpmi:630
+#: ../gurpmi2:279 ../urpmi:641
 #, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
 msgstr ""
 
-#: ../gurpmi2:268 ../urpmi:631
+#: ../gurpmi2:280 ../urpmi:642
 #, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
 msgstr ""
 
-#: ../gurpmi2:270
+#: ../gurpmi2:282
 #, c-format
 msgid "(%d package, %d MB)"
 msgid_plural "(%d packages, %d MB)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../gurpmi2:278 ../urpm/main_loop.pm:49
+#: ../gurpmi2:290 ../urpm/main_loop.pm:51
 #, c-format
 msgid "unable to get source packages, aborting"
 msgstr ""
 
-#: ../gurpmi2:310 ../urpm/install.pm:80
+#: ../gurpmi2:322 ../urpm/install.pm:80
 #, c-format
 msgid "Preparing..."
 msgstr ""
 
-#: ../gurpmi2:316
+#: ../gurpmi2:328
 #, c-format
 msgid "Installing package `%s' (%s/%s)..."
 msgstr ""
 
-#: ../gurpmi2:334 ../urpmi:660
+#: ../gurpmi2:346 ../urpmi:671
 #, c-format
 msgid "Please insert the medium named \"%s\""
 msgstr ""
 
-#: ../gurpmi2:348
+#: ../gurpmi2:360
 #, c-format
 msgid "Downloading package `%s'..."
 msgstr ""
 
-#: ../gurpmi2:360 ../urpm.pm:346 ../urpm/download.pm:836
+#: ../gurpmi2:372 ../urpm.pm:346 ../urpm/download.pm:837
 #: ../urpm/get_pkgs.pm:262 ../urpm/media.pm:981 ../urpm/media.pm:1493
 #: ../urpm/media.pm:1644
 #, c-format
 msgid "...retrieving failed: %s"
 msgstr ""
 
-#: ../gurpmi2:376
+#: ../gurpmi2:388
 #, c-format
 msgid "_Done"
 msgstr ""
 
-#: ../gurpmi2:393
+#: ../gurpmi2:405
 #, c-format
 msgid ""
 "Installation failed, some files are missing:\n"
@@ -309,27 +318,27 @@ msgid ""
 "You may want to update your urpmi database"
 msgstr ""
 
-#: ../gurpmi2:399 ../urpm/main_loop.pm:292 ../urpm/main_loop.pm:335
+#: ../gurpmi2:411 ../urpm/main_loop.pm:300 ../urpm/main_loop.pm:343
 #, c-format
 msgid "Installation failed:"
 msgstr ""
 
-#: ../gurpmi2:404
+#: ../gurpmi2:416
 #, c-format
 msgid "The package(s) are already installed"
 msgstr ""
 
-#: ../gurpmi2:406
+#: ../gurpmi2:418
 #, c-format
 msgid "Installation finished"
 msgstr ""
 
-#: ../gurpmi2:407 ../urpme:170
+#: ../gurpmi2:419 ../urpme:172
 #, c-format
 msgid "removing %s"
 msgstr ""
 
-#: ../gurpmi2:415 ../urpmi:731
+#: ../gurpmi2:430 ../urpmi:745
 #, c-format
 msgid "restarting urpmi"
 msgstr ""
@@ -366,7 +375,7 @@ msgstr ""
 msgid "   -f             - output rpm full name (NVRA)\n"
 msgstr ""
 
-#: ../rurpmi:11 ../urpmi:293
+#: ../rurpmi:11 ../urpmi:298
 #, c-format
 msgid "Only superuser is allowed to install packages"
 msgstr ""
@@ -456,57 +465,57 @@ msgstr ""
 msgid "bad proxy declaration on command line\n"
 msgstr ""
 
-#: ../urpm/args.pm:323
+#: ../urpm/args.pm:324
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr ""
 
-#: ../urpm/args.pm:405
+#: ../urpm/args.pm:406
 #, c-format
 msgid "unexpected expression %s"
 msgstr ""
 
-#: ../urpm/args.pm:406
+#: ../urpm/args.pm:407
 #, c-format
 msgid "missing expression before %s"
 msgstr ""
 
-#: ../urpm/args.pm:412
+#: ../urpm/args.pm:413
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr ""
 
-#: ../urpm/args.pm:416
+#: ../urpm/args.pm:417
 #, c-format
 msgid "no expression to close"
 msgstr ""
 
-#: ../urpm/args.pm:425
+#: ../urpm/args.pm:426
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
 
-#: ../urpm/args.pm:499
+#: ../urpm/args.pm:500
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr ""
 
-#: ../urpm/args.pm:522
+#: ../urpm/args.pm:523
 #, c-format
 msgid "Can't use %s without %s"
 msgstr ""
 
-#: ../urpm/args.pm:525 ../urpm/args.pm:528 ../urpmq:166
+#: ../urpm/args.pm:526 ../urpm/args.pm:529 ../urpmq:166
 #, c-format
 msgid "Can't use %s with %s"
 msgstr ""
 
-#: ../urpm/args.pm:536
+#: ../urpm/args.pm:537
 #, c-format
 msgid "Too many arguments\n"
 msgstr ""
 
-#: ../urpm/bug_report.pm:55 ../urpmi:283
+#: ../urpm/bug_report.pm:55 ../urpmi:288
 #, c-format
 msgid "Copying failed"
 msgstr ""
@@ -643,47 +652,47 @@ msgstr ""
 msgid "aria2 is missing\n"
 msgstr ""
 
-#: ../urpm/download.pm:718
+#: ../urpm/download.pm:719
 #, c-format
 msgid "Failed to download %s"
 msgstr ""
 
-#: ../urpm/download.pm:813
+#: ../urpm/download.pm:814
 #, c-format
 msgid "        %s%% of %s completed, ETA = %s, speed = %s"
 msgstr ""
 
-#: ../urpm/download.pm:814
+#: ../urpm/download.pm:815
 #, c-format
 msgid "        %s%% completed, speed = %s"
 msgstr ""
 
-#: ../urpm/download.pm:888
+#: ../urpm/download.pm:889
 #, c-format
 msgid "retrieving %s"
 msgstr ""
 
-#: ../urpm/download.pm:895
+#: ../urpm/download.pm:896
 #, c-format
 msgid "retrieved %s"
 msgstr ""
 
-#: ../urpm/download.pm:959
+#: ../urpm/download.pm:960
 #, c-format
 msgid "unknown protocol defined for %s"
 msgstr ""
 
-#: ../urpm/download.pm:971
+#: ../urpm/download.pm:974
 #, c-format
 msgid "no webfetch found, supported webfetch are: %s\n"
 msgstr ""
 
-#: ../urpm/download.pm:988
+#: ../urpm/download.pm:989
 #, c-format
 msgid "unable to handle protocol: %s"
 msgstr ""
 
-#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:528 ../urpmi:544 ../urpmi:650
+#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:533 ../urpmi:552 ../urpmi:661
 #, c-format
 msgid "Nn"
 msgstr ""
@@ -705,7 +714,7 @@ msgstr ""
 msgid "Do you want to generate and upload a report?"
 msgstr ""
 
-#: ../urpm/dudf.pm:80 ../urpmi:530 ../urpmi:545 ../urpmi:651
+#: ../urpm/dudf.pm:80 ../urpmi:535 ../urpmi:553 ../urpmi:662
 #: ../urpmi.addmedia:136
 #, c-format
 msgid " (Y/n) "
@@ -917,31 +926,31 @@ msgstr ""
 msgid "%s database is locked (another program is already using it)"
 msgstr ""
 
-#: ../urpm/main_loop.pm:79
+#: ../urpm/main_loop.pm:81
 #, c-format
 msgid "Retry?"
 msgstr ""
 
-#: ../urpm/main_loop.pm:89
+#: ../urpm/main_loop.pm:91
 #, c-format
 msgid ""
 "Installation failed, some files are missing:\n"
 "%s"
 msgstr ""
 
-#: ../urpm/main_loop.pm:92
+#: ../urpm/main_loop.pm:94
 #, c-format
 msgid "You may need to update your urpmi database."
 msgstr ""
 
-#: ../urpm/main_loop.pm:95
+#: ../urpm/main_loop.pm:97
 #, c-format
 msgid ""
 "Installation failed, bad rpms:\n"
 "%s"
 msgstr ""
 
-#: ../urpm/main_loop.pm:113
+#: ../urpm/main_loop.pm:115
 #, c-format
 msgid ""
 "There is not enough space on your filesystem to download all packages (%s "
@@ -949,68 +958,68 @@ msgid ""
 "Are you sure you want to continue?"
 msgstr ""
 
-#: ../urpm/main_loop.pm:171 ../urpm/main_loop.pm:211 ../urpm/main_loop.pm:294
-#: ../urpm/main_loop.pm:301
+#: ../urpm/main_loop.pm:173 ../urpm/main_loop.pm:213 ../urpm/main_loop.pm:302
+#: ../urpm/main_loop.pm:309
 #, c-format
 msgid "Installation failed"
 msgstr ""
 
-#: ../urpm/main_loop.pm:172
+#: ../urpm/main_loop.pm:174
 #, c-format
 msgid "Try to continue anyway?"
 msgstr ""
 
-#: ../urpm/main_loop.pm:196
+#: ../urpm/main_loop.pm:198
 #, c-format
 msgid "The following package has bad signature"
 msgstr ""
 
-#: ../urpm/main_loop.pm:197
+#: ../urpm/main_loop.pm:199
 #, c-format
 msgid "The following packages have bad signatures"
 msgstr ""
 
-#: ../urpm/main_loop.pm:198
+#: ../urpm/main_loop.pm:200
 #, c-format
 msgid "Do you want to continue installation ?"
 msgstr ""
 
-#: ../urpm/main_loop.pm:215
+#: ../urpm/main_loop.pm:217
 #, c-format
 msgid "removing installed rpms (%s)"
 msgstr ""
 
-#: ../urpm/main_loop.pm:235
+#: ../urpm/main_loop.pm:237
 #, c-format
 msgid "distributing %s"
 msgstr ""
 
-#: ../urpm/main_loop.pm:250
+#: ../urpm/main_loop.pm:252
 #, c-format
 msgid "installing %s from %s"
 msgstr ""
 
-#: ../urpm/main_loop.pm:252
+#: ../urpm/main_loop.pm:254
 #, c-format
 msgid "installing %s"
 msgstr ""
 
-#: ../urpm/main_loop.pm:295
+#: ../urpm/main_loop.pm:303
 #, c-format
 msgid "Try installation without checking dependencies?"
 msgstr ""
 
-#: ../urpm/main_loop.pm:302
+#: ../urpm/main_loop.pm:310
 #, c-format
 msgid "Try harder to install (--force)?"
 msgstr ""
 
-#: ../urpm/main_loop.pm:345
+#: ../urpm/main_loop.pm:353
 #, c-format
 msgid "Packages are up to date"
 msgstr ""
 
-#: ../urpm/main_loop.pm:356 ../urpm/parallel.pm:299
+#: ../urpm/main_loop.pm:364 ../urpm/parallel.pm:299
 #, c-format
 msgid "Installation is possible"
 msgstr ""
@@ -1308,13 +1317,13 @@ msgid "getting mirror list from %s"
 msgstr ""
 
 #. -PO: Add here the keys which might be pressed in the "Yes"-case.
-#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:580 ../urpmi:688 ../urpmi:698
+#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:591 ../urpmi:699 ../urpmi:709
 #: ../urpmi.addmedia:133
 #, c-format
 msgid "Yy"
 msgstr ""
 
-#: ../urpm/msg.pm:107 ../urpme:164 ../urpmi.addmedia:136
+#: ../urpm/msg.pm:107 ../urpme:166 ../urpmi.addmedia:136
 #, c-format
 msgid " (y/N) "
 msgstr ""
@@ -1394,12 +1403,12 @@ msgstr ""
 msgid "TB"
 msgstr ""
 
-#: ../urpm/orphans.pm:51
+#: ../urpm/orphans.pm:50
 #, c-format
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr ""
 
-#: ../urpm/orphans.pm:438
+#: ../urpm/orphans.pm:437
 #, c-format
 msgid ""
 "The following package:\n"
@@ -1502,7 +1511,7 @@ msgstr ""
 msgid "No package named %s"
 msgstr ""
 
-#: ../urpm/select.pm:178 ../urpme:118
+#: ../urpm/select.pm:178 ../urpme:120
 #, c-format
 msgid "The following packages contain %s: %s"
 msgstr ""
@@ -1686,53 +1695,61 @@ msgstr ""
 #: ../urpme:58
 #, c-format
 msgid ""
+"  --fastunsafe   - trade verification and reliability for performance, "
+"alias:\n"
+"                   --tune-rpm=nofsync\n"
+msgstr ""
+
+#: ../urpme:60
+#, c-format
+msgid ""
 "  --use-distrib  - configure urpme on the fly from a distrib tree, useful\n"
 "                   to (un)install a chroot with --root option.\n"
 msgstr ""
 
-#: ../urpme:60 ../urpmi:171 ../urpmq:91
+#: ../urpme:62 ../urpmi:171 ../urpmq:91
 #, c-format
 msgid "  --verbose, -v  - verbose mode.\n"
 msgstr ""
 
-#: ../urpme:61
+#: ../urpme:63
 #, c-format
 msgid "  -a             - select all packages matching expression.\n"
 msgstr ""
 
-#: ../urpme:76
+#: ../urpme:78
 #, c-format
 msgid "Only superuser is allowed to remove packages"
 msgstr ""
 
-#: ../urpme:109
+#: ../urpme:111
 #, c-format
 msgid "unknown packages"
 msgstr ""
 
-#: ../urpme:109
+#: ../urpme:111
 #, c-format
 msgid "unknown package"
 msgstr ""
 
-#: ../urpme:124
+#: ../urpme:126
 #, c-format
 msgid "Removing the following package will break your system:"
 msgid_plural "Removing the following packages will break your system:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../urpme:129
+#: ../urpme:131
 #, c-format
 msgid "Nothing to remove"
 msgstr ""
 
-#: ../urpme:146
+#: ../urpme:148
 #, c-format
 msgid "No orphans to remove"
 msgstr ""
 
-#: ../urpme:152
+#: ../urpme:154
 #, c-format
 msgid "To satisfy dependencies, the following package will be removed"
 msgid_plural ""
@@ -1740,31 +1757,31 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../urpme:157
+#: ../urpme:159
 #, c-format
 msgid "(orphan package)"
 msgid_plural "(orphan packages)"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../urpme:164
+#: ../urpme:166
 #, c-format
 msgid "Remove %d package?"
 msgid_plural "Remove %d packages?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../urpme:169
+#: ../urpme:171
 #, c-format
 msgid "testing removal of %s"
 msgstr ""
 
-#: ../urpme:186
+#: ../urpme:191
 #, c-format
 msgid "Removal failed"
 msgstr ""
 
-#: ../urpme:188
+#: ../urpme:193
 #, c-format
 msgid "Removal is possible"
 msgstr ""
@@ -2347,40 +2364,40 @@ msgid ""
 "along with --bug.\n"
 msgstr ""
 
-#: ../urpmi:244
+#: ../urpmi:249
 #, c-format
 msgid "You can't install binary rpm files when using --install-src"
 msgstr ""
 
-#: ../urpmi:245
+#: ../urpmi:250
 #, c-format
 msgid "You can't install spec files"
 msgstr ""
 
-#: ../urpmi:252
+#: ../urpmi:257
 #, c-format
 msgid "defaulting to --buildrequires"
 msgstr ""
 
-#: ../urpmi:257
+#: ../urpmi:262
 #, c-format
 msgid ""
 "please use --buildrequires or --install-src, defaulting to --buildrequires"
 msgstr ""
 
-#: ../urpmi:277
+#: ../urpmi:282
 #, c-format
 msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
 "or delete it"
 msgstr ""
 
-#: ../urpmi:278
+#: ../urpmi:283
 #, c-format
 msgid "Unable to create directory [%s] for bug report"
 msgstr ""
 
-#: ../urpmi:299
+#: ../urpmi:304
 #, c-format
 msgid ""
 "Error: %s appears to be mounted read-only.\n"
@@ -2388,42 +2405,42 @@ msgid ""
 msgstr ""
 
 #. -PO: here format is "<package_name>: <summary> (to upgrade)"
-#: ../urpmi:462
+#: ../urpmi:467
 #, c-format
 msgid "%s: %s (to upgrade)"
 msgstr ""
 
 #. -PO: here format is "<package_name> (to upgrade)"
-#: ../urpmi:464
+#: ../urpmi:469
 #, c-format
 msgid "%s (to upgrade)"
 msgstr ""
 
 #. -PO: here format is "<package_name>: <summary> (to install)"
-#: ../urpmi:468
+#: ../urpmi:473
 #, c-format
 msgid "%s: %s (to install)"
 msgstr ""
 
 #. -PO: here format is "<package_name> (to install)"
-#: ../urpmi:470
+#: ../urpmi:475
 #, c-format
 msgid "%s (to install)"
 msgstr ""
 
-#: ../urpmi:476
+#: ../urpmi:481
 #, c-format
 msgid ""
 "In order to satisfy the '%s' dependency, one of the following packages is "
 "needed:"
 msgstr ""
 
-#: ../urpmi:479
+#: ../urpmi:484
 #, c-format
 msgid "What is your choice? (1-%d) "
 msgstr ""
 
-#: ../urpmi:521
+#: ../urpmi:526
 #, c-format
 msgid ""
 "The following package cannot be installed because it depends on packages\n"
@@ -2431,7 +2448,7 @@ msgid ""
 "%s"
 msgstr ""
 
-#: ../urpmi:523
+#: ../urpmi:528
 #, c-format
 msgid ""
 "The following packages can't be installed because they depend on packages\n"
@@ -2439,33 +2456,26 @@ msgid ""
 "%s"
 msgstr ""
 
-#: ../urpmi:529 ../urpmi:530 ../urpmi:545
+#: ../urpmi:534 ../urpmi:535 ../urpmi:553
 #, c-format
 msgid ""
 "\n"
 "Continue installation anyway?"
 msgstr ""
 
-#: ../urpmi:539
+#: ../urpmi:547
 #, c-format
 msgid ""
 "A requested package cannot be installed:\n"
 "%s"
 msgstr ""
 
-#: ../urpmi:540
-#, c-format
-msgid ""
-"Some requested packages cannot be installed:\n"
-"%s"
-msgstr ""
-
-#: ../urpmi:557
+#: ../urpmi:568
 #, c-format
 msgid "removing package %s will break your system"
 msgstr ""
 
-#: ../urpmi:565
+#: ../urpmi:576
 #, c-format
 msgid ""
 "The installation cannot continue because the following package\n"
@@ -2473,7 +2483,7 @@ msgid ""
 "%s\n"
 msgstr ""
 
-#: ../urpmi:567
+#: ../urpmi:578
 #, c-format
 msgid ""
 "The installation cannot continue because the following packages\n"
@@ -2481,12 +2491,12 @@ msgid ""
 "%s\n"
 msgstr ""
 
-#: ../urpmi:575
+#: ../urpmi:586
 #, c-format
 msgid "(test only, removal will not be actually done)"
 msgstr ""
 
-#: ../urpmi:595
+#: ../urpmi:606
 #, c-format
 msgid ""
 "You must first call urpmi with --buildrequires to install the following "
@@ -2494,46 +2504,46 @@ msgid ""
 "%s\n"
 msgstr ""
 
-#: ../urpmi:605
+#: ../urpmi:616
 #, c-format
 msgid "The following orphan package will be removed."
 msgid_plural "The following orphan packages will be removed."
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../urpmi:633
+#: ../urpmi:644
 #, c-format
 msgid "(test only, installation will not be actually done)"
 msgstr ""
 
-#: ../urpmi:639
+#: ../urpmi:650
 #, c-format
 msgid "%s of additional disk space will be used."
 msgstr ""
 
-#: ../urpmi:640
+#: ../urpmi:651
 #, c-format
 msgid "%s of disk space will be freed."
 msgstr ""
 
-#: ../urpmi:641
+#: ../urpmi:652
 #, c-format
 msgid "%s of packages will be retrieved."
 msgstr ""
 
-#: ../urpmi:642
+#: ../urpmi:653
 #, c-format
 msgid "Proceed with the installation of one package?"
 msgid_plural "Proceed with the installation of the %d packages?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../urpmi:665
+#: ../urpmi:676
 #, c-format
 msgid "Cancel"
 msgstr ""
 
-#: ../urpmi:673
+#: ../urpmi:684
 #, c-format
 msgid "Press Enter when mounted..."
 msgstr ""
