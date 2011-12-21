@@ -218,6 +218,11 @@ along with --bug.\n");
     usage();
 }
 
+
+# Prepare exit code.  If you change this, the exiting with a failure and the message given will be postponed to the end of the overall processing.
+my $postponed_msg = '';
+my $postponed_code = 0;
+
 my @spec_files;
 # Process the rest of the arguments
 foreach (@ARGV) {
@@ -530,6 +535,9 @@ that are older than the installed ones:\n%s", $list);
 	$force || message_input_($msg . N("\nContinue installation anyway?") . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/
 	    or dudf_invoke($dudf, "dudf_exit", 17, $msg);
     }
+    # Whatever option we selected, the overall installation should fail if some packages are unselected
+    $postponed_msg .= N("While some packages have been installed, there were failures: %s\n",$msg);
+    $postponed_code = 17;
 }
 
 my @ask_unselect = urpm::select::unselected_packages($urpm, $state);
@@ -545,6 +553,9 @@ if (@ask_unselect) {
 	$force || message_input_($msg . N("\nContinue installation anyway?") . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/
 	    or dudf_invoke($dudf, "dudf_exit", 17, $msg);;
     }
+    # Whatever option we selected, the overall installation should fail if some packages are unselected
+    $postponed_msg .= N("While some packages have been installed, there were failures: %s\n",$msg);
+    $postponed_code = 17;
 }
 
 if (my @conflicting_pkgs_msgs = 
@@ -726,6 +737,9 @@ unless ($env) {
     urpm::removable::try_umounting_removables($urpm);
 }
 
+# Merge postponed exit code to the result of package installation.
+$exit_code ||= $postponed_code;
+
 #- restart urpmi if needed, keep command line for that.
 if ($restart_itself && !$exit_code) {
     print N("restarting urpmi"), "\n";
@@ -751,5 +765,8 @@ if ($pid_err || $pid_out) {
     close STDERR;
     close STDOUT;
 }
+
+# Show postponed message before exiting
+print $postponed_msg if $postponed_code != 0;
 
 dudf_invoke($dudf, "dudf_exit", $exit_code);
