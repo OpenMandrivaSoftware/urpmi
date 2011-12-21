@@ -589,7 +589,7 @@ have to be removed for others to be upgraded:\n%s\n", $list);
 	print "$msg\n";
     } else {
 	my $yesexpr = N("Yy");
-	$force || urpm::msg::ask_yes_or_no($msg) or exit 0;
+	$force || urpm::msg::ask_yes_or_no($msg) or exit 18;
     }
 }
 
