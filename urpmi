@@ -717,7 +717,7 @@ my $exit_code = urpm::main_loop::run($urpm, $state,
 	my ($_title, $msg) = @_; # graphical title
         print $msg;
     }
-});
+}, $postponed_code);
 
 if ($exit_code == 0 && $auto_select && !$options{auto_orphans}) {
     if (urpm::orphans::check_unrequested_orphans_after_auto_select($urpm)) {

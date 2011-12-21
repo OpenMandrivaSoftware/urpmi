@@ -419,8 +419,8 @@ sub do_install_3 () {
         callback_report_uninst => sub { $progress_label->set_label(N("removing %s", $_[0])) },
         inst => $callback_inst,
         trans => $callback_inst,
-    }
-                     );
+    },
+    $postponed_code);
 
     # Merge postponed exit code to the result of package installation.
     $exit_code ||= $postponed_code;

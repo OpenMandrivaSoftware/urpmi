@@ -33,7 +33,9 @@ use urpm::util qw(untaint difference2 intersection member partition);
 
 # locking is left to callers
 sub run {
-    my ($urpm, $state, $something_was_to_be_done, $ask_unselect, $_requested, $callbacks) = @_;
+    my ($urpm, $state, $something_was_to_be_done, $ask_unselect, $_requested, $callbacks, $postponed_exit_code) = @_;
+
+    $postponed_exit_code = 0 unless defined $postponed_exit_code;
 
     #- global boolean options
     my ($auto_select, $no_install, $install_src, $clean, $noclean, $force, $parallel, $test, $_env) =
@@ -357,7 +359,7 @@ sub run {
                     }
                 }
                 $exit_code = 15 if our $expect_install;
-            } elsif ($test && $exit_code == 0) {
+            } elsif ($test && $exit_code == 0 && $postponed_exit_code == 0) {
                 #- Warning : the following message is parsed in urpm::parallel_*
                 print N("Installation is possible"), "\n";
             } else {
