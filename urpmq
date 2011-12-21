@@ -35,6 +35,8 @@ use urpm::get_pkgs;
 our @files;
 our @names;
 our @src_names;
+# Postponed return code; used if a failed operation should not prevent urpm from proceeding, but should signal the failure at the end
+our $postponed_code = 0;
 
 sub usage() {
     print N("urpmq version %s
@@ -167,7 +169,7 @@ if ($options{auto_orphans}) {
     require urpm::orphans;
     my $orphans = urpm::orphans::get_orphans($urpm);
     print "$_\n" foreach sort map { $pkg_to_string->($_) } @$orphans;
-    exit 0;
+    goto EXIT_OK_UNLESS_POSTPONED;
 }
 
 if ($options{env}) {
@@ -219,14 +221,14 @@ if ($options{list_aliases}) {
     foreach (keys %{$urpm->{parallel_handler}{nodes} || {}}) {
 	print "$_\n";
     }
-    exit 0;
+    goto EXIT_OK_UNLESS_POSTPONED;
 } elsif ($options{list_media} || $options{list_url}) {
     foreach (@{$urpm->{media}}) {
 	next if $options{list_media} eq 'update' && !$_->{update};
 	next if $options{list_media} eq 'active' && $_->{ignore};
 	print $_->{name} . ($options{list_url} ? " $_->{url}" : "") . "\n";
     }
-    exit 0;
+    goto EXIT_OK_UNLESS_POSTPONED;
 } elsif ($options{dump_config}) {
     foreach (@{$urpm->{media}}) {
 	$_->{update} and print "--update ";
@@ -237,7 +239,7 @@ if ($options{list_aliases}) {
 	$_->{with_synthesis} and print "with " . escape_shell($_->{with_synthesis});
 	print "\n";
     }
-    exit 0;
+    goto EXIT_OK_UNLESS_POSTPONED;
 } elsif ($options{list}) {
     !@names && !@src_names or $urpm->{fatal}(1, N("use -l to list files"));
 
@@ -505,7 +507,7 @@ if ($options{list_aliases}) {
 	    print "$_\n" foreach values %$local_sources;
 	    print "$_\n" foreach map { urpm::blist_to_urls($_) } @$blists;
 	}
-	exit 0;
+	goto EXIT_OK_UNLESS_POSTPONED;
     } elsif ($options{summary}) {
 	foreach (keys %{$state->{selected}}) {
 	    foreach (split /\|/, $_) {
@@ -513,7 +515,7 @@ if ($options{list_aliases}) {
 		printf "%s : %s ( %s%s-%s )\n", $pkg->name, $pkg->summary, ($pkg->epoch ? $pkg->epoch . ':' : ''), $pkg->version, $pkg->release;
 	    }
 	}
-	exit 0;
+	goto EXIT_OK_UNLESS_POSTPONED;
     } elsif (my ($get) = grep { $options{$_} } 'provides', 'requires', 'conflicts', 'obsoletes', 'suggests') {
 	my @l = uniq_ { scalar $_->fullname } map { $urpm->{depslist}[$_] } map { split /\|/, $_ } keys %{$state->{selected}};
 	foreach my $pkg (@l) {
@@ -523,7 +525,7 @@ if ($options{list_aliases}) {
 		print "$_\n" foreach $pkg->$get;
 	    }
 	}
-	exit 0;
+	goto EXIT_OK_UNLESS_POSTPONED;
     }
 }
 $urpmi_lock and $urpmi_lock->unlock;
@@ -564,4 +566,13 @@ foreach my $id (sort { eval { $urpm->{depslist}[$a]->name cmp $urpm->{depslist}[
 	print join('|', map { $query_sub->($_) } split '\|', $id), "\n";
     }
 }
+
+# Jump on this label instead of 'exit 0', because there might have been a postponed error to show in the return code.
+EXIT_OK_UNLESS_POSTPONED:
+
+if ($::postponed_code != 0){
+    exit $::postponed_code;
+}
+# No postponed error, 'exit 0' as promised.
+exit 0;
 
