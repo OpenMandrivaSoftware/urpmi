@@ -1,5 +1,8 @@
 Version 6.69 -    August 2011, by Per Øyvind Karlsen
 
+- Nonzero code if .rpm file was not found in urpmq.  Fixes bug #64969
+- Discarded packages in --test mode are a failure.  Fixes bug #55990.
+- Return error if some packages were not installed.  Fixes bugs #63072 and #63940.
 - use rsync to download from rsync-mirrors (Alexander Barakin, #53409)
 Version 6.68 - 26 July 2011, by Per Øyvind Karlsen
 
