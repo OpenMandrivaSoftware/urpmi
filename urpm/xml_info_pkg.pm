@@ -47,7 +47,7 @@ sub arch      { exists $_[0]{pkg} ? $_[0]{pkg}->arch    : (URPM::fullname_parts(
 sub disttag   { exists $_[0]{disttag}       ? $_[0]{disttag}     : $_[0]{pkg}->disttag }
 sub distepoch { exists $_[0]{distepoch}     ? $_[0]{distepoch}   : $_[0]{pkg}->distepoch }
 
-sub fullname { wantarray ? $_[0]{pkg}->fullname : $_[0]{fn} }
+sub fullname { wantarray() ? $_[0]{pkg}->fullname : $_[0]{fn} }
 sub filename { $_[0]{fn} . '.rpm' }
 
 
