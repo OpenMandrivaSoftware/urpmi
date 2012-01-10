@@ -675,7 +675,8 @@ sub configure {
     #- determine package to withdraw (from skip.list file) only if something should be withdrawn.
     if (!$options{nodepslist}) {
 	_compute_flags_for_skiplist($urpm, $options{cmdline_skiplist}) if !$options{no_skiplist};
-	_compute_flags_for_instlist($urpm);
+	# Unlike skiplist, instlist should be applied to local packages as well rather than to packages from media only.  The next line is repeated in urpmi
+	urpm::media::compute_flags_for_instlist($urpm);
     }
 }
 
@@ -738,7 +739,7 @@ sub _compute_flags_for_skiplist {
     );
 }
 
-sub _compute_flags_for_instlist {
+sub compute_flags_for_instlist {
     my ($urpm) = @_;
 
     my %uniq;

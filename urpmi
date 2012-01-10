@@ -409,6 +409,9 @@ urpm::select::set_priority_upgrade_option($urpm, $options{previous_priority_upgr
 my $state = {};
 my %requested = $urpm->register_rpms(@files, @src_files);
 
+# NOTE: This is copied from urpm::media::configure here because we want to apply inst.list system policy to local packages as well (when testing kernels, for example).  If you do not want this, use bare rpm.
+urpm::media::compute_flags_for_instlist($urpm);
+
 #- finish bug environment creation.
 if ($bug) {
     urpm::bug_report::write_urpmdb($urpm, $bug);
