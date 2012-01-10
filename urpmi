@@ -388,6 +388,8 @@ urpm::media::configure($urpm,
     probe_with => $options{probe_with},
     download_callback => \&urpm::download::sync_logger,
     nomd5sum => $options{nomd5sum},
+    # We apply instlist on our own in urpmi, after local packages
+    no_instlist => 1,
 );
 
 #- this will enable various legacy hacks in rpm to make installation of older releases work
