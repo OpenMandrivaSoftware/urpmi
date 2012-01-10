@@ -1,5 +1,6 @@
 Version 6.69 - 10 January 2011, by Per Øyvind Karlsen
 
+- don't run rpmlint after build in tests with rpmbuild
 - Add a default rule to inst.list for dealing with kernels > 2.6.38 and make
   sure that it excludes kernel-headers
 - Add --download-all option equivalent to urpmi.cfg.
