@@ -1,12 +1,14 @@
 Version 6.69 - 10 January 2011, by Per Øyvind Karlsen
 
+- Apply inst.list policy to local packages as well (#64993, Pavel Shved)
 - don't run rpmlint after build in tests with rpmbuild
-- Add a default rule to inst.list for dealing with kernels > 2.6.38 and make
-  sure that it excludes kernel-headers
-- Add --download-all option equivalent to urpmi.cfg.
+- Add a default rule to inst.list for dealing with kernels > 2.6.38 (Franck Bui)
+  and make sure that it excludes kernel-headers (#65056)
+- Add --download-all option equivalent to urpmi.cfg. (Pavel Shved)
 - Nonzero code if .rpm file was not found in urpmq.  Fixes bug #64969
-- Discarded packages in --test mode are a failure.  Fixes bug #55990.
+- Discarded packages in --test mode are a failure.  Fixes bug #55990. (Pavel Shved)
 - Return error if some packages were not installed.  Fixes bugs #63072 and #63940.
+  (Pavel Shved)
 - use rsync to download from rsync-mirrors (Alexander Barakin, #53409)
 
 Version 6.68 - 26 July 2011, by Per Øyvind Karlsen
