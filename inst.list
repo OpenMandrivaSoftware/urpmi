@@ -1,2 +1,11 @@
 # Here you can specify packages that need to be installed instead
 # of being upgraded.
+
+#
+# Newer kernels (> 2.6.38) no-more use the virtual package, named
+# 'kernel-*-latest', to get updated without removing the previous
+# version. Instead they use the following regexp which should take
+# care of keeping compatibily with both old kernels and firmware
+# packages.
+#
+/^kernel((?!latest)(?!firmware)(?!headers).)*$/

@@ -1,10 +1,13 @@
-Version 6.69 -    August 2011, by Per Øyvind Karlsen
+Version 6.69 - 10 January 2011, by Per Øyvind Karlsen
 
+- Add a default rule to inst.list for dealing with kernels > 2.6.38 and make
+  sure that it excludes kernel-headers
 - Add --download-all option equivalent to urpmi.cfg.
 - Nonzero code if .rpm file was not found in urpmq.  Fixes bug #64969
 - Discarded packages in --test mode are a failure.  Fixes bug #55990.
 - Return error if some packages were not installed.  Fixes bugs #63072 and #63940.
 - use rsync to download from rsync-mirrors (Alexander Barakin, #53409)
+
 Version 6.68 - 26 July 2011, by Per Øyvind Karlsen
 
 - suppress aria2's printing of summaries to avoid it confusing urpmi parsing
