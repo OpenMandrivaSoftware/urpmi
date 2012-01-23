@@ -1,3 +1,9 @@
+Version 6.70 - 23 January 2012, by Per Øyvind Karlsen
+
+- make sure that we only match packages starting with 'kernel-' (rather than
+  just 'kernel') in /etc/urpmi/inst.list so that it won't match on non-kernel
+  packages
+
 Version 6.69 - 10 January 2011, by Per Øyvind Karlsen
 
 - Apply inst.list policy to local packages as well (#64993, Pavel Shved)

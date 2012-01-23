@@ -8,4 +8,4 @@
 # care of keeping compatibily with both old kernels and firmware
 # packages.
 #
-/^kernel((?!latest)(?!firmware)(?!headers).)*$/
+/^kernel-((?!latest)(?!firmware)(?!headers).)*$/
