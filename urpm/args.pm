@@ -384,10 +384,9 @@ my %options_spec = (
 
 );
 
-eval
-{
+eval {
     #require urpm::dudf;
-    $options_spec{'urpmi'}{'force-dudf'} = \$::force_dudf;
+    $options_spec{urpmi}{'force-dudf'} = \$::force_dudf;
 };
 
 
@@ -477,7 +476,7 @@ foreach my $k ("f", "z", "update", "norebuild!", "probe-rpms", '<>')
 
 foreach my $k ("no-md5sum")
 {
-    $options_spec{'urpmi'}{$k} = $options_spec{'urpmi.addmedia'}{$k} = $options_spec{'urpmi.update'}{$k};
+    $options_spec{urpmi}{$k} = $options_spec{'urpmi.addmedia'}{$k} = $options_spec{'urpmi.update'}{$k};
 }
 
 foreach my $k ("a", '<>') {
@@ -504,7 +503,7 @@ sub set_root {
 	    }
 }
 
-sub set_verbosity {
+sub set_verbosity() {
     $options{verbose} >= 0 or $urpm->{info} = sub {};
     $options{verbose} > 0 or $urpm->{log} = sub {};
 }
