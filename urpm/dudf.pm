@@ -216,7 +216,7 @@ sub new {
     # If there is no log file, we create the default content here
     if (! -f $self->{log_file})  {
 	output_safe($self->{log_file}, 
-                    N("# Here are logs of your DUDF uploads.\n# Line format is : <date time of generation> <uid>\n# You can use uids to see the content of your uploads at this url :\n# %s"), $base_url);
+                    N("# Here are logs of your DUDF uploads.\n# Line format is : <date time of generation> <uid>\n# You can use uids to see the content of your uploads at this url :\n# %s", $base_url));
     }
     my $ug = new Data::UUID;
     $self->{dudf_uid} = $ug->to_string($ug->create_str);
