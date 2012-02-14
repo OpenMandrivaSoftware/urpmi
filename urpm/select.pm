@@ -412,7 +412,7 @@ sub find_packages_to_remove {
 		#	passing to URPM::Transaction->remove()...
 		$db->traverse_tag('nvra', [ $_ ], sub {
 			my ($p) = @_;
-			$urpm->resolve_rejected($db, $state, $p, removed => 1);
+			$urpm->resolve_rejected($db, $state, $p, (removed => 1));
 			push @m, scalar $p->fullname;
 			$found = 1;
 		    });
@@ -439,7 +439,7 @@ sub find_packages_to_remove {
 		    my ($p) = @_;
 		    my $f = scalar $p->fullname;
 		    $f =~ $qmatch or return;
-		    $urpm->resolve_rejected($db, $state, $p, removed => 1);
+		    $urpm->resolve_rejected($db, $state, $p, (removed => 1));
 		    push @m, $f;
 		});
 	    $urpm->{log}("...done, packages found [" . join(' ', @m) . "]");
