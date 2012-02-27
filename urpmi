@@ -439,6 +439,9 @@ if (@names) {
 	$urpm->{log}("found package(s): " . join(" ", map { scalar $urpm->{depslist}[$_]->fullname } 
 						      map { split /\|/ } keys %requested));
     }
+    # Whatever option we selected, the overall installation should fail if some packages are unselected
+    $urpm::postponed_msg .= $msg . "\n";
+    $urpm::postponed_code = 17;
 }
 if (@src_names) {
     $search_result = urpm::select::search_packages($urpm, \%requested, [ @src_names ],
@@ -596,6 +599,9 @@ have to be removed for others to be upgraded:\n%s\n", $list);
     } else {
 	$force || urpm::msg::ask_yes_or_no($msg) or exit 17;
     }
+    # Whatever option we selected, the overall installation should fail if some packages are unselected
+    $urpm::postponed_msg .= $msg . "\n";
+    $urpm::postponed_code = 17;
 }
 
 #- check if there is at least one package to install that
@@ -743,6 +749,9 @@ unless ($env) {
 # Merge postponed exit code to the result of package installation.
 $exit_code ||= $postponed_code;
 
+# Merge postponed exit code to the result of package installation.
+$exit_code ||= $urpm::postponed_code;
+
 #- restart urpmi if needed, keep command line for that.
 if ($restart_itself && !$exit_code) {
     print N("restarting urpmi"), "\n";
@@ -770,6 +779,6 @@ if ($pid_err || $pid_out) {
 }
 
 # Show postponed message before exiting
-print $postponed_msg if $postponed_code != 0;
+print $urpm::postponed_msg if $urpm::postponed_code != 0;
 
 dudf_invoke($dudf, "dudf_exit", $exit_code);
