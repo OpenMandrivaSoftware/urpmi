@@ -439,7 +439,7 @@ sub find_packages_to_remove {
 		    my ($p) = @_;
 		    my $f = scalar $p->fullname;
 		    $f =~ $qmatch or return;
-		    $urpm->resolve_rejected($db, $state, $p, (removed => 1));
+		    $urpm->resolve_rejected($db, $state, $p, removed => 1);
 		    push @m, $f;
 		});
 	    $urpm->{log}("...done, packages found [" . join(' ', @m) . "]");
