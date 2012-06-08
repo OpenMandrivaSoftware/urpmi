@@ -400,9 +400,8 @@ sub run {
 
             }
         }
-        if ($callbacks->{is_canceled}) {
-            last if $callbacks->{is_canceled}->();
-        }
+
+        last if $callbacks->{is_canceled} && $callbacks->{is_canceled}->();
     }
 
     if (!$nok && @migrate_rpmdb_db_version && !$test) {
