@@ -35,6 +35,8 @@ urpm::download - download routines for the urpm* tools
 
 =head1 DESCRIPTION
 
+=over
+
 =cut
 
 
@@ -849,6 +851,12 @@ sub sync_logger {
     }
 }
 
+=item requested_ftp_http_downloader($urpm, $medium)
+
+Return the downloader program to use (whether it pas provided on the
+command line or in the config file).
+
+=cut
 
 sub requested_ftp_http_downloader {
     my ($urpm, $medium) = @_;
@@ -924,6 +932,12 @@ sub sync_rel_one {
     $files->[0];
 }
 
+=item sync_url($urpm, $url, %options)
+
+Retrieve a file from the network and return the local cached file path.
+
+=cut
+
 sub sync_url {
     my ($urpm, $url, %options) = @_;
     sync_rel_one($urpm, { url => dirname($url), disable_metalink => $options{disable_metalink} }, basename($url), %options);
@@ -951,6 +965,13 @@ sub sync {
     sync_url($urpm, $_, %options) or return foreach @$files;
     1;
 }
+
+
+=item get_content($urpm, $url, %o_options)
+
+Retrieve a file and return its content.
+
+=cut
 
 sub get_content {
     my ($urpm, $url, %o_options) = @_;
@@ -1075,6 +1096,8 @@ sub _create_metalink_ {
 1;
 
 __END__
+
+=back
 
 =head1 COPYRIGHT
 
