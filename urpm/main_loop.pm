@@ -354,7 +354,7 @@ Warning: locking is left to callers...
 
 
 sub run {
-    my ($urpm, $state, $something_was_to_be_done, $ask_unselect, $_requested, $callbacks, $postponed_exit_code) = @_;
+    my ($urpm, $state, $something_was_to_be_done, $ask_unselect, $callbacks, $postponed_exit_code) = @_;
 
     $postponed_exit_code = 0 unless defined $postponed_exit_code;
 
