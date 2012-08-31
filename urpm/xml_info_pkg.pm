@@ -13,9 +13,12 @@ urpm::xml_info_pkg - XML Package data retrieving related routines for urpmi
 
 =over
 
-=cut 
+=item new($class, $hash, $pkg)
 
-# proxy object: returns the xml info if available, otherwise redirects to URPM::Package
+Returns a proxy object
+It enable to get the XML info if available, otherwise redirects to URPM::Package
+
+=cut
 
 sub new {
     my ($class, $hash, $pkg) = @_;
@@ -26,7 +29,23 @@ sub new {
 }
 
 
-# only available in synthesis/hdlist
+=item id($pkg)
+
+=item group($pkg)
+
+=item size($pkg)
+
+=item epoch($pkg)
+
+=item buildhost($pkg)
+
+=item packager($pkg)
+
+=item summary($pkg)
+
+Only available in synthesis/hdlist
+=cut
+
 sub id        { $_[0]{pkg}->id }
 sub group     { $_[0]{pkg}->group }
 sub size      { $_[0]{pkg}->size }
@@ -41,7 +60,22 @@ sub requires  { $_[0]{pkg}->requires }
 sub suggests  { $_[0]{pkg}->suggests }
 
 
-# can be directly available in xml_info
+=item url($pkg)
+
+=item license($pkg)
+
+=item sourcerpm($pkg)
+
+=item description($pkg)
+
+=item changelogs($pkg)
+
+=item files($pkg)
+
+Can be directly available in xml_info
+
+=cut
+
 sub url         { exists $_[0]{url}         ? $_[0]{url}         : $_[0]{pkg}->url }
 sub license     { exists $_[0]{license}     ? $_[0]{license}     : $_[0]{pkg}->license }
 sub sourcerpm   { exists $_[0]{sourcerpm}   ? $_[0]{sourcerpm}   : $_[0]{pkg}->sourcerpm }
@@ -51,7 +85,26 @@ sub changelogs  { exists $_[0]{changelogs} ? @{$_[0]{changelogs}} : $_[0]{pkg}->
 
 sub files { exists $_[0]{files} ? split("\n", $_[0]{files}) : $_[0]{pkg}->files }
 
-# available in both {pkg} and {fn}
+=item name($pkg)
+
+=item version($pkg)
+
+=item release($pkg)
+
+=item arch($pkg)
+
+=item disttag($pkg)
+
+=item distepoch($pkg)
+
+=item fullname($pkg)
+
+=item filename($pkg)
+
+Available in both {pkg} and {fn}
+
+=cut
+
 sub name      { exists $_[0]{pkg} ? $_[0]{pkg}->name    : (URPM::fullname_parts(@_, $_[0]{fn}))[0] }
 sub version   { exists $_[0]{pkg} ? $_[0]{pkg}->version : (URPM::fullname_parts(@_, $_[0]{fn}))[1] }
 sub release   { exists $_[0]{pkg} ? $_[0]{pkg}->release : (URPM::fullname_parts(@_, $_[0]{fn}))[2] }
