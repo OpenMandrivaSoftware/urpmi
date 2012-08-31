@@ -110,7 +110,7 @@ my $restart_itself = urpm::select::resolve_dependencies($urpm,
     auto_select => $::auto_select,
     priority_upgrade => $urpm->{options}{'priority-upgrade'},
 );
-my @ask_unselect = urpm::select::unselected_packages($urpm, $state);
+my @ask_unselect = urpm::select::unselected_packages($state);
 
 my $unselect_msg = N("Some requested packages cannot be installed:\n%s",
     urpm::select::translate_why_unselected($urpm, $state, @ask_unselect)
