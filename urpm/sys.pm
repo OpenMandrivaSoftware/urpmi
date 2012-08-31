@@ -12,6 +12,18 @@ use RPMBDB;
 (our $VERSION) = q($Revision$) =~ /(\d+)/;
 
 
+=head1 NAME
+
+urpm::sys - OS-related routines for urpmi
+
+=head1 SYNOPSIS
+
+=head1 DESCRIPTION
+
+=over
+
+=cut 
+
 #- get the list of packages that should not be upgraded or installed,
 #- typically from the inst.list or skip.list files.
 sub get_packages_list {
@@ -328,13 +340,7 @@ sub move_or_die {
 
 __END__
 
-=head1 NAME
-
-urpm::sys - OS-related routines for urpmi
-
-=head1 SYNOPSIS
-
-=head1 DESCRIPTION
+=back
 
 =head1 COPYRIGHT
 
