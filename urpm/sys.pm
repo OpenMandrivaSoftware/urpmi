@@ -325,6 +325,7 @@ sub move_or_die {
 }
 
 1;
+
 __END__
 
 =head1 NAME
