@@ -344,7 +344,7 @@ sub run {
 
     my @migrate_rpmdb_db_version = urpm::select::should_we_migrate_rpmdb_db_version($urpm, $state);
 
-    #- no process each remove/install transaction
+    #- now process each remove/install transaction
     foreach my $set (@{$state->{transaction} || []}) {
 
         #- put a blank line to separate with previous transaction or user question.
@@ -362,7 +362,7 @@ sub run {
 
         $callbacks->{post_download} and $callbacks->{post_download}->();
 
-        #- extract package that should be installed instead of upgraded,
+        #- extract packages that should be installed instead of upgraded,
         my %transaction_sources_install = %{$urpm->extract_packages_to_install($transaction_sources, $state) || {}};
         $callbacks->{post_extract} and $callbacks->{post_extract}->($set, $transaction_sources, \%transaction_sources_install);
 
