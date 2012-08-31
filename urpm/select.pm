@@ -13,6 +13,20 @@ my @priority_list = split(',', $default_priority_list);
 
 my $evr_re = qr/[^\-]*-[^\-]*\.[^\.\-]*$/;
 
+
+=head1 NAME
+
+urpm::select - package selection routines for urpmi
+
+=head1 SYNOPSIS
+
+=head1 DESCRIPTION
+
+=over
+
+=cut
+
+
 sub add_packages_to_priority_upgrade_list {
     @priority_list = uniq(@priority_list, @_);
 }
@@ -645,3 +659,7 @@ sub should_we_migrate_rpmdb_db_version {
 }
 
 1;
+
+=back
+
+=cut
