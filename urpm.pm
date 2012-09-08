@@ -15,7 +15,7 @@ use urpm::md5sum;
 # perl_checker: require urpm::media
 # perl_checker: require urpm::parallel
 
-our $VERSION = '7.5';
+our $VERSION = '7.8';
 our @ISA = qw(URPM Exporter);
 our @EXPORT_OK = ('file_from_local_url', 'file_from_local_medium', 'is_local_medium');
 
@@ -103,13 +103,18 @@ sub prefer_rooted {
     -e "$root$file" ? "$root$file" : $file;
 }
 
+sub check_cache_dir {
+    my ($urpm, $dir) = @_;
+    -d $dir && ! -l $dir or $urpm->{fatal}(1, N("fail to create directory %s", $dir));
+    -o $dir && -w $dir or $urpm->{fatal}(1, N("invalid owner for directory %s", $dir));
+}
+
 sub init_cache_dir {
     my ($urpm, $dir) = @_;
 
     mkdir $dir, 0755; # try to create it
 
-    -d $dir && ! -l $dir or $urpm->{fatal}(1, N("fail to create directory %s", $dir));
-    -o $dir && -w $dir or $urpm->{fatal}(1, N("invalid owner for directory %s", $dir));
+    check_cache_dir($urpm, $dir);
 
     mkdir "$dir/partial";
     mkdir "$dir/rpms";
