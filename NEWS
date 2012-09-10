@@ -1,3 +1,7 @@
+Version 6.71 - 10 September 2012, by Per Øyvind Karlsen
+
+- we're now using udisks rather than hald for cdrom
+
 Version 6.70 - 23 January 2012, by Per Øyvind Karlsen
 
 - make sure that we only match packages starting with 'kernel-' (rather than
