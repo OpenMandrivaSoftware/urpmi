@@ -715,7 +715,7 @@ sub sync_aria2 {
 					      # about increase of connections, increasing resource usage.
 	'--max-tries=5', # nb: not using $options->{retry}
 	'--lowest-speed-limit=20K', "--timeout", 3,
-        '--metalink-servers=3', # maximum number of servers to use for one download
+        '--split=3', # maximum number of servers to use for one download
         '--uri-selector=adaptive', "--server-stat-if=$stat_file", "--server-stat-of=$stat_file",
         $options->{is_versioned} ? @{[]} : '--max-file-not-found=10', # number of not found errors on different servers before aborting file download
         '--connect-timeout=6', # $CONNECT_TIMEOUT,
