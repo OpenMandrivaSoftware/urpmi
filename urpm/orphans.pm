@@ -344,7 +344,7 @@ sub _will_prop_still_be_needed {
 sub _get_current_kernel_package() {
     my $release = (POSIX::uname())[2];
     # --qf '%{name}' is used in order to provide the right format:
-    -e "/boot/vmlinuz-$release" && `rpm -qf --qf '%{name}' /boot/vmlinuz-$release`;
+    -e "/boot/vmlinuz-$release" && ($release, `rpm -qf --qf '%{name}' /boot/vmlinuz-$release`);
 }
 
 
@@ -412,7 +412,7 @@ sub _all_unrequested_orphans {
     }
     my $unreq_list = unrequested_list($urpm);
 
-    my $current_kernel = _get_current_kernel_package();
+    my ($current_kernel_version, $current_kernel) = _get_current_kernel_package();
 
     while (my $pkg = shift @$req) {
         # do not do anything regarding kernels if we failed to detect the running one (ie: chroot)
@@ -437,8 +437,8 @@ sub _all_unrequested_orphans {
 	add2hash_(\%l, $requested_kernels{$_});
     }
 
-    # do not offer to remove current kernel:
-    delete $l{$current_kernel};
+    # do not offer to remove current kernel or DKMS modules for current kernel:
+    do { delete $l{$_} } foreach grep { /$current_kernel_version/ } keys %l;
     [ values %l ];
 }
 
