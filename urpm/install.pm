@@ -176,31 +176,20 @@ sub options {
     );
 }
 
-=item install($urpm, $remove, $install, $upgrade, %options)
-
-Install packages according to each hash (remove, install or upgrade).
-
-options: 
-     test, excludepath, nodeps, noorder (unused), delta, 
-     callback_inst, callback_trans, callback_report_uninst,
-     post_clean_cache, verbose
-  (more options for trans->run)
-     excludedocs, nosize, noscripts, oldpackage, repackage, replacepkgs, justdb, ignorearch
-
-=cut
-
-sub install {
-    my ($urpm, $remove, $install, $upgrade, %options) = @_;
-    $options{translate_message} = 1;
-
-    my ($update, @errors) = 0;
-    my @produced_deltas;
-
-    my @trans_remove;
+sub _schedule_packages_for_erasing {
+    my ($urpm, $trans, $remove) = @_;
     foreach (@$remove) {
-	push @trans_remove, $_;
+	if ($trans->remove($_)) {
+	    $urpm->{debug} and $urpm->{debug}("trans: scheduling removal of $_");
+	} else {
+	    $urpm->{error}("unable to remove package " . $_);
+	}
     }
-    my %trans_pkgs = ();
+}
+
+sub _schedule_packages {
+    my ($urpm, $trans, $install, $upgrade, $update, %options) = @_;
+    my (@trans_pkgs, @produced_deltas);
     foreach my $mode ($install, $upgrade) {
 	foreach (keys %$mode) {
 	    my $pkg = $urpm->{depslist}[$_];
@@ -213,22 +202,36 @@ sub install {
 		    $urpm->{error}(N("unable to extract rpm from delta-rpm package %s", $mode->{$_}));
 		}
 	    }
-	    if(!($options{excludepath} and (excludepath => [ split /,/, $options{excludepath} ]))) {
-		my %pair = (
-		    pkg => $pkg,
-		    path => $mode->{$_},
-		    update => $update,
-		);
-		push(@{$trans_pkgs{$_}}, \%pair);
+	    if ($trans->add($pkg, update => $update,
+		    $options{excludepath} ? (excludepath => [ split /,/, $options{excludepath} ]) : ())) {
+		$urpm->{debug} and $urpm->{debug}(
+		    sprintf('trans: scheduling %s of %s (id=%d, file=%s)', 
+		      $update ? 'update' : 'install', 
+		      scalar($pkg->fullname), $_, $mode->{$_}));
+		push @trans_pkgs, $pkg;
+
+	    } else {
+		$urpm->{error}(N("unable to install package %s", $mode->{$_}));
+		my $cachefile = "$urpm->{cachedir}/rpms/" . $pkg->filename;
+		if (-e $cachefile) {
+		    $urpm->{error}(N("removing bad rpm (%s) from %s", $pkg->name, "$urpm->{cachedir}/rpms"));
+		    unlink $cachefile or $urpm->{fatal}(1, N("removing %s failed: %s", $cachefile, $!));
+		}
 	    }
 	}
 	++$update;
     }
+    \@produced_deltas, @trans_pkgs;
 
     if(!(scalar(values %trans_pkgs) + scalar(values @trans_remove))) {
 	$urpm->{debug} and $urpm->{debug}("no packages to remove/install/upgrade, refusing to create transaction");
 	return;
     }
+    }
+
+sub install {
+    my ($urpm, $remove, $install, $upgrade, %options) = @_;
+    $options{translate_message} = 1;
 
     my $db = urpm::db_open_or_die_($urpm, !$options{test}); #- open in read/write mode unless testing installation.
 
@@ -243,33 +246,11 @@ sub install {
 
     $trans->set_script_fd($options{script_fd}) if $options{script_fd};
 
-    foreach (@trans_remove) {
-	if ($trans->remove($_)) {
-	    $urpm->{debug} and $urpm->{debug}("trans: scheduling removal of $_");
-	} else {
-	    $urpm->{error}("unable to remove package " . $_);
-	}
-    }
+    my ($update, @errors) = 0;
 
-    foreach my $key (keys %trans_pkgs) {
-	foreach (@{$trans_pkgs{$key}}) {
-	    my %pair = %$_;
-	    my ($pkg, $path, $update) = ($pair{pkg}, $pair{path}, $pair{update});
-	    if ($trans->add($pkg, update => $update, 1)) {
-		$urpm->{debug} and $urpm->{debug}(
-		    sprintf('trans: scheduling %s of %s (id=%d, file=%s)', 
-			$update ? 'update' : 'install', 
-			scalar($pkg->fullname), $key, $path));
-	    } else {
-		$urpm->{error}(N("unable to install package %s", $path));
-		my $cachefile = "$urpm->{cachedir}/rpms/" . $pkg->filename;
-		if (-e $cachefile) {
-		    $urpm->{error}(N("removing bad rpm (%s) from %s", $pkg->name, "$urpm->{cachedir}/rpms"));
-		    unlink $cachefile or $urpm->{fatal}(1, N("removing %s failed: %s", $cachefile, $!));
-		}
-	    }
-	}
-    }
+    _schedule_packages_for_erasing($urpm, $trans, $remove);
+
+    my ($produced_deltas, @trans_pkgs) = _schedule_packages($urpm, $trans, $install, $upgrade, $update, %options);
 
     if (!$options{nodeps} && (@errors = $trans->check(%options))) {
     } elsif (!$options{noorder} && (@errors = $trans->order)) {
