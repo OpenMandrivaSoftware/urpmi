@@ -270,7 +270,7 @@ sub install {
 	    }
 	}
     }
-    
+
     if (!$options{nodeps} && (@errors = $trans->check(%options))) {
     } elsif (!$options{noorder} && (@errors = $trans->order)) {
     } else {
@@ -298,6 +298,7 @@ sub install {
 	    get_README_files($urpm, $trans, $urpm->{depslist}[$pkgid]) if !$is_test;
 	    close $fh if defined $fh;
 	};
+
 	#- ensure perl does not create a circular reference below, otherwise all this won't be collected,
 	#  and rpmdb won't be closed
 	my ($verbose, $callback_report_uninst) = ($options{verbose}, $options{callback_report_uninst});
@@ -354,6 +355,7 @@ sub install {
 	    }
 	}
     }
+
     unlink @produced_deltas;
 
     #- FIXME: circular reference leak, explicitly close transaction and rpmdb
