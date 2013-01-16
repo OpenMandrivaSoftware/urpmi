@@ -12,12 +12,13 @@ use urpm::sys;
 use urpm::cfg;
 use urpm::md5sum;
 
-our $VERSION = '6.71';
+our $VERSION = '6.72';
 our @ISA = qw(URPM Exporter);
 our @EXPORT_OK = ('file_from_local_url', 'file_from_local_medium', 'is_local_medium');
 
 use URPM;
 use URPM::Resolve;
+use RPMBDB;
 
 #- this violently overrides is_arch_compat() to always return true.
 sub shunt_ignorearch {
@@ -290,11 +291,11 @@ sub db_open_or_die_ {
     my ($urpm, $b_write_perm) = @_;
     my $db;
 
-    my @rpmdb_info = URPM::DB::info($urpm->{root});
+    my @rpmdb_info = RPMBDB::info($urpm->{root});
     if(@rpmdb_info && ($rpmdb_info[0] ne "btree" or $rpmdb_info[1] eq "littleendian")) {
 	if(!$urpm->{root} or $urpm->{root} eq "/") {
 	    $urpm->{log} and $urpm->{log}("Converting system rpmdb to new rpmdb version...");
-    	    URPM::DB::convert($urpm->{root}, "btree", 1, 1);
+    	    RPMBDB::convert($urpm->{root}, "btree", 1, 1);
 	} else {
 	    # todo: automate for known safe conditions
 	    $urpm->{fatal}(1, "rpmdb version in chroot is different from chroot, conversion is needed...");
