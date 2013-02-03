@@ -1,5 +1,74 @@
+- add basic support for detecting I/O error
+- display erasure progress too
+
+Version 7.15.2 - 16 January 2013, by Thierry Vignaud
+ 
+- update translations
+- library:
+  o fix retrieving rpm version with stable rpm
+
+Version 7.15 - 17 December 2012, by Thierry Vignaud
+
+- library:
+  o do not show empty information from README* with --justdb
+  o fix retrieving rpm version with beta versions
+
+Version 7.14 - 13 December 2012, by Thierry Vignaud
+
+- library:
+  o associate media_cfg data to media when adding them
+
+Version 7.13 - 4 December 2012, by Thierry Vignaud
+
+- library speedups when looking up packages:
+  o do not attempt fuzzy matching if not requested
+- urpmq:
+  o do not allow substring matching with --fuzzy (mga#2953)
+
+Version 7.12.1 - 4 December 2012, by Thierry Vignaud
+
+- urpmi:
+  o fix missing logs (mga#6755)
+
+Version 7.12 - 2 December 2012, by Thierry Vignaud
+
+- library:
+  o fix an incomplete message
+  o fix --download-all (mga#8272)
+    (broken by "make --use-distrib works as user" in 7.9)
+
+Version 7.11.1 - 17 November 2012, by Thierry Vignaud
+
+- fix installing delta rpms
+
+Version 7.11 - 16 November 2012, by Thierry Vignaud
+
+- library:
+  o fix installing delta rpms (it never worked before)
+  o fix computing kernel orphans when running kernel is not the latest
+
+Version 7.10 - 17 October 2012, by Thierry Vignaud
+
+- do not offer to remove DKMS modules for current kernel (mga#5092)
+- aria2 downloading:
+  o do not use aria2 deprecated option (Sam Bailey, mga#7781)
+  o reenable aria2 + metalink for downloading metadata by default (mdv)
+  o tune aria2 download parameters for faster and more reliable options (mdv)
+  o suppress aria2's printing of summaries to avoid it confusing urpmi parsing
+    the output (mdv, mga#7776)
+
+Version 7.9 - 11 October 2012, by Thierry Vignaud
+
+- drop again urpmi.recover 
+  (no more possible since rpm 4.6 which doesn't handle --repackage)
+- drop --repackage option (non working since 2009)
+- gurpmi:
+  o add scrollbar for long one liner messages (mga#5118)
+  o wrap big messages (mga#5118)
 - library:
   o enhanced doc
+- urpm[fq]:
+  o make --use-distrib works as user (mga#1225)
 
 Version 7.8.3 - 04 October 2012, by Thierry Vignaud
 
@@ -78,7 +147,7 @@ Version 7.0 - 8 June 2012
 - adapt to rpm-4.10.0
 - enhance man pages caption (inspirated by mdv)
 - fix testsuite regressions
-- o make 'basename' option work again for rpmdrake
+- make 'basename' option work again for rpmdrake
 - urpmi:
   o do not try to run gmessage as gtkdialogs is not packaged in Mga
   o drop support for --gui (no more used by drakx)
