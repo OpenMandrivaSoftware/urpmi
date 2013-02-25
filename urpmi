@@ -430,7 +430,7 @@ dudf_invoke($dudf, "store_userpkgs", @names);
 my $search_result = '';
 if (@names) {
     $search_result = urpm::select::search_packages($urpm,
-	\%requested, [ @names ],
+	\%requested, \@names,
 	all => $all,
 	use_provides => $use_provides,
 	fuzzy => $urpm->{options}{fuzzy},
@@ -446,7 +446,7 @@ if (@names) {
     $urpm::postponed_code = 17;
 }
 if (@src_names) {
-    $search_result = urpm::select::search_packages($urpm, \%requested, [ @src_names ],
+    $search_result = urpm::select::search_packages($urpm, \%requested, \@src_names,
 	all => $all,
 	use_provides => $use_provides,
 	fuzzy => $urpm->{options}{fuzzy},
