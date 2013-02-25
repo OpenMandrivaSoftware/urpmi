@@ -15,7 +15,7 @@ use urpm::md5sum;
 # perl_checker: require urpm::media
 # perl_checker: require urpm::parallel
 
-our $VERSION = '7.8.3';
+our $VERSION = '7.15';
 our @ISA = qw(URPM Exporter);
 our @EXPORT_OK = ('file_from_local_url', 'file_from_local_medium', 'is_local_medium');
 
@@ -80,6 +80,52 @@ B<media>: [ {
    unknown_media_info => bool, 
  } ],
 
+B<options>: hashref of urpm options
+
+several paths:
+
+=over
+
+B<config>: path of  urpmi.cfg (/etc/urpmi/urpmi.cfg)
+
+B<mediacfgdir>: path of mediacfg.d (/etc/urpmi/mediacfg.d)
+
+B<skiplist>: path of skip.list (/etc/urpmi/skip.list),
+
+B<instlist>: path of inst.list (/etc/urpmi/inst.list),
+
+B<prefer_list>: path of prefer.list (/etc/urpmi/prefer.list),
+
+B<prefer_vendor_list>: path of prefer.vendor.list (/etc/urpmi/prefer.vendor.list),
+
+B<private_netrc>: path of netrc (/etc/urpmi/netrc),
+
+B<statedir>: state directory (/var/lib/urpmi),
+
+B<cachedir>: cache directory (/var/cache/urpmi),
+
+B<root>: path of the rooted system (when using global urpmi config),
+
+B<urpmi_root>: path of the rooted system (when both urpmi & rpmdb are chrooted)
+
+=back
+
+Several subs:
+
+=over
+
+B<fatal>: sub for relaying fatal errors (should popup in GUIes)
+
+B<error>: sub for relaying other errors
+
+B<log>: sub for relaying messages if --verbose
+
+B<print>: sub for always displayed messages, enable to redirect output for eg: installer
+
+B<info>: sub for messages displayed unless --quiet
+
+=back
+
 All C<URPM> methods are available on an urpm object.
 
 =cut
@@ -107,6 +153,12 @@ sub new {
     $self->set_nofatal(1);
     $self;
 }
+
+=item urpm->new_parse_cmdline()
+
+Like urpm->new but also parse the command line and parse the configuration file.
+
+=cut
 
 sub new_parse_cmdline {
     my ($class) = @_;
