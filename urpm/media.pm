@@ -733,10 +733,10 @@ sub configure {
 
 	_pick_mirror_if_needed($urpm, $_, '') foreach non_ignored_media($urpm, $options{update});
 
-	parse_media($urpm, \%options) if !$options{nodepslist};
-
-    #- determine package to withdraw (from skip.list file) only if something should be withdrawn.
     if (!$options{nodepslist}) {
+	parse_media($urpm, \%options);
+
+	#- determine package to withdraw (from skip.list file) only if something should be withdrawn.
 	_compute_flags_for_skiplist($urpm, $options{cmdline_skiplist}) if !$options{no_skiplist};
 	# Unlike skiplist, instlist should be applied to local packages as well rather than to packages from media only.  The next line is repeated in urpmi.
 	compute_flags_for_instlist($urpm) if !$options{no_instlist};
