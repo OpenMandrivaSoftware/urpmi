@@ -2,6 +2,7 @@ ChangeLog
 gurpmi
 gurpmi.desktop.in
 gurpmi.pm
+gurpmi.xml
 gurpmi2
 inst.list
 Makefile.PL
