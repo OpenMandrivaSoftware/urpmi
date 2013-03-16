@@ -214,6 +214,8 @@ sub create_scrolled_window {
     }
 }
 
+=back
+
 =head1 COPYRIGHT
 
 Copyright (C) 2005 MandrakeSoft SA
