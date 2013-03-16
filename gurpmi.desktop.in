@@ -8,3 +8,4 @@ StartupNotify=true
 Categories=GTK;PackageManager;Settings;
 MimeType=application/x-rpm;application/x-urpmi;
 NoDisplay=true
+InitialPreference=6

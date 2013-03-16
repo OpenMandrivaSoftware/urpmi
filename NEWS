@@ -1,5 +1,6 @@
-Version 6.72 - 16 January 2013, by Per Øyvind Karlsen
+Version 6.72 - 16 March 2013, by Per Øyvind Karlsen
 
+- set InitialPreference=6 for desktop entry (from ROSA)
 - use RPMBDB module which berkeley db functions in URPM now has been moved to
 
 Version 6.71 - 10 September 2012, by Per Øyvind Karlsen
