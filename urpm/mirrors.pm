@@ -324,7 +324,7 @@ sub _mandriva_mirrorlist {
 
     #- contact the following URL to retrieve the list of mirrors.
     #- http://wiki.mandriva.com/en/Product_id
-    my $_product_type = lc($product_id->{type}); $product_id =~ s/\s//g;
+    my $product_type = lc($product_id->{type}); $product_id =~ s/\s//g;
     my $arch = $o_arch || $product_id->{arch};
 
     my @para = grep { $_ } $ENV{URPMI_ADDMEDIA_REASON};
