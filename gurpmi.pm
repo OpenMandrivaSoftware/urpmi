@@ -35,12 +35,12 @@ our @EXPORT = qw(create_scrolled_window fatal but cancel_n_quit quit add_button_
 
 =head1 NAME
 
-gurpmi - Mageia perl tools to handle the urpmi database
+gurpmi - Mandriva perl tools to handle the urpmi database
 
 =head1 DESCRIPTION
 
 C<gurpmi> is used by gurpmi* executables to manipulate packages and media
-on a Mageia Linux distribution.
+on a Mandriva Linux distribution.
 
 =head2 The urpm class
 
