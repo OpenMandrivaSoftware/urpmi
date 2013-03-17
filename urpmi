@@ -441,9 +441,6 @@ if (@names) {
 	$urpm->{log}("found package(s): " . join(" ", map { scalar $urpm->{depslist}[$_]->fullname } 
 						      map { split /\|/ } keys %requested));
     }
-    # Whatever option we selected, the overall installation should fail if some packages are unselected
-    $urpm::postponed_msg .= $msg . "\n";
-    $urpm::postponed_code = 17;
 }
 if (@src_names) {
     $search_result = urpm::select::search_packages($urpm, \%requested, \@src_names,
@@ -542,7 +539,7 @@ that are older than the installed ones:\n%s", $list);
     } else {
 	my $noexpr = N("Nn");
 	$msg .= N("\nContinue installation anyway?");
-	$force || message_input($msg . N("\nContinue installation anyway?") . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/
+	$force || message_input($msg . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/
 	    or dudf_invoke($dudf, "dudf_exit", 17, $msg);
     }
     # Whatever option we selected, the overall installation should fail if some packages are unselected
@@ -560,7 +557,8 @@ if (@ask_unselect) {
 	print "$msg\n";
     } else {
 	my $noexpr = N("Nn");
-	$force || message_input($msg . N("\nContinue installation anyway?") . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/
+	$msg .= N("\nContinue installation anyway?");
+	$force || message_input($msg . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/
 	    or dudf_invoke($dudf, "dudf_exit", 17, $msg);;
     }
     # Whatever option we selected, the overall installation should fail if some packages are unselected
