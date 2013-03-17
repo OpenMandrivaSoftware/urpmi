@@ -259,11 +259,6 @@ sub _run_transaction {
     my $allow_force = $options->{'allow-force'};
 
     my $to_remove = $allow_force ? [] : $set->{remove} || [];
-    #- if no packages to remove or to install, we jump to the end to prevent any
-    #  attempts of creating and running any empty transactions
-    if (!(($to_remove && @$to_remove)|| values %transaction_sources_install || values %$transaction_sources)) {
-	last;
-    }
 
     $urpm->{log}("starting installing packages");
 	    
@@ -560,13 +555,13 @@ sub run {
 
     $callbacks->{completed} and $callbacks->{completed}->();
 
-    _finish($urpm, $state, $callbacks, \@errors, \@formatted_errors, $ask_unselect, $something_was_to_be_done);
+    _finish($urpm, $state, $callbacks, \@errors, \@formatted_errors, $ask_unselect, $something_was_to_be_done, $postponed_exit_code);
 
     $exit_code;
 }
 
 sub _finish {
-    my ($urpm, $state, $callbacks, $errors, $formatted_errors, $ask_unselect, $something_was_to_be_done) = @_;
+    my ($urpm, $state, $callbacks, $errors, $formatted_errors, $ask_unselect, $something_was_to_be_done, $postponed_exit_code) = @_;
 
     if ($nok) {
         $callbacks->{trans_error_summary} and $callbacks->{trans_error_summary}->($nok, $errors);

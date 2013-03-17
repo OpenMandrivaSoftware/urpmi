@@ -111,6 +111,7 @@ sub install_logger {
 	    if ($type eq 'uninst') {
 		$total_pkg = $urpm->{trans}->NElements - $index if !$uninst_count;
 		$cnt = ++$uninst_count;
+		#$pname ||= N("[repackaging]");
 		$pname = N("removing %s", $urpm->{trans}->Element_fullname($index));
 		$erase_logger->($urpm, undef, undef, $subtype);
 	    } else {
@@ -251,10 +252,6 @@ sub _schedule_packages {
 	}
 	++$update;
     }
-    if(!(scalar(values %trans_pkgs) + scalar(values @trans_remove))) {
-	$urpm->{debug} and $urpm->{debug}("no packages to remove/install/upgrade, refusing to create transaction");
-	return;
-    }
     \@produced_deltas, @trans_pkgs;
 }
 
@@ -374,18 +371,7 @@ sub install {
 	if (!@errors && !$options{test} && $options{post_clean_cache}) {
 	    #- examine the local cache to delete packages which were part of this transaction
 	    my $cachedir = "$urpm->{cachedir}/rpms";
-	    my @pkgs;
-
-	    #- fugly, jeje.. :p
-	    foreach my $key (keys %trans_pkgs) {
-		foreach (@{$trans_pkgs{$key}}) {
-		    my %pair = %$_;
-		    my ($pkg, $path) = ($pair{pkg}, $pair{path});
-		    if ( -e "$cachedir/" . $pkg->filename ) {
-			push @pkgs, $pkg->filename;
-		    }
-		}
-	    }
+	    my @pkgs = grep { -e "$cachedir/$_" } map { $_->filename } @trans_pkgs;
 	    $urpm->{log}(N("removing installed rpms (%s) from %s", join(' ', @pkgs), $cachedir)) if @pkgs;
 	    foreach (@pkgs) {
 		unlink "$cachedir/$_" or $urpm->{fatal}(1, N("removing %s failed: %s", $_, $!));
@@ -402,7 +388,7 @@ sub install {
 	}
     }
 
-    unlink @produced_deltas;
+    unlink @$produced_deltas;
 
     #- FIXME: circular reference leak, explicitly close transaction and rpmdb
     undef $trans;
