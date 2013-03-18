@@ -440,9 +440,9 @@ Parameters:
 
 
 sub run {
-    my ($urpm, $state, $something_was_to_be_done, $ask_unselect, $callbacks, $postponed_exit_code) = @_;
+    my ($urpm, $state, $something_was_to_be_done, $ask_unselect, $callbacks) = @_;
 
-    $postponed_exit_code = 0 unless defined $postponed_exit_code;
+    $urpm::postponed_exit_code = 0 unless defined $urpm::postponed_exit_code;
 
     #- global boolean options
     ($auto_select, $no_install, $install_src, $clean, $noclean, $force, $parallel, $test) =
@@ -555,13 +555,13 @@ sub run {
 
     $callbacks->{completed} and $callbacks->{completed}->();
 
-    _finish($urpm, $state, $callbacks, \@errors, \@formatted_errors, $ask_unselect, $something_was_to_be_done, $postponed_exit_code);
+    _finish($urpm, $state, $callbacks, \@errors, \@formatted_errors, $ask_unselect, $something_was_to_be_done);
 
     $exit_code;
 }
 
 sub _finish {
-    my ($urpm, $state, $callbacks, $errors, $formatted_errors, $ask_unselect, $something_was_to_be_done, $postponed_exit_code) = @_;
+    my ($urpm, $state, $callbacks, $errors, $formatted_errors, $ask_unselect, $something_was_to_be_done) = @_;
 
     if ($nok) {
         $callbacks->{trans_error_summary} and $callbacks->{trans_error_summary}->($nok, $errors);
@@ -588,7 +588,7 @@ sub _finish {
                     }
                 }
                 $exit_code = 15 if our $expect_install;
-            } elsif ($test && $exit_code == 0 && $postponed_exit_code == 0) {
+            } elsif ($test && $exit_code == 0 && $urpm::postponed_exit_code == 0) {
                 #- Warning : the following message is parsed in urpm::parallel_*
                 print N("Installation is possible"), "\n";
             } else {

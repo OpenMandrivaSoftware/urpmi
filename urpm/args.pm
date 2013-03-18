@@ -328,7 +328,7 @@ my %options_spec = (
 		if (-r $x) { push @::files, $x }
 		else {
 		    print STDERR N("urpmq: cannot read rpm file \"%s\"\n", $x);
-		    $::postponed_code = 1;
+		    $urpm::postponed_code = 1;
 	        }
 	    } elsif ($x =~ /^--?(.+)/) { # unrecognized option
 		die "Unknown option: $1\n";
