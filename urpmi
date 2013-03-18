@@ -221,9 +221,6 @@ along with --bug.\n");
 }
 
 
-# Prepare exit code.  If you change this, the exiting with a failure and the message given will be postponed to the end of the overall processing.
-my $postponed_msg = N("While some packages may have been installed, there were failures.\n");
-my $postponed_code = 0;
 
 my @spec_files;
 # Process the rest of the arguments
@@ -543,8 +540,8 @@ that are older than the installed ones:\n%s", $list);
 	    or dudf_invoke($dudf, "dudf_exit", 17, $msg);
     }
     # Whatever option we selected, the overall installation should fail if some packages are unselected
-    $postponed_msg .= $msg."\n";
-    $postponed_code = 17;
+    $urpm::postponed_msg .= $msg . "\n";
+    $urpm::postponed_code = 17;
 }
 
 my @ask_unselect = urpm::select::unselected_packages($state);
@@ -745,9 +742,6 @@ unless ($env) {
     #- try to umount removable device which may have been mounted.
     urpm::removable::try_umounting_removables($urpm);
 }
-
-# Merge postponed exit code to the result of package installation.
-$exit_code ||= $postponed_code;
 
 # Merge postponed exit code to the result of package installation.
 $exit_code ||= $urpm::postponed_code;
