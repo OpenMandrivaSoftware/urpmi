@@ -1,3 +1,6 @@
+- library:
+  o restore main_window when global progress bar dialog is deleted
+
 Version 7.20 - 24 March 2013, by Per Øyvind Karlsen
 
 - merged all of changes from mageia's branch
