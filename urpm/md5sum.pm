@@ -1,7 +1,7 @@
 package urpm::md5sum; # $Id$
 
 use strict;
-use urpm::util;
+use urpm::util qw(cat_ file_size);
 use urpm::msg;
 
 

@@ -2,7 +2,7 @@ package urpm::parallel; # $Id$
 
 use strict;
 use urpm;
-use urpm::util;
+use urpm::util qw(any basename cat_);
 use urpm::msg;
 
 
