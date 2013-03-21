@@ -3,7 +3,7 @@ package urpm::media;
 # $Id$
 
 use strict;
-use urpm 'file_from_local_medium', 'is_local_medium';
+use urpm qw(file_from_local_medium is_local_medium);
 use urpm::msg;
 use urpm::util qw(any append_to_file basename cat_ difference2 dirname member output_safe begins_with copy_and_own file_size offset_pathname reduce_pathname);
 use urpm::removable;
