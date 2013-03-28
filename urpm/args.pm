@@ -103,6 +103,8 @@ my %options_spec = (
 	auto => sub { $urpm->{options}{auto} =  1 },
 	'allow-medium-change' => \$::allow_medium_change,
 	'auto-select' => \$::auto_select,
+	'force-req-update' => sub { $::force_req_update = 1; $urpm->{options}{'no-force-req-update'} = 0; },
+	'no-force-req-update' => sub { $::force_req_update = 0; },
 	'auto-update' => sub { $::auto_update = $::auto_select = 1 },
 	'auto-orphans' => \$options{auto_orphans},
 	'no-remove|no-uninstall' => \$::no_remove,

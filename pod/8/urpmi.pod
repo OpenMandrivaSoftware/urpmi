@@ -407,6 +407,18 @@ Upgrade only packages if the newer version has the same architecture as
 the one installed. Mostly useful on machines that support several
 architectures (32 and 64 bit).
 
+=item B<--force-req-update>
+Try to update all package requirements - that is, even if some requirements
+are already installed, look for their updates. This is the default behavior.
+
+This option is useful if you have 'no-force-req-update' set in
+urpmi.cfg, but want to enable update of package requires in particular
+run.
+
+=item B<--no-force-req-update>
+Do not update package requirements if they are already installed
+but updates are available.
+
 =item B<-a>
 
 If multiple packages match the given substring, install them all.
