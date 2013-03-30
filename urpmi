@@ -37,6 +37,7 @@ our $sortmedia = '';
 our $allow_medium_change = 0;
 our $auto_select = 0;
 our $auto_update = 0;
+our $force_req_update = 1;
 our $no_install = 0;
 our $no_remove = 0;
 our $install_src = 0;
@@ -98,6 +99,8 @@ usage:
 ") . N("  --no-install   - don't install packages (only download)
 ") . N("  --keep         - keep existing packages if possible, reject requested
                    packages that lead to removals.
+") . N("  --force-req-update  - Try to update all of package requires.
+") . N("  --no-force-req-update  - Do not try to update all of package requires.
 ") . N("  --split-level  - split in small transaction if more than given packages
                    are going to be installed or upgraded,
                    default is %d.
@@ -373,6 +376,9 @@ if ($urpm->{root}) {
 if ($auto_update && !$bug && !$env) {
     $urpm->{options}{'auto-update'} = 1;
 }
+if ($force_req_update && !$bug && !$env && !$urpm->{options}{'no-force-req-update'}) {
+    $urpm->{options}{'force-req-update'} = 1;
+}
 
 urpm::media::configure($urpm,
     excludemedia => $excludemedia,
@@ -515,6 +521,7 @@ if ($options{replacepkgs}) {
     nodeps => $urpm->{options}{'allow-nodeps'} || $urpm->{options}{'allow-force'},
     no_suggests => $urpm->{options}{'no-suggests'},
     priority_upgrade => $test || $env ? '' : $urpm->{options}{'priority-upgrade'},
+    force_req_update => $urpm->{options}{'force-req-update'},
     );
 }
 

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-31 16:36+0200\n"
+"POT-Creation-Date: 2013-03-28 15:47+0400\n"
 "PO-Revision-Date: 2011-05-17 17:08+0300\n"
 "Last-Translator: Jani Välimaa <wally@mandriva.org>\n"
 "Language-Team: Finnish <cooker-i18n@mandrivalinux.org>\n"
@@ -26,22 +26,22 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../gurpmi:32
+#: ../gurpmi:38
 #, c-format
 msgid "RPM installation"
 msgstr "RPM-pakettien asennus"
 
-#: ../gurpmi:46
+#: ../gurpmi:52
 #, c-format
 msgid "Error: unable to find file %s, will cancel operation"
 msgstr "Virhe: tiedostoa %s ei löydy, toimenpide peruutetaan"
 
-#: ../gurpmi:47 ../gurpmi2:187 ../gurpmi2:212
+#: ../gurpmi:53 ../gurpmi2:172 ../gurpmi2:202
 #, c-format
 msgid "_Ok"
 msgstr "_Ok"
 
-#: ../gurpmi:67
+#: ../gurpmi:73
 #, c-format
 msgid ""
 "You have selected a source package:\n"
@@ -63,7 +63,7 @@ msgstr ""
 "\n"
 "Mitä tehdään?"
 
-#: ../gurpmi:75 ../gurpmi:86
+#: ../gurpmi:81 ../gurpmi:92
 #, c-format
 msgid ""
 "You are about to install the following software packages on your computer:\n"
@@ -78,7 +78,7 @@ msgstr ""
 "\n"
 "Jatka?"
 
-#: ../gurpmi:81
+#: ../gurpmi:87
 #, c-format
 msgid ""
 "You are about to install the following software package on your computer:\n"
@@ -93,30 +93,30 @@ msgstr ""
 "\n"
 "Paketti voidaan myös vain tallentaa koneelle. Mitä tehdään?"
 
-#: ../gurpmi:99
+#: ../gurpmi:105
 #, c-format
 msgid "_Install"
 msgstr "_Asenna"
 
-#: ../gurpmi:100
+#: ../gurpmi:106
 #, c-format
 msgid "_Save"
 msgstr "_Tallenna"
 
-#: ../gurpmi:101 ../gurpmi2:187
+#: ../gurpmi:107 ../gurpmi2:172
 #, c-format
 msgid "_Cancel"
 msgstr "_Peruuta"
 
-#: ../gurpmi:109
+#: ../gurpmi:115
 #, c-format
 msgid "Choose location to save file"
 msgstr "Valitse tallennettavalle tiedostolle sijainti"
 
-#: ../gurpmi.pm:39 ../urpmi:78
-#, c-format
+#: ../gurpmi.pm:54
+#, fuzzy, c-format
 msgid ""
-"urpmi version %s\n"
+"gurpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
@@ -129,18 +129,18 @@ msgstr ""
 "\n"
 "Käyttö:\n"
 
-#: ../gurpmi.pm:45
+#: ../gurpmi.pm:60
 #, c-format
 msgid "Options:"
 msgstr "Valitsimet:"
 
-#: ../gurpmi.pm:46 ../urpme:46 ../urpmf:35 ../urpmi:83 ../urpmi.addmedia:55
-#: ../urpmi.recover:33 ../urpmi.removemedia:40 ../urpmi.update:32 ../urpmq:45
+#: ../gurpmi.pm:61 ../urpme:46 ../urpmf:35 ../urpmi:84 ../urpmi.addmedia:55
+#: ../urpmi.recover:33 ../urpmi.removemedia:40 ../urpmi.update:32 ../urpmq:47
 #, c-format
 msgid "  --help         - print this help message.\n"
 msgstr "  --help         - tulosta tämä viesti.\n"
 
-#: ../gurpmi.pm:47 ../urpmi:90
+#: ../gurpmi.pm:62 ../urpmi:91
 #, c-format
 msgid ""
 "  --auto         - non-interactive mode, assume default answers to "
@@ -149,7 +149,7 @@ msgstr ""
 "  --auto         - ei-interaktiivinen tila, vastaa kaikkiin kysymyksiin\n"
 "                   oletusarvon mukaisesti.\n"
 
-#: ../gurpmi.pm:48 ../urpmi:91 ../urpmq:52
+#: ../gurpmi.pm:63 ../urpmi:92 ../urpmq:54
 #, c-format
 msgid ""
 "  --auto-select  - automatically select packages to upgrade the system.\n"
@@ -157,14 +157,14 @@ msgstr ""
 "  --auto-select  - valitse automaattisesti saatavilla olevat\n"
 "                   päivitykset.\n"
 
-#: ../gurpmi.pm:49 ../urpme:50 ../urpmi:114 ../urpmq:68
+#: ../gurpmi.pm:64 ../urpme:50 ../urpmi:119 ../urpmq:70
 #, c-format
 msgid ""
 "  --force        - force invocation even if some packages do not exist.\n"
 msgstr ""
 "  --force        - pakota asennus, vaikka joitakin paketteja puuttuu.\n"
 
-#: ../gurpmi.pm:50 ../urpmi:145
+#: ../gurpmi.pm:65 ../urpmi:150
 #, c-format
 msgid ""
 "  --verify-rpm   - verify rpm signature before installation\n"
@@ -173,14 +173,14 @@ msgstr ""
 "  --verify-rpm   - varmista paketin allekirjoitus ennen asennusta\n"
 "                   (oletuksena käytössä, --no-verify-rpm poistaa käytöstä).\n"
 
-#: ../gurpmi.pm:52 ../urpmf:41 ../urpmi:84 ../urpmq:47
+#: ../gurpmi.pm:67 ../urpmf:41 ../urpmi:85 ../urpmq:49
 #, c-format
 msgid "  --media        - use only the given media, separated by comma.\n"
 msgstr ""
 "  --media        - käytä ainoastaan annettuja pilkuilla eroteltuja "
 "medioita.\n"
 
-#: ../gurpmi.pm:53 ../urpmi:168
+#: ../gurpmi.pm:68 ../urpmi:173
 #, c-format
 msgid "  -p             - allow search in provides to find package.\n"
 msgstr ""
@@ -188,26 +188,26 @@ msgstr ""
 "löytämiseksi\n"
 "                   (\"Provides\").\n"
 
-#: ../gurpmi.pm:54 ../urpmi:169
+#: ../gurpmi.pm:69 ../urpmi:174
 #, c-format
 msgid "  -P             - do not search in provides to find package.\n"
 msgstr ""
 "  -P             - älä etsi \"Tarjoaa\"-tiedoista paketin löytämiseksi\n"
 "                   (\"Provides\").\n"
 
-#: ../gurpmi.pm:55 ../urpmi:121 ../urpmq:71
+#: ../gurpmi.pm:70 ../urpmi:126 ../urpmq:73
 #, c-format
 msgid "  --root         - use another root for rpm installation.\n"
 msgstr "  --root         - käytä määriteltyä juurta pakettien asentamiseen.\n"
 
-#: ../gurpmi.pm:56 ../urpmi:147
+#: ../gurpmi.pm:71 ../urpmi:152
 #, c-format
 msgid ""
 "  --test         - only verify if the installation can be achieved "
 "correctly.\n"
 msgstr "  --test         - suorita vain asennuksen onnistumisen tarkistus.\n"
 
-#: ../gurpmi.pm:57 ../urpmi:87
+#: ../gurpmi.pm:72 ../urpmi:88
 #, c-format
 msgid ""
 "  --searchmedia  - use only the given media to search requested packages.\n"
@@ -215,83 +215,78 @@ msgstr ""
 "  --searchmedia  - käytä ainoastaan annettuja medioita pyydetyn paketin\n"
 "                   etsimiseen.\n"
 
-#: ../gurpmi.pm:100
+#: ../gurpmi.pm:119
 #, c-format
 msgid "No packages specified"
 msgstr "Paketteja ei määritelty"
 
-#: ../gurpmi2:54
-#, c-format
-msgid "Please wait..."
-msgstr "Odota hetki..."
-
-#: ../gurpmi2:63
+#: ../gurpmi2:42
 #, c-format
 msgid "Must be root"
 msgstr "On oltava pääkäyttäjän oikeudet"
 
-#: ../gurpmi2:70
+#: ../gurpmi2:45 ../urpm.pm:23
 #, c-format
-msgid "Distribution Upgrade"
-msgstr "Jakelun päivitys"
+msgid "While some packages may have been installed, there were failures.\n"
+msgstr ""
 
-#: ../gurpmi2:70
-#, c-format
-msgid "Packages installation"
-msgstr "Pakettien asennus"
-
-#: ../gurpmi2:97
+#: ../gurpmi2:76
 #, c-format
 msgid "Preparing packages installation..."
 msgstr "Valmistellaan ohjelmistopakettien asennusta..."
 
-#: ../gurpmi2:111
+#: ../gurpmi2:89 ../gurpmi2:95 ../urpmi:559
 #, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
-"%s\n"
-"Continue installation anyway?"
+"%s"
 msgstr ""
 "Joitakin haluttuja paketteja ei voida asentaa:\n"
-"%s\n"
-"Jatka muiden pakettien asentamista?"
+"%s"
 
-#: ../gurpmi2:146
+#: ../gurpmi2:102
+#, fuzzy, c-format
+msgid "Continue installation anyway?"
+msgstr ""
+"\n"
+"Jatka muiden pakettien asennusta?"
+
+#: ../gurpmi2:131
 #, c-format
 msgid "Warning"
 msgstr "Varoitus"
 
-#: ../gurpmi2:146 ../urpmi:665
+#: ../gurpmi2:131
 #, c-format
 msgid "Ok"
 msgstr "Ok"
 
-#: ../gurpmi2:183
+#: ../gurpmi2:168
 #, c-format
 msgid " (to upgrade)"
 msgstr " (päivitettävä)"
 
-#: ../gurpmi2:184
+#: ../gurpmi2:169
 #, c-format
 msgid " (to install)"
 msgstr " (asennettava)"
 
-#: ../gurpmi2:187
+#: ../gurpmi2:172
 #, c-format
 msgid "Package choice"
 msgstr "Pakettivalinta"
 
-#: ../gurpmi2:188
+#: ../gurpmi2:173
 #, c-format
 msgid "One of the following packages is needed:"
 msgstr "Jokin seuraavista paketeista tarvitaan:"
 
-#: ../gurpmi2:213
+#: ../gurpmi2:203
 #, c-format
 msgid "_Abort"
 msgstr "_Hylkää"
 
-#: ../gurpmi2:248
+#: ../gurpmi2:238
 #, c-format
 msgid ""
 "The following packages have to be removed for others to be upgraded:\n"
@@ -302,94 +297,85 @@ msgstr ""
 "%s\n"
 "Jatka asennusta?"
 
-#: ../gurpmi2:267 ../urpmi:630
+#: ../gurpmi2:249 ../urpmi:675
+#, c-format
+msgid "%s of additional disk space will be used."
+msgstr "Pakettien asentaminen vie %s lisää levytilaa."
+
+#: ../gurpmi2:250 ../urpmi:676
+#, c-format
+msgid "%s of disk space will be freed."
+msgstr "Levytilaa vapautuu %s."
+
+#: ../gurpmi2:251 ../urpmi:677
+#, c-format
+msgid "%s of packages will be retrieved."
+msgstr "Noudetaan yhteensä %s."
+
+#: ../gurpmi2:252 ../urpmi:678
+#, c-format
+msgid "Proceed with the installation of one package?"
+msgid_plural "Proceed with the installation of the %d packages?"
+msgstr[0] "Asennetaanko valittu paketti?"
+msgstr[1] "Asennetaanko valitut %d pakettia?"
+
+#: ../gurpmi2:258 ../urpmi:666
 #, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
 msgstr "Riippuvuuksien täyttämiseksi seuraava paketti asennetaan:"
 
-#: ../gurpmi2:268 ../urpmi:631
+#: ../gurpmi2:259 ../urpmi:667
 #, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
 msgstr "Riippuvuuksien täyttämiseksi seuraavat paketit asennetaan:"
 
-#: ../gurpmi2:270
-#, c-format
-msgid "(%d package, %d MB)"
-msgid_plural "(%d packages, %d MB)"
-msgstr[0] "(%d paketti, %d Mt)"
-msgstr[1] "(%d pakettia, %d Mt)"
-
-#: ../gurpmi2:278 ../urpm/main_loop.pm:49
+#: ../gurpmi2:269 ../urpm/main_loop.pm:468
 #, c-format
 msgid "unable to get source packages, aborting"
 msgstr "Lähdekoodipaketteja ei voida hakea, keskeytetään asennus"
 
-#: ../gurpmi2:310 ../urpm/install.pm:80
-#, c-format
-msgid "Preparing..."
-msgstr "Valmistellaan..."
-
-#: ../gurpmi2:316
-#, c-format
-msgid "Installing package `%s' (%s/%s)..."
-msgstr "Asennetaan pakettia %s (%s / %s)..."
-
-#: ../gurpmi2:334 ../urpmi:660
+#: ../gurpmi2:283 ../urpmi:696
 #, c-format
 msgid "Please insert the medium named \"%s\""
 msgstr "Aseta media \"%s\" asemaan"
 
-#: ../gurpmi2:348
-#, c-format
-msgid "Downloading package `%s'..."
-msgstr "Ladataan tiedostoa %s..."
-
-#: ../gurpmi2:360 ../urpm.pm:346 ../urpm/download.pm:836
-#: ../urpm/get_pkgs.pm:262 ../urpm/media.pm:981 ../urpm/media.pm:1493
-#: ../urpm/media.pm:1644
-#, c-format
-msgid "...retrieving failed: %s"
-msgstr "...noutaminen epäonnistui: %s"
-
-#: ../gurpmi2:376
+#: ../gurpmi2:312
 #, c-format
 msgid "_Done"
 msgstr "_Valmis"
 
-#: ../gurpmi2:393
+#: ../gurpmi2:329 ../urpm/main_loop.pm:82
 #, c-format
 msgid ""
 "Installation failed, some files are missing:\n"
-"%s\n"
-"You may want to update your urpmi database"
+"%s"
 msgstr ""
 "Asennus epäonnistui, joitakin tiedostoja puuttuu:\n"
-"%s\n"
-"Urpmi-tietokanta tulisi päivittää"
+"%s"
 
-#: ../gurpmi2:399 ../urpm/main_loop.pm:292 ../urpm/main_loop.pm:335
+#: ../gurpmi2:332
+#, fuzzy, c-format
+msgid "You may want to update your urpmi database."
+msgstr "Urpmi-tietokanta tulisi päivittää."
+
+#: ../gurpmi2:336 ../urpm/main_loop.pm:287 ../urpm/main_loop.pm:580
 #, c-format
 msgid "Installation failed:"
 msgstr "Asennus epäonnistui:"
 
-#: ../gurpmi2:404
+#: ../gurpmi2:341
 #, c-format
 msgid "The package(s) are already installed"
 msgstr "Paketit on jo asennettu"
 
-#: ../gurpmi2:406
+#: ../gurpmi2:343
 #, c-format
 msgid "Installation finished"
 msgstr "Asennus on valmis"
 
-#: ../gurpmi2:407 ../urpme:170
-#, c-format
-msgid "removing %s"
-msgstr "Poistetaan %s"
-
-#: ../gurpmi2:415 ../urpmi:731
+#: ../gurpmi2:359 ../urpmi:758
 #, c-format
 msgid "restarting urpmi"
 msgstr "Käynnistetään urpmi uudelleen"
@@ -428,7 +414,7 @@ msgstr "                   - oletus on %s.\n"
 msgid "   -f             - output rpm full name (NVRA)\n"
 msgstr "   -f             - tulosta koko nimi (NVRA).\n"
 
-#: ../rurpmi:11 ../urpmi:293
+#: ../rurpmi:11 ../urpmi:300
 #, c-format
 msgid "Only superuser is allowed to install packages"
 msgstr "Vain pääkäyttäjä voi asentaa paketteja"
@@ -438,144 +424,171 @@ msgstr "Vain pääkäyttäjä voi asentaa paketteja"
 msgid "Running urpmi in restricted mode..."
 msgstr "Suoritetaan urpmi rajoitetussa tilassa..."
 
-#: ../urpm.pm:107
+#: ../urpm.pm:195
 #, c-format
 msgid "fail to create directory %s"
 msgstr "Hakemiston %s luonti epäonnistui"
 
-#: ../urpm.pm:108
+#: ../urpm.pm:196
 #, c-format
 msgid "invalid owner for directory %s"
 msgstr "Hakemiston %s omistaja on virheellinen"
 
-#: ../urpm.pm:132
+#: ../urpm.pm:239
 #, c-format
 msgid "Can not download packages into %s"
 msgstr "Paketteja ei voida ladata hakemistoon %s"
 
-#: ../urpm.pm:147
+#: ../urpm.pm:255
 #, c-format
 msgid "Environment directory %s does not exist"
 msgstr "Ympäristökansiota %s ei ole olemassa"
 
-#: ../urpm.pm:148 ../urpmf:248 ../urpmq:174
+#: ../urpm.pm:256 ../urpmf:248 ../urpmq:176
 #, c-format
 msgid "using specific environment on %s\n"
 msgstr "Käytetään määrättyä ympäristöä kohteelle %s\n"
 
-#: ../urpm.pm:321
+#: ../urpm.pm:435
 #, c-format
 msgid "unable to open rpmdb"
 msgstr "Rpm-tietokantaa ei voitu avata"
 
-#: ../urpm.pm:335
+#: ../urpm.pm:454
 #, c-format
 msgid "invalid rpm file name [%s]"
 msgstr "Virheellinen rpm-paketin nimi [%s]"
 
-#: ../urpm.pm:341
+#: ../urpm.pm:460
 #, c-format
 msgid "retrieving rpm file [%s] ..."
 msgstr "Noudetaan rpm-pakettia [%s]..."
 
-#: ../urpm.pm:343 ../urpm/get_pkgs.pm:260
+#: ../urpm.pm:462 ../urpm/get_pkgs.pm:276
 #, c-format
 msgid "...retrieving done"
 msgstr "...noudettu"
 
-#: ../urpm.pm:351
+#: ../urpm.pm:465 ../urpm/download.pm:868 ../urpm/get_pkgs.pm:278
+#: ../urpm/media.pm:1079 ../urpm/media.pm:1597 ../urpm/media.pm:1748
+#, c-format
+msgid "...retrieving failed: %s"
+msgstr "...noutaminen epäonnistui: %s"
+
+#: ../urpm.pm:470
 #, c-format
 msgid "unable to access rpm file [%s]"
 msgstr "Rpm-pakettia [%s] ei voitu käsitellä"
 
-#: ../urpm.pm:356
+#: ../urpm.pm:475
 #, c-format
 msgid "unable to parse spec file %s [%s]"
 msgstr "Spec-tiedostoa %s [%s] ei voitu tulkita"
 
-#: ../urpm.pm:364
+#: ../urpm.pm:483
 #, c-format
 msgid "unable to register rpm file"
 msgstr "Rpm-paketin rekisteröinti epäonnistui"
 
-#: ../urpm.pm:366
+#: ../urpm.pm:485
 #, c-format
 msgid "Incompatible architecture for rpm [%s]"
 msgstr "Paketin [%s] laitteistoarkkitehtuuri ei ole yhteensopiva"
 
-#: ../urpm.pm:370
+#: ../urpm.pm:489
 #, c-format
 msgid "error registering local packages"
 msgstr "Virhe rekisteröitäessä paikallisia paketteja"
 
-#: ../urpm.pm:458
+#: ../urpm.pm:601
 #, c-format
 msgid "This operation is forbidden while running in restricted mode"
 msgstr "Toiminto on kielletty, koska ohjelmaa käytetään rajoitetussa tilassa"
 
-#: ../urpm/args.pm:166 ../urpm/args.pm:175
+#: ../urpm/args.pm:168 ../urpm/args.pm:177
 #, c-format
 msgid "bad proxy declaration on command line\n"
 msgstr "Virheellinen välityspalvelinmääritys komentorivillä\n"
 
-#: ../urpm/args.pm:323
+#: ../urpm/args.pm:332
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq: rpm-pakettia %s ei voida lukea\n"
 
-#: ../urpm/args.pm:405
+#: ../urpm/args.pm:416
 #, c-format
 msgid "unexpected expression %s"
 msgstr "Odottamaton hakulauseke %s"
 
-#: ../urpm/args.pm:406
+#: ../urpm/args.pm:417
 #, c-format
 msgid "missing expression before %s"
 msgstr "Puuttuva hakulauseke ennen %s"
 
-#: ../urpm/args.pm:412
+#: ../urpm/args.pm:423
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr "Odottamaton hakulauseke %s (ehdotus: käytä valitsimia -a tai -o)"
 
-#: ../urpm/args.pm:416
+#: ../urpm/args.pm:427
 #, c-format
 msgid "no expression to close"
 msgstr "Ei suljettavaa hakulauseketta"
 
-#: ../urpm/args.pm:425
+#: ../urpm/args.pm:436
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
 "urpmf odottaa oletuksena säännöllistä lauseketta. Käytä valitsinta \"--"
 "literal\""
 
-#: ../urpm/args.pm:499
+#: ../urpm/args.pm:510
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr "Chroot-kansiota ei ole olemassa"
 
-#: ../urpm/args.pm:522
+#: ../urpm/args.pm:533
 #, c-format
 msgid "Can't use %s without %s"
 msgstr "Valitsinta %s ei voida käyttää ilman valitsinta %s"
 
-#: ../urpm/args.pm:525 ../urpm/args.pm:528 ../urpmq:166
+#: ../urpm/args.pm:536 ../urpm/args.pm:539 ../urpmq:168
 #, c-format
 msgid "Can't use %s with %s"
 msgstr "Valitsinta %s ei voida käyttää valitsimen %s kanssa"
 
-#: ../urpm/args.pm:536
+#: ../urpm/args.pm:547
 #, c-format
 msgid "Too many arguments\n"
 msgstr "Liian monta argumenttia\n"
 
-#: ../urpm/bug_report.pm:55 ../urpmi:283
+#: ../urpm/args.pm:555
+#, fuzzy, c-format
+msgid ""
+"%s version %s\n"
+"%s\n"
+"This is free software and may be redistributed under the terms of the GNU "
+"GPL.\n"
+"\n"
+"usage:\n"
+msgstr ""
+"urpmi versio %s\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
+"Tämä on vapaa ohjelmisto, jota saa levittää GNU GPL -lisenssin mukaisesti.\n"
+"\n"
+"Käyttö:\n"
+
+#: ../urpm/args.pm:561
+#, c-format
+msgid "Copyright (C) %s by %s"
+msgstr ""
+
+#: ../urpm/bug_report.pm:67 ../urpmi:290
 #, c-format
 msgid "Copying failed"
 msgstr "Kopiointi epäonnistui"
 
-#: ../urpm/cdrom.pm:67
+#: ../urpm/cdrom.pm:80
 #, c-format
 msgid ""
 "You must mount CD-ROM yourself (or install perl-Hal-Cdroms to have it done "
@@ -584,179 +597,174 @@ msgstr ""
 "CD/DVD-levy täytyy liittää tiedostojärjestelmään itse (tai asentaa paketti "
 "perl-Hal-Cdroms automaattista liittämistä varten)."
 
-#: ../urpm/cdrom.pm:69
+#: ../urpm/cdrom.pm:82
 #, c-format
 msgid "Udisks daemon (udisks-daemon) is not running or not ready"
 msgstr "Udisks-taustaprosessi (udisks-daemon) ei ole käynnissä tai valmis."
 
-#: ../urpm/cdrom.pm:162 ../urpm/cdrom.pm:167
+#: ../urpm/cdrom.pm:174 ../urpm/cdrom.pm:179
 #, c-format
 msgid "medium \"%s\" is not available"
 msgstr "Media \"%s\" ei ole käytettävissä"
 
-#: ../urpm/cdrom.pm:206
+#: ../urpm/cdrom.pm:218
 #, c-format
 msgid "unable to read rpm file [%s] from medium \"%s\""
 msgstr "Rpm-pakettia [%s] ei voitu lukea medialta \"%s\""
 
-#: ../urpm/cfg.pm:81
+#: ../urpm/cfg.pm:76
 #, c-format
 msgid "syntax error in config file at line %s"
 msgstr "Syntaksivirhe asetustiedoston rivillä %s"
 
-#: ../urpm/cfg.pm:114
+#: ../urpm/cfg.pm:109
 #, c-format
 msgid "unable to read config file [%s]"
 msgstr "Asetustiedostoa [%s] ei voitu lukea"
 
-#: ../urpm/cfg.pm:140
+#: ../urpm/cfg.pm:135
 #, c-format
 msgid "medium `%s' is defined twice, aborting"
 msgstr "Media \"%s\" on asetettu kahdesti, keskeytetään"
 
-#: ../urpm/cfg.pm:251 ../urpm/media.pm:541
+#: ../urpm/cfg.pm:249 ../urpm/media.pm:556
 #, c-format
 msgid "unable to write config file [%s]"
 msgstr "Asetustiedostoon [%s] ei voitu kirjoittaa"
 
-#: ../urpm/download.pm:82
+#: ../urpm/download.pm:95
 #, c-format
 msgid "%s is not available, falling back on %s"
 msgstr "%s ei ole saatavilla, käytetään %s"
 
-#: ../urpm/download.pm:167
+#: ../urpm/download.pm:180
 #, c-format
 msgid "can not read proxy settings (not enough rights to read %s)"
 msgstr ""
 "Välityspalvelimen asetuksia ei voida lukea (oikeudet eivät riitä tiedoston "
 "%s lukemiseen)"
 
-#: ../urpm/download.pm:192
+#: ../urpm/download.pm:210
 #, c-format
 msgid "Please enter your credentials for accessing proxy\n"
 msgstr "Syötä välityspalvelimen käyttämiseen tarvittavat tiedot.\n"
 
-#: ../urpm/download.pm:193
+#: ../urpm/download.pm:211
 #, c-format
 msgid "User name:"
 msgstr "Käyttäjätunnus:"
 
-#: ../urpm/download.pm:193
+#: ../urpm/download.pm:211
 #, c-format
 msgid "Password:"
 msgstr "Salasana:"
 
-#: ../urpm/download.pm:269
+#: ../urpm/download.pm:297
 #, c-format
 msgid "Unknown webfetch `%s' !!!\n"
 msgstr "Tuntematon lataaja \"%s\" !!!\n"
 
-#: ../urpm/download.pm:277
+#: ../urpm/download.pm:305
 #, c-format
 msgid "%s failed: exited with signal %d"
 msgstr "%s epäonnistui: lopetti signaalilla %d"
 
-#: ../urpm/download.pm:278
+#: ../urpm/download.pm:306
 #, c-format
 msgid "%s failed: exited with %d"
 msgstr "%s epäonnistui: lopetti arvolla %d"
 
-#: ../urpm/download.pm:312
+#: ../urpm/download.pm:340
 #, c-format
 msgid "copy failed"
 msgstr "Lataaminen epäonnistui"
 
-#: ../urpm/download.pm:318
+#: ../urpm/download.pm:346
 #, c-format
 msgid "wget is missing\n"
 msgstr "wget puuttuu\n"
 
-#: ../urpm/download.pm:385
+#: ../urpm/download.pm:413
 #, c-format
 msgid "curl is missing\n"
 msgstr "curl puuttuu\n"
 
-#: ../urpm/download.pm:521
-#, c-format
-msgid "curl failed: upload canceled\n"
-msgstr "curl epäonnistui: siirtäminen peruutettu\n"
-
-#: ../urpm/download.pm:522
+#: ../urpm/download.pm:548
 #, c-format
 msgid "curl failed: download canceled\n"
 msgstr "curl epäonnistui: lataaminen peruutettu\n"
 
-#: ../urpm/download.pm:557
+#: ../urpm/download.pm:583
 #, c-format
 msgid "rsync is missing\n"
 msgstr "rsync puuttuu\n"
 
-#: ../urpm/download.pm:625
+#: ../urpm/download.pm:651
 #, c-format
 msgid "ssh is missing\n"
 msgstr "ssh puuttuu\n"
 
-#: ../urpm/download.pm:644
+#: ../urpm/download.pm:670
 #, c-format
 msgid "prozilla is missing\n"
 msgstr "prozilla puuttuu\n"
 
-#: ../urpm/download.pm:660
+#: ../urpm/download.pm:686
 #, c-format
 msgid "Couldn't execute prozilla\n"
 msgstr "Ohjelmaa prozilla ei voitu suorittaa\n"
 
-#: ../urpm/download.pm:670
+#: ../urpm/download.pm:696
 #, c-format
 msgid "aria2 is missing\n"
 msgstr "aria2 puuttuu\n"
 
-#: ../urpm/download.pm:718
+#: ../urpm/download.pm:745
 #, c-format
 msgid "Failed to download %s"
 msgstr "Tiedoston %s lataaminen epäonnistui"
 
-#: ../urpm/download.pm:813
+#: ../urpm/download.pm:840
 #, c-format
 msgid "        %s%% of %s completed, ETA = %s, speed = %s"
 msgstr "        %s%% valmiina, koko %s, aikaa jäljellä %s, nopeus %s"
 
-#: ../urpm/download.pm:814
+#: ../urpm/download.pm:841
 #, c-format
 msgid "        %s%% completed, speed = %s"
 msgstr "        %s%% valmis, nopeus %s"
 
-#: ../urpm/download.pm:888
+#: ../urpm/download.pm:926
 #, c-format
 msgid "retrieving %s"
 msgstr "noudetaan %s"
 
-#: ../urpm/download.pm:895
+#: ../urpm/download.pm:937
 #, c-format
 msgid "retrieved %s"
 msgstr "noudettiin %s"
 
-#: ../urpm/download.pm:959
+#: ../urpm/download.pm:999
 #, c-format
 msgid "unknown protocol defined for %s"
 msgstr "Määritelty tuntematon protokolla kohteelle %s"
 
-#: ../urpm/download.pm:971
+#: ../urpm/download.pm:1013
 #, c-format
 msgid "no webfetch found, supported webfetch are: %s\n"
 msgstr "Yhtään latausohjelmaa ei löytynyt, tuetut ohjelmat: %s\n"
 
-#: ../urpm/download.pm:988
+#: ../urpm/download.pm:1028
 #, c-format
 msgid "unable to handle protocol: %s"
 msgstr "Protokollaa ei voida käsitellä: %s"
 
-#: ../urpm/dudf.pm:72 ../urpm/msg.pm:76 ../urpmi:528 ../urpmi:544 ../urpmi:650
+#: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:544 ../urpmi:563 ../urpmi:686
 #, c-format
 msgid "Nn"
 msgstr "EeNn"
 
-#: ../urpm/dudf.pm:73
+#: ../urpm/dudf.pm:72
 #, c-format
 msgid ""
 "A problem occurred. You can contribute to the improvement of the Mandriva "
@@ -768,56 +776,56 @@ msgid ""
 "http://doc4.mandriva.org/bin/dudf/.\n"
 msgstr ""
 
-#: ../urpm/dudf.pm:74
+#: ../urpm/dudf.pm:73
 #, c-format
 msgid "Do you want to generate and upload a report?"
 msgstr "Luodaanko ja siirretäänkö raportti?"
 
-#: ../urpm/dudf.pm:80 ../urpmi:530 ../urpmi:545 ../urpmi:651
+#: ../urpm/dudf.pm:79 ../urpmi:546 ../urpmi:565 ../urpmi:687
 #: ../urpmi.addmedia:136
 #, c-format
 msgid " (Y/n) "
 msgstr " (K/e) "
 
-#: ../urpm/dudf.pm:220
-#, c-format
+#: ../urpm/dudf.pm:219
+#, fuzzy, c-format
 msgid ""
 "# Here are logs of your DUDF uploads.\n"
 "# Line format is : <date time of generation> <uid>\n"
 "# You can use uids to see the content of your uploads at this url :\n"
-"# http://dudf.forge.mandriva.com/\n"
+"# %s"
 msgstr ""
 "# DUFD-siirron lokit.\n"
 "# Rivit ovat muotoa <luontipäivämäärä> <uid>.\n"
 "# Siirron sisällön näkee antamalla uid:n osoitteessa\n"
 "# http://dudf.forge.mandriva.com/\n"
 
-#: ../urpm/dudf.pm:276 ../urpm/dudf.pm:322
+#: ../urpm/dudf.pm:275 ../urpm/dudf.pm:321
 #, c-format
 msgid "curl is missing, cannot upload DUDF file.\n"
 msgstr "curl puuttuu, DUFD-tiedostoa ei voida siirtää.\n"
 
-#: ../urpm/dudf.pm:279
+#: ../urpm/dudf.pm:278
 #, c-format
 msgid "Compressing DUDF data... "
 msgstr "Pakataan DUDF-dataa..."
 
-#: ../urpm/dudf.pm:281 ../urpm/dudf.pm:282
+#: ../urpm/dudf.pm:280 ../urpm/dudf.pm:281
 #, c-format
 msgid "NOT OK\n"
 msgstr "EI OK\n"
 
-#: ../urpm/dudf.pm:290 ../urpm/dudf.pm:476
+#: ../urpm/dudf.pm:289 ../urpm/dudf.pm:475
 #, c-format
 msgid "OK\n"
 msgstr "OK\n"
 
-#: ../urpm/dudf.pm:292
+#: ../urpm/dudf.pm:291
 #, c-format
 msgid "Uploading DUDF data:\n"
 msgstr "Siirretään DUDF-dataa palvelimelle:\n"
 
-#: ../urpm/dudf.pm:310
+#: ../urpm/dudf.pm:309
 #, c-format
 msgid ""
 "\n"
@@ -826,7 +834,7 @@ msgstr ""
 "\n"
 "Komento:"
 
-#: ../urpm/dudf.pm:315
+#: ../urpm/dudf.pm:314
 #, c-format
 msgid ""
 "\n"
@@ -837,7 +845,7 @@ msgstr ""
 "DUDF-raportti löytyy osoitteesta\n"
 "\t"
 
-#: ../urpm/dudf.pm:318
+#: ../urpm/dudf.pm:317
 #, c-format
 msgid ""
 "You can access a log of your uploads in\n"
@@ -846,12 +854,12 @@ msgstr ""
 "Tiedonsiirron lokit löytyy tiedostosta\n"
 "\t"
 
-#: ../urpm/dudf.pm:325
+#: ../urpm/dudf.pm:324
 #, c-format
 msgid "Testing synthesis file presence ..."
 msgstr "Tutkitaan synthesis-tiedoston olemassaoloa ..."
 
-#: ../urpm/dudf.pm:344
+#: ../urpm/dudf.pm:343
 #, c-format
 msgid ""
 "\n"
@@ -862,7 +870,7 @@ msgstr ""
 "Synthesis-tiedosto (media %s, %s) on jo olemassa Mandriva DUDF -"
 "palvelimella.\n"
 
-#: ../urpm/dudf.pm:346
+#: ../urpm/dudf.pm:345
 #, c-format
 msgid ""
 "\n"
@@ -871,7 +879,7 @@ msgstr ""
 "\n"
 "Siirretään synthesis-tiedostoa ..."
 
-#: ../urpm/dudf.pm:364
+#: ../urpm/dudf.pm:363
 #, c-format
 msgid ""
 "\n"
@@ -881,7 +889,7 @@ msgstr ""
 "Synthesis-tiedosto siirrettiin onnistuneesti. Tiedoston voi ladata "
 "osoitteesta"
 
-#: ../urpm/dudf.pm:421
+#: ../urpm/dudf.pm:420
 #, c-format
 msgid ""
 "\n"
@@ -890,143 +898,134 @@ msgstr ""
 "\n"
 "Luodaan DUDF-raporttia... "
 
-#: ../urpm/get_pkgs.pm:16
+#: ../urpm/get_pkgs.pm:29
 #, c-format
 msgid "cleaning %s and %s"
 msgstr "Tyhjennetään %s ja %s"
 
-#: ../urpm/get_pkgs.pm:128
+#: ../urpm/get_pkgs.pm:141
 #, c-format
 msgid "package %s is not found."
 msgstr "Pakettia %s ei löytynyt."
 
-#: ../urpm/get_pkgs.pm:253
+#: ../urpm/get_pkgs.pm:269
 #, c-format
 msgid "retrieving rpm files from medium \"%s\"..."
 msgstr "Noudetaan rpm-paketteja medialta \"%s\"..."
 
-#: ../urpm/install.pm:86
+#: ../urpm/install.pm:106
 #, c-format
-msgid "[repackaging]"
-msgstr "[uudelleenpaketoidaan]"
+msgid "Preparing..."
+msgstr "Valmistellaan..."
 
-#: ../urpm/install.pm:181
+#: ../urpm/install.pm:115 ../urpme:172
+#, c-format
+msgid "removing %s"
+msgstr "Poistetaan %s"
+
+#: ../urpm/install.pm:218
 #, c-format
 msgid "unable to extract rpm from delta-rpm package %s"
 msgstr "Paketin purkaminen Delta-RPM-paketista %s ei onnistu"
 
-#: ../urpm/install.pm:206
+#: ../urpm/install.pm:245
+#, c-format
+msgid "unable to install package %s"
+msgstr "Pakettia %s ei voitu asentaa"
+
+#: ../urpm/install.pm:248
+#, c-format
+msgid "removing bad rpm (%s) from %s"
+msgstr "Poistetaan viallinen paketti (%s) kansiosta %s"
+
+#: ../urpm/install.pm:249 ../urpm/install.pm:377
+#, c-format
+msgid "removing %s failed: %s"
+msgstr "Paketin %s poistaminen epäonnistui: %s"
+
+#: ../urpm/install.pm:299
+#, c-format
+msgid "removing package %s"
+msgstr "Poistetaan paketti %s"
+
+#: ../urpm/install.pm:346
 #, c-format
 msgid ""
 "created transaction for installing on %s (remove=%d, install=%d, upgrade=%d)"
 msgstr ""
 "Luotiin asennustapahtuma kohteelle %s (poisto=%d, asennus=%d, päivitys=%d)"
 
-#: ../urpm/install.pm:209
+#: ../urpm/install.pm:349
 #, c-format
 msgid "unable to create transaction"
 msgstr "Tapahtumaa ei voitu luoda"
 
-#: ../urpm/install.pm:232
-#, c-format
-msgid "unable to install package %s"
-msgstr "Pakettia %s ei voitu asentaa"
-
-#: ../urpm/install.pm:235
-#, c-format
-msgid "removing bad rpm (%s) from %s"
-msgstr "Poistetaan viallinen paketti (%s) kansiosta %s"
-
-#: ../urpm/install.pm:236 ../urpm/install.pm:313
-#, c-format
-msgid "removing %s failed: %s"
-msgstr "Paketin %s poistaminen epäonnistui: %s"
-
-#: ../urpm/install.pm:283
-#, c-format
-msgid "Removing package %s"
-msgstr "Poistetaan paketti %s"
-
-#: ../urpm/install.pm:284
-#, c-format
-msgid "removing package %s"
-msgstr "Poistetaan paketti %s"
-
-#: ../urpm/install.pm:311
+#: ../urpm/install.pm:375
 #, c-format
 msgid "removing installed rpms (%s) from %s"
 msgstr "Poistetaan asennetut paketit (%s) kansiosta %s"
 
-#: ../urpm/install.pm:320
+#: ../urpm/install.pm:384
 #, c-format
 msgid "More information on package %s"
 msgstr "Lisätietoja paketista %s"
 
-#: ../urpm/ldap.pm:71
+#: ../urpm/ldap.pm:44
 #, c-format
 msgid "Cannot create ldap cache directory"
 msgstr "LDAP-välimuistikansiota ei voitu luoda"
 
-#: ../urpm/ldap.pm:73
+#: ../urpm/ldap.pm:50
 #, c-format
 msgid "Cannot write cache file for ldap\n"
 msgstr "LDAP-välimuistitiedostoa ei voitu kirjoittaa\n"
 
-#: ../urpm/ldap.pm:162
+#: ../urpm/ldap.pm:179
 #, c-format
 msgid "No server defined, missing uri or host"
 msgstr "Palvelinta ei ole asetettu tai verkko-osoite puuttuu"
 
-#: ../urpm/ldap.pm:163
+#: ../urpm/ldap.pm:180
 #, c-format
 msgid "No base defined"
 msgstr "Juurta ei ole määritelty"
 
-#: ../urpm/ldap.pm:173 ../urpm/ldap.pm:176
+#: ../urpm/ldap.pm:190 ../urpm/ldap.pm:193
 #, c-format
 msgid "Cannot connect to ldap uri:"
 msgstr "Ei saada yhteyttä LDAP-osoitteeseen:"
 
-#: ../urpm/lock.pm:75
-#, c-format
-msgid "%s database is locked. Waiting..."
-msgstr "%s-tietokanta on lukittu. Odotetaan..."
-
-#: ../urpm/lock.pm:76
-#, c-format
-msgid "aborting"
-msgstr "Keskeytetään"
-
-#: ../urpm/lock.pm:83
+#: ../urpm/lock.pm:99
 #, c-format
 msgid "%s database is locked, process %d is already using it"
 msgstr "%s-tietokanta on lukittu, prosessi %d käyttää sitä"
 
-#: ../urpm/lock.pm:85
+#: ../urpm/lock.pm:101
 #, c-format
 msgid "%s database is locked (another program is already using it)"
 msgstr "%s-tietokanta on lukittu (toisen prosessin käytössä)"
 
-#: ../urpm/main_loop.pm:79
+#: ../urpm/lock.pm:115
+#, c-format
+msgid "%s database is locked. Waiting..."
+msgstr "%s-tietokanta on lukittu. Odotetaan..."
+
+#: ../urpm/lock.pm:116
+#, c-format
+msgid "aborting"
+msgstr "Keskeytetään"
+
+#: ../urpm/main_loop.pm:58
 #, c-format
 msgid "Retry?"
 msgstr "Yritä uudelleen?"
 
-#: ../urpm/main_loop.pm:89
-#, c-format
-msgid ""
-"Installation failed, some files are missing:\n"
-"%s"
-msgstr ""
-"Asennus epäonnistui, joitakin tiedostoja puuttuu:\n"
-"%s"
-
-#: ../urpm/main_loop.pm:92
+#: ../urpm/main_loop.pm:85
 #, c-format
 msgid "You may need to update your urpmi database."
 msgstr "Urpmi-tietokanta tulisi päivittää."
 
-#: ../urpm/main_loop.pm:95
+#: ../urpm/main_loop.pm:89
 #, c-format
 msgid ""
 "Installation failed, bad rpms:\n"
@@ -1035,7 +1034,7 @@ msgstr ""
 "Asennus epäonnistui, viallisia paketteja:\n"
 "%s"
 
-#: ../urpm/main_loop.pm:113
+#: ../urpm/main_loop.pm:108
 #, c-format
 msgid ""
 "There is not enough space on your filesystem to download all packages (%s "
@@ -1046,118 +1045,118 @@ msgstr ""
 "lataamiseksi (%s tarvitaan, %s vapaana).\n"
 "Jatketaanko?"
 
-#: ../urpm/main_loop.pm:171 ../urpm/main_loop.pm:211 ../urpm/main_loop.pm:294
-#: ../urpm/main_loop.pm:301
-#, c-format
-msgid "Installation failed"
-msgstr "Asennus epäonnistui"
-
-#: ../urpm/main_loop.pm:172
-#, c-format
-msgid "Try to continue anyway?"
-msgstr "Yritä joka tapauksessa?"
-
-#: ../urpm/main_loop.pm:196
+#: ../urpm/main_loop.pm:138
 #, c-format
 msgid "The following package has bad signature"
 msgstr "Seuraavalla paketilla on virheellinen allekirjoitus"
 
-#: ../urpm/main_loop.pm:197
+#: ../urpm/main_loop.pm:139
 #, c-format
 msgid "The following packages have bad signatures"
 msgstr "Seuraavilla paketeilla on virheellinen allekirjoitus"
 
-#: ../urpm/main_loop.pm:198
+#: ../urpm/main_loop.pm:140
 #, c-format
 msgid "Do you want to continue installation ?"
 msgstr "Jatka asennusta?"
 
-#: ../urpm/main_loop.pm:215
+#: ../urpm/main_loop.pm:155 ../urpm/main_loop.pm:184 ../urpm/main_loop.pm:289
+#: ../urpm/main_loop.pm:297
+#, c-format
+msgid "Installation failed"
+msgstr "Asennus epäonnistui"
+
+#: ../urpm/main_loop.pm:159
 #, c-format
 msgid "removing installed rpms (%s)"
 msgstr "Poistetaan asennetut paketit (%s)"
 
-#: ../urpm/main_loop.pm:235
+#: ../urpm/main_loop.pm:185
 #, c-format
-msgid "distributing %s"
-msgstr "Levitetään %s"
+msgid "Try to continue anyway?"
+msgstr "Yritä joka tapauksessa?"
 
-#: ../urpm/main_loop.pm:250
+#: ../urpm/main_loop.pm:235
 #, c-format
 msgid "installing %s from %s"
 msgstr "Asennetaan %s sijainnista %s"
 
-#: ../urpm/main_loop.pm:252
+#: ../urpm/main_loop.pm:237
 #, c-format
 msgid "installing %s"
 msgstr "Asennetaan %s"
 
-#: ../urpm/main_loop.pm:295
+#: ../urpm/main_loop.pm:244
+#, c-format
+msgid "distributing %s"
+msgstr "Levitetään %s"
+
+#: ../urpm/main_loop.pm:290
 #, c-format
 msgid "Try installation without checking dependencies?"
 msgstr "Yritetäänkö asentaa tarkistamatta riippuvuuksia (k/E)?"
 
-#: ../urpm/main_loop.pm:302
+#: ../urpm/main_loop.pm:298
 #, c-format
 msgid "Try harder to install (--force)?"
 msgstr "Yritetäänkö pakottaa asennus (--force) (k/E)?"
 
-#: ../urpm/main_loop.pm:345
+#: ../urpm/main_loop.pm:590
 #, c-format
 msgid "Packages are up to date"
 msgstr "Paketit ovat ajantasalla"
 
-#: ../urpm/main_loop.pm:356 ../urpm/parallel.pm:299
+#: ../urpm/main_loop.pm:601 ../urpm/parallel.pm:299
 #, c-format
 msgid "Installation is possible"
 msgstr "Asennus on mahdollinen"
 
-#: ../urpm/md5sum.pm:26
+#: ../urpm/md5sum.pm:55
 #, c-format
 msgid "warning: md5sum for %s unavailable in MD5SUM file"
 msgstr "Varoitus: MD5SUM-tiedostosta ei löydy tarkistussummaa kohteelle %s"
 
-#: ../urpm/media.pm:258
+#: ../urpm/media.pm:268
 #, c-format
 msgid "virtual medium \"%s\" should have a clear url, medium ignored"
 msgstr "Virtuaalimedialla \"%s\" tulisi olla kunnollinen url, media ohitettu"
 
-#: ../urpm/media.pm:260
+#: ../urpm/media.pm:270
 #, c-format
 msgid "unable to access list file of \"%s\", medium ignored"
 msgstr "Median \"%s\" list-tiedostoa ei voida käyttää, media ohitettu"
 
-#: ../urpm/media.pm:263
+#: ../urpm/media.pm:273
 #, c-format
 msgid "unable to access synthesis file of \"%s\", medium ignored"
 msgstr "Median \"%s\" synthesis-tiedostoa ei voida käyttää, media ohitettu"
 
-#: ../urpm/media.pm:289
+#: ../urpm/media.pm:299
 #, c-format
 msgid "trying to override existing medium \"%s\", skipping"
 msgstr "Yritetään syrjäyttää olemassa olevaa mediaa \"%s\", ohitetaan"
 
-#: ../urpm/media.pm:505
+#: ../urpm/media.pm:515
 #, c-format
 msgid "failed to migrate removable device, ignoring media"
 msgstr "Siirrettävän laitteen uudelleenasetus epäonnistui, ohitetaan media"
 
-#: ../urpm/media.pm:543
+#: ../urpm/media.pm:558
 #, c-format
 msgid "wrote config file [%s]"
 msgstr "Kirjoitettiin asetustiedosto [%s]"
 
-#: ../urpm/media.pm:586
+#: ../urpm/media.pm:649
 #, c-format
 msgid "Can't use parallel mode with use-distrib mode"
 msgstr "Rinnakkaistilaa ei voi käyttää tilan use-distrib kanssa"
 
-#: ../urpm/media.pm:594
+#: ../urpm/media.pm:657
 #, c-format
 msgid "using associated media for parallel mode: %s"
 msgstr "Merkittyjä medioita käytetään rinnakkaistilassa: %s"
 
-#: ../urpm/media.pm:610
+#: ../urpm/media.pm:673
 #, c-format
 msgid ""
 "--synthesis cannot be used with --media, --excludemedia, --sortmedia, --"
@@ -1166,341 +1165,365 @@ msgstr ""
 "valitsinta --synthesis ei voi käyttää yhdessä valitsimien --media, --"
 "excludemedia, --sortmedia, --update, --use-distrib tai --parallel kanssa"
 
-#: ../urpm/media.pm:736
+#: ../urpm/media.pm:780
+#, c-format
+msgid "Search start: %s end: %s"
+msgstr "Haun alku: %s loppu: %s"
+
+#: ../urpm/media.pm:797
 #, c-format
 msgid "skipping package %s"
 msgstr "Ohitetaan paketti %s"
 
-#: ../urpm/media.pm:752
+#: ../urpm/media.pm:813
 #, c-format
 msgid "would install instead of upgrade package %s"
 msgstr "Paketti %s asennettaisiin päivittämisen sijaan"
 
-#: ../urpm/media.pm:828
+#: ../urpm/media.pm:896
 #, c-format
 msgid "medium \"%s\" already exists"
 msgstr "Media \"%s\" on jo olemassa"
 
-#: ../urpm/media.pm:869
+#: ../urpm/media.pm:938
 #, c-format
 msgid "(ignored by default)"
 msgstr "(oletuksena pois käytöstä)"
 
-#: ../urpm/media.pm:875
+#: ../urpm/media.pm:944
 #, c-format
 msgid "adding medium \"%s\" before remote medium \"%s\""
 msgstr "Lisätään media \"%s\" etämedian \"%s\" eteen"
 
-#: ../urpm/media.pm:881
+#: ../urpm/media.pm:950
 #, c-format
 msgid "adding medium \"%s\""
 msgstr "Lisätään media \"%s\""
 
-#: ../urpm/media.pm:905
+#: ../urpm/media.pm:974
 #, c-format
 msgid "failed to copy media.cfg to %s (%d)"
 msgstr "Media.cfg:n kopiointi epäonnistui kohteeseen %s (%d)"
 
-#: ../urpm/media.pm:947
+#: ../urpm/media.pm:1045
 #, c-format
 msgid "directory %s does not exist"
 msgstr "Kansiota %s ei ole olemassa"
 
-#: ../urpm/media.pm:955
+#: ../urpm/media.pm:1053
 #, c-format
 msgid "this location doesn't seem to contain any distribution"
 msgstr "Sijainti ei vaikuta sisältävän jakelua"
 
-#: ../urpm/media.pm:979
+#: ../urpm/media.pm:1077
 #, c-format
 msgid "unable to parse media.cfg"
 msgstr "media.cfg-tiedostoa ei voida jäsentää"
 
-#: ../urpm/media.pm:982
+#: ../urpm/media.pm:1080
 #, c-format
 msgid "unable to access the distribution medium (no media.cfg file found)"
 msgstr "Jakelumediaa ei voida käyttää (tiedostoa media.cfg ei löytynyt)"
 
-#: ../urpm/media.pm:1003
+#: ../urpm/media.pm:1101
 #, c-format
 msgid "skipping non compatible media `%s' (for %s)"
 msgstr "Ohitetaan yhteensopimaton media \"%s\" (%s)"
 
-#: ../urpm/media.pm:1018
+#: ../urpm/media.pm:1116
 #, c-format
 msgid "ignoring non-free medium `%s'"
 msgstr "Ohitetaan epävapaa media \"%s\""
 
-#: ../urpm/media.pm:1061
+#: ../urpm/media.pm:1165
 #, c-format
 msgid "retrieving media.cfg file..."
 msgstr "Noudetaan tiedostoa media.cfg..."
 
-#: ../urpm/media.pm:1104
+#: ../urpm/media.pm:1208
 #, c-format
 msgid "trying to select nonexistent medium \"%s\""
 msgstr "Yritettiin valita media \"%s\", jota ei ole olemassa"
 
-#: ../urpm/media.pm:1107
+#: ../urpm/media.pm:1211
 #, c-format
 msgid "selecting multiple media: %s"
 msgstr "Valitaan useampi media: %s"
 
-#: ../urpm/media.pm:1166
+#: ../urpm/media.pm:1270
 #, c-format
 msgid "removing medium \"%s\""
 msgstr "Poistetaan media \"%s\""
 
-#: ../urpm/media.pm:1249
+#: ../urpm/media.pm:1353
 #, c-format
 msgid "reconfiguring urpmi for media \"%s\""
 msgstr "Asetetaan urpmi uudelleen medialle \"%s\""
 
-#: ../urpm/media.pm:1283
+#: ../urpm/media.pm:1387
 #, c-format
 msgid "...reconfiguration failed"
 msgstr "...uudelleenasetus epäonnistui"
 
-#: ../urpm/media.pm:1289
+#: ../urpm/media.pm:1393
 #, c-format
 msgid "reconfiguration done"
 msgstr "Uudelleenasetus suoritettu"
 
-#: ../urpm/media.pm:1305
+#: ../urpm/media.pm:1409
 #, c-format
 msgid "Error generating names file: dependency %d not found"
 msgstr "Virhe luotaessa names-tiedostoa: riippuvuutta %d ei löytynyt"
 
-#: ../urpm/media.pm:1326
+#: ../urpm/media.pm:1430
 #, c-format
 msgid "medium \"%s\" is up-to-date"
 msgstr "Media \"%s\" on ajantasalla"
 
-#: ../urpm/media.pm:1337
+#: ../urpm/media.pm:1441
 #, c-format
 msgid "examining synthesis file [%s]"
 msgstr "Tutkitaan synthesis-tiedostoa [%s]"
 
-#: ../urpm/media.pm:1357
+#: ../urpm/media.pm:1461
 #, c-format
 msgid "problem reading synthesis file of medium \"%s\""
 msgstr "Ongelmia luettaessa median \"%s\" synthesis-tiedostoa"
 
-#: ../urpm/media.pm:1370 ../urpm/media.pm:1465
+#: ../urpm/media.pm:1474 ../urpm/media.pm:1569
 #, c-format
 msgid "copying [%s] for medium \"%s\"..."
 msgstr "Kopioidaan tiedostoa [%s] medialle \"%s\"..."
 
-#: ../urpm/media.pm:1372 ../urpm/media.pm:1442 ../urpm/media.pm:1695
+#: ../urpm/media.pm:1476 ../urpm/media.pm:1546 ../urpm/media.pm:1799
 #, c-format
 msgid "...copying failed"
 msgstr "...kopiointi epäonnistui"
 
-#: ../urpm/media.pm:1438
+#: ../urpm/media.pm:1542
 #, c-format
 msgid "copying description file of \"%s\"..."
 msgstr "Kopioidaan median \"%s\" kuvaustiedostoa..."
 
-#: ../urpm/media.pm:1440 ../urpm/media.pm:1469
+#: ../urpm/media.pm:1544 ../urpm/media.pm:1573
 #, c-format
 msgid "...copying done"
 msgstr "...kopiointi valmis"
 
-#: ../urpm/media.pm:1471
+#: ../urpm/media.pm:1575
 #, c-format
 msgid "copy of [%s] failed (file is suspiciously small)"
 msgstr "Tiedoston [%s] kopiointi epäonnistui (tiedosto on epäilyttävän pieni)"
 
-#: ../urpm/media.pm:1519
+#: ../urpm/media.pm:1623
 #, c-format
 msgid "computing md5sum of retrieved source synthesis"
 msgstr "Lasketaan tarkistussumma ladatulle lähteen synthesis-tiedostolle"
 
-#: ../urpm/media.pm:1521 ../urpm/media.pm:1961
+#: ../urpm/media.pm:1625 ../urpm/media.pm:2108
 #, c-format
 msgid "retrieval of [%s] failed (md5sum mismatch)"
 msgstr "Tiedoston [%s] haku epäonnistui (tarkistussumma ei täsmää)"
 
-#: ../urpm/media.pm:1536
+#: ../urpm/media.pm:1640
 #, c-format
 msgid "genhdlist2 failed on %s"
 msgstr "Genhdlist2 epäonnistui paketin %s kohdalla"
 
-#: ../urpm/media.pm:1546
+#: ../urpm/media.pm:1650
 #, c-format
 msgid "comparing %s and %s"
 msgstr "Verrataan kohteita %s ja %s"
 
-#: ../urpm/media.pm:1576
+#: ../urpm/media.pm:1680
 #, c-format
 msgid "invalid hdlist file %s for medium \"%s\""
 msgstr "Virheellinen hdlist-tiedosto %s medialle \"%s\""
 
-#: ../urpm/media.pm:1602
+#: ../urpm/media.pm:1706
 #, c-format
 msgid "copying MD5SUM file of \"%s\"..."
 msgstr "Kopioidaan lähteen \"%s\" MD5SUM-tiedostoa..."
 
-#: ../urpm/media.pm:1642
+#: ../urpm/media.pm:1746
 #, c-format
 msgid "invalid MD5SUM file (downloaded from %s)"
 msgstr "Virheellinen MD5SUM-tiedosto (ladattu osoitteesta %s)"
 
-#: ../urpm/media.pm:1645
+#: ../urpm/media.pm:1749
 #, c-format
 msgid "no metadata found for medium \"%s\""
 msgstr "Medialle %s ei löytynyt metadataa"
 
-#: ../urpm/media.pm:1677
+#: ../urpm/media.pm:1781
 #, c-format
 msgid "retrieving source synthesis of \"%s\"..."
 msgstr "Noudetaan synthesis-tiedostoa lähteelle \"%s\"..."
 
-#: ../urpm/media.pm:1743
+#: ../urpm/media.pm:1847
 #, c-format
 msgid "examining pubkey file of \"%s\"..."
 msgstr "Tarkistetaan median \"%s\" julkista avainta..."
 
-#: ../urpm/media.pm:1755
+#: ../urpm/media.pm:1859
 #, c-format
 msgid "...imported key %s from pubkey file of \"%s\""
 msgstr "...tuotiin avain %s median \"%s\" julkisesta avaimesta"
 
-#: ../urpm/media.pm:1759
+#: ../urpm/media.pm:1863
 #, c-format
 msgid "unable to import pubkey file of \"%s\""
 msgstr "Median \"%s\" julkista avainta ei voitu tuoda"
 
-#: ../urpm/media.pm:1800
+#: ../urpm/media.pm:1904
 #, c-format
 msgid "no synthesis file found for medium \"%s\""
 msgstr "Medialle \"%s\" ei löytynyt synthesis-tiedostoa"
 
-#: ../urpm/media.pm:1833
+#: ../urpm/media.pm:1937
 #, c-format
 msgid "updated medium \"%s\""
 msgstr "Media \"%s\" päivitetty"
 
-#: ../urpm/media.pm:1955
+#: ../urpm/media.pm:2102
 #, c-format
 msgid "retrieval of [%s] failed"
 msgstr "Paketin [%s] hakeminen epäonnistui"
 
-#: ../urpm/mirrors.pm:19 ../urpm/mirrors.pm:40
+#: ../urpm/mirrors.pm:34 ../urpm/mirrors.pm:60
 #, c-format
 msgid "trying again with mirror %s"
 msgstr "Yritetään uudelleen peilipalvelimelta %s"
 
-#: ../urpm/mirrors.pm:92
+#: ../urpm/mirrors.pm:112
 #, c-format
 msgid "Could not find a mirror from mirrorlist %s"
 msgstr "Peilipalvelinta ei löytynyt peilipalvelinlistalta %s"
 
-#: ../urpm/mirrors.pm:234
+#: ../urpm/mirrors.pm:260
 #, c-format
 msgid "found geolocalisation %s %.2f %.2f from timezone %s"
 msgstr "Pääteltiin sijainti %s %.2f %.2f aikavyöhykkeestä %s"
 
-#: ../urpm/mirrors.pm:279
+#: ../urpm/mirrors.pm:305
 #, c-format
 msgid "getting mirror list from %s"
 msgstr "Haetaan peilipalvelinluetteloa osoitteesta %s"
 
 #. -PO: Add here the keys which might be pressed in the "Yes"-case.
-#: ../urpm/msg.pm:77 ../urpme:38 ../urpmi:580 ../urpmi:688 ../urpmi:698
-#: ../urpmi.addmedia:133
+#: ../urpm/msg.pm:78 ../urpme:38 ../urpmi.addmedia:133
 #, c-format
 msgid "Yy"
 msgstr "KkYy"
 
-#: ../urpm/msg.pm:107 ../urpme:164 ../urpmi.addmedia:136
+#: ../urpm/msg.pm:103 ../urpme:166 ../urpmi.addmedia:136
 #, c-format
 msgid " (y/N) "
 msgstr " (k/E) "
 
-#: ../urpm/msg.pm:139
+#: ../urpm/msg.pm:132
 #, c-format
 msgid "Sorry, bad choice, try again\n"
 msgstr "Virheellinen valinta, yritä uudelleen\n"
 
-#: ../urpm/msg.pm:170
+#: ../urpm/msg.pm:163
 #, c-format
 msgid "Package"
 msgstr "Paketti"
 
-#: ../urpm/msg.pm:170
+#: ../urpm/msg.pm:163
 #, c-format
 msgid "Version"
 msgstr "Versio"
 
-#: ../urpm/msg.pm:170
+#: ../urpm/msg.pm:163
 #, c-format
 msgid "Release"
 msgstr "Julkaisu"
 
-#: ../urpm/msg.pm:170
+#: ../urpm/msg.pm:163
 #, c-format
 msgid "Dist"
 msgstr "Dist"
 
-#: ../urpm/msg.pm:170
+#: ../urpm/msg.pm:163
 #, c-format
 msgid "DEpoch"
 msgstr "DEpoch"
 
-#: ../urpm/msg.pm:170
+#: ../urpm/msg.pm:163
 #, c-format
 msgid "Arch"
 msgstr "Arkkitehtuuri"
 
-#: ../urpm/msg.pm:179
+#: ../urpm/msg.pm:172
 #, c-format
 msgid "(suggested)"
 msgstr "(ehdotettu)"
 
-#: ../urpm/msg.pm:194
+#: ../urpm/msg.pm:187
 #, c-format
 msgid "medium \"%s\""
 msgstr "media \"%s\""
 
-#: ../urpm/msg.pm:194
+#: ../urpm/msg.pm:187
 #, c-format
 msgid "command line"
 msgstr "komentorivi"
 
-#: ../urpm/msg.pm:208
+#: ../urpm/msg.pm:201
 #, c-format
 msgid "B"
 msgstr "t"
 
-#: ../urpm/msg.pm:208
+#: ../urpm/msg.pm:201
 #, c-format
 msgid "KB"
 msgstr "kt"
 
-#: ../urpm/msg.pm:208
+#: ../urpm/msg.pm:201
 #, c-format
 msgid "MB"
 msgstr "Mt"
 
-#: ../urpm/msg.pm:208
+#: ../urpm/msg.pm:201
 #, c-format
 msgid "GB"
 msgstr "Gt"
 
-#: ../urpm/msg.pm:208 ../urpm/msg.pm:217
+#: ../urpm/msg.pm:201 ../urpm/msg.pm:210
 #, c-format
 msgid "TB"
 msgstr "Tt"
 
-#: ../urpm/orphans.pm:51
+#: ../urpm/orphans.pm:78
 #, c-format
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr ""
 "Merkitään paketti %s käsin asennetuksi. Paketista ei tule tarpeetonta "
 "(orphan)."
 
-#: ../urpm/orphans.pm:438
+#: ../urpm/orphans.pm:520
+#, fuzzy, c-format
+msgid ""
+"The following package:\n"
+"%s\n"
+"is now orphaned."
+msgid_plural ""
+"The following packages:\n"
+"%s\n"
+"are now orphaned."
+msgstr[0] "Jokin seuraavista paketeista tarvitaan:"
+msgstr[1] "Jokin seuraavista paketeista tarvitaan:"
+
+#: ../urpm/orphans.pm:523
+#, fuzzy, c-format
+msgid "You may wish to remove it."
+msgid_plural "You may wish to remove them."
+msgstr[0] "Ei tarpeettomia paketteja (orphans)"
+msgstr[1] "Ei tarpeettomia paketteja (orphans)"
+
+#: ../urpm/orphans.pm:540
 #, c-format
 msgid ""
 "The following package:\n"
@@ -1582,28 +1605,28 @@ msgstr ""
 "%s epäonnistui kohteessa %s (ehkä urpmi:n versio on liian vanha) "
 "(lopetuskoodi %d)"
 
-#: ../urpm/removable.pm:33
+#: ../urpm/removable.pm:46
 #, c-format
 msgid "unable to access medium \"%s\"."
 msgstr "Mediaa \"%s\" ei voitu käyttää."
 
-#: ../urpm/removable.pm:73 ../urpm/removable.pm:91
+#: ../urpm/removable.pm:86 ../urpm/removable.pm:101
 #, c-format
 msgid "mounting %s"
 msgstr "Liitetään %s"
 
-#: ../urpm/removable.pm:104
+#: ../urpm/removable.pm:113
 #, c-format
 msgid "unmounting %s"
 msgstr "Irrotetaan %s"
 
-#: ../urpm/select.pm:31
+#: ../urpm/select.pm:45
 #, c-format
 msgid "urpmi was restarted, and the list of priority packages did not change"
 msgstr ""
 "Käynnistettiin urpmi uudelleen, eikä ensisijaisten pakettien lista muuttunut"
 
-#: ../urpm/select.pm:33
+#: ../urpm/select.pm:47
 #, c-format
 msgid ""
 "urpmi was restarted, and the list of priority packages did change: %s vs %s"
@@ -1611,59 +1634,59 @@ msgstr ""
 "Käynnistettiin urpmi uudelleen ja ensisijaisten pakettien lista muuttui: "
 "ennen %s, nyt %s"
 
-#: ../urpm/select.pm:176
+#: ../urpm/select.pm:220
 #, c-format
 msgid "No package named %s"
 msgstr "Ei pakettia nimeltä %s"
 
-#: ../urpm/select.pm:178 ../urpme:118
+#: ../urpm/select.pm:222 ../urpme:120
 #, c-format
 msgid "The following packages contain %s: %s"
 msgstr "Seuraavat paketit sisältävät %s: %s"
 
-#: ../urpm/select.pm:180
+#: ../urpm/select.pm:224
 #, c-format
 msgid "You should use \"-a\" to use all of them"
 msgstr "Käytä valitsinta \"-a\" valitaksesi ne kaikki"
 
-#: ../urpm/select.pm:298
+#: ../urpm/select.pm:371
 #, c-format
 msgid "found package(s) %s in urpmi db, but none are installed"
 msgstr ""
 "Urpmi-tietokannasta löytyi paketit %s, mutta yhtään paketeista ei ole "
 "asennettuna"
 
-#: ../urpm/select.pm:507
+#: ../urpm/select.pm:608
 #, c-format
 msgid "Package %s is already installed"
 msgstr "Paketti %s on jo asennettu"
 
-#: ../urpm/select.pm:508
+#: ../urpm/select.pm:609
 #, c-format
 msgid "Packages %s are already installed"
 msgstr "Paketit %s ovat jo asennettu"
 
-#: ../urpm/select.pm:525 ../urpm/select.pm:612
+#: ../urpm/select.pm:626 ../urpm/select.pm:713
 #, c-format
 msgid "due to conflicts with %s"
 msgstr "johtuen ristiriidasta %s kanssa"
 
-#: ../urpm/select.pm:526 ../urpm/select.pm:606
+#: ../urpm/select.pm:627 ../urpm/select.pm:707
 #, c-format
 msgid "due to unsatisfied %s"
 msgstr "täyttämättömän %s vuoksi"
 
-#: ../urpm/select.pm:532
+#: ../urpm/select.pm:633
 #, c-format
 msgid "trying to promote %s"
 msgstr "yritettäessä täyttää riippuvuus %s"
 
-#: ../urpm/select.pm:533
+#: ../urpm/select.pm:634
 #, c-format
 msgid "in order to keep %s"
 msgstr "%s säilyttämiseksi"
 
-#: ../urpm/select.pm:574
+#: ../urpm/select.pm:675
 #, c-format
 msgid ""
 "The following package has to be removed for others to be upgraded:\n"
@@ -1672,7 +1695,7 @@ msgstr ""
 "Seuraava paketti on poistettava, jotta toiset voidaan päivittää:\n"
 "%s"
 
-#: ../urpm/select.pm:575
+#: ../urpm/select.pm:676
 #, c-format
 msgid ""
 "The following packages have to be removed for others to be upgraded:\n"
@@ -1681,62 +1704,82 @@ msgstr ""
 "Seuraavat paketit on poistettava, jotta toiset voidaan päivittää:\n"
 "%s"
 
-#: ../urpm/select.pm:602
+#: ../urpm/select.pm:703
 #, c-format
 msgid "in order to install %s"
 msgstr "%s asentamiseksi"
 
-#: ../urpm/select.pm:608
+#: ../urpm/select.pm:709
 #, c-format
 msgid "due to missing %s"
 msgstr "puuttuvan %s vuoksi"
 
-#: ../urpm/signature.pm:33
+#: ../urpm/signature.pm:62
 #, c-format
 msgid "Invalid signature (%s)"
 msgstr "Virheellinen allekirjoitus (%s)"
 
-#: ../urpm/signature.pm:64
+#: ../urpm/signature.pm:77
+#, fuzzy, c-format
+msgid "SECURITY: The following package is _NOT_ signed (%s): %s"
+msgstr "Seuraavat paketit sisältävät %s: %s"
+
+#: ../urpm/signature.pm:83
+#, c-format
+msgid "SECURITY: NOT checking package \"%s\" (due to configuration)"
+msgstr ""
+
+#: ../urpm/signature.pm:102
 #, c-format
 msgid "Invalid Key ID (%s)"
 msgstr "Virheellinen avaintunniste (%s)"
 
-#: ../urpm/signature.pm:66
+#: ../urpm/signature.pm:104
 #, c-format
 msgid "Missing signature (%s)"
 msgstr "Puuttuva allekirjoitus (%s)"
 
-#: ../urpm/sys.pm:172
+#: ../urpm/signature.pm:107
+#, c-format
+msgid "SECURITY: Medium \"%s\" has no key (%s)!"
+msgstr ""
+
+#: ../urpm/signature.pm:109
+#, c-format
+msgid "Medium without key (%s)"
+msgstr ""
+
+#: ../urpm/sys.pm:183
 #, c-format
 msgid "system"
 msgstr "järjestelmä"
 
-#: ../urpm/sys.pm:209
+#: ../urpm/sys.pm:220
 #, c-format
 msgid "You should restart your computer for %s"
 msgstr "Tietokone tulisi käynnistää uudelleen paketin %s asennuksen vuoksi"
 
-#: ../urpm/sys.pm:211
+#: ../urpm/sys.pm:222
 #, c-format
 msgid "You should restart your session for %s"
 msgstr "Istunto tulisi käynnistää uudelleen paketin %s asennuksen vuoksi"
 
-#: ../urpm/sys.pm:213
+#: ../urpm/sys.pm:224
 #, c-format
 msgid "You should restart %s for %s"
 msgstr "%s tulisi käynnistää uudelleen paketin %s asennuksen vuoksi"
 
-#: ../urpm/sys.pm:310
+#: ../urpm/sys.pm:334
 #, c-format
 msgid "Can't write file"
 msgstr "Tiedostoon ei voida kirjoittaa"
 
-#: ../urpm/sys.pm:310
+#: ../urpm/sys.pm:334
 #, c-format
 msgid "Can't open file"
 msgstr "Tiedostoa ei voida avata"
 
-#: ../urpm/sys.pm:323
+#: ../urpm/sys.pm:347
 #, c-format
 msgid "Can't move file %s to %s"
 msgstr "Tiedostoa %s ei voi siirtää kohteeseen %s"
@@ -1773,12 +1816,12 @@ msgid "  --test         - verify if the removal can be achieved correctly.\n"
 msgstr ""
 "  --test         - testaa, voidaanko poistaminen suorittaa onnistuneesti.\n"
 
-#: ../urpme:51 ../urpmi:120 ../urpmq:70
+#: ../urpme:51 ../urpmi:125 ../urpmq:72
 #, c-format
 msgid "  --parallel     - distributed urpmi across machines of alias.\n"
 msgstr "  --parallel     - urpmi-toiminnot useille määritellyille koneille.\n"
 
-#: ../urpme:52 ../urpmi:160
+#: ../urpme:52 ../urpmi:165
 #, c-format
 msgid "  --repackage    - Re-package the files before erasing\n"
 msgstr "  --repackage    - paketoi tiedostot uudelleen ennen poistamista.\n"
@@ -1789,15 +1832,15 @@ msgid "  --root         - use another root for rpm removal.\n"
 msgstr ""
 "  --root         - käytä määriteltyä juurta rpm-paketin poistamiseen.\n"
 
-#: ../urpme:54 ../urpmf:40 ../urpmi:122 ../urpmi.addmedia:73
-#: ../urpmi.recover:36 ../urpmi.removemedia:45 ../urpmi.update:48 ../urpmq:72
+#: ../urpme:54 ../urpmf:40 ../urpmi:127 ../urpmi.addmedia:73
+#: ../urpmi.recover:36 ../urpmi.removemedia:45 ../urpmi.update:48 ../urpmq:74
 #, c-format
 msgid "  --urpmi-root   - use another root for urpmi db & rpm installation.\n"
 msgstr ""
 "  --urpmi-root   - käytä määriteltyä juurta urpmi-tietokannalle ja\n"
 "                   rpm-pakettien asentamiseen.\n"
 
-#: ../urpme:55 ../urpmi:112
+#: ../urpme:55 ../urpmi:115
 #, c-format
 msgid "  --justdb       - update only the rpm db, not the filesystem.\n"
 msgstr ""
@@ -1817,6 +1860,14 @@ msgstr "  --notriggers   - ohita pakettien liipaisimet.\n"
 #: ../urpme:58
 #, c-format
 msgid ""
+"  --fastunsafe   - trade verification and reliability for performance, "
+"alias:\n"
+"                   --tune-rpm=nofsync\n"
+msgstr ""
+
+#: ../urpme:60
+#, c-format
+msgid ""
 "  --use-distrib  - configure urpme on the fly from a distrib tree, useful\n"
 "                   to (un)install a chroot with --root option.\n"
 msgstr ""
@@ -1824,49 +1875,49 @@ msgstr ""
 "                   asennettaessa chroot-ympäristö käyttäen valitsinta --"
 "root.\n"
 
-#: ../urpme:60 ../urpmi:171 ../urpmq:91
+#: ../urpme:62 ../urpmi:176 ../urpmq:93
 #, c-format
 msgid "  --verbose, -v  - verbose mode.\n"
 msgstr "  --verbose, -v  - yksityiskohtainen tyyli.\n"
 
-#: ../urpme:61
+#: ../urpme:63
 #, c-format
 msgid "  -a             - select all packages matching expression.\n"
 msgstr "  -a             - valitse kaikki hakulausekkeeseen täsmäävät.\n"
 
-#: ../urpme:76
+#: ../urpme:78
 #, c-format
 msgid "Only superuser is allowed to remove packages"
 msgstr "Vain pääkäyttäjä voi poistaa paketteja"
 
-#: ../urpme:109
+#: ../urpme:111
 #, c-format
 msgid "unknown packages"
 msgstr "tuntemattomia paketteja"
 
-#: ../urpme:109
+#: ../urpme:111
 #, c-format
 msgid "unknown package"
 msgstr "tuntematon paketti"
 
-#: ../urpme:124
+#: ../urpme:126
 #, c-format
 msgid "Removing the following package will break your system:"
 msgid_plural "Removing the following packages will break your system:"
 msgstr[0] "Seuraavan paketin poistaminen rikkoo järjestelmän:"
 msgstr[1] "Seuraavien pakettien poistaminen rikkoo järjestelmän:"
 
-#: ../urpme:129
+#: ../urpme:131
 #, c-format
 msgid "Nothing to remove"
 msgstr "Ei mitään poistettavaa"
 
-#: ../urpme:146
+#: ../urpme:148
 #, c-format
 msgid "No orphans to remove"
 msgstr "Ei tarpeettomia paketteja (orphans)"
 
-#: ../urpme:152
+#: ../urpme:154
 #, c-format
 msgid "To satisfy dependencies, the following package will be removed"
 msgid_plural ""
@@ -1874,31 +1925,31 @@ msgid_plural ""
 msgstr[0] "Riippuvuuksien täyttämiseksi seuraava paketti poistetaan"
 msgstr[1] "Riippuvuuksien täyttämiseksi seuraavat %d pakettia poistetaan"
 
-#: ../urpme:157
+#: ../urpme:159
 #, c-format
 msgid "(orphan package)"
 msgid_plural "(orphan packages)"
 msgstr[0] "(tarpeeton paketti)"
 msgstr[1] "(tarpeettomat paketit)"
 
-#: ../urpme:164
+#: ../urpme:166
 #, c-format
 msgid "Remove %d package?"
 msgid_plural "Remove %d packages?"
 msgstr[0] "Poista %d paketti?"
 msgstr[1] "Poista %d pakettia?"
 
-#: ../urpme:169
+#: ../urpme:171
 #, c-format
 msgid "testing removal of %s"
 msgstr "Testataan paketin %s poistamista"
 
-#: ../urpme:186
+#: ../urpme:188
 #, c-format
 msgid "Removal failed"
 msgstr "Poistaminen epäonnistui"
 
-#: ../urpme:188
+#: ../urpme:190
 #, c-format
 msgid "Removal is possible"
 msgstr "Poistaminen on mahdollista"
@@ -1924,13 +1975,13 @@ msgstr ""
 msgid "  --version      - print this tool's version number.\n"
 msgstr "  --version      - tulosta versionumero.\n"
 
-#: ../urpmf:37 ../urpmi:144 ../urpmq:82
+#: ../urpmf:37 ../urpmi:149 ../urpmq:84
 #, c-format
 msgid "  --env          - use specific environment (typically a bug report).\n"
 msgstr ""
 "  --env          - käytä määrättyä ympäristöä (yleensä virheraportti).\n"
 
-#: ../urpmf:38 ../urpmi:85 ../urpmq:49
+#: ../urpmf:38 ../urpmi:86 ../urpmq:51
 #, c-format
 msgid "  --excludemedia - do not use the given media, separated by comma.\n"
 msgstr ""
@@ -1944,7 +1995,7 @@ msgstr ""
 "  --literal, -l  - käytä argumenttia pelkkänä hakusanana säännöllisen\n"
 "                   lausekkeen sijaan.\n"
 
-#: ../urpmf:42 ../urpmi:88 ../urpmq:50
+#: ../urpmf:42 ../urpmi:89 ../urpmq:52
 #, c-format
 msgid ""
 "  --sortmedia    - sort media according to substrings separated by comma.\n"
@@ -1957,7 +2008,7 @@ msgstr ""
 msgid "  --use-distrib  - use the given path to access media\n"
 msgstr "  --use-distrib  - käytä annettua polkua jakelun hakuun.\n"
 
-#: ../urpmf:44 ../urpmi:89 ../urpmq:51
+#: ../urpmf:44 ../urpmi:90 ../urpmq:53
 #, c-format
 msgid "  --synthesis    - use the given synthesis instead of urpmi db.\n"
 msgstr ""
@@ -1969,7 +2020,7 @@ msgstr ""
 msgid "  --uniq         - do not print identical lines twice.\n"
 msgstr "  --uniq         - älä tulosta identtisiä rivejä uudestaan.\n"
 
-#: ../urpmf:46 ../urpmi:86 ../urpmq:46
+#: ../urpmf:46 ../urpmi:87 ../urpmq:48
 #, c-format
 msgid "  --update       - use only update media.\n"
 msgstr "  --update       - käytä ainoastaan päivitysmediaa.\n"
@@ -2171,7 +2222,7 @@ msgstr "  --vendor       - toimittaja.\n"
 msgid "  -m             - the media in which the package was found\n"
 msgstr "  -m             - media, josta paketti löytyy.\n"
 
-#: ../urpmf:85 ../urpmq:101
+#: ../urpmf:85 ../urpmq:103
 #, c-format
 msgid "  -f             - print version, release and arch with name.\n"
 msgstr ""
@@ -2203,34 +2254,50 @@ msgstr "Medialle \"%s\" ei löydy synthesis-tiedostoa"
 msgid "no xml-info available for medium \"%s\""
 msgstr "Medialle \"%s\" ei löydy xml-info -tiedostoa"
 
-#: ../urpmi:92
+#: ../urpmi:79
+#, c-format
+msgid ""
+"urpmi version %s\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
+"This is free software and may be redistributed under the terms of the GNU "
+"GPL.\n"
+"\n"
+"usage:\n"
+msgstr ""
+"urpmi versio %s\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
+"Tämä on vapaa ohjelmisto, jota saa levittää GNU GPL -lisenssin mukaisesti.\n"
+"\n"
+"Käyttö:\n"
+
+#: ../urpmi:93
 #, c-format
 msgid "  --auto-update  - update media then upgrade the system.\n"
 msgstr "  --auto-update  - päivitä mediat ja sen jälkeen järjestelmä.\n"
 
-#: ../urpmi:93
+#: ../urpmi:94
 #, c-format
 msgid "    --no-md5sum    - disable MD5SUM file checking.\n"
 msgstr "    --no-md5sum    - poista tiedostojen MD5SUM-tarkistus käytöstä.\n"
 
-#: ../urpmi:94
+#: ../urpmi:95
 #, c-format
 msgid "    --force-key    - force update of gpg key.\n"
 msgstr "    --force-key    - pakota allekirjoitusavaimen päivitys.\n"
 
-#: ../urpmi:95
+#: ../urpmi:96
 #, c-format
 msgid "  --auto-orphans - remove orphans without asking\n"
 msgstr "  --auto-orphans - poista tarpeettomat paketit (orphans) kysymättä.\n"
 
-#: ../urpmi:96 ../urpmq:56
+#: ../urpmi:97 ../urpmq:58
 #, c-format
 msgid "  --no-suggests  - do not auto select \"suggested\" packages.\n"
 msgstr ""
 "  --no-suggests  - älä valitse ehdotettuja paketteja automaattisesti\n"
 "                   (\"Suggests\").\n"
 
-#: ../urpmi:97
+#: ../urpmi:98
 #, c-format
 msgid ""
 "  --no-uninstall - never ask to uninstall a package, abort the "
@@ -2239,12 +2306,12 @@ msgstr ""
 "  --no-uninstall - älä koskaan kysy paketin poistamisesta,\n"
 "                   keskeytä asennus.\n"
 
-#: ../urpmi:98
+#: ../urpmi:99
 #, c-format
 msgid "  --no-install   - don't install packages (only download)\n"
 msgstr "  --no-install   - älä asenna paketteja (lataa ainoastaan).\n"
 
-#: ../urpmi:99 ../urpmq:58
+#: ../urpmi:100 ../urpmq:60
 #, c-format
 msgid ""
 "  --keep         - keep existing packages if possible, reject requested\n"
@@ -2253,7 +2320,18 @@ msgstr ""
 "  --keep         - jätä olemassa olevat paketit, jos mahdollista ja hylkää\n"
 "                   paketit, joiden asennus poistaisi muita.\n"
 
-#: ../urpmi:101
+#: ../urpmi:102
+#, fuzzy, c-format
+msgid "  --force-req-update  - Try to update all of package requires.\n"
+msgstr "  --force-key    - pakota allekirjoitusavaimen päivitys.\n"
+
+#: ../urpmi:103
+#, c-format
+msgid ""
+"  --no-force-req-update  - Do not try to update all of package requires.\n"
+msgstr ""
+
+#: ../urpmi:104
 #, c-format
 msgid ""
 "  --split-level  - split in small transaction if more than given packages\n"
@@ -2264,48 +2342,55 @@ msgstr ""
 "                   tai päivittää enemmän kuin määritelty määrä paketteja\n"
 "                   (oletus on %d).\n"
 
-#: ../urpmi:105
+#: ../urpmi:108
 #, c-format
 msgid "  --split-length - small transaction length, default is %d.\n"
 msgstr "  --split-length - pienemmän tapahtuman pituus (oletus on %d).\n"
 
-#: ../urpmi:107
+#: ../urpmi:110
 #, c-format
 msgid "  --fuzzy, -y    - impose fuzzy search.\n"
 msgstr "  --fuzzy, -y    - käytä epätarkkaa hakua.\n"
 
-#: ../urpmi:108
+#: ../urpmi:111
 #, c-format
 msgid "  --buildrequires - install the buildrequires of the packages\n"
 msgstr ""
 "  --buildrequires - asenna paketit, jotka tarvitaan pakettien kääntämiseen\n"
 "                   lähdekoodipaketeista.\n"
 
-#: ../urpmi:109
+#: ../urpmi:112
 #, c-format
 msgid "  --install-src  - install only source package (no binaries).\n"
 msgstr ""
 "  --install-src  - asenna ainoastaan lähdekoodipaketit (ei binäärejä).\n"
 
-#: ../urpmi:110
+#: ../urpmi:113
 #, c-format
 msgid "  --clean        - remove rpm from cache before anything else.\n"
 msgstr ""
 "  --clean        - poista rpm-paketti välimuistista ennen muita tapahtumia.\n"
 
-#: ../urpmi:111
+#: ../urpmi:114
 #, c-format
 msgid "  --noclean      - don't clean rpms from cache.\n"
 msgstr "  --noclean      - älä poista rpm-paketteja välimuistista.\n"
 
-#: ../urpmi:113
+#: ../urpmi:116
+#, c-format
+msgid ""
+"  --downgrade    - dowgrade a package from the version currently installed\n"
+"                   to the previously highest version\n"
+msgstr ""
+
+#: ../urpmi:118
 #, c-format
 msgid ""
 "  --replacepkgs  - force installing packages which are already installed.\n"
 msgstr ""
 "  --replacepkgs  - pakota jo asennettujen pakettien uudelleenasennus.\n"
 
-#: ../urpmi:115
+#: ../urpmi:120
 #, c-format
 msgid ""
 "  --allow-nodeps - allow asking user to install packages without\n"
@@ -2314,7 +2399,7 @@ msgstr ""
 "  --allow-nodeps - salli pakettien asennus ilman riippuvuuksien\n"
 "                   tarkistusta.\n"
 
-#: ../urpmi:117
+#: ../urpmi:122
 #, c-format
 msgid ""
 "  --allow-force  - allow asking user to install packages without\n"
@@ -2323,14 +2408,14 @@ msgstr ""
 "  --allow-force  - salli pakettien asennus ilman riippuvuuksien ja\n"
 "                   eheyden tarkistusta.\n"
 
-#: ../urpmi:119
+#: ../urpmi:124
 #, c-format
 msgid "  --allow-suggests - auto select \"suggested\" packages.\n"
 msgstr ""
 "  --allow-suggests - asenna ehdotetut paketit automaattisesti\n"
 "                   (\"Suggests\").\n"
 
-#: ../urpmi:123
+#: ../urpmi:128
 #, c-format
 msgid ""
 "  --use-distrib  - configure urpmi on the fly from a distrib tree, useful\n"
@@ -2340,12 +2425,12 @@ msgstr ""
 "                   asennettaessa chroot-ympäristöön käyttäen valitsinta --"
 "root.\n"
 
-#: ../urpmi:125 ../urpmi.addmedia:60 ../urpmi.update:37
+#: ../urpmi:130 ../urpmi.addmedia:60 ../urpmi.update:37
 #, c-format
 msgid "  --metalink     - generate and use a local metalink.\n"
 msgstr "  --metalink     - luo ja käytä paikallista metalinkkiä.\n"
 
-#: ../urpmi:126
+#: ../urpmi:131
 #, c-format
 msgid ""
 "  --download-all - download all needed packages before trying to install "
@@ -2353,7 +2438,7 @@ msgid ""
 msgstr ""
 "  --download-all - lataa kaikki tarvittavat paketit ennen asentamista\n"
 
-#: ../urpmi:127
+#: ../urpmi:132
 #, c-format
 msgid ""
 "  --downloader   - program to use to retrieve distant files. \n"
@@ -2362,37 +2447,37 @@ msgstr ""
 "  --downloader   - etätiedostojen hakemiseen käytettävä ohjelma.\n"
 "                   tunnetut ohjelmat: %s\n"
 
-#: ../urpmi:130
+#: ../urpmi:135
 #, c-format
 msgid "  --curl-options - additional options to pass to curl\n"
 msgstr "  --curl-options - välitä ohjelmalle curl lisävalintoja.\n"
 
-#: ../urpmi:131
+#: ../urpmi:136
 #, c-format
 msgid "  --rsync-options- additional options to pass to rsync\n"
 msgstr "  --rsync-options- välitä ohjelmalle rsync lisävalintoja.\n"
 
-#: ../urpmi:132
+#: ../urpmi:137
 #, c-format
 msgid "  --wget-options - additional options to pass to wget\n"
 msgstr "  --wget-options - välitä ohjelmalle wget lisävalintoja.\n"
 
-#: ../urpmi:133
+#: ../urpmi:138
 #, c-format
 msgid "  --prozilla-options - additional options to pass to prozilla\n"
 msgstr "  --prozilla-options - välitä ohjelmalle prozilla lisävalintoja.\n"
 
-#: ../urpmi:134
+#: ../urpmi:139
 #, c-format
 msgid "  --aria2-options - additional options to pass to aria2\n"
 msgstr "  --aria2-options - välitä ohjelmalle aria2 lisävalintoja.\n"
 
-#: ../urpmi:135 ../urpmi.addmedia:61 ../urpmi.update:38
+#: ../urpmi:140 ../urpmi.addmedia:61 ../urpmi.update:38
 #, c-format
 msgid "  --limit-rate   - limit the download speed.\n"
 msgstr "  --limit-rate   - rajoita latausnopeutta.\n"
 
-#: ../urpmi:136
+#: ../urpmi:141
 #, c-format
 msgid ""
 "  --resume       - resume transfer of partially-downloaded files\n"
@@ -2401,7 +2486,7 @@ msgstr ""
 "  --resume       - jatka osittain noudettujen tiedostojen noutamista\n"
 "                   (--no-resume poistaa käytöstä, vakiona ei käytössä).\n"
 
-#: ../urpmi:138 ../urpmi.addmedia:62 ../urpmi.update:39 ../urpmq:78
+#: ../urpmi:143 ../urpmi.addmedia:62 ../urpmi.update:39 ../urpmq:80
 #, c-format
 msgid ""
 "  --proxy        - use specified HTTP proxy, the port number is assumed\n"
@@ -2411,7 +2496,7 @@ msgstr ""
 "on\n"
 "                   1080 (muodossa <välityspalvelin[:portti]>).\n"
 
-#: ../urpmi:140 ../urpmi.addmedia:64 ../urpmi.update:41 ../urpmq:80
+#: ../urpmi:145 ../urpmi.addmedia:64 ../urpmi.update:41 ../urpmq:82
 #, c-format
 msgid ""
 "  --proxy-user   - specify user and password to use for proxy\n"
@@ -2420,7 +2505,7 @@ msgstr ""
 "  --proxy-user   - määrittele välityspalvelimen todentamisessa käytettävä\n"
 "                   käyttäjätunnus ja salasana (muodossa <tunnus:salasana>).\n"
 
-#: ../urpmi:142
+#: ../urpmi:147
 #, c-format
 msgid ""
 "  --bug          - output a bug report in directory indicated by\n"
@@ -2429,44 +2514,44 @@ msgstr ""
 "  --bug          - kirjoittaa virheraportin hakemistoon, joka määritellään\n"
 "                   seuraavassa muuttujassa.\n"
 
-#: ../urpmi:148
+#: ../urpmi:153
 #, c-format
 msgid "  --excludepath  - exclude path separated by comma.\n"
 msgstr ""
 "  --excludepath  - jätä asentamatta seuraaviin pilkuilla\n"
 "                   eroteltuihin hakemistoihin.\n"
 
-#: ../urpmi:149
+#: ../urpmi:154
 #, c-format
 msgid "  --excludedocs  - exclude doc files.\n"
 msgstr "  --excludedocs  - jätä dokumentaatio asentamatta.\n"
 
-#: ../urpmi:150
+#: ../urpmi:155
 #, c-format
 msgid "  --ignoresize   - don't verify disk space before installation.\n"
 msgstr "  --ignoresize   - älä tarkista vapaan tilan määrää ennen asennusta.\n"
 
-#: ../urpmi:151
+#: ../urpmi:156
 #, c-format
 msgid "  --ignorearch   - allow to install rpms for unmatched architectures.\n"
 msgstr "  --ignorearch   - älä tarkista rpm-pakettien arkkitehtuuria.\n"
 
-#: ../urpmi:152
+#: ../urpmi:157
 #, c-format
 msgid "  --noscripts    - do not execute package scriptlet(s)\n"
 msgstr "  --noscripts    - älä suorita pakettien komentosarjoja.\n"
 
-#: ../urpmi:153
+#: ../urpmi:158
 #, c-format
 msgid "  --notriggers   - do not execute package trigger(s)\n"
 msgstr "  --notriggers   - ohita pakettien liipaisimet.\n"
 
-#: ../urpmi:154
+#: ../urpmi:159
 #, c-format
 msgid "  --nofdigests   - do not verify digest of file(s)\n"
 msgstr "  --nofdigests   - älä varmista pakettien tiivistettä.\n"
 
-#: ../urpmi:155
+#: ../urpmi:160
 #, c-format
 msgid ""
 "  --fastunsafe   - trade verification and reliability for performance, "
@@ -2476,22 +2561,22 @@ msgid ""
 "                   --no-verify-rpm\n"
 msgstr ""
 
-#: ../urpmi:159
+#: ../urpmi:164
 #, c-format
 msgid "  --replacefiles - ignore file conflicts\n"
 msgstr "  --replacefiles - ohita tiedostoristiriidat.\n"
 
-#: ../urpmi:161
+#: ../urpmi:166
 #, c-format
 msgid "  --skip         - packages which installation should be skipped\n"
 msgstr "  --skip         - paketit joiden asennus tulisi ohittaa.\n"
 
-#: ../urpmi:162
+#: ../urpmi:167
 #, c-format
 msgid "  --prefer       - packages which should be preferred\n"
 msgstr "  --prefer       - paketit, joita suositaan.\n"
 
-#: ../urpmi:163
+#: ../urpmi:168
 #, c-format
 msgid ""
 "  --more-choices - when several packages are found, propose more choices\n"
@@ -2501,44 +2586,44 @@ msgstr ""
 "vaihtoehtoja\n"
 "                   kuin vain oletusvalinta.\n"
 
-#: ../urpmi:165
+#: ../urpmi:170
 #, c-format
 msgid "  --nolock       - don't lock rpm db.\n"
 msgstr "  --nolock       - älä lukitse rpm-tietokantaa.\n"
 
-#: ../urpmi:166
+#: ../urpmi:171
 #, c-format
 msgid "  --strict-arch  - upgrade only packages with the same architecture.\n"
 msgstr ""
 "  --strict-arch  - päivitä ainoastaan samaan arkkitehtuuriin kuuluvia "
 "paketteja.\n"
 
-#: ../urpmi:167 ../urpmq:99
+#: ../urpmi:172 ../urpmq:101
 #, c-format
 msgid "  -a             - select all matches on command line.\n"
 msgstr "  -a             - valitse kaikki komentoriviin täsmäävät.\n"
 
-#: ../urpmi:170
+#: ../urpmi:175
 #, c-format
 msgid "  --quiet, -q    - quiet mode.\n"
 msgstr "  --quiet, -q    - hiljainen tyyli.\n"
 
-#: ../urpmi:172
+#: ../urpmi:177
 #, c-format
 msgid "  --debug        - very verbose mode.\n"
 msgstr "  --debug        - erittäin yksityiskohtainen tyyli.\n"
 
-#: ../urpmi:173
+#: ../urpmi:178
 #, c-format
 msgid "  names or rpm files given on command line will be installed.\n"
 msgstr "  komentoriviltä syötetyt nimet tai rpm-tiedostot asennetaan.\n"
 
-#: ../urpmi:207
+#: ../urpmi:212
 #, c-format
 msgid "Error: can't use --auto-select along with package list.\n"
 msgstr "Virhe: valitsinta --auto-select ei voi käyttää pakettilistan kanssa.\n"
 
-#: ../urpmi:214
+#: ../urpmi:219
 #, c-format
 msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
@@ -2547,23 +2632,23 @@ msgstr ""
 "Virhe: Virheraportin luomiseksi suorita sama komento uudelleen\n"
 "valitsimen --bug kanssa.\n"
 
-#: ../urpmi:244
+#: ../urpmi:251
 #, c-format
 msgid "You can't install binary rpm files when using --install-src"
 msgstr ""
 "Binääripaketteja ei voida asentaa käytettäessä valitsinta --install-src"
 
-#: ../urpmi:245
+#: ../urpmi:252
 #, c-format
 msgid "You can't install spec files"
 msgstr "Spec-tiedostoja ei voi asentaa"
 
-#: ../urpmi:252
+#: ../urpmi:259
 #, c-format
 msgid "defaulting to --buildrequires"
 msgstr "Oletetaan, että tarkoitus on käyttää valitsinta --buildrequires"
 
-#: ../urpmi:257
+#: ../urpmi:264
 #, c-format
 msgid ""
 "please use --buildrequires or --install-src, defaulting to --buildrequires"
@@ -2571,7 +2656,7 @@ msgstr ""
 "Käytä valitsimia --buildrequires tai --install-src. Oletetaan, että "
 "tarkoitus on käyttää valitsinta --buildrequires"
 
-#: ../urpmi:277
+#: ../urpmi:284
 #, c-format
 msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
@@ -2580,12 +2665,12 @@ msgstr ""
 "Hakemisto [%s] on jo olemassa. Valitse toinen hakemisto virheraportille tai "
 "poista se"
 
-#: ../urpmi:278
+#: ../urpmi:285
 #, c-format
 msgid "Unable to create directory [%s] for bug report"
 msgstr "Virheraportille tarkoitettua hakemistoa [%s] ei voida luoda"
 
-#: ../urpmi:299
+#: ../urpmi:306
 #, c-format
 msgid ""
 "Error: %s appears to be mounted read-only.\n"
@@ -2595,30 +2680,30 @@ msgstr ""
 "Käytä valitsinta --allow-force pakottaaksesi toiminnon."
 
 #. -PO: here format is "<package_name>: <summary> (to upgrade)"
-#: ../urpmi:462
+#: ../urpmi:477
 #, c-format
 msgid "%s: %s (to upgrade)"
 msgstr "%s: %s (päivitettävä)"
 
 #. -PO: here format is "<package_name> (to upgrade)"
-#: ../urpmi:464
+#: ../urpmi:479
 #, c-format
 msgid "%s (to upgrade)"
 msgstr "%s (päivitettävä)"
 
 #. -PO: here format is "<package_name>: <summary> (to install)"
-#: ../urpmi:468
+#: ../urpmi:483
 #, c-format
 msgid "%s: %s (to install)"
 msgstr "%s: %s (asennettava)"
 
 #. -PO: here format is "<package_name> (to install)"
-#: ../urpmi:470
+#: ../urpmi:485
 #, c-format
 msgid "%s (to install)"
 msgstr "%s (asennettava)"
 
-#: ../urpmi:476
+#: ../urpmi:491
 #, c-format
 msgid ""
 "In order to satisfy the '%s' dependency, one of the following packages is "
@@ -2627,12 +2712,12 @@ msgstr ""
 "Riippuvuuden \"%s\" täyttämiseksi jokin seuraavista paketeista on "
 "asennettava:"
 
-#: ../urpmi:479
+#: ../urpmi:494
 #, c-format
 msgid "What is your choice? (1-%d) "
 msgstr "Mikä on valintasi? (1-%d) "
 
-#: ../urpmi:521
+#: ../urpmi:537
 #, c-format
 msgid ""
 "The following package cannot be installed because it depends on packages\n"
@@ -2643,7 +2728,7 @@ msgstr ""
 "jotka ovat vanhempia kuin asennettavat paketit:\n"
 "%s"
 
-#: ../urpmi:523
+#: ../urpmi:539
 #, c-format
 msgid ""
 "The following packages can't be installed because they depend on packages\n"
@@ -2654,7 +2739,7 @@ msgstr ""
 "jotka ovat vanhempia kuin asennettavat paketit:\n"
 "%s"
 
-#: ../urpmi:529 ../urpmi:530 ../urpmi:545
+#: ../urpmi:545 ../urpmi:564
 #, c-format
 msgid ""
 "\n"
@@ -2663,7 +2748,7 @@ msgstr ""
 "\n"
 "Jatka muiden pakettien asennusta?"
 
-#: ../urpmi:539
+#: ../urpmi:558
 #, c-format
 msgid ""
 "A requested package cannot be installed:\n"
@@ -2672,21 +2757,12 @@ msgstr ""
 "Haluttua pakettia ei voida asentaa:\n"
 "%s"
 
-#: ../urpmi:540
-#, c-format
-msgid ""
-"Some requested packages cannot be installed:\n"
-"%s"
-msgstr ""
-"Joitakin haluttuja paketteja ei voida asentaa:\n"
-"%s"
-
-#: ../urpmi:557
+#: ../urpmi:580
 #, c-format
 msgid "removing package %s will break your system"
 msgstr "Paketin %s poistaminen rikkoisi järjestelmän"
 
-#: ../urpmi:565
+#: ../urpmi:588
 #, c-format
 msgid ""
 "The installation cannot continue because the following package\n"
@@ -2697,7 +2773,7 @@ msgstr ""
 "jotta toiset voidaan päivittää:\n"
 "%s\n"
 
-#: ../urpmi:567
+#: ../urpmi:590
 #, c-format
 msgid ""
 "The installation cannot continue because the following packages\n"
@@ -2708,12 +2784,12 @@ msgstr ""
 "jotta toiset voidaan päivittää:\n"
 "%s\n"
 
-#: ../urpmi:575
+#: ../urpmi:599
 #, c-format
 msgid "(test only, removal will not be actually done)"
 msgstr "(vain testi, paketteja ei poisteta oikeasti)"
 
-#: ../urpmi:595
+#: ../urpmi:621
 #, c-format
 msgid ""
 "You must first call urpmi with --buildrequires to install the following "
@@ -2724,46 +2800,24 @@ msgstr ""
 "riippuvuudet asennetaan:\n"
 "%s\n"
 
-#: ../urpmi:605
+#: ../urpmi:631
 #, c-format
 msgid "The following orphan package will be removed."
 msgid_plural "The following orphan packages will be removed."
 msgstr[0] "Seuraava tarpeeton paketti poistetaan."
 msgstr[1] "Seuraavat tarpeettomat paketit poistetaan."
 
-#: ../urpmi:633
+#: ../urpmi:657
+#, c-format
+msgid "WARNING: %s option is in use. Some strange problems may happen"
+msgstr ""
+
+#: ../urpmi:669
 #, c-format
 msgid "(test only, installation will not be actually done)"
 msgstr "(vain testi, paketteja ei asenneta oikeasti)"
 
-#: ../urpmi:639
-#, c-format
-msgid "%s of additional disk space will be used."
-msgstr "Pakettien asentaminen vie %s lisää levytilaa."
-
-#: ../urpmi:640
-#, c-format
-msgid "%s of disk space will be freed."
-msgstr "Levytilaa vapautuu %s."
-
-#: ../urpmi:641
-#, c-format
-msgid "%s of packages will be retrieved."
-msgstr "Noudetaan yhteensä %s."
-
-#: ../urpmi:642
-#, c-format
-msgid "Proceed with the installation of one package?"
-msgid_plural "Proceed with the installation of the %d packages?"
-msgstr[0] "Asennetaanko valittu paketti?"
-msgstr[1] "Asennetaanko valitut %d pakettia?"
-
-#: ../urpmi:665
-#, c-format
-msgid "Cancel"
-msgstr "Peruuta"
-
-#: ../urpmi:673
+#: ../urpmi:702
 #, c-format
 msgid "Press Enter when mounted..."
 msgstr "Paina Enter liittämisen jälkeen..."
@@ -2814,17 +2868,17 @@ msgstr ""
 "\n"
 "ja [valitsimet] ovat\n"
 
-#: ../urpmi.addmedia:56 ../urpmi.update:33 ../urpmq:75
+#: ../urpmi.addmedia:56 ../urpmi.update:33 ../urpmq:77
 #, c-format
 msgid "  --wget         - use wget to retrieve distant files.\n"
 msgstr "  --wget         - käytä etätiedostojen noutamiseen ohjelmaa wget.\n"
 
-#: ../urpmi.addmedia:57 ../urpmi.update:34 ../urpmq:76
+#: ../urpmi.addmedia:57 ../urpmi.update:34 ../urpmq:78
 #, c-format
 msgid "  --curl         - use curl to retrieve distant files.\n"
 msgstr "  --curl         - käytä etätiedostojen noutamiseen ohjelmaa curl.\n"
 
-#: ../urpmi.addmedia:58 ../urpmi.update:35 ../urpmq:77
+#: ../urpmi.addmedia:58 ../urpmi.update:35 ../urpmq:79
 #, c-format
 msgid "  --prozilla     - use prozilla to retrieve distant files.\n"
 msgstr ""
@@ -2972,17 +3026,17 @@ msgstr ""
 "\n"
 "Haluatko lisätä median \"%s\"?"
 
-#: ../urpmi.addmedia:155 ../urpmi.addmedia:179
+#: ../urpmi.addmedia:156 ../urpmi.addmedia:181
 #, c-format
 msgid "unable to add medium"
 msgstr "Mediaa ei voitu lisätä"
 
-#: ../urpmi.addmedia:163
+#: ../urpmi.addmedia:164
 #, c-format
 msgid "<relative path of synthesis> missing\n"
 msgstr "<synthesis-tiedoston suhteellinen polku> puuttuu\n"
 
-#: ../urpmi.addmedia:166
+#: ../urpmi.addmedia:167
 #, c-format
 msgid "Can't use %s with remote medium"
 msgstr "%s ei voida käyttää etämedian kanssa"
@@ -3205,8 +3259,8 @@ msgstr ""
 "  --probe-rpms   - käytä rpm-paketteja suoraan synthesis-tiedoston sijaan.\n"
 
 #: ../urpmi.update:50
-#, c-format
-msgid "  -a             - select all non-removable media.\n"
+#, fuzzy, c-format
+msgid "  -a             - select all enabled non-removable media.\n"
 msgstr ""
 "  -a             - valitse kaikki mediat siirrettäviä medioita lukuun "
 "ottamatta.\n"
@@ -3257,7 +3311,7 @@ msgstr "Ohitetaan media \"%s\""
 msgid "enabling media %s"
 msgstr "Otetaan media \"%s\" käyttöön"
 
-#: ../urpmq:40
+#: ../urpmq:42
 #, c-format
 msgid ""
 "urpmq version %s\n"
@@ -3273,7 +3327,7 @@ msgstr ""
 "\n"
 "Käyttö:\n"
 
-#: ../urpmq:48
+#: ../urpmq:50
 #, c-format
 msgid ""
 "  --searchmedia  - use only the given media to search requested (or updated) "
@@ -3282,12 +3336,12 @@ msgstr ""
 "  --searchmedia  - käytä ainoastaan annettuja lähteitä pyydetyn (tai\n"
 "                   päivitetyn) paketin hakemiseen.\n"
 
-#: ../urpmq:53
+#: ../urpmq:55
 #, c-format
 msgid "  --auto-orphans - list orphans\n"
 msgstr "  --auto-orphans - listaa tarpeettomat paketit (orphans).\n"
 
-#: ../urpmq:54
+#: ../urpmq:56
 #, c-format
 msgid ""
 "  --not-available\n"
@@ -3297,40 +3351,40 @@ msgstr ""
 "                 - listaa asennetut paketit, joita ei löydy miltään\n"
 "                   medialta.\n"
 
-#: ../urpmq:57
+#: ../urpmq:59
 #, c-format
 msgid "  --fuzzy        - impose fuzzy search (same as -y).\n"
 msgstr "  --fuzzy        - käytä epätarkkaa hakua (sama kuin valitsin -y).\n"
 
-#: ../urpmq:60
+#: ../urpmq:62
 #, c-format
 msgid "  --list         - list available packages.\n"
 msgstr "  --list         - listaa käytettävissä olevat paketit.\n"
 
-#: ../urpmq:61
+#: ../urpmq:63
 #, c-format
 msgid "  --list-media   - list available media.\n"
 msgstr "  --list-media   - listaa käytettävissä olevat mediat.\n"
 
-#: ../urpmq:62
+#: ../urpmq:64
 #, c-format
 msgid "  --list-url     - list available media and their url.\n"
 msgstr ""
 "  --list-url     - listaa käytettävissä olevat mediat ja niiden sijainnit.\n"
 
-#: ../urpmq:63
+#: ../urpmq:65
 #, c-format
 msgid "  --list-nodes   - list available nodes when using --parallel.\n"
 msgstr ""
 "  --list-nodes   - listaa käytettävissä olevat solmukohdat käytettäessä\n"
 "                   valitsinta --parallel.\n"
 
-#: ../urpmq:64
+#: ../urpmq:66
 #, c-format
 msgid "  --list-aliases - list available parallel aliases.\n"
 msgstr "  --list-aliases - listaa käytettävissä olevat rinnakkais-aliakset\n"
 
-#: ../urpmq:65
+#: ../urpmq:67
 #, c-format
 msgid ""
 "  --dump-config  - dump the config in form of urpmi.addmedia argument.\n"
@@ -3338,26 +3392,26 @@ msgstr ""
 "  --dump-config  - tulosta asetukset urpmi.addmedia-parametrien\n"
 "                   tapaan muotoiltuna.\n"
 
-#: ../urpmq:66
+#: ../urpmq:68
 #, c-format
 msgid "  --src          - next package is a source package (same as -s).\n"
 msgstr ""
 "  --src          - seuraava paketti on lähdekoodipaketti (sama kuin valitsin "
 "-s).\n"
 
-#: ../urpmq:67
+#: ../urpmq:69
 #, c-format
 msgid "  --sources      - print source URLs of selected packages\n"
 msgstr "  --sources      - näytä valittujen pakettien lähdeosoite (URL)\n"
 
-#: ../urpmq:69
+#: ../urpmq:71
 #, c-format
 msgid "  --ignorearch   - allow to query rpms for unmatched architectures.\n"
 msgstr ""
 "  --ignorearch   - salli rpm-pakettien haku myös eri "
 "laitteistoarkkitehtuureista.\n"
 
-#: ../urpmq:73
+#: ../urpmq:75
 #, c-format
 msgid ""
 "  --use-distrib  - configure urpmi on the fly from a distrib tree.\n"
@@ -3366,49 +3420,49 @@ msgstr ""
 "  --use-distrib  - määrittele urpmi:n asetukset automaattisesti jakelun\n"
 "                   puusta (sallii etsimisen jakelusta).\n"
 
-#: ../urpmq:83
+#: ../urpmq:85
 #, c-format
 msgid "  --changelog    - print changelog.\n"
 msgstr "  --changelog    - tulosta muutosloki.\n"
 
-#: ../urpmq:84
+#: ../urpmq:86
 #, c-format
 msgid "  --conflicts    - print conflicts.\n"
 msgstr "  --conflicts    - tulosta ristiriitamerkinnät (\"Conflicts\").\n"
 
-#: ../urpmq:85
+#: ../urpmq:87
 #, c-format
 msgid "  --obsoletes    - print obsoletes.\n"
 msgstr "  --obsoletes    - listaa vanhentavuustiedot (\"Obsoletes\").\n"
 
-#: ../urpmq:86
+#: ../urpmq:88
 #, c-format
 msgid "  --provides     - print provides.\n"
 msgstr "  --provides     - tulosta tarjoamismerkinnät (\"Provides\").\n"
 
-#: ../urpmq:87
+#: ../urpmq:89
 #, c-format
 msgid "  --requires     - print requires.\n"
 msgstr "  --requires     - tulosta riippuvuusmerkinnät (\"Requires\").\n"
 
-#: ../urpmq:88
+#: ../urpmq:90
 #, c-format
 msgid "  --suggests     - print suggests.\n"
 msgstr ""
 "  --suggests     - näytä asennettavaksi ehdotettavat paketit\n"
 "                   (\"Suggests\").\n"
 
-#: ../urpmq:89
+#: ../urpmq:91
 #, c-format
 msgid "  --sourcerpm    - print sourcerpm.\n"
 msgstr "  --sourcerpm    - tulosta lähdekoodipaketin nimi.\n"
 
-#: ../urpmq:90
+#: ../urpmq:92
 #, c-format
 msgid "  --summary, -S  - print summary.\n"
 msgstr "  --summary, -S  - tulosta yhteenveto.\n"
 
-#: ../urpmq:92
+#: ../urpmq:94
 #, c-format
 msgid ""
 "  --requires-recursive, -d\n"
@@ -3417,12 +3471,12 @@ msgstr ""
 "  --requires-recursive, -d\n"
 "                   - hae paketin riippuvuudet.\n"
 
-#: ../urpmq:94
+#: ../urpmq:96
 #, c-format
 msgid "  --whatrequires - reverse search to what requires package.\n"
 msgstr "  --whatrequires - hae paketit, jotka riippuvat annetusta paketista.\n"
 
-#: ../urpmq:95
+#: ../urpmq:97
 #, c-format
 msgid ""
 "  --whatrequires-recursive\n"
@@ -3432,7 +3486,7 @@ msgstr ""
 "                   - laajennettu whatrequires-haku (sisällyttää "
 "näennäispaketit).\n"
 
-#: ../urpmq:97
+#: ../urpmq:99
 #, c-format
 msgid ""
 "  --whatprovides, -p\n"
@@ -3441,45 +3495,45 @@ msgstr ""
 "  --whatprovides, -p\n"
 "                   - hae paketit, jotka tarjoavat annetun paketin.\n"
 
-#: ../urpmq:100
+#: ../urpmq:102
 #, c-format
 msgid "  -c             - complete output with package to be removed.\n"
 msgstr "  -c             - täydellinen tuloste poistettavasta paketista.\n"
 
-#: ../urpmq:102
+#: ../urpmq:104
 #, c-format
 msgid "  -g             - print groups with name also.\n"
 msgstr "  -g             - tulosta pakettien ryhmät nimien lisäksi.\n"
 
-#: ../urpmq:103
+#: ../urpmq:105
 #, c-format
 msgid "  -i             - print useful information in human readable form.\n"
 msgstr ""
 "  -i             - tulosta hyödyllistä tietoa ihmisen luettavassa muodossa.\n"
 
-#: ../urpmq:104
+#: ../urpmq:106
 #, c-format
 msgid "  -l             - list files in package.\n"
 msgstr "  -l             - listaa paketissa olevat tiedostot.\n"
 
-#: ../urpmq:105
+#: ../urpmq:107
 #, c-format
 msgid "  -m             - equivalent to -du\n"
 msgstr "  -m             - sama kuin valitsin -du.\n"
 
-#: ../urpmq:106
+#: ../urpmq:108
 #, c-format
 msgid "  -r             - print version and release with name also.\n"
 msgstr "  -r             - tulosta nimen lisäksi versio ja julkaisu.\n"
 
-#: ../urpmq:107
+#: ../urpmq:109
 #, c-format
 msgid "  -s             - next package is a source package (same as --src).\n"
 msgstr ""
 "  -s             - seuraava paketti on lähdekoodipaketti\n"
 "                   (sama kuin valitsin --src).\n"
 
-#: ../urpmq:108
+#: ../urpmq:110
 #, c-format
 msgid ""
 "  -u             - remove package if a more recent version is already "
@@ -3487,55 +3541,55 @@ msgid ""
 msgstr ""
 "  -u             - poista paketti, jos uudempi versio on jo asennettu.\n"
 
-#: ../urpmq:109
+#: ../urpmq:111
 #, c-format
 msgid "  -y             - impose fuzzy search (same as --fuzzy).\n"
 msgstr ""
 "  -y             - käytä epätarkkaa hakua (sama kuin valitsin --fuzzy).\n"
 
-#: ../urpmq:110
+#: ../urpmq:112
 #, c-format
 msgid "  -Y             - like -y, but forces to match case-insensitively.\n"
 msgstr ""
 "  -Y             - kuten valinta -y, mutta haku ei ole\n"
 "                   riippuvainen kirjainten koosta.\n"
 
-#: ../urpmq:111
+#: ../urpmq:113
 #, c-format
 msgid "  names or rpm files given on command line are queried.\n"
 msgstr "  Etsitään komentoriviltä syötetyt nimet tai rpm-paketit.\n"
 
-#: ../urpmq:165
+#: ../urpmq:167
 #, c-format
 msgid "usage: \"urpmq --auto-orphans\" with no argument"
 msgstr "Käyttö: \"urpmq --auto-orphans\" ilman parametreja."
 
-#: ../urpmq:218
+#: ../urpmq:220
 #, c-format
 msgid "--list-nodes can only be used with --parallel"
 msgstr ""
 "Valitsinta --list-nodes voidaan käyttää vain valitsimen --parallel kanssa"
 
-#: ../urpmq:242
+#: ../urpmq:244
 #, c-format
 msgid "use -l to list files"
 msgstr "Valitsin -l listaa paketin tiedostot"
 
-#: ../urpmq:427
+#: ../urpmq:428
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for package %s"
 msgstr ""
 "Medialla \"%s\" ei ole xml-tietoja, löytyi vain osittainen hakutulos "
 "paketille %s"
 
-#: ../urpmq:428
+#: ../urpmq:429
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for packages %s"
 msgstr ""
 "Medialla \"%s\" ei ole xml-tietoja, löytyi vain osittainen hakutulos "
 "paketeille %s"
 
-#: ../urpmq:431
+#: ../urpmq:432
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for package %s"
@@ -3543,7 +3597,7 @@ msgstr ""
 "Medialla \"%s\" ei ole xml-tietoja, paketille %s ei voida palauttaa "
 "hakutuloksia"
 
-#: ../urpmq:432
+#: ../urpmq:433
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for packages %s"
@@ -3551,18 +3605,68 @@ msgstr ""
 "Medialla \"%s\" ei ole xml-tietoja, paketeille %s ei voida palauttaa "
 "hakutuloksia"
 
-#: ../urpmq:499
+#: ../urpmq:500
 #, c-format
 msgid "No changelog found\n"
 msgstr "Muutoslokia ei löytynyt\n"
 
 #: ../gurpmi.desktop.in.h:1
+msgid "Software Installer"
+msgstr "Ohjelmien asennin"
+
+#: ../gurpmi.desktop.in.h:2
 msgid "Graphical front end to install RPM files"
 msgstr "Graafinen ohjelmien asennin"
 
-#: ../gurpmi.desktop.in.h:2
-msgid "Software Installer"
-msgstr "Ohjelmien asennin"
+#~ msgid "Please wait..."
+#~ msgstr "Odota hetki..."
+
+#~ msgid "Distribution Upgrade"
+#~ msgstr "Jakelun päivitys"
+
+#~ msgid "Packages installation"
+#~ msgstr "Pakettien asennus"
+
+#~ msgid ""
+#~ "Some requested packages cannot be installed:\n"
+#~ "%s\n"
+#~ "Continue installation anyway?"
+#~ msgstr ""
+#~ "Joitakin haluttuja paketteja ei voida asentaa:\n"
+#~ "%s\n"
+#~ "Jatka muiden pakettien asentamista?"
+
+#~ msgid "(%d package, %d MB)"
+#~ msgid_plural "(%d packages, %d MB)"
+#~ msgstr[0] "(%d paketti, %d Mt)"
+#~ msgstr[1] "(%d pakettia, %d Mt)"
+
+#~ msgid "Installing package `%s' (%s/%s)..."
+#~ msgstr "Asennetaan pakettia %s (%s / %s)..."
+
+#~ msgid "Downloading package `%s'..."
+#~ msgstr "Ladataan tiedostoa %s..."
+
+#~ msgid ""
+#~ "Installation failed, some files are missing:\n"
+#~ "%s\n"
+#~ "You may want to update your urpmi database"
+#~ msgstr ""
+#~ "Asennus epäonnistui, joitakin tiedostoja puuttuu:\n"
+#~ "%s\n"
+#~ "Urpmi-tietokanta tulisi päivittää"
+
+#~ msgid "curl failed: upload canceled\n"
+#~ msgstr "curl epäonnistui: siirtäminen peruutettu\n"
+
+#~ msgid "[repackaging]"
+#~ msgstr "[uudelleenpaketoidaan]"
+
+#~ msgid "Removing package %s"
+#~ msgstr "Poistetaan paketti %s"
+
+#~ msgid "Cancel"
+#~ msgstr "Peruuta"
 
 #~ msgid ""
 #~ "urpmi version %s\n"
@@ -3621,9 +3725,6 @@ msgstr "Ohjelmien asennin"
 
 #~ msgid "due to already installed %s"
 #~ msgstr "jo asennetun %s vuoksi"
-
-#~ msgid "Search start: %s end: %s"
-#~ msgstr "Haun alku: %s loppu: %s"
 
 #~ msgid ""
 #~ "  --from         - use specified url for list of mirrors, the default is\n"
