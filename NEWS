@@ -1,3 +1,6 @@
+Version 7.24 - 30 March 2013, by Per Øyvind Karlsen
+
+- add support for --force-req-updates & --no-force-req-updates (Denis Silakov)
 - library:
   o display exceptions that happened while downloading (mga#9529)
 
