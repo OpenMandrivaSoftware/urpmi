@@ -471,6 +471,7 @@ sub ask_choice {
 
     my (@l) = map {
 	my ($name, $summary) = (scalar($_->fullname), translate($_->summary));
+	print "GOT: $name\n";
 	$_->flag_installed ?
           ($_->summary ?
              #-PO: here format is "<package_name>: <summary> (to upgrade)"
@@ -521,7 +522,6 @@ if ($options{replacepkgs}) {
     nodeps => $urpm->{options}{'allow-nodeps'} || $urpm->{options}{'allow-force'},
     no_suggests => $urpm->{options}{'no-suggests'},
     priority_upgrade => $test || $env ? '' : $urpm->{options}{'priority-upgrade'},
-    force_req_update => $urpm->{options}{'force-req-update'},
     );
 }
 
