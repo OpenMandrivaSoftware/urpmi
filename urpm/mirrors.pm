@@ -330,8 +330,13 @@ sub _mandriva_mirrorlist {
     my @para = grep { $_ } $ENV{URPMI_ADDMEDIA_REASON};
     my $product_version = $ENV{URPMI_ADDMEDIA_PRODUCT_VERSION} || $product_id->{version};
 
-    "https://api.mandriva.com/mirrors/$product_type.$product_version.$arch.list"
-      . (@para ? '?' . join('&', @para) : '');
+    if ($product_id->{branch} == "Devel") {
+        "https://downloads.openmandriva.org/mirrors/cooker.$arch.list"
+          . (@para ? '?' . join('&', @para) : '');
+    } else {
+        "https://downloads.openmandriva.org/mirrors/openmandriva.$product_version.$arch.list"
+          . (@para ? '?' . join('&', @para) : '');
+    }
 }
 
 #- heuristic to detect wether it is really a mirrorlist or a simple mirror url:

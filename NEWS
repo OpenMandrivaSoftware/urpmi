@@ -1,3 +1,7 @@
+Version 7.25 - 20 Aug 2013, by Bernhard Rosenkränzer
+
+- R.I.P. api.mandriva.com, welcome downloads.openmandriva.org!
+
 Version 7.24 - 30 March 2013, by Per Øyvind Karlsen
 
 - add support for --force-req-updates & --no-force-req-updates (Denis Silakov)
