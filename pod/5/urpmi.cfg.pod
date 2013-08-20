@@ -108,13 +108,6 @@ Same as B<--excludepath> for urpmi. This options allows to give a comma
 separated list of paths to be excluded on installation. There is no path
 exclusion by default.
 
-=item B<no-force-req-update>
-
-Same as B<--verify-rpm> for urpmi. Enable or disable signature checking
-(it's enabled by default). Disabling it can be written in various ways (as
-for all the other boolean options) : C<no-verify-rpm> or C<verify-rpm: no>
-or C<verify-rpm: off> or C<verify-rpm: 0>.
-
 =item B<fuzzy>
 
 Same as B<--fuzzy> for urpmi or urpmq. Enable or disable fuzzy
