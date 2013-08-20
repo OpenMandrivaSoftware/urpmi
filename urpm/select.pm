@@ -8,7 +8,7 @@ use urpm::util qw(any formatList intersection member min partition uniq);
 use urpm::sys;
 use URPM;
 
-my $default_priority_list = 'rpm,perl-URPM,perl-MDV-Distribconf,urpmi,meta-task,glibc,aria2';
+my $default_priority_list = 'rpm,perl-URPM,perl-MDV-Distribconf,urpmi,meta-task,glibc,aria2,systemd';
 my @priority_list = split(',', $default_priority_list);
 
 my $evr_re = qr/[^\-]*-[^\-]*\.[^\.\-]*$/;
@@ -131,8 +131,26 @@ sub search_packages {
 
 	foreach (@ids) {
 	    my $pkg = $urpm->{depslist}[$_] or next;
-	    $urpm->{debug} and $urpm->{debug}("search_packages: found " . $pkg->fullname . " matching $v");
-	    $pkg->set_flag_skip(0); #- reset skip flag as manually selected.
+
+	    my $skip_pkg = 0;
+	    my ($name2ids_req, $result_req) = _search_packages($urpm, [$pkg->name], %options);
+	    my @ids_req = split /\|/, $name2ids_req->{$pkg->name};
+	    foreach (@ids_req) {
+		my $pkg_req = $urpm->{depslist}[$_] or next;
+		if( URPM::rpmEVRcompare($pkg_req->evr, $pkg->evr) > 0 ) {
+		    $skip_pkg = 1;
+		    last;
+		}
+	    }
+
+	    if( !$skip_pkg ) {
+		$urpm->{debug} and $urpm->{debug}("search_packages: found " . $pkg->fullname . " matching $v");
+		$pkg->set_flag_skip(0); #- reset skip flag as manually selected.
+	    }
+	    else {
+		$urpm->{debug} and $urpm->{debug}("search_packages: skip " . $pkg->fullname . " matching $v since newer version of the pakcage exists in repositories");
+		$pkg->set_flag_skip(1);
+	    }
 	}
     }
     $result;
