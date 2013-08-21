@@ -137,7 +137,7 @@ sub search_packages {
 	    my @ids_req = split /\|/, $name2ids_req->{$pkg->name};
 	    foreach (@ids_req) {
 		my $pkg_req = $urpm->{depslist}[$_] or next;
-		if( URPM::rpmEVRcompare($pkg_req->evr, $pkg->evr) > 0 ) {
+		if( URPM::rpmEVRcompare($pkg_req->EVR, $pkg->EVR) > 0 ) {
 		    $skip_pkg = 1;
 		    last;
 		}
