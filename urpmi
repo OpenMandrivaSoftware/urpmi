@@ -546,23 +546,35 @@ sub ask_choice {
 
     if (@l > 1 && $urpm->{options}{auto}) {
         # Let's try to fit the best package
-        # on the basis of length of longest substring
-        # between choice and requested names
+        # First, let's choose the highest version
+        # If versions are the same, try the name with the longest substring
+        # matching requested features
         #
-        # This should avoid installation of libreoffice-core providing liblcms2
-        # instead of liblcms2 itself and similar cases
         my $i = 1;
         my $longest_len = 0;
         my @all_names = (@names, @src_names);
 
         foreach my $pkg (@choices) {
-	    my @pkgname_string_chars = split("",$pkg->name);
-            foreach my $name (@all_names) {
-    	        my @longest_strs = lc_substr($name, $pkg->name);
-		if( $longest_len < length($longest_strs[0]) ) {
-		    $n = $i;
-		    $longest_len = length($longest_strs[0]);
-		}
+            my @pkgname_string_chars = split("",$pkg->name);
+
+            if( URPM::rpmEVRcompare($pkg->evr, $choices[$n-1]->evr) > 0 ) {
+                $n = $i;
+
+                foreach my $name (@all_names) {
+                    my @longest_strs = lc_substr($name, $pkg->name);
+                    if( $longest_len < length($longest_strs[0]) ) {
+                        $longest_len = length($longest_strs[0]);
+        	    }
+        	}
+            }
+	    elsif( URPM::rpmEVRcompare($pkg->evr, $choices[$n-1]->evr) == 0 ) {
+                foreach my $name (@all_names) {
+    	            my @longest_strs = lc_substr($name, $pkg->name);
+		    if( $longest_len < length($longest_strs[0]) ) {
+		        $n = $i;
+		        $longest_len = length($longest_strs[0]);
+		    }
+	        }
 	    }
 
 	    $i++;
