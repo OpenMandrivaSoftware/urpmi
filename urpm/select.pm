@@ -148,7 +148,7 @@ sub search_packages {
 		$pkg->set_flag_skip(0); #- reset skip flag as manually selected.
 	    }
 	    else {
-		$urpm->{debug} and $urpm->{debug}("search_packages: skip " . $pkg->fullname . " matching $v since newer version of the pakcage exists in repositories");
+		$urpm->{debug} and $urpm->{debug}("search_packages: skip " . $pkg->fullname . " matching $v since newer version of the package exists in repositories");
 		$pkg->set_flag_skip(1);
 	    }
 	}
