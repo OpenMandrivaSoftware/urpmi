@@ -147,6 +147,7 @@ my %options_spec = (
 
 	'metalink!' => sub { $urpm->{options}{metalink} = $_[1] },
 	'download-all:s' => sub { $urpm->{options}{'download-all'} = $_[1] },
+	'no-download-all!' => sub { $urpm->{options}{'no-download-all'} = 1 },
 	# deprecated in favor of --downloader xxx
 	wget => sub { $urpm->{options}{downloader} = 'wget' },
 	curl => sub { $urpm->{options}{downloader} = 'curl' },
@@ -443,7 +444,8 @@ sub add_urpmf_parameter {
 
 # common options setup
 
-foreach my $k ('allow-medium-change', 'auto', 'auto-select', 'clean', 'download-all:s', 'force', 'expect-install!', 'justdb', 'no-priority-upgrade', 'noscripts', 'replacefiles', 'p', 'P', 'previous-priority-upgrade=s', 'root=s', 'test!', 'verify-rpm!', 'update',
+foreach my $k ('allow-medium-change', 'auto', 'auto-select', 'clean', 'download-all:s', 'no-download-all!', 'force-req-update', 'no-force-req-update',
+foreach my $k ('allow-medium-change', 'auto', 'auto-select', 'clean', 'download-all:s', 'no-download-all!', 'force-req-update', 'no-force-req-update', 'force', 'expect-install!', 'justdb', 'no-priority-upgrade', 'noscripts', 'replacefiles', 'p', 'P', 'previous-priority-upgrade=s', 'root=s', 'test!', 'verify-rpm!', 'update',
 	       'split-level=s', 'split-length=s')
 {
     $options_spec{gurpmi}{$k} = $options_spec{urpmi}{$k};

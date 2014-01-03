@@ -94,6 +94,14 @@ installing into the specified directory.  If you want to use the default
 location, assign an empty string to it (WARNING! "yes" or "1" are NOT the
 options you really want to use here!)
 
+Note that this is the default behavior now. This option is supported
+for backward compatibility.
+
+=item B<no-download-all> 
+
+Same as B<--no-download-all> option for urpmi: downloads packages only
+when they are needed.
+
 =item B<downloader>
 
 Specify which download program to use: B<wget> or B<curl>.
