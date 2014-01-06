@@ -443,8 +443,6 @@ sub add_urpmf_parameter {
 }
 
 # common options setup
-
-foreach my $k ('allow-medium-change', 'auto', 'auto-select', 'clean', 'download-all:s', 'no-download-all!', 'force-req-update', 'no-force-req-update',
 foreach my $k ('allow-medium-change', 'auto', 'auto-select', 'clean', 'download-all:s', 'no-download-all!', 'force-req-update', 'no-force-req-update', 'force', 'expect-install!', 'justdb', 'no-priority-upgrade', 'noscripts', 'replacefiles', 'p', 'P', 'previous-priority-upgrade=s', 'root=s', 'test!', 'verify-rpm!', 'update',
 	       'split-level=s', 'split-length=s')
 {
