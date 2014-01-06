@@ -334,7 +334,7 @@ sub _mandriva_mirrorlist {
     # a potential attacker from redirecting to his own "update" server.
     # The server already supports https access, but the client side needs to
     # work out certificate verification.
-    if ($product_id->{branch} == "Devel") {
+    if ($product_id->{branch} eq "Devel") {
         "http://downloads.openmandriva.org/mirrors/cooker.$arch.list"
           . (@para ? '?' . join('&', @para) : '');
     } else {
