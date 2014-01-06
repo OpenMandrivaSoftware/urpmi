@@ -559,7 +559,7 @@ sub ask_choice {
         foreach my $pkg (@choices) {
             my @pkgname_string_chars = split("",$pkg->name);
 
-            if( URPM::rpmEVRcompare($pkg->evr, $choices[$n-1]->evr) > 0 ) {
+            if( URPM::rpmEVRcompare($pkg->evr, $choices[$n-1]->EVR) > 0 ) {
                 $n = $i;
 
                 foreach my $name (@all_names) {
@@ -569,7 +569,7 @@ sub ask_choice {
         	    }
         	}
             }
-	    elsif( URPM::rpmEVRcompare($pkg->evr, $choices[$n-1]->evr) == 0 ) {
+	    elsif( URPM::rpmEVRcompare($pkg->evr, $choices[$n-1]->EVR) == 0 ) {
                 foreach my $name (@all_names) {
     	            my @longest_strs = lc_substr($name, $pkg->name);
 		    if( $longest_len < length($longest_strs[0]) ) {
