@@ -75,7 +75,7 @@ sub manifypods {
     #- TODO repartition of man pages in sections by pod2man is incorrect
     #- TODO as more languages are added adapt the following quick hack
     # Adjust captions to make them look less like perl packages
-    $inherited =~ s/^(POD2MAN_EXE\s*=\s*)(.+)$/$1$2 -c "Mandriva Package Management" -r "Mandriva Linux"/m;
+    $inherited =~ s/^(POD2MAN_EXE\s*=\s*)(.+)$/$1$2 -c "Mandriva Package Management" -r "OpenMandriva Linux"/m;
     $inherited;
 }
 
