@@ -1,3 +1,12 @@
+Version 7.26 - 06 Jan 2016, by Tomasz Paweł Gajc
+
+- by default download all packages before install - patch from Rosa
+- fix leaving read lock on rpmdb
+- fix evr->EVR
+- Temporary fix to allow rpm upgrades to work (bug#214)
+- fix Mandriva->Openmandriva naming
+- merge all patches
+
 Version 7.25 - 20 Aug 2013, by Bernhard Rosenkränzer
 
 - R.I.P. api.mandriva.com, welcome downloads.openmandriva.org!
