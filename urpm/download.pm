@@ -1018,7 +1018,15 @@ sub _sync_webfetch_raw {
 	    my $half_MAX_ARG = 131072 / 2;
 	    # restrict the number of elements so that it fits on cmdline of curl/wget/proz/aria2c
 	    my $n = 0;
-	    for (my $len = 0; $n < @l && $len < $half_MAX_ARG; $len += length($l[$n++])) {}	    
+	    for (my $len = 0; $n < @l && $len < $half_MAX_ARG; $len += length($l[$n++])) {}
+	    if ($medium->{"medium-$preferred-options"}) {
+	        if (!$options->{"$preferred-options"} ) {
+	            $options->{"$preferred-options"} = $medium->{"medium-$preferred-options"};
+	        }
+	        else {
+	            $options->{"$preferred-options"}.= " ".$medium->{"medium-$preferred-options"};
+	        }
+	    }
 	    $sync->($options, splice(@l, 0, $n));
 	  }
 	}

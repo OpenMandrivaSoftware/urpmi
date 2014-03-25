@@ -1,10 +1,14 @@
 #!/usr/bin/perl
 
+eval 'exec /usr/bin/perl  -S $0 ${1+"$@"}'
+    if 0; # not running under some shell
+
 # $Id$
 
 #- Copyright (C) 2006-2012 Mandriva SA
 
 use strict;
+use File::Temp qw/ tempfile tempdir /;
 
 BEGIN {
     #- clean environment
@@ -23,10 +27,12 @@ our $do_checkpoint;
 our $noclean;
 our $rollback;
 our $disable;
+our $transactions;
 
 sub usage () {
     print N("urpmi.recover version %s
 Copyright (C) 2006-2011 Mandriva.
+Copyright (C) 2014 ROSA.
 This is free software and may be redistributed under the terms of the GNU GPL.
 
 usage:
@@ -39,6 +45,7 @@ usage:
 ") . N("  --list-safe    - list transactions since checkpoint
 ") . N("  --rollback     - rollback until specified date,
                    or rollback the specified number of transactions
+") . N("  --transactions - treat rollback argument as number of transactions to be reverted
 ") . N("  --disable      - turn off repackaging
 ");
     exit(1);
@@ -169,24 +176,137 @@ MACROS
 if ($rollback) {
     sys_log("called with: $command_line");
 
+    my $repackage_dir = URPM::expand("%_repackage_dir");
+
     my $tid;
+    if ($transactions and $rollback =~ /\D/) {
+       die N("Invalid number of transactions to be reverted");
+    }
+
     if ($rollback !~ /\D/) {
-	#- $rollback contains a number of transactions to roll back
-	#- get a date from there
-	my %tids;
-	my $db = URPM::DB::open() or die "Can't open RPM DB\n";
-	$db->traverse(sub { ++$tids{ $_[0]->installtid } });
-	my @tids = sort { $b <=> $a } keys %tids;
-	$tid = $tids[$rollback - 1];
+        if ($transactions) {
+            #- $rollback contains a number of transactions to roll back
+	    #- get a date from there
+	    my %tids;
+	    my $db = URPM::DB::open() or die "Can't open RPM DB\n";
+	    $db->traverse(sub { ++$tids{ $_[0]->installtid } });
+	    my @tids = sort { $b <=> $a } keys %tids;
+	    $tid = $tids[$rollback - 1];
+	} else {
+  	    #- $rollback is a timestamp
+            $tid = $rollback;
+        }
     } else {
 	#- $rollback contains a date, convert it to tid
 	$tid = date_to_tid($rollback);
+
     }
     $tid or die N("No rollback date found\n");
 
+    if (!$transactions) {
+        my $oldest_checkpoint = `find $repackage_dir -type d | sort -n | head -2 | tail -1`;
+        $oldest_checkpoint = `basename $oldest_checkpoint`;
+        chomp $oldest_checkpoint;
+        if ($oldest_checkpoint > $tid) {
+            my $checkpoint_human = `date --date \@$oldest_checkpoint`;
+            chomp $checkpoint_human;
+            die N("The oldest available checkpoint is %d (%s), I will not revert to older stages (this can damage your system)", $oldest_checkpoint, $checkpoint_human);
+        }
+    }
+
     my $rollbackdate = fmt_tid($tid);
     print N("Rollback until %s...\n", $rollbackdate), "\n";
-    exec '/bin/rpm', '-Uvh', '--rollback', $rollbackdate;
+
+    # Gather all repackaged files from repackage_dir
+    # corresponding to the datas before the requested one
+    my $tmpDir = tempdir(CLEANUP => 1);
+    my %old_pkgs = {};
+    my @processed_dirs = ();
+
+    open(PKG_DIRS, "find $repackage_dir -type d | sort -nr |");
+    while(<PKG_DIRS>) {
+        chomp;
+        my $pkgs_dir = $_;
+        if ($pkgs_dir eq $repackage_dir) {
+            next;
+        }
+        push @processed_dirs, $pkgs_dir;
+        my $dir_date = `basename $pkgs_dir`;
+        chomp $dir_date; 
+        if ($dir_date < $tid) {
+            last;
+        }
+
+        open(PKGS, "ls -1 $pkgs_dir | grep 'rpm\$'|");
+        while(<PKGS>) {
+            chomp;
+            my $pkg = $_;
+            my $pkg_name = $pkg;
+            $pkg_name =~ s/-([^-]+)-([^-]+)-([^-]+).rpm$//;
+            $old_pkgs{$pkg_name} = 1;
+
+            system("ln -s $pkgs_dir/$pkg $tmpDir/$pkg") == 0 or die();
+        }
+        close(PKGS);
+    }
+    close(PKG_DIRS);
+
+    # Clean up - leave the oldest version of every package
+    my $num_pkgs = `find $tmpDir -type f | wc -l`;
+    chomp $num_pkgs;
+    if( $num_pkgs > 0 ) {
+        system("urpm-repomanage -qlc $tmpDir || :") == 0 or die();
+    }
+
+    # Collect completely new packages that were not installed before the checkpoint
+    my @new_pkgs = ();
+    open(INSTALLED_RPMS, "rpm -qa --queryformat '\%{installtime} \%{name}\n' | sort -r |");
+    while(<INSTALLED_RPMS>) {
+        chomp;
+        my ($pkg_date, $pkg_name) = split(' ');
+        if ($pkg_date < $tid) {
+            last;
+        }
+        if( !defined $old_pkgs{$pkg_name} ) {
+            push @new_pkgs, $pkg_name;
+        }
+    }
+    close(INSTALLED_RPMS);
+
+    # Provide user with lists of packages to be downgraded/removed
+    # and ask for confirmation
+    print "\n== Old versions of the following packages will be installed ==\n";
+    system("ls -1 $tmpDir | grep rpm");
+
+    print "\n== The following pakcages will be removed ==\n";
+
+    foreach my $p (@new_pkgs) {
+        print " $p\n";
+    }
+
+    my $noexpr = N("Nn");
+    my $msg = N("\nDo you want to proceed?");
+    my $confirm = message_input_($msg . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/;
+    if (!$confirm) {
+        exit(1);
+    }
+
+    foreach my $p (@new_pkgs) {
+        print "Removing $p\n";
+        system("/bin/rpm --norepackage -e --nodeps $p") == 0 or die();
+    }
+    # Use faketime to tweak package installation date
+    my $dt=`date -d \@$tid '+%Y-%m-%d %H:%M:%S'`;
+    print "Downgrading packages...\n";
+    system("faketime '$dt' rpm -iU --norepackage --oldpackage $tmpDir/*rpm") == 0 or die();
+
+    unless ($noclean) {
+        foreach my $d (@processed_dirs) {
+            system("rm -rf $d") == 0 or die();
+        }
+    }
+
+#    exec '/bin/rpm', '-Uvh', '--rollback', $rollbackdate;
 }
 
 #- --disable

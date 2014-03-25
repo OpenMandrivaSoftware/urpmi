@@ -32,6 +32,11 @@ our @PER_MEDIA_OPT = qw(
     url
     verify-rpm
     virtual
+    medium-aria2-options
+    medium-curl-options
+    medium-prozilla-options
+    medium-rsync-options
+    medium-wget-options
     with-dir
     with_hdlist
     with_synthesis
