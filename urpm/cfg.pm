@@ -135,7 +135,7 @@ sub load_config_raw {
 		$err = N("medium `%s' is defined twice, aborting", $name);
 		return;
 	    }
-	    $block = { name => $name, $url ? (url => $url) : @{[]} };
+	    $block = { name => $name, filename => $file, $url ? (url => $url) : @{[]} };
 	} elsif (/^(hdlist
 	  |list
 	  |with_hdlist
@@ -203,8 +203,22 @@ sub load_config_raw {
 
 sub load_config {
     my ($file) = @_;
-
     my $blocks = load_config_raw($file);
+
+    # Load additional config files from urpmicfg.d folder
+    my $cfgdir = $file;
+    $cfgdir =~ s/\/[^\/]+$//;
+    $cfgdir.= "/urpmicfg.d";
+    if (-d $cfgdir) {
+        open (MORE_CFGS, "find $cfgdir -name '*.cfg' -print |");
+        while (<MORE_CFGS>) {
+            chomp;
+            my $blocks2 = load_config_raw($_);
+            push(@$blocks, @$blocks2);
+        }
+        close (MORE_CFGS);
+    }
+
     my ($media, $global) = partition { $_->{name} } @$blocks;
     ($global) = @$global;
     delete $global->{name};
@@ -217,7 +231,39 @@ sub dump_config {
 
     my %global = (name => '', %{$config->{global}});
 
-    dump_config_raw($file, [ %global ? \%global : @{[]}, @{$config->{media}} ]);
+    # First, force clean up of all config files
+    dump_config_raw($file, [%global ? \%global : @{[]}] );
+    my $cfgdir = $file;
+    $cfgdir =~ s/\/[^\/]+$//;
+    $cfgdir.= "/urpmicfg.d";
+    if (-d $cfgdir) {
+        open( CFG_LIST, "ls -1 $cfgdir | grep '.cfg\$' |" );
+        while(<CFG_LIST>) {
+            chomp;
+            dump_config_raw($cfgdir."/".$_, []);
+        }
+    }
+
+    my %cfg_files = ();
+    foreach my $media (@{$config->{media}}) {
+        if(!$media->{filename}) {
+            $media->{filename} = $file;
+        }
+       $cfg_files{$media->{filename}} = 1;
+    }
+
+    my $ret_code = 1;
+
+    foreach my $cfg_file (keys %cfg_files) {
+        if( $cfg_file =~ /urpmicfg.d\// ) {
+            $ret_code &= dump_config_raw($cfg_file, [ @{[]}, grep { $_->{filename} eq $cfg_file } @{$config->{media}} ]);
+        }
+        else {
+            $ret_code &= dump_config_raw($cfg_file, [ %global ? \%global : @{[]}, grep { $_->{filename} eq $cfg_file } @{$config->{media}} ]);
+        }
+    }
+
+    $ret_code;
 }
 
 sub dump_config_raw {
@@ -238,7 +284,7 @@ sub dump_config_raw {
 	    } elsif ($_ ne 'priority') {
 		"$_: " . $substitute_back->($m, $_);
 	    }
-	} sort grep { $_ && $_ ne 'url' && $_ ne 'name' } keys %$m;
+	} sort grep { $_ && $_ ne 'url' && $_ ne 'name' && $_ ne 'filename' } keys %$m;
 
         my $name_url = $m->{name} ? 
 	  join(' ', map { quotespace($_) } $m->{name}, $substitute_back->($m, 'url')) . ' ' : '';

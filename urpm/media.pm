@@ -21,6 +21,7 @@ our @PER_MEDIA_OPT = qw(
     media_info_dir
     mirrorlist
     name
+    filename
     no-media-info
     noreconfigure
     priority-upgrade
@@ -555,7 +556,7 @@ sub write_urpmi_cfg {
     urpm::cfg::dump_config($urpm->{config}, $config)
 	or $urpm->{fatal}(6, N("unable to write config file [%s]", $urpm->{config}));
 
-    $urpm->{log}(N("wrote config file [%s]", $urpm->{config}));
+    $urpm->{log}(N("wrote config file [%s and urpmicfg.d contents]", $urpm->{config}));
 
     #- everything should be synced now.
     delete $urpm->{modified};
