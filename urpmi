@@ -140,6 +140,10 @@ usage:
 ") . N("  --prozilla-options - additional options to pass to prozilla
 ") . N("  --aria2-options - additional options to pass to aria2
 ") . N("  --limit-rate   - limit the download speed.
+") . N("  --retry-hard   - rerun downloader if it fails after timeout
+                   (specified by --download-timeout).
+") . N("  --download-timeout   - timeout before next attempt to invoke downloader
+                   (only if --retry-hard is used). 
 ") . N("  --resume       - resume transfer of partially-downloaded files
                    (--no-resume disables it, default is disabled).
 ") . N("  --proxy        - use specified HTTP proxy, the port number is assumed

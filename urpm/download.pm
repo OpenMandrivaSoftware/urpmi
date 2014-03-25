@@ -368,45 +368,52 @@ sub sync_wget {
     ) . " |";
     $options->{debug} and $options->{debug}($wget_command);
     local $ENV{LC_ALL} = 'C';
-    my $wget_pid = open(my $wget, $wget_command);
-    local $/ = \1; #- read input by only one char, this is slow but very nice (and it works!).
-    local $_;
-    while (<$wget>) {
-	$buf .= $_;
-	if ($_ eq "\r" || $_ eq "\n") {
-	    if ($options->{callback}) {
-		if ($buf =~ /^--(\d\d\d\d-\d\d-\d\d )?\d\d:\d\d:\d\d--\s+(\S.*)\n/ms) {
-		    my $file_ = $2;
-		    if ($file && $file ne $file_) {
-			propagate_sync_callback($options, 'end', $file);
-			undef $file;
+
+    my $completed = 0;
+    my $retry_count = $options->{"retry_hard"} ? $options->{"retry_hard"}+1 : 1;
+    my $timeout = $options->{"download_timeout"} ? $options->{"download_timeout"} : 5;
+    while( !$completed and $retry_count ) {
+        my $wget_pid = open(my $wget, $wget_command);
+        $retry_count--;
+        local $/ = \1; #- read input by only one char, this is slow but very nice (and it works!).
+        local $_;
+        while (<$wget>) {
+ 	    $buf .= $_;
+	    if ($_ eq "\r" || $_ eq "\n") {
+		if ($options->{callback}) {
+		    if ($buf =~ /^--(\d\d\d\d-\d\d-\d\d )?\d\d:\d\d:\d\d--\s+(\S.*)\n/ms) {
+			my $file_ = $2;
+			if ($file && $file ne $file_) {
+			    propagate_sync_callback($options, 'end', $file);
+			    undef $file;
+			}
+			! defined $file and propagate_sync_callback($options, 'start', $file = $file_);
+		    } elsif (defined $file && ! defined $total && ($buf =~ /==>\s+RETR/ || $buf =~ /200 OK$/)) {
+			$total = '';
+		    } elsif ($buf =~ /^Length:\s*(\d\S*)/) {
+			$total = $1;
+		    } elsif (defined $total && $buf =~ m!^\s*(\d+)%.*\s+(\S+/s)\s+((ETA|eta)\s+(.*?)\s*)?[\r\n]$!ms) {
+			my ($percent, $speed, $eta) = ($1, $2, $5);
+			if (propagate_sync_callback($options, 'progress', $file, $percent, $total, $eta, $speed) eq 'canceled') {
+			    kill 15, $wget_pid;
+			    close $wget;
+			    return;
+			}
+			if ($_ eq "\n") {
+			    propagate_sync_callback($options, 'end', $file);
+			    ($total, $file) = (undef, undef);
+			}
 		    }
-		    ! defined $file and propagate_sync_callback($options, 'start', $file = $file_);
-		} elsif (defined $file && ! defined $total && ($buf =~ /==>\s+RETR/ || $buf =~ /200 OK$/)) {
-		    $total = '';
-		} elsif ($buf =~ /^Length:\s*(\d\S*)/) {
-		    $total = $1;
-		} elsif (defined $total && $buf =~ m!^\s*(\d+)%.*\s+(\S+/s)\s+((ETA|eta)\s+(.*?)\s*)?[\r\n]$!ms) {
-		    my ($percent, $speed, $eta) = ($1, $2, $5);
-		    if (propagate_sync_callback($options, 'progress', $file, $percent, $total, $eta, $speed) eq 'canceled') {
-			kill 15, $wget_pid;
-			close $wget;
-			return;
-		    }
-		    if ($_ eq "\n") {
-			propagate_sync_callback($options, 'end', $file);
-			($total, $file) = (undef, undef);
-		    }
+		} else {
+		    $options->{quiet} or print STDERR $buf;
 		}
-	    } else {
-		$options->{quiet} or print STDERR $buf;
+		$buf = '';
 	    }
-	    $buf = '';
 	}
+	$file and propagate_sync_callback($options, 'end', $file);
+        chdir $cwd;
+	(close $wget and $completed=1) or ($retry_count == 0 ? _error('wget') : print "Download problems, will retry in $timeout seconds..." and sleep $timeout);
     }
-    $file and propagate_sync_callback($options, 'end', $file);
-    chdir $cwd;
-    close $wget or _error('wget');
 }
 
 sub sync_curl {
@@ -527,9 +534,14 @@ sub sync_curl {
 
 sub _curl_action {
     my ($cmd, $options, @l) = @_;
-    
-	my ($buf, $file); $buf = '';
+
+    my ($buf, $file); $buf = '';
+    my $completed = 0;
+    my $retry_count = $options->{"retry_hard"} ? $options->{"retry_hard"}+1 : 1;
+    my $timeout = $options->{"download_timeout"} ? $options->{"download_timeout"} : 5;
+    while( !$completed and $retry_count ) {
 	my $curl_pid = open(my $curl, "$cmd |");
+	$retry_count--;
 	local $/ = \1; #- read input by only one char, this is slow but very nice (and it works!).
 	local $_;
 	while (<$curl>) {
@@ -565,7 +577,8 @@ sub _curl_action {
 		$buf = '';
 	    }
 	}
-	close $curl or _error('curl');
+	(close $curl and $completed=1) or ($retry_count == 0 ? _error('curl') : print "Download problems, will retry in $timeout seconds..." and sleep $timeout);
+    }
 }
 
 sub _calc_limit_rate {

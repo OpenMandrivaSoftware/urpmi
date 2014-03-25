@@ -154,6 +154,8 @@ my %options_spec = (
 	prozilla => sub { $urpm->{options}{downloader} = 'prozilla' },
 	aria2 => sub { $urpm->{options}{downloader} = 'aria2' },
 	'downloader=s' => sub { $urpm->{options}{downloader} = $_[1] },
+	'download-timeout=s' => sub { $urpm->{options}{download_timeout} = $_[1] },
+	'retry-hard=s' => sub { $urpm->{options}{retry_hard} = $_[1] },
 
 	'curl-options=s' => sub { $urpm->{options}{'curl-options'} = $_[1] },
 	'rsync-options=s' => sub { $urpm->{options}{'rsync-options'} = $_[1] },

@@ -270,6 +270,8 @@ sub _download_packages_of_distant_media {
     if (urpm::download::sync_rel($urpm, $blist->{medium}, [ urpm::blist_to_filenames($blist) ],
 			     dir => "$cachedir/partial", quiet => $options{quiet}, 
 			     is_versioned => 1,
+			     download_timeout => $urpm->{options}{download_timeout},
+			     retry_hard => $urpm->{options}{retry_hard},
 			     resume => $urpm->{options}{resume}, 
 			     ask_retry => $options{ask_retry},
 			     callback => $options{callback})) {
