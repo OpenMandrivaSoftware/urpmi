@@ -1,4 +1,12 @@
-Version 7.26 - 06 Jan 2016, by Tomasz Paweł Gajc
+Version 7.27 - 25 March 2014, by Denis Silakov
+
+- Added --retry-hard option
+- Redesign smart-auto selection - move implementation to select.pm module from urpmi executable
+- Restore urpmi.recover, add per-medium downloader options
+- Use full terminal width for output
+- Added support for additional config files from urpmicfg.d folder
+
+Version 7.26 - 06 Jan 2014, by Tomasz Paweł Gajc
 
 - by default download all packages before install - patch from Rosa
 - fix leaving read lock on rpmdb
