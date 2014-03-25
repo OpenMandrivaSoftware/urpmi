@@ -145,6 +145,31 @@ my $format_line_format = ' ' . join(' ', map { '%-' . $_ . 's' } @format_line_fi
 sub format_line_selected_packages {
     my ($urpm, $state, $pkgs) = @_;
 
+    my $max_name_len = 0;
+    foreach my $p (@$pkgs) {
+        if (length($p->name) > $max_name_len) {
+            $max_name_len = length($p->name);
+	}
+    }
+
+    if ($max_name_len > $format_line_field_sizes[0]) {
+        # If the largest name is longer then the current limit,
+        # Try to detect terminal width and set the length of the first column on its basis
+        my $mincols = 30; # Do not set lower then this value (which has been used for years by default)
+        my $other_columns = 48; # size left for other columns + spaces between them
+        my ($rows, $cols) = split(' ',`/bin/stty size`);
+        if ($cols - $other_columns > $mincols) {
+            if ($cols - $other_columns > $max_name_len) {
+                $format_line_field_sizes[0] = $max_name_len;
+            }
+            else {
+                $format_line_field_sizes[0] = $cols - $other_columns;
+            }
+            # Remake line format, since we've changed column sizes
+            $format_line_format = ' ' . join(' ', map { '%-' . $_ . 's' } @format_line_field_sizes);
+        }
+    }
+
     my (@pkgs, @lines, $prev_medium);
     my $flush = sub {
 	push @lines, _format_line_selected_packages($state, $prev_medium, \@pkgs);
