@@ -499,7 +499,7 @@ sub get_best_choice {
     foreach my $pkg (@choices) {
         my @pkgname_string_chars = split("",$pkg->name);
 
-        if( URPM::rpmEVRcompare($pkg->evr, $choices[$best_idx-1]->evr) > 0 ) {
+        if( URPM::rpmEVRcompare($pkg->EVR, $choices[$best_idx-1]->EVR) > 0 ) {
             $best_idx = $i;
 
             foreach my $name (@all_names) {
@@ -509,7 +509,7 @@ sub get_best_choice {
                 }
             }
         }
-        elsif( URPM::rpmEVRcompare($pkg->evr, $choices[$best_idx-1]->evr) == 0 ) {
+        elsif( URPM::rpmEVRcompare($pkg->EVR, $choices[$best_idx-1]->EVR) == 0 ) {
             foreach my $name (@all_names) {
                 my @longest_strs = lc_substr($name, $pkg->name);
                 if( $longest_len < length($longest_strs[0]) ) {
