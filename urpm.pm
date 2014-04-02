@@ -56,7 +56,7 @@ sub default_options {
 	'split-length' => 8,
 	'verify-rpm' => 1,
 	'post-clean' => 1,
-	'xml-info' => 'on-demand',
+	'xml-info' => 'always',
 	'max-round-robin-tries' => 5,
 	'max-round-robin-probes' => 2,
 	'days-between-mirrorlist-update' => 5,
