@@ -391,6 +391,7 @@ my %options_spec = (
 	'rollback=s' => \$::rollback,
 	noclean => \$::noclean,
 	transactions => \$::transactions,
+	auto => \$::auto,
 	disable => \$::disable,
     },
 
