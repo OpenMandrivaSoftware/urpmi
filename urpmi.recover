@@ -28,6 +28,7 @@ our $noclean;
 our $rollback;
 our $disable;
 our $transactions;
+our $auto;
 
 sub usage () {
     print N("urpmi.recover version %s
@@ -39,7 +40,8 @@ usage:
 ", $urpm::VERSION) . N("  --help         - print this help message.
 ") . N("  --checkpoint   - set repackaging start now
 ") . N("  --noclean      - don't clean repackage directory on checkpoint
-") . N("  --urpmi-root   - use another root for urpmi db & rpm installation.
+") . N("  --urpmi-root   - use another root for urpmi db & rpm installation
+") . N("  --auto         - do not ask any questions
 ") . N("  --list         - list transactions since provided date/duration argument
 ") . N("  --list-all     - list all transactions in rpmdb (long)
 ") . N("  --list-safe    - list transactions since checkpoint
@@ -75,9 +77,56 @@ sub clean_repackage_dir {
 	or die N("Can't write to repackage directory [%s]\n", $repackage_dir);
     unless ($noclean) {
 	print N("Cleaning up repackage directory [%s]...\n", $repackage_dir);
-	my $nb = unlink grep { ! -d $_ } glob("$repackage_dir/*");
-	print P("%d file removed\n", "%d files removed\n", $nb, $nb);
+	system("rm -rf $repackage_dir/*") == 0 or die("Not all files were removed!");
     }
+}
+
+sub get_oldest_checkpoint {
+    my ($repackage_dir) = @_;
+    my $oldest_checkpoint = `find $repackage_dir -type d | sort -n | head -2 | tail -1`;
+    $oldest_checkpoint = `basename $oldest_checkpoint`;
+    chomp $oldest_checkpoint;
+    return $oldest_checkpoint;
+}
+
+sub get_all_transactions {
+    my ($listdate, $repackage_dir) = @_;
+    my $listtime = -1;
+    if ($listdate eq 'checkpoint') {
+	URPM::read_config_files();
+	$listtime = URPM::expand("%_unsafe_rollbacks");
+    } elsif ($listdate ne -1) {
+	#- convert to timestamp
+	$listtime = date_to_tid($listdate);
+    }
+    my %tids;
+
+    my $db = URPM::DB::open() or die "Can't open RPM DB\n";
+    $db->traverse(sub {
+	my ($p) = @_;
+	my $tid = $p->installtid;
+	return if $tid < $listtime;
+	exists $tids{$tid} or $tids{$tid} = [];
+	push @{ $tids{$tid} }, scalar($p->fullname);
+    });
+
+    open(ROLLBACKS, "ls -1 $repackage_dir | sort -n |");
+    while(<ROLLBACKS>) {
+        chomp;
+        my $tid = $_;
+        $tid =~ s/\/$//;
+        return if $tid < $listtime;
+        exists $tids{$tid} or $tids{$tid} = [];
+        open(PKGS, "ls -1 $repackage_dir/$tid |");
+        while(<PKGS>) {
+            chomp;
+            push @{ $tids{$tid} }, scalar("(removed) ".$_);
+        }
+        close(PKGS);
+    }
+    close(ROLLBACKS);
+
+    return %tids;
 }
 
 #- option parsing
@@ -99,24 +148,8 @@ $disable && ($listdate || $rollback || $do_checkpoint)
 #- --list <date> and --list-all
 
 if ($listdate) {
-    my $listtime = -1;
-    if ($listdate eq 'checkpoint') {
-	URPM::read_config_files();
-	$listtime = URPM::expand("%_unsafe_rollbacks");
-    } elsif ($listdate ne -1) {
-	#- convert to timestamp
-	$listtime = date_to_tid($listdate);
-    }
-    my %tids;
-
-    my $db = URPM::DB::open() or die "Can't open RPM DB\n";
-    $db->traverse(sub {
-	my ($p) = @_;
-	my $tid = $p->installtid;
-	return if $tid < $listtime;
-	exists $tids{$tid} or $tids{$tid} = [];
-	push @{ $tids{$tid} }, scalar($p->fullname);
-    });
+    my $repackage_dir = URPM::expand("%_repackage_dir");
+    my %tids = get_all_transactions($listdate, $repackage_dir);
 
     unless (scalar keys %tids) {
 	die N("No transaction found since %s\n", $listdate);
@@ -204,9 +237,7 @@ if ($rollback) {
     $tid or die N("No rollback date found\n");
 
     if (!$transactions) {
-        my $oldest_checkpoint = `find $repackage_dir -type d | sort -n | head -2 | tail -1`;
-        $oldest_checkpoint = `basename $oldest_checkpoint`;
-        chomp $oldest_checkpoint;
+        my $oldest_checkpoint = get_oldest_checkpoint($repackage_dir);
         if ($oldest_checkpoint > $tid) {
             my $checkpoint_human = `date --date \@$oldest_checkpoint`;
             chomp $checkpoint_human;
@@ -218,7 +249,7 @@ if ($rollback) {
     print N("Rollback until %s...\n", $rollbackdate), "\n";
 
     # Gather all repackaged files from repackage_dir
-    # corresponding to the datas before the requested one
+    # corresponding to the dates before the requested one
     my $tmpDir = tempdir(CLEANUP => 1);
     my %old_pkgs = {};
     my @processed_dirs = ();
@@ -230,12 +261,12 @@ if ($rollback) {
         if ($pkgs_dir eq $repackage_dir) {
             next;
         }
-        push @processed_dirs, $pkgs_dir;
         my $dir_date = `basename $pkgs_dir`;
         chomp $dir_date; 
         if ($dir_date < $tid) {
             last;
         }
+        push @processed_dirs, $pkgs_dir;
 
         open(PKGS, "ls -1 $pkgs_dir | grep 'rpm\$'|");
         while(<PKGS>) {
@@ -245,7 +276,9 @@ if ($rollback) {
             $pkg_name =~ s/-([^-]+)-([^-]+)-([^-]+).rpm$//;
             $old_pkgs{$pkg_name} = 1;
 
-            system("ln -s $pkgs_dir/$pkg $tmpDir/$pkg") == 0 or die();
+            if( ! -e "$tmpDir/$pkg" ) {
+                system("ln -s $pkgs_dir/$pkg $tmpDir/$pkg") == 0 or die();
+            }
         }
         close(PKGS);
     }
@@ -273,22 +306,24 @@ if ($rollback) {
     }
     close(INSTALLED_RPMS);
 
-    # Provide user with lists of packages to be downgraded/removed
-    # and ask for confirmation
-    print "\n== Old versions of the following packages will be installed ==\n";
-    system("ls -1 $tmpDir | grep rpm");
+    if (!$auto) {
+        # Provide user with lists of packages to be downgraded/removed
+        # and ask for confirmation
+        print "\n== Old versions of the following packages will be installed ==\n";
+        system("ls -1 $tmpDir | grep rpm");
 
-    print "\n== The following pakcages will be removed ==\n";
+        print "\n== The following pakcages will be removed ==\n";
 
-    foreach my $p (@new_pkgs) {
-        print " $p\n";
-    }
+        foreach my $p (@new_pkgs) {
+            print " $p\n";
+        }
 
-    my $noexpr = N("Nn");
-    my $msg = N("\nDo you want to proceed?");
-    my $confirm = message_input_($msg . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/;
-    if (!$confirm) {
-        exit(1);
+        my $noexpr = N("Nn");
+        my $msg = N("\nDo you want to proceed?");
+        my $confirm = message_input_($msg . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/;
+        if (!$confirm) {
+            exit(1);
+        }
     }
 
     foreach my $p (@new_pkgs) {
