@@ -48,7 +48,9 @@ my $config_verbatim = urpm::cfg::load_config_raw($file, 1);
 ok( ref $config_verbatim, 'config loaded' );
 
 unlink "$file.verbatim", "$file.bad";
-urpm::util::copy($file, "$file.state"); #- dump_config has a state
+#- with urpmicfg.d patch, dump_config forces cleanup of all
+#- config files before dumping
+urpm::util::copy($file, "$file.state");
 ok( urpm::cfg::dump_config_raw("$file.verbatim", $config_verbatim), 'config written' );
 ok( urpm::cfg::dump_config("$file.bad", $config), 'config written' );
 ok( urpm::cfg::dump_config("$file.state", $config), 'config written' );
@@ -73,10 +75,12 @@ isnt( $cfgtext, $cfgtext2, 'config should differ' )
     or system qw( diff -u ), "$file.verbatim", "$file.bad";
 }
 {
-my $cfgtext2 = read_file("$file.state");
+my $cfgtext2 = read_file("$file.bad");
 $cfgtext2 =~ s/# generated.*\n//;
-is( $cfgtext, $cfgtext2, 'config is the same' )
-    or system qw( diff -u ), "$file.verbatim", "$file.state";
+my $cfgtext3 = read_file("$file.state");
+$cfgtext3 =~ s/# generated.*\n//;
+is( $cfgtext2, $cfgtext3, 'config is the same' )
+    or system qw( diff -u ), "$file.bad", "$file.state";
 }
 
 
