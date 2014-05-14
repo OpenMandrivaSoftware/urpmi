@@ -324,9 +324,6 @@ my %options_spec = (
 	r => sub {
 	    $options{version} = $options{release} = 1;
 	},
-	evrd => sub {
-	    $options{evrd} = 1;
-	},
 	f => sub {
 	    $options{nvra} = $options{version} = $options{release} = $options{disttag} = $options{distepoch} = $options{arch} = 1;
 	},

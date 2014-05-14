@@ -1,3 +1,7 @@
+Version 7.28 - 14 March 2014, by Denis Silakov
+
+- Added --evrd option for urpmq
+
 Version 7.27 - 25 March 2014, by Denis Silakov
 
 - Added --retry-hard option

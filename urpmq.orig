@@ -100,7 +100,6 @@ usage:
                    - search in provides to find package.
 ") . N("  -a             - select all matches on command line.
 ") . N("  -c             - complete output with package to be removed.
-") . N("  --evrd         - print epoch, version, release and distepoch.
 ") . N("  -f             - print version, release and arch with name.
 ") . N("  -g             - print groups with name also.
 ") . N("  -i             - print useful information in human readable form.
@@ -152,9 +151,6 @@ my $pkg_to_string = sub {
     my $str = '';
     if ($options{nvra}) {
 	$str = $pkg->fullname;
-    }
-    elsif ($options{evrd}) {
-	$str = $pkg->name.": ".$pkg->epoch.":".$pkg->version."-".$pkg->release.":".$pkg->distepoch;
     } else {
 	$str .= $pkg->name;
 	$options{version} and $str .= '-' . $pkg->version;	 

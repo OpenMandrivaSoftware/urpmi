@@ -327,6 +327,10 @@ Prints groups of each package listed.
 
 Prints also version and release of each package listed.
 
+=item B<--evrd>
+
+Prints epoch, version, release and distepoch of each package listed.
+
 =item B<-f>
 
 Prints also version, release and arch of each package listed.
