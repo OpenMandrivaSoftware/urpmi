@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi-vi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-25 11:15-0400\n"
+"POT-Creation-Date: 2014-05-20 12:12+0400\n"
 "PO-Revision-Date: 2005-06-08 15:13+0700\n"
 "Last-Translator: Trinh Minh Thanh <tmthanh@yahoo.com>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
@@ -125,7 +125,7 @@ msgid "Options:"
 msgstr ""
 
 #: ../gurpmi.pm:61 ../urpme:46 ../urpmf:35 ../urpmi:84 ../urpmi.addmedia:55
-#: ../urpmi.recover:39 ../urpmi.removemedia:40 ../urpmi.update:32 ../urpmq:47
+#: ../urpmi.recover:40 ../urpmi.removemedia:40 ../urpmi.update:32 ../urpmq:47
 #, c-format
 msgid "  --help         - print this help message.\n"
 msgstr "  --help         - in thông tin trợ giúp này.\n"
@@ -423,7 +423,7 @@ msgstr "Đang tải về gói `%s'..."
 msgid "Environment directory %s does not exist"
 msgstr ""
 
-#: ../urpm.pm:256 ../urpmf:248 ../urpmq:176
+#: ../urpm.pm:256 ../urpmf:248 ../urpmq:180
 #, c-format
 msgid "using specific environment on %s\n"
 msgstr "đang dùng môi trường đặc hiệu trên %s\n"
@@ -489,57 +489,57 @@ msgstr ""
 msgid "bad proxy declaration on command line\n"
 msgstr "khai báo proxy sai trong dòng lệnh\n"
 
-#: ../urpm/args.pm:335
+#: ../urpm/args.pm:338
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq: không thể đọc tập tin rpm \"%s\"\n"
 
-#: ../urpm/args.pm:420
+#: ../urpm/args.pm:424
 #, c-format
 msgid "unexpected expression %s"
 msgstr ""
 
-#: ../urpm/args.pm:421
+#: ../urpm/args.pm:425
 #, fuzzy, c-format
 msgid "missing expression before %s"
 msgstr "Thiếu chữ ký (%s)"
 
-#: ../urpm/args.pm:427
+#: ../urpm/args.pm:431
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr ""
 
-#: ../urpm/args.pm:431
+#: ../urpm/args.pm:435
 #, c-format
 msgid "no expression to close"
 msgstr ""
 
-#: ../urpm/args.pm:440
+#: ../urpm/args.pm:444
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
 
-#: ../urpm/args.pm:513
+#: ../urpm/args.pm:517
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr ""
 
-#: ../urpm/args.pm:536
+#: ../urpm/args.pm:540
 #, c-format
 msgid "Can't use %s without %s"
 msgstr ""
 
-#: ../urpm/args.pm:539 ../urpm/args.pm:542 ../urpmq:168
+#: ../urpm/args.pm:543 ../urpm/args.pm:546 ../urpmq:172
 #, c-format
 msgid "Can't use %s with %s"
 msgstr ""
 
-#: ../urpm/args.pm:550
+#: ../urpm/args.pm:554
 #, c-format
 msgid "Too many arguments\n"
 msgstr ""
 
-#: ../urpm/args.pm:558
+#: ../urpm/args.pm:562
 #, fuzzy, c-format
 msgid ""
 "%s version %s\n"
@@ -556,7 +556,7 @@ msgstr ""
 "\n"
 "Cách dùng:\n"
 
-#: ../urpm/args.pm:564
+#: ../urpm/args.pm:568
 #, c-format
 msgid "Copyright (C) %s by %s"
 msgstr ""
@@ -734,7 +734,7 @@ msgid "unable to handle protocol: %s"
 msgstr "không thể quản lý giao thức: %s"
 
 #: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:556 ../urpmi:575 ../urpmi:698
-#: ../urpmi.recover:287
+#: ../urpmi.recover:321
 #, c-format
 msgid "Nn"
 msgstr "NnKk"
@@ -757,7 +757,7 @@ msgid "Do you want to generate and upload a report?"
 msgstr ""
 
 #: ../urpm/dudf.pm:79 ../urpmi:558 ../urpmi:577 ../urpmi:699
-#: ../urpmi.addmedia:136 ../urpmi.recover:289
+#: ../urpmi.addmedia:136 ../urpmi.recover:323
 #, c-format
 msgid " (Y/n) "
 msgstr " (Có/Không) "
@@ -1771,7 +1771,7 @@ msgid "  --root         - use another root for rpm removal.\n"
 msgstr "  --root         - dùng root khác để thực hiện gỡ bỏ rpm.\n"
 
 #: ../urpme:54 ../urpmf:40 ../urpmi:127 ../urpmi.addmedia:73
-#: ../urpmi.recover:42 ../urpmi.removemedia:45 ../urpmi.update:48 ../urpmq:74
+#: ../urpmi.removemedia:45 ../urpmi.update:48 ../urpmq:74
 #, fuzzy, c-format
 msgid "  --urpmi-root   - use another root for urpmi db & rpm installation.\n"
 msgstr "  --root         - dùng root khác để thực hiện cài đặt rpm.\n"
@@ -2145,7 +2145,7 @@ msgstr "  --verbose      - phương thức verbose.\n"
 msgid "  -m             - the media in which the package was found\n"
 msgstr "  -l             - liệt kê các tập tin trong gói tin.\n"
 
-#: ../urpmf:85 ../urpmq:103
+#: ../urpmf:85 ../urpmq:104
 #, c-format
 msgid "  -f             - print version, release and arch with name.\n"
 msgstr "  -f             - in phiên bản, phát hành và arch với tên.\n"
@@ -2937,7 +2937,7 @@ msgstr "thiếu <đường dẫn liên quan của hdlist> \n"
 msgid "Can't use %s with remote medium"
 msgstr ""
 
-#: ../urpmi.recover:33
+#: ../urpmi.recover:34
 #, fuzzy, c-format
 msgid ""
 "urpmi.recover version %s\n"
@@ -2955,149 +2955,153 @@ msgstr ""
 "\n"
 "Cách dùng:\n"
 
-#: ../urpmi.recover:40
+#: ../urpmi.recover:41
 #, c-format
 msgid "  --checkpoint   - set repackaging start now\n"
 msgstr ""
 
-#: ../urpmi.recover:41
+#: ../urpmi.recover:42
 #, fuzzy, c-format
 msgid "  --noclean      - don't clean repackage directory on checkpoint\n"
 msgstr "  --noclean      - không xóa rpms khỏi cache.\n"
 
 #: ../urpmi.recover:43
 #, fuzzy, c-format
+msgid "  --urpmi-root   - use another root for urpmi db & rpm installation\n"
+msgstr "  --root         - dùng root khác để thực hiện cài đặt rpm.\n"
+
+#: ../urpmi.recover:44
+#, fuzzy, c-format
+msgid "  --auto         - do not ask any questions\n"
+msgstr "  --uniq         - không in ra các dòng giống nhau.\n"
+
+#: ../urpmi.recover:45
+#, fuzzy, c-format
 msgid ""
 "  --list         - list transactions since provided date/duration argument\n"
 msgstr "  --list-url     - liệt kê các phương tiện hiện có và url của chúng.\n"
 
-#: ../urpmi.recover:44
+#: ../urpmi.recover:46
 #, fuzzy, c-format
 msgid "  --list-all     - list all transactions in rpmdb (long)\n"
 msgstr "  --list-url     - liệt kê các phương tiện hiện có và url của chúng.\n"
 
-#: ../urpmi.recover:45
+#: ../urpmi.recover:47
 #, fuzzy, c-format
 msgid "  --list-safe    - list transactions since checkpoint\n"
 msgstr "  --list-url     - liệt kê các phương tiện hiện có và url của chúng.\n"
 
-#: ../urpmi.recover:46
+#: ../urpmi.recover:48
 #, c-format
 msgid ""
 "  --rollback     - rollback until specified date,\n"
 "                   or rollback the specified number of transactions\n"
 msgstr ""
 
-#: ../urpmi.recover:48
+#: ../urpmi.recover:50
 #, c-format
 msgid ""
 "  --transactions - treat rollback argument as number of transactions to be "
 "reverted\n"
 msgstr ""
 
-#: ../urpmi.recover:49
+#: ../urpmi.recover:51
 #, fuzzy, c-format
 msgid "  --disable      - turn off repackaging\n"
 msgstr "  --name         - chỉ in ra tên gói.\n"
 
-#: ../urpmi.recover:64
+#: ../urpmi.recover:66
 #, c-format
 msgid "Invalid date or duration [%s]\n"
 msgstr ""
 
-#: ../urpmi.recover:72
+#: ../urpmi.recover:74
 #, fuzzy, c-format
 msgid "Repackage directory not defined\n"
 msgstr "Không tìm thấy gói tin %s."
 
-#: ../urpmi.recover:75
+#: ../urpmi.recover:77
 #, fuzzy, c-format
 msgid "Can't write to repackage directory [%s]\n"
 msgstr "Không thể tạo thư mục [%s] cho báo cáo lỗi"
 
-#: ../urpmi.recover:77
+#: ../urpmi.recover:79
 #, fuzzy, c-format
 msgid "Cleaning up repackage directory [%s]...\n"
 msgstr "Không thể tạo thư mục [%s] cho báo cáo lỗi"
 
-#: ../urpmi.recover:79
-#, c-format
-msgid "%d file removed\n"
-msgid_plural "%d files removed\n"
-msgstr[0] ""
-
-#: ../urpmi.recover:89
+#: ../urpmi.recover:138
 #, c-format
 msgid "Spurious command-line arguments [%s]\n"
 msgstr ""
 
-#: ../urpmi.recover:91
+#: ../urpmi.recover:140
 #, c-format
 msgid "You can't specify --checkpoint and --rollback at the same time\n"
 msgstr ""
 
-#: ../urpmi.recover:93
+#: ../urpmi.recover:142
 #, c-format
 msgid "You can't specify --checkpoint and --list at the same time\n"
 msgstr ""
 
-#: ../urpmi.recover:95
+#: ../urpmi.recover:144
 #, c-format
 msgid "You can't specify --rollback and --list at the same time\n"
 msgstr ""
 
-#: ../urpmi.recover:97
+#: ../urpmi.recover:146
 #, c-format
 msgid "You can't specify --disable along with another option"
 msgstr ""
 
-#: ../urpmi.recover:122
+#: ../urpmi.recover:155
 #, c-format
 msgid "No transaction found since %s\n"
 msgstr ""
 
-#: ../urpmi.recover:137
+#: ../urpmi.recover:170
 #, c-format
 msgid "You must be superuser to do this"
 msgstr ""
 
-#: ../urpmi.recover:150 ../urpmi.recover:329
+#: ../urpmi.recover:183 ../urpmi.recover:364
 #, fuzzy, c-format
 msgid "Writing rpm macros file [%s]...\n"
 msgstr "đang thu thập tập tin rpm [%s] ..."
 
-#: ../urpmi.recover:183
+#: ../urpmi.recover:216
 #, c-format
 msgid "Invalid number of transactions to be reverted"
 msgstr ""
 
-#: ../urpmi.recover:204
+#: ../urpmi.recover:237
 #, fuzzy, c-format
 msgid "No rollback date found\n"
 msgstr "Không thấy filelist\n"
 
-#: ../urpmi.recover:213
+#: ../urpmi.recover:244
 #, c-format
 msgid ""
 "The oldest available checkpoint is %d (%s), I will not revert to older "
 "stages (this can damage your system)"
 msgstr ""
 
-#: ../urpmi.recover:218
+#: ../urpmi.recover:249
 #, fuzzy, c-format
 msgid "Rollback until %s...\n"
 msgstr ""
 "callback là :\n"
 "%s\n"
 
-#: ../urpmi.recover:288
+#: ../urpmi.recover:322
 #, c-format
 msgid ""
 "\n"
 "Do you want to proceed?"
 msgstr ""
 
-#: ../urpmi.recover:315
+#: ../urpmi.recover:350
 #, fuzzy, c-format
 msgid "Disabling repackaging\n"
 msgstr "  --name         - chỉ in ra tên gói.\n"
@@ -3399,37 +3403,42 @@ msgstr "  -p             - tìm gói tin từ các nhà cung cấp.\n"
 msgid "  -c             - complete output with package to be removed.\n"
 msgstr "  -c             - hoàn thành output với gói sẽ được gỡ bỏ.\n"
 
-#: ../urpmq:104
+#: ../urpmq:103
+#, fuzzy, c-format
+msgid "  --evrd         - print epoch, version, release and distepoch.\n"
+msgstr "  -f             - in phiên bản, phát hành và arch với tên.\n"
+
+#: ../urpmq:105
 #, c-format
 msgid "  -g             - print groups with name also.\n"
 msgstr "  -g             - in ra các nhóm với tên.\n"
 
-#: ../urpmq:105
+#: ../urpmq:106
 #, c-format
 msgid "  -i             - print useful information in human readable form.\n"
 msgstr "  -i             - in ra thông tin có ích mà người dùng đọc được.\n"
 
-#: ../urpmq:106
+#: ../urpmq:107
 #, c-format
 msgid "  -l             - list files in package.\n"
 msgstr "  -l             - liệt kê các tập tin trong gói tin.\n"
 
-#: ../urpmq:107
+#: ../urpmq:108
 #, fuzzy, c-format
 msgid "  -m             - equivalent to -du\n"
 msgstr "  -q             - chế độ yên lặng.\n"
 
-#: ../urpmq:108
+#: ../urpmq:109
 #, c-format
 msgid "  -r             - print version and release with name also.\n"
 msgstr "  -r             - in ra phiên bản và phát hành với tên.\n"
 
-#: ../urpmq:109
+#: ../urpmq:110
 #, c-format
 msgid "  -s             - next package is a source package (same as --src).\n"
 msgstr "  -s             - gói tin tiếp theo kà gói nguồn (giống như --src).\n"
 
-#: ../urpmq:110
+#: ../urpmq:111
 #, c-format
 msgid ""
 "  -u             - remove package if a more recent version is already "
@@ -3438,51 +3447,51 @@ msgstr ""
 "  -u              - bỏ gói tin nếu có phiên bản mới hơn đã được cài đặt "
 "rồi.\n"
 
-#: ../urpmq:111
+#: ../urpmq:112
 #, c-format
 msgid "  -y             - impose fuzzy search (same as --fuzzy).\n"
 msgstr "  -y             - tác động tìm kiếm fuzzy (giống như --fuzzy.\n"
 
-#: ../urpmq:112
+#: ../urpmq:113
 #, c-format
 msgid "  -Y             - like -y, but forces to match case-insensitively.\n"
 msgstr "  -Y             - giống -y, nhưng ép buộc phải khớp chứ hoa thường.\n"
 
-#: ../urpmq:113
+#: ../urpmq:114
 #, c-format
 msgid "  names or rpm files given on command line are queried.\n"
 msgstr "  tên hay tập tin rpm có trong dòng lệnh được yêu cầu.\n"
 
-#: ../urpmq:167
+#: ../urpmq:171
 #, c-format
 msgid "usage: \"urpmq --auto-orphans\" with no argument"
 msgstr ""
 
-#: ../urpmq:220
+#: ../urpmq:224
 #, c-format
 msgid "--list-nodes can only be used with --parallel"
 msgstr "--list-nodes chỉ được dùng với --parallel"
 
-#: ../urpmq:244
+#: ../urpmq:248
 #, fuzzy, c-format
 msgid "use -l to list files"
 msgstr "không thể ghi tập danh sách của \"%s\""
 
-#: ../urpmq:428
+#: ../urpmq:432
 #, fuzzy, c-format
 msgid "no xml info for medium \"%s\", only partial result for package %s"
 msgstr ""
 "Lưu ý: vì không có phương tiện được tìm kiếm dùng hdlists, urpmf không thể "
 "trả lại kết quả\n"
 
-#: ../urpmq:429
+#: ../urpmq:433
 #, fuzzy, c-format
 msgid "no xml info for medium \"%s\", only partial result for packages %s"
 msgstr ""
 "Lưu ý: vì không có phương tiện được tìm kiếm dùng hdlists, urpmf không thể "
 "trả lại kết quả\n"
 
-#: ../urpmq:432
+#: ../urpmq:436
 #, fuzzy, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for package %s"
@@ -3490,7 +3499,7 @@ msgstr ""
 "Lưu ý: vì không có phương tiện được tìm kiếm dùng hdlists, urpmf không thể "
 "trả lại kết quả\n"
 
-#: ../urpmq:433
+#: ../urpmq:437
 #, fuzzy, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for packages %s"
@@ -3498,7 +3507,7 @@ msgstr ""
 "Lưu ý: vì không có phương tiện được tìm kiếm dùng hdlists, urpmf không thể "
 "trả lại kết quả\n"
 
-#: ../urpmq:500
+#: ../urpmq:504
 #, c-format
 msgid "No changelog found\n"
 msgstr "Không thấy changelog\n"
@@ -4055,9 +4064,6 @@ msgstr "Một Frontend đồ họa để cài đặt các tập tin RPM"
 #~ msgstr ""
 #~ "  --quiet         - không in ra tên tag (mặc định nếu không đưa tag vào\n"
 #~ "                   dòng lệnh, không tương thích với chế độ tương tác).\n"
-
-#~ msgid "  --uniq         - do not print identical lines.\n"
-#~ msgstr "  --uniq         - không in ra các dòng giống nhau.\n"
 
 #~ msgid "  --all          - print all tags.\n"
 #~ msgstr "  --all           - in ra toàn bộ tag.\n"

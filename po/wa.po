@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-25 11:15-0400\n"
+"POT-Creation-Date: 2014-05-20 12:12+0400\n"
 "PO-Revision-Date: 2004-08-08 20:26+0200\n"
 "Last-Translator: Pablo Saratxaga <pablo@walon.org>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -132,7 +132,7 @@ msgid "Options:"
 msgstr ""
 
 #: ../gurpmi.pm:61 ../urpme:46 ../urpmf:35 ../urpmi:84 ../urpmi.addmedia:55
-#: ../urpmi.recover:39 ../urpmi.removemedia:40 ../urpmi.update:32 ../urpmq:47
+#: ../urpmi.recover:40 ../urpmi.removemedia:40 ../urpmi.update:32 ../urpmq:47
 #, c-format
 msgid "  --help         - print this help message.\n"
 msgstr "  --help         - mostere ci messaedje d' aidance chal.\n"
@@ -443,7 +443,7 @@ msgstr "Dj' aberwetêye li pacaedje «%s»..."
 msgid "Environment directory %s does not exist"
 msgstr ""
 
-#: ../urpm.pm:256 ../urpmf:248 ../urpmq:176
+#: ../urpm.pm:256 ../urpmf:248 ../urpmq:180
 #, c-format
 msgid "using specific environment on %s\n"
 msgstr "eployant on evironmint specifike so %s\n"
@@ -509,57 +509,57 @@ msgstr "Ciste operåcion ci n' est nén possibe e môde rastrindou"
 msgid "bad proxy declaration on command line\n"
 msgstr "måle declaråcion do procsi sol roye di comande\n"
 
-#: ../urpm/args.pm:335
+#: ../urpm/args.pm:338
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq: dji n' sai lére li fitchî rpm «%s»\n"
 
-#: ../urpm/args.pm:420
+#: ../urpm/args.pm:424
 #, fuzzy, c-format
 msgid "unexpected expression %s"
 msgstr "Patrons po les ratourneures:\n"
 
-#: ../urpm/args.pm:421
+#: ../urpm/args.pm:425
 #, fuzzy, c-format
 msgid "missing expression before %s"
 msgstr "I manke li sinateure (%s)"
 
-#: ../urpm/args.pm:427
+#: ../urpm/args.pm:431
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr ""
 
-#: ../urpm/args.pm:431
+#: ../urpm/args.pm:435
 #, fuzzy, c-format
 msgid "no expression to close"
 msgstr "Patrons po les ratourneures:\n"
 
-#: ../urpm/args.pm:440
+#: ../urpm/args.pm:444
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
 
-#: ../urpm/args.pm:513
+#: ../urpm/args.pm:517
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr "li ridant po candjî d' raecene (chroot) n' egzistêye nén"
 
-#: ../urpm/args.pm:536
+#: ../urpm/args.pm:540
 #, c-format
 msgid "Can't use %s without %s"
 msgstr "Dji n' sai eployî %s sins %s"
 
-#: ../urpm/args.pm:539 ../urpm/args.pm:542 ../urpmq:168
+#: ../urpm/args.pm:543 ../urpm/args.pm:546 ../urpmq:172
 #, c-format
 msgid "Can't use %s with %s"
 msgstr "Dji n' sai eployî %s avou %s"
 
-#: ../urpm/args.pm:550
+#: ../urpm/args.pm:554
 #, c-format
 msgid "Too many arguments\n"
 msgstr "Pår trop d' årgumints\n"
 
-#: ../urpm/args.pm:558
+#: ../urpm/args.pm:562
 #, fuzzy, c-format
 msgid ""
 "%s version %s\n"
@@ -576,7 +576,7 @@ msgstr ""
 "\n"
 "Po s' è siervi:\n"
 
-#: ../urpm/args.pm:564
+#: ../urpm/args.pm:568
 #, c-format
 msgid "Copyright (C) %s by %s"
 msgstr ""
@@ -754,7 +754,7 @@ msgid "unable to handle protocol: %s"
 msgstr "dji n' sai manaedjî l' protocole: %s"
 
 #: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:556 ../urpmi:575 ../urpmi:698
-#: ../urpmi.recover:287
+#: ../urpmi.recover:321
 #, c-format
 msgid "Nn"
 msgstr "Nn"
@@ -777,7 +777,7 @@ msgid "Do you want to generate and upload a report?"
 msgstr ""
 
 #: ../urpm/dudf.pm:79 ../urpmi:558 ../urpmi:577 ../urpmi:699
-#: ../urpmi.addmedia:136 ../urpmi.recover:289
+#: ../urpmi.addmedia:136 ../urpmi.recover:323
 #, c-format
 msgid " (Y/n) "
 msgstr " (O/n) "
@@ -1802,7 +1802,7 @@ msgid "  --root         - use another root for rpm removal.\n"
 msgstr "  --root         - eployî ene ôte raecene po l' oistaedje des rpm.\n"
 
 #: ../urpme:54 ../urpmf:40 ../urpmi:127 ../urpmi.addmedia:73
-#: ../urpmi.recover:42 ../urpmi.removemedia:45 ../urpmi.update:48 ../urpmq:74
+#: ../urpmi.removemedia:45 ../urpmi.update:48 ../urpmq:74
 #, c-format
 msgid "  --urpmi-root   - use another root for urpmi db & rpm installation.\n"
 msgstr "  --urpmi-root   - eployî ene ôte raecene po l' astalaedje des rpm.\n"
@@ -2197,7 +2197,7 @@ msgstr "  --vendor       - vindeu do pacaedje.\n"
 msgid "  -m             - the media in which the package was found\n"
 msgstr "  -m             - li sopoirt wice ki l' pacaedje a stî trové\n"
 
-#: ../urpmf:85 ../urpmq:103
+#: ../urpmf:85 ../urpmq:104
 #, c-format
 msgid "  -f             - print version, release and arch with name.\n"
 msgstr ""
@@ -3012,7 +3012,7 @@ msgstr "i manke li tchmin relatif pol fitchî hdlist\n"
 msgid "Can't use %s with remote medium"
 msgstr ""
 
-#: ../urpmi.recover:33
+#: ../urpmi.recover:34
 #, fuzzy, c-format
 msgid ""
 "urpmi.recover version %s\n"
@@ -3030,12 +3030,12 @@ msgstr ""
 "\n"
 "Po s' è siervi:\n"
 
-#: ../urpmi.recover:40
+#: ../urpmi.recover:41
 #, c-format
 msgid "  --checkpoint   - set repackaging start now\n"
 msgstr ""
 
-#: ../urpmi.recover:41
+#: ../urpmi.recover:42
 #, c-format
 msgid "  --noclean      - don't clean repackage directory on checkpoint\n"
 msgstr ""
@@ -3043,142 +3043,147 @@ msgstr ""
 
 #: ../urpmi.recover:43
 #, fuzzy, c-format
+msgid "  --urpmi-root   - use another root for urpmi db & rpm installation\n"
+msgstr "  --urpmi-root   - eployî ene ôte raecene po l' astalaedje des rpm.\n"
+
+#: ../urpmi.recover:44
+#, fuzzy, c-format
+msgid "  --auto         - do not ask any questions\n"
+msgstr ""
+"  --auto         - môde nén eteractif, supôze li prémetowe valixhance po "
+"totes les kesses.\n"
+
+#: ../urpmi.recover:45
+#, fuzzy, c-format
 msgid ""
 "  --list         - list transactions since provided date/duration argument\n"
 msgstr ""
 "  --list-safe    - djivêye di totes les transaccions dispoy li pont "
 "d' verifiaedje\n"
 
-#: ../urpmi.recover:44
+#: ../urpmi.recover:46
 #, c-format
 msgid "  --list-all     - list all transactions in rpmdb (long)\n"
 msgstr ""
 "  --list-all     - djivêye di totes les transaccions pol rpmdb (end a "
 "bråmint).\n"
 
-#: ../urpmi.recover:45
+#: ../urpmi.recover:47
 #, c-format
 msgid "  --list-safe    - list transactions since checkpoint\n"
 msgstr ""
 "  --list-safe    - djivêye di totes les transaccions dispoy li pont "
 "d' verifiaedje\n"
 
-#: ../urpmi.recover:46
+#: ../urpmi.recover:48
 #, c-format
 msgid ""
 "  --rollback     - rollback until specified date,\n"
 "                   or rollback the specified number of transactions\n"
 msgstr ""
 
-#: ../urpmi.recover:48
+#: ../urpmi.recover:50
 #, c-format
 msgid ""
 "  --transactions - treat rollback argument as number of transactions to be "
 "reverted\n"
 msgstr ""
 
-#: ../urpmi.recover:49
+#: ../urpmi.recover:51
 #, c-format
 msgid "  --disable      - turn off repackaging\n"
 msgstr "  --disable      - dismete li rfijhaedje des pacaedjes\n"
 
-#: ../urpmi.recover:64
+#: ../urpmi.recover:66
 #, c-format
 msgid "Invalid date or duration [%s]\n"
 msgstr ""
 
-#: ../urpmi.recover:72
+#: ../urpmi.recover:74
 #, c-format
 msgid "Repackage directory not defined\n"
 msgstr "Li ridant pol rifjhaedje des pacaedjes n' est nén defini\n"
 
-#: ../urpmi.recover:75
+#: ../urpmi.recover:77
 #, fuzzy, c-format
 msgid "Can't write to repackage directory [%s]\n"
 msgstr "dji n' sai askepyî l' ridant [%s] po fé des rapoirts di bug"
 
-#: ../urpmi.recover:77
+#: ../urpmi.recover:79
 #, fuzzy, c-format
 msgid "Cleaning up repackage directory [%s]...\n"
 msgstr "dji n' sai askepyî l' ridant [%s] po fé des rapoirts di bug"
 
-#: ../urpmi.recover:79
-#, c-format
-msgid "%d file removed\n"
-msgid_plural "%d files removed\n"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ../urpmi.recover:89
+#: ../urpmi.recover:138
 #, c-format
 msgid "Spurious command-line arguments [%s]\n"
 msgstr ""
 
-#: ../urpmi.recover:91
+#: ../urpmi.recover:140
 #, c-format
 msgid "You can't specify --checkpoint and --rollback at the same time\n"
 msgstr ""
 
-#: ../urpmi.recover:93
+#: ../urpmi.recover:142
 #, c-format
 msgid "You can't specify --checkpoint and --list at the same time\n"
 msgstr ""
 
-#: ../urpmi.recover:95
+#: ../urpmi.recover:144
 #, c-format
 msgid "You can't specify --rollback and --list at the same time\n"
 msgstr ""
 
-#: ../urpmi.recover:97
+#: ../urpmi.recover:146
 #, c-format
 msgid "You can't specify --disable along with another option"
 msgstr ""
 
-#: ../urpmi.recover:122
+#: ../urpmi.recover:155
 #, c-format
 msgid "No transaction found since %s\n"
 msgstr ""
 
-#: ../urpmi.recover:137
+#: ../urpmi.recover:170
 #, c-format
 msgid "You must be superuser to do this"
 msgstr "Vos dvoz esse «root» po pleur fé çoula"
 
-#: ../urpmi.recover:150 ../urpmi.recover:329
+#: ../urpmi.recover:183 ../urpmi.recover:364
 #, c-format
 msgid "Writing rpm macros file [%s]...\n"
 msgstr "Sicrijhaedje do fitchî des macros rpm [%s]...\n"
 
-#: ../urpmi.recover:183
+#: ../urpmi.recover:216
 #, c-format
 msgid "Invalid number of transactions to be reverted"
 msgstr ""
 
-#: ../urpmi.recover:204
+#: ../urpmi.recover:237
 #, fuzzy, c-format
 msgid "No rollback date found\n"
 msgstr "Nole djivêye di fitchîs di trovêye\n"
 
-#: ../urpmi.recover:213
+#: ../urpmi.recover:244
 #, c-format
 msgid ""
 "The oldest available checkpoint is %d (%s), I will not revert to older "
 "stages (this can damage your system)"
 msgstr ""
 
-#: ../urpmi.recover:218
+#: ../urpmi.recover:249
 #, c-format
 msgid "Rollback until %s...\n"
 msgstr ""
 
-#: ../urpmi.recover:288
+#: ../urpmi.recover:322
 #, c-format
 msgid ""
 "\n"
 "Do you want to proceed?"
 msgstr ""
 
-#: ../urpmi.recover:315
+#: ../urpmi.recover:350
 #, fuzzy, c-format
 msgid "Disabling repackaging\n"
 msgstr "  --disable      - dismete li rfijhaedje des pacaedjes\n"
@@ -3498,41 +3503,48 @@ msgstr ""
 msgid "  -c             - complete output with package to be removed.\n"
 msgstr "  -c             - rexhowe en etir avou l' pacaedjes a oister.\n"
 
-#: ../urpmq:104
+#: ../urpmq:103
+#, fuzzy, c-format
+msgid "  --evrd         - print epoch, version, release and distepoch.\n"
+msgstr ""
+"  -f             - mostere li modêye et release, eyet l' årtchitecteure avou "
+"l' no.\n"
+
+#: ../urpmq:105
 #, c-format
 msgid "  -g             - print groups with name also.\n"
 msgstr "  -g             - håyner les groupes ossu avou l' no.\n"
 
-#: ../urpmq:105
+#: ../urpmq:106
 #, c-format
 msgid "  -i             - print useful information in human readable form.\n"
 msgstr ""
 "  -i             - håyner des ahessåvès informåcions, dins ene cogne po les "
 "djins.\n"
 
-#: ../urpmq:106
+#: ../urpmq:107
 #, c-format
 msgid "  -l             - list files in package.\n"
 msgstr "  -l             - djivêye des pacaedjes k' i gn a.\n"
 
-#: ../urpmq:107
+#: ../urpmq:108
 #, c-format
 msgid "  -m             - equivalent to -du\n"
 msgstr "  -m             - ekivalint a -du.\n"
 
-#: ../urpmq:108
+#: ../urpmq:109
 #, c-format
 msgid "  -r             - print version and release with name also.\n"
 msgstr "  -r             - mostere li no, limeros di modêye eyet release.\n"
 
-#: ../urpmq:109
+#: ../urpmq:110
 #, c-format
 msgid "  -s             - next package is a source package (same as --src).\n"
 msgstr ""
 "  -s             - li pacaedje shuvant est on pacaedje sourdant\n"
 "                   (parey ki --src).\n"
 
-#: ../urpmq:110
+#: ../urpmq:111
 #, c-format
 msgid ""
 "  -u             - remove package if a more recent version is already "
@@ -3541,60 +3553,60 @@ msgstr ""
 "  -u             - bodjî l' pacaedje foû del djivêye si ene modêye\n"
 "                   pus nouve est ddja astalêye.\n"
 
-#: ../urpmq:111
+#: ../urpmq:112
 #, c-format
 msgid "  -y             - impose fuzzy search (same as --fuzzy).\n"
 msgstr "  -y             - foirci des cweraedjes rishonnants (come --fuzzy).\n"
 
-#: ../urpmq:112
+#: ../urpmq:113
 #, c-format
 msgid "  -Y             - like -y, but forces to match case-insensitively.\n"
 msgstr ""
 "  -Y             - come «-y» mins sins fé d' diferince inte grandes et "
 "ptitès letes.\n"
 
-#: ../urpmq:113
+#: ../urpmq:114
 #, c-format
 msgid "  names or rpm files given on command line are queried.\n"
 msgstr "  les nos ou fitchîs rpm dinés sol roye di comande sont rcwerous.\n"
 
-#: ../urpmq:167
+#: ../urpmq:171
 #, c-format
 msgid "usage: \"urpmq --auto-orphans\" with no argument"
 msgstr ""
 
-#: ../urpmq:220
+#: ../urpmq:224
 #, c-format
 msgid "--list-nodes can only be used with --parallel"
 msgstr "--list-nodes pout esse eployî seulmint avou --parallel"
 
-#: ../urpmq:244
+#: ../urpmq:248
 #, c-format
 msgid "use -l to list files"
 msgstr ""
 
-#: ../urpmq:428
+#: ../urpmq:432
 #, fuzzy, c-format
 msgid "no xml info for medium \"%s\", only partial result for package %s"
 msgstr ""
 "pont d' fitchî «hdlist» pol sopoirt «%s», i n' a k' on rzultat parciel pol "
 "pacaedje %s"
 
-#: ../urpmq:429
+#: ../urpmq:433
 #, fuzzy, c-format
 msgid "no xml info for medium \"%s\", only partial result for packages %s"
 msgstr ""
 "pont d' fitchî «hdlist» pol sopoirt «%s», i n' a k' on rzultat parciel po "
 "les pacaedjes %s"
 
-#: ../urpmq:432
+#: ../urpmq:436
 #, fuzzy, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for package %s"
 msgstr ""
 "pont d' fitchî «hdlist» pol sopoirt «%s», i n' a nou rzultat pol pacaedje %s"
 
-#: ../urpmq:433
+#: ../urpmq:437
 #, fuzzy, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for packages %s"
@@ -3602,7 +3614,7 @@ msgstr ""
 "pont d' fitchî «hdlist» pol sopoirt «%s», i n' a nou rzultat po les "
 "pacaedjes %s"
 
-#: ../urpmq:500
+#: ../urpmq:504
 #, c-format
 msgid "No changelog found\n"
 msgstr "Nou djournå des candjmints di trové\n"

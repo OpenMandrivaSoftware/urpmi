@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-25 11:15-0400\n"
+"POT-Creation-Date: 2014-05-20 12:12+0400\n"
 "PO-Revision-Date: 2011-08-26 00:45+0200\n"
 "Last-Translator: Atilla ÖNTAŞ <atilla_ontas@mandriva.org>\n"
 "Language-Team: Turkish <kde-i18n-doc@kde.org>\n"
@@ -136,7 +136,7 @@ msgid "Options:"
 msgstr "Seçenekler:"
 
 #: ../gurpmi.pm:61 ../urpme:46 ../urpmf:35 ../urpmi:84 ../urpmi.addmedia:55
-#: ../urpmi.recover:39 ../urpmi.removemedia:40 ../urpmi.update:32 ../urpmq:47
+#: ../urpmi.recover:40 ../urpmi.removemedia:40 ../urpmi.update:32 ../urpmq:47
 #, c-format
 msgid "  --help         - print this help message.\n"
 msgstr "  --help         - bu yardım mesajını görüntüler.\n"
@@ -443,7 +443,7 @@ msgstr "Paketler %s içine indirilemiyor"
 msgid "Environment directory %s does not exist"
 msgstr "Ortam değişkenleri dizini %s mevcut değil."
 
-#: ../urpm.pm:256 ../urpmf:248 ../urpmq:176
+#: ../urpm.pm:256 ../urpmf:248 ../urpmq:180
 #, c-format
 msgid "using specific environment on %s\n"
 msgstr "%s' de belirtilen ortam kullanılıyor\n"
@@ -509,59 +509,59 @@ msgstr "Sınırlı kipte çalışılırken bu işlem yasaklanmıştır."
 msgid "bad proxy declaration on command line\n"
 msgstr "komut satırından kötü vekil sunucu bildirimi\n"
 
-#: ../urpm/args.pm:335
+#: ../urpm/args.pm:338
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq: \"%s\" rpm dosyası okunamıyor\n"
 
-#: ../urpm/args.pm:420
+#: ../urpm/args.pm:424
 #, c-format
 msgid "unexpected expression %s"
 msgstr "beklenmeyen ifade %s"
 
-#: ../urpm/args.pm:421
+#: ../urpm/args.pm:425
 #, c-format
 msgid "missing expression before %s"
 msgstr "%s 'den önce kayıp ifade"
 
-#: ../urpm/args.pm:427
+#: ../urpm/args.pm:431
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr "beklenmeyen ifade %s (öneri: -a or -o kullanın ?)"
 
-#: ../urpm/args.pm:431
+#: ../urpm/args.pm:435
 #, c-format
 msgid "no expression to close"
 msgstr "kapatmak için ifade yok"
 
-#: ../urpm/args.pm:440
+#: ../urpm/args.pm:444
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
 "varsayılan olarak upmf bir regexp bekler. \"--literal\" seçeneğini "
 "kullanmalısınız."
 
-#: ../urpm/args.pm:513
+#: ../urpm/args.pm:517
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr "chroot dizini geçerli değil"
 
-#: ../urpm/args.pm:536
+#: ../urpm/args.pm:540
 #, c-format
 msgid "Can't use %s without %s"
 msgstr "%s, %s olmadan kullanılamaz"
 
-#: ../urpm/args.pm:539 ../urpm/args.pm:542 ../urpmq:168
+#: ../urpm/args.pm:543 ../urpm/args.pm:546 ../urpmq:172
 #, c-format
 msgid "Can't use %s with %s"
 msgstr "%s, %s ile kullanılamaz"
 
-#: ../urpm/args.pm:550
+#: ../urpm/args.pm:554
 #, c-format
 msgid "Too many arguments\n"
 msgstr "Çok fazla parametre\n"
 
-#: ../urpm/args.pm:558
+#: ../urpm/args.pm:562
 #, fuzzy, c-format
 msgid ""
 "%s version %s\n"
@@ -577,7 +577,7 @@ msgstr ""
 "\n"
 "kullanımı:\n"
 
-#: ../urpm/args.pm:564
+#: ../urpm/args.pm:568
 #, c-format
 msgid "Copyright (C) %s by %s"
 msgstr ""
@@ -757,7 +757,7 @@ msgid "unable to handle protocol: %s"
 msgstr "%s protokolü ile ilgilenemiyor"
 
 #: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:556 ../urpmi:575 ../urpmi:698
-#: ../urpmi.recover:287
+#: ../urpmi.recover:321
 #, c-format
 msgid "Nn"
 msgstr "HhNn"
@@ -787,7 +787,7 @@ msgid "Do you want to generate and upload a report?"
 msgstr "Hata bildirimi üretmek ve göndermek istiyor musunuz?"
 
 #: ../urpm/dudf.pm:79 ../urpmi:558 ../urpmi:577 ../urpmi:699
-#: ../urpmi.addmedia:136 ../urpmi.recover:289
+#: ../urpmi.addmedia:136 ../urpmi.recover:323
 #, c-format
 msgid " (Y/n) "
 msgstr " (E/h) "
@@ -1831,7 +1831,7 @@ msgid "  --root         - use another root for rpm removal.\n"
 msgstr "  --root         - rpm kaldırma için bir başka kök kullanıcı kullan.\n"
 
 #: ../urpme:54 ../urpmf:40 ../urpmi:127 ../urpmi.addmedia:73
-#: ../urpmi.recover:42 ../urpmi.removemedia:45 ../urpmi.update:48 ../urpmq:74
+#: ../urpmi.removemedia:45 ../urpmi.update:48 ../urpmq:74
 #, c-format
 msgid "  --urpmi-root   - use another root for urpmi db & rpm installation.\n"
 msgstr ""
@@ -2224,7 +2224,7 @@ msgstr "  --vendor       - sağlayıcı\n"
 msgid "  -m             - the media in which the package was found\n"
 msgstr "  -m             - paketin bulunduğu kurulum kaynağı.\n"
 
-#: ../urpmf:85 ../urpmq:103
+#: ../urpmf:85 ../urpmq:104
 #, c-format
 msgid "  -f             - print version, release and arch with name.\n"
 msgstr "  -f             -  sürüm, yayımı ve mimarisini yazdırır.\n"
@@ -3052,7 +3052,7 @@ msgstr "<sentez'in göreli yolu> eksik\n"
 msgid "Can't use %s with remote medium"
 msgstr "%s , uzak ortam ile birlikte kullanılamıyor."
 
-#: ../urpmi.recover:33
+#: ../urpmi.recover:34
 #, fuzzy, c-format
 msgid ""
 "urpmi.recover version %s\n"
@@ -3069,12 +3069,12 @@ msgstr ""
 "\n"
 "kullanımı:\n"
 
-#: ../urpmi.recover:40
+#: ../urpmi.recover:41
 #, c-format
 msgid "  --checkpoint   - set repackaging start now\n"
 msgstr "  --checkpoint   - yeniden paketleme başlangıcını şimdi ayarlar\n"
 
-#: ../urpmi.recover:41
+#: ../urpmi.recover:42
 #, c-format
 msgid "  --noclean      - don't clean repackage directory on checkpoint\n"
 msgstr ""
@@ -3082,24 +3082,38 @@ msgstr ""
 "temizleme\n"
 
 #: ../urpmi.recover:43
+#, fuzzy, c-format
+msgid "  --urpmi-root   - use another root for urpmi db & rpm installation\n"
+msgstr ""
+"  --urpmi-root   - urpmi veritabanı ve rpm kurulumu için bir başka kök "
+"kullan.\n"
+
+#: ../urpmi.recover:44
+#, fuzzy, c-format
+msgid "  --auto         - do not ask any questions\n"
+msgstr ""
+"  --auto         - etkileşimli kip   kapalı, sorulara varsayılan cevapları "
+"ver.\n"
+
+#: ../urpmi.recover:45
 #, c-format
 msgid ""
 "  --list         - list transactions since provided date/duration argument\n"
 msgstr ""
 "  --list         - list transactions since provided date/duration argument\n"
 
-#: ../urpmi.recover:44
+#: ../urpmi.recover:46
 #, c-format
 msgid "  --list-all     - list all transactions in rpmdb (long)\n"
 msgstr "  --list-all     - rpmdb (uzun) içindeki tüm işlemleri listele\n"
 
-#: ../urpmi.recover:45
+#: ../urpmi.recover:47
 #, c-format
 msgid "  --list-safe    - list transactions since checkpoint\n"
 msgstr ""
 "  --list-safe    - denetleme noktasından beri gerçekleşen işlemleri listele\n"
 
-#: ../urpmi.recover:46
+#: ../urpmi.recover:48
 #, c-format
 msgid ""
 "  --rollback     - rollback until specified date,\n"
@@ -3108,110 +3122,103 @@ msgstr ""
 "  --rollback     - belirtilen güne geri al\n"
 "                   veya belirtilen sayıda işlemi geri al\n"
 
-#: ../urpmi.recover:48
+#: ../urpmi.recover:50
 #, c-format
 msgid ""
 "  --transactions - treat rollback argument as number of transactions to be "
 "reverted\n"
 msgstr ""
 
-#: ../urpmi.recover:49
+#: ../urpmi.recover:51
 #, c-format
 msgid "  --disable      - turn off repackaging\n"
 msgstr "  --disable      - yeniden paketlemeyi kapat\n"
 
-#: ../urpmi.recover:64
+#: ../urpmi.recover:66
 #, c-format
 msgid "Invalid date or duration [%s]\n"
 msgstr "[%s] geçersiz tarihi veya süresi\n"
 
-#: ../urpmi.recover:72
+#: ../urpmi.recover:74
 #, c-format
 msgid "Repackage directory not defined\n"
 msgstr "Yeniden paketleme dizini tanımlanmamış\n"
 
-#: ../urpmi.recover:75
+#: ../urpmi.recover:77
 #, c-format
 msgid "Can't write to repackage directory [%s]\n"
 msgstr "[%s]  yeniden paketleme dizinine yazılamıyor\n"
 
-#: ../urpmi.recover:77
+#: ../urpmi.recover:79
 #, c-format
 msgid "Cleaning up repackage directory [%s]...\n"
 msgstr "Yeniden paketleme dizini [%s] temizleniyor...\n"
 
-#: ../urpmi.recover:79
-#, c-format
-msgid "%d file removed\n"
-msgid_plural "%d files removed\n"
-msgstr[0] "%d adet dosya kaldırıldı\n"
-msgstr[1] "%d adet dosya kaldırıldı\n"
-
-#: ../urpmi.recover:89
+#: ../urpmi.recover:138
 #, c-format
 msgid "Spurious command-line arguments [%s]\n"
 msgstr "Sahte komut satırı argümanları [%s]\n"
 
-#: ../urpmi.recover:91
+#: ../urpmi.recover:140
 #, c-format
 msgid "You can't specify --checkpoint and --rollback at the same time\n"
 msgstr ""
 "Aynı anda hem --checkpoint hem de --rollback seçeneklerini kullanamazsınız\n"
 
-#: ../urpmi.recover:93
+#: ../urpmi.recover:142
 #, c-format
 msgid "You can't specify --checkpoint and --list at the same time\n"
 msgstr ""
 "Aynı anda hem --checkpoint hem de --list seçeneklerini kullanamazsınız\n"
 
-#: ../urpmi.recover:95
+#: ../urpmi.recover:144
 #, c-format
 msgid "You can't specify --rollback and --list at the same time\n"
 msgstr "Aynı anda hem --rollback hem de --list seçeneklerini kullanamazsınız\n"
 
-#: ../urpmi.recover:97
+#: ../urpmi.recover:146
 #, c-format
 msgid "You can't specify --disable along with another option"
 msgstr "Bir başka seçenekle birlikte --disable seçeneğini kullanamazsınız"
 
-#: ../urpmi.recover:122
+#: ../urpmi.recover:155
 #, c-format
 msgid "No transaction found since %s\n"
 msgstr "Şundan beri gerçekleşen işlem bulunamadı: %s\n"
 
-#: ../urpmi.recover:137
+#: ../urpmi.recover:170
 #, c-format
 msgid "You must be superuser to do this"
 msgstr "Bunu yapabilmek için süper kullanıcı olmalısınız"
 
-#: ../urpmi.recover:150 ../urpmi.recover:329
+#: ../urpmi.recover:183 ../urpmi.recover:364
 #, c-format
 msgid "Writing rpm macros file [%s]...\n"
 msgstr "Rpm makroları dosyası [%s] yazılıyor...\n"
 
-#: ../urpmi.recover:183
+#: ../urpmi.recover:216
 #, c-format
 msgid "Invalid number of transactions to be reverted"
 msgstr ""
 
-#: ../urpmi.recover:204
+#: ../urpmi.recover:237
 #, c-format
 msgid "No rollback date found\n"
 msgstr "Geri döndürme tarihi bulunamadı\n"
 
-#: ../urpmi.recover:213
+#: ../urpmi.recover:244
 #, c-format
 msgid ""
 "The oldest available checkpoint is %d (%s), I will not revert to older "
 "stages (this can damage your system)"
 msgstr ""
 
-#: ../urpmi.recover:218
+#: ../urpmi.recover:249
 #, c-format
 msgid "Rollback until %s...\n"
 msgstr "Şuna kadar geri al... : %s\n"
 
-#: ../urpmi.recover:288
+#: ../urpmi.recover:322
 #, fuzzy, c-format
 msgid ""
 "\n"
@@ -3220,7 +3227,7 @@ msgstr ""
 "\n"
 "'%s' kurulum kaynağını eklemek ister misiniz?"
 
-#: ../urpmi.recover:315
+#: ../urpmi.recover:350
 #, c-format
 msgid "Disabling repackaging\n"
 msgstr "Yeniden paketleme devredışı bırakılıyor\n"
@@ -3538,93 +3545,98 @@ msgstr ""
 msgid "  -c             - complete output with package to be removed.\n"
 msgstr "  -c             - kaldırılacak paketlerin toplu çıktısı.\n"
 
-#: ../urpmq:104
+#: ../urpmq:103
+#, fuzzy, c-format
+msgid "  --evrd         - print epoch, version, release and distepoch.\n"
+msgstr "  -f             -  sürüm, yayımı ve mimarisini yazdırır.\n"
+
+#: ../urpmq:105
 #, c-format
 msgid "  -g             - print groups with name also.\n"
 msgstr "  -g             - isminin yanında grupları da yazar.\n"
 
-#: ../urpmq:105
+#: ../urpmq:106
 #, c-format
 msgid "  -i             - print useful information in human readable form.\n"
 msgstr "  -i             - okunabilir biçimde yararlı bilgiyi yazdırır.\n"
 
-#: ../urpmq:106
+#: ../urpmq:107
 #, c-format
 msgid "  -l             - list files in package.\n"
 msgstr "  --l           - paket içindeki dosyaları listeler.\n"
 
-#: ../urpmq:107
+#: ../urpmq:108
 #, c-format
 msgid "  -m             - equivalent to -du\n"
 msgstr "  -m             - du'nun eşiti.\n"
 
-#: ../urpmq:108
+#: ../urpmq:109
 #, c-format
 msgid "  -r             - print version and release with name also.\n"
 msgstr ""
 "  -r             - isminin yanıda sürüm numarasını ve dağıtımını da yazar.\n"
 
-#: ../urpmq:109
+#: ../urpmq:110
 #, c-format
 msgid "  -s             - next package is a source package (same as --src).\n"
 msgstr ""
 "  -s             - bir sonraki paket bir kaynak paketidir(--src ile aynı).\n"
 
-#: ../urpmq:110
+#: ../urpmq:111
 #, c-format
 msgid ""
 "  -u             - remove package if a more recent version is already "
 "installed.\n"
 msgstr "  -u             - daha güncel bir sürümü yüklü ise paketi kaldır.\n"
 
-#: ../urpmq:111
+#: ../urpmq:112
 #, c-format
 msgid "  -y             - impose fuzzy search (same as --fuzzy).\n"
 msgstr "  -y             - hatalı aramayı uygulamaya koy ( --fuzzy ile aynı)\n"
 
-#: ../urpmq:112
+#: ../urpmq:113
 #, c-format
 msgid "  -Y             - like -y, but forces to match case-insensitively.\n"
 msgstr ""
 "  -Y             - y'ye benzer; fakat büyük/küçük harf duyarsız olanları "
 "eşleştirmeye zorlar. \n"
 
-#: ../urpmq:113
+#: ../urpmq:114
 #, c-format
 msgid "  names or rpm files given on command line are queried.\n"
 msgstr ""
 "  komut satırından isimleri veya rpm dosyaları verilenler sorgulandı.\n"
 
-#: ../urpmq:167
+#: ../urpmq:171
 #, c-format
 msgid "usage: \"urpmq --auto-orphans\" with no argument"
 msgstr "kullanım: \"urpmq --auto-orphans\" argümansız"
 
-#: ../urpmq:220
+#: ../urpmq:224
 #, c-format
 msgid "--list-nodes can only be used with --parallel"
 msgstr "--list-nodes sadece --parallel ile kullanılabilir"
 
-#: ../urpmq:244
+#: ../urpmq:248
 #, c-format
 msgid "use -l to list files"
 msgstr "dosyaları listelemek için -l kullanın"
 
-#: ../urpmq:428
+#: ../urpmq:432
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for package %s"
 msgstr ""
 "\"%s\" ortamı için xml bilgisi bulunamadı. %s paketi için herhangi bir kısmi "
 "sonuç döndürülemedi."
 
-#: ../urpmq:429
+#: ../urpmq:433
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for packages %s"
 msgstr ""
 "\"%s\" ortamı için xml bilgisi bulunamadı. %s paketleri için herhangi bir "
 "kısmi sonuç döndürülemedi."
 
-#: ../urpmq:432
+#: ../urpmq:436
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for package %s"
@@ -3632,7 +3644,7 @@ msgstr ""
 "\"%s\" ortamı için xml bilgisi bulunamadı. %s paketi için herhangi bir sonuç "
 "döndürülemedi."
 
-#: ../urpmq:433
+#: ../urpmq:437
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for packages %s"
@@ -3640,7 +3652,7 @@ msgstr ""
 "\"%s\" ortamı için xml bilgisi bulunamadı. %s paketleri için herhangi bir "
 "sonuç döndürülemedi."
 
-#: ../urpmq:500
+#: ../urpmq:504
 #, c-format
 msgid "No changelog found\n"
 msgstr "Değişiklik günlüğü bulunamadı!\n"
@@ -3652,6 +3664,11 @@ msgstr "Yazılım Yükleyici"
 #: ../gurpmi.desktop.in.h:2
 msgid "Graphical front end to install RPM files"
 msgstr "RPM dosyaların kurulumu için bir grafik önyüz"
+
+#~ msgid "%d file removed\n"
+#~ msgid_plural "%d files removed\n"
+#~ msgstr[0] "%d adet dosya kaldırıldı\n"
+#~ msgstr[1] "%d adet dosya kaldırıldı\n"
 
 #~ msgid "Please wait..."
 #~ msgstr "Lütfen bekleyiniz..."
