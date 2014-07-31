@@ -23,6 +23,7 @@ urpm::install - Package installation transaction routines for urpmi
 my $progress_size = 45;
 eval {
     require Term::ReadKey;
+	local $SIG{__WARN__} = sub { };
     ($progress_size) = Term::ReadKey::GetTerminalSize();
     $progress_size -= 35;
     $progress_size < 5 and $progress_size = 5;
