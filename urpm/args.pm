@@ -110,6 +110,7 @@ my %options_spec = (
 	'no-remove|no-uninstall' => \$::no_remove,
 	'no-install|noinstall' => \$::no_install,
 	'keep!' => sub { $urpm->{options}{keep} = $_[1] },
+	'no-restart' => sub { $urpm->{options}{'no-restart'} = 1 },
 	'logfile=s' => \$::logfile,
 	'split-level=s' => sub { $urpm->{options}{'split-level'} = $_[1] },
 	'split-length=s' => sub { $urpm->{options}{'split-length'} = $_[1] },

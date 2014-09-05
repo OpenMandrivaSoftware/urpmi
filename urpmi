@@ -762,6 +762,27 @@ unless ($env) {
     urpm::removable::try_umounting_removables($urpm);
 }
 
+# Update all media and try again
+if ($exit_code == 90) {
+    print N("Updating urpmi database..."), "\n";
+    if ($urpm->{options}{download_timeout}) {
+       print "Sleeping for ".$urpm->{options}{download_timeout}." secs...\n";
+	sleep $urpm->{options}{download_timeout};
+    }
+
+    system("urpmi.update -a");
+
+    print N("restarting urpmi"), "\n";
+
+    @ARGV = @ARGVcopy;
+    my @arg = ($ARGV[0], map {
+	    $ARGV[$_] . ($ARGV[$_ - 1] eq '--bug' ? "/restarted" : "");
+	} (1 .. $#ARGV));
+    push (@arg, '--no-restart');
+    exec $0, @arg;
+}
+
+
 # Merge postponed exit code to the result of package installation.
 $exit_code ||= $urpm::postponed_code;
 

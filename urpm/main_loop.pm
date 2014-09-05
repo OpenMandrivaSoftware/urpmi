@@ -61,6 +61,7 @@ sub _download_callback {
 sub _download_packages {
     my ($urpm, $callbacks, $blists, $sources) = @_;
     my @error_sources;
+    # Indicate if there is a problem with package download and updating media may help
     urpm::get_pkgs::download_packages_of_distant_media(
         $urpm,
         $blists,
@@ -68,7 +69,7 @@ sub _download_packages {
         \@error_sources,
         quiet => $options{verbose} < 0,
         callback => $callbacks->{trans_log},
-        ask_retry => !$urpm->{options}{auto} && ($callbacks->{ask_retry} || sub {
+        ask_retry => !$urpm->{options}{auto} && $urpm->{options}{'no-restart'} && ($callbacks->{ask_retry} || sub {
                                                      _download_callback($urpm, $callbacks, @_);
                                                  }),
     );
@@ -452,6 +453,8 @@ sub run {
 
     $urpm::postponed_exit_code = 0 unless defined $urpm::postponed_exit_code;
 
+    my $may_restart = !$urpm->{options}{'no-restart'};
+
     #- global boolean options
     ($auto_select, $no_install, $install_src, $clean, $noclean, $force, $parallel, $test) =
       ($::auto_select, $::no_install, $::install_src, $::clean, $::noclean, $::force, $::parallel, $::test);
@@ -509,10 +512,15 @@ sub run {
           urpm::install::prepare_transaction($set, $blists, \%sources);
 
         #- first, filter out what is really needed to download for this small transaction.
-        my ($error_sources, $msgs) = _download_packages($urpm, $callbacks, $transaction_blists, $transaction_sources);
+        my ($error_sources, $msgs, $need_update) = _download_packages($urpm, $callbacks, $transaction_blists, $transaction_sources);
         if (@$error_sources) {
             $nok++;
-            last if !_continue_on_error($urpm, $callbacks, $msgs, $error_sources, \@formatted_errors);
+            if($may_restart) {
+                return 90;
+            }
+            else {
+        	last if !_continue_on_error($urpm, $callbacks, $msgs, $error_sources, \@formatted_errors);
+    	    }
         }
 
         $callbacks->{post_download} and $callbacks->{post_download}->();
