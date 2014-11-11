@@ -40,12 +40,12 @@ urpm::download - download routines for the urpm* tools
 =cut
 
 
-sub ftp_http_downloaders() { qw(curl wget prozilla aria2) }
+sub ftp_http_downloaders() { qw(wget curl prozilla aria2) }
 
 sub available_ftp_http_downloaders() {
     my %binaries = (
-	curl => 'curl', 
-	wget => 'wget', 
+	wget => 'wget',
+	curl => 'curl',
 	prozilla => 'proz',
 	aria2 => 'aria2c',
     );
