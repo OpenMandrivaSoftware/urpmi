@@ -797,7 +797,7 @@ sub translate_why_removed_one {
     my $closure = rejected_closure($state, $fullname) or return $fullname;
 
     my ($from) = grep { $_ ne 'disttag' && $_ ne 'distepoch' } keys %$closure;
-    my ($whyk) = grep { $_ ne 'disttag' && $_ ne 'distepoch' } keys %{$closure->{$from}};
+    my ($whyk) = grep { $_ ne 'disttag' && $_ ne 'distepoch' } sort { $b ne 'avoid' } keys %{$closure->{$from}};
     my $whyv = $closure->{$from}{$whyk};
     my $frompkg = $urpm->search($from, strict_fullname => 1);
     my $s = do {
