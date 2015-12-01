@@ -335,7 +335,7 @@ if ($rollback) {
     # Use faketime to tweak package installation date
     my $dt=`date -d \@$tid '+%Y-%m-%d %H:%M:%S'`;
     print "Downgrading packages...\n";
-    system("faketime '$dt' rpm -iU --norepackage --oldpackage $tmpDir/*rpm") == 0 or die();
+    system("faketime '$dt' rpm -U --norepackage --oldpackage $tmpDir/*rpm") == 0 or die();
 
     unless ($noclean) {
         foreach my $d (@processed_dirs) {
