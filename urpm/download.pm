@@ -360,6 +360,7 @@ sub sync_wget {
 	($options->{callback} ? ("--progress=bar:force", "-o", "-") :
 	    $options->{quiet} ? "-q" : @{[]}),
 	"--retr-symlinks",
+	"--auth-no-challenge",
 	($options->{"no-certificate-check"} ? "--no-check-certificate" : @{[]}),
 	"--timeout=$CONNECT_TIMEOUT",
 	(defined $options->{'wget-options'} ? split /\s+/, $options->{'wget-options'} : @{[]}),
