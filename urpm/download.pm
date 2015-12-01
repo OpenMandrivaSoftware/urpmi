@@ -842,7 +842,7 @@ END {
 my $wchar = 79;
 eval {
     require Term::ReadKey;
-	local $SIG{__WARN__} = sub { };
+    local $SIG{__WARN__} = sub { };
     ($wchar) = Term::ReadKey::GetTerminalSize();
     --$wchar;
 };
