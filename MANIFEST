@@ -1,7 +1,8 @@
 gurpmi
 gurpmi.desktop.in
 gurpmi.pm
-gurpm/RPMProgressDialog.pm 
+gurpm/RPMProgressDialog.pm
+gurpm/Gtk2RPMProgressDialog.pm
 gurpmi.xml
 gurpmi2
 inst.list
@@ -95,9 +96,15 @@ pod/8/urpmi.pod
 pod/8/rurpme.pod
 pod/8/urpmi.removemedia.pod
 pod/8/rurpmi.pod
+pod/8/urpmi.removemedia.pod
+pod/8/urpmi.update.pod
+pod/8/urpmihowto.pod
+pod/8/urpmq.pod
 pod/5/urpmi.cfg.pod
 pod/5/proxy.cfg.pod
 pod/5/urpmi.files.pod
+polkit/org.openmandriva.gurpmi2.policy.in
+polkit/Makefile
 rpm-find-leaves
 rurpme
 rurpmi
@@ -493,3 +500,4 @@ urpmi.removemedia
 urpmi.schema
 urpmi.update
 urpmq
+META.json                                Module JSON meta-data (added by MakeMaker)

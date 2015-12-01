@@ -15,13 +15,15 @@ use urpm::md5sum;
 # perl_checker: require urpm::media
 # perl_checker: require urpm::parallel
 
-our $VERSION = '7.29.1';
+our $VERSION = '8.03.2';
 our @ISA = qw(URPM Exporter);
 our @EXPORT_OK = ('file_from_local_url', 'file_from_local_medium', 'is_local_medium');
 
 # Prepare exit code.  If you change this, the exiting with a failure and the message given will be postponed to the end of the overall processing.
 our $postponed_msg = N("While some packages may have been installed, there were failures.\n");
 our $postponed_code = 0;
+# not the most elegant location to place this, but... </spaghettiadherence>
+our $postponed_defines = ();
 
 use URPM;
 use URPM::Resolve;
@@ -30,12 +32,12 @@ use RPMBDB;
 
 =head1 NAME
 
-urpm - Mandriva perl tools to handle the urpmi database
+urpm - OpenMandriva perl tools to handle the urpmi database
 
 =head1 DESCRIPTION
 
 C<urpm> is used by urpmi executables to manipulate packages and media
-on a Mandriva Linux distribution.
+on a OpenMandriva Linux distribution.
 
 =head2 The urpm class
 
@@ -53,10 +55,10 @@ sub xml_info_policies() { qw(never on-demand update-only always) }
 sub default_options {
     { 
 	'split-level' => 1,
-	'split-length' => 8,
+	'split-length' => 50,
 	'verify-rpm' => 1,
 	'post-clean' => 1,
-	'xml-info' => 'always',
+	'xml-info' => 'on-demand',
 	'max-round-robin-tries' => 5,
 	'max-round-robin-probes' => 2,
 	'days-between-mirrorlist-update' => 5,
@@ -165,6 +167,16 @@ sub new_parse_cmdline {
     my $urpm = $class->new;
     urpm::args::parse_cmdline(urpm => $urpm);
     get_global_options($urpm);
+
+    # load configuration files only now after options has been parsed
+    URPM::read_config_files();
+
+    # load macros defined with --define, now after all configuration files has
+    # been loaded.
+    foreach (@urpm::postponed_defines) {
+	URPM::add_macro("$_");
+    }
+
     $urpm;
 }
 
@@ -630,6 +642,8 @@ Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005 MandrakeSoft SA
 Copyright (C) 2005-2010 Mandriva SA
 
 Copyright (C) 2011-2012 Mageia SA
+
+Copyright (C) 2012-2015 OpenMandriva Association
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

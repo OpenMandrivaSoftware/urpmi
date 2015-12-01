@@ -1,25 +1,155 @@
-Version 7.28 - 14 March 2014, by Denis Silakov
+Version 8.0.3.2 -  9 January 2015, by Per Øyvind Karlsen
 
-- Added --evrd option for urpmq
+- fix broken fix for a perl warning that made previous release DOA
 
-Version 7.27 - 25 March 2014, by Denis Silakov
+Version 8.0.3.1 -  9 January 2015, by Per Øyvind Karlsen
 
-- Added --retry-hard option
-- Redesign smart-auto selection - move implementation to select.pm module from urpmi executable
-- Restore urpmi.recover, add per-medium downloader options
-- Use full terminal width for output
-- Added support for additional config files from urpmicfg.d folder
+- when using --target-arch, automatically create system mount points under
+  --root and mount them
+- when using --target-arch, install the relevant qemu-static-* packages
+  necessary to emulate running files within target environment
 
-Version 7.26 - 06 Jan 2014, by Tomasz Paweł Gajc
+Version 8.0.2.2 -  3 January 2015, by Per Øyvind Karlsen
 
-- by default download all packages before install - patch from Rosa
-- fix leaving read lock on rpmdb
-- fix evr->EVR
-- Temporary fix to allow rpm upgrades to work (bug#214)
-- fix Mandriva->Openmandriva naming
-- merge all patches
+- implement --target-arch option which will create and load /etc/rpm/platform
+  within chroot with --root
+- implement --define option for defining macros after all the others has
+  been defined
+- implement --predefine option for definining macros before any others has
+  been defined
 
-Version 7.25 - 20 Aug 2013, by Bernhard Rosenkränzer
+Version 8.0.2.1 - 18 December 2014, by Per Øyvind Karlsen
+
+- drop terminal size warnings (dsilakov)
+- automatically update metadata in case of download failure (dsilakov)
+- the whole of mageia's branch has now been merged
+
+Version 8.02 - 25 November 2014
+
+- gurpmi:
+  o fix crashing when choosing to save file
+  o fix segfaulting when managing exceptions
+  o report crashes through drakbug
+- gurpmi:
+  o fix --auto not working anymore (mga#14565)
+    (regression introduced in 7.32)
+- fix some warnings with perl 5.20
+
+Version 7.32.3 - 25 June 2014, by Per Øyvind Karlsen
+
+- don't remove "bad" rpms failing to install if --noclean is specified
+
+Version 7.32.2 - 20 May 2014, by Per Øyvind Karlsen
+
+- Added --evrd option for urpmq (dsilakov)
+
+Version 7.32.1 -  7 May 2014, by Per Øyvind Karlsen
+
+- add back '--deploops' as it turned out that we actually do have the necessary
+  support
+
+Version 7.32 -  6 May 2014, by Per Øyvind Karlsen
+
+- add support for additional config files from urpmicfg.d folder (dsilakov)
+- revert always setting 'xml-info' to 'always'
+
+
+Version 7.31.1 - 29 April 2014, by Per Øyvind Karlsen
+- revert '--deploops' change previously as there's no support for it in our
+  perl-URPM/rpm version
+- added --auto option for urpmi.recover (dsilakov)
+- set 'xml-info' to 'always' by default (dsilakov)
+- added --retry-hard option (dsilakov)
+- restore urpmi.recover, add per-medium downloader options (dsilakov)
+- use full terminal width for output (dsilakov)
+- merge latest translations from Mageia
+- add support for merging updated translations from Mageia
+- add some missing methods, allows to do urpmf --qf '%sourcerpm:%requires'
+- bump split-length from 8 to 50
+  improves installing gnome in a chroot from 14m to 11m
+- update bash completion
+
+Version 7.31 - 24 January 2014
+
+- do not exec pkexec but run it so it has a parent process to fix double fork
+  issues mga#11184 mga#12364
+- gurpmi:
+  o fix garbaged UTF-8 in file name arguments (mga#12407)
+
+Version 7.30 - 5 December 2013
+
+- convert from gtk2 to gtk3
+
+Version 7.29 - 3 December 2013
+
+- use /proc/self/mountinfo for ro filesystem checks mga#11319
+- polkit: only use pkexec when not already root
+
+Version 7.28 - 5 November 2013
+
+- library:
+  o fix parsing download progress with rsync >= 3.10
+- urpmi:
+  o add support for --deploops option (needs URPM-4.29+)
+
+Version 7.27.5 - 13 October 2013, by Colin Guthrie
+
+- use polkit for authorisation (mga#11125)
+
+Version 7.27.4 - 4 October 2013, by Thierry Vignaud
+
+- library:
+  o adapt to perl-5.18
+  o prevent disabling removing orphan if we failed to detect running kernel
+    version
+  o ensure priority updates are installed in a single transaction
+  o revert fix for mga#10254 in previous release
+    (the bug was in media.cfg, mga#10335)
+  o ensure priority updates are installed in a single transaction
+  o fix wrongly enabling backports/testing for tainted/nonfree when
+    such packages are already installed (mga#10254)
+  o really auto enable tainted media if needed when adding distrib media
+- gurpmi2:
+  o like urpmi/rpmdrake/drakx, display all errors at once at end
+    instead of forcing users to click in order to continue
+    transactions (mga#6086)
+  o do not popup errors at end in auto mode
+- library (mga#8368, #8379 & #9758):
+  o enable to see if nonfree/tainted packages are installed
+  o auto enable nonfree/tainted media if needed when adding distrib media
+
+Version 7.30 -  4 December 2013, by Per Øyvind Karlsen
+
+- fix casing typo with 'evr' rather than 'EVR' (Denis Silakov)
+- fix mirrorlist detection (Crispin Boylan)
+
+Version 7.29 - 28 November 2013, by Per Øyvind Karlsen
+
+- add perl-RPMBDB & systemd to priority upgrade list (omv#214, Crispin Boylan) 
+
+Version 7.28 -  5 September 2013, by Per Øyvind Karlsen
+
+- implement support for mirrorbrain metalinks and adopt it
+- R.I.P. api.mandriva.com, welcome downloads.openmandriva.org!
+
+Version 7.27 - 13 May 2013, by Per Øyvind Karlsen
+
+- gurpmi2:
+  o sort package list
+- library:
+  o fix displaying removed package name in gurpmi/rpmdrake (mga#9545)
+
+Version 7.26 - 1 May 2013, by Per Øyvind Karlsen
+
+- drop dead --contimeout option for rsync which breaks rsync suport otherwise
+
+Version 7.25 - 21 April 2013, by Per Øyvind Karlsen
+
+- library:
+  o enable rpmdrake to not use modal dialogs (mga#9646)
+  o fix leaving read locks on rpmdb (mga#9248)
+
+Version 7.24 -  6 April 2013, by Per Øyvind Karlsen
 
 - R.I.P. api.mandriva.com, welcome downloads.openmandriva.org!
 
@@ -28,6 +158,8 @@ Version 7.24 - 30 March 2013, by Per Øyvind Karlsen
 - add support for --force-req-updates & --no-force-req-updates (Denis Silakov)
 - library:
   o display exceptions that happened while downloading (mga#9529)
+- urpmi:
+  o fix package count when a package has a %pretrans scriptlet
 
 Version 7.23 - 21 March 2013, by Thierry Vignaud
 

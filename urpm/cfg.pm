@@ -142,6 +142,7 @@ sub load_config_raw {
 	  |with_synthesis
 	  |with-dir
           |mirrorlist
+	  |mirrorbrain
 	  |media_info_dir
 	  |removable
 	  |md5sum
@@ -184,7 +185,6 @@ sub load_config_raw {
 	    |repackage
 	    |strict-arch
 	    |nopubkey
-		|no-download-all
 	    |no-force-req-update
 	    |resume)(?:\s*:\s*(.*))?$/x
 	) {

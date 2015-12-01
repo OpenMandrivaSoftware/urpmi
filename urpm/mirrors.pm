@@ -323,7 +323,7 @@ sub _mandriva_mirrorlist {
     my ($product_id, $o_arch) = @_;
 
     #- contact the following URL to retrieve the list of mirrors.
-    #- http://wiki.mandriva.com/en/Product_id
+    #- http://wiki.openmandriva.org
     my $product_type = lc($product_id->{type}); $product_id =~ s/\s//g;
     my $arch = $o_arch || $product_id->{arch};
 

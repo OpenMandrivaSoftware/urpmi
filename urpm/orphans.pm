@@ -441,7 +441,7 @@ sub _all_unrequested_orphans {
     delete $l{$current_kernel};
     # prevent removing orphan kernels if we failed to detect running kernel version:
     if ($current_kernel_version) {
-	do { delete $l{$_} } foreach grep { /$current_kernel_version/ } keys %l;
+        do { delete $l{$_} } foreach grep { /$current_kernel_version/ } keys %l;
     }
 
     [ values %l ];

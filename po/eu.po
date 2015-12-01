@@ -1,42 +1,42 @@
-# translation of urpmi.po to Euskara
-# Latest versions of po files are at http://www.mandrivalinux.com/l10n/eu.php3
-# EUSKARA: Mandriva Linux translation.
-# Copyright (C) 2001-2002, 2004, 2005, 2006, 2008, 2009 Free Software Foundation, Inc.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
 #
-# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2001-2002, 2003, 2004, 2005, 2006, 2008, 2009, 2011.
-# Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>, 2004.
-# Ignigo Salvador Azurmendi <xalba@euskalnet.net>, 2011.
+# Translators:
+# Egoitz Rodriguez Obieta <egoitzro@gmail.com>, 2014
+# Egoitz Rodriguez Obieta <egoitzro@gmail.com>, 2014
+# Egoitz Rodriguez Obieta <egoitzro@gmail.com>, 2014
+# Hizkuntza Politikarako Sailburuordetza <hizpol@ej-gv.es>, 2004
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2003-2006,2008-2009
 msgid ""
 msgstr ""
-"Project-Id-Version: urpmi\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-20 12:12+0400\n"
-"PO-Revision-Date: 2011-06-30 02:54+0200\n"
-"Last-Translator: Ignigo Salvador Azurmendi <xalba@euskalnet.net>\n"
-"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"Project-Id-Version: Mageia\n"
+"POT-Creation-Date: 2015-01-04 00:10+0100\n"
+"PO-Revision-Date: 2014-09-14 13:49+0000\n"
+"Last-Translator: Egoitz Rodriguez Obieta <egoitzro@gmail.com>\n"
+"Language-Team: Basque (http://www.transifex.com/projects/p/mageia/language/"
+"eu/)\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"Content-Transfer-Encoding: 8-bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../gurpmi:38
+#: ../gurpmi:49
 #, c-format
 msgid "RPM installation"
 msgstr "RPM instalaketa"
 
-#: ../gurpmi:52
+#: ../gurpmi:63
 #, c-format
 msgid "Error: unable to find file %s, will cancel operation"
 msgstr "Akatsa: ezin da %s fitxategia aurkitu, eragiketa galaraziko da"
 
-#: ../gurpmi:53 ../gurpmi2:172 ../gurpmi2:202
+#: ../gurpmi:64 ../gurpmi2:178 ../gurpmi2:208
 #, c-format
 msgid "_Ok"
 msgstr "_Ados"
 
-#: ../gurpmi:73
+#: ../gurpmi:84
 #, c-format
 msgid ""
 "You have selected a source package:\n"
@@ -57,7 +57,7 @@ msgstr ""
 "\n"
 "Zer egin nahi duzu?"
 
-#: ../gurpmi:81 ../gurpmi:92
+#: ../gurpmi:92 ../gurpmi:103
 #, c-format
 msgid ""
 "You are about to install the following software packages on your computer:\n"
@@ -72,7 +72,7 @@ msgstr ""
 "\n"
 "Jarraitu?"
 
-#: ../gurpmi:87
+#: ../gurpmi:98
 #, c-format
 msgid ""
 "You are about to install the following software package on your computer:\n"
@@ -87,28 +87,38 @@ msgstr ""
 "\n"
 "Baliteke gordetzea bakarrik nahi izatea. Zer egin nahi duzu?"
 
-#: ../gurpmi:105
+#: ../gurpmi:116
 #, c-format
 msgid "_Install"
 msgstr "_Instalatu"
 
-#: ../gurpmi:106
+#: ../gurpmi:117
 #, c-format
 msgid "_Save"
 msgstr "_Gorde"
 
-#: ../gurpmi:107 ../gurpmi2:172
+#: ../gurpmi:118 ../gurpmi2:178
 #, c-format
 msgid "_Cancel"
 msgstr "_Utzi"
 
-#: ../gurpmi:115
+#: ../gurpmi:126
 #, c-format
 msgid "Choose location to save file"
 msgstr "Aukeratu fitxategiko gordetzeko kokalekua"
 
+#: ../gurpmi:126
+#, c-format
+msgid "Cancel"
+msgstr "Utzi"
+
+#: ../gurpmi:126 ../gurpmi2:124
+#, c-format
+msgid "Ok"
+msgstr "Ados"
+
 #: ../gurpmi.pm:54
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "gurpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -117,12 +127,6 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpmi %s bertsioa\n"
-"Copyright © 1999-2011 Mandriva.\n"
-"Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
-"birbanatu daiteke.\n"
-"\n"
-"erabilera:\n"
 
 #: ../gurpmi.pm:60
 #, c-format
@@ -213,22 +217,22 @@ msgstr ""
 msgid "No packages specified"
 msgstr "Ez da paketerik zehaztu"
 
-#: ../gurpmi2:42
+#: ../gurpmi2:46
 #, c-format
 msgid "Must be root"
 msgstr "Root izan behar da"
 
-#: ../gurpmi2:45 ../urpm.pm:23
+#: ../gurpmi2:49 ../urpm.pm:23
 #, c-format
 msgid "While some packages may have been installed, there were failures.\n"
-msgstr ""
+msgstr "Pakete batzuk instalatu egin bitartean, hutsegiteak izan dira.\n"
 
-#: ../gurpmi2:76
+#: ../gurpmi2:80
 #, c-format
 msgid "Preparing packages installation..."
 msgstr "Paketeen instalazioa prestatzen..."
 
-#: ../gurpmi2:89 ../gurpmi2:95 ../urpmi:571
+#: ../gurpmi2:93 ../gurpmi2:99 ../urpmi:573
 #, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
@@ -237,49 +241,42 @@ msgstr ""
 "Eskatutako pakete bat ezin da instalatu:\n"
 "%s"
 
-#: ../gurpmi2:102
-#, fuzzy, c-format
+#: ../gurpmi2:106
+#, c-format
 msgid "Continue installation anyway?"
 msgstr ""
-"\n"
-"Instalazioarekin jarraitu hala ere?"
 
-#: ../gurpmi2:131
+#: ../gurpmi2:124
 #, c-format
 msgid "Warning"
 msgstr "Kontuz"
 
-#: ../gurpmi2:131
-#, c-format
-msgid "Ok"
-msgstr "Ados"
-
-#: ../gurpmi2:168
+#: ../gurpmi2:174
 #, c-format
 msgid " (to upgrade)"
 msgstr " (Eguneratu)"
 
-#: ../gurpmi2:169
+#: ../gurpmi2:175
 #, c-format
 msgid " (to install)"
 msgstr " (instalatu)"
 
-#: ../gurpmi2:172
+#: ../gurpmi2:178
 #, c-format
 msgid "Package choice"
 msgstr "Paketa aukera"
 
-#: ../gurpmi2:173
+#: ../gurpmi2:179
 #, c-format
 msgid "One of the following packages is needed:"
 msgstr "Ondoko paketeetako bat behar da:"
 
-#: ../gurpmi2:203
+#: ../gurpmi2:209
 #, c-format
 msgid "_Abort"
 msgstr "_Geldiarazi"
 
-#: ../gurpmi2:238
+#: ../gurpmi2:244
 #, c-format
 msgid ""
 "The following packages have to be removed for others to be upgraded:\n"
@@ -290,56 +287,61 @@ msgstr ""
 "%s\n"
 "Instalazioarekin jarraitu hala ere?"
 
-#: ../gurpmi2:249 ../urpmi:687
+#: ../gurpmi2:255 ../urpmi:689
 #, c-format
 msgid "%s of additional disk space will be used."
 msgstr "diskoan %s leku gehiago erabiliko da."
 
-#: ../gurpmi2:250 ../urpmi:688
+#: ../gurpmi2:256 ../urpmi:690
 #, c-format
 msgid "%s of disk space will be freed."
 msgstr "diskoan %s lekua askatuko da."
 
-#: ../gurpmi2:251 ../urpmi:689
+#: ../gurpmi2:257 ../urpmi:691
 #, c-format
 msgid "%s of packages will be retrieved."
 msgstr "paketeen %s eskuratuko dira."
 
-#: ../gurpmi2:252 ../urpmi:690
+#: ../gurpmi2:258 ../urpmi:692
 #, c-format
 msgid "Proceed with the installation of one package?"
 msgid_plural "Proceed with the installation of the %d packages?"
 msgstr[0] "Pakete baten instalaketarekin arrera jarraitu nahi duzu?"
 msgstr[1] "%d paketeen instalaketarekin jarraitu nahi duzu?"
 
-#: ../gurpmi2:258 ../urpmi:678
+#: ../gurpmi2:264 ../urpmi:680
 #, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
 msgstr "Mendekotasunak asetzeko, ondorengo paketea instalatuko da:"
 
-#: ../gurpmi2:259 ../urpmi:679
+#: ../gurpmi2:265 ../urpmi:681
 #, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
 msgstr "Mendekotasunak asetzeko, ondoko paketeak instalatuko dira:"
 
-#: ../gurpmi2:269 ../urpm/main_loop.pm:468
+#: ../gurpmi2:275 ../urpm/main_loop.pm:471
 #, c-format
 msgid "unable to get source packages, aborting"
 msgstr "ezin dira iturburuko paketeak lortu, abortatzen"
 
-#: ../gurpmi2:283 ../urpmi:708
+#: ../gurpmi2:292 ../urpmi:710
 #, c-format
 msgid "Please insert the medium named \"%s\""
 msgstr "Mesedez, sartu \"%s\" izeneko euskarria"
 
-#: ../gurpmi2:311
+#: ../gurpmi2:312
+#, c-format
+msgid "An error occurred:"
+msgstr "Akats bat gertatu da:"
+
+#: ../gurpmi2:324
 #, c-format
 msgid "_Done"
 msgstr "_Eginda"
 
-#: ../gurpmi2:328 ../urpm/main_loop.pm:82
+#: ../gurpmi2:341 ../urpm/main_loop.pm:83
 #, c-format
 msgid ""
 "Installation failed, some files are missing:\n"
@@ -348,27 +350,27 @@ msgstr ""
 "Instalaketak huts egin du, fitxategi batzuk falta dira:\n"
 "%s"
 
-#: ../gurpmi2:331
-#, fuzzy, c-format
+#: ../gurpmi2:344
+#, c-format
 msgid "You may want to update your urpmi database."
-msgstr "Zure urpmi datu-basea eguneratzea komeni da."
+msgstr "urpmi datubasea eguneratu nahi izan dezakezu."
 
-#: ../gurpmi2:335 ../urpm/main_loop.pm:287 ../urpm/main_loop.pm:580
+#: ../gurpmi2:348 ../urpm/main_loop.pm:288 ../urpm/main_loop.pm:588
 #, c-format
 msgid "Installation failed:"
 msgstr "Instalaketak huts egin du:"
 
-#: ../gurpmi2:340
+#: ../gurpmi2:353
 #, c-format
 msgid "The package(s) are already installed"
 msgstr "Dena dago instalatuta"
 
-#: ../gurpmi2:342
+#: ../gurpmi2:355
 #, c-format
 msgid "Installation finished"
 msgstr "Instalazioa amaitu da"
 
-#: ../gurpmi2:358 ../urpmi:770
+#: ../gurpmi2:368 ../urpmi:777 ../urpmi:793
 #, c-format
 msgid "restarting urpmi"
 msgstr "urpmi berrabiarazten"
@@ -407,7 +409,7 @@ msgstr "                    lehenetsia %s da.\n"
 msgid "   -f             - output rpm full name (NVRA)\n"
 msgstr "   -f             - irteeran jarri rpm izen osoa (NVRA)\n"
 
-#: ../rurpmi:11 ../urpmi:306
+#: ../rurpmi:11 ../urpmi:308
 #, c-format
 msgid "Only superuser is allowed to install packages"
 msgstr "Supererabiltzaileak bakarrik du paketeak instalatzeko baimena"
@@ -417,146 +419,156 @@ msgstr "Supererabiltzaileak bakarrik du paketeak instalatzeko baimena"
 msgid "Running urpmi in restricted mode..."
 msgstr "urpmi modu murriztuan exekutatzen..."
 
-#: ../urpm.pm:195
+#: ../urpm.pm:207
 #, c-format
 msgid "fail to create directory %s"
 msgstr "%s direktorioa sortzeak huts egin du"
 
-#: ../urpm.pm:196
+#: ../urpm.pm:208
 #, c-format
 msgid "invalid owner for directory %s"
 msgstr "%s direktorioarentzako jabe baliogabea"
 
-#: ../urpm.pm:239
+#: ../urpm.pm:251
 #, c-format
 msgid "Can not download packages into %s"
 msgstr "Paketeak ezin dira %s-ra jaitsi"
 
-#: ../urpm.pm:255
+#: ../urpm.pm:267
 #, c-format
 msgid "Environment directory %s does not exist"
 msgstr "%s ingurune direktorioa ez da existitzen"
 
-#: ../urpm.pm:256 ../urpmf:248 ../urpmq:180
+#: ../urpm.pm:268 ../urpmf:250 ../urpmq:182
 #, c-format
 msgid "using specific environment on %s\n"
 msgstr "%s(e)n ingurune espezifikoa erabiliz\n"
 
-#: ../urpm.pm:435
+#: ../urpm.pm:447
 #, c-format
 msgid "unable to open rpmdb"
 msgstr "ezin da rpmdb ireki"
 
-#: ../urpm.pm:454
+#: ../urpm.pm:466
 #, c-format
 msgid "invalid rpm file name [%s]"
 msgstr "rpm fitxategi-izen baliogabea [%s]"
 
-#: ../urpm.pm:460
+#: ../urpm.pm:472
 #, c-format
 msgid "retrieving rpm file [%s] ..."
 msgstr "[%s] rpm fitxategia berreskuratzen..."
 
-#: ../urpm.pm:462 ../urpm/get_pkgs.pm:278
+#: ../urpm.pm:474 ../urpm/get_pkgs.pm:278
 #, c-format
 msgid "...retrieving done"
 msgstr "...berreskuratu da"
 
-#: ../urpm.pm:465 ../urpm/download.pm:881 ../urpm/get_pkgs.pm:280
-#: ../urpm/media.pm:1085 ../urpm/media.pm:1603 ../urpm/media.pm:1754
+#: ../urpm.pm:477 ../urpm/download.pm:881 ../urpm/get_pkgs.pm:280
+#: ../urpm/media.pm:1136 ../urpm/media.pm:1657 ../urpm/media.pm:1808
 #, c-format
 msgid "...retrieving failed: %s"
 msgstr "...berreskuratzeak huts egin du: %s"
 
-#: ../urpm.pm:470
+#: ../urpm.pm:482
 #, c-format
 msgid "unable to access rpm file [%s]"
 msgstr "ezin izan da rpm fitxategia atzitu [%s]"
 
-#: ../urpm.pm:475
+#: ../urpm.pm:487
 #, c-format
 msgid "unable to parse spec file %s [%s]"
 msgstr "ezin da %s spec fitxategia sintaktikoki egiaztatu [%s]"
 
-#: ../urpm.pm:483
+#: ../urpm.pm:495
 #, c-format
 msgid "unable to register rpm file"
 msgstr "ezin da rpm fitxategia erregistratu"
 
-#: ../urpm.pm:485
+#: ../urpm.pm:497
 #, c-format
 msgid "Incompatible architecture for rpm [%s]"
 msgstr "rpm-rentzako arkitektura bateraezina [%s]"
 
-#: ../urpm.pm:489
+#: ../urpm.pm:501
 #, c-format
 msgid "error registering local packages"
 msgstr "errorea pakete lokalak erregistratzean"
 
-#: ../urpm.pm:601
+#: ../urpm.pm:613
 #, c-format
 msgid "This operation is forbidden while running in restricted mode"
 msgstr "Eragiketa hau debekatuta dago modu murriztuan exekutatzerakoan"
 
-#: ../urpm/args.pm:171 ../urpm/args.pm:180
+#: ../urpm/args.pm:173 ../urpm/args.pm:182
 #, c-format
 msgid "bad proxy declaration on command line\n"
 msgstr "proxy-adierazpen okerra komando-lerroan\n"
 
-#: ../urpm/args.pm:338
+#: ../urpm/args.pm:341
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq: ezin da \"%s\" rpm fitxategia irakurri\n"
 
-#: ../urpm/args.pm:424
+#: ../urpm/args.pm:428
 #, c-format
 msgid "unexpected expression %s"
 msgstr "%s ezusteko adierazpena"
 
-#: ../urpm/args.pm:425
+#: ../urpm/args.pm:429
 #, c-format
 msgid "missing expression before %s"
 msgstr "%s-ren aurretik adierazpena falta da"
 
-#: ../urpm/args.pm:431
+#: ../urpm/args.pm:435
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr "%s ezusteko adierazpena (iradokizuna: erabili -a edo -o ?)"
 
-#: ../urpm/args.pm:435
+#: ../urpm/args.pm:439
 #, c-format
 msgid "no expression to close"
 msgstr "ez dago itxi beharreko adierazpenik"
 
-#: ../urpm/args.pm:444
+#: ../urpm/args.pm:448
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
 "era lehenetsian urpmf-k regexp bat espero du. \"--literal\" aukera erabili "
 "beharko zenuke"
 
-#: ../urpm/args.pm:517
+#: ../urpm/args.pm:522
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr "chroot direktorioa ez da existitzen"
 
-#: ../urpm/args.pm:540
+#: ../urpm/args.pm:530
+#, fuzzy, c-format
+msgid "--target-arch may only be used with --root"
+msgstr "--nodo-zerrendak honekin bakarrik erabil daitezke: --parallel"
+
+#: ../urpm/args.pm:537
+#, c-format
+msgid "%s already exists, will load in stead of generating new for %s"
+msgstr ""
+
+#: ../urpm/args.pm:576
 #, c-format
 msgid "Can't use %s without %s"
 msgstr "Ezin da %s %s gabe erabili"
 
-#: ../urpm/args.pm:543 ../urpm/args.pm:546 ../urpmq:172
+#: ../urpm/args.pm:579 ../urpm/args.pm:582 ../urpmq:174
 #, c-format
 msgid "Can't use %s with %s"
 msgstr "Ezin da %s %s-rekin erabili"
 
-#: ../urpm/args.pm:554
+#: ../urpm/args.pm:590
 #, c-format
 msgid "Too many arguments\n"
 msgstr "Argumentu gehiegi\n"
 
-#: ../urpm/args.pm:562
-#, fuzzy, c-format
+#: ../urpm/args.pm:598
+#, c-format
 msgid ""
 "%s version %s\n"
 "%s\n"
@@ -565,19 +577,19 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpmi %s bertsioa\n"
-"Copyright © 1999-2011 Mandriva.\n"
+"%s %s bertsioa\n"
+"%s\n"
 "Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
 "birbanatu daiteke.\n"
 "\n"
 "erabilera:\n"
 
-#: ../urpm/args.pm:568
+#: ../urpm/args.pm:604
 #, c-format
 msgid "Copyright (C) %s by %s"
-msgstr ""
+msgstr "Copyright (C) %s %s"
 
-#: ../urpm/bug_report.pm:67 ../urpmi:296
+#: ../urpm/bug_report.pm:67 ../urpmi:298
 #, c-format
 msgid "Copying failed"
 msgstr "Ezin izan da kopiatu"
@@ -621,7 +633,7 @@ msgstr "ezin da konfig fitxategia irakurri [%s]"
 msgid "medium `%s' is defined twice, aborting"
 msgstr "'%s' euskarria bitan definituta dago, galarazten"
 
-#: ../urpm/cfg.pm:297 ../urpm/media.pm:562
+#: ../urpm/cfg.pm:297 ../urpm/media.pm:563
 #, c-format
 msgid "unable to write config file [%s]"
 msgstr "ezin da [%s] konfigurazio-fitxategia idatzi"
@@ -692,27 +704,27 @@ msgstr "curl-ek huts egin du: deskarga galarazita\n"
 msgid "rsync is missing\n"
 msgstr "rsync falta da\n"
 
-#: ../urpm/download.pm:664
+#: ../urpm/download.pm:663
 #, c-format
 msgid "ssh is missing\n"
 msgstr "ssh falta da\n"
 
-#: ../urpm/download.pm:683
+#: ../urpm/download.pm:682
 #, c-format
 msgid "prozilla is missing\n"
 msgstr "prozilla falta da\n"
 
-#: ../urpm/download.pm:699
+#: ../urpm/download.pm:698
 #, c-format
 msgid "Couldn't execute prozilla\n"
 msgstr "Ezin izan da prozilla exekutatu\n"
 
-#: ../urpm/download.pm:709
+#: ../urpm/download.pm:708
 #, c-format
 msgid "aria2 is missing\n"
 msgstr "aria2 falta da\n"
 
-#: ../urpm/download.pm:758
+#: ../urpm/download.pm:757
 #, c-format
 msgid "Failed to download %s"
 msgstr "%s jaisteak huts egin du"
@@ -752,8 +764,8 @@ msgstr "webfetch ez da aurkitu, webfetch hauek onartzen dira: %s\n"
 msgid "unable to handle protocol: %s"
 msgstr "ezin da protokoloa maneiatu: %s"
 
-#: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:556 ../urpmi:575 ../urpmi:698
-#: ../urpmi.recover:321
+#: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:558 ../urpmi:577 ../urpmi:700
+#: ../urpmi.recover:323
 #, c-format
 msgid "Nn"
 msgstr "eEnN"
@@ -769,61 +781,51 @@ msgid ""
 "at\n"
 "http://doc4.mandriva.org/bin/dudf/.\n"
 msgstr ""
-"Arazo bat gertatu da. Mandrivaren hobekuntza prozesuan lagundu dezakezu, "
-"automatikoki\n"
-"sortutako txosten bat Mandriva zerbitzari batera igota.\n"
-"Ez da informazio pertsonalik bidaliko. Informazio gehiago eskuragarri "
-"dagohemen\n"
-"http://doc4.mandriva.org/bin/dudf/.\n"
 
 #: ../urpm/dudf.pm:73
 #, c-format
 msgid "Do you want to generate and upload a report?"
-msgstr "Txosten bat sortu eta igo nahi duzu?"
+msgstr ""
 
-#: ../urpm/dudf.pm:79 ../urpmi:558 ../urpmi:577 ../urpmi:699
-#: ../urpmi.addmedia:136 ../urpmi.recover:323
+#: ../urpm/dudf.pm:79 ../urpmi:560 ../urpmi:579 ../urpmi:701
+#: ../urpmi.addmedia:137 ../urpmi.recover:325
 #, c-format
 msgid " (Y/n) "
 msgstr " (B/e) "
 
 #: ../urpm/dudf.pm:219
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "# Here are logs of your DUDF uploads.\n"
 "# Line format is : <date time of generation> <uid>\n"
 "# You can use uids to see the content of your uploads at this url :\n"
 "# %s"
 msgstr ""
-"# Hemen daude zure DUDF igoeren egunkariak.\n"
-"# Lerroaren formatua: <sorrera data ordua> <uid>\n"
-"# uid-ak erabili ditzakezu zure igoeren edukia ikusteko url honetan:\n"
-"# http://dudf.forge.mandriva.com/\n"
 
 #: ../urpm/dudf.pm:275 ../urpm/dudf.pm:321
 #, c-format
 msgid "curl is missing, cannot upload DUDF file.\n"
-msgstr "curl falta da, ezin dira DUDF fitxategiak igo.\n"
+msgstr ""
 
 #: ../urpm/dudf.pm:278
 #, c-format
 msgid "Compressing DUDF data... "
-msgstr "DUDF datuak konprimatzen... "
+msgstr ""
 
 #: ../urpm/dudf.pm:280 ../urpm/dudf.pm:281
 #, c-format
 msgid "NOT OK\n"
-msgstr "EZADOS\n"
+msgstr ""
 
 #: ../urpm/dudf.pm:289 ../urpm/dudf.pm:475
 #, c-format
 msgid "OK\n"
-msgstr "ADOS\n"
+msgstr ""
 
 #: ../urpm/dudf.pm:291
 #, c-format
 msgid "Uploading DUDF data:\n"
-msgstr "DUDF datuak igotzen:\n"
+msgstr ""
 
 #: ../urpm/dudf.pm:309
 #, c-format
@@ -831,8 +833,6 @@ msgid ""
 "\n"
 "Command:"
 msgstr ""
-"\n"
-"Komandoa:"
 
 #: ../urpm/dudf.pm:314
 #, c-format
@@ -841,9 +841,6 @@ msgid ""
 "You can see your DUDF report at the following URL :\n"
 "\t"
 msgstr ""
-"\n"
-"Zure DUDF txostena ondorengo URL-an ikusi dezakezu:\n"
-"\t"
 
 #: ../urpm/dudf.pm:317
 #, c-format
@@ -851,13 +848,11 @@ msgid ""
 "You can access a log of your uploads in\n"
 "\t"
 msgstr ""
-"Zure igoeren egunkari bat atzitu dezakezu hemen\n"
-"\t"
 
 #: ../urpm/dudf.pm:324
 #, c-format
 msgid "Testing synthesis file presence ..."
-msgstr "Sintesi fitxategien presentzia aztertzen ..."
+msgstr ""
 
 #: ../urpm/dudf.pm:343
 #, c-format
@@ -866,9 +861,6 @@ msgid ""
 "The synthesis file (media '%s', %s) is already available on the Mandriva "
 "DUDF server.\n"
 msgstr ""
-"\n"
-"Sintesi fitxategia ('%s' euskarria, %s) dagoeneko eskuragarri dago Mandriva "
-"DUDF zerbitzarian.\n"
 
 #: ../urpm/dudf.pm:345
 #, c-format
@@ -876,8 +868,6 @@ msgid ""
 "\n"
 "Uploading synthesis file ..."
 msgstr ""
-"\n"
-"Sintesi fitxategia igotzen ..."
 
 #: ../urpm/dudf.pm:363
 #, c-format
@@ -885,8 +875,6 @@ msgid ""
 "\n"
 "Synthesis successfully uploaded. It can be downloaded from"
 msgstr ""
-"\n"
-"Sistesiren igoera arrakastatsua. Hemendik jaitsi daiteke"
 
 #: ../urpm/dudf.pm:420
 #, c-format
@@ -894,8 +882,6 @@ msgid ""
 "\n"
 "Generating DUDF... "
 msgstr ""
-"\n"
-"DUDF sortzen... "
 
 #: ../urpm/get_pkgs.pm:29
 #, c-format
@@ -912,32 +898,32 @@ msgstr "ez da %s paketea aurkitu."
 msgid "retrieving rpm files from medium \"%s\"..."
 msgstr "rpm fitxategiak berreskuratzen \"%s\" euskarritik..."
 
-#: ../urpm/install.pm:106
+#: ../urpm/install.pm:107
 #, c-format
 msgid "Preparing..."
 msgstr "Prestatzen..."
 
-#: ../urpm/install.pm:115 ../urpme:172
+#: ../urpm/install.pm:116 ../urpme:174
 #, c-format
 msgid "removing %s"
 msgstr "%s kentzen"
 
-#: ../urpm/install.pm:218
+#: ../urpm/install.pm:219
 #, c-format
 msgid "unable to extract rpm from delta-rpm package %s"
 msgstr "ezin da rpm atera %s delta-rpm paketetik"
 
-#: ../urpm/install.pm:245
+#: ../urpm/install.pm:246
 #, c-format
 msgid "unable to install package %s"
 msgstr "ezin da %s paketea instalatu"
 
-#: ../urpm/install.pm:248
+#: ../urpm/install.pm:249
 #, c-format
 msgid "removing bad rpm (%s) from %s"
 msgstr "(%s) rpm okerra %s-tik ezabatzen"
 
-#: ../urpm/install.pm:249 ../urpm/install.pm:378
+#: ../urpm/install.pm:250 ../urpm/install.pm:377
 #, c-format
 msgid "removing %s failed: %s"
 msgstr "%s ezabatzeak huts egin du: %s"
@@ -947,7 +933,7 @@ msgstr "%s ezabatzeak huts egin du: %s"
 msgid "removing package %s"
 msgstr "%s paketea kentzen"
 
-#: ../urpm/install.pm:346
+#: ../urpm/install.pm:345
 #, c-format
 msgid ""
 "created transaction for installing on %s (remove=%d, install=%d, upgrade=%d)"
@@ -955,17 +941,17 @@ msgstr ""
 "transakzioa sortu da %s(e)n instalatzeko (kendu=%d, instalatu=%d,eguneratu="
 "%d)"
 
-#: ../urpm/install.pm:349
+#: ../urpm/install.pm:348
 #, c-format
 msgid "unable to create transaction"
 msgstr "ezin da transakziorik sortu"
 
-#: ../urpm/install.pm:376
+#: ../urpm/install.pm:375
 #, c-format
 msgid "removing installed rpms (%s) from %s"
 msgstr "%2$s-n instalatutako rpm-ak (%1$s) ezabatzen"
 
-#: ../urpm/install.pm:385
+#: ../urpm/install.pm:384
 #, c-format
 msgid "More information on package %s"
 msgstr "Informazio gehiago %s paketeari buruz"
@@ -1021,12 +1007,12 @@ msgstr "galarazten"
 msgid "Retry?"
 msgstr "Berriz saiatu?"
 
-#: ../urpm/main_loop.pm:85
+#: ../urpm/main_loop.pm:86
 #, c-format
 msgid "You may need to update your urpmi database."
 msgstr "Zure urpmi datu-basea eguneratzea komeni da."
 
-#: ../urpm/main_loop.pm:89
+#: ../urpm/main_loop.pm:90
 #, c-format
 msgid ""
 "Installation failed, bad rpms:\n"
@@ -1035,7 +1021,7 @@ msgstr ""
 "Instalaketak huts egin du, rpm okerrak:\n"
 "%s"
 
-#: ../urpm/main_loop.pm:108
+#: ../urpm/main_loop.pm:109
 #, c-format
 msgid ""
 "There is not enough space on your filesystem to download all packages (%s "
@@ -1046,68 +1032,68 @@ msgstr ""
 "beharrezkoa, %s eskuragarri).\n"
 "Ziur zaude jarraitu nahi duzula?"
 
-#: ../urpm/main_loop.pm:138
+#: ../urpm/main_loop.pm:139
 #, c-format
 msgid "The following package has bad signature"
 msgstr "Ondoko paketeak sinadura okerra dauka"
 
-#: ../urpm/main_loop.pm:139
+#: ../urpm/main_loop.pm:140
 #, c-format
 msgid "The following packages have bad signatures"
 msgstr "Ondoko pakete hauek sinadura okerra dute"
 
-#: ../urpm/main_loop.pm:140
+#: ../urpm/main_loop.pm:141
 #, c-format
 msgid "Do you want to continue installation ?"
 msgstr "Instalatzen jarraitu nahi duzu?"
 
-#: ../urpm/main_loop.pm:155 ../urpm/main_loop.pm:184 ../urpm/main_loop.pm:289
-#: ../urpm/main_loop.pm:297
+#: ../urpm/main_loop.pm:156 ../urpm/main_loop.pm:185 ../urpm/main_loop.pm:290
+#: ../urpm/main_loop.pm:298
 #, c-format
 msgid "Installation failed"
 msgstr "Instalazioak huts egin du"
 
-#: ../urpm/main_loop.pm:159
+#: ../urpm/main_loop.pm:160
 #, c-format
 msgid "removing installed rpms (%s)"
 msgstr "instalatutako rpm-ak ezabatzen (%s)"
 
-#: ../urpm/main_loop.pm:185
+#: ../urpm/main_loop.pm:186
 #, c-format
 msgid "Try to continue anyway?"
 msgstr "Hala ere jarraitzen saiatu?"
 
-#: ../urpm/main_loop.pm:235
+#: ../urpm/main_loop.pm:236
 #, c-format
 msgid "installing %s from %s"
 msgstr "%s %s-tik instalatzen"
 
-#: ../urpm/main_loop.pm:237
+#: ../urpm/main_loop.pm:238
 #, c-format
 msgid "installing %s"
 msgstr "%s instalatzen"
 
-#: ../urpm/main_loop.pm:244
+#: ../urpm/main_loop.pm:245
 #, c-format
 msgid "distributing %s"
 msgstr "%s banatzen"
 
-#: ../urpm/main_loop.pm:290
+#: ../urpm/main_loop.pm:291
 #, c-format
 msgid "Try installation without checking dependencies?"
 msgstr "Mendekotasunak egiaztatu gabe instalatzen saiatu nahi duzu?"
 
-#: ../urpm/main_loop.pm:298
+#: ../urpm/main_loop.pm:299
 #, c-format
 msgid "Try harder to install (--force)?"
 msgstr "Instalaketa behartu (--force)?"
 
-#: ../urpm/main_loop.pm:590
+#: ../urpm/main_loop.pm:598
 #, c-format
 msgid "Packages are up to date"
 msgstr "Paketeak egunean daude"
 
-#: ../urpm/main_loop.pm:601 ../urpm/parallel.pm:299
+#: ../urpm/main_loop.pm:609 ../urpm/parallel.pm:299
 #, c-format
 msgid "Installation is possible"
 msgstr "Instalazioa posible da"
@@ -1117,52 +1103,52 @@ msgstr "Instalazioa posible da"
 msgid "warning: md5sum for %s unavailable in MD5SUM file"
 msgstr "oharra: %s-rentzako md5sum ezin da eskuratu MD5SUM fitxategian"
 
-#: ../urpm/media.pm:274
+#: ../urpm/media.pm:275
 #, c-format
 msgid "virtual medium \"%s\" should have a clear url, medium ignored"
 msgstr ""
 "\"%s\" euskarri birtualak url garbia eduki beharko luke, ez ikusi egingo zaio"
 
-#: ../urpm/media.pm:276
+#: ../urpm/media.pm:277
 #, c-format
 msgid "unable to access list file of \"%s\", medium ignored"
 msgstr ""
 "ezin da \"%s\"(r)en zerrenda-fitxategia atzitu, euskarriari ez ikusi egingo "
 "zaio"
 
-#: ../urpm/media.pm:279
+#: ../urpm/media.pm:280
 #, c-format
 msgid "unable to access synthesis file of \"%s\", medium ignored"
 msgstr ""
 "ezin da \"%s\"(r)en synthesis fitxategia atzitu, euskarriari jaramonik ez"
 
-#: ../urpm/media.pm:305
+#: ../urpm/media.pm:306
 #, c-format
 msgid "trying to override existing medium \"%s\", skipping"
 msgstr ""
 "existitzen den \"%s\" euskarriari jaramonik ez egiteko ahalegina, ekiditen"
 
-#: ../urpm/media.pm:521
+#: ../urpm/media.pm:522
 #, c-format
 msgid "failed to migrate removable device, ignoring media"
 msgstr "gailu eramangarria migratzeak huts egin du, euskarria baztertzen"
 
-#: ../urpm/media.pm:564
-#, fuzzy, c-format
+#: ../urpm/media.pm:565
+#, c-format
 msgid "wrote config file [%s and urpmicfg.d contents]"
-msgstr "[%s] konfigurazio-fitxategia idatzi"
+msgstr ""
 
-#: ../urpm/media.pm:655
+#: ../urpm/media.pm:656
 #, c-format
 msgid "Can't use parallel mode with use-distrib mode"
 msgstr "Modu paraleloa ezin da use-distrib moduarekin erabili "
 
-#: ../urpm/media.pm:663
+#: ../urpm/media.pm:664
 #, c-format
 msgid "using associated media for parallel mode: %s"
 msgstr "modu paralelorako asoziatutako euskarria erabiltzen: %s"
 
-#: ../urpm/media.pm:679
+#: ../urpm/media.pm:680
 #, c-format
 msgid ""
 "--synthesis cannot be used with --media, --excludemedia, --sortmedia, --"
@@ -1171,227 +1157,240 @@ msgstr ""
 "--laburpena ezin da hauekin erabili: --media, --excludemedia, --sortmedia, --"
 "update, --use-distrib edo --parallel"
 
-#: ../urpm/media.pm:786
+#: ../urpm/media.pm:794
 #, c-format
-msgid "Search start: %s end: %s"
-msgstr ""
+msgid "ignoring non-free medium `%s'"
+msgstr "jaramonik ez egin hedaketa '%s' ez-librea"
 
 #: ../urpm/media.pm:803
+#, c-format
+msgid "un-ignoring non-free medium `%s' b/c nonfree packages are installed"
+msgstr ""
+"Baliabide ez librek ignoratu gabe b/c `%s' pakete ez libreak instalatuta "
+"daude"
+
+#: ../urpm/media.pm:807
+#, c-format
+msgid "un-ignoring tainted medium `%s' b/c tainted packages are installed"
+msgstr ""
+"Baliabide kutsatuak ignoratu gabe b/c `%s' pakete kutsatuak instalatuta daude"
+
+#: ../urpm/media.pm:835
+#, c-format
+msgid "Search start: %s end: %s"
+msgstr "Bilaketa hasera: %s amaiera: %s"
+
+#: ../urpm/media.pm:852
 #, c-format
 msgid "skipping package %s"
 msgstr "%s paketea saltatzen"
 
-#: ../urpm/media.pm:819
+#: ../urpm/media.pm:868
 #, c-format
 msgid "would install instead of upgrade package %s"
 msgstr "%s paketea eguneratu beharrean instalatu egingo luke"
 
-#: ../urpm/media.pm:902
+#: ../urpm/media.pm:951
 #, c-format
 msgid "medium \"%s\" already exists"
 msgstr "\"%s\" euskarria lehendik badago"
 
-#: ../urpm/media.pm:944
+#: ../urpm/media.pm:995
 #, c-format
 msgid "(ignored by default)"
 msgstr "(era lehenetsian jaramonik ez)"
 
-#: ../urpm/media.pm:950
+#: ../urpm/media.pm:1001
 #, c-format
 msgid "adding medium \"%s\" before remote medium \"%s\""
 msgstr "\"%s\" euskarria \"%s\" urruneko euskarriaren aurretik eransten"
 
-#: ../urpm/media.pm:956
+#: ../urpm/media.pm:1007
 #, c-format
 msgid "adding medium \"%s\""
 msgstr "\"%s\" euskarria eransten"
 
-#: ../urpm/media.pm:980
+#: ../urpm/media.pm:1031
 #, c-format
 msgid "failed to copy media.cfg to %s (%d)"
 msgstr "media.cfg %s-ra kopiatzeak huts egin du (%d)"
 
-#: ../urpm/media.pm:1051
+#: ../urpm/media.pm:1102
 #, c-format
 msgid "directory %s does not exist"
 msgstr "%s direktorioa ez da existitzen"
 
-#: ../urpm/media.pm:1059
+#: ../urpm/media.pm:1110
 #, c-format
 msgid "this location doesn't seem to contain any distribution"
 msgstr "kokapen honek ez dirudi banaketarik daukanik"
 
-#: ../urpm/media.pm:1083
+#: ../urpm/media.pm:1134
 #, c-format
 msgid "unable to parse media.cfg"
 msgstr "ezin izan da media.cfg sintaktikoki egiaztatu"
 
-#: ../urpm/media.pm:1086
+#: ../urpm/media.pm:1137
 #, c-format
 msgid "unable to access the distribution medium (no media.cfg file found)"
 msgstr "ezin da banaketa menua atzitu (ez da media.cfg fitxategirik aurkitu)"
 
-#: ../urpm/media.pm:1107
+#: ../urpm/media.pm:1159
 #, c-format
 msgid "skipping non compatible media `%s' (for %s)"
 msgstr "alboratu '%s' euskarri ez bateragarria (%s-rentzako)"
 
-#: ../urpm/media.pm:1122
-#, c-format
-msgid "ignoring non-free medium `%s'"
-msgstr "`%s' euskarri ez-askea baztertzen"
-
-#: ../urpm/media.pm:1171
+#: ../urpm/media.pm:1217
 #, c-format
 msgid "retrieving media.cfg file..."
 msgstr "media.cfg fitxategia berreskuratzen..."
 
-#: ../urpm/media.pm:1214
+#: ../urpm/media.pm:1260
 #, c-format
 msgid "trying to select nonexistent medium \"%s\""
 msgstr "existitzen ez den \"%s\" euskarria hautatu nahian zabiltza"
 
-#: ../urpm/media.pm:1217
+#: ../urpm/media.pm:1263
 #, c-format
 msgid "selecting multiple media: %s"
 msgstr "hainbat euskarri hautatzen: %s"
 
-#: ../urpm/media.pm:1276
+#: ../urpm/media.pm:1322
 #, c-format
 msgid "removing medium \"%s\""
 msgstr "\"%s\" euskarria kentzen"
 
-#: ../urpm/media.pm:1359
+#: ../urpm/media.pm:1413
 #, c-format
 msgid "reconfiguring urpmi for media \"%s\""
 msgstr "\"%s\" euskarriarentzako urpmi birkonfiguratzen"
 
-#: ../urpm/media.pm:1393
+#: ../urpm/media.pm:1447
 #, c-format
 msgid "...reconfiguration failed"
 msgstr "...birkonfiguraketak hutsegin du"
 
-#: ../urpm/media.pm:1399
+#: ../urpm/media.pm:1453
 #, c-format
 msgid "reconfiguration done"
 msgstr "birkonfiguraketa amaituta"
 
-#: ../urpm/media.pm:1415
+#: ../urpm/media.pm:1469
 #, c-format
 msgid "Error generating names file: dependency %d not found"
 msgstr "Akatsa izen fitxategia sortzerakoan: %d menpekotasuna ez da aurkitu"
 
-#: ../urpm/media.pm:1436
+#: ../urpm/media.pm:1490
 #, c-format
 msgid "medium \"%s\" is up-to-date"
 msgstr "\"%s\" euskarria egunean dago"
 
-#: ../urpm/media.pm:1447
+#: ../urpm/media.pm:1501
 #, c-format
 msgid "examining synthesis file [%s]"
 msgstr "[%s] laburpen-fitxategia aztertzen"
 
-#: ../urpm/media.pm:1467
+#: ../urpm/media.pm:1521
 #, c-format
 msgid "problem reading synthesis file of medium \"%s\""
 msgstr "arazoa \"%s\" euskarriaren laburpen-fitxategia irakurtzean"
 
-#: ../urpm/media.pm:1480 ../urpm/media.pm:1575
+#: ../urpm/media.pm:1534 ../urpm/media.pm:1629
 #, c-format
 msgid "copying [%s] for medium \"%s\"..."
 msgstr "[%s] kopiatzen \"%s\" euskarriarentzako..."
 
-#: ../urpm/media.pm:1482 ../urpm/media.pm:1552 ../urpm/media.pm:1805
+#: ../urpm/media.pm:1536 ../urpm/media.pm:1606 ../urpm/media.pm:1859
 #, c-format
 msgid "...copying failed"
 msgstr "...ezin izan da kopiatu"
 
-#: ../urpm/media.pm:1548
+#: ../urpm/media.pm:1602
 #, c-format
 msgid "copying description file of \"%s\"..."
 msgstr "\"%s\"(r)en deskribapen-fitxategia kopiatzen..."
 
-#: ../urpm/media.pm:1550 ../urpm/media.pm:1579
+#: ../urpm/media.pm:1604 ../urpm/media.pm:1633
 #, c-format
 msgid "...copying done"
 msgstr "...kopiatzea burutu da"
 
-#: ../urpm/media.pm:1581
+#: ../urpm/media.pm:1635
 #, c-format
 msgid "copy of [%s] failed (file is suspiciously small)"
 msgstr "ezin izan da [%s] kopiatu (fitxategia txikiegia da)"
 
-#: ../urpm/media.pm:1629
+#: ../urpm/media.pm:1683
 #, c-format
 msgid "computing md5sum of retrieved source synthesis"
 msgstr "berreskuratutako iturburu synthesis-en md5sum kalkulatzen"
 
-#: ../urpm/media.pm:1631 ../urpm/media.pm:2114
+#: ../urpm/media.pm:1685 ../urpm/media.pm:2168
 #, c-format
 msgid "retrieval of [%s] failed (md5sum mismatch)"
 msgstr "[%s]-ren berreskuperaketak huts egin du (md5sum ez dator bat)"
 
-#: ../urpm/media.pm:1646
+#: ../urpm/media.pm:1700
 #, c-format
 msgid "genhdlist2 failed on %s"
 msgstr "genhdlist2-k huts egin du %s-rekin"
 
-#: ../urpm/media.pm:1656
+#: ../urpm/media.pm:1710
 #, c-format
 msgid "comparing %s and %s"
 msgstr "%s eta %s parekatzen"
 
-#: ../urpm/media.pm:1686
+#: ../urpm/media.pm:1740
 #, c-format
 msgid "invalid hdlist file %s for medium \"%s\""
 msgstr "%s hdlist fitxategi baliogabea \"%s\" euskarriarentzat"
 
-#: ../urpm/media.pm:1712
+#: ../urpm/media.pm:1766
 #, c-format
 msgid "copying MD5SUM file of \"%s\"..."
 msgstr "\"%s\"-ren MD5SUM fitxategia kopiatzen..."
 
-#: ../urpm/media.pm:1752
+#: ../urpm/media.pm:1806
 #, c-format
 msgid "invalid MD5SUM file (downloaded from %s)"
 msgstr "MD5SUM fitxategi baliogabea (%s-tik jaitsitakoa)"
 
-#: ../urpm/media.pm:1755
+#: ../urpm/media.pm:1809
 #, c-format
 msgid "no metadata found for medium \"%s\""
 msgstr "ez da \"%s\" euskarriaren metadaturik aurkitu"
 
-#: ../urpm/media.pm:1787
+#: ../urpm/media.pm:1841
 #, c-format
 msgid "retrieving source synthesis of \"%s\"..."
 msgstr "\"%s\"-ren synthesis iturburua berreskuratzen..."
 
-#: ../urpm/media.pm:1853
+#: ../urpm/media.pm:1907
 #, c-format
 msgid "examining pubkey file of \"%s\"..."
 msgstr "\"%s\"(r)en gako publikoen fitxategia aztertzen..."
 
-#: ../urpm/media.pm:1865
+#: ../urpm/media.pm:1919
 #, c-format
 msgid "...imported key %s from pubkey file of \"%s\""
 msgstr "...%s gakoa inportatu da \"%s\"(r)en gako publikoen fitxategitik"
 
-#: ../urpm/media.pm:1869
+#: ../urpm/media.pm:1923
 #, c-format
 msgid "unable to import pubkey file of \"%s\""
 msgstr "ezin da \"%s\"(r)en gako publikoen fitxategia inportatu"
 
-#: ../urpm/media.pm:1910
+#: ../urpm/media.pm:1964
 #, c-format
 msgid "no synthesis file found for medium \"%s\""
 msgstr "ez da \"%s\" euskarriaren synthesis fitxategirik aurkitu"
 
-#: ../urpm/media.pm:1943
+#: ../urpm/media.pm:1997
 #, c-format
 msgid "updated medium \"%s\""
 msgstr "\"%s\" euskarri eguneratua"
 
-#: ../urpm/media.pm:2108
+#: ../urpm/media.pm:2162
 #, c-format
 msgid "retrieval of [%s] failed"
 msgstr "[%s] berreskurapenak huts egin du"
@@ -1417,12 +1416,12 @@ msgid "getting mirror list from %s"
 msgstr "%s-tik ispilu zerrenda jasotzen"
 
 #. -PO: Add here the keys which might be pressed in the "Yes"-case.
-#: ../urpm/msg.pm:78 ../urpme:38 ../urpmi.addmedia:133
+#: ../urpm/msg.pm:78 ../urpme:38 ../urpmi.addmedia:134
 #, c-format
 msgid "Yy"
 msgstr "bByYsS"
 
-#: ../urpm/msg.pm:103 ../urpme:166 ../urpmi.addmedia:136
+#: ../urpm/msg.pm:103 ../urpme:168 ../urpmi.addmedia:137
 #, c-format
 msgid " (y/N) "
 msgstr " (b/E) "
@@ -1450,22 +1449,22 @@ msgstr "Askapena"
 #: ../urpm/msg.pm:188
 #, c-format
 msgid "Dist"
-msgstr "Bana"
+msgstr ""
 
 #: ../urpm/msg.pm:188
 #, c-format
 msgid "DEpoch"
-msgstr "BGarai"
+msgstr ""
 
 #: ../urpm/msg.pm:188
 #, c-format
 msgid "Arch"
-msgstr "Arki"
+msgstr "Arkitektura"
 
 #: ../urpm/msg.pm:197
 #, c-format
 msgid "(suggested)"
-msgstr "(iradokita)"
+msgstr ""
 
 #: ../urpm/msg.pm:212
 #, c-format
@@ -1509,8 +1508,8 @@ msgstr ""
 "%s eskuz instalatutakoa bezela markatuta, ez da automatikoki umezurtz "
 "geldituko"
 
-#: ../urpm/orphans.pm:520
-#, fuzzy, c-format
+#: ../urpm/orphans.pm:524
+#, c-format
 msgid ""
 "The following package:\n"
 "%s\n"
@@ -1519,17 +1518,23 @@ msgid_plural ""
 "The following packages:\n"
 "%s\n"
 "are now orphaned."
-msgstr[0] "Ondoko paketeetako bat behar da:"
-msgstr[1] "Ondoko paketeetako bat behar da:"
+msgstr[0] ""
+"Hurrengo paketea:\n"
+"%s\n"
+"umezurtz da orain."
+msgstr[1] ""
+"Hurrengo paketeak:\n"
+"%s\n"
+"umezurtzak dira orain."
 
-#: ../urpm/orphans.pm:523
-#, fuzzy, c-format
+#: ../urpm/orphans.pm:527
+#, c-format
 msgid "You may wish to remove it."
 msgid_plural "You may wish to remove them."
-msgstr[0] "Ez dago ezabatu beharreko umezurtzik"
-msgstr[1] "Ez dago ezabatu beharreko umezurtzik"
+msgstr[0] "Baliteke hori kendu nahi izatea."
+msgstr[1] "Baliteke horiek kendu nahi izatea."
 
-#: ../urpm/orphans.pm:540
+#: ../urpm/orphans.pm:544
 #, c-format
 msgid ""
 "The following package:\n"
@@ -1645,7 +1650,7 @@ msgstr ""
 msgid "No package named %s"
 msgstr "Ez dago %s izeneko paketerik"
 
-#: ../urpm/select.pm:240 ../urpme:120
+#: ../urpm/select.pm:240 ../urpme:122
 #, c-format
 msgid "The following packages contain %s: %s"
 msgstr "Ondoko paketeek %s dute: %s"
@@ -1655,43 +1660,43 @@ msgstr "Ondoko paketeek %s dute: %s"
 msgid "You should use \"-a\" to use all of them"
 msgstr "\"-a\" erabili behar zenuke guztiak erabiltzeko"
 
-#: ../urpm/select.pm:389
+#: ../urpm/select.pm:390
 #, c-format
 msgid "found package(s) %s in urpmi db, but none are installed"
 msgstr ""
 "%s paketea(k) aurkitu d(ir)a urpmi db-an, baino ez dago batere instalatuta"
 
-#: ../urpm/select.pm:709
+#: ../urpm/select.pm:710
 #, c-format
 msgid "Package %s is already installed"
 msgstr "%s paketea dagoeneko instalatuta dago"
 
-#: ../urpm/select.pm:710
+#: ../urpm/select.pm:711
 #, c-format
 msgid "Packages %s are already installed"
 msgstr "%s paketeak dagoeneko instalatuta daude"
 
-#: ../urpm/select.pm:727 ../urpm/select.pm:814
+#: ../urpm/select.pm:728 ../urpm/select.pm:815
 #, c-format
 msgid "due to conflicts with %s"
 msgstr "%s(r)ekin gatazkak daudelako"
 
-#: ../urpm/select.pm:728 ../urpm/select.pm:808
+#: ../urpm/select.pm:729 ../urpm/select.pm:809
 #, c-format
 msgid "due to unsatisfied %s"
 msgstr "%s bete gabe dagoelako"
 
-#: ../urpm/select.pm:734
+#: ../urpm/select.pm:735
 #, c-format
 msgid "trying to promote %s"
 msgstr "%s jaso nahian"
 
-#: ../urpm/select.pm:735
+#: ../urpm/select.pm:736
 #, c-format
 msgid "in order to keep %s"
 msgstr "%s gordetzeko"
 
-#: ../urpm/select.pm:776
+#: ../urpm/select.pm:777
 #, c-format
 msgid ""
 "The following package has to be removed for others to be upgraded:\n"
@@ -1700,7 +1705,7 @@ msgstr ""
 "Ondoko paketea ezabatu behar da besteak berritu ahal daitezen:\n"
 "%s"
 
-#: ../urpm/select.pm:777
+#: ../urpm/select.pm:778
 #, c-format
 msgid ""
 "The following packages have to be removed for others to be upgraded:\n"
@@ -1709,12 +1714,12 @@ msgstr ""
 "Pakete hauek kendu egin behar dira besteak berritzeko:\n"
 "%s"
 
-#: ../urpm/select.pm:804
+#: ../urpm/select.pm:805
 #, c-format
 msgid "in order to install %s"
 msgstr "%s instalatzeko"
 
-#: ../urpm/select.pm:810
+#: ../urpm/select.pm:811
 #, c-format
 msgid "due to missing %s"
 msgstr "%s falta delako"
@@ -1725,14 +1730,14 @@ msgid "Invalid signature (%s)"
 msgstr "Sinadura ez da baliozkoa (%s)"
 
 #: ../urpm/signature.pm:77
-#, fuzzy, c-format
+#, c-format
 msgid "SECURITY: The following package is _NOT_ signed (%s): %s"
-msgstr "Ondoko paketeek %s dute: %s"
+msgstr "SEGURTASUNA: Ondorengo paketea EZ_dago_sinatuta (%s): %s"
 
 #: ../urpm/signature.pm:83
 #, c-format
 msgid "SECURITY: NOT checking package \"%s\" (due to configuration)"
-msgstr ""
+msgstr "SEGURTASUNA: \"% s \" paketea egiaztatu gabe (konfigurazioa dela eta)"
 
 #: ../urpm/signature.pm:102
 #, c-format
@@ -1747,44 +1752,44 @@ msgstr "Sinadura falta da (%s)"
 #: ../urpm/signature.pm:107
 #, c-format
 msgid "SECURITY: Medium \"%s\" has no key (%s)!"
-msgstr ""
+msgstr "SEGURTASUNA: \"%s\" baliabideak ez du (%s) gako!"
 
 #: ../urpm/signature.pm:109
 #, c-format
 msgid "Medium without key (%s)"
-msgstr ""
+msgstr "gako gabeko bitartekoa (%s)"
 
-#: ../urpm/sys.pm:183
+#: ../urpm/sys.pm:188
 #, c-format
 msgid "system"
 msgstr "sistema"
 
-#: ../urpm/sys.pm:220
+#: ../urpm/sys.pm:225
 #, c-format
 msgid "You should restart your computer for %s"
 msgstr "Zure konputagailua berrabiatu behar zenuke %s-rentzako"
 
-#: ../urpm/sys.pm:222
+#: ../urpm/sys.pm:227
 #, c-format
 msgid "You should restart your session for %s"
 msgstr "Zure saio berrabiatu behar zenuke %s-rentzako"
 
-#: ../urpm/sys.pm:224
+#: ../urpm/sys.pm:229
 #, c-format
 msgid "You should restart %s for %s"
 msgstr "%s berrabiatu beharko zenuke %s-rentzako"
 
-#: ../urpm/sys.pm:334
+#: ../urpm/sys.pm:339
 #, c-format
 msgid "Can't write file"
 msgstr "Ezin da fitxategia idatzi"
 
-#: ../urpm/sys.pm:334
+#: ../urpm/sys.pm:339
 #, c-format
 msgid "Can't open file"
 msgstr "Ezin da fitxategia ireki"
 
-#: ../urpm/sys.pm:347
+#: ../urpm/sys.pm:352
 #, c-format
 msgid "Can't move file %s to %s"
 msgstr "Ezin da %s fitxategiar %s-ra mugitu"
@@ -1799,12 +1804,6 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpme %s bertsioa\n"
-"Copyright © 1999-2011 Mandriva.\n"
-"Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
-"birbanatu daiteke.\n"
-"\n"
-"erabilera:\n"
 
 #: ../urpme:47
 #, c-format
@@ -1829,14 +1828,14 @@ msgstr "  --parallel     - urpmi banatzen du alias-makinen artean.\n"
 #: ../urpme:52 ../urpmi:171
 #, c-format
 msgid "  --repackage    - Re-package the files before erasing\n"
-msgstr "  --repackage    - fitxategiak bir-paketatu ezabatu aurretik\n"
+msgstr ""
 
 #: ../urpme:53
 #, c-format
 msgid "  --root         - use another root for rpm removal.\n"
 msgstr "  --root         - beste root bat erabiltzen du rpm ezabaketarako.\n"
 
-#: ../urpme:54 ../urpmf:40 ../urpmi:127 ../urpmi.addmedia:73
+#: ../urpme:54 ../urpmf:40 ../urpmi:127 ../urpmi.addmedia:74
 #: ../urpmi.removemedia:45 ../urpmi.update:48 ../urpmq:74
 #, c-format
 msgid "  --urpmi-root   - use another root for urpmi db & rpm installation.\n"
@@ -1856,7 +1855,7 @@ msgstr "  --noscripts    - ez du scriptlet(s) paketea exekutatzen\n"
 #: ../urpme:57
 #, c-format
 msgid "  --notriggers   - do not execute package trigger(s).\n"
-msgstr "  --notriggers   - ez exekutatu paketeen kiskagailua(k).\n"
+msgstr ""
 
 #: ../urpme:58
 #, c-format
@@ -1888,39 +1887,51 @@ msgstr ""
 "  -a             - pakete denak hautatzen ditu bat datozen adierazpenak "
 "kontuan hartuz.\n"
 
-#: ../urpme:78
+#: ../urpme:64 ../urpmf:86 ../urpmi:184 ../urpmi.recover:52 ../urpmq:114
+#, c-format
+msgid ""
+"  --define, -D   - define macro after all the others have been defined.\n"
+msgstr ""
+
+#: ../urpme:65 ../urpmf:87 ../urpmi:185 ../urpmi.recover:53 ../urpmq:115
+#, c-format
+msgid ""
+"  --predefine    - predefine macro before any others have been defined.\n"
+msgstr ""
+
+#: ../urpme:80
 #, c-format
 msgid "Only superuser is allowed to remove packages"
 msgstr "Supererabiltzaileak soilik dauka paketeak ezabatzeko baimena"
 
-#: ../urpme:111
+#: ../urpme:113
 #, c-format
 msgid "unknown packages"
 msgstr "pakete ezezagunak"
 
-#: ../urpme:111
+#: ../urpme:113
 #, c-format
 msgid "unknown package"
 msgstr "pakete ezezaguna"
 
-#: ../urpme:126
+#: ../urpme:128
 #, c-format
 msgid "Removing the following package will break your system:"
 msgid_plural "Removing the following packages will break your system:"
 msgstr[0] "Ondoko paketea kentzeak zure sistema apurtuko du:"
 msgstr[1] "Ondoko paketeak kentzeak zure sistema apurtuko du:"
 
-#: ../urpme:131
+#: ../urpme:133
 #, c-format
 msgid "Nothing to remove"
 msgstr "Ez dago ezer kentzeko"
 
-#: ../urpme:148
+#: ../urpme:150
 #, c-format
 msgid "No orphans to remove"
 msgstr "Ez dago ezabatu beharreko umezurtzik"
 
-#: ../urpme:154
+#: ../urpme:156
 #, c-format
 msgid "To satisfy dependencies, the following package will be removed"
 msgid_plural ""
@@ -1928,31 +1939,31 @@ msgid_plural ""
 msgstr[0] "Mendekotasunak asetzeko, ondoko paketea ezabatuko da"
 msgstr[1] "Mendekotasunak asetzeko, ondoko %d paketeak ezabatuko dira"
 
-#: ../urpme:159
+#: ../urpme:161
 #, c-format
 msgid "(orphan package)"
 msgid_plural "(orphan packages)"
 msgstr[0] "(pakete umezurtza)"
 msgstr[1] "(pakete umezurtzak)"
 
-#: ../urpme:166
+#: ../urpme:168
 #, c-format
 msgid "Remove %d package?"
 msgid_plural "Remove %d packages?"
 msgstr[0] "%d paketea ezabatu?"
 msgstr[1] "%d paketeak ezabatu?"
 
-#: ../urpme:171
+#: ../urpme:173
 #, c-format
 msgid "testing removal of %s"
 msgstr "%s ezabatzea probatzen"
 
-#: ../urpme:188
+#: ../urpme:190
 #, c-format
 msgid "Removal failed"
 msgstr "Kentzean huts egin du"
 
-#: ../urpme:190
+#: ../urpme:192
 #, c-format
 msgid "Removal is possible"
 msgstr "Ezabatzea posible da"
@@ -1967,12 +1978,6 @@ msgid ""
 "\n"
 "usage: urpmf [options] pattern-expression\n"
 msgstr ""
-"urpmf %s bertsioa\n"
-"Copyright © 2002-2011 Mandriva.\n"
-"Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
-"birbanatu daiteke.\n"
-"\n"
-"erabilera: urpmf [aukerak] adierazpen-eredua\n"
 
 #: ../urpmf:36
 #, c-format
@@ -2200,7 +2205,7 @@ msgstr "  --sourcerpm    - rpm iturburu izena.\n"
 #: ../urpmf:80
 #, c-format
 msgid "  --suggests     - suggests tags\n"
-msgstr "  --suggests     - bilatu «suggests» bezala markatutakoen artean\n"
+msgstr ""
 
 #: ../urpmf:81
 #, c-format
@@ -2229,47 +2234,41 @@ msgstr ""
 "  -f - bertsioa, argitalpena eta fitxategia ere izenarekin inprimatzen "
 "ditu.\n"
 
-#: ../urpmf:153
+#: ../urpmf:155
 #, c-format
 msgid "unterminated expression (%s)"
 msgstr "amaitugabeko adierazpena (%s)"
 
-#: ../urpmf:198
+#: ../urpmf:200
 #, c-format
 msgid "Incorrect format: you may use only one multi-valued tag"
 msgstr "Formatu okerra: etiketa balio-anitz bakarra erabili dezakezu"
 
-#: ../urpmf:291
+#: ../urpmf:293
 #, c-format
 msgid "no hdlist available for medium \"%s\""
 msgstr "ez dago \"%s\" euskarriarentzako hdlist eskuragarri"
 
-#: ../urpmf:298
+#: ../urpmf:300
 #, c-format
 msgid "no synthesis available for medium \"%s\""
 msgstr "ez dago \"%s\" euskarriarentzako synthesis eskuragarri"
 
-#: ../urpmf:307
+#: ../urpmf:309
 #, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "ez dago \"%s\" euskarriarentzako xml-info eskuragarri"
 
 #: ../urpmi:79
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 2013 OpenMandriva Association.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
 "usage:\n"
 msgstr ""
-"urpmi %s bertsioa\n"
-"Copyright © 1999-2011 Mandriva.\n"
-"Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
-"birbanatu daiteke.\n"
-"\n"
-"erabilera:\n"
 
 #: ../urpmi:93
 #, c-format
@@ -2294,7 +2293,7 @@ msgstr "  --auto-orphans - umezurtzak ezabatu galdetu gabe\n"
 #: ../urpmi:97 ../urpmq:58
 #, c-format
 msgid "  --no-suggests  - do not auto select \"suggested\" packages.\n"
-msgstr "  --no-suggests  - ez aukeratu automatikoki \"suggested\" paketeak.\n"
+msgstr ""
 
 #: ../urpmi:98
 #, c-format
@@ -2320,9 +2319,9 @@ msgstr ""
 "                   eragiten duten pakete-eskaerak.\n"
 
 #: ../urpmi:102
-#, fuzzy, c-format
+#, c-format
 msgid "  --force-req-update  - Try to update all of package requires.\n"
-msgstr "  --force-key    - gpg gakoa eguneratzera behartzen du.\n"
+msgstr ""
 
 #: ../urpmi:103
 #, c-format
@@ -2409,7 +2408,7 @@ msgstr ""
 #: ../urpmi:124
 #, c-format
 msgid "  --allow-suggests - auto select \"suggested\" packages.\n"
-msgstr "  --allow-suggests - automatikoki aukeratu \"suggested\" packeteak.\n"
+msgstr ""
 
 #: ../urpmi:128
 #, c-format
@@ -2420,24 +2419,23 @@ msgstr ""
 "  --use-distrib  - urpmi berehala konfiguratzen du distrib zuhaitzetik, \n"
 "                   erabilgarria chroot --root aukerarekin instalatzeko.\n"
 
-#: ../urpmi:130 ../urpmi.addmedia:60 ../urpmi.update:37
+#: ../urpmi:130
+#, c-format
+msgid ""
+"  --target-arch  - generate and load /etc/rpm/platform within a chroot\n"
+"                           with --root option.\n"
+msgstr ""
+
+#: ../urpmi:132 ../urpmi.addmedia:61 ../urpmi.update:37
 #, c-format
 msgid "  --metalink     - generate and use a local metalink.\n"
 msgstr "  --metalink     - sortu eta erabili bertako metaesteka bat.\n"
 
-#: ../urpmi:131
-#, fuzzy, c-format
+#: ../urpmi:133
+#, c-format
 msgid ""
 "  --download-all - download all needed packages before trying to install "
 "them\n"
-"                   (this is the default behavior)\n"
-msgstr ""
-"  --download-all - jaitsi beharrezko pakete guztiak haiek instalatzen saiatu "
-"aurretik\n"
-
-#: ../urpmi:133
-#, fuzzy, c-format
-msgid "  --no-download-all - download packages only when they are needed\n"
 msgstr ""
 "  --download-all - jaitsi beharrezko pakete guztiak haiek instalatzen saiatu "
 "aurretik\n"
@@ -2477,7 +2475,7 @@ msgstr "  --prozilla-options - prozilla-i aukera gehiago pasatzeko\n"
 msgid "  --aria2-options - additional options to pass to aria2\n"
 msgstr "  --aria2-options - aria2-ri pasatzeko aukera osagarriak\n"
 
-#: ../urpmi:142 ../urpmi.addmedia:61 ../urpmi.update:38
+#: ../urpmi:142 ../urpmi.addmedia:62 ../urpmi.update:38
 #, c-format
 msgid "  --limit-rate   - limit the download speed.\n"
 msgstr "  --limit-rate   - deskarga-abiadura mugatzen du.\n"
@@ -2506,7 +2504,7 @@ msgstr ""
 "berriro\n"
 "ekiten dio ('--no-resume'-k hori desgaitzen du; lehenetsia desgaituta da).\n"
 
-#: ../urpmi:149 ../urpmi.addmedia:62 ../urpmi.update:39 ../urpmq:80
+#: ../urpmi:149 ../urpmi.addmedia:63 ../urpmi.update:39 ../urpmq:80
 #, c-format
 msgid ""
 "  --proxy        - use specified HTTP proxy, the port number is assumed\n"
@@ -2516,7 +2514,7 @@ msgstr ""
 "                   1080 izan behar du lehenespenez (formatua hau da: \n"
 "<proxy-ostalaria[:ataka]>).\n"
 
-#: ../urpmi:151 ../urpmi.addmedia:64 ../urpmi.update:41 ../urpmq:82
+#: ../urpmi:151 ../urpmi.addmedia:65 ../urpmi.update:41 ../urpmq:82
 #, c-format
 msgid ""
 "  --proxy-user   - specify user and password to use for proxy\n"
@@ -2564,7 +2562,7 @@ msgstr "  --noscripts    - ez du scriptlet(s) paketea exekutatzen\n"
 #: ../urpmi:164
 #, c-format
 msgid "  --notriggers   - do not execute package trigger(s)\n"
-msgstr "  --notriggers   - ez exekutatu paketeen kiskagailua(k)\n"
+msgstr ""
 
 #: ../urpmi:165
 #, c-format
@@ -2631,18 +2629,18 @@ msgstr "  --quiet, -q    - modu lasaia.\n"
 msgid "  --debug        - very verbose mode.\n"
 msgstr "  --debug        - oso modu berritsua.\n"
 
-#: ../urpmi:184
+#: ../urpmi:186
 #, c-format
 msgid "  names or rpm files given on command line will be installed.\n"
 msgstr ""
 "  komando-lerroan idatzitako izenak edo rpm fitxategiak instalatuko dira.\n"
 
-#: ../urpmi:218
+#: ../urpmi:220
 #, c-format
 msgid "Error: can't use --auto-select along with package list.\n"
 msgstr "Akatsa: ezin da erabili -auto-select pakete zerrendarekin.\n"
 
-#: ../urpmi:225
+#: ../urpmi:227
 #, c-format
 msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
@@ -2652,29 +2650,29 @@ msgstr ""
 "argumentuak\n"
 "--bug argumentuarekin batera.\n"
 
-#: ../urpmi:257
+#: ../urpmi:259
 #, c-format
 msgid "You can't install binary rpm files when using --install-src"
 msgstr "Ezin dituzu rpm fitxategi bitarrak instalatu --install-src erabilita"
 
-#: ../urpmi:258
+#: ../urpmi:260
 #, c-format
 msgid "You can't install spec files"
 msgstr "Zuk ezin dituzu 'spec' fitxategiak instalatu"
 
-#: ../urpmi:265
+#: ../urpmi:267
 #, c-format
 msgid "defaulting to --buildrequires"
 msgstr "lehenetsia --buildrequires"
 
-#: ../urpmi:270
+#: ../urpmi:272
 #, c-format
 msgid ""
 "please use --buildrequires or --install-src, defaulting to --buildrequires"
 msgstr ""
 "mesedez erabili --buildrequires edo --install-src, lehenetsia --buildrequires"
 
-#: ../urpmi:290
+#: ../urpmi:292
 #, c-format
 msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
@@ -2683,12 +2681,12 @@ msgstr ""
 "[%s] direktorioa badago lehendik, erabili beste direktorio bat akatsen berri "
 "emateko edo ezabatu"
 
-#: ../urpmi:291
+#: ../urpmi:293
 #, c-format
 msgid "Unable to create directory [%s] for bug report"
 msgstr "Ezin da erroreen berri emateko [%s] direktorioa sortu"
 
-#: ../urpmi:312
+#: ../urpmi:314
 #, c-format
 msgid ""
 "Error: %s appears to be mounted read-only.\n"
@@ -2698,42 +2696,42 @@ msgstr ""
 "Erabili --allow-force eragiketa behartzeko."
 
 #. -PO: here format is "<package_name>: <summary> (to upgrade)"
-#: ../urpmi:484
+#: ../urpmi:486
 #, c-format
 msgid "%s: %s (to upgrade)"
 msgstr "%s: %s (eguneratu)"
 
 #. -PO: here format is "<package_name> (to upgrade)"
-#: ../urpmi:486
+#: ../urpmi:488
 #, c-format
 msgid "%s (to upgrade)"
 msgstr "%s (eguneratu)"
 
 #. -PO: here format is "<package_name>: <summary> (to install)"
-#: ../urpmi:490
+#: ../urpmi:492
 #, c-format
 msgid "%s: %s (to install)"
 msgstr "%s: %s (instalatu)"
 
 #. -PO: here format is "<package_name> (to install)"
-#: ../urpmi:492
+#: ../urpmi:494
 #, c-format
 msgid "%s (to install)"
 msgstr "%s (instalatu)"
 
-#: ../urpmi:498
+#: ../urpmi:500
 #, c-format
 msgid ""
 "In order to satisfy the '%s' dependency, one of the following packages is "
 "needed:"
 msgstr "%s mendekotasuna asetzeko, ondoko paketeetako bat behar da:"
 
-#: ../urpmi:501
+#: ../urpmi:503
 #, c-format
 msgid "What is your choice? (1-%d) "
 msgstr "Zein hautatzen duzu? (1-%d) "
 
-#: ../urpmi:549
+#: ../urpmi:551
 #, c-format
 msgid ""
 "The following package cannot be installed because it depends on packages\n"
@@ -2744,7 +2742,7 @@ msgstr ""
 " batzuekiko menpekotasuna dutelako:\n"
 "%s"
 
-#: ../urpmi:551
+#: ../urpmi:553
 #, c-format
 msgid ""
 "The following packages can't be installed because they depend on packages\n"
@@ -2755,7 +2753,7 @@ msgstr ""
 " batzuekiko menpekotasuna dutelako:\n"
 "%s"
 
-#: ../urpmi:557 ../urpmi:576
+#: ../urpmi:559 ../urpmi:578
 #, c-format
 msgid ""
 "\n"
@@ -2764,7 +2762,7 @@ msgstr ""
 "\n"
 "Instalazioarekin jarraitu hala ere?"
 
-#: ../urpmi:570
+#: ../urpmi:572
 #, c-format
 msgid ""
 "A requested package cannot be installed:\n"
@@ -2773,12 +2771,12 @@ msgstr ""
 "Eskatutako pakete bat ezin da instalatu:\n"
 "%s"
 
-#: ../urpmi:592
+#: ../urpmi:594
 #, c-format
 msgid "removing package %s will break your system"
 msgstr "%s paketea kentzen baduzu, sistema apurtuko duzu"
 
-#: ../urpmi:600
+#: ../urpmi:602
 #, c-format
 msgid ""
 "The installation cannot continue because the following package\n"
@@ -2789,7 +2787,7 @@ msgstr ""
 "kendu egin behar direlako, beste batzuen bertsioa berritzeko:\n"
 "%s\n"
 
-#: ../urpmi:602
+#: ../urpmi:604
 #, c-format
 msgid ""
 "The installation cannot continue because the following packages\n"
@@ -2800,12 +2798,12 @@ msgstr ""
 "kendu egin behar direlako, beste batzuen bertsioa berritzeko:\n"
 "%s\n"
 
-#: ../urpmi:611
+#: ../urpmi:613
 #, c-format
 msgid "(test only, removal will not be actually done)"
 msgstr "(froga soilik, ezabaketa ez da egingo)"
 
-#: ../urpmi:633
+#: ../urpmi:635
 #, c-format
 msgid ""
 "You must first call urpmi with --buildrequires to install the following "
@@ -2816,27 +2814,32 @@ msgstr ""
 "mendekotasunak instalatzeko:\n"
 "%s\n"
 
-#: ../urpmi:643
+#: ../urpmi:645
 #, c-format
 msgid "The following orphan package will be removed."
 msgid_plural "The following orphan packages will be removed."
 msgstr[0] "Ondoko pakete umezurtza ezabatuko da."
 msgstr[1] "Ondoko pakete umezurtzak ezabatuko dira."
 
-#: ../urpmi:669
+#: ../urpmi:671
 #, c-format
 msgid "WARNING: %s option is in use. Some strange problems may happen"
-msgstr ""
+msgstr "OHARRA: %s aukera erabiltzen ari da. Arazo arraroak gerta daiteke"
 
-#: ../urpmi:681
+#: ../urpmi:683
 #, c-format
 msgid "(test only, installation will not be actually done)"
 msgstr "(froga soilik, instalazioa ez da egingo)"
 
-#: ../urpmi:714
+#: ../urpmi:716
 #, c-format
 msgid "Press Enter when mounted..."
 msgstr "Sakatu 'Sartu' muntatuta dagoenean..."
+
+#: ../urpmi:769
+#, c-format
+msgid "Updating urpmi database..."
+msgstr ""
 
 #. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
 #. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
@@ -2852,37 +2855,19 @@ msgid ""
 "       cdrom://<path>\n"
 "\n"
 "usage: urpmi.addmedia [options] --distrib --mirrorlist <url>\n"
-"usage: urpmi.addmedia [options] --mirrorlist <url> <name> <relative path>\n"
+"usage: urpmi.addmedia [options] --mirrorbrain <url> <name> <relative path>\n"
 "\n"
 "examples:\n"
 "\n"
-"  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
-"  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
+"  urpmi.addmedia --distrib --mirrorbrain 'http://downloads.openmandriva.org/"
+"$RELEASE/$ARCH'\n"
+"  urpmi.addmedia --mirrorbrain 'http://downloads.openmandriva.org/$RELEASE/"
+"$ARCH' backports media/main/backports\n"
 "  urpmi.addmedia --distrib --zeroconf\n"
 "\n"
 "\n"
 "and [options] are from\n"
 msgstr ""
-"Erabilera: urpmi.addmedia [aukerak] <izena> <url>\n"
-"non <url> hauetako bat den\n"
-"       [file:/]/<bidea>\n"
-"       ftp://<erabiltzaileizena>:<pasahitza>@<ostalaria>/<bidea>\n"
-"       ftp://<ostalaria>/<bidea>\n"
-"       http://<ostalaria>/<bidea>\n"
-"       cdrom://<bidea>\n"
-"\n"
-"erabilera: urpmi.addmedia [aukerak] --distrib --mirrorlist <url>\n"
-"erabilera: urpmi.addmedia [aukerak] --mirrorlist <url> <izena> <bide "
-"erlatiboa>\n"
-"\n"
-"adibideak:\n"
-"\n"
-"  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
-"  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
-"  urpmi.addmedia --distrib --zeroconf\n"
-"\n"
-"\n"
-"eta [aukerak] hemengoak diren\n"
 
 #: ../urpmi.addmedia:56 ../urpmi.update:33 ../urpmq:77
 #, c-format
@@ -2906,7 +2891,12 @@ msgstr ""
 msgid "  --aria2        - use aria2 to retrieve distant files.\n"
 msgstr "  --aria2        - erabili aria2 urruneko fitxategiak eskuratzeko.\n"
 
-#: ../urpmi.addmedia:66
+#: ../urpmi.addmedia:60
+#, c-format
+msgid "  --mirrorbrain  - use server side generated metalink.\n"
+msgstr ""
+
+#: ../urpmi.addmedia:67
 #, c-format
 msgid ""
 "  --update       - create an update medium, \n"
@@ -2916,7 +2906,7 @@ msgstr ""
 "                   edo baztertu eguneratzeko ez diren euskarriak\n"
 "                   (--distrib erabiltzen denean)\n"
 
-#: ../urpmi.addmedia:68
+#: ../urpmi.addmedia:69
 #, c-format
 msgid ""
 "  --xml-info     - use the specific policy for downloading xml info files\n"
@@ -2927,22 +2917,22 @@ msgstr ""
 "                   hauetako bat: never, on-demand, update-only, always. cf "
 "urpmi.cfg(5)\n"
 
-#: ../urpmi.addmedia:70
+#: ../urpmi.addmedia:71
 #, c-format
 msgid "  --probe-synthesis - use synthesis file.\n"
 msgstr "  --probe-synthesis - synthesis fitxategia erabili.\n"
 
-#: ../urpmi.addmedia:71
+#: ../urpmi.addmedia:72
 #, c-format
 msgid "  --probe-rpms   - use rpm files (instead of synthesis).\n"
 msgstr "  --probe-rpms   - erabili rpm fitxategiak (synthesis ordez).\n"
 
-#: ../urpmi.addmedia:72
+#: ../urpmi.addmedia:73
 #, c-format
 msgid "  --no-probe     - do not try to find any synthesis file.\n"
 msgstr "  --no-probe     - ez saiatu synthesis fitxategiak aurkitzen.\n"
 
-#: ../urpmi.addmedia:74
+#: ../urpmi.addmedia:75
 #, c-format
 msgid ""
 "  --distrib      - automatically create all media from an installation\n"
@@ -2951,87 +2941,87 @@ msgstr ""
 "  --distrib      - instalazio-euskarri batetik euskarri guztiak sortzen \n"
 "                   ditu automatikoki.\n"
 
-#: ../urpmi.addmedia:76
+#: ../urpmi.addmedia:77
 #, c-format
 msgid "  --interactive  - with --distrib, ask confirmation for each media\n"
 msgstr ""
 "  --interactive  - , --distrib aukerarekin, eskatu berrespena euskarri "
 "bakoitzarentzako\n"
 
-#: ../urpmi.addmedia:77
+#: ../urpmi.addmedia:78
 #, c-format
 msgid "  --all-media    - with --distrib, add every listed media\n"
 msgstr ""
 "  --all-media    - , --distrib aukerarekin, erantsi zerrendatutako euskarri "
 "bakoitza\n"
 
-#: ../urpmi.addmedia:78
+#: ../urpmi.addmedia:79
 #, c-format
 msgid "  --virtual      - create virtual media wich are always up-to-date.\n"
 msgstr "  --virtual      - beti eguneratuta dauden euskarri birtualak sortu.\n"
 
-#: ../urpmi.addmedia:79 ../urpmi.update:44
+#: ../urpmi.addmedia:80 ../urpmi.update:44
 #, c-format
 msgid "  --no-md5sum    - disable MD5SUM file checking.\n"
 msgstr "  --no-md5sum    - MD5SUM fitxategiaren egiaztapena desgaitzen du.\n"
 
-#: ../urpmi.addmedia:80
+#: ../urpmi.addmedia:81
 #, c-format
 msgid "  --nopubkey     - don't import pubkey of added media\n"
 msgstr "  --nopubkey     - ez inportatu erantsitako euskarrien gako-publikoa\n"
 
-#: ../urpmi.addmedia:81
+#: ../urpmi.addmedia:82
 #, c-format
 msgid "  --raw          - add the media in config, but don't update it.\n"
 msgstr "  --raw          - erantsi euskarria konfig-en, baino ez eguneratu.\n"
 
-#: ../urpmi.addmedia:82 ../urpmi.removemedia:43 ../urpmi.update:53
+#: ../urpmi.addmedia:83 ../urpmi.removemedia:43 ../urpmi.update:53
 #, c-format
 msgid "  -q             - quiet mode.\n"
 msgstr "  -q             - modu lasaia.\n"
 
-#: ../urpmi.addmedia:83 ../urpmi.removemedia:44 ../urpmi.update:54
+#: ../urpmi.addmedia:84 ../urpmi.removemedia:44 ../urpmi.update:54
 #, c-format
 msgid "  -v             - verbose mode.\n"
 msgstr "  -v             - modu berritsua.\n"
 
-#: ../urpmi.addmedia:96
+#: ../urpmi.addmedia:97
 #, c-format
 msgid "known xml-info policies are %s"
 msgstr "xml-info politika ezagunak dira %s"
 
-#: ../urpmi.addmedia:107
+#: ../urpmi.addmedia:108
 #, c-format
 msgid "no argument needed for --distrib --mirrorlist <url>"
 msgstr "ez da argumenturik behar honentzako: --distrib --mirrorlist <url>"
 
-#: ../urpmi.addmedia:112
+#: ../urpmi.addmedia:113
 #, c-format
 msgid "bad <url> (for local directory, the path must be absolute)"
 msgstr "<url> okerra (bertako direktorioentzako, bide absolutua behar da)"
 
-#: ../urpmi.addmedia:116
+#: ../urpmi.addmedia:117
 #, c-format
 msgid "Only superuser is allowed to add media"
 msgstr "Supererabiltzaileak soilik dauka euskarriak eransteko baimena"
 
-#: ../urpmi.addmedia:119
+#: ../urpmi.addmedia:120
 #, c-format
 msgid "creating config file [%s]"
 msgstr "Konfig fitxategia sortzen [%s]"
 
-#: ../urpmi.addmedia:120
+#: ../urpmi.addmedia:121
 #, c-format
 msgid "Can't create config file [%s]"
 msgstr "Ezin da konfig fitxategia sortu [%s]"
 
-#: ../urpmi.addmedia:128
+#: ../urpmi.addmedia:129
 #, c-format
 msgid "no need to give <relative path of synthesis> with --distrib"
 msgstr ""
 "ez dago <synthesis-en bide erlatiboa> eman beharrik --distrib aukerarekin"
 
-#: ../urpmi.addmedia:136
+#: ../urpmi.addmedia:137
 #, c-format
 msgid ""
 "\n"
@@ -3040,23 +3030,23 @@ msgstr ""
 "\n"
 "'%s' euskarria erantsi nahi duzu?"
 
-#: ../urpmi.addmedia:156 ../urpmi.addmedia:181
+#: ../urpmi.addmedia:158 ../urpmi.addmedia:184
 #, c-format
 msgid "unable to add medium"
 msgstr "ezin da euskarria erantsi"
 
-#: ../urpmi.addmedia:164
+#: ../urpmi.addmedia:166
 #, c-format
 msgid "<relative path of synthesis> missing\n"
 msgstr "<synthesis-en bide erlatiboa> falta da\n"
 
-#: ../urpmi.addmedia:167
+#: ../urpmi.addmedia:169
 #, c-format
 msgid "Can't use %s with remote medium"
 msgstr "Urruneko euskarriekin ezin da %s erabili"
 
 #: ../urpmi.recover:34
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi.recover version %s\n"
 "Copyright (C) 2006-2011 Mandriva.\n"
@@ -3066,56 +3056,42 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpmi.recover %s bertsioa\n"
-"Copyright © 2006-2011 Mandriva.\n"
-"Hau software askea da eta birbanatu egin daiteke GNU GLParen baldintzak "
-"betetzen badira.\n"
-"\n"
-"erabilera:\n"
 
 #: ../urpmi.recover:41
 #, c-format
 msgid "  --checkpoint   - set repackaging start now\n"
-msgstr "  --checkpoint   - ezarri birpaketatzea orain hasteko\n"
+msgstr ""
 
 #: ../urpmi.recover:42
 #, c-format
 msgid "  --noclean      - don't clean repackage directory on checkpoint\n"
 msgstr ""
-"  --noclean      - ez garbitu birpaketatzeko direktorioa kontrol-puntua "
-"ezartzerakoan.\n"
 
 #: ../urpmi.recover:43
-#, fuzzy, c-format
+#, c-format
 msgid "  --urpmi-root   - use another root for urpmi db & rpm installation\n"
 msgstr ""
-"  --urpmi-root   - erabili beste erro bat urpmi db eta rpm instalatzeko.\n"
 
 #: ../urpmi.recover:44
-#, fuzzy, c-format
+#, c-format
 msgid "  --auto         - do not ask any questions\n"
 msgstr ""
-"  --auto         - modu ez-interaktiboa, galderen erantzun lehenetsiak "
-"erabili.\n"
 
 #: ../urpmi.recover:45
 #, c-format
 msgid ""
 "  --list         - list transactions since provided date/duration argument\n"
 msgstr ""
-"  --list         - zerrendatu transakzioak adierazitako data/iraupen "
-"argumentuetatik hona\n"
 
 #: ../urpmi.recover:46
 #, c-format
 msgid "  --list-all     - list all transactions in rpmdb (long)\n"
-msgstr "  --list-all     - zerrendatu rpmdb-ko transakzio guztiak (luzea)\n"
+msgstr ""
 
 #: ../urpmi.recover:47
 #, c-format
 msgid "  --list-safe    - list transactions since checkpoint\n"
 msgstr ""
-"  --list-safe    - zerrendatu kontrol-puntuaren ondorengo transakzioak\n"
 
 #: ../urpmi.recover:48
 #, c-format
@@ -3123,8 +3099,6 @@ msgid ""
 "  --rollback     - rollback until specified date,\n"
 "                   or rollback the specified number of transactions\n"
 msgstr ""
-"  --rollback     - zehaztutako data arte atzera egin,\n"
-"                   edo zehaztutako eragiketa kopurua desegin\n"
 
 #: ../urpmi.recover:50
 #, c-format
@@ -3136,103 +3110,101 @@ msgstr ""
 #: ../urpmi.recover:51
 #, c-format
 msgid "  --disable      - turn off repackaging\n"
-msgstr "  --disable     - berpaketatzea ezgaitu\n"
+msgstr ""
 
-#: ../urpmi.recover:66
+#: ../urpmi.recover:68
 #, c-format
 msgid "Invalid date or duration [%s]\n"
-msgstr "Data edo iraupen baliogabea [%s]\n"
+msgstr ""
 
-#: ../urpmi.recover:74
+#: ../urpmi.recover:76
 #, c-format
 msgid "Repackage directory not defined\n"
-msgstr "Birpaketatzeko direktorioa ez da zehaztu\n"
-
-#: ../urpmi.recover:77
-#, c-format
-msgid "Can't write to repackage directory [%s]\n"
-msgstr "Ezin da birpaketatzeko direktoriora [%s] idatzi\n"
+msgstr ""
 
 #: ../urpmi.recover:79
 #, c-format
-msgid "Cleaning up repackage directory [%s]...\n"
-msgstr "Birpaketatzeko direktorioa [%s] garbitzen...\n"
+msgid "Can't write to repackage directory [%s]\n"
+msgstr ""
 
-#: ../urpmi.recover:138
+#: ../urpmi.recover:81
 #, c-format
-msgid "Spurious command-line arguments [%s]\n"
-msgstr "Komando-lerro argumentu okerrak [%s]\n"
+msgid "Cleaning up repackage directory [%s]...\n"
+msgstr ""
 
 #: ../urpmi.recover:140
 #, c-format
-msgid "You can't specify --checkpoint and --rollback at the same time\n"
-msgstr "Ezin dituzu --checkpoint eta --rollback aukerak batera zehaztu\n"
+msgid "Spurious command-line arguments [%s]\n"
+msgstr ""
 
 #: ../urpmi.recover:142
 #, c-format
-msgid "You can't specify --checkpoint and --list at the same time\n"
-msgstr "Ezin dituzu --checkpoint eta --list aukerak batera zehaztu\n"
+msgid "You can't specify --checkpoint and --rollback at the same time\n"
+msgstr ""
 
 #: ../urpmi.recover:144
 #, c-format
-msgid "You can't specify --rollback and --list at the same time\n"
-msgstr "Ezin dituzu --rollback eta --list aukerak batera zehaztu\n"
+msgid "You can't specify --checkpoint and --list at the same time\n"
+msgstr ""
 
 #: ../urpmi.recover:146
 #, c-format
-msgid "You can't specify --disable along with another option"
-msgstr "Ezin duzu --disable beste aukera batekin zehaztu"
+msgid "You can't specify --rollback and --list at the same time\n"
+msgstr ""
 
-#: ../urpmi.recover:155
+#: ../urpmi.recover:148
+#, c-format
+msgid "You can't specify --disable along with another option"
+msgstr ""
+
+#: ../urpmi.recover:157
 #, c-format
 msgid "No transaction found since %s\n"
-msgstr "%s ondoren ez da beste transakziorik aurkitu\n"
+msgstr ""
 
-#: ../urpmi.recover:170
+#: ../urpmi.recover:172
 #, c-format
 msgid "You must be superuser to do this"
-msgstr "Superrerabiltzailea izan behar duzu hau egiteko"
+msgstr ""
 
-#: ../urpmi.recover:183 ../urpmi.recover:364
+#: ../urpmi.recover:185 ../urpmi.recover:366
 #, c-format
 msgid "Writing rpm macros file [%s]...\n"
-msgstr "rpm macro fitxategia [%s] idazten...\n"
+msgstr ""
 
-#: ../urpmi.recover:216
+#: ../urpmi.recover:218
 #, c-format
 msgid "Invalid number of transactions to be reverted"
 msgstr ""
 
-#: ../urpmi.recover:237
+#: ../urpmi.recover:239
 #, c-format
 msgid "No rollback date found\n"
-msgstr "Ez da aurkitu atzera bueltatzeko datarik\n"
+msgstr ""
 
-#: ../urpmi.recover:244
+#: ../urpmi.recover:246
 #, c-format
 msgid ""
 "The oldest available checkpoint is %d (%s), I will not revert to older "
 "stages (this can damage your system)"
 msgstr ""
 
-#: ../urpmi.recover:249
+#: ../urpmi.recover:251
 #, c-format
 msgid "Rollback until %s...\n"
-msgstr "Atzera bueltatu %s arte...\n"
+msgstr ""
 
-#: ../urpmi.recover:322
-#, fuzzy, c-format
+#: ../urpmi.recover:324
+#, c-format
 msgid ""
 "\n"
 "Do you want to proceed?"
 msgstr ""
-"\n"
-"'%s' euskarria erantsi nahi duzu?"
 
-#: ../urpmi.recover:350
+#: ../urpmi.recover:352
 #, c-format
 msgid "Disabling repackaging\n"
-msgstr "Birpaketatzea ezgaitzen\n"
+msgstr ""
 
 #: ../urpmi.removemedia:38
 #, c-format
@@ -3308,9 +3280,11 @@ msgstr ""
 "  --probe-rpms   - ez erabili synthesis, zuzenean rpm fitxategiak erabili\n"
 
 #: ../urpmi.update:50
-#, fuzzy, c-format
+#, c-format
 msgid "  -a             - select all enabled non-removable media.\n"
-msgstr "  -a             - euskarri ez-aldagarri guztiak hautatzen ditu.\n"
+msgstr ""
+"  -a             - hautatu gaitutako hedatze komunikazio ez-desmuntagarri "
+"guztiak.\n"
 
 #: ../urpmi.update:51
 #, c-format
@@ -3367,12 +3341,6 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpmq %s bertsioa\n"
-"Copyright © 2000-2011 Mandriva.\n"
-"Hau software askea da eta birbanatu egin daiteke GNU GLParen baldintzak "
-"betetzen badira.\n"
-"\n"
-"erabilera:\n"
 
 #: ../urpmq:50
 #, c-format
@@ -3448,7 +3416,7 @@ msgstr ""
 #: ../urpmq:69
 #, c-format
 msgid "  --sources      - print source URLs of selected packages\n"
-msgstr "  --sources    - inprimatu hautatutako paketeen URL-ak\n"
+msgstr "  --sources      - inprimatu URL iturria hautatutako paketetik\n"
 
 #: ../urpmq:71
 #, c-format
@@ -3494,7 +3462,7 @@ msgstr "  --requires     - beharrezko dituenak erakutsi.\n"
 #: ../urpmq:90
 #, c-format
 msgid "  --suggests     - print suggests.\n"
-msgstr "  --suggests     - inprimatu iradokitakoak.\n"
+msgstr ""
 
 #: ../urpmq:91
 #, c-format
@@ -3545,11 +3513,9 @@ msgid "  -c             - complete output with package to be removed.\n"
 msgstr "  -c             - osatu irteera kendu behar den paketearekin.\n"
 
 #: ../urpmq:103
-#, fuzzy, c-format
+#, c-format
 msgid "  --evrd         - print epoch, version, release and distepoch.\n"
 msgstr ""
-"  -f - bertsioa, argitalpena eta fitxategia ere izenarekin inprimatzen "
-"ditu.\n"
 
 #: ../urpmq:105
 #, c-format
@@ -3606,42 +3572,42 @@ msgstr ""
 "  -Y             - -y bezala, baino ez ditu hizki larri/xeheak "
 "desberdinduko.\n"
 
-#: ../urpmq:114
+#: ../urpmq:116
 #, c-format
 msgid "  names or rpm files given on command line are queried.\n"
 msgstr ""
 "  komando-lerroan idatzitako izenak edo rpm fitxategiak kontsultatu dira.\n"
 
-#: ../urpmq:171
+#: ../urpmq:173
 #, c-format
 msgid "usage: \"urpmq --auto-orphans\" with no argument"
 msgstr "erabilera: \"urpmq --auto-orphans\" argumenturik gabe"
 
-#: ../urpmq:224
+#: ../urpmq:226
 #, c-format
 msgid "--list-nodes can only be used with --parallel"
 msgstr "--nodo-zerrendak honekin bakarrik erabil daitezke: --parallel"
 
-#: ../urpmq:248
+#: ../urpmq:250
 #, c-format
 msgid "use -l to list files"
 msgstr "erabili -l fitxategiak zerrendatzeko"
 
-#: ../urpmq:432
+#: ../urpmq:434
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for package %s"
 msgstr ""
 "ez dago \"%s\" euskarriarentzako xml info, %s paketearentzako emaitza "
 "partzialak soilik"
 
-#: ../urpmq:433
+#: ../urpmq:435
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for packages %s"
 msgstr ""
 "ez dago \"%s\" euskarriarentzako xml info, %s paketeentzako emaitza "
 "partzialak soilik"
 
-#: ../urpmq:436
+#: ../urpmq:438
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for package %s"
@@ -3649,7 +3615,7 @@ msgstr ""
 "ez dago \"%s\" euskarriarentzako xml info, ezin da %s paketearentzako "
 "inolako emaitzarik itzuli"
 
-#: ../urpmq:437
+#: ../urpmq:439
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for packages %s"
@@ -3657,7 +3623,7 @@ msgstr ""
 "ez dago \"%s\" euskarriarentzako xml info, ezin da %s paketeentzako inolako "
 "emaitzarik itzuli"
 
-#: ../urpmq:504
+#: ../urpmq:506
 #, c-format
 msgid "No changelog found\n"
 msgstr "Ez da changelog  aurkitu\n"
@@ -3670,19 +3636,64 @@ msgstr "Software Instalatzailea"
 msgid "Graphical front end to install RPM files"
 msgstr "RPM fitxategiak instalatzeko interfaze grafikoa"
 
-#~ msgid "%d file removed\n"
-#~ msgid_plural "%d files removed\n"
-#~ msgstr[0] "fitxategi %d ezabatuta\n"
-#~ msgstr[1] "%d fitxategi ezabatuta\n"
+#: ../polkit/org.openmandriva.gurpmi2.policy.in.h:1
+msgid "Run DrakX Package Installer"
+msgstr ""
 
-#~ msgid "Please wait..."
-#~ msgstr "Itxaron mesedez..."
+#: ../polkit/org.openmandriva.gurpmi2.policy.in.h:2
+msgid "Authentication is required to run DrakX Package Installer"
+msgstr ""
+
+#~ msgid "  --allow-recommends - auto select \"recommended\" packages.\n"
+#~ msgstr ""
+#~ "--allow-recommends - \"gomendatutako\" paketeen auto aukeraketa egin.\n"
+
+#~ msgid ""
+#~ "  --downgrade    - downgrade a package from the version currently "
+#~ "installed\n"
+#~ "                   to the previously highest version\n"
+#~ msgstr ""
+#~ "  --downgrade    - Aurreko bertsiora itzultzeko pakete bat instalatuko "
+#~ "bertsio batetik\n"
+#~ "                                aldez aurreko bertsio altuenera\n"
+
+#~ msgid "  --no-recommends - do not auto select \"recommended\" packages.\n"
+#~ msgstr ""
+#~ "--no-recommends - \"gomendatutako\" paketeen auto aukeraketa ez egin.\n"
+
+#~ msgid "  --recommends   - print recommends.\n"
+#~ msgstr "--recommends - gomendatuak zerrendatu.\n"
+
+#~ msgid "  --recommends   - recommends tags\n"
+#~ msgstr " --recommends - gomendatutako etiketak\n"
+
+#~ msgid "(recommended)"
+#~ msgstr "(gomendaturik)"
+
+#~ msgid "Authentication is required to run Mageia Package Installer"
+#~ msgstr ""
+#~ "Autentifikazioa beharrezkoa da Mageia Pakete Instalatzailea exekutatzeko"
 
 #~ msgid "Distribution Upgrade"
 #~ msgstr "Banaketaren Bertsio berritzea"
 
+#~ msgid "Downloading package `%s'..."
+#~ msgstr "`%s' paketea deskargatzen..."
+
+#~ msgid "Installing package `%s' (%s/%s)..."
+#~ msgstr "`%s' paketea instalatzen (%s/%s)..."
+
 #~ msgid "Packages installation"
 #~ msgstr "Paketeen instalaketa"
+
+#~ msgid "Please wait..."
+#~ msgstr "Itxaron mesedez..."
+
+#~ msgid "Removing package `%s' ..."
+#~ msgstr "`%s' paketea kentzen ..."
+
+#~ msgid "Run Mageia Package Installer"
+#~ msgstr "Exekutatu Mageia PAkete Instalatzailea"
 
 #~ msgid ""
 #~ "Some requested packages cannot be installed:\n"
@@ -3693,74 +3704,52 @@ msgstr "RPM fitxategiak instalatzeko interfaze grafikoa"
 #~ "%s\n"
 #~ "Instalazioarekin jarraitu hala ere?"
 
-#~ msgid "(%d package, %d MB)"
-#~ msgid_plural "(%d packages, %d MB)"
-#~ msgstr[0] "(pakete %d, %d MB)"
-#~ msgstr[1] "(%d pakete, %d MB)"
-
-#~ msgid "Installing package `%s' (%s/%s)..."
-#~ msgstr "`%s' paketea instalatzen (%s/%s)..."
-
-#~ msgid "Downloading package `%s'..."
-#~ msgstr "`%s' paketea deskargatzen..."
+#~ msgid "Verifying package signatures..."
+#~ msgstr "Paketeen sinadurak egiaztatzen..."
 
 #~ msgid ""
-#~ "Installation failed, some files are missing:\n"
-#~ "%s\n"
-#~ "You may want to update your urpmi database"
-#~ msgstr ""
-#~ "Huts egin du instalatzean, fitxategi batzuk falta dira:\n"
-#~ "%s\n"
-#~ "Zure urpmi datu-basea eguneratzea komeni da"
-
-#~ msgid "curl failed: upload canceled\n"
-#~ msgstr "curl-ek huts egin du: igoera galarazita\n"
-
-#~ msgid "[repackaging]"
-#~ msgstr "[birpaketatzen]"
-
-#~ msgid "Removing package %s"
-#~ msgstr "%s paketea ezabatzen"
-
-#~ msgid "Cancel"
-#~ msgstr "Utzi"
-
-#~ msgid ""
-#~ "urpmi version %s\n"
-#~ "Copyright (C) 1999-2010 Mandriva.\n"
-#~ "This is free software and may be redistributed under the terms of the GNU "
-#~ "GPL.\n"
+#~ "usage: urpmi.addmedia [options] <name> <url>\n"
+#~ "where <url> is one of\n"
+#~ "       [file:/]/<path>\n"
+#~ "       ftp://<login>:<password>@<host>/<path>\n"
+#~ "       ftp://<host>/<path>\n"
+#~ "       http://<host>/<path>\n"
+#~ "       cdrom://<path>\n"
 #~ "\n"
-#~ "usage:\n"
-#~ msgstr ""
-#~ "urpmi %s bertsioa\n"
-#~ "Copyright © 1999-2010 Mandriva.\n"
-#~ "Software askea da hau eta GNU-ren GPL-k ezarritako baldintzak jarraituz "
-#~ "birbanatu daiteke.\n"
+#~ "usage: urpmi.addmedia [options] --distrib --mirrorlist <url>\n"
+#~ "usage: urpmi.addmedia [options] --mirrorlist <url> <name> <relative "
+#~ "path>\n"
 #~ "\n"
-#~ "erabilera:\n"
-
-#, fuzzy
-#~ msgid "  --triggers     - do not execute package trigger(s).\n"
-#~ msgstr "  --noscripts    - ez du scriptlet(s) paketea exekutatzen\n"
-
-#~ msgid ""
-#~ "A problem has been encountered. You can help Mandriva to improve package\n"
-#~ "installation by uploading a DUDF report file.\n"
-#~ "This is a part of the Mancoosi european research project.\n"
-#~ "More at http://www.mancoosi.org\n"
+#~ "examples:\n"
+#~ "\n"
+#~ "  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
+#~ "  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/"
+#~ "backports\n"
+#~ "  urpmi.addmedia --distrib --zeroconf\n"
+#~ "\n"
+#~ "\n"
+#~ "and [options] are from\n"
 #~ msgstr ""
-#~ "Arazo bat aurkitu da. Mandrivari paketeen instalaketa hobetzen lagundu\n"
-#~ "diezaiokezu DUDF txosten fitxategia igota.\n"
-#~ "Hau Mancoosi europear ikerketa proiektuaren zati bat da.\n"
-#~ "Gehiago hemen http://www.mancoosi.org\n"
+#~ "erabilera: urpmi.addmedia [aukerak] <izena> <url>\n"
+#~ "non <URL> bat da\n"
+#~ "[file:/]/<path>\n"
+#~ "ftp://<login>:<password>@<host>/<path>\n"
+#~ "ftp://<host>/<path>\n"
+#~ "http://<host>/<path>\n"
+#~ "cdrom://<path>\n"
+#~ "\n"
+#~ "erbilera: urpmi.addmedia [aukerak] --distrib --mirrorlist <url>\n"
+#~ "erabilera: urpmi.addmedia [aukerak] --mirrorlist <url> <name> <relative "
+#~ "path>\n"
+#~ "\n"
+#~ "adibideak:\n"
+#~ "\n"
+#~ "urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
+#~ "urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
+#~ "urpmi.addmedia --distrib --zeroconf\n"
+#~ "\n"
+#~ "\n"
+#~ "eta[aukerak] dira\n"
 
-#~ msgid "Cannot write DUDF file.\n"
-#~ msgstr "Ezin da DUDF fitxategia idatzi.\n"
-
-#~ msgid ""
-#~ "  --sources      - give all source packages before downloading (root "
-#~ "only).\n"
-#~ msgstr ""
-#~ "--sources - iturburu-pakete guztiak deskargatu aurretik ematen ditu \n"
-#~ " (root-ek bakarrik).\n"
+#~ msgid "wrote config file [%s]"
+#~ msgstr "[%s] konfigurazio-fitxategia idatzi"

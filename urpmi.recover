@@ -49,6 +49,8 @@ usage:
                    or rollback the specified number of transactions
 ") . N("  --transactions - treat rollback argument as number of transactions to be reverted
 ") . N("  --disable      - turn off repackaging
+") . N("  --define, -D   - define macro after all the others have been defined.
+") . N("  --predefine    - predefine macro before any others have been defined.
 ");
     exit(1);
 }

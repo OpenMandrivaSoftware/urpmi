@@ -24,24 +24,9 @@ Force update of GPG key.
 Don't update media, but mark them as ignored (that is, disables them).
 B<--no-ignore> has the reverse behaviour: it marks the media as enabled.
 
-=item B<--limit-rate I<rate>>
-
-Try to limit the download speed, I<rate> is given in bytes/sec. This
-option is not active by default.
-
 =item B<--no-md5sum>
 
 Disable MD5SUM file checking.
-
-=item B<--proxy> I<proxyhost[:port|1080]>
-
-Use specified HTTP proxy.
-
-=item B<--proxy-user> I<user:password>
-
-Use specified user and password to use for proxy authentication.
-Specifying B<--proxy-user=ask> will cause urpmi.update to prompt for a
-username and a password.
 
 =item B<--urpmi-root> I<directory>
 
@@ -55,6 +40,37 @@ If the urpmi or rpm db is busy, wait until it is available
 =item B<--update>
 
 Use only update media.
+
+=item B<-a>
+
+Select all enabled non-static media to update them.
+
+=item B<-f>
+
+Force updating synthesis
+
+=item B<-ff>
+
+Really force updating synthesis
+
+=item B<--probe-rpms>
+
+Do not use synthesis, use rpm files directly
+
+=item B<-q>
+
+Quiet mode.
+
+=item B<-v>
+
+Verbose mode.
+
+
+=back
+
+=head2 Download Options
+
+=over
 
 =item B<--curl>
 
@@ -90,17 +106,21 @@ Force updating synthesis
 
 Really force updating synthesis
 
-=item B<--probe-rpms>
+=item B<--proxy> I<proxyhost[:port|1080]>
 
-Do not use synthesis, use rpm files directly
+Use specified HTTP proxy.
 
-=item B<-q>
+=item B<--proxy-user> I<user:password>
 
-Quiet mode.
+Use specified user and password to use for proxy authentication.
+Specifying B<--proxy-user=ask> will cause urpmi.update to prompt for a
+username and a password.
 
-=item B<-v>
+=item B<--limit-rate I<rate>>
 
-Verbose mode.
+Try to limit the download speed, I<rate> is given in bytes/sec. This
+option is not active by default.
+
 
 =back
 

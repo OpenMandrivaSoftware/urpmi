@@ -12,13 +12,13 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: urpmi-sr\n"
+"Project-Id-Version: urpmi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-20 12:12+0400\n"
+"POT-Creation-Date: 2015-01-04 00:10+0100\n"
 "PO-Revision-Date: 2004-02-01 19:27+0100\n"
 "Last-Translator: Toma Jankovic <webmaster@mandrake.co.yu>\n"
 "Language-Team: serbian <mdk@linux.rs.sr>\n"
-"Language: \n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,22 +26,22 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: ../gurpmi:38
+#: ../gurpmi:49
 #, fuzzy, c-format
 msgid "RPM installation"
 msgstr "Инсталација система"
 
-#: ../gurpmi:52
+#: ../gurpmi:63
 #, c-format
 msgid "Error: unable to find file %s, will cancel operation"
 msgstr ""
 
-#: ../gurpmi:53 ../gurpmi2:172 ../gurpmi2:202
+#: ../gurpmi:64 ../gurpmi2:178 ../gurpmi2:208
 #, c-format
 msgid "_Ok"
 msgstr "_У реду"
 
-#: ../gurpmi:73
+#: ../gurpmi:84
 #, c-format
 msgid ""
 "You have selected a source package:\n"
@@ -54,7 +54,7 @@ msgid ""
 "What would you like to do?"
 msgstr ""
 
-#: ../gurpmi:81 ../gurpmi:92
+#: ../gurpmi:92 ../gurpmi:103
 #, fuzzy, c-format
 msgid ""
 "You are about to install the following software packages on your computer:\n"
@@ -66,7 +66,7 @@ msgstr ""
 "Морате да имате root овлашћења да би инсталирали следеће пакете:\n"
 "%s\n"
 
-#: ../gurpmi:87
+#: ../gurpmi:98
 #, c-format
 msgid ""
 "You are about to install the following software package on your computer:\n"
@@ -76,25 +76,35 @@ msgid ""
 "You may prefer to just save it. What is your choice?"
 msgstr ""
 
-#: ../gurpmi:105
+#: ../gurpmi:116
 #, c-format
 msgid "_Install"
 msgstr "Инсталирај"
 
-#: ../gurpmi:106
+#: ../gurpmi:117
 #, c-format
 msgid "_Save"
 msgstr "_Сачувај"
 
-#: ../gurpmi:107 ../gurpmi2:172
+#: ../gurpmi:118 ../gurpmi2:178
 #, c-format
 msgid "_Cancel"
 msgstr "_Поништи"
 
-#: ../gurpmi:115
+#: ../gurpmi:126
 #, fuzzy, c-format
 msgid "Choose location to save file"
 msgstr "Изаберите фајл"
+
+#: ../gurpmi:126
+#, c-format
+msgid "Cancel"
+msgstr "Одустани"
+
+#: ../gurpmi:126 ../gurpmi2:124
+#, c-format
+msgid "Ok"
+msgstr "У реду"
 
 #: ../gurpmi.pm:54
 #, fuzzy, c-format
@@ -194,22 +204,22 @@ msgstr "  --media        - користи само дати медиј, одво
 msgid "No packages specified"
 msgstr "Није одређена команда"
 
-#: ../gurpmi2:42
+#: ../gurpmi2:46
 #, fuzzy, c-format
 msgid "Must be root"
 msgstr "Порт за миша"
 
-#: ../gurpmi2:45 ../urpm.pm:23
+#: ../gurpmi2:49 ../urpm.pm:23
 #, c-format
 msgid "While some packages may have been installed, there were failures.\n"
 msgstr ""
 
-#: ../gurpmi2:76
+#: ../gurpmi2:80
 #, c-format
 msgid "Preparing packages installation..."
 msgstr "Припремам инсталацију пакета"
 
-#: ../gurpmi2:89 ../gurpmi2:95 ../urpmi:571
+#: ../gurpmi2:93 ../gurpmi2:99 ../urpmi:573
 #, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
@@ -218,47 +228,42 @@ msgstr ""
 "Неки изабрани пакети се не могу инсталирати:\n"
 "%s"
 
-#: ../gurpmi2:102
+#: ../gurpmi2:106
 #, fuzzy, c-format
 msgid "Continue installation anyway?"
 msgstr "Свеједно наставити ?"
 
-#: ../gurpmi2:131
+#: ../gurpmi2:124
 #, c-format
 msgid "Warning"
 msgstr "Упозорење"
 
-#: ../gurpmi2:131
-#, c-format
-msgid "Ok"
-msgstr "У реду"
-
-#: ../gurpmi2:168
+#: ../gurpmi2:174
 #, fuzzy, c-format
 msgid " (to upgrade)"
 msgstr "Ажурирање"
 
-#: ../gurpmi2:169
+#: ../gurpmi2:175
 #, fuzzy, c-format
 msgid " (to install)"
 msgstr "Излаз из инсталације"
 
-#: ../gurpmi2:172
+#: ../gurpmi2:178
 #, c-format
 msgid "Package choice"
 msgstr ""
 
-#: ../gurpmi2:173
+#: ../gurpmi2:179
 #, c-format
 msgid "One of the following packages is needed:"
 msgstr "Потребан(и) су следећи пакет(и):"
 
-#: ../gurpmi2:203
+#: ../gurpmi2:209
 #, c-format
 msgid "_Abort"
 msgstr "_Одустати"
 
-#: ../gurpmi2:238
+#: ../gurpmi2:244
 #, fuzzy, c-format
 msgid ""
 "The following packages have to be removed for others to be upgraded:\n"
@@ -268,22 +273,22 @@ msgstr ""
 "Следећи пакети се морају уклонити да би други могли да буду ажурирани:\n"
 "%s"
 
-#: ../gurpmi2:249 ../urpmi:687
+#: ../gurpmi2:255 ../urpmi:689
 #, c-format
 msgid "%s of additional disk space will be used."
 msgstr ""
 
-#: ../gurpmi2:250 ../urpmi:688
+#: ../gurpmi2:256 ../urpmi:690
 #, c-format
 msgid "%s of disk space will be freed."
 msgstr ""
 
-#: ../gurpmi2:251 ../urpmi:689
+#: ../gurpmi2:257 ../urpmi:691
 #, c-format
 msgid "%s of packages will be retrieved."
 msgstr ""
 
-#: ../gurpmi2:252 ../urpmi:690
+#: ../gurpmi2:258 ../urpmi:692
 #, c-format
 msgid "Proceed with the installation of one package?"
 msgid_plural "Proceed with the installation of the %d packages?"
@@ -291,41 +296,46 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: ../gurpmi2:258 ../urpmi:678
+#: ../gurpmi2:264 ../urpmi:680
 #, fuzzy, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
 msgstr "Ради задовољења зависности, следећи пакети ће бити уклоњени (%d MB)"
 
-#: ../gurpmi2:259 ../urpmi:679
+#: ../gurpmi2:265 ../urpmi:681
 #, fuzzy, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
 msgstr "Ради задовољења зависности, следећи пакети ће бити уклоњени (%d MB)"
 
-#: ../gurpmi2:269 ../urpm/main_loop.pm:468
+#: ../gurpmi2:275 ../urpm/main_loop.pm:471
 #, c-format
 msgid "unable to get source packages, aborting"
 msgstr "извор пакета није доступан, излазим..."
 
-#: ../gurpmi2:283 ../urpmi:708
+#: ../gurpmi2:292 ../urpmi:710
 #, fuzzy, c-format
 msgid "Please insert the medium named \"%s\""
 msgstr "Убаците медиј са именом %s у уређај [%s]"
 
-#: ../gurpmi2:311
+#: ../gurpmi2:312
+#, c-format
+msgid "An error occurred:"
+msgstr ""
+
+#: ../gurpmi2:324
 #, fuzzy, c-format
 msgid "_Done"
 msgstr "Урађено"
 
-#: ../gurpmi2:328 ../urpm/main_loop.pm:82
+#: ../gurpmi2:341 ../urpm/main_loop.pm:83
 #, fuzzy, c-format
 msgid ""
 "Installation failed, some files are missing:\n"
 "%s"
 msgstr "Инсталација није успела"
 
-#: ../gurpmi2:331
+#: ../gurpmi2:344
 #, fuzzy, c-format
 msgid "You may want to update your urpmi database."
 msgstr ""
@@ -333,22 +343,22 @@ msgstr ""
 "%s\n"
 "Можда желите да ажурирате вашу urpmi базу података."
 
-#: ../gurpmi2:335 ../urpm/main_loop.pm:287 ../urpm/main_loop.pm:580
+#: ../gurpmi2:348 ../urpm/main_loop.pm:288 ../urpm/main_loop.pm:588
 #, fuzzy, c-format
 msgid "Installation failed:"
 msgstr "Инсталација није успела"
 
-#: ../gurpmi2:340
+#: ../gurpmi2:353
 #, c-format
 msgid "The package(s) are already installed"
 msgstr "све је већ инсталирано"
 
-#: ../gurpmi2:342
+#: ../gurpmi2:355
 #, c-format
 msgid "Installation finished"
 msgstr "Инсталација готова"
 
-#: ../gurpmi2:358 ../urpmi:770
+#: ../gurpmi2:368 ../urpmi:777 ../urpmi:793
 #, c-format
 msgid "restarting urpmi"
 msgstr "рестартујем urpmi"
@@ -386,7 +396,7 @@ msgstr "  -l             - приказује фајлове у пакету.\n"
 msgid "   -f             - output rpm full name (NVRA)\n"
 msgstr "  -g             - приказује групе укључујући и име.\n"
 
-#: ../rurpmi:11 ../urpmi:306
+#: ../rurpmi:11 ../urpmi:308
 #, c-format
 msgid "Only superuser is allowed to install packages"
 msgstr "Само администратор може да инсталира пакете"
@@ -396,144 +406,154 @@ msgstr "Само администратор може да инсталира п�
 msgid "Running urpmi in restricted mode..."
 msgstr ""
 
-#: ../urpm.pm:195
+#: ../urpm.pm:207
 #, fuzzy, c-format
 msgid "fail to create directory %s"
 msgstr "не могу да направим директоријум [%s] за извештај о грешци"
 
-#: ../urpm.pm:196
+#: ../urpm.pm:208
 #, c-format
 msgid "invalid owner for directory %s"
 msgstr ""
 
-#: ../urpm.pm:239
+#: ../urpm.pm:251
 #, fuzzy, c-format
 msgid "Can not download packages into %s"
 msgstr "Скидам пакет `%s'..."
 
-#: ../urpm.pm:255
+#: ../urpm.pm:267
 #, c-format
 msgid "Environment directory %s does not exist"
 msgstr ""
 
-#: ../urpm.pm:256 ../urpmf:248 ../urpmq:180
+#: ../urpm.pm:268 ../urpmf:250 ../urpmq:182
 #, c-format
 msgid "using specific environment on %s\n"
 msgstr "користим дато окружење на %s\n"
 
-#: ../urpm.pm:435
+#: ../urpm.pm:447
 #, c-format
 msgid "unable to open rpmdb"
 msgstr "не могу да отворим rpmdb"
 
-#: ../urpm.pm:454
+#: ../urpm.pm:466
 #, c-format
 msgid "invalid rpm file name [%s]"
 msgstr "погрешно име rpm датотеке [%s]"
 
-#: ../urpm.pm:460
+#: ../urpm.pm:472
 #, c-format
 msgid "retrieving rpm file [%s] ..."
 msgstr "добављам rpm фајл [%s] ..."
 
-#: ../urpm.pm:462 ../urpm/get_pkgs.pm:278
+#: ../urpm.pm:474 ../urpm/get_pkgs.pm:278
 #, c-format
 msgid "...retrieving done"
 msgstr "... добављање завршено"
 
-#: ../urpm.pm:465 ../urpm/download.pm:881 ../urpm/get_pkgs.pm:280
-#: ../urpm/media.pm:1085 ../urpm/media.pm:1603 ../urpm/media.pm:1754
+#: ../urpm.pm:477 ../urpm/download.pm:881 ../urpm/get_pkgs.pm:280
+#: ../urpm/media.pm:1136 ../urpm/media.pm:1657 ../urpm/media.pm:1808
 #, c-format
 msgid "...retrieving failed: %s"
 msgstr "...повраћај неуспео: %s"
 
-#: ../urpm.pm:470
+#: ../urpm.pm:482
 #, c-format
 msgid "unable to access rpm file [%s]"
 msgstr "не могу да приступим rpm датотеци [%s]"
 
-#: ../urpm.pm:475
+#: ../urpm.pm:487
 #, fuzzy, c-format
 msgid "unable to parse spec file %s [%s]"
 msgstr "Не могу да парсирам \"%s\" у фајл [%s]"
 
-#: ../urpm.pm:483
+#: ../urpm.pm:495
 #, c-format
 msgid "unable to register rpm file"
 msgstr "не могу да региструјем  rpm фајл"
 
-#: ../urpm.pm:485
+#: ../urpm.pm:497
 #, c-format
 msgid "Incompatible architecture for rpm [%s]"
 msgstr ""
 
-#: ../urpm.pm:489
+#: ../urpm.pm:501
 #, c-format
 msgid "error registering local packages"
 msgstr "грешка при регистровању локалних пакета"
 
-#: ../urpm.pm:601
+#: ../urpm.pm:613
 #, c-format
 msgid "This operation is forbidden while running in restricted mode"
 msgstr ""
 
-#: ../urpm/args.pm:171 ../urpm/args.pm:180
+#: ../urpm/args.pm:173 ../urpm/args.pm:182
 #, c-format
 msgid "bad proxy declaration on command line\n"
 msgstr "лоша proxy-декларација у командној линији\n"
 
-#: ../urpm/args.pm:338
+#: ../urpm/args.pm:341
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq: не могу да прочитам rpm датотеку \"%s\"\n"
 
-#: ../urpm/args.pm:424
+#: ../urpm/args.pm:428
 #, c-format
 msgid "unexpected expression %s"
 msgstr ""
 
-#: ../urpm/args.pm:425
+#: ../urpm/args.pm:429
 #, fuzzy, c-format
 msgid "missing expression before %s"
 msgstr "Недостаје потпис (%s)"
 
-#: ../urpm/args.pm:431
+#: ../urpm/args.pm:435
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr ""
 
-#: ../urpm/args.pm:435
+#: ../urpm/args.pm:439
 #, c-format
 msgid "no expression to close"
 msgstr ""
 
-#: ../urpm/args.pm:444
+#: ../urpm/args.pm:448
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
 
-#: ../urpm/args.pm:517
+#: ../urpm/args.pm:522
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr ""
 
-#: ../urpm/args.pm:540
+#: ../urpm/args.pm:530
+#, fuzzy, c-format
+msgid "--target-arch may only be used with --root"
+msgstr "  --list-nodes се може користити само са опцијом --parallel"
+
+#: ../urpm/args.pm:537
+#, c-format
+msgid "%s already exists, will load in stead of generating new for %s"
+msgstr ""
+
+#: ../urpm/args.pm:576
 #, c-format
 msgid "Can't use %s without %s"
 msgstr ""
 
-#: ../urpm/args.pm:543 ../urpm/args.pm:546 ../urpmq:172
+#: ../urpm/args.pm:579 ../urpm/args.pm:582 ../urpmq:174
 #, c-format
 msgid "Can't use %s with %s"
 msgstr ""
 
-#: ../urpm/args.pm:554
+#: ../urpm/args.pm:590
 #, c-format
 msgid "Too many arguments\n"
 msgstr ""
 
-#: ../urpm/args.pm:562
-#, fuzzy, c-format
+#: ../urpm/args.pm:598
+#, c-format
 msgid ""
 "%s version %s\n"
 "%s\n"
@@ -542,18 +562,18 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpmi верзија %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
+"%s верзија %s\n"
+"%s\n"
 "Ово је бесплатан софтвер и може бити редистрибуиран под условима GNU GPL.\n"
 "\n"
 "употреба:\n"
 
-#: ../urpm/args.pm:568
+#: ../urpm/args.pm:604
 #, c-format
 msgid "Copyright (C) %s by %s"
 msgstr ""
 
-#: ../urpm/bug_report.pm:67 ../urpmi:296
+#: ../urpm/bug_report.pm:67 ../urpmi:298
 #, c-format
 msgid "Copying failed"
 msgstr "Копирање није успело"
@@ -595,7 +615,7 @@ msgstr "не могу да извршим упис у конфигурацион
 msgid "medium `%s' is defined twice, aborting"
 msgstr ""
 
-#: ../urpm/cfg.pm:297 ../urpm/media.pm:562
+#: ../urpm/cfg.pm:297 ../urpm/media.pm:563
 #, c-format
 msgid "unable to write config file [%s]"
 msgstr "не могу да извршим упис у конфигурациону датотеку [%s]"
@@ -665,27 +685,27 @@ msgstr ""
 msgid "rsync is missing\n"
 msgstr ""
 
-#: ../urpm/download.pm:664
+#: ../urpm/download.pm:663
 #, c-format
 msgid "ssh is missing\n"
 msgstr ""
 
-#: ../urpm/download.pm:683
+#: ../urpm/download.pm:682
 #, c-format
 msgid "prozilla is missing\n"
 msgstr ""
 
-#: ../urpm/download.pm:699
+#: ../urpm/download.pm:698
 #, c-format
 msgid "Couldn't execute prozilla\n"
 msgstr ""
 
-#: ../urpm/download.pm:709
+#: ../urpm/download.pm:708
 #, fuzzy, c-format
 msgid "aria2 is missing\n"
 msgstr "због не постојања %s"
 
-#: ../urpm/download.pm:758
+#: ../urpm/download.pm:757
 #, c-format
 msgid "Failed to download %s"
 msgstr ""
@@ -725,8 +745,8 @@ msgstr "webfetch није пронађен, подржани webfetch-ови с�
 msgid "unable to handle protocol: %s"
 msgstr "не могу да подржим протокол: %s"
 
-#: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:556 ../urpmi:575 ../urpmi:698
-#: ../urpmi.recover:321
+#: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:558 ../urpmi:577 ../urpmi:700
+#: ../urpmi.recover:323
 #, c-format
 msgid "Nn"
 msgstr "НнNn"
@@ -748,8 +768,8 @@ msgstr ""
 msgid "Do you want to generate and upload a report?"
 msgstr ""
 
-#: ../urpm/dudf.pm:79 ../urpmi:558 ../urpmi:577 ../urpmi:699
-#: ../urpmi.addmedia:136 ../urpmi.recover:323
+#: ../urpm/dudf.pm:79 ../urpmi:560 ../urpmi:579 ../urpmi:701
+#: ../urpmi.addmedia:137 ../urpmi.recover:325
 #, c-format
 msgid " (Y/n) "
 msgstr " (Д/н) "
@@ -859,32 +879,32 @@ msgstr "пакет %s није пронађен."
 msgid "retrieving rpm files from medium \"%s\"..."
 msgstr "добављам rpm фајлове ѕа медиј \"%s\"..."
 
-#: ../urpm/install.pm:106
+#: ../urpm/install.pm:107
 #, c-format
 msgid "Preparing..."
 msgstr "Припремам..."
 
-#: ../urpm/install.pm:115 ../urpme:172
+#: ../urpm/install.pm:116 ../urpme:174
 #, c-format
 msgid "removing %s"
 msgstr "уклањам %s"
 
-#: ../urpm/install.pm:218
+#: ../urpm/install.pm:219
 #, fuzzy, c-format
 msgid "unable to extract rpm from delta-rpm package %s"
 msgstr "не могу да уклоним пакет %s"
 
-#: ../urpm/install.pm:245
+#: ../urpm/install.pm:246
 #, c-format
 msgid "unable to install package %s"
 msgstr "не могу да инсталирам пакет %s"
 
-#: ../urpm/install.pm:248
+#: ../urpm/install.pm:249
 #, fuzzy, c-format
 msgid "removing bad rpm (%s) from %s"
 msgstr "Инсталирам %s"
 
-#: ../urpm/install.pm:249 ../urpm/install.pm:378
+#: ../urpm/install.pm:250 ../urpm/install.pm:377
 #, fuzzy, c-format
 msgid "removing %s failed: %s"
 msgstr "...повраћај неуспео: %s"
@@ -894,7 +914,7 @@ msgstr "...повраћај неуспео: %s"
 msgid "removing package %s"
 msgstr "уклањам пакет %s"
 
-#: ../urpm/install.pm:346
+#: ../urpm/install.pm:345
 #, c-format
 msgid ""
 "created transaction for installing on %s (remove=%d, install=%d, upgrade=%d)"
@@ -902,17 +922,17 @@ msgstr ""
 "креирана трансакција за инсталирање на  %s (уклони=%d, инсталирај=%d, "
 "ажурирај=%d)"
 
-#: ../urpm/install.pm:349
+#: ../urpm/install.pm:348
 #, c-format
 msgid "unable to create transaction"
 msgstr "не могу да креирам трансакцију"
 
-#: ../urpm/install.pm:376
+#: ../urpm/install.pm:375
 #, fuzzy, c-format
 msgid "removing installed rpms (%s) from %s"
 msgstr "Инсталирам %s"
 
-#: ../urpm/install.pm:385
+#: ../urpm/install.pm:384
 #, fuzzy, c-format
 msgid "More information on package %s"
 msgstr "Додатне информације о пакету..."
@@ -967,7 +987,7 @@ msgstr "Упозорење"
 msgid "Retry?"
 msgstr ""
 
-#: ../urpm/main_loop.pm:85
+#: ../urpm/main_loop.pm:86
 #, fuzzy, c-format
 msgid "You may need to update your urpmi database."
 msgstr ""
@@ -975,14 +995,14 @@ msgstr ""
 "%s\n"
 "Можда желите да ажурирате вашу urpmi базу података."
 
-#: ../urpm/main_loop.pm:89
+#: ../urpm/main_loop.pm:90
 #, fuzzy, c-format
 msgid ""
 "Installation failed, bad rpms:\n"
 "%s"
 msgstr "Инсталација није успела"
 
-#: ../urpm/main_loop.pm:108
+#: ../urpm/main_loop.pm:109
 #, c-format
 msgid ""
 "There is not enough space on your filesystem to download all packages (%s "
@@ -990,68 +1010,68 @@ msgid ""
 "Are you sure you want to continue?"
 msgstr ""
 
-#: ../urpm/main_loop.pm:138
+#: ../urpm/main_loop.pm:139
 #, fuzzy, c-format
 msgid "The following package has bad signature"
 msgstr "Следећи пакети имају неисправне потписе"
 
-#: ../urpm/main_loop.pm:139
+#: ../urpm/main_loop.pm:140
 #, c-format
 msgid "The following packages have bad signatures"
 msgstr "Следећи пакети имају неисправне потписе"
 
-#: ../urpm/main_loop.pm:140
+#: ../urpm/main_loop.pm:141
 #, c-format
 msgid "Do you want to continue installation ?"
 msgstr "Да ли желите да наставите конфигурацију ?"
 
-#: ../urpm/main_loop.pm:155 ../urpm/main_loop.pm:184 ../urpm/main_loop.pm:289
-#: ../urpm/main_loop.pm:297
+#: ../urpm/main_loop.pm:156 ../urpm/main_loop.pm:185 ../urpm/main_loop.pm:290
+#: ../urpm/main_loop.pm:298
 #, c-format
 msgid "Installation failed"
 msgstr "Инсталација није успела"
 
-#: ../urpm/main_loop.pm:159
+#: ../urpm/main_loop.pm:160
 #, fuzzy, c-format
 msgid "removing installed rpms (%s)"
 msgstr "Инсталирам %s"
 
-#: ../urpm/main_loop.pm:185
+#: ../urpm/main_loop.pm:186
 #, c-format
 msgid "Try to continue anyway?"
 msgstr ""
 
-#: ../urpm/main_loop.pm:235
+#: ../urpm/main_loop.pm:236
 #, fuzzy, c-format
 msgid "installing %s from %s"
 msgstr "Инсталирам %s"
 
-#: ../urpm/main_loop.pm:237
+#: ../urpm/main_loop.pm:238
 #, c-format
 msgid "installing %s"
 msgstr "Инсталирам %s"
 
-#: ../urpm/main_loop.pm:244
+#: ../urpm/main_loop.pm:245
 #, c-format
 msgid "distributing %s"
 msgstr "дистрибуирам %s"
 
-#: ../urpm/main_loop.pm:290
+#: ../urpm/main_loop.pm:291
 #, fuzzy, c-format
 msgid "Try installation without checking dependencies?"
 msgstr "Инсталиација без провере зависности (да/Не)? "
 
-#: ../urpm/main_loop.pm:298
+#: ../urpm/main_loop.pm:299
 #, fuzzy, c-format
 msgid "Try harder to install (--force)?"
 msgstr "Присилна инсталација (--force)? (да/Не) ?"
 
-#: ../urpm/main_loop.pm:590
+#: ../urpm/main_loop.pm:598
 #, c-format
 msgid "Packages are up to date"
 msgstr ""
 
-#: ../urpm/main_loop.pm:601 ../urpm/parallel.pm:299
+#: ../urpm/main_loop.pm:609 ../urpm/parallel.pm:299
 #, c-format
 msgid "Installation is possible"
 msgstr "Инсталација је могућа"
@@ -1061,47 +1081,47 @@ msgstr "Инсталација је могућа"
 msgid "warning: md5sum for %s unavailable in MD5SUM file"
 msgstr ""
 
-#: ../urpm/media.pm:274
+#: ../urpm/media.pm:275
 #, c-format
 msgid "virtual medium \"%s\" should have a clear url, medium ignored"
 msgstr "виртулени медиј \"%s\" би требао да има чист url, игноришем медиј"
 
-#: ../urpm/media.pm:276
+#: ../urpm/media.pm:277
 #, c-format
 msgid "unable to access list file of \"%s\", medium ignored"
 msgstr "не могу да приступим фајлу листе за \"%s\", медиј игнорисан"
 
-#: ../urpm/media.pm:279
+#: ../urpm/media.pm:280
 #, fuzzy, c-format
 msgid "unable to access synthesis file of \"%s\", medium ignored"
 msgstr "не могу да приступим hdlist фајлу за \"%s\", медиј је игнорисан"
 
-#: ../urpm/media.pm:305
+#: ../urpm/media.pm:306
 #, fuzzy, c-format
 msgid "trying to override existing medium \"%s\", skipping"
 msgstr "покушавам да премостим постојећи медиј \"%s\", избегавам"
 
-#: ../urpm/media.pm:521
+#: ../urpm/media.pm:522
 #, c-format
 msgid "failed to migrate removable device, ignoring media"
 msgstr ""
 
-#: ../urpm/media.pm:564
+#: ../urpm/media.pm:565
 #, fuzzy, c-format
 msgid "wrote config file [%s and urpmicfg.d contents]"
 msgstr "уписујем у конфигурациону датотеку [%s]"
 
-#: ../urpm/media.pm:655
+#: ../urpm/media.pm:656
 #, c-format
 msgid "Can't use parallel mode with use-distrib mode"
 msgstr "Не могу да користим паралелни мод са use-distrib модом"
 
-#: ../urpm/media.pm:663
+#: ../urpm/media.pm:664
 #, c-format
 msgid "using associated media for parallel mode: %s"
 msgstr "користим додељени медиј за паралелни мод: %s"
 
-#: ../urpm/media.pm:679
+#: ../urpm/media.pm:680
 #, fuzzy, c-format
 msgid ""
 "--synthesis cannot be used with --media, --excludemedia, --sortmedia, --"
@@ -1110,228 +1130,238 @@ msgstr ""
 "--synthesis се не може користити са --media, --excludemedia, --sortmedia, --"
 "update или --parallel"
 
-#: ../urpm/media.pm:786
+#: ../urpm/media.pm:794
+#, fuzzy, c-format
+msgid "ignoring non-free medium `%s'"
+msgstr "Мењам медиј \"%s\":"
+
+#: ../urpm/media.pm:803
+#, fuzzy, c-format
+msgid "un-ignoring non-free medium `%s' b/c nonfree packages are installed"
+msgstr "Мењам медиј \"%s\":"
+
+#: ../urpm/media.pm:807
+#, c-format
+msgid "un-ignoring tainted medium `%s' b/c tainted packages are installed"
+msgstr ""
+
+#: ../urpm/media.pm:835
 #, fuzzy, c-format
 msgid "Search start: %s end: %s"
 msgstr "Тражи инсталиране фонтове"
 
-#: ../urpm/media.pm:803
+#: ../urpm/media.pm:852
 #, c-format
 msgid "skipping package %s"
 msgstr "прескачем пакет %s"
 
-#: ../urpm/media.pm:819
+#: ../urpm/media.pm:868
 #, c-format
 msgid "would install instead of upgrade package %s"
 msgstr "ће инсталирати уместо ажурирати пакет %s"
 
-#: ../urpm/media.pm:902
+#: ../urpm/media.pm:951
 #, c-format
 msgid "medium \"%s\" already exists"
 msgstr "медиј \"%s\" већ постоји"
 
-#: ../urpm/media.pm:944
+#: ../urpm/media.pm:995
 #, c-format
 msgid "(ignored by default)"
 msgstr ""
 
-#: ../urpm/media.pm:950
+#: ../urpm/media.pm:1001
 #, fuzzy, c-format
 msgid "adding medium \"%s\" before remote medium \"%s\""
 msgstr "читам хедере са медија \"%s\""
 
-#: ../urpm/media.pm:956
+#: ../urpm/media.pm:1007
 #, fuzzy, c-format
 msgid "adding medium \"%s\""
 msgstr "уклањам медиј \"%s\""
 
-#: ../urpm/media.pm:980
+#: ../urpm/media.pm:1031
 #, fuzzy, c-format
 msgid "failed to copy media.cfg to %s (%d)"
 msgstr "не могу да отворим rpmdb"
 
-#: ../urpm/media.pm:1051
+#: ../urpm/media.pm:1102
 #, c-format
 msgid "directory %s does not exist"
 msgstr ""
 
-#: ../urpm/media.pm:1059
+#: ../urpm/media.pm:1110
 #, c-format
 msgid "this location doesn't seem to contain any distribution"
 msgstr ""
 
-#: ../urpm/media.pm:1083
+#: ../urpm/media.pm:1134
 #, fuzzy, c-format
 msgid "unable to parse media.cfg"
 msgstr "не могу да отворим rpmdb"
 
-#: ../urpm/media.pm:1086
+#: ../urpm/media.pm:1137
 #, fuzzy, c-format
 msgid "unable to access the distribution medium (no media.cfg file found)"
 msgstr ""
 "не могу да приступим првом инсталационом медију (није пронађен hdlists фајл)"
 
-#: ../urpm/media.pm:1107
+#: ../urpm/media.pm:1159
 #, c-format
 msgid "skipping non compatible media `%s' (for %s)"
 msgstr ""
 
-#: ../urpm/media.pm:1122
-#, fuzzy, c-format
-msgid "ignoring non-free medium `%s'"
-msgstr "Мењам медиј \"%s\":"
-
-#: ../urpm/media.pm:1171
+#: ../urpm/media.pm:1217
 #, fuzzy, c-format
 msgid "retrieving media.cfg file..."
 msgstr "добављам hdlists фајл..."
 
-#: ../urpm/media.pm:1214
+#: ../urpm/media.pm:1260
 #, c-format
 msgid "trying to select nonexistent medium \"%s\""
 msgstr "покушавам да селектујем непостојећи медиј \"%s\""
 
-#: ../urpm/media.pm:1217
+#: ../urpm/media.pm:1263
 #, c-format
 msgid "selecting multiple media: %s"
 msgstr "покушавам да селектујем вишеструки медиј: %s"
 
-#: ../urpm/media.pm:1276
+#: ../urpm/media.pm:1322
 #, c-format
 msgid "removing medium \"%s\""
 msgstr "уклањам медиј \"%s\""
 
-#: ../urpm/media.pm:1359
+#: ../urpm/media.pm:1413
 #, fuzzy, c-format
 msgid "reconfiguring urpmi for media \"%s\""
 msgstr "добављам rpm фајлове ѕа медиј \"%s\"..."
 
-#: ../urpm/media.pm:1393
+#: ../urpm/media.pm:1447
 #, fuzzy, c-format
 msgid "...reconfiguration failed"
 msgstr "Конфигурација менија сачувана"
 
-#: ../urpm/media.pm:1399
+#: ../urpm/media.pm:1453
 #, fuzzy, c-format
 msgid "reconfiguration done"
 msgstr "Подешавање сервера"
 
-#: ../urpm/media.pm:1415
+#: ../urpm/media.pm:1469
 #, c-format
 msgid "Error generating names file: dependency %d not found"
 msgstr ""
 
-#: ../urpm/media.pm:1436
+#: ../urpm/media.pm:1490
 #, fuzzy, c-format
 msgid "medium \"%s\" is up-to-date"
 msgstr "медиј \"%s\" није изабран"
 
-#: ../urpm/media.pm:1447
+#: ../urpm/media.pm:1501
 #, c-format
 msgid "examining synthesis file [%s]"
 msgstr "испитујем synthesis фајл [%s]"
 
-#: ../urpm/media.pm:1467
+#: ../urpm/media.pm:1521
 #, c-format
 msgid "problem reading synthesis file of medium \"%s\""
 msgstr "проблем са читањем synthesis фајла за медиј \"%s\""
 
-#: ../urpm/media.pm:1480 ../urpm/media.pm:1575
+#: ../urpm/media.pm:1534 ../urpm/media.pm:1629
 #, fuzzy, c-format
 msgid "copying [%s] for medium \"%s\"..."
 msgstr "уписујем листу фајлова за медиј \"%s\""
 
-#: ../urpm/media.pm:1482 ../urpm/media.pm:1552 ../urpm/media.pm:1805
+#: ../urpm/media.pm:1536 ../urpm/media.pm:1606 ../urpm/media.pm:1859
 #, c-format
 msgid "...copying failed"
 msgstr "...копирање није успело"
 
-#: ../urpm/media.pm:1548
+#: ../urpm/media.pm:1602
 #, c-format
 msgid "copying description file of \"%s\"..."
 msgstr "копирам описни фајл за \"%s\"..."
 
-#: ../urpm/media.pm:1550 ../urpm/media.pm:1579
+#: ../urpm/media.pm:1604 ../urpm/media.pm:1633
 #, c-format
 msgid "...copying done"
 msgstr "...копирање завршено"
 
-#: ../urpm/media.pm:1581
+#: ../urpm/media.pm:1635
 #, fuzzy, c-format
 msgid "copy of [%s] failed (file is suspiciously small)"
 msgstr "копирање [%s] неуспело"
 
-#: ../urpm/media.pm:1629
+#: ../urpm/media.pm:1683
 #, fuzzy, c-format
 msgid "computing md5sum of retrieved source synthesis"
 msgstr "прорачунавам md5sum копиране  source hdlist (или  synthesis)"
 
-#: ../urpm/media.pm:1631 ../urpm/media.pm:2114
+#: ../urpm/media.pm:1685 ../urpm/media.pm:2168
 #, fuzzy, c-format
 msgid "retrieval of [%s] failed (md5sum mismatch)"
 msgstr "копирање [%s] неуспело"
 
-#: ../urpm/media.pm:1646
+#: ../urpm/media.pm:1700
 #, fuzzy, c-format
 msgid "genhdlist2 failed on %s"
 msgstr "испитујем  hdlist фајл [%s]"
 
-#: ../urpm/media.pm:1656
+#: ../urpm/media.pm:1710
 #, fuzzy, c-format
 msgid "comparing %s and %s"
 msgstr "Инсталирам %s"
 
-#: ../urpm/media.pm:1686
+#: ../urpm/media.pm:1740
 #, fuzzy, c-format
 msgid "invalid hdlist file %s for medium \"%s\""
 msgstr "није пронађена hdlist датотека за медиј \"%s\""
 
-#: ../urpm/media.pm:1712
+#: ../urpm/media.pm:1766
 #, fuzzy, c-format
 msgid "copying MD5SUM file of \"%s\"..."
 msgstr "копирам описни фајл за \"%s\"..."
 
-#: ../urpm/media.pm:1752
+#: ../urpm/media.pm:1806
 #, fuzzy, c-format
 msgid "invalid MD5SUM file (downloaded from %s)"
 msgstr "погрешно име rpm датотеке [%s]"
 
-#: ../urpm/media.pm:1755
+#: ../urpm/media.pm:1809
 #, fuzzy, c-format
 msgid "no metadata found for medium \"%s\""
 msgstr "није пронађена hdlist датотека за медиј \"%s\""
 
-#: ../urpm/media.pm:1787
+#: ../urpm/media.pm:1841
 #, fuzzy, c-format
 msgid "retrieving source synthesis of \"%s\"..."
 msgstr "добављам изорни hdlist (или synthesis) за \"%s\"..."
 
-#: ../urpm/media.pm:1853
+#: ../urpm/media.pm:1907
 #, c-format
 msgid "examining pubkey file of \"%s\"..."
 msgstr "испитукем фајл са јавним кључем за \"%s\"..."
 
-#: ../urpm/media.pm:1865
+#: ../urpm/media.pm:1919
 #, c-format
 msgid "...imported key %s from pubkey file of \"%s\""
 msgstr "..импортовани кључ %s од јавног кључа за \"%s\""
 
-#: ../urpm/media.pm:1869
+#: ../urpm/media.pm:1923
 #, c-format
 msgid "unable to import pubkey file of \"%s\""
 msgstr "не могу да импортујем јавни кључ за \"%s\""
 
-#: ../urpm/media.pm:1910
+#: ../urpm/media.pm:1964
 #, fuzzy, c-format
 msgid "no synthesis file found for medium \"%s\""
 msgstr "није пронађена hdlist датотека за медиј \"%s\""
 
-#: ../urpm/media.pm:1943
+#: ../urpm/media.pm:1997
 #, fuzzy, c-format
 msgid "updated medium \"%s\""
 msgstr "додани медиј %s"
 
-#: ../urpm/media.pm:2108
+#: ../urpm/media.pm:2162
 #, c-format
 msgid "retrieval of [%s] failed"
 msgstr ""
@@ -1357,12 +1387,12 @@ msgid "getting mirror list from %s"
 msgstr "читам rpm фајлове са [%s]"
 
 #. -PO: Add here the keys which might be pressed in the "Yes"-case.
-#: ../urpm/msg.pm:78 ../urpme:38 ../urpmi.addmedia:133
+#: ../urpm/msg.pm:78 ../urpme:38 ../urpmi.addmedia:134
 #, c-format
 msgid "Yy"
 msgstr "ДдDdYy"
 
-#: ../urpm/msg.pm:103 ../urpme:166 ../urpmi.addmedia:136
+#: ../urpm/msg.pm:103 ../urpme:168 ../urpmi.addmedia:137
 #, c-format
 msgid " (y/N) "
 msgstr " (д/Н) "
@@ -1425,29 +1455,29 @@ msgstr ""
 #: ../urpm/msg.pm:226
 #, c-format
 msgid "KB"
-msgstr ""
+msgstr "KB"
 
 #: ../urpm/msg.pm:226
 #, c-format
 msgid "MB"
-msgstr ""
+msgstr "MB"
 
 #: ../urpm/msg.pm:226
 #, c-format
 msgid "GB"
-msgstr ""
+msgstr "GB"
 
 #: ../urpm/msg.pm:226 ../urpm/msg.pm:235
 #, c-format
 msgid "TB"
-msgstr ""
+msgstr "TB"
 
 #: ../urpm/orphans.pm:78
 #, c-format
 msgid "Marking %s as manually installed, it won't be auto-orphaned"
 msgstr ""
 
-#: ../urpm/orphans.pm:520
+#: ../urpm/orphans.pm:524
 #, fuzzy, c-format
 msgid ""
 "The following package:\n"
@@ -1461,7 +1491,7 @@ msgstr[0] "Потребан(и) су следећи пакет(и):"
 msgstr[1] "Потребан(и) су следећи пакет(и):"
 msgstr[2] "Потребан(и) су следећи пакет(и):"
 
-#: ../urpm/orphans.pm:523
+#: ../urpm/orphans.pm:527
 #, fuzzy, c-format
 msgid "You may wish to remove it."
 msgid_plural "You may wish to remove them."
@@ -1469,7 +1499,7 @@ msgstr[0] "Нема ничега што би се могло уклонити"
 msgstr[1] "Нема ничега што би се могло уклонити"
 msgstr[2] "Нема ничега што би се могло уклонити"
 
-#: ../urpm/orphans.pm:540
+#: ../urpm/orphans.pm:544
 #, c-format
 msgid ""
 "The following package:\n"
@@ -1573,7 +1603,7 @@ msgstr ""
 msgid "No package named %s"
 msgstr "Нема пакета са именом %s"
 
-#: ../urpm/select.pm:240 ../urpme:120
+#: ../urpm/select.pm:240 ../urpme:122
 #, c-format
 msgid "The following packages contain %s: %s"
 msgstr "Следећи пакети садрже %s: %s"
@@ -1583,42 +1613,42 @@ msgstr "Следећи пакети садрже %s: %s"
 msgid "You should use \"-a\" to use all of them"
 msgstr ""
 
-#: ../urpm/select.pm:389
+#: ../urpm/select.pm:390
 #, fuzzy, c-format
 msgid "found package(s) %s in urpmi db, but none are installed"
 msgstr "све је већ инсталирано"
 
-#: ../urpm/select.pm:709
+#: ../urpm/select.pm:710
 #, fuzzy, c-format
 msgid "Package %s is already installed"
 msgstr "све је већ инсталирано"
 
-#: ../urpm/select.pm:710
+#: ../urpm/select.pm:711
 #, fuzzy, c-format
 msgid "Packages %s are already installed"
 msgstr "све је већ инсталирано"
 
-#: ../urpm/select.pm:727 ../urpm/select.pm:814
+#: ../urpm/select.pm:728 ../urpm/select.pm:815
 #, c-format
 msgid "due to conflicts with %s"
 msgstr "због конфликта са %s"
 
-#: ../urpm/select.pm:728 ../urpm/select.pm:808
+#: ../urpm/select.pm:729 ../urpm/select.pm:809
 #, c-format
 msgid "due to unsatisfied %s"
 msgstr "због не задовољеног %s"
 
-#: ../urpm/select.pm:734
+#: ../urpm/select.pm:735
 #, c-format
 msgid "trying to promote %s"
 msgstr "покушавам да прикажем %s"
 
-#: ../urpm/select.pm:735
+#: ../urpm/select.pm:736
 #, c-format
 msgid "in order to keep %s"
 msgstr "да бих задржао %s"
 
-#: ../urpm/select.pm:776
+#: ../urpm/select.pm:777
 #, fuzzy, c-format
 msgid ""
 "The following package has to be removed for others to be upgraded:\n"
@@ -1627,7 +1657,7 @@ msgstr ""
 "Следећи пакети се морају уклонити да би други могли да буду ажурирани:\n"
 "%s"
 
-#: ../urpm/select.pm:777
+#: ../urpm/select.pm:778
 #, c-format
 msgid ""
 "The following packages have to be removed for others to be upgraded:\n"
@@ -1636,12 +1666,12 @@ msgstr ""
 "Следећи пакети се морају уклонити да би други могли да буду ажурирани:\n"
 "%s"
 
-#: ../urpm/select.pm:804
+#: ../urpm/select.pm:805
 #, c-format
 msgid "in order to install %s"
 msgstr "да би инсталирао %s"
 
-#: ../urpm/select.pm:810
+#: ../urpm/select.pm:811
 #, c-format
 msgid "due to missing %s"
 msgstr "због не постојања %s"
@@ -1681,37 +1711,37 @@ msgstr ""
 msgid "Medium without key (%s)"
 msgstr ""
 
-#: ../urpm/sys.pm:183
+#: ../urpm/sys.pm:188
 #, c-format
 msgid "system"
 msgstr ""
 
-#: ../urpm/sys.pm:220
+#: ../urpm/sys.pm:225
 #, c-format
 msgid "You should restart your computer for %s"
 msgstr ""
 
-#: ../urpm/sys.pm:222
+#: ../urpm/sys.pm:227
 #, c-format
 msgid "You should restart your session for %s"
 msgstr ""
 
-#: ../urpm/sys.pm:224
+#: ../urpm/sys.pm:229
 #, c-format
 msgid "You should restart %s for %s"
 msgstr ""
 
-#: ../urpm/sys.pm:334
+#: ../urpm/sys.pm:339
 #, fuzzy, c-format
 msgid "Can't write file"
 msgstr "не могу да извршим упис у конфигурациону датотеку [%s]"
 
-#: ../urpm/sys.pm:334
+#: ../urpm/sys.pm:339
 #, fuzzy, c-format
 msgid "Can't open file"
 msgstr "Копирање није успело"
 
-#: ../urpm/sys.pm:347
+#: ../urpm/sys.pm:352
 #, fuzzy, c-format
 msgid "Can't move file %s to %s"
 msgstr "Копирање није успело"
@@ -1763,7 +1793,7 @@ msgstr "  --packager     - приказује таг packager: packager.\n"
 msgid "  --root         - use another root for rpm removal.\n"
 msgstr "  --curl         - користи још један root за rpm инсталацију.\n"
 
-#: ../urpme:54 ../urpmf:40 ../urpmi:127 ../urpmi.addmedia:73
+#: ../urpme:54 ../urpmf:40 ../urpmi:127 ../urpmi.addmedia:74
 #: ../urpmi.removemedia:45 ../urpmi.update:48 ../urpmq:74
 #, fuzzy, c-format
 msgid "  --urpmi-root   - use another root for urpmi db & rpm installation.\n"
@@ -1811,22 +1841,34 @@ msgstr "  -verbose       - verbose режим.\n"
 msgid "  -a             - select all packages matching expression.\n"
 msgstr "  -a             - изабери све пакете који одговарају изразу.\n"
 
-#: ../urpme:78
+#: ../urpme:64 ../urpmf:86 ../urpmi:184 ../urpmi.recover:52 ../urpmq:114
+#, c-format
+msgid ""
+"  --define, -D   - define macro after all the others have been defined.\n"
+msgstr ""
+
+#: ../urpme:65 ../urpmf:87 ../urpmi:185 ../urpmi.recover:53 ../urpmq:115
+#, c-format
+msgid ""
+"  --predefine    - predefine macro before any others have been defined.\n"
+msgstr ""
+
+#: ../urpme:80
 #, fuzzy, c-format
 msgid "Only superuser is allowed to remove packages"
 msgstr "Само администратор може да инсталира пакете"
 
-#: ../urpme:111
+#: ../urpme:113
 #, c-format
 msgid "unknown packages"
 msgstr "непознати пакети"
 
-#: ../urpme:111
+#: ../urpme:113
 #, c-format
 msgid "unknown package"
 msgstr "непознати пакет"
 
-#: ../urpme:126
+#: ../urpme:128
 #, fuzzy, c-format
 msgid "Removing the following package will break your system:"
 msgid_plural "Removing the following packages will break your system:"
@@ -1834,17 +1876,17 @@ msgstr[0] "уклањање пакета %s ће нарушити Ваш сис�
 msgstr[1] "уклањање пакета %s ће нарушити Ваш систем"
 msgstr[2] "уклањање пакета %s ће нарушити Ваш систем"
 
-#: ../urpme:131
+#: ../urpme:133
 #, c-format
 msgid "Nothing to remove"
 msgstr "Нема ничега што би се могло уклонити"
 
-#: ../urpme:148
+#: ../urpme:150
 #, fuzzy, c-format
 msgid "No orphans to remove"
 msgstr "Нема ничега што би се могло уклонити"
 
-#: ../urpme:154
+#: ../urpme:156
 #, fuzzy, c-format
 msgid "To satisfy dependencies, the following package will be removed"
 msgid_plural ""
@@ -1853,7 +1895,7 @@ msgstr[0] "Ради задовољења зависности, следећи п
 msgstr[1] "Ради задовољења зависности, следећи пакети ће бити уклоњени (%d MB)"
 msgstr[2] "Ради задовољења зависности, следећи пакети ће бити уклоњени (%d MB)"
 
-#: ../urpme:159
+#: ../urpme:161
 #, fuzzy, c-format
 msgid "(orphan package)"
 msgid_plural "(orphan packages)"
@@ -1861,7 +1903,7 @@ msgstr[0] "непознати пакет"
 msgstr[1] "непознати пакет"
 msgstr[2] "непознати пакет"
 
-#: ../urpme:166
+#: ../urpme:168
 #, fuzzy, c-format
 msgid "Remove %d package?"
 msgid_plural "Remove %d packages?"
@@ -1869,17 +1911,17 @@ msgstr[0] "уклањам пакет %s"
 msgstr[1] "уклањам пакет %s"
 msgstr[2] "уклањам пакет %s"
 
-#: ../urpme:171
+#: ../urpme:173
 #, fuzzy, c-format
 msgid "testing removal of %s"
 msgstr "узимам преносни уређај као \"%s\""
 
-#: ../urpme:188
+#: ../urpme:190
 #, c-format
 msgid "Removal failed"
 msgstr "Уклањање није успело"
 
-#: ../urpme:190
+#: ../urpme:192
 #, fuzzy, c-format
 msgid "Removal is possible"
 msgstr "Уклањање није успело"
@@ -2150,27 +2192,27 @@ msgstr ""
 "  -f             - приказује верзију, издање и архитектуру, укључујући и "
 "име.\n"
 
-#: ../urpmf:153
+#: ../urpmf:155
 #, c-format
 msgid "unterminated expression (%s)"
 msgstr ""
 
-#: ../urpmf:198
+#: ../urpmf:200
 #, c-format
 msgid "Incorrect format: you may use only one multi-valued tag"
 msgstr ""
 
-#: ../urpmf:291
+#: ../urpmf:293
 #, fuzzy, c-format
 msgid "no hdlist available for medium \"%s\""
 msgstr "није пронађена hdlist датотека за медиј \"%s\""
 
-#: ../urpmf:298
+#: ../urpmf:300
 #, fuzzy, c-format
 msgid "no synthesis available for medium \"%s\""
 msgstr "креирам hdlist симтезну датотеку за медиј \"%s\""
 
-#: ../urpmf:307
+#: ../urpmf:309
 #, fuzzy, c-format
 msgid "no xml-info available for medium \"%s\""
 msgstr "уписујем листу фајлова за медиј \"%s\""
@@ -2179,7 +2221,7 @@ msgstr "уписујем листу фајлова за медиј \"%s\""
 #, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
-"Copyright (C) 2013 OpenMandriva Association.\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
@@ -2339,23 +2381,24 @@ msgstr ""
 "  --use-distrib  - подешава urpmi у лету са distrib стабла.\n"
 "                   Ова опција дозвољава испитивање дистрибуције.\n"
 
-#: ../urpmi:130 ../urpmi.addmedia:60 ../urpmi.update:37
+#: ../urpmi:130
+#, c-format
+msgid ""
+"  --target-arch  - generate and load /etc/rpm/platform within a chroot\n"
+"                           with --root option.\n"
+msgstr ""
+
+#: ../urpmi:132 ../urpmi.addmedia:61 ../urpmi.update:37
 #, c-format
 msgid "  --metalink     - generate and use a local metalink.\n"
 msgstr ""
 
-#: ../urpmi:131
+#: ../urpmi:133
 #, c-format
 msgid ""
 "  --download-all - download all needed packages before trying to install "
 "them\n"
-"                   (this is the default behavior)\n"
 msgstr ""
-
-#: ../urpmi:133
-#, fuzzy, c-format
-msgid "  --no-download-all - download packages only when they are needed\n"
-msgstr "  --install-src  - инсталира само пакете са изворним кодом.\n"
 
 #: ../urpmi:134
 #, c-format
@@ -2389,7 +2432,7 @@ msgstr ""
 msgid "  --aria2-options - additional options to pass to aria2\n"
 msgstr ""
 
-#: ../urpmi:142 ../urpmi.addmedia:61 ../urpmi.update:38
+#: ../urpmi:142 ../urpmi.addmedia:62 ../urpmi.update:38
 #, c-format
 msgid "  --limit-rate   - limit the download speed.\n"
 msgstr "  --limit-rate   - лимитира брзину download-а.\n"
@@ -2418,7 +2461,7 @@ msgstr ""
 "                   (--no-verify-rpm не веригикује, стандардна је "
 "верификација).\n"
 
-#: ../urpmi:149 ../urpmi.addmedia:62 ../urpmi.update:39 ../urpmq:80
+#: ../urpmi:149 ../urpmi.addmedia:63 ../urpmi.update:39 ../urpmq:80
 #, c-format
 msgid ""
 "  --proxy        - use specified HTTP proxy, the port number is assumed\n"
@@ -2428,7 +2471,7 @@ msgstr ""
 "претпоставља\n"
 "                   да је 1080 по default-у (формат је <proxyhost[:port]>).\n"
 
-#: ../urpmi:151 ../urpmi.addmedia:64 ../urpmi.update:41 ../urpmq:82
+#: ../urpmi:151 ../urpmi.addmedia:65 ../urpmi.update:41 ../urpmq:82
 #, c-format
 msgid ""
 "  --proxy-user   - specify user and password to use for proxy\n"
@@ -2542,47 +2585,47 @@ msgstr "  -q             - тихи режим (мало порука).\n"
 msgid "  --debug        - very verbose mode.\n"
 msgstr "  -verbose       - verbose режим.\n"
 
-#: ../urpmi:184
+#: ../urpmi:186
 #, c-format
 msgid "  names or rpm files given on command line will be installed.\n"
 msgstr "  имена или rpm фајлови дати у командној линији ће бити инсталирани.\n"
 
-#: ../urpmi:218
+#: ../urpmi:220
 #, c-format
 msgid "Error: can't use --auto-select along with package list.\n"
 msgstr ""
 
-#: ../urpmi:225
+#: ../urpmi:227
 #, c-format
 msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
 "along with --bug.\n"
 msgstr ""
 
-#: ../urpmi:257
+#: ../urpmi:259
 #, fuzzy, c-format
 msgid "You can't install binary rpm files when using --install-src"
 msgstr ""
 "Шта се може учинити са бинарним rpm пакетима када се користи опција --"
 "install-src"
 
-#: ../urpmi:258
+#: ../urpmi:260
 #, c-format
 msgid "You can't install spec files"
 msgstr ""
 
-#: ../urpmi:265
+#: ../urpmi:267
 #, c-format
 msgid "defaulting to --buildrequires"
 msgstr ""
 
-#: ../urpmi:270
+#: ../urpmi:272
 #, c-format
 msgid ""
 "please use --buildrequires or --install-src, defaulting to --buildrequires"
 msgstr ""
 
-#: ../urpmi:290
+#: ../urpmi:292
 #, c-format
 msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
@@ -2591,12 +2634,12 @@ msgstr ""
 "Директоријум  [%s] већ постоји, изаберите други директоријум за пријављивање "
 "багова или га избришите"
 
-#: ../urpmi:291
+#: ../urpmi:293
 #, c-format
 msgid "Unable to create directory [%s] for bug report"
 msgstr "не могу да направим директоријум [%s] за извештај о грешци"
 
-#: ../urpmi:312
+#: ../urpmi:314
 #, c-format
 msgid ""
 "Error: %s appears to be mounted read-only.\n"
@@ -2604,42 +2647,42 @@ msgid ""
 msgstr ""
 
 #. -PO: here format is "<package_name>: <summary> (to upgrade)"
-#: ../urpmi:484
+#: ../urpmi:486
 #, fuzzy, c-format
 msgid "%s: %s (to upgrade)"
 msgstr "Ажурирање"
 
 #. -PO: here format is "<package_name> (to upgrade)"
-#: ../urpmi:486
+#: ../urpmi:488
 #, fuzzy, c-format
 msgid "%s (to upgrade)"
 msgstr "Ажурирање"
 
 #. -PO: here format is "<package_name>: <summary> (to install)"
-#: ../urpmi:490
+#: ../urpmi:492
 #, fuzzy, c-format
 msgid "%s: %s (to install)"
 msgstr "Излаз из инсталације"
 
 #. -PO: here format is "<package_name> (to install)"
-#: ../urpmi:492
+#: ../urpmi:494
 #, fuzzy, c-format
 msgid "%s (to install)"
 msgstr "Излаз из инсталације"
 
-#: ../urpmi:498
+#: ../urpmi:500
 #, fuzzy, c-format
 msgid ""
 "In order to satisfy the '%s' dependency, one of the following packages is "
 "needed:"
 msgstr "Ради задовољења зависности, следећи пакети ће бити уклоњени (%d MB)"
 
-#: ../urpmi:501
+#: ../urpmi:503
 #, c-format
 msgid "What is your choice? (1-%d) "
 msgstr "Шта желите? (1-%d) "
 
-#: ../urpmi:549
+#: ../urpmi:551
 #, c-format
 msgid ""
 "The following package cannot be installed because it depends on packages\n"
@@ -2647,7 +2690,7 @@ msgid ""
 "%s"
 msgstr ""
 
-#: ../urpmi:551
+#: ../urpmi:553
 #, c-format
 msgid ""
 "The following packages can't be installed because they depend on packages\n"
@@ -2655,14 +2698,14 @@ msgid ""
 "%s"
 msgstr ""
 
-#: ../urpmi:557 ../urpmi:576
+#: ../urpmi:559 ../urpmi:578
 #, fuzzy, c-format
 msgid ""
 "\n"
 "Continue installation anyway?"
 msgstr "Свеједно наставити ?"
 
-#: ../urpmi:570
+#: ../urpmi:572
 #, fuzzy, c-format
 msgid ""
 "A requested package cannot be installed:\n"
@@ -2671,12 +2714,12 @@ msgstr ""
 "Неки изабрани пакети се не могу инсталирати:\n"
 "%s"
 
-#: ../urpmi:592
+#: ../urpmi:594
 #, c-format
 msgid "removing package %s will break your system"
 msgstr "уклањање пакета %s ће нарушити Ваш систем"
 
-#: ../urpmi:600
+#: ../urpmi:602
 #, fuzzy, c-format
 msgid ""
 "The installation cannot continue because the following package\n"
@@ -2687,7 +2730,7 @@ msgstr ""
 "морају бити уклоњени да би остали могли да се ажурирају:\n"
 "%s\n"
 
-#: ../urpmi:602
+#: ../urpmi:604
 #, c-format
 msgid ""
 "The installation cannot continue because the following packages\n"
@@ -2698,12 +2741,12 @@ msgstr ""
 "морају бити уклоњени да би остали могли да се ажурирају:\n"
 "%s\n"
 
-#: ../urpmi:611
+#: ../urpmi:613
 #, c-format
 msgid "(test only, removal will not be actually done)"
 msgstr ""
 
-#: ../urpmi:633
+#: ../urpmi:635
 #, fuzzy, c-format
 msgid ""
 "You must first call urpmi with --buildrequires to install the following "
@@ -2713,7 +2756,7 @@ msgstr ""
 "Морате да имате root овлашћења да би инсталирали следеће пакете:\n"
 "%s\n"
 
-#: ../urpmi:643
+#: ../urpmi:645
 #, fuzzy, c-format
 msgid "The following orphan package will be removed."
 msgid_plural "The following orphan packages will be removed."
@@ -2721,20 +2764,25 @@ msgstr[0] "Ради задовољења зависности, следећи п
 msgstr[1] "Ради задовољења зависности, следећи пакети ће бити уклоњени (%d MB)"
 msgstr[2] "Ради задовољења зависности, следећи пакети ће бити уклоњени (%d MB)"
 
-#: ../urpmi:669
+#: ../urpmi:671
 #, c-format
 msgid "WARNING: %s option is in use. Some strange problems may happen"
 msgstr ""
 
-#: ../urpmi:681
+#: ../urpmi:683
 #, c-format
 msgid "(test only, installation will not be actually done)"
 msgstr ""
 
-#: ../urpmi:714
+#: ../urpmi:716
 #, fuzzy, c-format
 msgid "Press Enter when mounted..."
 msgstr "Притисните enter када будете спремни..."
+
+#: ../urpmi:769
+#, c-format
+msgid "Updating urpmi database..."
+msgstr ""
 
 #. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
 #. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
@@ -2750,12 +2798,14 @@ msgid ""
 "       cdrom://<path>\n"
 "\n"
 "usage: urpmi.addmedia [options] --distrib --mirrorlist <url>\n"
-"usage: urpmi.addmedia [options] --mirrorlist <url> <name> <relative path>\n"
+"usage: urpmi.addmedia [options] --mirrorbrain <url> <name> <relative path>\n"
 "\n"
 "examples:\n"
 "\n"
-"  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
-"  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
+"  urpmi.addmedia --distrib --mirrorbrain 'http://downloads.openmandriva.org/"
+"$RELEASE/$ARCH'\n"
+"  urpmi.addmedia --mirrorbrain 'http://downloads.openmandriva.org/$RELEASE/"
+"$ARCH' backports media/main/backports\n"
 "  urpmi.addmedia --distrib --zeroconf\n"
 "\n"
 "\n"
@@ -2791,14 +2841,19 @@ msgstr "  --curl         - користи curl за добављање удаљ�
 msgid "  --aria2        - use aria2 to retrieve distant files.\n"
 msgstr "  --curl         - користи curl за добављање удаљених фајлова.\n"
 
-#: ../urpmi.addmedia:66
+#: ../urpmi.addmedia:60
+#, c-format
+msgid "  --mirrorbrain  - use server side generated metalink.\n"
+msgstr ""
+
+#: ../urpmi.addmedia:67
 #, c-format
 msgid ""
 "  --update       - create an update medium, \n"
 "                   or discard non-update media (when used with --distrib)\n"
 msgstr ""
 
-#: ../urpmi.addmedia:68
+#: ../urpmi.addmedia:69
 #, c-format
 msgid ""
 "  --xml-info     - use the specific policy for downloading xml info files\n"
@@ -2806,24 +2861,24 @@ msgid ""
 "cfg(5)\n"
 msgstr ""
 
-#: ../urpmi.addmedia:70
+#: ../urpmi.addmedia:71
 #, fuzzy, c-format
 msgid "  --probe-synthesis - use synthesis file.\n"
 msgstr "  --probe-synthesis - покушава да пронађе и користи synthesis фајл.\n"
 
-#: ../urpmi.addmedia:71
+#: ../urpmi.addmedia:72
 #, c-format
 msgid "  --probe-rpms   - use rpm files (instead of synthesis).\n"
 msgstr ""
 
-#: ../urpmi.addmedia:72
+#: ../urpmi.addmedia:73
 #, fuzzy, c-format
 msgid "  --no-probe     - do not try to find any synthesis file.\n"
 msgstr ""
 "  --no-probe     - не покушава да пронађе било који synthesis или\n"
 "                   hdlist фајл.\n"
 
-#: ../urpmi.addmedia:74
+#: ../urpmi.addmedia:75
 #, c-format
 msgid ""
 "  --distrib      - automatically create all media from an installation\n"
@@ -2832,101 +2887,101 @@ msgstr ""
 "  --distrib      - аутоматски направи све медије са инсталационог\n"
 "                   медија.\n"
 
-#: ../urpmi.addmedia:76
+#: ../urpmi.addmedia:77
 #, c-format
 msgid "  --interactive  - with --distrib, ask confirmation for each media\n"
 msgstr ""
 
-#: ../urpmi.addmedia:77
+#: ../urpmi.addmedia:78
 #, fuzzy, c-format
 msgid "  --all-media    - with --distrib, add every listed media\n"
 msgstr "  --list-media         - приказује листу медија.\n"
 
-#: ../urpmi.addmedia:78
+#: ../urpmi.addmedia:79
 #, fuzzy, c-format
 msgid "  --virtual      - create virtual media wich are always up-to-date.\n"
 msgstr ""
 "  --virtual      - креира виртуелни медиј који су увек ажурирани ,\n"
 "                   дозвољен је само file:// protocol.\n"
 
-#: ../urpmi.addmedia:79 ../urpmi.update:44
+#: ../urpmi.addmedia:80 ../urpmi.update:44
 #, c-format
 msgid "  --no-md5sum    - disable MD5SUM file checking.\n"
 msgstr "  --no-md5sum    - деактивира MD5SUM проверу фајла.\n"
 
-#: ../urpmi.addmedia:80
+#: ../urpmi.addmedia:81
 #, c-format
 msgid "  --nopubkey     - don't import pubkey of added media\n"
 msgstr ""
 
-#: ../urpmi.addmedia:81
+#: ../urpmi.addmedia:82
 #, c-format
 msgid "  --raw          - add the media in config, but don't update it.\n"
 msgstr ""
 
-#: ../urpmi.addmedia:82 ../urpmi.removemedia:43 ../urpmi.update:53
+#: ../urpmi.addmedia:83 ../urpmi.removemedia:43 ../urpmi.update:53
 #, c-format
 msgid "  -q             - quiet mode.\n"
 msgstr "  -q             - тихи режим (мало порука).\n"
 
-#: ../urpmi.addmedia:83 ../urpmi.removemedia:44 ../urpmi.update:54
+#: ../urpmi.addmedia:84 ../urpmi.removemedia:44 ../urpmi.update:54
 #, c-format
 msgid "  -v             - verbose mode.\n"
 msgstr "  -v             - verbose режим.\n"
 
-#: ../urpmi.addmedia:96
+#: ../urpmi.addmedia:97
 #, c-format
 msgid "known xml-info policies are %s"
 msgstr ""
 
-#: ../urpmi.addmedia:107
+#: ../urpmi.addmedia:108
 #, c-format
 msgid "no argument needed for --distrib --mirrorlist <url>"
 msgstr ""
 
-#: ../urpmi.addmedia:112
+#: ../urpmi.addmedia:113
 #, c-format
 msgid "bad <url> (for local directory, the path must be absolute)"
 msgstr ""
 
-#: ../urpmi.addmedia:116
+#: ../urpmi.addmedia:117
 #, fuzzy, c-format
 msgid "Only superuser is allowed to add media"
 msgstr "Само администратор може да инсталира пакете"
 
-#: ../urpmi.addmedia:119
+#: ../urpmi.addmedia:120
 #, fuzzy, c-format
 msgid "creating config file [%s]"
 msgstr "уписујем у конфигурациону датотеку [%s]"
 
-#: ../urpmi.addmedia:120
+#: ../urpmi.addmedia:121
 #, fuzzy, c-format
 msgid "Can't create config file [%s]"
 msgstr "уписујем у конфигурациону датотеку [%s]"
 
-#: ../urpmi.addmedia:128
+#: ../urpmi.addmedia:129
 #, fuzzy, c-format
 msgid "no need to give <relative path of synthesis> with --distrib"
 msgstr "недостаје <релативна путања hdlist> са --distrib"
 
-#: ../urpmi.addmedia:136
+#: ../urpmi.addmedia:137
 #, c-format
 msgid ""
 "\n"
 "Do you want to add media '%s'?"
 msgstr ""
 
-#: ../urpmi.addmedia:156 ../urpmi.addmedia:181
+#: ../urpmi.addmedia:158 ../urpmi.addmedia:184
 #, fuzzy, c-format
 msgid "unable to add medium"
 msgstr "не могу да приступим медију \"%s\""
 
-#: ../urpmi.addmedia:164
+#: ../urpmi.addmedia:166
 #, fuzzy, c-format
 msgid "<relative path of synthesis> missing\n"
 msgstr "недостаје <релативна путања hdlist>\n"
 
-#: ../urpmi.addmedia:167
+#: ../urpmi.addmedia:169
 #, c-format
 msgid "Can't use %s with remote medium"
 msgstr ""
@@ -3003,96 +3058,96 @@ msgstr ""
 msgid "  --disable      - turn off repackaging\n"
 msgstr "  --all           - приказује све тагове.\n"
 
-#: ../urpmi.recover:66
+#: ../urpmi.recover:68
 #, c-format
 msgid "Invalid date or duration [%s]\n"
 msgstr ""
 
-#: ../urpmi.recover:74
+#: ../urpmi.recover:76
 #, fuzzy, c-format
 msgid "Repackage directory not defined\n"
 msgstr "пакет %s није пронађен."
 
-#: ../urpmi.recover:77
+#: ../urpmi.recover:79
 #, fuzzy, c-format
 msgid "Can't write to repackage directory [%s]\n"
 msgstr "не могу да направим директоријум [%s] за извештај о грешци"
 
-#: ../urpmi.recover:79
+#: ../urpmi.recover:81
 #, fuzzy, c-format
 msgid "Cleaning up repackage directory [%s]...\n"
 msgstr "не могу да направим директоријум [%s] за извештај о грешци"
 
-#: ../urpmi.recover:138
+#: ../urpmi.recover:140
 #, c-format
 msgid "Spurious command-line arguments [%s]\n"
 msgstr ""
 
-#: ../urpmi.recover:140
+#: ../urpmi.recover:142
 #, c-format
 msgid "You can't specify --checkpoint and --rollback at the same time\n"
 msgstr ""
 
-#: ../urpmi.recover:142
+#: ../urpmi.recover:144
 #, c-format
 msgid "You can't specify --checkpoint and --list at the same time\n"
 msgstr ""
 
-#: ../urpmi.recover:144
+#: ../urpmi.recover:146
 #, c-format
 msgid "You can't specify --rollback and --list at the same time\n"
 msgstr ""
 
-#: ../urpmi.recover:146
+#: ../urpmi.recover:148
 #, c-format
 msgid "You can't specify --disable along with another option"
 msgstr ""
 
-#: ../urpmi.recover:155
+#: ../urpmi.recover:157
 #, c-format
 msgid "No transaction found since %s\n"
 msgstr ""
 
-#: ../urpmi.recover:170
+#: ../urpmi.recover:172
 #, c-format
 msgid "You must be superuser to do this"
 msgstr ""
 
-#: ../urpmi.recover:183 ../urpmi.recover:364
+#: ../urpmi.recover:185 ../urpmi.recover:366
 #, fuzzy, c-format
 msgid "Writing rpm macros file [%s]...\n"
 msgstr "добављам rpm фајл [%s] ..."
 
-#: ../urpmi.recover:216
+#: ../urpmi.recover:218
 #, c-format
 msgid "Invalid number of transactions to be reverted"
 msgstr ""
 
-#: ../urpmi.recover:237
+#: ../urpmi.recover:239
 #, fuzzy, c-format
 msgid "No rollback date found\n"
 msgstr "Слике нису пронађене"
 
-#: ../urpmi.recover:244
+#: ../urpmi.recover:246
 #, c-format
 msgid ""
 "The oldest available checkpoint is %d (%s), I will not revert to older "
 "stages (this can damage your system)"
 msgstr ""
 
-#: ../urpmi.recover:249
+#: ../urpmi.recover:251
 #, c-format
 msgid "Rollback until %s...\n"
 msgstr ""
 
-#: ../urpmi.recover:322
+#: ../urpmi.recover:324
 #, c-format
 msgid ""
 "\n"
 "Do you want to proceed?"
 msgstr ""
 
-#: ../urpmi.recover:350
+#: ../urpmi.recover:352
 #, fuzzy, c-format
 msgid "Disabling repackaging\n"
 msgstr "  --all           - приказује све тагове.\n"
@@ -3448,50 +3503,50 @@ msgstr "  -y             - узрокује fuzzy претрагу (као и  -
 msgid "  -Y             - like -y, but forces to match case-insensitively.\n"
 msgstr "  -a             - бира сва поклапања у командној линији.\n"
 
-#: ../urpmq:114
+#: ../urpmq:116
 #, c-format
 msgid "  names or rpm files given on command line are queried.\n"
 msgstr ""
 "  имена или rpm фајлови који су дати у командној линији се проверавају.\n"
 
-#: ../urpmq:171
+#: ../urpmq:173
 #, c-format
 msgid "usage: \"urpmq --auto-orphans\" with no argument"
 msgstr ""
 
-#: ../urpmq:224
+#: ../urpmq:226
 #, c-format
 msgid "--list-nodes can only be used with --parallel"
 msgstr "  --list-nodes се може користити само са опцијом --parallel"
 
-#: ../urpmq:248
+#: ../urpmq:250
 #, fuzzy, c-format
 msgid "use -l to list files"
 msgstr "не могу да упишем датотеку листе за \"%s\""
 
-#: ../urpmq:432
+#: ../urpmq:434
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for package %s"
 msgstr ""
 
-#: ../urpmq:433
+#: ../urpmq:435
 #, c-format
 msgid "no xml info for medium \"%s\", only partial result for packages %s"
 msgstr ""
 
-#: ../urpmq:436
+#: ../urpmq:438
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for package %s"
 msgstr ""
 
-#: ../urpmq:437
+#: ../urpmq:439
 #, c-format
 msgid ""
 "no xml info for medium \"%s\", unable to return any result for packages %s"
 msgstr ""
 
-#: ../urpmq:504
+#: ../urpmq:506
 #, fuzzy, c-format
 msgid "No changelog found\n"
 msgstr "НИје пронађен image"
@@ -3504,28 +3559,275 @@ msgstr "Инсталер софтвера"
 msgid "Graphical front end to install RPM files"
 msgstr "Графички интерфејс за инсталацију RPM пакета"
 
-#~ msgid "Please wait..."
-#~ msgstr "Молим сачекајте..."
+#: ../polkit/org.openmandriva.gurpmi2.policy.in.h:1
+msgid "Run DrakX Package Installer"
+msgstr ""
+
+#: ../polkit/org.openmandriva.gurpmi2.policy.in.h:2
+msgid "Authentication is required to run DrakX Package Installer"
+msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Continue?"
+#~ msgstr "Настави"
+
+#~ msgid ""
+#~ "\n"
+#~ "unknown options '%s'\n"
+#~ msgstr ""
+#~ "\n"
+#~ "непознате опције '%s'\n"
+
+#, fuzzy
+#~ msgid "    --probe-hdlist - use hdlist file.\n"
+#~ msgstr "  --probe-hdlist - покушава да пронађе и користи hdlist фајл.\n"
+
+#, fuzzy
+#~ msgid "    --probe-synthesis - use synthesis file.\n"
+#~ msgstr ""
+#~ "  --probe-synthesis - покушава да пронађе и користи synthesis фајл.\n"
+
+#~ msgid "  !              - unary NOT, true if expression is false.\n"
+#~ msgstr ""
+#~ "  !              - бинарни NOT, истинит уколико је израз погрешан.\n"
+
+#~ msgid "  (              - left parenthesis to open group expression.\n"
+#~ msgstr "  (              - лева заграда за отоврање групе израза.\n"
+
+#~ msgid "  )              - right parenthesis to close group expression.\n"
+#~ msgstr "  )              - десна заграда за затварање групе израза.\n"
+
+#~ msgid "  --all          - print all tags.\n"
+#~ msgstr "  --all           - приказује све тагове.\n"
+
+#, fuzzy
+#~ msgid "  --allow-recommends - auto select \"recommended\" packages.\n"
+#~ msgstr ""
+#~ "  --obsoletes     - приказује таг вишак: сви вишкови (у више реда).\n"
+
+#~ msgid ""
+#~ "  --arch         - use specified architecture, the default is arch of\n"
+#~ "                   mandriva-release package installed.\n"
+#~ msgstr ""
+#~ "  --arch         - користи дату архитектуру, подразумеваноа је "
+#~ "архитектура\n"
+#~ "                   инсталираног mandriva-release пакета.\n"
+
+#~ msgid "  --buildhost    - print tag buildhost: build host.\n"
+#~ msgstr "  --buildhost    - приказује таг buildhost: build host.\n"
+
+#~ msgid "  --description  - print tag description: description.\n"
+#~ msgstr "  --description   - приказује таг описа: опис.\n"
+
+#~ msgid ""
+#~ "  --distrib-XXX  - automatically create a medium for XXX part of a\n"
+#~ "                   distribution, XXX may be main, contrib, updates or\n"
+#~ "                   anything else that has been configured ;-)\n"
+#~ msgstr ""
+#~ "  --distrib-XXX  - аутоматски направи медијум за XXX-ти део\n"
+#~ "                   диструбиуције, XXX може да буде главни, додатак\n"
+#~ "                   надоградња или блио шта друго што може да се "
+#~ "подеси ;-)\n"
+
+#~ msgid ""
+#~ "  --env          - use specific environment (typically a bug\n"
+#~ "                   report).\n"
+#~ msgstr ""
+#~ "  --env          - користи специфично окружење (типично извештај о "
+#~ "грешци).\n"
+
+#~ msgid "  --files        - print tag files: all files.\n"
+#~ msgstr "  --files         - приказује таг фајлове: све фајлове.\n"
+
+#~ msgid ""
+#~ "  --from         - use specified url for list of mirrors, the default is\n"
+#~ "                   %s\n"
+#~ msgstr ""
+#~ "  --from         - користи дату url адресу за лист мирора, подразумевано "
+#~ "је\n"
+#~ "                   %s\n"
+
+#~ msgid ""
+#~ "  --headers      - extract headers for package listed from urpmi db to\n"
+#~ "                   stdout (root only).\n"
+#~ msgstr ""
+#~ "  --headers      - екстрактује хедере за пакете приказане из urpmi db на\n"
+#~ "                   stdout (само root).\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  --keep         - keep existing packages if possible, reject requested\n"
+#~ "                   packages that leads to remove.\n"
+#~ msgstr ""
+#~ "  --keep         - задржава постојеће пакет уколико је могуће, одбацује "
+#~ "захтевани пакет\n"
+#~ "                   који води уклањању.\n"
+
+#, fuzzy
+#~ msgid "  --no-recommends - do not auto select \"recommended\" packages.\n"
+#~ msgstr ""
+#~ "  --obsoletes     - приказује таг вишак: сви вишкови (у више реда).\n"
+
+#, fuzzy
+#~ msgid "  --norebuild    - don't try to rebuild hdlist if not readable.\n"
+#~ msgstr "  --buildhost    - приказује таг buildhost: build host.\n"
+
+#~ msgid "  --obsoletes    - print tag obsoletes: all obsoletes.\n"
+#~ msgstr ""
+#~ "  --obsoletes     - приказује таг вишак: сви вишкови (у више реда).\n"
+
+#~ msgid "  --probe-hdlist - try to find and use hdlist file.\n"
+#~ msgstr "  --probe-hdlist - покушава да пронађе и користи hdlist фајл.\n"
+
+#, fuzzy
+#~ msgid "  --probe-hdlist - use hdlist file.\n"
+#~ msgstr "  --probe-hdlist - покушава да пронађе и користи hdlist фајл.\n"
+
+#~ msgid "  --probe-synthesis - try to find and use synthesis file.\n"
+#~ msgstr ""
+#~ "  --probe-synthesis - покушава да пронађе и користи synthesis фајл.\n"
+
+#~ msgid "  --provides     - print tag provides: all provides.\n"
+#~ msgstr "  --provides      - приказује таг обезбеђује: све обезбеђује.\n"
+
+#~ msgid ""
+#~ "  --quiet        - do not print tag name (default if no tag given on "
+#~ "command\n"
+#~ "                   line, incompatible with interactive mode).\n"
+#~ msgstr ""
+#~ "  --quiet        - не приказује има тага (стандардна опција уколико није\n"
+#~ "                   дат таг у команди линија, некомпатибилна са "
+#~ "интерактивним\n"
+#~ "                   модом).\n"
+
+#, fuzzy
+#~ msgid "  --recommends   - print recommends.\n"
+#~ msgstr "  --requires      - приказује таг захтева: сви захтеви\n"
+
+#, fuzzy
+#~ msgid "  --recommends   - recommends tags\n"
+#~ msgstr "  --requires      - приказује таг захтева: сви захтеви\n"
+
+#~ msgid "  --requires     - print tag requires: all requires.\n"
+#~ msgstr "  --requires      - приказује таг захтева: сви захтеви\n"
+
+#~ msgid ""
+#~ "  --sources      - give all source packages before downloading (root "
+#~ "only).\n"
+#~ msgstr ""
+#~ "  --sources      - приказује све изворне пакете пре download-а (само "
+#~ "root).\n"
+
+#~ msgid "  --summary      - print tag summary: summary.\n"
+#~ msgstr "  --summary       - приказује таг сажетка: сажетак.\n"
+
+#~ msgid "  --synthesis    - use the synthesis given instead of urpmi db.\n"
+#~ msgstr "  --synthesis    - користи дати synthesis уместо urpmi-јеве базе.\n"
+
+#, fuzzy
+#~ msgid "  --triggers     - do not execute package trigger(s).\n"
+#~ msgstr "  --description   - приказује таг описа: опис.\n"
+
+#~ msgid "  --uniq         - do not print identical lines.\n"
+#~ msgstr "  --uniq         - не приказује идентичне линије.\n"
+
+#~ msgid "  --update       - create an update medium.\n"
+#~ msgstr "  --update       - креира update медиј.\n"
+
+#~ msgid ""
+#~ "  --version      - use specified distribution version, the default is "
+#~ "taken\n"
+#~ "                   from the version of the distribution told by the\n"
+#~ "                   installed mandriva-release package.\n"
+#~ msgstr ""
+#~ "  --version      - користи дату верзију дистрибуције, default је узета\n"
+#~ "                   из верзије дистрибуције која је наведена у\n"
+#~ "                   деинсталираном mandriva-release пакету.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -P             - do not search in provides to find package (default).\n"
+#~ msgstr "  -P             - не претражује доступне ради налажења пакета.\n"
+
+#~ msgid "  -R             - reverse search to what requires package.\n"
+#~ msgstr "  -R             - претрага уназад за оним што захтева пакет.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -RR            - extended reverse search (includes virtual packages).\n"
+#~ msgstr "  -R             - претрага уназад за оним што захтева пакет.\n"
+
+#~ msgid ""
+#~ "  -a             - binary AND operator, true if both expression are "
+#~ "true.\n"
+#~ msgstr ""
+#~ "  -a             - инарни AND оператор, истинит уколико су оба израза "
+#~ "истинита.\n"
+
+#~ msgid "  -c             - clean headers cache directory.\n"
+#~ msgstr "  -c             - чисти директоријум са кешом надглавља.\n"
+
+#~ msgid "  -f             - force generation of hdlist files.\n"
+#~ msgstr "  -f             - приморава на генерисање hdlist фајлова.\n"
+
+#~ msgid "  -i             - ignore case distinctions in every pattern.\n"
+#~ msgstr ""
+#~ "  -i             - игнорише разлику у карактеру у било којој шеми.\n"
+
+#~ msgid ""
+#~ "  -o             - binary OR operator, true if one expression is true.\n"
+#~ msgstr ""
+#~ "  -o             - бинарни OR оператор, истинит уколико је један израз "
+#~ "тачан.\n"
+
+#, fuzzy
+#~ msgid "\"synthesis\" should be set (medium \"%s\")"
+#~ msgstr "креирам hdlist симтезну датотеку за медиј \"%s\""
+
+#, fuzzy
+#~ msgid "\"synthesis\" should not be set (medium \"%s\")"
+#~ msgstr "покушавам да селектујем непостојећи медиј \"%s\""
+
+#, fuzzy
+#~ msgid "%d installation transaction failed"
+#~ msgid_plural "%d installation transactions failed"
+#~ msgstr[0] "%d инстлациона трансакција није успела"
+#~ msgstr[1] "%d инстлациона трансакција није успела"
+#~ msgstr[2] "%d инстлациона трансакција није успела"
+
+#, fuzzy
+#~ msgid "%s database locked"
+#~ msgstr "urpmi база података закључана"
+
+#~ msgid "%s: command not found\n"
+#~ msgstr "%s: команда није пронађена\n"
+
+#~ msgid "...retrieving failed: md5sum mismatch"
+#~ msgstr "...повраћај неуспео: md5sum не одговара"
+
+#~ msgid ""
+#~ "Automatic installation of packages...\n"
+#~ "You requested installation of package %s\n"
+#~ msgstr ""
+#~ "Аутоматска инсталација пакета...\n"
+#~ "Захтевали сте инсталацију пакета %s\n"
+
+#, fuzzy
+#~ msgid "Cannot write DUDF file.\n"
+#~ msgstr "не могу да извршим упис у конфигурациону датотеку [%s]"
+
+#~ msgid "Checking to remove the following packages"
+#~ msgstr "Проверавам како бих уклонио следеће пакете"
+
+#, fuzzy
+#~ msgid "Distributing files to %s..."
+#~ msgstr "дистрибуирам %s"
 
 #, fuzzy
 #~ msgid "Distribution Upgrade"
 #~ msgstr "дистрибуирам %s"
-
-#, fuzzy
-#~ msgid "Packages installation"
-#~ msgstr "Инсталација пакета..."
-
-#, fuzzy
-#~ msgid ""
-#~ "Some requested packages cannot be installed:\n"
-#~ "%s\n"
-#~ "Continue installation anyway?"
-#~ msgstr ""
-#~ "Неки изабрани пакети се не могу инсталирати:\n"
-#~ "%s"
-
-#~ msgid "Installing package `%s' (%s/%s)..."
-#~ msgstr "Инсталирам пакет `%s' (%s/%s)..."
 
 #~ msgid "Downloading package `%s'..."
 #~ msgstr "Скидам пакет `%s'..."
@@ -3539,12 +3841,368 @@ msgstr "Графички интерфејс за инсталацију RPM па
 #~ "%s\n"
 #~ "Можда желите да ажурирате вашу urpmi базу података."
 
+#~ msgid "Installing package `%s' (%s/%s)..."
+#~ msgstr "Инсталирам пакет `%s' (%s/%s)..."
+
+#, fuzzy
+#~ msgid "Installing packages on nodes..."
+#~ msgstr "Инсталирам пакет `%s' (%s/%s)..."
+
+#~ msgid "Is this OK?"
+#~ msgstr "Да ли је овако добро?"
+
+#, fuzzy
+#~ msgid "No filelist found\n"
+#~ msgstr "Слике нису пронађене"
+
+#, fuzzy
+#~ msgid "Package %s can not be installed"
+#~ msgstr "све је већ инсталирано"
+
+#, fuzzy
+#~ msgid "Packages installation"
+#~ msgstr "Инсталација пакета..."
+
+#, fuzzy
+#~ msgid "Performing install on %s..."
+#~ msgstr "Инсталација пакета..."
+
+#~ msgid "Please wait..."
+#~ msgstr "Молим сачекајте..."
+
+#, fuzzy
+#~ msgid "Preparing install on %s..."
+#~ msgstr "Инсталација пакета..."
+
+#, fuzzy
+#~ msgid "Propagating synthesis to %s..."
+#~ msgstr "испитујем synthesis фајл [%s]"
+
+#, fuzzy
+#~ msgid "Remove %d packages?"
+#~ msgstr "уклањам пакет %s"
+
 #, fuzzy
 #~ msgid "Removing package %s"
 #~ msgstr "уклањам пакет %s"
 
-#~ msgid "Cancel"
-#~ msgstr "Одустани"
+#, fuzzy
+#~ msgid "Removing package `%s' ..."
+#~ msgstr "уклањам пакет %s"
+
+#~ msgid ""
+#~ "Some package requested cannot be installed:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Неки изабрани пакети се не могу инсталирати:\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Some package requested cannot be installed:\n"
+#~ "%s\n"
+#~ "Continue?"
+#~ msgstr ""
+#~ "Неки изабрани пакети се не могу инсталирати:\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Some requested packages cannot be installed:\n"
+#~ "%s\n"
+#~ "Continue installation anyway?"
+#~ msgstr ""
+#~ "Неки изабрани пакети се не могу инсталирати:\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid "The following package names were assumed: %s"
+#~ msgstr "Следећи пакети садрже %s: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "The following packages have bad signatures:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Do you want to continue installation ?"
+#~ msgstr ""
+#~ "Следећи пакети имају лоше потписе:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "да ли желите да наставите инсталацију?"
+
+#, fuzzy
+#~ msgid ""
+#~ "To satisfy dependencies, the following %d packages are going to be "
+#~ "installed (%d MB)"
+#~ msgstr ""
+#~ "Да би задовољили међузависности, следећи пакет(и) такође треба\n"
+#~ "да се инсталирају:\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "To satisfy dependencies, the following %d packages are going to be "
+#~ "installed:\n"
+#~ "%s\n"
+#~ msgstr ""
+#~ "Да би задовољили међузависности, следећи пакет(и) такође треба\n"
+#~ "да се инсталирају:\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "Unknown option %s"
+#~ msgstr ""
+#~ "\n"
+#~ "непознате опције '%s'\n"
+
+#~ msgid "Verifying package signatures..."
+#~ msgstr "Провера потписа на пакетима..."
+
+#, fuzzy
+#~ msgid "You need to be root to use --use-distrib"
+#~ msgstr "Морате да рестартујете машину да би кориситили ову команду ! \n"
+
+#~ msgid "`with' missing for network media\n"
+#~ msgstr "`with' недостатком за мрежни ftp медиј\n"
+
+#~ msgid "adding package %s (id=%d, eid=%d, update=%d, file=%s)"
+#~ msgstr "додајем пакет %s (id=%d, eid=%d, update=%d, file=%s)"
+
+#~ msgid "building hdlist [%s]"
+#~ msgstr "креирам hdlist [%s]"
+
+#~ msgid ""
+#~ "callback is:\n"
+#~ "%s\n"
+#~ msgstr ""
+#~ "повратни је :\n"
+#~ "%s\n"
+
+#~ msgid "cannot add updates of a cooker distribution\n"
+#~ msgstr "не могу да додам надоградње cooker дистрибуцији\n"
+
+#~ msgid "computing md5sum of copied source hdlist (or synthesis)"
+#~ msgstr "прорачунавам md5sum копиране  source hdlist (или  synthesis)"
+
+#, fuzzy
+#~ msgid "computing md5sum of existing source hdlist (or synthesis) [%s]"
+#~ msgstr "прорачунавам md5sum постојеће source hdlist (или synthesis)"
+
+#~ msgid "copying hdlists file..."
+#~ msgstr "копирам hdlist фајл..."
+
+#~ msgid "copying source hdlist (or synthesis) of \"%s\"..."
+#~ msgstr "копирање изворне hdlist (или synthesis) за \"%s\"..."
+
+#, fuzzy
+#~ msgid "due to already installed %s"
+#~ msgstr "све је већ инсталирано"
+
+#, fuzzy
+#~ msgid "examining %s file"
+#~ msgstr "испитујем MD5SUM фајл"
+
+#~ msgid "file [%s] already used in the same medium \"%s\""
+#~ msgstr "фајл [%s] је већ корисштен за исти медиј \"%s\""
+
+#~ msgid "found %d headers in cache"
+#~ msgstr "пронађено %d хедера у кеш меморији"
+
+#, fuzzy
+#~ msgid "found probed synthesis as %s"
+#~ msgstr "пронађена тестирана hdlist (или synthesis) као %s"
+
+#~ msgid "inconsistent list file for \"%s\", medium ignored"
+#~ msgstr "некохерентна датотека листе за \"%s\", медиј је игнорисан"
+
+#~ msgid "inconsistent medium \"%s\" marked removable but not really"
+#~ msgstr ""
+#~ "некохерентан медиј \"%s\" је означен као преносни али то није у стварности"
+
+#~ msgid "installing %s\n"
+#~ msgstr "Инсталирам %s\n"
+
+#~ msgid "invalid hdlist description \"%s\" in hdlists file"
+#~ msgstr "неправилан hdlist опис \"%s\" и hdlists фајлу"
+
+#, fuzzy
+#~ msgid "invalid hdlist name"
+#~ msgstr "погрешно име rpm датотеке [%s]"
+
+#, fuzzy
+#~ msgid "malformed URL: [%s]"
+#~ msgstr "погрешан унос: [%s]"
+
+#~ msgid "md5sum mismatch"
+#~ msgstr "md5sum не одговара"
+
+#~ msgid "medium \"%s\" does not define any location for rpm files"
+#~ msgstr "медиј \"%s\" не дефинише ни једну локацију за rpm фајлове"
+
+#~ msgid "medium \"%s\" is not selected"
+#~ msgstr "медиј \"%s\" није изабран"
+
+#~ msgid "medium \"%s\" trying to use an already used hdlist, medium ignored"
+#~ msgstr ""
+#~ "медиј \"%s\" покушава да користи hdlist која је већ коришћена, медиј ће "
+#~ "бити игнорисан"
+
+#~ msgid "medium \"%s\" trying to use an already used list, medium ignored"
+#~ msgstr ""
+#~ "медиј \"%s\" покушава да користи листу која је већ употребљена, медиј је "
+#~ "игнорисан"
+
+#~ msgid ""
+#~ "medium \"%s\" uses an invalid list file:\n"
+#~ "  mirror is probably not up-to-date, trying to use alternate method"
+#~ msgstr ""
+#~ "медиј \"%s\" користи фајл са погрешном листом:\n"
+#~ "  мирор вероватно није ажуриран, покушавам да користим алтернативни метод"
+
+#~ msgid "no rpm files found from [%s]"
+#~ msgstr "нема rpm датотека на [%s]"
+
+#~ msgid "nothing written in list file for \"%s\""
+#~ msgstr "нема шта да се упише у датотеку листе за \"%s\""
+
+#~ msgid "performing second pass to compute dependencies\n"
+#~ msgstr "сада се проверавају међузависности пакета\n"
+
+#~ msgid "problem reading hdlist or synthesis file of medium \"%s\""
+#~ msgstr "проблем са читањем hdlist или synthesis фајла за медиј \"%s\""
+
+#~ msgid "reading headers from medium \"%s\""
+#~ msgstr "читам хедере са медија \"%s\""
+
+#~ msgid "removing %d obsolete headers in cache"
+#~ msgstr "уклањам %d obsolete хедере у кеш меморији"
+
+#, fuzzy
+#~ msgid "retrieval of source hdlist (or synthesis) failed"
+#~ msgstr "добављам изорни hdlist (или synthesis) за \"%s\"..."
+
+#~ msgid "retrieving mirrors at %s ..."
+#~ msgstr "добављам мироре на %s ..."
+
+#~ msgid "there are multiple packages with the same rpm filename \"%s\""
+#~ msgstr "постоји више пакета са истим именом rpm датотеке \"%s\""
+
+#~ msgid "too many mount points for removable medium \"%s\""
+#~ msgstr "превише тачака монтирања за преносни медиј \"%s\""
+
+#, fuzzy
+#~ msgid "unable to access list file of \"%s\""
+#~ msgstr "не могу да парсирам hdlist датотеку за \"%s\""
+
+#~ msgid ""
+#~ "unable to access medium \"%s\",\n"
+#~ "this could happen if you mounted manually the directory when creating the "
+#~ "medium."
+#~ msgstr ""
+#~ "не могу да приступим медију \"%s\",\n"
+#~ "ово се може десити уколико сте ручно монтирали директоријум приликом "
+#~ "креирања медија."
+
+#~ msgid "unable to correctly parse [%s] on value \"%s\""
+#~ msgstr "не могу да исправно парсирам [%s] за вредност \"%s\""
+
+#~ msgid "unable to create medium \"%s\"\n"
+#~ msgstr "не могу да креирам медиј \"%s\"\n"
+
+#~ msgid "unable to find hdlist file for \"%s\", medium ignored"
+#~ msgstr "не могу да пронађем hdlist датотеку за \"%s\", медијум је игнорисан"
+
+#~ msgid "unable to find list file for \"%s\", medium ignored"
+#~ msgstr "немогу да пронађем датотеку листе за \"%s\", медијум је игнорисан"
+
+#~ msgid "unable to inspect list file for \"%s\", medium ignored"
+#~ msgstr "не могу да истражим датотеку листе за \"%s\", медиј је игнорисан"
+
+#, fuzzy
+#~ msgid "unable to mount the distribution medium"
+#~ msgstr "не могу да приступим првом инсталационом медију"
+
+#, fuzzy
+#~ msgid "unable to parse synthesis file of \"%s\""
+#~ msgstr "не могу да парсирам hdlist датотеку за \"%s\""
+
+#~ msgid "unable to read rpm files from [%s]: %s"
+#~ msgstr "не могу да прочитам rpm фајлове са [%s]: %s"
+
+#~ msgid "unable to remove package %s"
+#~ msgstr "не могу да уклоним пакет %s"
+
+#~ msgid "unable to retrieve pathname for removable medium \"%s\""
+#~ msgstr "не могу да добавим путању за преносни медиј \"%s\""
+
+#~ msgid "unable to update medium \"%s\"\n"
+#~ msgstr "не могу да ажурирам медиј \"%s\"\n"
+
+#~ msgid "unrequested"
+#~ msgstr "незахтевано"
+
+#~ msgid ""
+#~ "urpme version %s\n"
+#~ "%s\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpme верзија %s\n"
+#~ "%s\n"
+#~ "Ово је бесплатан софтвер и може бити редистрибуиран под условима GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "употреба:\n"
+
+#~ msgid ""
+#~ "urpmf version %s\n"
+#~ "%s\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmf верзија %s\n"
+#~ "%s\n"
+#~ "Ово је бесплатан софтвер и може бити редистрибуиран под условима GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "употреба:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "urpmf version %s\n"
+#~ "%s\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage: urpmf [options] pattern-expression\n"
+#~ msgstr ""
+#~ "urpmf верзија %s\n"
+#~ "%s\n"
+#~ "Ово је бесплатан софтвер и може бити редистрибуиран под условима GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "употреба:\n"
+
+#~ msgid ""
+#~ "urpmf version %s\n"
+#~ "Copyright (C) 2002-2004 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmf верзија %s\n"
+#~ "Copyright (C) 2002-2004 Mandriva.\n"
+#~ "Ово је бесплатан софтвер и може бити редистрибуиран под условима GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "употреба:\n"
 
 #, fuzzy
 #~ msgid ""
@@ -3563,314 +4221,76 @@ msgstr "Графички интерфејс за инсталацију RPM па
 #~ "употреба:\n"
 
 #, fuzzy
-#~ msgid "  --triggers     - do not execute package trigger(s).\n"
-#~ msgstr "  --description   - приказује таг описа: опис.\n"
-
-#, fuzzy
-#~ msgid "Cannot write DUDF file.\n"
-#~ msgstr "не могу да извршим упис у конфигурациону датотеку [%s]"
-
 #~ msgid ""
-#~ "  --sources      - give all source packages before downloading (root "
-#~ "only).\n"
-#~ msgstr ""
-#~ "  --sources      - приказује све изворне пакете пре download-а (само "
-#~ "root).\n"
-
-#, fuzzy
-#~ msgid "due to already installed %s"
-#~ msgstr "све је већ инсталирано"
-
-#~ msgid ""
-#~ "  --from         - use specified url for list of mirrors, the default is\n"
-#~ "                   %s\n"
-#~ msgstr ""
-#~ "  --from         - користи дату url адресу за лист мирора, подразумевано "
-#~ "је\n"
-#~ "                   %s\n"
-
-#, fuzzy
-#~ msgid "examining %s file"
-#~ msgstr "испитујем MD5SUM фајл"
-
-#, fuzzy
-#~ msgid "found probed synthesis as %s"
-#~ msgstr "пронађена тестирана hdlist (или synthesis) као %s"
-
-#~ msgid "  --update       - create an update medium.\n"
-#~ msgstr "  --update       - креира update медиј.\n"
-
-#, fuzzy
-#~ msgid "malformed URL: [%s]"
-#~ msgstr "погрешан унос: [%s]"
-
-#, fuzzy
-#~ msgid "%d installation transaction failed"
-#~ msgid_plural "%d installation transactions failed"
-#~ msgstr[0] "%d инстлациона трансакција није успела"
-#~ msgstr[1] "%d инстлациона трансакција није успела"
-#~ msgstr[2] "%d инстлациона трансакција није успела"
-
-#, fuzzy
-#~ msgid "Package %s can not be installed"
-#~ msgstr "све је већ инсталирано"
-
-#~ msgid "Checking to remove the following packages"
-#~ msgstr "Проверавам како бих уклонио следеће пакете"
-
-#, fuzzy
-#~ msgid "%s database locked"
-#~ msgstr "urpmi база података закључана"
-
-#, fuzzy
-#~ msgid "Unknown option %s"
-#~ msgstr ""
+#~ "urpmi.recover version %s\n"
+#~ "%s\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
 #~ "\n"
-#~ "непознате опције '%s'\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi.recover верзија %s\n"
+#~ "%s\n"
+#~ "Ово је бесплатан софтвер и може бити редистрибуиран под условима GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "употреба:\n"
 
-#~ msgid "too many mount points for removable medium \"%s\""
-#~ msgstr "превише тачака монтирања за преносни медиј \"%s\""
+#, fuzzy
+#~ msgid ""
+#~ "urpmq version %s\n"
+#~ "%s\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmq верзија %s\n"
+#~ "%s\n"
+#~ "Ово је бесплатан софтвер и може бити редистрибуиран под условима GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "употреба:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "usage: urpmi.addmedia [options] <name> <url>\n"
+#~ "where <url> is one of\n"
+#~ "       [file:/]/<path>\n"
+#~ "       ftp://<login>:<password>@<host>/<path>\n"
+#~ "       ftp://<host>/<path>\n"
+#~ "       http://<host>/<path>\n"
+#~ "       cdrom://<path>\n"
+#~ "\n"
+#~ "usage: urpmi.addmedia [options] --distrib --mirrorlist <url>\n"
+#~ "usage: urpmi.addmedia [options] --mirrorlist <url> <name> <relative "
+#~ "path>\n"
+#~ "\n"
+#~ "examples:\n"
+#~ "\n"
+#~ "  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
+#~ "  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/"
+#~ "backports\n"
+#~ "  urpmi.addmedia --distrib --zeroconf\n"
+#~ "\n"
+#~ "\n"
+#~ "and [options] are from\n"
+#~ msgstr ""
+#~ "употреба: urpmi.addmedia [опције] <име> <url> [with <релативном_путања>]\n"
+#~ "где је <url> један од\n"
+#~ "       [file:/]/<путања> with <релативно име датотеке са hdlist>\n"
+#~ "       ftp://<login>:<лозинка>@<host>/<путања> with <релативно име "
+#~ "датотеке са hdlist>\n"
+#~ "       ftp://<host>/<путања> with <релативно име датотеке са hdlist>\n"
+#~ "       http://<host>/<путања> with <релативно име датотеке са hdlist>\n"
+#~ "\n"
+#~ "       removable://<путања> with <релативно име датотеке са hdlist>\n"
 
 #~ msgid "using different removable device [%s] for \"%s\""
 #~ msgstr "користећи различит преносни уређај или [%s] за \"%s\""
 
-#~ msgid "unable to retrieve pathname for removable medium \"%s\""
-#~ msgstr "не могу да добавим путању за преносни медиј \"%s\""
-
-#, fuzzy
-#~ msgid "unable to mount the distribution medium"
-#~ msgstr "не могу да приступим првом инсталационом медију"
-
-#~ msgid ""
-#~ "unable to access medium \"%s\",\n"
-#~ "this could happen if you mounted manually the directory when creating the "
-#~ "medium."
-#~ msgstr ""
-#~ "не могу да приступим медију \"%s\",\n"
-#~ "ово се може десити уколико сте ручно монтирали директоријум приликом "
-#~ "креирања медија."
-
-#~ msgid "inconsistent medium \"%s\" marked removable but not really"
-#~ msgstr ""
-#~ "некохерентан медиј \"%s\" је означен као преносни али то није у стварности"
-
-#~ msgid "  -c             - clean headers cache directory.\n"
-#~ msgstr "  -c             - чисти директоријум са кешом надглавља.\n"
-
-#~ msgid "virtual medium needs to be local"
-#~ msgstr "виртуални медиј мора да буде локални"
-
-#, fuzzy
-#~ msgid "unable to parse synthesis file of \"%s\""
-#~ msgstr "не могу да парсирам hdlist датотеку за \"%s\""
-
-#, fuzzy
-#~ msgid "computing md5sum of existing source hdlist (or synthesis) [%s]"
-#~ msgstr "прорачунавам md5sum постојеће source hdlist (или synthesis)"
-
-#~ msgid ""
-#~ "virtual medium \"%s\" should not have defined hdlist or list file, medium "
-#~ "ignored"
-#~ msgstr ""
-#~ "виртуални медиј \"%s\" не би требао да има дефинисиану  hdlist или листу "
-#~ "фајлова, игноришем медиј"
-
-#, fuzzy
-#~ msgid "invalid hdlist name"
-#~ msgstr "погрешно име rpm датотеке [%s]"
-
-#~ msgid "unable to find list file for \"%s\", medium ignored"
-#~ msgstr "немогу да пронађем датотеку листе за \"%s\", медијум је игнорисан"
-
-#, fuzzy
-#~ msgid "\"synthesis\" should not be set (medium \"%s\")"
-#~ msgstr "покушавам да селектујем непостојећи медиј \"%s\""
-
-#, fuzzy
-#~ msgid "\"synthesis\" should be set (medium \"%s\")"
-#~ msgstr "креирам hdlist симтезну датотеку за медиј \"%s\""
-
-#, fuzzy
-#~ msgid "unable to access list file of \"%s\""
-#~ msgstr "не могу да парсирам hdlist датотеку за \"%s\""
-
-#~ msgid "medium \"%s\" trying to use an already used hdlist, medium ignored"
-#~ msgstr ""
-#~ "медиј \"%s\" покушава да користи hdlist која је већ коришћена, медиј ће "
-#~ "бити игнорисан"
-
-#~ msgid "medium \"%s\" trying to use an already used list, medium ignored"
-#~ msgstr ""
-#~ "медиј \"%s\" покушава да користи листу која је већ употребљена, медиј је "
-#~ "игнорисан"
-
-#~ msgid "performing second pass to compute dependencies\n"
-#~ msgstr "сада се проверавају међузависности пакета\n"
-
-#~ msgid "building hdlist [%s]"
-#~ msgstr "креирам hdlist [%s]"
-
-#~ msgid "problem reading hdlist or synthesis file of medium \"%s\""
-#~ msgstr "проблем са читањем hdlist или synthesis фајла за медиј \"%s\""
-
-#~ msgid "computing md5sum of copied source hdlist (or synthesis)"
-#~ msgstr "прорачунавам md5sum копиране  source hdlist (или  synthesis)"
-
-#~ msgid "...retrieving failed: md5sum mismatch"
-#~ msgstr "...повраћај неуспео: md5sum не одговара"
-
-#~ msgid "no rpm files found from [%s]"
-#~ msgstr "нема rpm датотека на [%s]"
-
-#~ msgid "unable to read rpm files from [%s]: %s"
-#~ msgstr "не могу да прочитам rpm фајлове са [%s]: %s"
-
-#~ msgid "reading headers from medium \"%s\""
-#~ msgstr "читам хедере са медија \"%s\""
-
-#, fuzzy
-#~ msgid "    --probe-synthesis - use synthesis file.\n"
-#~ msgstr ""
-#~ "  --probe-synthesis - покушава да пронађе и користи synthesis фајл.\n"
-
-#, fuzzy
-#~ msgid "    --probe-hdlist - use hdlist file.\n"
-#~ msgstr "  --probe-hdlist - покушава да пронађе и користи hdlist фајл.\n"
-
-#, fuzzy
-#~ msgid "  --probe-hdlist - use hdlist file.\n"
-#~ msgstr "  --probe-hdlist - покушава да пронађе и користи hdlist фајл.\n"
-
-#~ msgid "unable to update medium \"%s\"\n"
-#~ msgstr "не могу да ажурирам медиј \"%s\"\n"
-
-#~ msgid "unable to create medium \"%s\"\n"
-#~ msgstr "не могу да креирам медиј \"%s\"\n"
-
-#~ msgid "there are multiple packages with the same rpm filename \"%s\""
-#~ msgstr "постоји више пакета са истим именом rpm датотеке \"%s\""
-
-#~ msgid "unable to correctly parse [%s] on value \"%s\""
-#~ msgstr "не могу да исправно парсирам [%s] за вредност \"%s\""
-
-#~ msgid ""
-#~ "medium \"%s\" uses an invalid list file:\n"
-#~ "  mirror is probably not up-to-date, trying to use alternate method"
-#~ msgstr ""
-#~ "медиј \"%s\" користи фајл са погрешном листом:\n"
-#~ "  мирор вероватно није ажуриран, покушавам да користим алтернативни метод"
-
-#~ msgid "medium \"%s\" does not define any location for rpm files"
-#~ msgstr "медиј \"%s\" не дефинише ни једну локацију за rpm фајлове"
-
-#~ msgid "unrequested"
-#~ msgstr "незахтевано"
-
-#~ msgid "adding package %s (id=%d, eid=%d, update=%d, file=%s)"
-#~ msgstr "додајем пакет %s (id=%d, eid=%d, update=%d, file=%s)"
-
-#, fuzzy
-#~ msgid ""
-#~ "The following packages have bad signatures:\n"
-#~ "%s\n"
-#~ "\n"
-#~ "Do you want to continue installation ?"
-#~ msgstr ""
-#~ "Следећи пакети имају лоше потписе:\n"
-#~ "\n"
-#~ "%s\n"
-#~ "\n"
-#~ "да ли желите да наставите инсталацију?"
-
-#, fuzzy
-#~ msgid "You need to be root to use --use-distrib"
-#~ msgstr "Морате да рестартујете машину да би кориситили ову команду ! \n"
-
-#~ msgid "unable to remove package %s"
-#~ msgstr "не могу да уклоним пакет %s"
-
-#, fuzzy
-#~ msgid "No filelist found\n"
-#~ msgstr "Слике нису пронађене"
-
-#~ msgid "medium \"%s\" is not selected"
-#~ msgstr "медиј \"%s\" није изабран"
-
-#, fuzzy
-#~ msgid "Remove %d packages?"
-#~ msgstr "уклањам пакет %s"
-
-#~ msgid "  -f             - force generation of hdlist files.\n"
-#~ msgstr "  -f             - приморава на генерисање hdlist фајлова.\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "  -P             - do not search in provides to find package (default).\n"
-#~ msgstr "  -P             - не претражује доступне ради налажења пакета.\n"
-
-#~ msgid "  -R             - reverse search to what requires package.\n"
-#~ msgstr "  -R             - претрага уназад за оним што захтева пакет.\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "  -RR            - extended reverse search (includes virtual packages).\n"
-#~ msgstr "  -R             - претрага уназад за оним што захтева пакет.\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "To satisfy dependencies, the following %d packages are going to be "
-#~ "installed:\n"
-#~ "%s\n"
-#~ msgstr ""
-#~ "Да би задовољили међузависности, следећи пакет(и) такође треба\n"
-#~ "да се инсталирају:\n"
-#~ "\n"
-
-#, fuzzy
-#~ msgid "Installing packages on nodes..."
-#~ msgstr "Инсталирам пакет `%s' (%s/%s)..."
-
-#, fuzzy
-#~ msgid "Propagating synthesis to %s..."
-#~ msgstr "испитујем synthesis фајл [%s]"
-
-#, fuzzy
-#~ msgid "Distributing files to %s..."
-#~ msgstr "дистрибуирам %s"
-
-#, fuzzy
-#~ msgid "Performing install on %s..."
-#~ msgstr "Инсталација пакета..."
-
-#, fuzzy
-#~ msgid "Preparing install on %s..."
-#~ msgstr "Инсталација пакета..."
-
-#~ msgid "  --probe-synthesis - try to find and use synthesis file.\n"
-#~ msgstr ""
-#~ "  --probe-synthesis - покушава да пронађе и користи synthesis фајл.\n"
-
-#~ msgid "  --probe-hdlist - try to find and use hdlist file.\n"
-#~ msgstr "  --probe-hdlist - покушава да пронађе и користи hdlist фајл.\n"
-
-#~ msgid "`with' missing for network media\n"
-#~ msgstr "`with' недостатком за мрежни ftp медиј\n"
-
-#~ msgid ""
-#~ "\n"
-#~ "unknown options '%s'\n"
-#~ msgstr ""
-#~ "\n"
-#~ "непознате опције '%s'\n"
-
-#~ msgid "unable to find hdlist file for \"%s\", medium ignored"
-#~ msgstr "не могу да пронађем hdlist датотеку за \"%s\", медијум је игнорисан"
-
-#~ msgid "inconsistent list file for \"%s\", medium ignored"
-#~ msgstr "некохерентна датотека листе за \"%s\", медиј је игнорисан"
-
-#~ msgid "unable to inspect list file for \"%s\", medium ignored"
-#~ msgstr "не могу да истражим датотеку листе за \"%s\", медиј је игнорисан"
+#~ msgid "using process %d for executing transaction"
+#~ msgstr "користим процес %d за извршење трансакције"
 
 #~ msgid "virtual medium \"%s\" is not local, medium ignored"
 #~ msgstr "виртуални медиј \"%s\" није локални, игноришем медиј"
@@ -3882,232 +4302,15 @@ msgstr "Графички интерфејс за инсталацију RPM па
 #~ "виртуални медиј \"%s\" би требао да има исправан source hdlist или "
 #~ "synthesis, игноришем медиј"
 
-#~ msgid "copying source hdlist (or synthesis) of \"%s\"..."
-#~ msgstr "копирање изворне hdlist (или synthesis) за \"%s\"..."
-
-#, fuzzy
-#~ msgid "retrieval of source hdlist (or synthesis) failed"
-#~ msgstr "добављам изорни hdlist (или synthesis) за \"%s\"..."
-
-#~ msgid "file [%s] already used in the same medium \"%s\""
-#~ msgstr "фајл [%s] је већ корисштен за исти медиј \"%s\""
-
-#~ msgid "nothing written in list file for \"%s\""
-#~ msgstr "нема шта да се упише у датотеку листе за \"%s\""
-
-#~ msgid "found %d headers in cache"
-#~ msgstr "пронађено %d хедера у кеш меморији"
-
-#~ msgid "removing %d obsolete headers in cache"
-#~ msgstr "уклањам %d obsolete хедере у кеш меморији"
-
-#~ msgid "using process %d for executing transaction"
-#~ msgstr "користим процес %d за извршење трансакције"
-
-#, fuzzy
-#~ msgid "  --norebuild    - don't try to rebuild hdlist if not readable.\n"
-#~ msgstr "  --buildhost    - приказује таг buildhost: build host.\n"
-
-#, fuzzy
-#~ msgid "The following package names were assumed: %s"
-#~ msgstr "Следећи пакети садрже %s: %s"
-
-#~ msgid "copying hdlists file..."
-#~ msgstr "копирам hdlist фајл..."
-
-#~ msgid "invalid hdlist description \"%s\" in hdlists file"
-#~ msgstr "неправилан hdlist опис \"%s\" и hdlists фајлу"
-
-#~ msgid "Is this OK?"
-#~ msgstr "Да ли је овако добро?"
-
 #~ msgid ""
-#~ "  --version      - use specified distribution version, the default is "
-#~ "taken\n"
-#~ "                   from the version of the distribution told by the\n"
-#~ "                   installed mandriva-release package.\n"
+#~ "virtual medium \"%s\" should not have defined hdlist or list file, medium "
+#~ "ignored"
 #~ msgstr ""
-#~ "  --version      - користи дату верзију дистрибуције, default је узета\n"
-#~ "                   из верзије дистрибуције која је наведена у\n"
-#~ "                   деинсталираном mandriva-release пакету.\n"
+#~ "виртуални медиј \"%s\" не би требао да има дефинисиану  hdlist или листу "
+#~ "фајлова, игноришем медиј"
 
-#~ msgid ""
-#~ "  --arch         - use specified architecture, the default is arch of\n"
-#~ "                   mandriva-release package installed.\n"
-#~ msgstr ""
-#~ "  --arch         - користи дату архитектуру, подразумеваноа је "
-#~ "архитектура\n"
-#~ "                   инсталираног mandriva-release пакета.\n"
+#~ msgid "virtual medium needs to be local"
+#~ msgstr "виртуални медиј мора да буде локални"
 
-#~ msgid ""
-#~ "  --headers      - extract headers for package listed from urpmi db to\n"
-#~ "                   stdout (root only).\n"
-#~ msgstr ""
-#~ "  --headers      - екстрактује хедере за пакете приказане из urpmi db на\n"
-#~ "                   stdout (само root).\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "To satisfy dependencies, the following %d packages are going to be "
-#~ "installed (%d MB)"
-#~ msgstr ""
-#~ "Да би задовољили међузависности, следећи пакет(и) такође треба\n"
-#~ "да се инсталирају:\n"
-#~ "\n"
-
-#~ msgid "installing %s\n"
-#~ msgstr "Инсталирам %s\n"
-
-#~ msgid ""
-#~ "Automatic installation of packages...\n"
-#~ "You requested installation of package %s\n"
-#~ msgstr ""
-#~ "Аутоматска инсталација пакета...\n"
-#~ "Захтевали сте инсталацију пакета %s\n"
-
-#~ msgid "%s: command not found\n"
-#~ msgstr "%s: команда није пронађена\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "Some package requested cannot be installed:\n"
-#~ "%s\n"
-#~ "Continue?"
-#~ msgstr ""
-#~ "Неки изабрани пакети се не могу инсталирати:\n"
-#~ "%s"
-
-#~ msgid "md5sum mismatch"
-#~ msgstr "md5sum не одговара"
-
-#~ msgid ""
-#~ "urpmf version %s\n"
-#~ "Copyright (C) 2002-2004 Mandriva.\n"
-#~ "This is free software and may be redistributed under the terms of the GNU "
-#~ "GPL.\n"
-#~ "\n"
-#~ "usage:\n"
-#~ msgstr ""
-#~ "urpmf верзија %s\n"
-#~ "Copyright (C) 2002-2004 Mandriva.\n"
-#~ "Ово је бесплатан софтвер и може бити редистрибуиран под условима GNU "
-#~ "GPL.\n"
-#~ "\n"
-#~ "употреба:\n"
-
-#~ msgid "  --synthesis    - use the synthesis given instead of urpmi db.\n"
-#~ msgstr "  --synthesis    - користи дати synthesis уместо urpmi-јеве базе.\n"
-
-#~ msgid ""
-#~ "  --quiet        - do not print tag name (default if no tag given on "
-#~ "command\n"
-#~ "                   line, incompatible with interactive mode).\n"
-#~ msgstr ""
-#~ "  --quiet        - не приказује има тага (стандардна опција уколико није\n"
-#~ "                   дат таг у команди линија, некомпатибилна са "
-#~ "интерактивним\n"
-#~ "                   модом).\n"
-
-#~ msgid "  --all          - print all tags.\n"
-#~ msgstr "  --all           - приказује све тагове.\n"
-
-#~ msgid "  --summary      - print tag summary: summary.\n"
-#~ msgstr "  --summary       - приказује таг сажетка: сажетак.\n"
-
-#~ msgid "  --description  - print tag description: description.\n"
-#~ msgstr "  --description   - приказује таг описа: опис.\n"
-
-#~ msgid "  --buildhost    - print tag buildhost: build host.\n"
-#~ msgstr "  --buildhost    - приказује таг buildhost: build host.\n"
-
-#~ msgid "  --provides     - print tag provides: all provides.\n"
-#~ msgstr "  --provides      - приказује таг обезбеђује: све обезбеђује.\n"
-
-#~ msgid "  --requires     - print tag requires: all requires.\n"
-#~ msgstr "  --requires      - приказује таг захтева: сви захтеви\n"
-
-#~ msgid "  --files        - print tag files: all files.\n"
-#~ msgstr "  --files         - приказује таг фајлове: све фајлове.\n"
-
-#~ msgid "  --obsoletes    - print tag obsoletes: all obsoletes.\n"
-#~ msgstr ""
-#~ "  --obsoletes     - приказује таг вишак: сви вишкови (у више реда).\n"
-
-#~ msgid ""
-#~ "  --env          - use specific environment (typically a bug\n"
-#~ "                   report).\n"
-#~ msgstr ""
-#~ "  --env          - користи специфично окружење (типично извештај о "
-#~ "грешци).\n"
-
-#~ msgid "  -i             - ignore case distinctions in every pattern.\n"
-#~ msgstr ""
-#~ "  -i             - игнорише разлику у карактеру у било којој шеми.\n"
-
-#~ msgid ""
-#~ "  -a             - binary AND operator, true if both expression are "
-#~ "true.\n"
-#~ msgstr ""
-#~ "  -a             - инарни AND оператор, истинит уколико су оба израза "
-#~ "истинита.\n"
-
-#~ msgid ""
-#~ "  -o             - binary OR operator, true if one expression is true.\n"
-#~ msgstr ""
-#~ "  -o             - бинарни OR оператор, истинит уколико је један израз "
-#~ "тачан.\n"
-
-#~ msgid "  !              - unary NOT, true if expression is false.\n"
-#~ msgstr ""
-#~ "  !              - бинарни NOT, истинит уколико је израз погрешан.\n"
-
-#~ msgid "  (              - left parenthesis to open group expression.\n"
-#~ msgstr "  (              - лева заграда за отоврање групе израза.\n"
-
-#~ msgid "  )              - right parenthesis to close group expression.\n"
-#~ msgstr "  )              - десна заграда за затварање групе израза.\n"
-
-#~ msgid ""
-#~ "callback is:\n"
-#~ "%s\n"
-#~ msgstr ""
-#~ "повратни је :\n"
-#~ "%s\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "Continue?"
-#~ msgstr "Настави"
-
-#~ msgid ""
-#~ "Some package requested cannot be installed:\n"
-#~ "%s"
-#~ msgstr ""
-#~ "Неки изабрани пакети се не могу инсталирати:\n"
-#~ "%s"
-
-#, fuzzy
-#~ msgid ""
-#~ "  --keep         - keep existing packages if possible, reject requested\n"
-#~ "                   packages that leads to remove.\n"
-#~ msgstr ""
-#~ "  --keep         - задржава постојеће пакет уколико је могуће, одбацује "
-#~ "захтевани пакет\n"
-#~ "                   који води уклањању.\n"
-
-#~ msgid ""
-#~ "  --distrib-XXX  - automatically create a medium for XXX part of a\n"
-#~ "                   distribution, XXX may be main, contrib, updates or\n"
-#~ "                   anything else that has been configured ;-)\n"
-#~ msgstr ""
-#~ "  --distrib-XXX  - аутоматски направи медијум за XXX-ти део\n"
-#~ "                   диструбиуције, XXX може да буде главни, додатак\n"
-#~ "                   надоградња или блио шта друго што може да се "
-#~ "подеси ;-)\n"
-
-#~ msgid "cannot add updates of a cooker distribution\n"
-#~ msgstr "не могу да додам надоградње cooker дистрибуцији\n"
-
-#~ msgid "retrieving mirrors at %s ..."
-#~ msgstr "добављам мироре на %s ..."
+#~ msgid "wrote config file [%s]"
+#~ msgstr "уписујем у конфигурациону датотеку [%s]"

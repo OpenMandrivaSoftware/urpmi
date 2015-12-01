@@ -174,7 +174,7 @@ Checks if the main filesystems are writable for urpmi to install files in
 
 sub check_fs_writable () {
     foreach (proc_self_mountinfo()) {
-        (undef, undef, undef, undef, our $mountpoint, my $opts) = split ' ';
+	(undef, undef, undef, undef, our $mountpoint, my $opts) = split ' ';
 	if ($opts =~ /(?:^|,)ro(?:,|$)/ && $mountpoint =~ m!^(/|/usr|/s?bin)\z!) {
 	    return 0;
 	}

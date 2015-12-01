@@ -5,7 +5,7 @@ package urpm::media;
 use strict;
 use urpm qw(file_from_local_medium is_local_medium);
 use urpm::msg;
-use urpm::util qw(any append_to_file basename cat_ difference2 dirname member output_safe begins_with copy_and_own file_size offset_pathname reduce_pathname);
+use urpm::util qw(any append_to_file basename cat_ difference2 dirname intersection member output_safe begins_with copy_and_own file_size offset_pathname reduce_pathname);
 use urpm::removable;
 use urpm::lock;
 use urpm::md5sum;
@@ -20,6 +20,7 @@ our @PER_MEDIA_OPT = qw(
     list
     media_info_dir
     mirrorlist
+    mirrorbrain
     name
     filename
     no-media-info
@@ -190,7 +191,7 @@ sub _read_config__read_media_info {
 	my $distribconf = MDV::Distribconf->new($media_cfg, undef) or next;
 	$distribconf->settree('mandriva');
 	$distribconf->parse_mediacfg($media_cfg) or next;
-    
+
 	foreach (cat_($media_dir . '/url')) {
 	    chomp($_);
 	    foreach my $medium ($distribconf->listmedia) {
@@ -762,6 +763,54 @@ sub _auto_update_media {
     }
 }
 
+
+=item needed_extra_media($urpm)
+
+Return 2 booleans telling whether nonfree & tainted packages are installed respectively.
+
+=cut
+
+sub needed_extra_media {
+    my ($urpm) = @_;
+    my $db = urpm::db_open_or_die_($urpm);
+    my ($nonfree, $tainted);
+    $db->traverse(sub {
+	my ($pkg) = @_;
+	return if $nonfree && $tainted;
+	my $rel = $pkg->release;
+	$nonfree ||= $rel =~ /nonfree$/;
+	$tainted ||= $rel =~ /tainted$/;
+    });
+    ($nonfree, $tainted);
+}
+
+sub is_media_to_add_by_default {
+    my ($urpm, $distribconf, $medium, $product_id, $nonfree, $tainted) = @_;
+    my $add_by_default = !$distribconf->getvalue($medium, 'noauto');
+    my @media_types = split(':', $distribconf->getvalue($medium, 'media_type'));
+    return $add_by_default if !@media_types;
+    if ($product_id->{product} eq 'Free') {
+	if (member('non-free', @media_types)) {
+	    $urpm->{log}(N("ignoring non-free medium `%s'", $medium));
+	    $add_by_default = 0;
+	}
+    } else {
+	my $non_regular_medium = intersection(\@media_types, [ qw(backports debug source testing) ]);
+	if (!$add_by_default && !$non_regular_medium) {
+	    my $medium_name = $distribconf->getvalue($medium, 'name') || '';
+	    if ($medium_name =~ /Non-free/ && $nonfree) {
+		$add_by_default = 1;
+		$urpm->{log}(N("un-ignoring non-free medium `%s' b/c nonfree packages are installed", $medium_name));
+	    }
+	    if ($medium_name =~ /Restricted/ && $tainted) {
+		$add_by_default = 1;
+		$urpm->{log}(N("un-ignoring tainted medium `%s' b/c tainted packages are installed", $medium_name));
+	    }
+	}
+    }
+    $add_by_default;
+}
+
 sub non_ignored_media {
     my ($urpm, $b_only_marked_update) = @_;
 
@@ -911,8 +960,10 @@ sub add_medium {
 		url => $url, 
 		modified => !$options{ignore}, 
 		(defined $options{'verify-rpm'} ? ('verify-rpm' => $options{'verify-rpm'}) : ()),
+		(defined $options{'mirrorbrain'} ? ('mirrorbrain' => $options{'mirrorbrain'}) : ()),
+
 	    };
-    foreach (qw(downloader update ignore media_info_dir mirrorlist with-dir xml-info)) {
+    foreach (qw(downloader update ignore media_info_dir mirrorlist mirrorbrain with-dir xml-info)) {
 	$medium->{$_} = $options{$_} if exists $options{$_};
     }
 
@@ -1098,6 +1149,7 @@ sub add_distrib_media {
 
     require urpm::mirrors;
     my $product_id = urpm::mirrors::parse_LDAP_namespace_structure(cat_('/etc/product.id'));
+    my ($nonfree, $tainted) = needed_extra_media($urpm);
 
     foreach my $media ($distribconf->listmedia) {
         my $media_name = $distribconf->getvalue($media, 'name') || '';
@@ -1115,14 +1167,8 @@ sub add_distrib_media {
 	    $is_update_media or next;
 	}
 
-        my $add_by_default = !$distribconf->getvalue($media, 'noauto');
-        my @media_types = split(':', $distribconf->getvalue($media, 'media_type'));
-        if ($product_id->{product} eq 'Free') {
-            if (member('non-free', @media_types)) {
-                $urpm->{log}(N("ignoring non-free medium `%s'", $media));
-                $add_by_default = 0;
-            }
-        }
+        my $add_by_default = is_media_to_add_by_default($urpm, $distribconf, $media, $product_id, $nonfree, $tainted);
+
 	my $ignore;
         if ($options{ask_media}) {
             $options{ask_media}->($media_name, $add_by_default) or next;
@@ -1338,16 +1384,24 @@ sub may_reconfig_urpmi {
     $reconfigured;
 }
 
-#- read a reconfiguration file for urpmi, and reconfigure media accordingly
-#- $rfile is the reconfiguration file (local), $name is the media name
-#-
-#- the format is similar to the RewriteRule of mod_rewrite, so:
-#-    PATTERN REPLACEMENT [FLAG]
-#- where FLAG can be L or N
-#-
-#- example of reconfig.urpmi:
-#-    # this is an urpmi reconfiguration file
-#-    /cooker /cooker/$ARCH
+=item reconfig_urpmi($urpm, $rfile, $medium)
+
+Read a reconfiguration file for urpmi, and reconfigure media accordingly.
+$rfile is the reconfiguration file (local), $name is the media name
+
+the format is similar to the RewriteRule of mod_rewrite, so:
+
+   PATTERN REPLACEMENT [FLAG]
+
+where FLAG can be L or N
+
+example of reconfig.urpmi:
+
+   # this is an urpmi reconfiguration file
+   /cooker /cooker/$ARCH
+
+=cut
+
 sub reconfig_urpmi {
     my ($urpm, $rfile, $medium) = @_;
     -r $rfile or return;

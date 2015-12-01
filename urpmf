@@ -83,6 +83,8 @@ usage: urpmf [options] pattern-expression
 ") . N("  --vendor       - vendor
 ") . N("  -m             - the media in which the package was found
 ") . N("  -f             - print version, release and arch with name.
+") . N("  --define, -D   - define macro after all the others have been defined.
+") . N("  --predefine    - predefine macro before any others have been defined.
 ");
     exit(1);
 }

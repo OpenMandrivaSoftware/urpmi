@@ -8,7 +8,7 @@ use urpm::util qw(any formatList intersection member min partition uniq);
 use urpm::sys;
 use URPM;
 
-my $default_priority_list = 'rpm,perl-RPMBDB,perl-URPM,perl-Locale-gettext,perl-MDV-Distribconf,urpmi,meta-task,glibc,aria2,systemd,shared-mime-info';
+my $default_priority_list = 'rpm,perl-RPMBDB,perl-URPM,perl-MDV-Distribconf,perl-File-Sync,urpmi,meta-task,glibc,aria2,systemd';
 my @priority_list = split(',', $default_priority_list);
 
 my $evr_re = qr/[^\-]*-[^\-]*\.[^\.\-]*$/;
@@ -820,6 +820,9 @@ sub translate_why_removed_one {
     #- now insert the reason if available.
     $fullname . ($s ? "\n ($s)" : '');
 }
+
+sub _libdb_version { $_[0] =~ /libdb-(\S+)\.so/ ? version->new("v$1") : () }
+sub _rpm_version() { `rpm --version` =~ /version ([0-9.]+)(?:-(beta|rc).*)?$/ ? version->new("v$1") : () }
 
 sub should_we_migrate_rpmdb_db_version {
     my ($urpm, $state) = @_;

@@ -19,7 +19,7 @@ GOALS = $(PGOAL).pot $(MOFILES)
 all: $(GOALS)
 
 %.mo: %.po
-	msgfmt -c -o $@ $<
+	msgfmt -o $@ $<
 
 update_n_merge: $(PGOAL).pot merge
 
@@ -30,11 +30,33 @@ merge:
 	    mv -f "$$n"t "$$n"; \
 	done
 
-$(PGOAL).pot: $(PL_FILES)
-	intltool-update --gettext-package desktopstuff --pot
-	perl_checker -q --generate-pot $(PGOAL)_tmp.pot $(PL_FILES)
-	[ ! -e $(PGOAL)_tmp.pot ] || msgcat --use-first $(PGOAL)_tmp.pot desktopstuff.pot > $@
-	rm -f desktopstuff.pot $(PGOAL)_tmp.pot 
+# there are better ways to do this, but..
+merge_openmandriva_translations: $(PGOAL).pot
+	@for n in $(POFILES); do \
+		echo "Merging $$n translations from OpenMandriva"; \
+		mv "$$n" "$$n.orig"; \
+		git checkout --theirs mageia/master "$$n"; \
+		if [ $$? -eq 0 ]; then \
+			sed -e '/^$$/q' "$$n.orig" > "$$n.header"; \
+			sed -e 's#oondrake#oondrake#g' -i "$$n"; \
+			msgcat --use-first -o "$$n.temp" -t utf-8 -s "$$n.orig" "$$n"; \
+			git checkout --theirs remotes/origin/HEAD "$$n"; \
+			msgcat --use-first -o "$$n.orig" -t utf-8 -s "$$n.header" "$$n.temp"; \
+			rm "$$n.temp" "$$n.header"; \
+		fi; \
+		mv "$$n.orig" "$$n"; \
+		msgmerge "$$n" $^ > "$$n"t; \
+		mv -f "$$n"t "$$n"; \
+	done
+
+$(PGOAL).pot: $(PL_FILES) POTFILES.in
+	intltool-update --gettext-package non-perl --pot
+	perl_checker -q --generate-pot .$@ $(PL_FILES)
+	msgcat -w 2048 --use-first .$@ non-perl.pot > $@
+	rm -f non-perl.pot .$@
+
+POTFILES.in:
+	(cd .. ; /bin/ls -1 *.desktop.in polkit/*.policy.in; ) > POTFILES.in
 
 install: all
 	for l in $(LANGS); do \
@@ -43,7 +65,7 @@ install: all
 	done
 
 clean:
-	@rm -rf *~ *.mo $(GOALS) $(PGOAL)_tmp.pot
+	@rm -rf *~ *.mo $(GOALS) $(PGOAL)_tmp.pot POTFILES.in
 
 test:
 

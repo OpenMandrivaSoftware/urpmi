@@ -111,6 +111,8 @@ usage:
 ") . N("  -u             - remove package if a more recent version is already installed.
 ") . N("  -y             - impose fuzzy search (same as --fuzzy).
 ") . N("  -Y             - like -y, but forces to match case-insensitively.
+") . N("  --define, -D   - define macro after all the others have been defined.
+") . N("  --predefine    - predefine macro before any others have been defined.
 ") . "\n" . N("  names or rpm files given on command line are queried.
 ");
     exit(1);

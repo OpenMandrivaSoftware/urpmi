@@ -40,12 +40,12 @@ urpm::download - download routines for the urpm* tools
 =cut
 
 
-sub ftp_http_downloaders() { qw(wget curl prozilla aria2) }
+sub ftp_http_downloaders() { qw(curl wget prozilla aria2) }
 
 sub available_ftp_http_downloaders() {
     my %binaries = (
-	wget => 'wget',
-	curl => 'curl',
+	curl => 'curl', 
+	wget => 'wget', 
 	prozilla => 'proz',
 	aria2 => 'aria2c',
     );
@@ -64,11 +64,11 @@ sub available_metalink_downloaders() {
 sub use_metalink {
     my ($urpm, $medium) = @_;
 
-    $medium->{allow_metalink} //= do {
+    if ($medium->{mirrorbrain} || $medium->{allow_metalink}) {
 	my $use_metalink = 1;
 	preferred_downloader($urpm, $medium, \$use_metalink);
 	$use_metalink;
-    };
+    }
 }
 
 my %warned;
@@ -77,7 +77,7 @@ sub preferred_downloader {
 
     my @available = urpm::download::available_ftp_http_downloaders();
     my @metalink_downloaders = urpm::download::available_metalink_downloaders();
-    my $metalink_disabled = !$$use_metalink && $medium->{disable_metalink};
+    my $metalink_disabled = !$$use_metalink && !$medium->{mirrorbrain} && $medium->{disable_metalink};
 
     if ($$use_metalink && !$metalink_disabled) {
 	#- If metalink is used, only aria2 is available as other downloaders doesn't support metalink
@@ -85,7 +85,7 @@ sub preferred_downloader {
     }
 	    
     #- first downloader of @available is the default one
-    my $preferred = $available[0];
+    my $preferred = (@metalink_downloaders && !$metalink_disabled) ? $metalink_downloaders[0] : $available[0];
     my $requested_downloader = requested_ftp_http_downloader($urpm, $medium);
     if ($requested_downloader) {
 	if (member($requested_downloader, @available)) {
@@ -613,8 +613,7 @@ sub sync_rsync {
 		($options->{quiet} ? qw(-q) : qw(--progress -v --no-human-readable)),
 		($options->{compress} ? qw(-z) : @{[]}),
 		($options->{ssh} ? qq(-e $options->{ssh}) : 
-		   ("--timeout=$CONNECT_TIMEOUT",
-		    "--contimeout=$CONNECT_TIMEOUT")),
+		   ("--timeout=$CONNECT_TIMEOUT")),
 		qw(--partial --no-whole-file --no-motd --copy-links),
 		(defined $options->{'rsync-options'} ? split /\s+/, $options->{'rsync-options'} : @{[]}),
 		"'$file' '$options->{dir}' 2>&1");
@@ -925,7 +924,7 @@ sub _all_options {
 	$urpm->{debug} ? (debug => $urpm->{debug}) : @{[]},
 	%$options,
     );
-    foreach my $cpt (qw(compress limit-rate retry wget-options curl-options rsync-options prozilla-options aria2-options metalink)) {
+    foreach my $cpt (qw(compress limit-rate retry wget-options curl-options rsync-options prozilla-options aria2-options metalink mirrorbrain)) {
 	$all_options{$cpt} = $urpm->{options}{$cpt} if defined $urpm->{options}{$cpt};
     }
     \%all_options;
@@ -1019,7 +1018,7 @@ sub _sync_webfetch_raw {
 	$urpm->{fatal}(10, $@) if $@;
     } elsif ($proto eq 'rsync') {
 	sync_rsync($options, @$files);
-    } elsif (member($proto, 'ftp', 'http', 'https') || $options->{metalink}) {
+    } elsif (member($proto, 'ftp', 'http', 'https') || $options->{metalink} || $medium->{mirrorbrain}) {
 
 	my $preferred = preferred_downloader($urpm, $medium, \$options->{metalink});
 	if ($preferred eq 'aria2') {
@@ -1079,6 +1078,13 @@ sub _create_one_metalink_line {
     sprintf('<url %s>%s/%s</url>', join(' ', @options), $base, $rel_file);
 }
 
+sub _create_url_line {
+    my ($medium, $mirror, $rel_file) = @_;
+
+    my $base = urpm::mirrors::_add__with_dir($mirror->{url}, $medium->{'with-dir'});
+    "$base/$rel_file.metalink";
+}
+
 sub _create_metalink_ {
     my ($urpm, $medium, $rel_files, $options) = @_;
     # Don't create a metalink when downloading mirror list
@@ -1092,6 +1098,13 @@ sub _create_metalink_ {
 	_take_n_elem(8, @l);
     } urpm::mirrors::list_urls($urpm, $medium, '')) : { url => $medium->{url} };
     
+    if ($medium->{mirrorbrain}) {
+	my @urls;
+	foreach my $rel_file (@$rel_files) {
+	    push @urls, _create_url_line($medium, $mirrors[0], $rel_file);
+	}
+    	return @urls;
+    }
     my $metalinkfile = "$urpm->{cachedir}/$options->{media}.metalink";
     # Even if not required by metalink spec, this line is needed at top of
     # metalink file, otherwise aria2 won't be able to autodetect it..

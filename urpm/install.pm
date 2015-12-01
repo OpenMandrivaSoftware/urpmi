@@ -116,11 +116,11 @@ sub install_logger {
 		$pname = N("removing %s", $urpm->{trans}->Element_fullname($index));
 		$erase_logger->($urpm, undef, undef, $subtype);
 	    } else {
-		# index already got bumped in {callback_open}:
-		$pname = $urpm->{trans}->Element_name($index-1);
+		$pname = $urpm->{trans}->Element_name($index);
 		++$urpm->{logger_count} if $pname;
 		$cnt = $pname ? $urpm->{logger_count} : '-';
 	    }
+	    $index++;
 	    my $s = sprintf("%9s: %-22s", $cnt . "/" . $total_pkg, $pname);
 	    print $s;
 	    $s =~ / $/ or printf "\n%9s  %-22s", '', '';
@@ -245,7 +245,7 @@ sub _schedule_packages {
 	    } else {
 		$urpm->{error}(N("unable to install package %s", $mode->{$_}));
 		my $cachefile = "$urpm->{cachedir}/rpms/" . $pkg->filename;
-		if (-e $cachefile) {
+		if (-e $cachefile and !$::noclean) {
 		    $urpm->{error}(N("removing bad rpm (%s) from %s", $pkg->name, "$urpm->{cachedir}/rpms"));
 		    unlink $cachefile or $urpm->{fatal}(1, N("removing %s failed: %s", $cachefile, $!));
 		}
@@ -270,7 +270,6 @@ sub _get_callbacks {
     my ($callback_open_helper, $callback_close_helper) = ($options->{callback_open_helper}, $options->{callback_close_helper});
     $options->{callback_open} = sub {
 	my ($_data, $_type, $id) = @_;
-	$index++;
 	$callback_open_helper and $callback_open_helper->(@_);
 	$fh = urpm::sys::open_safe($urpm, '<', $install->{$id} || $upgrade->{$id});
 	$fh ? fileno $fh : undef;
@@ -299,7 +298,6 @@ sub _get_callbacks {
 	    } else {
 		$urpm->{print}(N("removing package %s", $fullname)) if $verbose >= 0;
 	    }
-	    $index++;
 	}
     };
 

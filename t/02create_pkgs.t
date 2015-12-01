@@ -63,7 +63,7 @@ sub rpmbuild {
 
     my $dir = getcwd();
     my ($target) = $spec =~ m!-(i586|x86_64)\.spec$!;
-    system_("rpmbuild --undefine _build_pkgcheck --undefine _build_pkgcheck_set --undefine _build_pkgcheck_srpm --undefine _nonzero_exit_pkgcheck_terminate_build --quiet --define 'rpm_version %(rpm -q --queryformat \"%{VERSION}\" rpm|sed -e \"s/\\\\.//g\")' --define '_topdir $dir/tmp' --define '_tmppath $dir/tmp' -bb --clean --nodeps ".($target ? "--target $target" : "")." $spec");
+    system_("rpmbuild --undefine _build_pkgcheck --undefine _build_pkgcheck_set --undefine _build_pkgcheck_srpm --undefine _nonzero_exit_pkgcheck_terminate_build --define 'disttag mdk' --define 'distepoch 2013.0' --quiet --define 'rpm_version %(rpm -q --queryformat \"%{VERSION}\" rpm|sed -e \"s/\\\\.//g\")' --define '_topdir $dir/tmp' --define '_tmppath $dir/tmp' --define '_rpmdir $dir/tmp/RPMS' --define '_build_name_fmt %%{ARCH}/%{___NVRA}.rpm' --define '_rpmfilename %{_build_name_fmt}' -bb --clean --nodeps ".($target ? "--target $target" : "")." $spec");
 
     my ($name) = $spec =~ m!([^/]*)\.spec$!;
 
@@ -77,7 +77,8 @@ sub rpmbuild {
 sub rpmbuild_srpm {
     my ($spec) = @_;
 
-    system_("rpmbuild --undefine _build_pkgcheck --undefine _build_pkgcheck_set --undefine _build_pkgcheck_srpm --undefine _nonzero_exit_pkgcheck_terminate_build --quiet --define '_topdir tmp' -bs --clean --nodeps $spec");
+    my $dir = getcwd();
+    system_("rpmbuild --undefine _build_pkgcheck --undefine _build_pkgcheck_set --undefine _build_pkgcheck_srpm --undefine _nonzero_exit_pkgcheck_terminate_build --define 'disttag mdk' --define 'distepoch 2013.0' --quiet --define '_topdir $dir/tmp' --define '_rpmdir $dir/tmp/RPMS' --define '_build_name_fmt %%{ARCH}/%{___NVRA}.rpm' --define '_rpmfilename %{_build_name_fmt}' -bs --clean --nodeps $spec");
 
     my ($name) = $spec =~ m!([^/]*)\.spec$!;
 

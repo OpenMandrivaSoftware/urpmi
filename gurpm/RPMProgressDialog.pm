@@ -5,7 +5,7 @@ package gurpm::RPMProgressDialog;
 #- Copyright (C) 2013 Mageia
 
 # Sharing code from gurpmi2 && Rpmdrake::gurpm
-# Gtk2 only (no ugtk2/mygtk2) as it's used by gurpmi too...
+# Gtk3 only (no ugtk3/mygtk3) as it's used by gurpmi too...
 #
 
 =head1 SYNOPSYS
@@ -18,7 +18,7 @@ that presents a global progress bar.
 How to use:
 
  my $w = gurpm::RPMProgressDialog->new:
- #$w->change_widget(Gtk2::Box->new);
+ #$w->change_widget(Gtk3::Box->new);
  label(N("Preparing packages installation..."));
  ... # compute packages to install/remove...
  $w->init_progressbar;
@@ -35,13 +35,13 @@ How to use:
 =cut
 
 use strict;
-use Gtk2;
+use Gtk3;
 use urpm::download;
 use urpm::msg 'N';
 use urpm::util qw(max member);
 use Scalar::Util qw(weaken);
 
-our @ISA = qw(Gtk2::Window);
+our @ISA = qw(Gtk3::Window);
 
 sub title {
     $::auto_select ? N("Distribution Upgrade") : N("Packages installation");
@@ -51,7 +51,7 @@ sub title {
 my ($mainw, $urpm, $old_main_window);
 
 my $progressbar_size = 450;
-my ($progress_nb, $download_nb, $uninst_count);
+my ($progress_nb, $download_nb, $index);
 
 
 =head2 Creators
@@ -69,8 +69,8 @@ Arguments are an urpm object and a quit routine reference.
 
 sub new {
     my ($self, $global_urpm, $o_quit, $o_no_modal) = @_;
-    # my $w = ugtk2->new($title, %options, default_width => 600, width => 600);
-    my $w = $mainw = bless(Gtk2::Window->new('toplevel'), $self);
+    # my $w = ugtk3->new($title, %options, default_width => 600, width => 600);
+    my $w = $mainw = bless(Gtk3::Window->new('toplevel'), $self);
 
     $old_main_window = $::main_window;
     $::main_window = $w;
@@ -84,7 +84,7 @@ sub new {
 	$w->set_type_hint('dialog');
 	$w->set_modal(1);
     }
-    $w->{mainbox} = Gtk2::VBox->new(0, 5);
+    $w->{mainbox} = Gtk3::VBox->new(0, 5);
     $w->add($w->{mainbox});
     $urpm = $global_urpm;
 
@@ -124,8 +124,8 @@ sets the window to a please-wait message
 
 sub label {
     my ($w, $o_text) = @_;
-    my $wait_vbox = Gtk2::VBox->new(0, 5);
-    my $label = Gtk2::Label->new($o_text || N("Please wait..."));
+    my $wait_vbox = Gtk3::VBox->new(0, 5);
+    my $label = Gtk3::Label->new($o_text || N("Please wait..."));
     $label->set_alignment(0.5, 0.5);
     $wait_vbox->pack_start($label, 1, 1, 0);
     $w->change_widget($wait_vbox);
@@ -133,10 +133,10 @@ sub label {
 }
 
 
-# From ugtk2.pm/mygtk2.pm:
+# From ugtk3.pm/mygtk3.pm:
 sub gtk_new_Label_Left {
     my ($text) = @_;
-    my $w = Gtk2::Label->new($text);
+    my $w = Gtk3::Label->new($text);
     $w->set_alignment(0, 0);
     $w;
 }
@@ -149,22 +149,22 @@ Put a progress bar in the dialog.
 
 sub init_progressbar {
     my ($w) = @_;
-    my $vbox = Gtk2::VBox->new(0, 5);
+    my $vbox = Gtk3::VBox->new(0, 5);
 
     my $global_label = gtk_new_Label_Left('<b>' . $w->title . '</b>');
     $global_label->set_use_markup(1);
     $vbox->pack_start($global_label, 0, 0, 0);
 
-    my $global_progressbar = $w->{global_progressbar} = Gtk2::ProgressBar->new;
+    my $global_progressbar = $w->{global_progressbar} = Gtk3::ProgressBar->new;
     $vbox->pack_start($global_progressbar, 0, 0, 0);
 
     $vbox->pack_start($w->{progresslabel} = gtk_new_Label_Left('-'), 1, 1, 0);
 
-    my $progressbar = Gtk2::ProgressBar->new;
+    my $progressbar = Gtk3::ProgressBar->new;
     $progressbar->set_size_request($progressbar_size, -1);
     $vbox->pack_start($progressbar, 0, 0, 0);
     $w->{progressbar} = $progressbar;
-    $progress_nb = $download_nb = $uninst_count = 0;
+    $progress_nb = $download_nb = $index = 0;
 
     $w->change_widget($vbox);
 }
@@ -188,8 +188,8 @@ Update the progress bar
 
 sub set_progressbar {
     my ($w, $local_ratio) = @_;
-    if ($progress_nb || $download_nb || $uninst_count) { # this happens when computing transaction
-	$w->{global_progressbar}->set_fraction(($download_nb + $progress_nb + $uninst_count - 1 + $local_ratio) / 2 / $urpm->{nb_install});
+    if ($progress_nb || $download_nb) { # this happens when computing transaction
+	$w->{global_progressbar}->set_fraction(($download_nb + $progress_nb - 1 + $local_ratio) / 2 / $urpm->{nb_install});
     }
     $w->{progressbar}->set_fraction($local_ratio);
 }
@@ -204,8 +204,8 @@ $cancel_cb when clicked.
 sub validate_cancel {
     my ($self, $cancel_msg, $cancel_cb) = @_;
     if (!$self->{cancel}) {
-	$self->{hbox_cancel} = Gtk2::HButtonBox->new;
-	$self->{hbox_cancel}->add($self->{cancel} = Gtk2::Button->new($cancel_msg));
+	$self->{hbox_cancel} = Gtk3::HButtonBox->new;
+	$self->{hbox_cancel}->add($self->{cancel} = Gtk3::Button->new($cancel_msg));
 	$self->{mainbox}->add($self->{hbox_cancel});
 	$self->{cancel}->signal_connect('clicked' => \&$cancel_cb);
 	$self->{hbox_cancel}->show_all;
@@ -248,7 +248,7 @@ tell Gtk+ to refresh the dialog content if needed.
 sub sync {
     my ($w) = @_;
     $w->show;
-    Gtk2->main_iteration while Gtk2->events_pending;
+    Gtk3::main_iteration while Gtk3::events_pending;
 }
 
 =item gurpm::RPMProgressDialog::get_something_done()
@@ -305,17 +305,17 @@ sub callback_inst {
     my $pkg = defined $id ? $urpm->{depslist}[$id] : undef;
     if ($subtype eq 'start') {
 	if ($type eq 'trans') {
-	    $uninst_count = 0;
+	    $index = 0;
 	    $mainw->set_progresslabel(N("Preparing..."));
 	} else {
 	    my $msg;
 	    if ($type eq 'uninst') {
-		$msg = N("Removing package `%s' ...", $urpm->{trans}->Element_fullname($uninst_count));
-		$uninst_count++;
+		$msg = N("Removing package `%s' ...", $urpm->{trans}->Element_fullname($index));
 	    } else {
 		$progress_nb++;
 		$msg = N("Installing package `%s' (%s/%s)...", $pkg->name, $progress_nb, $urpm->{nb_install});
 	    }
+	    $index++;
 	    $download_nb = max($download_nb, $progress_nb);
 	    $mainw->set_progressbar(0);
 	    $mainw->set_progresslabel($msg);

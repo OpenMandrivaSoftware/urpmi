@@ -42,12 +42,12 @@ where <url> is one of
        cdrom://<path>
 
 usage: urpmi.addmedia [options] --distrib --mirrorlist <url>
-usage: urpmi.addmedia [options] --mirrorlist <url> <name> <relative path>
+usage: urpmi.addmedia [options] --mirrorbrain <url> <name> <relative path>
 
 examples:
 
-  urpmi.addmedia --distrib --mirrorlist '\$MIRRORLIST'
-  urpmi.addmedia --mirrorlist '\$MIRRORLIST' backports media/main/backports
+  urpmi.addmedia --distrib --mirrorbrain 'http://downloads.openmandriva.org/\$RELEASE/\$ARCH'
+  urpmi.addmedia --mirrorbrain 'http://downloads.openmandriva.org/\$RELEASE/\$ARCH' backports media/main/backports
   urpmi.addmedia --distrib --zeroconf
 
 
@@ -57,6 +57,7 @@ and [options] are from
 ") . N("  --curl         - use curl to retrieve distant files.
 ") . N("  --prozilla     - use prozilla to retrieve distant files.
 ") . N("  --aria2        - use aria2 to retrieve distant files.
+") . N("  --mirrorbrain  - use server side generated metalink.
 ") . N("  --metalink     - generate and use a local metalink.
 ") . N("  --limit-rate   - limit the download speed.
 ") . N("  --proxy        - use specified HTTP proxy, the port number is assumed
@@ -153,6 +154,7 @@ if ($options{distrib}) {
 	ask_media => $add_media_callback,
 	'verify-rpm' => $options{'verify-rpm'},
 	'xml-info' => $options{'xml-info'},
+	mirrorbrain => $options{mirrorbrain},
     ) or $urpm->{fatal}(10, N("unable to add medium"));
     $ok = urpm::media::update_media($urpm, %options, 
 			      quiet => $options{verbose} < 0,		      
@@ -178,6 +180,7 @@ if ($options{distrib}) {
 	ignore => $options{raw},
 	nolock => $options{nolock},
 	'xml-info' => $options{'xml-info'},
+	mirrorbrain => $options{mirrorbrain}
     ) or $urpm->{fatal}(10, N("unable to add medium"));
 
     urpm::download::copy_cmd_line_proxy($name);

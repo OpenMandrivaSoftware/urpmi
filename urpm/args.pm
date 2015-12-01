@@ -8,7 +8,8 @@ no warnings 'once';
 use Getopt::Long;
 use urpm::download;
 use urpm::msg;
-use urpm::util 'file2absolute_file';
+use urpm::util qw(dirname file2absolute_file);
+use MDK::Common::File qw(mkdir_p cp_af);
 use Exporter;
 
 our @ISA = 'Exporter';
@@ -58,6 +59,7 @@ sub set_verbose {
 my %options_spec_all = (
 	'debug' => sub { set_debug($urpm) },
 	'debug-librpm' => sub { URPM::setVerbosity(7) }, # 7 == RPMLOG_DEBUG
+	'D|define=s' => sub { push(@urpm::postponed_defines, "$_[1]") },
 	'rpmbfdebug' => sub { URPM::setInternalVariable("_rpmbf_debug", 1) },
 	'rpmdbdebug' => sub { URPM::setInternalVariable("_rpmdb_debug", 1) },
 	'rpmfidebug' => sub { URPM::setInternalVariable("_rpmfi_debug", 1) },
@@ -72,6 +74,7 @@ my %options_spec_all = (
 	'rpmtsdebug' => sub { URPM::setInternalVariable("_rpmts_debug", 1) },
 	'fpsdebug' => sub { URPM::setInternalVariable("_fps_debug", 1) },
 	'miredebug' => sub { URPM::setInternalVariable("_mire_debug", 1) },
+	'predefine=s' => sub { URPM::add_macro("$_[1]") },
 	'q|quiet' => sub { set_verbose(-1) },
 	'v|verbose' => sub { set_verbose(1) },
 	'urpmi-root=s' => sub { urpm::set_files($urpm, $_[1]) },
@@ -148,7 +151,6 @@ my %options_spec = (
 
 	'metalink!' => sub { $urpm->{options}{metalink} = $_[1] },
 	'download-all:s' => sub { $urpm->{options}{'download-all'} = $_[1] },
-	'no-download-all!' => sub { $urpm->{options}{'no-download-all'} = 1 },
 	# deprecated in favor of --downloader xxx
 	wget => sub { $urpm->{options}{downloader} = 'wget' },
 	curl => sub { $urpm->{options}{downloader} = 'curl' },
@@ -192,6 +194,7 @@ my %options_spec = (
 	'skip=s' => \$options{skip},
 	'prefer=s' => \$options{prefer},
  	'root=s' => sub { set_root($urpm, $_[1]) },
+	'target-arch=s' => sub { set_target_arch($urpm, $_[1]) },
 	'use-distrib=s' => sub {
 	    $options{usedistrib} = $_[1];
 	    return if !$>;
@@ -286,6 +289,7 @@ my %options_spec = (
 	sourcerpm => \$options{sourcerpm},
 	'summary|S' => \$options{summary},
 	suggests => sub { 
+	    $urpm->{error}("--suggests now displays the suggested packages, see --allow-suggests for previous behaviour");
 	    $options{suggests} = 1;
 	},
 	'list-media:s' => sub { $options{list_media} = $_[1] || 'all' },
@@ -300,6 +304,7 @@ my %options_spec = (
 	'parallel=s' => \$options{parallel},
 	'env=s' => \$options{env},
 	requires => sub {
+	    $urpm->{error}("--requires behaviour changed, use --requires-recursive to get the old behaviour");
 	    $options{requires} = 1;
 	},
 	'requires-recursive|d' => \$options{deps},
@@ -376,6 +381,7 @@ my %options_spec = (
 	'no-probe' => sub { $options{probe_with} = undef },
 	distrib => sub { $options{distrib} = 1 },
 	'mirrorlist:s' => sub { $options{mirrorlist} = $_[1] || '$MIRRORLIST' },
+	mirrorbrain => sub { $options{metalink} = 1; $options{mirrorbrain} = 1 },
 	zeroconf => sub { $options{zeroconf} = 1 },
         interactive => sub { $options{interactive} = 1 },
         'all-media' => sub { $options{allmedia} = 1 },
@@ -449,7 +455,8 @@ sub add_urpmf_parameter {
 }
 
 # common options setup
-foreach my $k ('allow-medium-change', 'auto', 'auto-select', 'clean', 'download-all:s', 'no-download-all!', 'force-req-update', 'no-force-req-update', 'force', 'expect-install!', 'justdb', 'no-priority-upgrade', 'noscripts', 'replacefiles', 'p', 'P', 'previous-priority-upgrade=s', 'root=s', 'test!', 'verify-rpm!', 'update',
+
+foreach my $k ('allow-medium-change', 'auto', 'auto-select', 'clean', 'download-all:s', 'force', 'expect-install!', 'justdb', 'no-priority-upgrade', 'noscripts', 'replacefiles', 'p', 'P', 'previous-priority-upgrade=s', 'root=s', 'test!', 'verify-rpm!', 'update',
 	       'split-level=s', 'split-length=s')
 {
     $options_spec{gurpmi}{$k} = $options_spec{urpmi}{$k};
@@ -475,7 +482,7 @@ foreach my $k ("update", "media|mediums=s",
 }
 
 foreach my $k ("wget", "curl", "prozilla", "aria2", 'downloader=s', "proxy=s", "proxy-user=s",
-    'limit-rate=s', 'metalink!',
+    'limit-rate=s', 'metalink!', 
     "wget-options=s", "curl-options=s", "rsync-options=s", "prozilla-options=s", "aria2-options=s")
 {
     $options_spec{'urpmi.addmedia'}{$k} = 
@@ -515,6 +522,74 @@ sub set_root {
 	    if (!-d $urpm->{root}) {
 		$urpm->{fatal}->(9, N("chroot directory doesn't exist"));
 	    }
+}
+
+sub mount_root_mntpoints {
+    my ($urpm, $mntpoint, $type, $opts) = @_;
+
+    if (!$opts) {
+	$opts = "defaults";
+    }
+    mkdir_p($urpm->{root}.$mntpoint);
+    if (0 < system('mountpoint', "-q", $urpm->{root}.$mntpoint)) {
+	system('mount', "urpmi".$mntpoint, $urpm->{root}.$mntpoint, "-t", $type, "-o", $opts);
+    }
+}
+
+sub set_target_arch {
+    my ($urpm, $arch) = @_;
+
+    if(!$urpm->{root} or $urpm->{root} eq "/") {
+	$urpm->{fatal}->(9, N("--target-arch may only be used with --root and specified after"));
+    }
+
+    my $qemufilename = "/usr/bin/qemu-static-$arch";
+    my $archtype = $arch;
+    my $secondfilename;
+    # rather ugly, but will make things easier otherwise...
+    if ($arch eq "armv7hl") {
+	$archtype = "arm";
+	$secondfilename = "/usr/bin/qemu-static-$archtype";
+    }
+    if (!-f $qemufilename) {
+	$urpm->{fatal}->(9, N("%s is missing, please install qemu-static-%s", $qemufilename, $archtype));
+    } else {
+	mkdir_p($urpm->{root} . dirname("$qemufilename"));
+	# let's try see if we can hardlink the files first in case they're on the
+	# same partition
+	$urpm->{debug} and $urpm->{debug}("copying $qemufilename to $urpm->{root}$qemufilename");
+	cp_af($qemufilename, $urpm->{root} . $qemufilename);
+	if (defined($secondfilename)) {
+	    $urpm->{debug} and $urpm->{debug}("copying $secondfilename to $urpm->{root}$secondfilename");
+	    cp_af($secondfilename, $urpm->{root} . $secondfilename);
+	}
+    }
+    my $rpmplatform = $urpm->{root} . "/etc/rpm/platform";
+    URPM::loadmacrosfile("/usr/lib/rpm/macros");
+    URPM::loadmacrosfile("/usr/lib/rpm/platform/$arch-linux/macros");
+
+    if (-f $rpmplatform) {
+	$urpm->{info}->(N("%s already exists, will load in stead of generating new for %s", $rpmplatform, $arch));
+    } else {
+	mkdir_p(dirname($rpmplatform));
+	open (my $fh, ">>$rpmplatform");
+	print $fh URPM::expand("$arch-%{_target_vendor}-%{_target_os}%{?_gnu}\n");
+	print $fh "$arch-unknown-linux\n";
+	print $fh URPM::expand("noarch-%{_target_vendor}-%{_target_os}%{?_gnu}\n");
+	print $fh "noarch\n";
+	close $fh;
+    }
+    URPM::resetmacros();
+    URPM::add_macro("_rpmrc_platform_path $rpmplatform");
+
+    $urpm->{info}(N("creating and mounting necessary system mount points under %s", $urpm->{root}));
+    mount_root_mntpoints($urpm, "/dev", "devtmpfs");
+    mount_root_mntpoints($urpm, "/dev/pts", "devpts", "defaults,gid=5,mode=620");
+    mount_root_mntpoints($urpm, "/dev/shm", "tmpfs");
+    mount_root_mntpoints($urpm, "/run", "tmpfs");
+    mount_root_mntpoints($urpm, "/sys", "sysfs");
+    mount_root_mntpoints($urpm, "/sys/kernel/debug", "debugfs");
+    mount_root_mntpoints($urpm, "/proc", "proc");
 }
 
 sub set_verbosity() {
