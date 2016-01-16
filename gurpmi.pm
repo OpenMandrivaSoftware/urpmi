@@ -48,7 +48,7 @@ on a Mandriva Linux distribution.
 
 =cut
 
-urpm::select::add_packages_to_priority_upgrade_list('gurpmi', 'perl-Glib', 'perl-Gtk3');
+urpm::select::add_packages_to_priority_upgrade_list(qw(gurpmi perl-Glib perl-Glib-Object-Introspection perl-Gtk3));
 
 sub usage () {
     print N("gurpmi version %s
