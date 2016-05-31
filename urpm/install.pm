@@ -305,7 +305,13 @@ sub _get_callbacks {
 
     $options->{callback_error} ||= sub {
 	my ($urpm, undef, $id, $subtype) = @_;
-	my $n = $urpm->{depslist}[$id]->fullname;
+	my $n;
+        if(defined($id)) {
+          $n = $urpm->{depslist}[$id]->fullname;
+        }
+        else {
+          $n = "(unknown)";
+        }
 	$urpm->{error}("ERROR: '$subtype' failed for $n: ");
     };
 
