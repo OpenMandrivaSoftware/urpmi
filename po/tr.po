@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: urpmi\n"
-"POT-Creation-Date: 2015-01-04 00:10+0100\n"
+"POT-Creation-Date: 2016-06-19 16:26+0200\n"
 "PO-Revision-Date: 2014-09-14 21:37+0300\n"
 "Last-Translator: Atilla ÖNTAŞ <tarakbumba@gmail.com>\n"
 "Language-Team: Mageia Turkish Translation Team <i18n-tr@ml.mageia.org>\n"
@@ -26,22 +26,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Virtaal 0.7.1\n"
 
-#: ../gurpmi:49
+#: ../gurpmi:45
 #, c-format
 msgid "RPM installation"
 msgstr "RPM Paketi Kurulumu"
 
-#: ../gurpmi:63
+#: ../gurpmi:59
 #, c-format
 msgid "Error: unable to find file %s, will cancel operation"
 msgstr "Hata: %s bulunamadı, işlem iptal edilecek"
 
-#: ../gurpmi:64 ../gurpmi2:178 ../gurpmi2:208
+#: ../gurpmi:60 ../gurpmi2:174 ../gurpmi2:204
 #, c-format
 msgid "_Ok"
 msgstr "_Tamam"
 
-#: ../gurpmi:84
+#: ../gurpmi:80
 #, c-format
 msgid ""
 "You have selected a source package:\n"
@@ -62,7 +62,7 @@ msgstr ""
 "\n"
 "Ne yapmak istersiniz?"
 
-#: ../gurpmi:92 ../gurpmi:103
+#: ../gurpmi:88 ../gurpmi:99
 #, c-format
 msgid ""
 "You are about to install the following software packages on your computer:\n"
@@ -77,7 +77,7 @@ msgstr ""
 "\n"
 "Devam edilsin mi?"
 
-#: ../gurpmi:98
+#: ../gurpmi:94
 #, c-format
 msgid ""
 "You are about to install the following software package on your computer:\n"
@@ -92,32 +92,32 @@ msgstr ""
 "\n"
 "Bunu sadece kaydetmeyi de seçebilirsiniz. Seçiminiz nedir?"
 
-#: ../gurpmi:116
+#: ../gurpmi:112
 #, c-format
 msgid "_Install"
 msgstr "_Kur"
 
-#: ../gurpmi:117
+#: ../gurpmi:113
 #, c-format
 msgid "_Save"
 msgstr "_Kaydet"
 
-#: ../gurpmi:118 ../gurpmi2:178
+#: ../gurpmi:114 ../gurpmi2:174
 #, c-format
 msgid "_Cancel"
 msgstr "İp_tal"
 
-#: ../gurpmi:126
+#: ../gurpmi:122
 #, c-format
 msgid "Choose location to save file"
 msgstr "Dosyayı kaydetmek için bir yer seçin"
 
-#: ../gurpmi:126
+#: ../gurpmi:122
 #, c-format
 msgid "Cancel"
 msgstr "İptal"
 
-#: ../gurpmi:126 ../gurpmi2:124
+#: ../gurpmi:122 ../gurpmi2:120
 #, c-format
 msgid "Ok"
 msgstr "Tamam"
@@ -138,13 +138,13 @@ msgstr ""
 msgid "Options:"
 msgstr "Seçenekler:"
 
-#: ../gurpmi.pm:61 ../urpme:46 ../urpmf:35 ../urpmi:84 ../urpmi.addmedia:55
+#: ../gurpmi.pm:61 ../urpme:46 ../urpmf:35 ../urpmi:85 ../urpmi.addmedia:55
 #: ../urpmi.recover:40 ../urpmi.removemedia:40 ../urpmi.update:32 ../urpmq:47
 #, c-format
 msgid "  --help         - print this help message.\n"
 msgstr "  --help         - bu yardım mesajını görüntüler.\n"
 
-#: ../gurpmi.pm:62 ../urpmi:91
+#: ../gurpmi.pm:62 ../urpmi:92
 #, c-format
 msgid ""
 "  --auto         - non-interactive mode, assume default answers to "
@@ -153,13 +153,13 @@ msgstr ""
 "  --auto         - etkileşimli kip   kapalı, sorulara varsayılan cevapları "
 "ver.\n"
 
-#: ../gurpmi.pm:63 ../urpmi:92 ../urpmq:54
+#: ../gurpmi.pm:63 ../urpmi:93 ../urpmq:54
 #, c-format
 msgid ""
 "  --auto-select  - automatically select packages to upgrade the system.\n"
 msgstr "  --auto-select  - Sistemi güncellemek için paketleri otomatik seç.\n"
 
-#: ../gurpmi.pm:64 ../urpme:50 ../urpmi:119 ../urpmq:70
+#: ../gurpmi.pm:64 ../urpme:50 ../urpmi:120 ../urpmq:70
 #, c-format
 msgid ""
 "  --force        - force invocation even if some packages do not exist.\n"
@@ -167,7 +167,7 @@ msgstr ""
 "  --force        - bazı paketlerin bulunamama durumda bile işlemin\n"
 "                   devamına zorla.\n"
 
-#: ../gurpmi.pm:65 ../urpmi:156
+#: ../gurpmi.pm:65 ../urpmi:157
 #, c-format
 msgid ""
 "  --verify-rpm   - verify rpm signature before installation\n"
@@ -176,37 +176,37 @@ msgstr ""
 "  --verify-rpm   - kurulumdan önce rpm imzasını doğrula\n"
 "                   (--no-verify-rpm bunu iptal eder, öntanımlı etkindir).\n"
 
-#: ../gurpmi.pm:67 ../urpmf:41 ../urpmi:85 ../urpmq:49
+#: ../gurpmi.pm:67 ../urpmf:41 ../urpmi:86 ../urpmq:49
 #, c-format
 msgid "  --media        - use only the given media, separated by comma.\n"
 msgstr ""
 "  --media       - sadece belirtilen ortamları kullan (virgülle ayırın).\n"
 
-#: ../gurpmi.pm:68 ../urpmi:179
+#: ../gurpmi.pm:68 ../urpmi:180
 #, c-format
 msgid "  -p             - allow search in provides to find package.\n"
 msgstr "  -p             - paketi bulmak için aramaya izin ver.\n"
 
-#: ../gurpmi.pm:69 ../urpmi:180
+#: ../gurpmi.pm:69 ../urpmi:181
 #, c-format
 msgid "  -P             - do not search in provides to find package.\n"
 msgstr ""
 "  -P           - sağlanan paketlerin arasında paketi bulmak için arama "
 "yapma.\n"
 
-#: ../gurpmi.pm:70 ../urpmi:126 ../urpmq:73
+#: ../gurpmi.pm:70 ../urpmi:127 ../urpmq:73
 #, c-format
 msgid "  --root         - use another root for rpm installation.\n"
 msgstr "  --root         - rpm kurulmu için bir başka kök kullan.\n"
 
-#: ../gurpmi.pm:71 ../urpmi:158
+#: ../gurpmi.pm:71 ../urpmi:159
 #, c-format
 msgid ""
 "  --test         - only verify if the installation can be achieved "
 "correctly.\n"
 msgstr "  --test         - kurulumun başarılı olup olmayacağını doğrula.\n"
 
-#: ../gurpmi.pm:72 ../urpmi:88
+#: ../gurpmi.pm:72 ../urpmi:89
 #, c-format
 msgid ""
 "  --searchmedia  - use only the given media to search requested packages.\n"
@@ -219,22 +219,22 @@ msgstr ""
 msgid "No packages specified"
 msgstr "Herhangi bir paket belirtilmemiş."
 
-#: ../gurpmi2:46
+#: ../gurpmi2:42
 #, c-format
 msgid "Must be root"
 msgstr "Yetkili kullanıcı olunmalı"
 
-#: ../gurpmi2:49 ../urpm.pm:23
+#: ../gurpmi2:45 ../urpm.pm:23
 #, c-format
 msgid "While some packages may have been installed, there were failures.\n"
 msgstr "Bazı paketler kurulurken hatalar oldu.\n"
 
-#: ../gurpmi2:80
+#: ../gurpmi2:76
 #, c-format
 msgid "Preparing packages installation..."
 msgstr "Paket kurulumuna hazırlanılıyor..."
 
-#: ../gurpmi2:93 ../gurpmi2:99 ../urpmi:573
+#: ../gurpmi2:89 ../gurpmi2:95 ../urpmi:574
 #, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
@@ -243,42 +243,42 @@ msgstr ""
 "İstenen bazı paketler kurulamaz:\n"
 "%s"
 
-#: ../gurpmi2:106
+#: ../gurpmi2:102
 #, c-format
 msgid "Continue installation anyway?"
 msgstr ""
 
-#: ../gurpmi2:124
+#: ../gurpmi2:120
 #, c-format
 msgid "Warning"
 msgstr "Uyarı"
 
-#: ../gurpmi2:174
+#: ../gurpmi2:170
 #, c-format
 msgid " (to upgrade)"
 msgstr " (güncellenecek)"
 
-#: ../gurpmi2:175
+#: ../gurpmi2:171
 #, c-format
 msgid " (to install)"
 msgstr " (yüklenecek)"
 
-#: ../gurpmi2:178
+#: ../gurpmi2:174
 #, c-format
 msgid "Package choice"
 msgstr "Paket seçimi"
 
-#: ../gurpmi2:179
+#: ../gurpmi2:175
 #, c-format
 msgid "One of the following packages is needed:"
 msgstr "Aşağıdaki paketlerden birine ihtiyaç var:"
 
-#: ../gurpmi2:209
+#: ../gurpmi2:205
 #, c-format
 msgid "_Abort"
 msgstr "D_urdur"
 
-#: ../gurpmi2:244
+#: ../gurpmi2:240
 #, c-format
 msgid ""
 "The following packages have to be removed for others to be upgraded:\n"
@@ -290,63 +290,63 @@ msgstr ""
 "%s\n"
 "Yine de devam edilsin mi?"
 
-#: ../gurpmi2:255 ../urpmi:689
+#: ../gurpmi2:251 ../urpmi:692
 #, c-format
 msgid "%s of additional disk space will be used."
 msgstr "Diskin %s kadarı kullanılacak."
 
-#: ../gurpmi2:256 ../urpmi:690
+#: ../gurpmi2:252 ../urpmi:693
 #, c-format
 msgid "%s of disk space will be freed."
 msgstr "Diskin %s kadarı boşalacak."
 
-#: ../gurpmi2:257 ../urpmi:691
+#: ../gurpmi2:253 ../urpmi:694
 #, c-format
 msgid "%s of packages will be retrieved."
 msgstr "Paketler için %s alınacak"
 
-#: ../gurpmi2:258 ../urpmi:692
+#: ../gurpmi2:254 ../urpmi:695
 #, c-format
 msgid "Proceed with the installation of one package?"
 msgid_plural "Proceed with the installation of the %d packages?"
 msgstr[0] "Bir paketin kurulumuna devam edilsin mi?"
 msgstr[1] "%d adet paketin kurulumuna devam edilsin mi?"
 
-#: ../gurpmi2:264 ../urpmi:680
+#: ../gurpmi2:260 ../urpmi:683
 #, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
 msgstr ""
 "Bağımlılık sorununu aşabilmek için, aşağıdaki paketin kurulması gerekiyor:"
 
-#: ../gurpmi2:265 ../urpmi:681
+#: ../gurpmi2:261 ../urpmi:684
 #, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
 msgstr ""
 "Bağımlılık sorununu aşabilmek için, aşağıdaki paketlerin kurulması gerekiyor:"
 
-#: ../gurpmi2:275 ../urpm/main_loop.pm:471
+#: ../gurpmi2:271 ../urpm/main_loop.pm:471
 #, c-format
 msgid "unable to get source packages, aborting"
 msgstr "kaynak paketleri alınamadı, çıkılıyor"
 
-#: ../gurpmi2:292 ../urpmi:710
+#: ../gurpmi2:288 ../urpmi:713
 #, c-format
 msgid "Please insert the medium named \"%s\""
 msgstr "Lütfen \"%s\" isimli ortamı yerleştirin"
 
-#: ../gurpmi2:312
+#: ../gurpmi2:308
 #, c-format
 msgid "An error occurred:"
 msgstr "Bir hata oluştu:"
 
-#: ../gurpmi2:324
+#: ../gurpmi2:320
 #, c-format
 msgid "_Done"
 msgstr "_Bitti"
 
-#: ../gurpmi2:341 ../urpm/main_loop.pm:83
+#: ../gurpmi2:337 ../urpm/main_loop.pm:83
 #, c-format
 msgid ""
 "Installation failed, some files are missing:\n"
@@ -355,27 +355,27 @@ msgstr ""
 "Kurulum başarısız oldu. Bazı dosyalar kayıp:\n"
 "%s"
 
-#: ../gurpmi2:344
+#: ../gurpmi2:340
 #, c-format
 msgid "You may want to update your urpmi database."
 msgstr "Urpmi veritabanınızı güncellemek isteyebilirsiniz."
 
-#: ../gurpmi2:348 ../urpm/main_loop.pm:288 ../urpm/main_loop.pm:588
+#: ../gurpmi2:344 ../urpm/main_loop.pm:288 ../urpm/main_loop.pm:588
 #, c-format
 msgid "Installation failed:"
 msgstr "Kurulum başarısız oldu"
 
-#: ../gurpmi2:353
+#: ../gurpmi2:349
 #, c-format
 msgid "The package(s) are already installed"
 msgstr "Herşey zaten kurulu"
 
-#: ../gurpmi2:355
+#: ../gurpmi2:351
 #, c-format
 msgid "Installation finished"
 msgstr "Kurulum tamamlandı"
 
-#: ../gurpmi2:368 ../urpmi:777 ../urpmi:793
+#: ../gurpmi2:364 ../urpmi:780 ../urpmi:796
 #, c-format
 msgid "restarting urpmi"
 msgstr "urpmi yeniden başlatılıyor."
@@ -414,7 +414,7 @@ msgstr "                    %s için varsayılan.\n"
 msgid "   -f             - output rpm full name (NVRA)\n"
 msgstr "   -f             - rpm'in tam adı çıktısı (NVRA)\n"
 
-#: ../rurpmi:11 ../urpmi:308
+#: ../rurpmi:11 ../urpmi:309
 #, c-format
 msgid "Only superuser is allowed to install packages"
 msgstr "Paketleri kurmak için sadece sistem yöneticisi yetkilidir"
@@ -469,7 +469,7 @@ msgstr "Rpm dosyası [%s] getiriliyor..."
 msgid "...retrieving done"
 msgstr "...alma tamamlandı"
 
-#: ../urpm.pm:477 ../urpm/download.pm:881 ../urpm/get_pkgs.pm:280
+#: ../urpm.pm:477 ../urpm/download.pm:882 ../urpm/get_pkgs.pm:280
 #: ../urpm/media.pm:1136 ../urpm/media.pm:1657 ../urpm/media.pm:1808
 #, c-format
 msgid "...retrieving failed: %s"
@@ -505,74 +505,84 @@ msgstr "yerel paketlerin sicil kaydı yapılırken hata"
 msgid "This operation is forbidden while running in restricted mode"
 msgstr "Sınırlı kipte çalışılırken bu işlem yasaklanmıştır."
 
-#: ../urpm/args.pm:173 ../urpm/args.pm:182
+#: ../urpm/args.pm:174 ../urpm/args.pm:183
 #, c-format
 msgid "bad proxy declaration on command line\n"
 msgstr "komut satırından kötü vekil sunucu bildirimi\n"
 
-#: ../urpm/args.pm:341
+#: ../urpm/args.pm:342
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq: \"%s\" rpm dosyası okunamıyor\n"
 
-#: ../urpm/args.pm:428
+#: ../urpm/args.pm:429
 #, c-format
 msgid "unexpected expression %s"
 msgstr "beklenmeyen ifade %s"
 
-#: ../urpm/args.pm:429
+#: ../urpm/args.pm:430
 #, c-format
 msgid "missing expression before %s"
 msgstr "%s 'den önce kayıp ifade"
 
-#: ../urpm/args.pm:435
+#: ../urpm/args.pm:436
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr "beklenmeyen ifade %s (öneri: -a or -o kullanın ?)"
 
-#: ../urpm/args.pm:439
+#: ../urpm/args.pm:440
 #, c-format
 msgid "no expression to close"
 msgstr "kapatmak için ifade yok"
 
-#: ../urpm/args.pm:448
+#: ../urpm/args.pm:449
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
 "varsayılan olarak upmf bir regexp bekler. \"--literal\" seçeneğini "
 "kullanmalısınız."
 
-#: ../urpm/args.pm:522
+#: ../urpm/args.pm:523
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr "chroot dizini geçerli değil"
 
-#: ../urpm/args.pm:530
+#: ../urpm/args.pm:543
 #, fuzzy, c-format
-msgid "--target-arch may only be used with --root"
+msgid "--target-arch may only be used with --root and specified after"
 msgstr "--list-nodes sadece --parallel ile kullanılabilir"
 
-#: ../urpm/args.pm:537
+#: ../urpm/args.pm:555
+#, c-format
+msgid "%s is missing, please install qemu-static-%s"
+msgstr ""
+
+#: ../urpm/args.pm:572
 #, c-format
 msgid "%s already exists, will load in stead of generating new for %s"
 msgstr ""
 
-#: ../urpm/args.pm:576
+#: ../urpm/args.pm:585
+#, c-format
+msgid "creating and mounting necessary system mount points under %s"
+msgstr ""
+
+#: ../urpm/args.pm:614
 #, c-format
 msgid "Can't use %s without %s"
 msgstr "%s, %s olmadan kullanılamaz"
 
-#: ../urpm/args.pm:579 ../urpm/args.pm:582 ../urpmq:174
+#: ../urpm/args.pm:617 ../urpm/args.pm:620 ../urpmq:174
 #, c-format
 msgid "Can't use %s with %s"
 msgstr "%s, %s ile kullanılamaz"
 
-#: ../urpm/args.pm:590
+#: ../urpm/args.pm:628
 #, c-format
 msgid "Too many arguments\n"
 msgstr "Çok fazla parametre\n"
 
-#: ../urpm/args.pm:598
+#: ../urpm/args.pm:636
 #, c-format
 msgid ""
 "%s version %s\n"
@@ -588,12 +598,12 @@ msgstr ""
 "\n"
 "kullanımı:\n"
 
-#: ../urpm/args.pm:604
+#: ../urpm/args.pm:642
 #, c-format
 msgid "Copyright (C) %s by %s"
 msgstr "Copyright (C) %s bir %s ürünüdür"
 
-#: ../urpm/bug_report.pm:67 ../urpmi:298
+#: ../urpm/bug_report.pm:67 ../urpmi:299
 #, c-format
 msgid "Copying failed"
 msgstr "Kopyalama başarısız"
@@ -692,82 +702,82 @@ msgstr "Kopyalama başarısız"
 msgid "wget is missing\n"
 msgstr "wget bulunamıyor.\n"
 
-#: ../urpm/download.pm:420
+#: ../urpm/download.pm:421
 #, c-format
 msgid "curl is missing\n"
 msgstr "curl bulunamıyor.\n"
 
-#: ../urpm/download.pm:560
+#: ../urpm/download.pm:561
 #, c-format
 msgid "curl failed: download canceled\n"
 msgstr "curl hatası: indirme iptal edildi\n"
 
-#: ../urpm/download.pm:596
+#: ../urpm/download.pm:597
 #, c-format
 msgid "rsync is missing\n"
 msgstr "rsync bulunamıyor\n"
 
-#: ../urpm/download.pm:663
+#: ../urpm/download.pm:664
 #, c-format
 msgid "ssh is missing\n"
 msgstr "ssh bulunamıyor\n"
 
-#: ../urpm/download.pm:682
+#: ../urpm/download.pm:683
 #, c-format
 msgid "prozilla is missing\n"
 msgstr "prozilla bulunamıyor\n"
 
-#: ../urpm/download.pm:698
+#: ../urpm/download.pm:699
 #, c-format
 msgid "Couldn't execute prozilla\n"
 msgstr "Prozilla çalıştırılamadı\n"
 
-#: ../urpm/download.pm:708
+#: ../urpm/download.pm:709
 #, c-format
 msgid "aria2 is missing\n"
 msgstr "aria2 bulunamıyor\n"
 
-#: ../urpm/download.pm:757
+#: ../urpm/download.pm:758
 #, c-format
 msgid "Failed to download %s"
 msgstr "%s indirilemedi"
 
-#: ../urpm/download.pm:853
+#: ../urpm/download.pm:854
 #, c-format
 msgid "        %s%% of %s completed, ETA = %s, speed = %s"
 msgstr "        %s%% /  %s tamamlandı, Kalan Süre = %s, hız = %s"
 
-#: ../urpm/download.pm:854
+#: ../urpm/download.pm:855
 #, c-format
 msgid "        %s%% completed, speed = %s"
 msgstr "        %s%% tamamlandı, hız = %s"
 
-#: ../urpm/download.pm:939
+#: ../urpm/download.pm:940
 #, c-format
 msgid "retrieving %s"
 msgstr "%s getiriliyor"
 
-#: ../urpm/download.pm:950
+#: ../urpm/download.pm:951
 #, c-format
 msgid "retrieved %s"
 msgstr "getirildi: [%s]"
 
-#: ../urpm/download.pm:1013
+#: ../urpm/download.pm:1014
 #, c-format
 msgid "unknown protocol defined for %s"
 msgstr "%s için bilinmeyen protokol tanımlanmış"
 
-#: ../urpm/download.pm:1027
+#: ../urpm/download.pm:1028
 #, c-format
 msgid "no webfetch found, supported webfetch are: %s\n"
 msgstr "geçerli webfetch bulunamadı, desteklenen webfetch: %s\n"
 
-#: ../urpm/download.pm:1050
+#: ../urpm/download.pm:1051
 #, c-format
 msgid "unable to handle protocol: %s"
 msgstr "%s protokolü ile ilgilenemiyor"
 
-#: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:558 ../urpmi:577 ../urpmi:700
+#: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:559 ../urpmi:578 ../urpmi:703
 #: ../urpmi.recover:323
 #, c-format
 msgid "Nn"
@@ -790,7 +800,7 @@ msgstr ""
 msgid "Do you want to generate and upload a report?"
 msgstr ""
 
-#: ../urpm/dudf.pm:79 ../urpmi:560 ../urpmi:579 ../urpmi:701
+#: ../urpm/dudf.pm:79 ../urpmi:561 ../urpmi:580 ../urpmi:704
 #: ../urpmi.addmedia:137 ../urpmi.recover:325
 #, c-format
 msgid " (Y/n) "
@@ -926,7 +936,7 @@ msgstr "%s paketi kurulamıyor"
 msgid "removing bad rpm (%s) from %s"
 msgstr "hatalı rpm (%s), %s kaynağından kaldırılıyor"
 
-#: ../urpm/install.pm:250 ../urpm/install.pm:377
+#: ../urpm/install.pm:250 ../urpm/install.pm:383
 #, c-format
 msgid "removing %s failed: %s"
 msgstr "%s 'in kaldırılması başarısız oldu: %s"
@@ -936,24 +946,24 @@ msgstr "%s 'in kaldırılması başarısız oldu: %s"
 msgid "removing package %s"
 msgstr "%s paketi kaldırılıyor"
 
-#: ../urpm/install.pm:345
+#: ../urpm/install.pm:351
 #, c-format
 msgid ""
 "created transaction for installing on %s (remove=%d, install=%d, upgrade=%d)"
 msgstr ""
 "%s üzerine yükleme için işlem yaratıldı (sil=%d, yükle=%d, güncelle=%d)"
 
-#: ../urpm/install.pm:348
+#: ../urpm/install.pm:354
 #, c-format
 msgid "unable to create transaction"
 msgstr "işlem oluşturulamıyor"
 
-#: ../urpm/install.pm:375
+#: ../urpm/install.pm:381
 #, c-format
 msgid "removing installed rpms (%s) from %s"
 msgstr "kurulu rpm'ler (%s), %s kaynağından kaldırılıyor"
 
-#: ../urpm/install.pm:384
+#: ../urpm/install.pm:390
 #, c-format
 msgid "More information on package %s"
 msgstr "%s paketi hakkında daha fazla bilgi..."
@@ -1404,7 +1414,7 @@ msgstr "%s yansı listesinden bir yansı bulunamadı."
 msgid "found geolocalisation %s %.2f %.2f from timezone %s"
 msgstr "%s %.2f %.2f coğrafi konumu, %s zaman bölgesinden bulundu."
 
-#: ../urpm/mirrors.pm:305
+#: ../urpm/mirrors.pm:307
 #, c-format
 msgid "getting mirror list from %s"
 msgstr "yansı listesini %s adresinden al"
@@ -1810,12 +1820,12 @@ msgstr "  --auto-orphans - gereksiz olanları kaldır\n"
 msgid "  --test         - verify if the removal can be achieved correctly.\n"
 msgstr "  --test         - kurulumun başarılı olup olmayacağını doğrula.\n"
 
-#: ../urpme:51 ../urpmi:125 ../urpmq:72
+#: ../urpme:51 ../urpmi:126 ../urpmq:72
 #, c-format
 msgid "  --parallel     - distributed urpmi across machines of alias.\n"
 msgstr "  --parallel     - benzer makineler arasında dağıtılmış urpmi.\n"
 
-#: ../urpme:52 ../urpmi:171
+#: ../urpme:52 ../urpmi:172
 #, c-format
 msgid "  --repackage    - Re-package the files before erasing\n"
 msgstr ""
@@ -1825,7 +1835,7 @@ msgstr ""
 msgid "  --root         - use another root for rpm removal.\n"
 msgstr "  --root         - rpm kaldırma için bir başka kök kullanıcı kullan.\n"
 
-#: ../urpme:54 ../urpmf:40 ../urpmi:127 ../urpmi.addmedia:74
+#: ../urpme:54 ../urpmf:40 ../urpmi:128 ../urpmi.addmedia:74
 #: ../urpmi.removemedia:45 ../urpmi.update:48 ../urpmq:74
 #, c-format
 msgid "  --urpmi-root   - use another root for urpmi db & rpm installation.\n"
@@ -1833,7 +1843,7 @@ msgstr ""
 "  --urpmi-root   - urpmi veritabanı ve rpm kurulumu için bir başka kök "
 "kullan.\n"
 
-#: ../urpme:55 ../urpmi:115
+#: ../urpme:55 ../urpmi:116
 #, c-format
 msgid "  --justdb       - update only the rpm db, not the filesystem.\n"
 msgstr ""
@@ -1866,7 +1876,7 @@ msgstr ""
 "  --use-distrib  - urpme'yi bir dağıtım ağacından ayarla. Bir \"chroot\"u,\n"
 "                   --root seçeneğiyle (kur/kaldır)mak için yararlıdır.\n"
 
-#: ../urpme:62 ../urpmi:182 ../urpmq:93
+#: ../urpme:62 ../urpmi:183 ../urpmq:93
 #, c-format
 msgid "  --verbose, -v  - verbose mode.\n"
 msgstr "  --verbose, -v  - kalabalık kipi.\n"
@@ -1876,13 +1886,13 @@ msgstr "  --verbose, -v  - kalabalık kipi.\n"
 msgid "  -a             - select all packages matching expression.\n"
 msgstr "  -a             - ifadeye uyan tüm paketleri seçer. \n"
 
-#: ../urpme:64 ../urpmf:86 ../urpmi:184 ../urpmi.recover:52 ../urpmq:114
+#: ../urpme:64 ../urpmf:86 ../urpmi:185 ../urpmi.recover:52 ../urpmq:114
 #, c-format
 msgid ""
 "  --define, -D   - define macro after all the others have been defined.\n"
 msgstr ""
 
-#: ../urpme:65 ../urpmf:87 ../urpmi:185 ../urpmi.recover:53 ../urpmq:115
+#: ../urpme:65 ../urpmf:87 ../urpmi:186 ../urpmi.recover:53 ../urpmq:115
 #, c-format
 msgid ""
 "  --predefine    - predefine macro before any others have been defined.\n"
@@ -1976,13 +1986,13 @@ msgstr ""
 msgid "  --version      - print this tool's version number.\n"
 msgstr "  --version      - bu aracın sürüm numarasını yazdır.\n"
 
-#: ../urpmf:37 ../urpmi:155 ../urpmq:84
+#: ../urpmf:37 ../urpmi:156 ../urpmq:84
 #, c-format
 msgid "  --env          - use specific environment (typically a bug report).\n"
 msgstr ""
 "  --env          - belirli bir çevre kullan (genellikle bir hata raporu).\n"
 
-#: ../urpmf:38 ../urpmi:86 ../urpmq:51
+#: ../urpmf:38 ../urpmi:87 ../urpmq:51
 #, c-format
 msgid "  --excludemedia - do not use the given media, separated by comma.\n"
 msgstr ""
@@ -1997,7 +2007,7 @@ msgstr ""
 "  --literal, -l  - örnekleri eşleştirme, argümanı bir tam satır olarak "
 "kullan.\n"
 
-#: ../urpmf:42 ../urpmi:89 ../urpmq:52
+#: ../urpmf:42 ../urpmi:90 ../urpmq:52
 #, c-format
 msgid ""
 "  --sortmedia    - sort media according to substrings separated by comma.\n"
@@ -2011,7 +2021,7 @@ msgid "  --use-distrib  - use the given path to access media\n"
 msgstr ""
 "  --use-distrib  - kurulum kaynağına erişim için verilen yolu kullan.\n"
 
-#: ../urpmf:44 ../urpmi:90 ../urpmq:53
+#: ../urpmf:44 ../urpmi:91 ../urpmq:53
 #, c-format
 msgid "  --synthesis    - use the given synthesis instead of urpmi db.\n"
 msgstr ""
@@ -2022,7 +2032,7 @@ msgstr ""
 msgid "  --uniq         - do not print identical lines twice.\n"
 msgstr "  --uniq         - benzer satırları ikinci kez yazdırma.\n"
 
-#: ../urpmf:46 ../urpmi:87 ../urpmq:48
+#: ../urpmf:46 ../urpmi:88 ../urpmq:48
 #, c-format
 msgid "  --update       - use only update media.\n"
 msgstr "  --update        - sadece güncelleme ortamını kullan.\n"
@@ -2253,56 +2263,62 @@ msgid "no xml-info available for medium \"%s\""
 msgstr "\"%s\" ortamı için xml-info mevcut değil."
 
 #: ../urpmi:79
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
+"Copyright (C) 2012-2015 OpenMandriva Association.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
 "usage:\n"
 msgstr ""
+"%s sürüm %s\n"
+"%s\n"
+"Bu bir özgür yazılımdır ve GNU GPL lisansı altında tekrar dağıtılabilinir.\n"
+"\n"
+"kullanımı:\n"
 
-#: ../urpmi:93
+#: ../urpmi:94
 #, c-format
 msgid "  --auto-update  - update media then upgrade the system.\n"
 msgstr ""
 "  --auto-update  - önce kurulum kaynağını güncelle, sonra da sistemi "
 "yükselt.\n"
 
-#: ../urpmi:94
+#: ../urpmi:95
 #, c-format
 msgid "    --no-md5sum    - disable MD5SUM file checking.\n"
 msgstr "    --no-md5sum    - MD5SUM dosya denetimini iptal et.\n"
 
-#: ../urpmi:95
+#: ../urpmi:96
 #, c-format
 msgid "    --force-key    - force update of gpg key.\n"
 msgstr "    --force-key    - gpg anahtarını güncellemeye zorla.\n"
 
-#: ../urpmi:96
+#: ../urpmi:97
 #, c-format
 msgid "  --auto-orphans - remove orphans without asking\n"
 msgstr "  --auto-orphans - gereksiz paketleri sormadan kaldır\n"
 
-#: ../urpmi:97 ../urpmq:58
+#: ../urpmi:98 ../urpmq:58
 #, c-format
 msgid "  --no-suggests  - do not auto select \"suggested\" packages.\n"
 msgstr ""
 
-#: ../urpmi:98
+#: ../urpmi:99
 #, c-format
 msgid ""
 "  --no-uninstall - never ask to uninstall a package, abort the "
 "installation.\n"
 msgstr "  --no-uninstall - paket kaldırmayı sorma, kurulumu iptal et.\n"
 
-#: ../urpmi:99
+#: ../urpmi:100
 #, c-format
 msgid "  --no-install   - don't install packages (only download)\n"
 msgstr "  --no-install   - paketleri kurma.(sadece indir.)\n"
 
-#: ../urpmi:100 ../urpmq:60
+#: ../urpmi:101 ../urpmq:60
 #, c-format
 msgid ""
 "  --keep         - keep existing packages if possible, reject requested\n"
@@ -2310,18 +2326,18 @@ msgid ""
 msgstr ""
 "  --keep         - var olan paketleri koru, mümkünse kaldırılackaları\n"
 
-#: ../urpmi:102
+#: ../urpmi:103
 #, c-format
 msgid "  --force-req-update  - Try to update all of package requires.\n"
 msgstr ""
 
-#: ../urpmi:103
+#: ../urpmi:104
 #, c-format
 msgid ""
 "  --no-force-req-update  - Do not try to update all of package requires.\n"
 msgstr ""
 
-#: ../urpmi:104
+#: ../urpmi:105
 #, c-format
 msgid ""
 "  --split-level  - split in small transaction if more than given packages\n"
@@ -2332,51 +2348,51 @@ msgstr ""
 "                   fazla ise ufak işlemler böl.\n"
 "                   varsayılan %d dir.\n"
 
-#: ../urpmi:108
+#: ../urpmi:109
 #, c-format
 msgid "  --split-length - small transaction length, default is %d.\n"
 msgstr "  --split-length - ufak işlem uzunluğu, varsayılan %d dir.\n"
 
-#: ../urpmi:110
+#: ../urpmi:111
 #, c-format
 msgid "  --fuzzy, -y    - impose fuzzy search.\n"
 msgstr "  --fuzzy, -y    - bulanık aramaya zorla\n"
 
-#: ../urpmi:111
+#: ../urpmi:112
 #, c-format
 msgid "  --buildrequires - install the buildrequires of the packages\n"
 msgstr "  --buildrequires - paketlerin derleme gerekliliklerini kurar.\n"
 
-#: ../urpmi:112
+#: ../urpmi:113
 #, c-format
 msgid "  --install-src  - install only source package (no binaries).\n"
 msgstr ""
 "  --install-src  - sadece kaynak kodu paketlerini kur (ikilileri değil).\n"
 
-#: ../urpmi:113
+#: ../urpmi:114
 #, c-format
 msgid "  --clean        - remove rpm from cache before anything else.\n"
 msgstr "  --clean        - her şeyden önce rpm paketini önbellekten sil.\n"
 
-#: ../urpmi:114
+#: ../urpmi:115
 #, c-format
 msgid "  --noclean      - don't clean rpms from cache.\n"
 msgstr "  --noclean      - rpm paketini ön bellekte kullanılmadan sakla\n"
 
-#: ../urpmi:116
+#: ../urpmi:117
 #, c-format
 msgid ""
 "  --downgrade    - dowgrade a package from the version currently installed\n"
 "                   to the previously highest version\n"
 msgstr ""
 
-#: ../urpmi:118
+#: ../urpmi:119
 #, c-format
 msgid ""
 "  --replacepkgs  - force installing packages which are already installed.\n"
 msgstr "  --replacepkgs  - sistemde yüklü paketleri yüklemeye zorla.\n"
 
-#: ../urpmi:120
+#: ../urpmi:121
 #, c-format
 msgid ""
 "  --allow-nodeps - allow asking user to install packages without\n"
@@ -2385,7 +2401,7 @@ msgstr ""
 "  --allow-nodeps - kullanıcıya bağımlılıkları sormadan kuruluma\n"
 "                   izin verir.\n"
 
-#: ../urpmi:122
+#: ../urpmi:123
 #, c-format
 msgid ""
 "  --allow-force  - allow asking user to install packages without\n"
@@ -2394,12 +2410,12 @@ msgstr ""
 "  --allow-force  - kullanıcıya bağımlılıkları ve diğer olumsuzlukları\n"
 "                   sormadan kuruluma izin verir.\n"
 
-#: ../urpmi:124
+#: ../urpmi:125
 #, c-format
 msgid "  --allow-suggests - auto select \"suggested\" packages.\n"
 msgstr ""
 
-#: ../urpmi:128
+#: ../urpmi:129
 #, c-format
 msgid ""
 "  --use-distrib  - configure urpmi on the fly from a distrib tree, useful\n"
@@ -2408,19 +2424,19 @@ msgstr ""
 "  --use-distrib  - urpmi'yi bir dağıtım ağacından ayarla.bir \"chroot\"u,\n"
 "                   --root seçeneğiyle kurmak için yararlıdır.\n"
 
-#: ../urpmi:130
+#: ../urpmi:131
 #, c-format
 msgid ""
 "  --target-arch  - generate and load /etc/rpm/platform within a chroot\n"
 "                           with --root option.\n"
 msgstr ""
 
-#: ../urpmi:132 ../urpmi.addmedia:61 ../urpmi.update:37
+#: ../urpmi:133 ../urpmi.addmedia:61 ../urpmi.update:37
 #, c-format
 msgid "  --metalink     - generate and use a local metalink.\n"
 msgstr "  --metalink     - bir metalink üret kullan.\n"
 
-#: ../urpmi:133
+#: ../urpmi:134
 #, c-format
 msgid ""
 "  --download-all - download all needed packages before trying to install "
@@ -2428,7 +2444,7 @@ msgid ""
 msgstr ""
 "  --download-all - kurmayı denemeden önce tüm gerekli paketleri indir.\n"
 
-#: ../urpmi:134
+#: ../urpmi:135
 #, c-format
 msgid ""
 "  --downloader   - program to use to retrieve distant files. \n"
@@ -2437,51 +2453,51 @@ msgstr ""
 "  --downloader   - dosyaları indirmek için kullanılacak yazılım. \n"
 "                   bilinen yazılımlar: %s\n"
 
-#: ../urpmi:137
+#: ../urpmi:138
 #, c-format
 msgid "  --curl-options - additional options to pass to curl\n"
 msgstr "  --curl-options - curl için ek özellikler\n"
 
-#: ../urpmi:138
+#: ../urpmi:139
 #, c-format
 msgid "  --rsync-options- additional options to pass to rsync\n"
 msgstr "  --rsync-options- rsync için ek özellikler\n"
 
-#: ../urpmi:139
+#: ../urpmi:140
 #, c-format
 msgid "  --wget-options - additional options to pass to wget\n"
 msgstr "  --wget-options - wget için ek özellikler\n"
 
-#: ../urpmi:140
+#: ../urpmi:141
 #, c-format
 msgid "  --prozilla-options - additional options to pass to prozilla\n"
 msgstr "  --prozilla-options - prozilla için ek özellikler\n"
 
-#: ../urpmi:141
+#: ../urpmi:142
 #, c-format
 msgid "  --aria2-options - additional options to pass to aria2\n"
 msgstr "  --aria2-options - aria2 için ek özellikler\n"
 
-#: ../urpmi:142 ../urpmi.addmedia:62 ../urpmi.update:38
+#: ../urpmi:143 ../urpmi.addmedia:62 ../urpmi.update:38
 #, c-format
 msgid "  --limit-rate   - limit the download speed.\n"
 msgstr "  --limit-rate   - indirme hızını kısıtla.\n"
 
-#: ../urpmi:143
+#: ../urpmi:144
 #, c-format
 msgid ""
 "  --retry-hard   - rerun downloader if it fails after timeout\n"
 "                   (specified by --download-timeout).\n"
 msgstr ""
 
-#: ../urpmi:145
+#: ../urpmi:146
 #, c-format
 msgid ""
 "  --download-timeout   - timeout before next attempt to invoke downloader\n"
 "                   (only if --retry-hard is used). \n"
 msgstr ""
 
-#: ../urpmi:147
+#: ../urpmi:148
 #, c-format
 msgid ""
 "  --resume       - resume transfer of partially-downloaded files\n"
@@ -2491,7 +2507,7 @@ msgstr ""
 "                   (--no-resume bunu devre dışı bırakır. Varsayılan devre "
 "dışı'dır.)\n"
 
-#: ../urpmi:149 ../urpmi.addmedia:63 ../urpmi.update:39 ../urpmq:80
+#: ../urpmi:150 ../urpmi.addmedia:63 ../urpmi.update:39 ../urpmq:80
 #, c-format
 msgid ""
 "  --proxy        - use specified HTTP proxy, the port number is assumed\n"
@@ -2501,7 +2517,7 @@ msgstr ""
 "                   varsayılan olan 1080 kabul edilecek (biçim <vekilsunucu[:"
 "port]>).\n"
 
-#: ../urpmi:151 ../urpmi.addmedia:65 ../urpmi.update:41 ../urpmq:82
+#: ../urpmi:152 ../urpmi.addmedia:65 ../urpmi.update:41 ../urpmq:82
 #, c-format
 msgid ""
 "  --proxy-user   - specify user and password to use for proxy\n"
@@ -2510,7 +2526,7 @@ msgstr ""
 "  --proxy-user   - vekil sunucu kimlik denetimi için kullanıcı adı\n"
 "                   ve parola belirtin (biçim <kullanıcıadı:parola>).\n"
 
-#: ../urpmi:153
+#: ../urpmi:154
 #, c-format
 msgid ""
 "  --bug          - output a bug report in directory indicated by\n"
@@ -2519,44 +2535,44 @@ msgstr ""
 "  --bug          - sonraki argüman tarafından belirtilen dizini bir\n"
 "                   hata raporu oluştur.\n"
 
-#: ../urpmi:159
+#: ../urpmi:160
 #, c-format
 msgid "  --excludepath  - exclude path separated by comma.\n"
 msgstr "  --excludepath  - virgül ile ayrılmış yolları dahil etme.\n"
 
-#: ../urpmi:160
+#: ../urpmi:161
 #, c-format
 msgid "  --excludedocs  - exclude doc files.\n"
 msgstr "  --excludedocs  - doc dosyalarını dışla.\n"
 
-#: ../urpmi:161
+#: ../urpmi:162
 #, c-format
 msgid "  --ignoresize   - don't verify disk space before installation.\n"
 msgstr "  --ignoresize   - yüklemeden önce disk alanını kontrol etme.\n"
 
-#: ../urpmi:162
+#: ../urpmi:163
 #, c-format
 msgid "  --ignorearch   - allow to install rpms for unmatched architectures.\n"
 msgstr ""
 "  --ignorearch   -  eşleşmeyen mimarilerdeki rpm'lerin kurulmasına izin "
 "ver.\n"
 
-#: ../urpmi:163
+#: ../urpmi:164
 #, c-format
 msgid "  --noscripts    - do not execute package scriptlet(s)\n"
 msgstr "  --noscripts    - hiç bir paket betiğini çalıştırma.\n"
 
-#: ../urpmi:164
+#: ../urpmi:165
 #, c-format
 msgid "  --notriggers   - do not execute package trigger(s)\n"
 msgstr ""
 
-#: ../urpmi:165
+#: ../urpmi:166
 #, c-format
 msgid "  --nofdigests   - do not verify digest of file(s)\n"
 msgstr ""
 
-#: ../urpmi:166
+#: ../urpmi:167
 #, c-format
 msgid ""
 "  --fastunsafe   - trade verification and reliability for performance, "
@@ -2566,22 +2582,22 @@ msgid ""
 "                   --no-verify-rpm\n"
 msgstr ""
 
-#: ../urpmi:170
+#: ../urpmi:171
 #, c-format
 msgid "  --replacefiles - ignore file conflicts\n"
 msgstr "  --replacefiles    - çakışanları yok say\n"
 
-#: ../urpmi:172
+#: ../urpmi:173
 #, c-format
 msgid "  --skip         - packages which installation should be skipped\n"
 msgstr "  --skip         - kurulumunun atlanılması gereken paketler\n"
 
-#: ../urpmi:173
+#: ../urpmi:174
 #, c-format
 msgid "  --prefer       - packages which should be preferred\n"
 msgstr "  --prefer       - tercih edilmesi gereken paketler.\n"
 
-#: ../urpmi:174
+#: ../urpmi:175
 #, c-format
 msgid ""
 "  --more-choices - when several packages are found, propose more choices\n"
@@ -2591,43 +2607,43 @@ msgstr ""
 "fazla\n"
 "                   seçenek teklif et.\n"
 
-#: ../urpmi:176
+#: ../urpmi:177
 #, c-format
 msgid "  --nolock       - don't lock rpm db.\n"
 msgstr "  --nolock       - rpm veritabanını kilitleme.\n"
 
-#: ../urpmi:177
+#: ../urpmi:178
 #, c-format
 msgid "  --strict-arch  - upgrade only packages with the same architecture.\n"
 msgstr "  --strict-arch  - aynı mimaride olan paketleri güncelle.\n"
 
-#: ../urpmi:178 ../urpmq:101
+#: ../urpmi:179 ../urpmq:101
 #, c-format
 msgid "  -a             - select all matches on command line.\n"
 msgstr "  -a             - komut satırındakilere uyanların tümünü seçer. \n"
 
-#: ../urpmi:181
+#: ../urpmi:182
 #, c-format
 msgid "  --quiet, -q    - quiet mode.\n"
 msgstr "  --quiet, -q             - Sessiz kipi.\n"
 
-#: ../urpmi:183
+#: ../urpmi:184
 #, c-format
 msgid "  --debug        - very verbose mode.\n"
 msgstr "  --debug             - oldukça kalabalık kip.\n"
 
-#: ../urpmi:186
+#: ../urpmi:187
 #, c-format
 msgid "  names or rpm files given on command line will be installed.\n"
 msgstr ""
 "  komut satırından isimleri veya rpm dosyaları verilenler yüklenecek.\n"
 
-#: ../urpmi:220
+#: ../urpmi:221
 #, c-format
 msgid "Error: can't use --auto-select along with package list.\n"
 msgstr "Hata: Paket listesi boyunca --auto-select parametresi kullanılamaz.\n"
 
-#: ../urpmi:227
+#: ../urpmi:228
 #, c-format
 msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
@@ -2636,23 +2652,23 @@ msgstr ""
 "Hata: Hata raporu oluşturmak için, kullanılan parametleri\n"
 "--bug parametresiyle çalıştırın.\n"
 
-#: ../urpmi:259
+#: ../urpmi:260
 #, c-format
 msgid "You can't install binary rpm files when using --install-src"
 msgstr ""
 "--install-src parametresi kullanılırken ikili rpm dosyalarını kuramazsınız."
 
-#: ../urpmi:260
+#: ../urpmi:261
 #, c-format
 msgid "You can't install spec files"
 msgstr "spec dosyalarını kuramazsınız."
 
-#: ../urpmi:267
+#: ../urpmi:268
 #, c-format
 msgid "defaulting to --buildrequires"
 msgstr "--buildrequires parametresine varsayılan"
 
-#: ../urpmi:272
+#: ../urpmi:273
 #, c-format
 msgid ""
 "please use --buildrequires or --install-src, defaulting to --buildrequires"
@@ -2660,7 +2676,7 @@ msgstr ""
 "Lütfen, --buildrequires parametresine varsayılan olması için, --"
 "buildrequires veya --install-src parametrelerini kullanın."
 
-#: ../urpmi:292
+#: ../urpmi:293
 #, c-format
 msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
@@ -2669,12 +2685,12 @@ msgstr ""
 "[%s] dizini zaten var. Lütfen hata raporlaması için bir başka dizin kullanın "
 "ya da bunu silin."
 
-#: ../urpmi:293
+#: ../urpmi:294
 #, c-format
 msgid "Unable to create directory [%s] for bug report"
 msgstr "[%s] dizini hata raporu için oluşturulamıyor"
 
-#: ../urpmi:314
+#: ../urpmi:315
 #, c-format
 msgid ""
 "Error: %s appears to be mounted read-only.\n"
@@ -2684,30 +2700,30 @@ msgstr ""
 "İşlemi zorlamak için --allow-force parametresini kullanın."
 
 #. -PO: here format is "<package_name>: <summary> (to upgrade)"
-#: ../urpmi:486
+#: ../urpmi:487
 #, c-format
 msgid "%s: %s (to upgrade)"
 msgstr "%s: %s (yükseltme için)"
 
 #. -PO: here format is "<package_name> (to upgrade)"
-#: ../urpmi:488
+#: ../urpmi:489
 #, c-format
 msgid "%s (to upgrade)"
 msgstr "%s (yükseltme için)"
 
 #. -PO: here format is "<package_name>: <summary> (to install)"
-#: ../urpmi:492
+#: ../urpmi:493
 #, c-format
 msgid "%s: %s (to install)"
 msgstr "%s: %s (kurulum için)"
 
 #. -PO: here format is "<package_name> (to install)"
-#: ../urpmi:494
+#: ../urpmi:495
 #, c-format
 msgid "%s (to install)"
 msgstr "%s (kurulum için)"
 
-#: ../urpmi:500
+#: ../urpmi:501
 #, c-format
 msgid ""
 "In order to satisfy the '%s' dependency, one of the following packages is "
@@ -2715,12 +2731,12 @@ msgid ""
 msgstr ""
 "'%s' bağımlılık sorununu aşabilmek için, aşağıdaki paketlerden biri gerekli:"
 
-#: ../urpmi:503
+#: ../urpmi:504
 #, c-format
 msgid "What is your choice? (1-%d) "
 msgstr "Seçiminiz nedir? (1-%d) "
 
-#: ../urpmi:551
+#: ../urpmi:552
 #, c-format
 msgid ""
 "The following package cannot be installed because it depends on packages\n"
@@ -2731,7 +2747,7 @@ msgstr ""
 "için kurulamaz:\n"
 "%s"
 
-#: ../urpmi:553
+#: ../urpmi:554
 #, c-format
 msgid ""
 "The following packages can't be installed because they depend on packages\n"
@@ -2742,7 +2758,7 @@ msgstr ""
 "için kurulamazlar:\n"
 "%s"
 
-#: ../urpmi:559 ../urpmi:578
+#: ../urpmi:560 ../urpmi:579
 #, c-format
 msgid ""
 "\n"
@@ -2751,7 +2767,7 @@ msgstr ""
 "\n"
 "Yine de devam edilsin mi?"
 
-#: ../urpmi:572
+#: ../urpmi:573
 #, c-format
 msgid ""
 "A requested package cannot be installed:\n"
@@ -2760,12 +2776,12 @@ msgstr ""
 "İstenen paket kurulamaz:\n"
 "%s"
 
-#: ../urpmi:594
+#: ../urpmi:595
 #, c-format
 msgid "removing package %s will break your system"
 msgstr "%s paketinin kaldırılması sisteminizi çökertecektir."
 
-#: ../urpmi:602
+#: ../urpmi:603
 #, c-format
 msgid ""
 "The installation cannot continue because the following package\n"
@@ -2776,7 +2792,7 @@ msgstr ""
 "için aşağıdaki paketlerin kaldırılması gerekiyor:\n"
 "%s\n"
 
-#: ../urpmi:604
+#: ../urpmi:605
 #, c-format
 msgid ""
 "The installation cannot continue because the following packages\n"
@@ -2787,12 +2803,12 @@ msgstr ""
 "için aşağıdaki paketlerin kaldırılması gerekiyor:\n"
 "%s\n"
 
-#: ../urpmi:613
+#: ../urpmi:614
 #, c-format
 msgid "(test only, removal will not be actually done)"
 msgstr "(sadece deneme, gerçekte kaldırma yapılmayacak.)"
 
-#: ../urpmi:635
+#: ../urpmi:636
 #, c-format
 msgid ""
 "You must first call urpmi with --buildrequires to install the following "
@@ -2803,30 +2819,30 @@ msgstr ""
 "çağırmalısınız:\n"
 "%s\n"
 
-#: ../urpmi:645
+#: ../urpmi:646
 #, c-format
 msgid "The following orphan package will be removed."
 msgid_plural "The following orphan packages will be removed."
 msgstr[0] "Aşağıdaki gereksiz paket kaldırılacak"
 msgstr[1] "Aşağıdaki gereksiz paketler kaldırılacak"
 
-#: ../urpmi:671
+#: ../urpmi:674
 #, c-format
 msgid "WARNING: %s option is in use. Some strange problems may happen"
 msgstr ""
 "UYARI: %s seçeneği kullanımdadır. Bazı garip sorunlar meydana gelebilir."
 
-#: ../urpmi:683
+#: ../urpmi:686
 #, c-format
 msgid "(test only, installation will not be actually done)"
 msgstr "(sadece deneme, gerçekte kurulum yapılmayacak.)"
 
-#: ../urpmi:716
+#: ../urpmi:719
 #, c-format
 msgid "Press Enter when mounted..."
 msgstr "Hazır olduğunuzda Enter'a basın..."
 
-#: ../urpmi:769
+#: ../urpmi:772
 #, c-format
 msgid "Updating urpmi database..."
 msgstr ""
@@ -3621,14 +3637,6 @@ msgstr "Yazılım Yükleyici"
 #: ../gurpmi.desktop.in.h:2
 msgid "Graphical front end to install RPM files"
 msgstr "RPM dosyaların kurulumu için bir grafik önyüz"
-
-#: ../polkit/org.openmandriva.gurpmi2.policy.in.h:1
-msgid "Run DrakX Package Installer"
-msgstr ""
-
-#: ../polkit/org.openmandriva.gurpmi2.policy.in.h:2
-msgid "Authentication is required to run DrakX Package Installer"
-msgstr ""
 
 #~ msgid "  --allow-recommends - auto select \"recommended\" packages.\n"
 #~ msgstr "  --allow-recommends - \"önerilen\" paketleri otomatik seç.\n"

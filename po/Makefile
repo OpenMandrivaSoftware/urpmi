@@ -38,7 +38,7 @@ merge_openmandriva_translations: $(PGOAL).pot
 		git checkout --theirs mageia/master "$$n"; \
 		if [ $$? -eq 0 ]; then \
 			sed -e '/^$$/q' "$$n.orig" > "$$n.header"; \
-			sed -e 's#oondrake#oondrake#g' -i "$$n"; \
+			sed -e 's#mageia#openmandriva#g' -i "$$n"; \
 			msgcat --use-first -o "$$n.temp" -t utf-8 -s "$$n.orig" "$$n"; \
 			git checkout --theirs remotes/origin/HEAD "$$n"; \
 			msgcat --use-first -o "$$n.orig" -t utf-8 -s "$$n.header" "$$n.temp"; \

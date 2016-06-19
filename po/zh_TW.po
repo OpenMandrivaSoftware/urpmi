@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-04 00:10+0100\n"
+"POT-Creation-Date: 2016-06-19 16:26+0200\n"
 "PO-Revision-Date: 2008-11-01 10:40+0800\n"
 "Last-Translator: Shiva Huang <shivahuang@gmail.com>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -33,22 +33,22 @@ msgstr ""
 "X-Generator: KBabel 1.0.2\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../gurpmi:49
+#: ../gurpmi:45
 #, c-format
 msgid "RPM installation"
 msgstr "RPM 套件安裝"
 
-#: ../gurpmi:63
+#: ../gurpmi:59
 #, c-format
 msgid "Error: unable to find file %s, will cancel operation"
 msgstr "錯誤：無法找到檔案 %s，作業將取消"
 
-#: ../gurpmi:64 ../gurpmi2:178 ../gurpmi2:208
+#: ../gurpmi:60 ../gurpmi2:174 ../gurpmi2:204
 #, c-format
 msgid "_Ok"
 msgstr "確定 (_O)"
 
-#: ../gurpmi:84
+#: ../gurpmi:80
 #, c-format
 msgid ""
 "You have selected a source package:\n"
@@ -69,7 +69,7 @@ msgstr ""
 "\n"
 "您想怎麼做？"
 
-#: ../gurpmi:92 ../gurpmi:103
+#: ../gurpmi:88 ../gurpmi:99
 #, c-format
 msgid ""
 "You are about to install the following software packages on your computer:\n"
@@ -84,7 +84,7 @@ msgstr ""
 "\n"
 "要繼續嗎？"
 
-#: ../gurpmi:98
+#: ../gurpmi:94
 #, c-format
 msgid ""
 "You are about to install the following software package on your computer:\n"
@@ -99,32 +99,32 @@ msgstr ""
 "\n"
 "您或許傾向儲存而非安裝它。您的選擇是什麼？"
 
-#: ../gurpmi:116
+#: ../gurpmi:112
 #, c-format
 msgid "_Install"
 msgstr "安裝 (_I)"
 
-#: ../gurpmi:117
+#: ../gurpmi:113
 #, c-format
 msgid "_Save"
 msgstr "儲存 (_S)"
 
-#: ../gurpmi:118 ../gurpmi2:178
+#: ../gurpmi:114 ../gurpmi2:174
 #, c-format
 msgid "_Cancel"
 msgstr "取消 (_C)"
 
-#: ../gurpmi:126
+#: ../gurpmi:122
 #, c-format
 msgid "Choose location to save file"
 msgstr "選擇存檔的位置"
 
-#: ../gurpmi:126
+#: ../gurpmi:122
 #, c-format
 msgid "Cancel"
 msgstr "取消"
 
-#: ../gurpmi:126 ../gurpmi2:124
+#: ../gurpmi:122 ../gurpmi2:120
 #, c-format
 msgid "Ok"
 msgstr "確定"
@@ -150,32 +150,32 @@ msgstr ""
 msgid "Options:"
 msgstr "選項："
 
-#: ../gurpmi.pm:61 ../urpme:46 ../urpmf:35 ../urpmi:84 ../urpmi.addmedia:55
+#: ../gurpmi.pm:61 ../urpme:46 ../urpmf:35 ../urpmi:85 ../urpmi.addmedia:55
 #: ../urpmi.recover:40 ../urpmi.removemedia:40 ../urpmi.update:32 ../urpmq:47
 #, c-format
 msgid "  --help         - print this help message.\n"
 msgstr "  --help         - 顯示此說明訊息。\n"
 
-#: ../gurpmi.pm:62 ../urpmi:91
+#: ../gurpmi.pm:62 ../urpmi:92
 #, c-format
 msgid ""
 "  --auto         - non-interactive mode, assume default answers to "
 "questions.\n"
 msgstr "  --auto         - 非互動式模式，對問題使用預設的回答。\n"
 
-#: ../gurpmi.pm:63 ../urpmi:92 ../urpmq:54
+#: ../gurpmi.pm:63 ../urpmi:93 ../urpmq:54
 #, c-format
 msgid ""
 "  --auto-select  - automatically select packages to upgrade the system.\n"
 msgstr "  --auto-select  - 自動選擇要用來升級系統的套件。\n"
 
-#: ../gurpmi.pm:64 ../urpme:50 ../urpmi:119 ../urpmq:70
+#: ../gurpmi.pm:64 ../urpme:50 ../urpmi:120 ../urpmq:70
 #, c-format
 msgid ""
 "  --force        - force invocation even if some packages do not exist.\n"
 msgstr "  --force        - 即使某些套件不存在仍然強制執行。\n"
 
-#: ../gurpmi.pm:65 ../urpmi:156
+#: ../gurpmi.pm:65 ../urpmi:157
 #, c-format
 msgid ""
 "  --verify-rpm   - verify rpm signature before installation\n"
@@ -184,34 +184,34 @@ msgstr ""
 "  --verify-rpm   - 安裝前檢驗 RPM 檔案的簽章。\n"
 "                   (--no-verify-rpm 會停用它，預設值為啟用)。\n"
 
-#: ../gurpmi.pm:67 ../urpmf:41 ../urpmi:85 ../urpmq:49
+#: ../gurpmi.pm:67 ../urpmf:41 ../urpmi:86 ../urpmq:49
 #, c-format
 msgid "  --media        - use only the given media, separated by comma.\n"
 msgstr "  --media        - 只使用給定的媒體，不同媒體間請以逗號分隔。\n"
 
-#: ../gurpmi.pm:68 ../urpmi:179
+#: ../gurpmi.pm:68 ../urpmi:180
 #, c-format
 msgid "  -p             - allow search in provides to find package.\n"
 msgstr "  -p             - 允許於 provides 中搜尋套件。\n"
 
-#: ../gurpmi.pm:69 ../urpmi:180
+#: ../gurpmi.pm:69 ../urpmi:181
 #, c-format
 msgid "  -P             - do not search in provides to find package.\n"
 msgstr "  -P             - 不在 provides 中搜尋套件。\n"
 
-#: ../gurpmi.pm:70 ../urpmi:126 ../urpmq:73
+#: ../gurpmi.pm:70 ../urpmi:127 ../urpmq:73
 #, c-format
 msgid "  --root         - use another root for rpm installation.\n"
 msgstr "  --root         - 使用另一個根目錄進行 RPM 套件的安裝。\n"
 
-#: ../gurpmi.pm:71 ../urpmi:158
+#: ../gurpmi.pm:71 ../urpmi:159
 #, c-format
 msgid ""
 "  --test         - only verify if the installation can be achieved "
 "correctly.\n"
 msgstr "  --test         - 僅確認安裝是否能夠正確完成。\n"
 
-#: ../gurpmi.pm:72 ../urpmi:88
+#: ../gurpmi.pm:72 ../urpmi:89
 #, c-format
 msgid ""
 "  --searchmedia  - use only the given media to search requested packages.\n"
@@ -222,22 +222,22 @@ msgstr "  --searchmedia  - 只使用指定的媒體來搜尋需要的套件。\n
 msgid "No packages specified"
 msgstr "未指定套件"
 
-#: ../gurpmi2:46
+#: ../gurpmi2:42
 #, c-format
 msgid "Must be root"
 msgstr "必須擁有管理者權限"
 
-#: ../gurpmi2:49 ../urpm.pm:23
+#: ../gurpmi2:45 ../urpm.pm:23
 #, c-format
 msgid "While some packages may have been installed, there were failures.\n"
 msgstr ""
 
-#: ../gurpmi2:80
+#: ../gurpmi2:76
 #, c-format
 msgid "Preparing packages installation..."
 msgstr "正在準備套件安裝..."
 
-#: ../gurpmi2:93 ../gurpmi2:99 ../urpmi:573
+#: ../gurpmi2:89 ../gurpmi2:95 ../urpmi:574
 #, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
@@ -246,44 +246,44 @@ msgstr ""
 "某些要求的套件無法安裝：\n"
 "%s"
 
-#: ../gurpmi2:106
+#: ../gurpmi2:102
 #, fuzzy, c-format
 msgid "Continue installation anyway?"
 msgstr ""
 "\n"
 "無論如何都要繼續安裝嗎？"
 
-#: ../gurpmi2:124
+#: ../gurpmi2:120
 #, c-format
 msgid "Warning"
 msgstr "警告"
 
-#: ../gurpmi2:174
+#: ../gurpmi2:170
 #, c-format
 msgid " (to upgrade)"
 msgstr " (升級用)"
 
-#: ../gurpmi2:175
+#: ../gurpmi2:171
 #, c-format
 msgid " (to install)"
 msgstr " (安裝用)"
 
-#: ../gurpmi2:178
+#: ../gurpmi2:174
 #, c-format
 msgid "Package choice"
 msgstr "套件選擇"
 
-#: ../gurpmi2:179
+#: ../gurpmi2:175
 #, c-format
 msgid "One of the following packages is needed:"
 msgstr "需要下列套件之一："
 
-#: ../gurpmi2:209
+#: ../gurpmi2:205
 #, c-format
 msgid "_Abort"
 msgstr "放棄 (_A)"
 
-#: ../gurpmi2:244
+#: ../gurpmi2:240
 #, c-format
 msgid ""
 "The following packages have to be removed for others to be upgraded:\n"
@@ -294,60 +294,60 @@ msgstr ""
 "%s\n"
 "無論如何都要繼續安裝嗎？"
 
-#: ../gurpmi2:255 ../urpmi:689
+#: ../gurpmi2:251 ../urpmi:692
 #, c-format
 msgid "%s of additional disk space will be used."
 msgstr "將使用 %s 額外磁碟空間。"
 
-#: ../gurpmi2:256 ../urpmi:690
+#: ../gurpmi2:252 ../urpmi:693
 #, c-format
 msgid "%s of disk space will be freed."
 msgstr "將釋放 %s 磁碟空間。"
 
-#: ../gurpmi2:257 ../urpmi:691
+#: ../gurpmi2:253 ../urpmi:694
 #, c-format
 msgid "%s of packages will be retrieved."
 msgstr "將取得 %s 軟體套件。"
 
-#: ../gurpmi2:258 ../urpmi:692
+#: ../gurpmi2:254 ../urpmi:695
 #, c-format
 msgid "Proceed with the installation of one package?"
 msgid_plural "Proceed with the installation of the %d packages?"
 msgstr[0] "繼續安裝這 %d 個套件？"
 
-#: ../gurpmi2:264 ../urpmi:680
+#: ../gurpmi2:260 ../urpmi:683
 #, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
 msgstr "為了滿足相依性，將會安裝下列套件："
 
-#: ../gurpmi2:265 ../urpmi:681
+#: ../gurpmi2:261 ../urpmi:684
 #, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
 msgstr "為了滿足相依性，將會一併安裝下列套件："
 
-#: ../gurpmi2:275 ../urpm/main_loop.pm:471
+#: ../gurpmi2:271 ../urpm/main_loop.pm:471
 #, c-format
 msgid "unable to get source packages, aborting"
 msgstr "無法取得原始碼套件，放棄"
 
-#: ../gurpmi2:292 ../urpmi:710
+#: ../gurpmi2:288 ../urpmi:713
 #, c-format
 msgid "Please insert the medium named \"%s\""
 msgstr "請置入名為 \"%s\" 的媒體"
 
-#: ../gurpmi2:312
+#: ../gurpmi2:308
 #, c-format
 msgid "An error occurred:"
 msgstr ""
 
-#: ../gurpmi2:324
+#: ../gurpmi2:320
 #, c-format
 msgid "_Done"
 msgstr "完成 (_D)"
 
-#: ../gurpmi2:341 ../urpm/main_loop.pm:83
+#: ../gurpmi2:337 ../urpm/main_loop.pm:83
 #, c-format
 msgid ""
 "Installation failed, some files are missing:\n"
@@ -356,27 +356,27 @@ msgstr ""
 "安裝失敗，某些檔案遺失：\n"
 "%s"
 
-#: ../gurpmi2:344
+#: ../gurpmi2:340
 #, c-format
 msgid "You may want to update your urpmi database."
 msgstr "您可能需要更新您的 urpmi 資料庫。"
 
-#: ../gurpmi2:348 ../urpm/main_loop.pm:288 ../urpm/main_loop.pm:588
+#: ../gurpmi2:344 ../urpm/main_loop.pm:288 ../urpm/main_loop.pm:588
 #, c-format
 msgid "Installation failed:"
 msgstr "安裝失敗；"
 
-#: ../gurpmi2:353
+#: ../gurpmi2:349
 #, c-format
 msgid "The package(s) are already installed"
 msgstr "每個套件都已經安裝了"
 
-#: ../gurpmi2:355
+#: ../gurpmi2:351
 #, c-format
 msgid "Installation finished"
 msgstr "安裝完畢"
 
-#: ../gurpmi2:368 ../urpmi:777 ../urpmi:793
+#: ../gurpmi2:364 ../urpmi:780 ../urpmi:796
 #, c-format
 msgid "restarting urpmi"
 msgstr "正在重新啟動 urpmi"
@@ -415,7 +415,7 @@ msgstr "                    預設為 %s。\n"
 msgid "   -f             - output rpm full name (NVRA)\n"
 msgstr "   -f             - 輸出 RPM 的完整名稱 (NVRA)\n"
 
-#: ../rurpmi:11 ../urpmi:308
+#: ../rurpmi:11 ../urpmi:309
 #, c-format
 msgid "Only superuser is allowed to install packages"
 msgstr "只有擁有管理者權限的使用者才能安裝套件"
@@ -470,7 +470,7 @@ msgstr "正在擷取 rpm 檔案 [%s] ..."
 msgid "...retrieving done"
 msgstr "...擷取完成"
 
-#: ../urpm.pm:477 ../urpm/download.pm:881 ../urpm/get_pkgs.pm:280
+#: ../urpm.pm:477 ../urpm/download.pm:882 ../urpm/get_pkgs.pm:280
 #: ../urpm/media.pm:1136 ../urpm/media.pm:1657 ../urpm/media.pm:1808
 #, c-format
 msgid "...retrieving failed: %s"
@@ -506,72 +506,82 @@ msgstr "註冊本地端套件錯誤"
 msgid "This operation is forbidden while running in restricted mode"
 msgstr "使用限制模式執行時禁止該操作程序"
 
-#: ../urpm/args.pm:173 ../urpm/args.pm:182
+#: ../urpm/args.pm:174 ../urpm/args.pm:183
 #, c-format
 msgid "bad proxy declaration on command line\n"
 msgstr "命令列傳入的代理伺服器宣告錯誤\n"
 
-#: ../urpm/args.pm:341
+#: ../urpm/args.pm:342
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq：無法讀取 rpm 檔案 \"%s\"\n"
 
-#: ../urpm/args.pm:428
+#: ../urpm/args.pm:429
 #, c-format
 msgid "unexpected expression %s"
 msgstr "未預期的表示式 %s"
 
-#: ../urpm/args.pm:429
+#: ../urpm/args.pm:430
 #, c-format
 msgid "missing expression before %s"
 msgstr "在 %s 前找不到表示式"
 
-#: ../urpm/args.pm:435
+#: ../urpm/args.pm:436
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr "非預期的表示式 %s（建議：使用 -a 或 -o？）"
 
-#: ../urpm/args.pm:439
+#: ../urpm/args.pm:440
 #, fuzzy, c-format
 msgid "no expression to close"
 msgstr "樣版表示式：\n"
 
-#: ../urpm/args.pm:448
+#: ../urpm/args.pm:449
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr "預設 urpmf 需要正規表示式。您應該使用 \"--literal\" 選項"
 
-#: ../urpm/args.pm:522
+#: ../urpm/args.pm:523
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr "chroot 目錄不存在"
 
-#: ../urpm/args.pm:530
+#: ../urpm/args.pm:543
 #, fuzzy, c-format
-msgid "--target-arch may only be used with --root"
+msgid "--target-arch may only be used with --root and specified after"
 msgstr "--list-nodes 參數只能夠配合 --parallel 參數一起使用"
 
-#: ../urpm/args.pm:537
+#: ../urpm/args.pm:555
+#, c-format
+msgid "%s is missing, please install qemu-static-%s"
+msgstr ""
+
+#: ../urpm/args.pm:572
 #, c-format
 msgid "%s already exists, will load in stead of generating new for %s"
 msgstr ""
 
-#: ../urpm/args.pm:576
+#: ../urpm/args.pm:585
+#, c-format
+msgid "creating and mounting necessary system mount points under %s"
+msgstr ""
+
+#: ../urpm/args.pm:614
 #, c-format
 msgid "Can't use %s without %s"
 msgstr "使用 %s 時不能沒有 %s"
 
-#: ../urpm/args.pm:579 ../urpm/args.pm:582 ../urpmq:174
+#: ../urpm/args.pm:617 ../urpm/args.pm:620 ../urpmq:174
 #, c-format
 msgid "Can't use %s with %s"
 msgstr "%s 不能跟 %s 一起用"
 
-#: ../urpm/args.pm:590
+#: ../urpm/args.pm:628
 #, c-format
 msgid "Too many arguments\n"
 msgstr "參數太多\n"
 
-#: ../urpm/args.pm:598
+#: ../urpm/args.pm:636
 #, c-format
 msgid ""
 "%s version %s\n"
@@ -587,12 +597,12 @@ msgstr ""
 "\n"
 "用法：\n"
 
-#: ../urpm/args.pm:604
+#: ../urpm/args.pm:642
 #, c-format
 msgid "Copyright (C) %s by %s"
 msgstr "Copyright (C) %s by %s"
 
-#: ../urpm/bug_report.pm:67 ../urpmi:298
+#: ../urpm/bug_report.pm:67 ../urpmi:299
 #, c-format
 msgid "Copying failed"
 msgstr "複製失敗"
@@ -689,82 +699,82 @@ msgstr "複製失敗"
 msgid "wget is missing\n"
 msgstr "wget 遺失了\n"
 
-#: ../urpm/download.pm:420
+#: ../urpm/download.pm:421
 #, c-format
 msgid "curl is missing\n"
 msgstr "curl 遺失了\n"
 
-#: ../urpm/download.pm:560
+#: ../urpm/download.pm:561
 #, c-format
 msgid "curl failed: download canceled\n"
 msgstr "curl 失敗：已取消下載\n"
 
-#: ../urpm/download.pm:596
+#: ../urpm/download.pm:597
 #, c-format
 msgid "rsync is missing\n"
 msgstr "rsync 遺失了\n"
 
-#: ../urpm/download.pm:663
+#: ../urpm/download.pm:664
 #, c-format
 msgid "ssh is missing\n"
 msgstr "ssh 遺失了\n"
 
-#: ../urpm/download.pm:682
+#: ../urpm/download.pm:683
 #, c-format
 msgid "prozilla is missing\n"
 msgstr "prozilla 遺失了\n"
 
-#: ../urpm/download.pm:698
+#: ../urpm/download.pm:699
 #, c-format
 msgid "Couldn't execute prozilla\n"
 msgstr "無法執行 prozilla\n"
 
-#: ../urpm/download.pm:708
+#: ../urpm/download.pm:709
 #, c-format
 msgid "aria2 is missing\n"
 msgstr "aria2 遺失了\n"
 
-#: ../urpm/download.pm:757
+#: ../urpm/download.pm:758
 #, c-format
 msgid "Failed to download %s"
 msgstr "下載 %s 失敗"
 
-#: ../urpm/download.pm:853
+#: ../urpm/download.pm:854
 #, c-format
 msgid "        %s%% of %s completed, ETA = %s, speed = %s"
 msgstr "        已經完成 %s%% 共 %s，ETA = %s，速度 = %s"
 
-#: ../urpm/download.pm:854
+#: ../urpm/download.pm:855
 #, c-format
 msgid "        %s%% completed, speed = %s"
 msgstr "        %s%% 完成，速度 = %s"
 
-#: ../urpm/download.pm:939
+#: ../urpm/download.pm:940
 #, c-format
 msgid "retrieving %s"
 msgstr "正在取得 %s"
 
-#: ../urpm/download.pm:950
+#: ../urpm/download.pm:951
 #, c-format
 msgid "retrieved %s"
 msgstr ".已取得 %s"
 
-#: ../urpm/download.pm:1013
+#: ../urpm/download.pm:1014
 #, c-format
 msgid "unknown protocol defined for %s"
 msgstr "%s 中定義了未知的通訊協定"
 
-#: ../urpm/download.pm:1027
+#: ../urpm/download.pm:1028
 #, c-format
 msgid "no webfetch found, supported webfetch are: %s\n"
 msgstr "沒有找到 webfetch，支援的 webfetch 有：%s\n"
 
-#: ../urpm/download.pm:1050
+#: ../urpm/download.pm:1051
 #, c-format
 msgid "unable to handle protocol: %s"
 msgstr "無法處理通訊協定：%s"
 
-#: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:558 ../urpmi:577 ../urpmi:700
+#: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:559 ../urpmi:578 ../urpmi:703
 #: ../urpmi.recover:323
 #, c-format
 msgid "Nn"
@@ -787,7 +797,7 @@ msgstr ""
 msgid "Do you want to generate and upload a report?"
 msgstr "您要上傳 DUDF 報告到 Mandriva 嗎？"
 
-#: ../urpm/dudf.pm:79 ../urpmi:560 ../urpmi:579 ../urpmi:701
+#: ../urpm/dudf.pm:79 ../urpmi:561 ../urpmi:580 ../urpmi:704
 #: ../urpmi.addmedia:137 ../urpmi.recover:325
 #, c-format
 msgid " (Y/n) "
@@ -934,7 +944,7 @@ msgstr "無法安裝套件 %s"
 msgid "removing bad rpm (%s) from %s"
 msgstr "正在由 %2$s 移除不良的 RPM (%1$s)"
 
-#: ../urpm/install.pm:250 ../urpm/install.pm:377
+#: ../urpm/install.pm:250 ../urpm/install.pm:383
 #, c-format
 msgid "removing %s failed: %s"
 msgstr "移除 %s 失敗：%s"
@@ -944,23 +954,23 @@ msgstr "移除 %s 失敗：%s"
 msgid "removing package %s"
 msgstr "正在移除套件 %s"
 
-#: ../urpm/install.pm:345
+#: ../urpm/install.pm:351
 #, c-format
 msgid ""
 "created transaction for installing on %s (remove=%d, install=%d, upgrade=%d)"
 msgstr "已建立在 %s 上的安裝程序 (移除 = %d，安裝 = %d，升級 = %d)"
 
-#: ../urpm/install.pm:348
+#: ../urpm/install.pm:354
 #, c-format
 msgid "unable to create transaction"
 msgstr "無法建立安裝程序"
 
-#: ../urpm/install.pm:375
+#: ../urpm/install.pm:381
 #, c-format
 msgid "removing installed rpms (%s) from %s"
 msgstr "正在由 %2$s 移除已安裝的 RPM (%1$s)"
 
-#: ../urpm/install.pm:384
+#: ../urpm/install.pm:390
 #, c-format
 msgid "More information on package %s"
 msgstr "更多關於套件 %s 的資訊"
@@ -1409,7 +1419,7 @@ msgstr "無法從鏡像站列表 %s 找到鏡像站"
 msgid "found geolocalisation %s %.2f %.2f from timezone %s"
 msgstr "找到 geolocalisation %s %.2f %.2f，於時區 %s"
 
-#: ../urpm/mirrors.pm:305
+#: ../urpm/mirrors.pm:307
 #, c-format
 msgid "getting mirror list from %s"
 msgstr "正由 %s 取得鏡像站列表"
@@ -1799,12 +1809,12 @@ msgstr ""
 msgid "  --test         - verify if the removal can be achieved correctly.\n"
 msgstr "  --test         - 確認刪除是否能夠正確進行。\n"
 
-#: ../urpme:51 ../urpmi:125 ../urpmq:72
+#: ../urpme:51 ../urpmi:126 ../urpmq:72
 #, c-format
 msgid "  --parallel     - distributed urpmi across machines of alias.\n"
 msgstr "  --parallel     - 在同步管理的機器上分散式的執行 urpmi。\n"
 
-#: ../urpme:52 ../urpmi:171
+#: ../urpme:52 ../urpmi:172
 #, c-format
 msgid "  --repackage    - Re-package the files before erasing\n"
 msgstr "  --repackage    - 在移除前重新打包檔案\n"
@@ -1814,13 +1824,13 @@ msgstr "  --repackage    - 在移除前重新打包檔案\n"
 msgid "  --root         - use another root for rpm removal.\n"
 msgstr "  --root         - 使用另一個根目錄移除 rpm 套件。\n"
 
-#: ../urpme:54 ../urpmf:40 ../urpmi:127 ../urpmi.addmedia:74
+#: ../urpme:54 ../urpmf:40 ../urpmi:128 ../urpmi.addmedia:74
 #: ../urpmi.removemedia:45 ../urpmi.update:48 ../urpmq:74
 #, c-format
 msgid "  --urpmi-root   - use another root for urpmi db & rpm installation.\n"
 msgstr "  --urpmi-root   - 使用另一個根目錄存放 urpmi 資料庫與 RPM 的安裝。\n"
 
-#: ../urpme:55 ../urpmi:115
+#: ../urpme:55 ../urpmi:116
 #, c-format
 msgid "  --justdb       - update only the rpm db, not the filesystem.\n"
 msgstr "  --justdb       - 只更新 RPM 資料庫，而非檔案系統。\n"
@@ -1852,7 +1862,7 @@ msgstr ""
 "  --use-distrib  - 立即由一個散佈套件樹設定 urpme，在搭配 --root 選項來安\n"
 "                   裝/移除一個 chroot 時很方便。\n"
 
-#: ../urpme:62 ../urpmi:182 ../urpmq:93
+#: ../urpme:62 ../urpmi:183 ../urpmq:93
 #, c-format
 msgid "  --verbose, -v  - verbose mode.\n"
 msgstr "  --verbose, -v  - 詳細訊息模式。\n"
@@ -1862,13 +1872,13 @@ msgstr "  --verbose, -v  - 詳細訊息模式。\n"
 msgid "  -a             - select all packages matching expression.\n"
 msgstr "  -a             - 選擇所有符合描述的套件。\n"
 
-#: ../urpme:64 ../urpmf:86 ../urpmi:184 ../urpmi.recover:52 ../urpmq:114
+#: ../urpme:64 ../urpmf:86 ../urpmi:185 ../urpmi.recover:52 ../urpmq:114
 #, c-format
 msgid ""
 "  --define, -D   - define macro after all the others have been defined.\n"
 msgstr ""
 
-#: ../urpme:65 ../urpmf:87 ../urpmi:185 ../urpmi.recover:53 ../urpmq:115
+#: ../urpme:65 ../urpmf:87 ../urpmi:186 ../urpmi.recover:53 ../urpmq:115
 #, c-format
 msgid ""
 "  --predefine    - predefine macro before any others have been defined.\n"
@@ -1960,12 +1970,12 @@ msgstr ""
 msgid "  --version      - print this tool's version number.\n"
 msgstr "  --version      - 印出這個工具的版本編號。\n"
 
-#: ../urpmf:37 ../urpmi:155 ../urpmq:84
+#: ../urpmf:37 ../urpmi:156 ../urpmq:84
 #, c-format
 msgid "  --env          - use specific environment (typically a bug report).\n"
 msgstr "  --env          - 使用特定環境 (一般用於臭蟲回報)。\n"
 
-#: ../urpmf:38 ../urpmi:86 ../urpmq:51
+#: ../urpmf:38 ../urpmi:87 ../urpmq:51
 #, c-format
 msgid "  --excludemedia - do not use the given media, separated by comma.\n"
 msgstr "  --excludemedia - 不使用給定的媒體，不同媒體間請以逗號分隔。\n"
@@ -1976,7 +1986,7 @@ msgid ""
 "  --literal, -l  - don't match patterns, use argument as a literal string.\n"
 msgstr "  --literal, -l  - 不比對樣版，把參數當作一般字串。\n"
 
-#: ../urpmf:42 ../urpmi:89 ../urpmq:52
+#: ../urpmf:42 ../urpmi:90 ../urpmq:52
 #, c-format
 msgid ""
 "  --sortmedia    - sort media according to substrings separated by comma.\n"
@@ -1987,7 +1997,7 @@ msgstr "  --sortmedia    - 依據子字串排序媒體，以逗號分開。\n"
 msgid "  --use-distrib  - use the given path to access media\n"
 msgstr "  --use-distrib  - 使用指定的路徑來存取媒體\n"
 
-#: ../urpmf:44 ../urpmi:90 ../urpmq:53
+#: ../urpmf:44 ../urpmi:91 ../urpmq:53
 #, c-format
 msgid "  --synthesis    - use the given synthesis instead of urpmi db.\n"
 msgstr "  --synthesis    - 使用指定的 synthesis 檔而非 urpmi 資料庫。\n"
@@ -1997,7 +2007,7 @@ msgstr "  --synthesis    - 使用指定的 synthesis 檔而非 urpmi 資料庫�
 msgid "  --uniq         - do not print identical lines twice.\n"
 msgstr "  --uniq         - 不顯示相同的訊息。\n"
 
-#: ../urpmf:46 ../urpmi:87 ../urpmq:48
+#: ../urpmf:46 ../urpmi:88 ../urpmq:48
 #, c-format
 msgid "  --update       - use only update media.\n"
 msgstr "  --update       - 只使用更新媒體。\n"
@@ -2227,55 +2237,56 @@ msgstr "媒體 \"%s\" 沒有可用的 xml-info"
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
+"Copyright (C) 2012-2015 OpenMandriva Association.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
 "usage:\n"
 msgstr ""
-"urpmi 版本號 %s\n"
-"Copyright (C) 1999-2008 Mandriva。\n"
+"urpmq 版本號 %s\n"
+"Copyright (C) 2000-2006 Mandriva。\n"
 "這是自由軟體並可於 GNU GPL 條款下重新散佈。\n"
 "\n"
 "用法：\n"
 
-#: ../urpmi:93
+#: ../urpmi:94
 #, c-format
 msgid "  --auto-update  - update media then upgrade the system.\n"
 msgstr "  --auto-update  - 當升級系統時更新媒體。\n"
 
-#: ../urpmi:94
+#: ../urpmi:95
 #, c-format
 msgid "    --no-md5sum    - disable MD5SUM file checking.\n"
 msgstr "    --no-md5sum    - 不使用 MD5SUM 檔案檢查功能。\n"
 
-#: ../urpmi:95
+#: ../urpmi:96
 #, c-format
 msgid "    --force-key    - force update of gpg key.\n"
 msgstr "    --force-key    - 強制更新 gpg 金鑰。\n"
 
-#: ../urpmi:96
+#: ../urpmi:97
 #, c-format
 msgid "  --auto-orphans - remove orphans without asking\n"
 msgstr ""
 
-#: ../urpmi:97 ../urpmq:58
+#: ../urpmi:98 ../urpmq:58
 #, c-format
 msgid "  --no-suggests  - do not auto select \"suggested\" packages.\n"
 msgstr "  --no-suggests  - 不要自動選取 \"建議的\" 套件。\n"
 
-#: ../urpmi:98
+#: ../urpmi:99
 #, c-format
 msgid ""
 "  --no-uninstall - never ask to uninstall a package, abort the "
 "installation.\n"
 msgstr "  --no-uninstall - 絕不要求移除套件，直接中斷安裝。\n"
 
-#: ../urpmi:99
+#: ../urpmi:100
 #, c-format
 msgid "  --no-install   - don't install packages (only download)\n"
 msgstr "  --no-install   - 不安裝套件 (只下載)。\n"
 
-#: ../urpmi:100 ../urpmq:60
+#: ../urpmi:101 ../urpmq:60
 #, c-format
 msgid ""
 "  --keep         - keep existing packages if possible, reject requested\n"
@@ -2284,18 +2295,18 @@ msgstr ""
 "  --keep         - 盡可能的保留現存的套件，拒絕安裝會導致移除其他套件的\n"
 "                   套件。\n"
 
-#: ../urpmi:102
+#: ../urpmi:103
 #, fuzzy, c-format
 msgid "  --force-req-update  - Try to update all of package requires.\n"
 msgstr "  --force-key    - 強制更新 gpg 鑰匙。\n"
 
-#: ../urpmi:103
+#: ../urpmi:104
 #, c-format
 msgid ""
 "  --no-force-req-update  - Do not try to update all of package requires.\n"
 msgstr ""
 
-#: ../urpmi:104
+#: ../urpmi:105
 #, c-format
 msgid ""
 "  --split-level  - split in small transaction if more than given packages\n"
@@ -2306,59 +2317,59 @@ msgstr ""
 "                   分割為幾個小的安裝程序。\n"
 "                   預設值為 %d。\n"
 
-#: ../urpmi:108
+#: ../urpmi:109
 #, c-format
 msgid "  --split-length - small transaction length, default is %d.\n"
 msgstr "  --split-length - 小型安裝程序大小，預設值為 %d。\n"
 
-#: ../urpmi:110
+#: ../urpmi:111
 #, c-format
 msgid "  --fuzzy, -y    - impose fuzzy search.\n"
 msgstr "  --fuzzy, -y    - 加上模糊搜尋。\n"
 
-#: ../urpmi:111
+#: ../urpmi:112
 #, c-format
 msgid "  --buildrequires - install the buildrequires of the packages\n"
 msgstr ""
 "  --buildrequires - 安裝建構此套件所需的套件\n"
 "\n"
 
-#: ../urpmi:112
+#: ../urpmi:113
 #, c-format
 msgid "  --install-src  - install only source package (no binaries).\n"
 msgstr "  --install-src  - 只安裝原始碼套件 (不安裝二進位檔)。\n"
 
-#: ../urpmi:113
+#: ../urpmi:114
 #, c-format
 msgid "  --clean        - remove rpm from cache before anything else.\n"
 msgstr "  --clean        - 在執行任何事前先由快取中移除 RPM 檔案。\n"
 
-#: ../urpmi:114
+#: ../urpmi:115
 #, c-format
 msgid "  --noclean      - don't clean rpms from cache.\n"
 msgstr "  --noclean      - 不清除快取中的 RPM 檔案。\n"
 
-#: ../urpmi:116
+#: ../urpmi:117
 #, c-format
 msgid ""
 "  --downgrade    - dowgrade a package from the version currently installed\n"
 "                   to the previously highest version\n"
 msgstr ""
 
-#: ../urpmi:118
+#: ../urpmi:119
 #, c-format
 msgid ""
 "  --replacepkgs  - force installing packages which are already installed.\n"
 msgstr "  --replacepkgs  - 強制安裝已經安裝過的套件。\n"
 
-#: ../urpmi:120
+#: ../urpmi:121
 #, c-format
 msgid ""
 "  --allow-nodeps - allow asking user to install packages without\n"
 "                   dependencies checking.\n"
 msgstr "  --allow-nodeps - 允許要求使用者不檢查相依性就安裝套件。\n"
 
-#: ../urpmi:122
+#: ../urpmi:123
 #, c-format
 msgid ""
 "  --allow-force  - allow asking user to install packages without\n"
@@ -2367,12 +2378,12 @@ msgstr ""
 "  --allow-force  - 允許要求使用者安裝套件而不檢查相依性與完整\n"
 "                   性。\n"
 
-#: ../urpmi:124
+#: ../urpmi:125
 #, c-format
 msgid "  --allow-suggests - auto select \"suggested\" packages.\n"
 msgstr "  --allow-suggests - 自動選取 \"建議的\" 套件。\n"
 
-#: ../urpmi:128
+#: ../urpmi:129
 #, c-format
 msgid ""
 "  --use-distrib  - configure urpmi on the fly from a distrib tree, useful\n"
@@ -2381,26 +2392,26 @@ msgstr ""
 "  --use-distrib  - 立即由一個散佈套件樹設定 urpmi，在搭配 --root 選項來安\n"
 "                   裝/移除一個 chroot 時很方便。\n"
 
-#: ../urpmi:130
+#: ../urpmi:131
 #, c-format
 msgid ""
 "  --target-arch  - generate and load /etc/rpm/platform within a chroot\n"
 "                           with --root option.\n"
 msgstr ""
 
-#: ../urpmi:132 ../urpmi.addmedia:61 ../urpmi.update:37
+#: ../urpmi:133 ../urpmi.addmedia:61 ../urpmi.update:37
 #, c-format
 msgid "  --metalink     - generate and use a local metalink.\n"
 msgstr ""
 
-#: ../urpmi:133
+#: ../urpmi:134
 #, c-format
 msgid ""
 "  --download-all - download all needed packages before trying to install "
 "them\n"
 msgstr ""
 
-#: ../urpmi:134
+#: ../urpmi:135
 #, c-format
 msgid ""
 "  --downloader   - program to use to retrieve distant files. \n"
@@ -2409,51 +2420,51 @@ msgstr ""
 "  --downloader   - 用來取得遠端檔案的程式。\n"
 "                   已知的程式有：%s\n"
 
-#: ../urpmi:137
+#: ../urpmi:138
 #, c-format
 msgid "  --curl-options - additional options to pass to curl\n"
 msgstr " --curl-options - 要額外傳給 curl 的參數\n"
 
-#: ../urpmi:138
+#: ../urpmi:139
 #, c-format
 msgid "  --rsync-options- additional options to pass to rsync\n"
 msgstr "  --rsync-options- 要額外傳給 rsync 的參數\n"
 
-#: ../urpmi:139
+#: ../urpmi:140
 #, c-format
 msgid "  --wget-options - additional options to pass to wget\n"
 msgstr "  --wget-options - 要額外傳給 wget 的參數\n"
 
-#: ../urpmi:140
+#: ../urpmi:141
 #, c-format
 msgid "  --prozilla-options - additional options to pass to prozilla\n"
 msgstr "  --prozilla-options - 要額外傳給 prozilla 的參數\n"
 
-#: ../urpmi:141
+#: ../urpmi:142
 #, c-format
 msgid "  --aria2-options - additional options to pass to aria2\n"
 msgstr "  --aria2-options - 要額外傳給 aria2 的參數\n"
 
-#: ../urpmi:142 ../urpmi.addmedia:62 ../urpmi.update:38
+#: ../urpmi:143 ../urpmi.addmedia:62 ../urpmi.update:38
 #, c-format
 msgid "  --limit-rate   - limit the download speed.\n"
 msgstr "  --limit-rate   - 限制下載的速度。\n"
 
-#: ../urpmi:143
+#: ../urpmi:144
 #, c-format
 msgid ""
 "  --retry-hard   - rerun downloader if it fails after timeout\n"
 "                   (specified by --download-timeout).\n"
 msgstr ""
 
-#: ../urpmi:145
+#: ../urpmi:146
 #, c-format
 msgid ""
 "  --download-timeout   - timeout before next attempt to invoke downloader\n"
 "                   (only if --retry-hard is used). \n"
 msgstr ""
 
-#: ../urpmi:147
+#: ../urpmi:148
 #, c-format
 msgid ""
 "  --resume       - resume transfer of partially-downloaded files\n"
@@ -2462,7 +2473,7 @@ msgstr ""
 "  --resume       - 接著傳送下載到一半的檔案\n"
 "                   (--no-resume 選項停用它，預設值為停用)。\n"
 
-#: ../urpmi:149 ../urpmi.addmedia:63 ../urpmi.update:39 ../urpmq:80
+#: ../urpmi:150 ../urpmi.addmedia:63 ../urpmi.update:39 ../urpmq:80
 #, c-format
 msgid ""
 "  --proxy        - use specified HTTP proxy, the port number is assumed\n"
@@ -2471,7 +2482,7 @@ msgstr ""
 "  --proxy        - 使用指定的 HTTP 代理伺服器，通訊埠假設為預設值 1080 \n"
 "                   (格式為 <proxyhost[:port]>)。\n"
 
-#: ../urpmi:151 ../urpmi.addmedia:65 ../urpmi.update:41 ../urpmq:82
+#: ../urpmi:152 ../urpmi.addmedia:65 ../urpmi.update:41 ../urpmq:82
 #, c-format
 msgid ""
 "  --proxy-user   - specify user and password to use for proxy\n"
@@ -2480,49 +2491,49 @@ msgstr ""
 "  --proxy-user   - 指定代理伺服器認證的使用者帳號與密碼\n"
 "                   (格式為 <user:password>)。\n"
 
-#: ../urpmi:153
+#: ../urpmi:154
 #, c-format
 msgid ""
 "  --bug          - output a bug report in directory indicated by\n"
 "                   next arg.\n"
 msgstr "  --bug          - 輸出臭蟲回報到下一個參數所指定的目錄。\n"
 
-#: ../urpmi:159
+#: ../urpmi:160
 #, c-format
 msgid "  --excludepath  - exclude path separated by comma.\n"
 msgstr "  --excludepath  - 排除以逗號分隔的路徑。\n"
 
-#: ../urpmi:160
+#: ../urpmi:161
 #, c-format
 msgid "  --excludedocs  - exclude doc files.\n"
 msgstr "  --excludedocs  - 排除說明文件檔案。\n"
 
-#: ../urpmi:161
+#: ../urpmi:162
 #, c-format
 msgid "  --ignoresize   - don't verify disk space before installation.\n"
 msgstr "  --ignoresize   - 安裝前不檢查剩餘的磁碟空間。\n"
 
-#: ../urpmi:162
+#: ../urpmi:163
 #, c-format
 msgid "  --ignorearch   - allow to install rpms for unmatched architectures.\n"
 msgstr "  --ignorearch   - 允許安裝硬體架構不相符的 RPM 檔。\n"
 
-#: ../urpmi:163
+#: ../urpmi:164
 #, c-format
 msgid "  --noscripts    - do not execute package scriptlet(s)\n"
 msgstr "  --noscripts    - 不執行套件中的命令稿\n"
 
-#: ../urpmi:164
+#: ../urpmi:165
 #, fuzzy, c-format
 msgid "  --notriggers   - do not execute package trigger(s)\n"
 msgstr "  --noscripts    - 不執行套件中的命令稿\n"
 
-#: ../urpmi:165
+#: ../urpmi:166
 #, fuzzy, c-format
 msgid "  --nofdigests   - do not verify digest of file(s)\n"
 msgstr "  --noscripts    - 不執行套件中的命令稿\n"
 
-#: ../urpmi:166
+#: ../urpmi:167
 #, c-format
 msgid ""
 "  --fastunsafe   - trade verification and reliability for performance, "
@@ -2532,22 +2543,22 @@ msgid ""
 "                   --no-verify-rpm\n"
 msgstr ""
 
-#: ../urpmi:170
+#: ../urpmi:171
 #, c-format
 msgid "  --replacefiles - ignore file conflicts\n"
 msgstr "  --replacefiles - 忽略檔案衝突\n"
 
-#: ../urpmi:172
+#: ../urpmi:173
 #, c-format
 msgid "  --skip         - packages which installation should be skipped\n"
 msgstr "  --skip         - 安裝時應該略過的套件\n"
 
-#: ../urpmi:173
+#: ../urpmi:174
 #, c-format
 msgid "  --prefer       - packages which should be preferred\n"
 msgstr "  --prefer       - 應該要優先考慮的套件\n"
 
-#: ../urpmi:174
+#: ../urpmi:175
 #, c-format
 msgid ""
 "  --more-choices - when several packages are found, propose more choices\n"
@@ -2555,82 +2566,82 @@ msgid ""
 msgstr ""
 "  --more-choices - 當找到不只一個套件時，提供除了預設值之外的多個選擇。\n"
 
-#: ../urpmi:176
+#: ../urpmi:177
 #, c-format
 msgid "  --nolock       - don't lock rpm db.\n"
 msgstr "  --nolock       - 不鎖定 RPM 資料庫。\n"
 
-#: ../urpmi:177
+#: ../urpmi:178
 #, c-format
 msgid "  --strict-arch  - upgrade only packages with the same architecture.\n"
 msgstr "  --strict-arch  - 只升級相同平台的套件。\n"
 
-#: ../urpmi:178 ../urpmq:101
+#: ../urpmi:179 ../urpmq:101
 #, c-format
 msgid "  -a             - select all matches on command line.\n"
 msgstr "  -a             - 選擇命令列中所有符合的項目。\n"
 
-#: ../urpmi:181
+#: ../urpmi:182
 #, c-format
 msgid "  --quiet, -q    - quiet mode.\n"
 msgstr "  --quiet, -q    - 安靜模式。\n"
 
-#: ../urpmi:183
+#: ../urpmi:184
 #, c-format
 msgid "  --debug        - very verbose mode.\n"
 msgstr "  --debug        - 非常詳細模式。\n"
 
-#: ../urpmi:186
+#: ../urpmi:187
 #, c-format
 msgid "  names or rpm files given on command line will be installed.\n"
 msgstr "  將會安裝於命令列指定的名稱或 RPM 檔案。\n"
 
-#: ../urpmi:220
+#: ../urpmi:221
 #, c-format
 msgid "Error: can't use --auto-select along with package list.\n"
 msgstr "錯誤：無法與套件列表一起使用 --auto-select。\n"
 
-#: ../urpmi:227
+#: ../urpmi:228
 #, c-format
 msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
 "along with --bug.\n"
 msgstr "錯誤：要生成一個臭蟲回報，請指定平常的命令列參數另外再加上 --bug。\n"
 
-#: ../urpmi:259
+#: ../urpmi:260
 #, c-format
 msgid "You can't install binary rpm files when using --install-src"
 msgstr "當使用 --install-src 時您無法安裝二進制 RPM 檔案"
 
-#: ../urpmi:260
+#: ../urpmi:261
 #, c-format
 msgid "You can't install spec files"
 msgstr "您無法安裝 spec 檔案"
 
-#: ../urpmi:267
+#: ../urpmi:268
 #, c-format
 msgid "defaulting to --buildrequires"
 msgstr "--buildrequires 的預設值"
 
-#: ../urpmi:272
+#: ../urpmi:273
 #, c-format
 msgid ""
 "please use --buildrequires or --install-src, defaulting to --buildrequires"
 msgstr "請使用 --buildrequires 或者 --install-src，預設為 --buildrequires"
 
-#: ../urpmi:292
+#: ../urpmi:293
 #, c-format
 msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
 "or delete it"
 msgstr "目錄 [%s] 已經存在，請指定另一個目錄給臭蟲回報或刪除它"
 
-#: ../urpmi:293
+#: ../urpmi:294
 #, c-format
 msgid "Unable to create directory [%s] for bug report"
 msgstr "無法建立 [%s] 目錄給臭蟲回報使用"
 
-#: ../urpmi:314
+#: ../urpmi:315
 #, c-format
 msgid ""
 "Error: %s appears to be mounted read-only.\n"
@@ -2640,42 +2651,42 @@ msgstr ""
 "使用 --allow-force 標籤來強制執行。"
 
 #. -PO: here format is "<package_name>: <summary> (to upgrade)"
-#: ../urpmi:486
+#: ../urpmi:487
 #, c-format
 msgid "%s: %s (to upgrade)"
 msgstr "%s：%s (升級用)"
 
 #. -PO: here format is "<package_name> (to upgrade)"
-#: ../urpmi:488
+#: ../urpmi:489
 #, c-format
 msgid "%s (to upgrade)"
 msgstr "%s (升級用)"
 
 #. -PO: here format is "<package_name>: <summary> (to install)"
-#: ../urpmi:492
+#: ../urpmi:493
 #, c-format
 msgid "%s: %s (to install)"
 msgstr "%s：%s (安裝用)"
 
 #. -PO: here format is "<package_name> (to install)"
-#: ../urpmi:494
+#: ../urpmi:495
 #, c-format
 msgid "%s (to install)"
 msgstr "%s (安裝用)"
 
-#: ../urpmi:500
+#: ../urpmi:501
 #, c-format
 msgid ""
 "In order to satisfy the '%s' dependency, one of the following packages is "
 "needed:"
 msgstr "為了滿足 '%s' 的相依性，需要下列套件之一："
 
-#: ../urpmi:503
+#: ../urpmi:504
 #, c-format
 msgid "What is your choice? (1-%d) "
 msgstr "您要選擇何者？ (1-%d) "
 
-#: ../urpmi:551
+#: ../urpmi:552
 #, c-format
 msgid ""
 "The following package cannot be installed because it depends on packages\n"
@@ -2685,7 +2696,7 @@ msgstr ""
 "下列套件無法安裝，因為它需要比您系統上的套件為舊的版本：\n"
 "%s"
 
-#: ../urpmi:553
+#: ../urpmi:554
 #, c-format
 msgid ""
 "The following packages can't be installed because they depend on packages\n"
@@ -2695,7 +2706,7 @@ msgstr ""
 "下列套件無法安裝，因為它們需要比您系統上的套件為舊的版本：\n"
 "%s"
 
-#: ../urpmi:559 ../urpmi:578
+#: ../urpmi:560 ../urpmi:579
 #, c-format
 msgid ""
 "\n"
@@ -2704,7 +2715,7 @@ msgstr ""
 "\n"
 "無論如何都要繼續安裝嗎？"
 
-#: ../urpmi:572
+#: ../urpmi:573
 #, c-format
 msgid ""
 "A requested package cannot be installed:\n"
@@ -2713,12 +2724,12 @@ msgstr ""
 "某些要求的套件無法安裝：\n"
 "%s"
 
-#: ../urpmi:594
+#: ../urpmi:595
 #, c-format
 msgid "removing package %s will break your system"
 msgstr "移除套件 %s 將破壞您的系統"
 
-#: ../urpmi:602
+#: ../urpmi:603
 #, c-format
 msgid ""
 "The installation cannot continue because the following package\n"
@@ -2728,7 +2739,7 @@ msgstr ""
 "安裝無法繼續，因為下列套件必須移除給其他套件來升級：\n"
 "%s\n"
 
-#: ../urpmi:604
+#: ../urpmi:605
 #, c-format
 msgid ""
 "The installation cannot continue because the following packages\n"
@@ -2738,12 +2749,12 @@ msgstr ""
 "安裝無法繼續，因為下列套件必須移除給其他套件來升級：\n"
 "%s\n"
 
-#: ../urpmi:613
+#: ../urpmi:614
 #, c-format
 msgid "(test only, removal will not be actually done)"
 msgstr "(僅測試，移除動作並不會真的執行)"
 
-#: ../urpmi:635
+#: ../urpmi:636
 #, c-format
 msgid ""
 "You must first call urpmi with --buildrequires to install the following "
@@ -2753,28 +2764,28 @@ msgstr ""
 "您必須先呼叫 urpmi --buildrequires 來安裝下列相依性套件：\n"
 "%s\n"
 
-#: ../urpmi:645
+#: ../urpmi:646
 #, c-format
 msgid "The following orphan package will be removed."
 msgid_plural "The following orphan packages will be removed."
 msgstr[0] "下列不被其他軟體需要的套件將會被移除。"
 
-#: ../urpmi:671
+#: ../urpmi:674
 #, c-format
 msgid "WARNING: %s option is in use. Some strange problems may happen"
 msgstr ""
 
-#: ../urpmi:683
+#: ../urpmi:686
 #, c-format
 msgid "(test only, installation will not be actually done)"
 msgstr "(僅測試，安裝動作並不會真的執行)"
 
-#: ../urpmi:716
+#: ../urpmi:719
 #, c-format
 msgid "Press Enter when mounted..."
 msgstr "掛載好後請按 Enter..."
 
-#: ../urpmi:769
+#: ../urpmi:772
 #, c-format
 msgid "Updating urpmi database..."
 msgstr ""
@@ -3561,13 +3572,20 @@ msgstr "軟體安裝程式"
 msgid "Graphical front end to install RPM files"
 msgstr "RPM 檔案安裝的圖形化前端"
 
-#: ../polkit/org.openmandriva.gurpmi2.policy.in.h:1
-msgid "Run DrakX Package Installer"
-msgstr ""
-
-#: ../polkit/org.openmandriva.gurpmi2.policy.in.h:2
-msgid "Authentication is required to run DrakX Package Installer"
-msgstr ""
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2011 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi 版本號 %s\n"
+#~ "Copyright (C) 1999-2008 Mandriva。\n"
+#~ "這是自由軟體並可於 GNU GPL 條款下重新散佈。\n"
+#~ "\n"
+#~ "用法：\n"
 
 #, fuzzy
 #~ msgid "  --allow-recommends - auto select \"recommended\" packages.\n"

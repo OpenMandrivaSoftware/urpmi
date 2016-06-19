@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: urpmi 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-04 00:10+0100\n"
+"POT-Creation-Date: 2016-06-19 16:26+0200\n"
 "PO-Revision-Date: 2002-11-25 13:52-0500\n"
 "Last-Translator: Wachara Chinsettawong <wachara@yahoo.com>\n"
 "Language-Team: Thai <th@li.org>\n"
@@ -20,22 +20,22 @@ msgstr ""
 "X-Generator: KBabel 0.9.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../gurpmi:49
+#: ../gurpmi:45
 #, fuzzy, c-format
 msgid "RPM installation"
 msgstr "กำลังเตรียมการติดตั้ง"
 
-#: ../gurpmi:63
+#: ../gurpmi:59
 #, c-format
 msgid "Error: unable to find file %s, will cancel operation"
 msgstr ""
 
-#: ../gurpmi:64 ../gurpmi2:178 ../gurpmi2:208
+#: ../gurpmi:60 ../gurpmi2:174 ../gurpmi2:204
 #, c-format
 msgid "_Ok"
 msgstr "_Ok"
 
-#: ../gurpmi:84
+#: ../gurpmi:80
 #, c-format
 msgid ""
 "You have selected a source package:\n"
@@ -48,7 +48,7 @@ msgid ""
 "What would you like to do?"
 msgstr ""
 
-#: ../gurpmi:92 ../gurpmi:103
+#: ../gurpmi:88 ../gurpmi:99
 #, fuzzy, c-format
 msgid ""
 "You are about to install the following software packages on your computer:\n"
@@ -60,7 +60,7 @@ msgstr ""
 "คุณจะต้องเป็นรูทในการติดตั้ง ความเป็นอิสระ :\n"
 "%s\n"
 
-#: ../gurpmi:98
+#: ../gurpmi:94
 #, c-format
 msgid ""
 "You are about to install the following software package on your computer:\n"
@@ -70,32 +70,32 @@ msgid ""
 "You may prefer to just save it. What is your choice?"
 msgstr ""
 
-#: ../gurpmi:116
+#: ../gurpmi:112
 #, c-format
 msgid "_Install"
 msgstr "_ติดตั้ง"
 
-#: ../gurpmi:117
+#: ../gurpmi:113
 #, c-format
 msgid "_Save"
 msgstr "_บันทึก"
 
-#: ../gurpmi:118 ../gurpmi2:178
+#: ../gurpmi:114 ../gurpmi2:174
 #, c-format
 msgid "_Cancel"
 msgstr "_ยกเลิก"
 
-#: ../gurpmi:126
+#: ../gurpmi:122
 #, c-format
 msgid "Choose location to save file"
 msgstr ""
 
-#: ../gurpmi:126
+#: ../gurpmi:122
 #, c-format
 msgid "Cancel"
 msgstr "ยกเลิก"
 
-#: ../gurpmi:126 ../gurpmi2:124
+#: ../gurpmi:122 ../gurpmi2:120
 #, c-format
 msgid "Ok"
 msgstr "ตกลง"
@@ -121,32 +121,32 @@ msgstr ""
 msgid "Options:"
 msgstr ""
 
-#: ../gurpmi.pm:61 ../urpme:46 ../urpmf:35 ../urpmi:84 ../urpmi.addmedia:55
+#: ../gurpmi.pm:61 ../urpme:46 ../urpmf:35 ../urpmi:85 ../urpmi.addmedia:55
 #: ../urpmi.recover:40 ../urpmi.removemedia:40 ../urpmi.update:32 ../urpmq:47
 #, c-format
 msgid "  --help         - print this help message.\n"
 msgstr "  --help         - พิมพ์ข้อความช่วย\n"
 
-#: ../gurpmi.pm:62 ../urpmi:91
+#: ../gurpmi.pm:62 ../urpmi:92
 #, c-format
 msgid ""
 "  --auto         - non-interactive mode, assume default answers to "
 "questions.\n"
 msgstr ""
 
-#: ../gurpmi.pm:63 ../urpmi:92 ../urpmq:54
+#: ../gurpmi.pm:63 ../urpmi:93 ../urpmq:54
 #, c-format
 msgid ""
 "  --auto-select  - automatically select packages to upgrade the system.\n"
 msgstr "  --auto-select  - เลือกแพ็คเกจที่ต้องการอัพเกรดอัตโนมัติ\n"
 
-#: ../gurpmi.pm:64 ../urpme:50 ../urpmi:119 ../urpmq:70
+#: ../gurpmi.pm:64 ../urpme:50 ../urpmi:120 ../urpmq:70
 #, c-format
 msgid ""
 "  --force        - force invocation even if some packages do not exist.\n"
 msgstr "  --force        - บังคับ invocation ถึงแม้ว่าแพ็คเกจจะไม่มีอยู่\n"
 
-#: ../gurpmi.pm:65 ../urpmi:156
+#: ../gurpmi.pm:65 ../urpmi:157
 #, fuzzy, c-format
 msgid ""
 "  --verify-rpm   - verify rpm signature before installation\n"
@@ -155,34 +155,34 @@ msgstr ""
 "  --verify-rpm   - ตรวจสอบความถูกต้องของ rpm signature ก่อนการติดตั้ง\n"
 "                   (--no-verify-rpm disable it, default is enabled)\n"
 
-#: ../gurpmi.pm:67 ../urpmf:41 ../urpmi:85 ../urpmq:49
+#: ../gurpmi.pm:67 ../urpmf:41 ../urpmi:86 ../urpmq:49
 #, fuzzy, c-format
 msgid "  --media        - use only the given media, separated by comma.\n"
 msgstr "  --update       - ใช้เพื่ออัพเดตมีเดีย\n"
 
-#: ../gurpmi.pm:68 ../urpmi:179
+#: ../gurpmi.pm:68 ../urpmi:180
 #, c-format
 msgid "  -p             - allow search in provides to find package.\n"
 msgstr "  -p             - ย้อมให้มีการค้นหาแพ็คเกจจากที่ป้อนให้\n"
 
-#: ../gurpmi.pm:69 ../urpmi:180
+#: ../gurpmi.pm:69 ../urpmi:181
 #, c-format
 msgid "  -P             - do not search in provides to find package.\n"
 msgstr "  -P             - ไม่จำเป็นต้องค้นในส่วนแพ็คเกจที่ไว้สำหรับค้นเท่านั้น\n"
 
-#: ../gurpmi.pm:70 ../urpmi:126 ../urpmq:73
+#: ../gurpmi.pm:70 ../urpmi:127 ../urpmq:73
 #, fuzzy, c-format
 msgid "  --root         - use another root for rpm installation.\n"
 msgstr "  --wget         - ใช้ wget เพื่อดึงไฟล์ที่อยู่ภายนอก\n"
 
-#: ../gurpmi.pm:71 ../urpmi:158
+#: ../gurpmi.pm:71 ../urpmi:159
 #, fuzzy, c-format
 msgid ""
 "  --test         - only verify if the installation can be achieved "
 "correctly.\n"
 msgstr "  --test         - ตรวจสอบว่าการติดตั้งสามารถทำได้ถูกต้องหรือไม่.\n"
 
-#: ../gurpmi.pm:72 ../urpmi:88
+#: ../gurpmi.pm:72 ../urpmi:89
 #, fuzzy, c-format
 msgid ""
 "  --searchmedia  - use only the given media to search requested packages.\n"
@@ -193,64 +193,64 @@ msgstr "  --media        - เลือกใช้เฉพาะมีเด�
 msgid "No packages specified"
 msgstr "ไม่มีการกำหนดคำสั่ง"
 
-#: ../gurpmi2:46
+#: ../gurpmi2:42
 #, fuzzy, c-format
 msgid "Must be root"
 msgstr "พอร์ตของเม้าส์"
 
-#: ../gurpmi2:49 ../urpm.pm:23
+#: ../gurpmi2:45 ../urpm.pm:23
 #, c-format
 msgid "While some packages may have been installed, there were failures.\n"
 msgstr ""
 
-#: ../gurpmi2:80
+#: ../gurpmi2:76
 #, fuzzy, c-format
 msgid "Preparing packages installation..."
 msgstr "การ install package"
 
-#: ../gurpmi2:93 ../gurpmi2:99 ../urpmi:573
+#: ../gurpmi2:89 ../gurpmi2:95 ../urpmi:574
 #, fuzzy, c-format
 msgid ""
 "Some requested packages cannot be installed:\n"
 "%s"
 msgstr "ไม่สามารถ install บางเพกเกจได้"
 
-#: ../gurpmi2:106
+#: ../gurpmi2:102
 #, fuzzy, c-format
 msgid "Continue installation anyway?"
 msgstr "คุณยังต้องการจะติดตั้งอีกต่อไปหรือไม่ ?"
 
-#: ../gurpmi2:124
+#: ../gurpmi2:120
 #, c-format
 msgid "Warning"
 msgstr "คำเตือน"
 
-#: ../gurpmi2:174
+#: ../gurpmi2:170
 #, c-format
 msgid " (to upgrade)"
 msgstr ""
 
-#: ../gurpmi2:175
+#: ../gurpmi2:171
 #, fuzzy, c-format
 msgid " (to install)"
 msgstr "ออกจากการติดตั้ง"
 
-#: ../gurpmi2:178
+#: ../gurpmi2:174
 #, c-format
 msgid "Package choice"
 msgstr ""
 
-#: ../gurpmi2:179
+#: ../gurpmi2:175
 #, c-format
 msgid "One of the following packages is needed:"
 msgstr "หนึ่งใน Packages ต่อไปนี้ต้องได้รับการติดตั้ง "
 
-#: ../gurpmi2:209
+#: ../gurpmi2:205
 #, fuzzy, c-format
 msgid "_Abort"
 msgstr "เลิก"
 
-#: ../gurpmi2:244
+#: ../gurpmi2:240
 #, fuzzy, c-format
 msgid ""
 "The following packages have to be removed for others to be upgraded:\n"
@@ -258,89 +258,89 @@ msgid ""
 "Continue installation anyway?"
 msgstr "แพ็คเก็จเหล่านี้กำลังจะถูกลบ"
 
-#: ../gurpmi2:255 ../urpmi:689
+#: ../gurpmi2:251 ../urpmi:692
 #, c-format
 msgid "%s of additional disk space will be used."
 msgstr ""
 
-#: ../gurpmi2:256 ../urpmi:690
+#: ../gurpmi2:252 ../urpmi:693
 #, c-format
 msgid "%s of disk space will be freed."
 msgstr ""
 
-#: ../gurpmi2:257 ../urpmi:691
+#: ../gurpmi2:253 ../urpmi:694
 #, c-format
 msgid "%s of packages will be retrieved."
 msgstr ""
 
-#: ../gurpmi2:258 ../urpmi:692
+#: ../gurpmi2:254 ../urpmi:695
 #, c-format
 msgid "Proceed with the installation of one package?"
 msgid_plural "Proceed with the installation of the %d packages?"
 msgstr[0] ""
 
-#: ../gurpmi2:264 ../urpmi:680
+#: ../gurpmi2:260 ../urpmi:683
 #, fuzzy, c-format
 msgid ""
 "To satisfy dependencies, the following package is going to be installed:"
 msgstr "เพื่อความถูกต้องของการเป็นอิสระระหว่างโปรแกรมแพ็คเกจบางตัวจะถูกลบทิ้ง(%d MB)"
 
-#: ../gurpmi2:265 ../urpmi:681
+#: ../gurpmi2:261 ../urpmi:684
 #, fuzzy, c-format
 msgid ""
 "To satisfy dependencies, the following packages are going to be installed:"
 msgstr "เพื่อความถูกต้องของการเป็นอิสระระหว่างโปรแกรมแพ็คเกจบางตัวจะถูกลบทิ้ง(%d MB)"
 
-#: ../gurpmi2:275 ../urpm/main_loop.pm:471
+#: ../gurpmi2:271 ../urpm/main_loop.pm:471
 #, c-format
 msgid "unable to get source packages, aborting"
 msgstr "ไม่สามารถเรียก source package,กำลังยกเลิก"
 
-#: ../gurpmi2:292 ../urpmi:710
+#: ../gurpmi2:288 ../urpmi:713
 #, fuzzy, c-format
 msgid "Please insert the medium named \"%s\""
 msgstr "กรุณาใส่อุปกรณ์ที่มีชื่อ \"%s\" ใน [%s]"
 
-#: ../gurpmi2:312
+#: ../gurpmi2:308
 #, c-format
 msgid "An error occurred:"
 msgstr ""
 
-#: ../gurpmi2:324
+#: ../gurpmi2:320
 #, fuzzy, c-format
 msgid "_Done"
 msgstr "ทำเรียบร้อยแล้ว"
 
-#: ../gurpmi2:341 ../urpm/main_loop.pm:83
+#: ../gurpmi2:337 ../urpm/main_loop.pm:83
 #, fuzzy, c-format
 msgid ""
 "Installation failed, some files are missing:\n"
 "%s"
 msgstr "การติดตั้งไม่สำเร็จ"
 
-#: ../gurpmi2:344
+#: ../gurpmi2:340
 #, fuzzy, c-format
 msgid "You may want to update your urpmi database."
 msgstr ""
 "การติดตั้งล้มเหลวมีบางไฟล์ที่ขาดหายไป\n"
 "ขอแนะนำให้ทำการอัพเดตฐานข้อมูล urpmi"
 
-#: ../gurpmi2:348 ../urpm/main_loop.pm:288 ../urpm/main_loop.pm:588
+#: ../gurpmi2:344 ../urpm/main_loop.pm:288 ../urpm/main_loop.pm:588
 #, fuzzy, c-format
 msgid "Installation failed:"
 msgstr "การติดตั้งไม่สำเร็จ"
 
-#: ../gurpmi2:353
+#: ../gurpmi2:349
 #, c-format
 msgid "The package(s) are already installed"
 msgstr "ทุกอย่างได้ถูกติดตั้งเรียบร้อยแล้ว"
 
-#: ../gurpmi2:355
+#: ../gurpmi2:351
 #, c-format
 msgid "Installation finished"
 msgstr "install เสร็จเรียบร้อย"
 
-#: ../gurpmi2:368 ../urpmi:777 ../urpmi:793
+#: ../gurpmi2:364 ../urpmi:780 ../urpmi:796
 #, fuzzy, c-format
 msgid "restarting urpmi"
 msgstr "กำลังติดตั้ง $rpm\n"
@@ -377,7 +377,7 @@ msgstr "  -a             - เลือกมีเดียทั้งหม�
 msgid "   -f             - output rpm full name (NVRA)\n"
 msgstr "  -g             - พิมพ์กลุ่มพร้อมชื่อ\n"
 
-#: ../rurpmi:11 ../urpmi:308
+#: ../rurpmi:11 ../urpmi:309
 #, c-format
 msgid "Only superuser is allowed to install packages"
 msgstr "superuser เท่านั้นที่มีสิทธิติดตั้ง packages"
@@ -432,7 +432,7 @@ msgstr "กำลังอ่านข้อมูลจากไฟล์ hdlis
 msgid "...retrieving done"
 msgstr "การอ่านข้อมูลเรียบร้อย"
 
-#: ../urpm.pm:477 ../urpm/download.pm:881 ../urpm/get_pkgs.pm:280
+#: ../urpm.pm:477 ../urpm/download.pm:882 ../urpm/get_pkgs.pm:280
 #: ../urpm/media.pm:1136 ../urpm/media.pm:1657 ../urpm/media.pm:1808
 #, c-format
 msgid "...retrieving failed: %s"
@@ -468,72 +468,82 @@ msgstr "ลงทะเบียน local package มีข้อผิดพล
 msgid "This operation is forbidden while running in restricted mode"
 msgstr ""
 
-#: ../urpm/args.pm:173 ../urpm/args.pm:182
+#: ../urpm/args.pm:174 ../urpm/args.pm:183
 #, c-format
 msgid "bad proxy declaration on command line\n"
 msgstr "การแจ้งพร็อกซี่ที่ไม่ดี\n"
 
-#: ../urpm/args.pm:341
+#: ../urpm/args.pm:342
 #, c-format
 msgid "urpmq: cannot read rpm file \"%s\"\n"
 msgstr "urpmq:ไม่สามารถอ่าน rpm file \"%s\"\n"
 
-#: ../urpm/args.pm:428
+#: ../urpm/args.pm:429
 #, c-format
 msgid "unexpected expression %s"
 msgstr ""
 
-#: ../urpm/args.pm:429
+#: ../urpm/args.pm:430
 #, fuzzy, c-format
 msgid "missing expression before %s"
 msgstr "ข้อมูลบางตัวยังไม่ได้ใส่ลงไป"
 
-#: ../urpm/args.pm:435
+#: ../urpm/args.pm:436
 #, c-format
 msgid "unexpected expression %s (suggestion: use -a or -o ?)"
 msgstr ""
 
-#: ../urpm/args.pm:439
+#: ../urpm/args.pm:440
 #, c-format
 msgid "no expression to close"
 msgstr ""
 
-#: ../urpm/args.pm:448
+#: ../urpm/args.pm:449
 #, c-format
 msgid "by default urpmf awaits a regexp. you should use option \"--literal\""
 msgstr ""
 
-#: ../urpm/args.pm:522
+#: ../urpm/args.pm:523
 #, c-format
 msgid "chroot directory doesn't exist"
 msgstr ""
 
-#: ../urpm/args.pm:530
+#: ../urpm/args.pm:543
 #, fuzzy, c-format
-msgid "--target-arch may only be used with --root"
+msgid "--target-arch may only be used with --root and specified after"
 msgstr "--list-nodes can only be used with --parallel"
 
-#: ../urpm/args.pm:537
+#: ../urpm/args.pm:555
+#, c-format
+msgid "%s is missing, please install qemu-static-%s"
+msgstr ""
+
+#: ../urpm/args.pm:572
 #, c-format
 msgid "%s already exists, will load in stead of generating new for %s"
 msgstr ""
 
-#: ../urpm/args.pm:576
+#: ../urpm/args.pm:585
+#, c-format
+msgid "creating and mounting necessary system mount points under %s"
+msgstr ""
+
+#: ../urpm/args.pm:614
 #, c-format
 msgid "Can't use %s without %s"
 msgstr ""
 
-#: ../urpm/args.pm:579 ../urpm/args.pm:582 ../urpmq:174
+#: ../urpm/args.pm:617 ../urpm/args.pm:620 ../urpmq:174
 #, c-format
 msgid "Can't use %s with %s"
 msgstr ""
 
-#: ../urpm/args.pm:590
+#: ../urpm/args.pm:628
 #, c-format
 msgid "Too many arguments\n"
 msgstr ""
 
-#: ../urpm/args.pm:598
+#: ../urpm/args.pm:636
 #, c-format
 msgid ""
 "%s version %s\n"
@@ -549,12 +559,12 @@ msgstr ""
 "\n"
 "วิธีใช้:\n"
 
-#: ../urpm/args.pm:604
+#: ../urpm/args.pm:642
 #, c-format
 msgid "Copyright (C) %s by %s"
 msgstr ""
 
-#: ../urpm/bug_report.pm:67 ../urpmi:298
+#: ../urpm/bug_report.pm:67 ../urpmi:299
 #, fuzzy, c-format
 msgid "Copying failed"
 msgstr "ล็อกอินล้มเหลว"
@@ -651,82 +661,82 @@ msgstr "ล็อกอินล้มเหลว"
 msgid "wget is missing\n"
 msgstr "ไม่มี kdesu "
 
-#: ../urpm/download.pm:420
+#: ../urpm/download.pm:421
 #, fuzzy, c-format
 msgid "curl is missing\n"
 msgstr "ไม่มี kdesu "
 
-#: ../urpm/download.pm:560
+#: ../urpm/download.pm:561
 #, c-format
 msgid "curl failed: download canceled\n"
 msgstr ""
 
-#: ../urpm/download.pm:596
+#: ../urpm/download.pm:597
 #, c-format
 msgid "rsync is missing\n"
 msgstr ""
 
-#: ../urpm/download.pm:663
+#: ../urpm/download.pm:664
 #, c-format
 msgid "ssh is missing\n"
 msgstr ""
 
-#: ../urpm/download.pm:682
+#: ../urpm/download.pm:683
 #, c-format
 msgid "prozilla is missing\n"
 msgstr ""
 
-#: ../urpm/download.pm:698
+#: ../urpm/download.pm:699
 #, c-format
 msgid "Couldn't execute prozilla\n"
 msgstr ""
 
-#: ../urpm/download.pm:708
+#: ../urpm/download.pm:709
 #, fuzzy, c-format
 msgid "aria2 is missing\n"
 msgstr "ไม่มี kdesu "
 
-#: ../urpm/download.pm:757
+#: ../urpm/download.pm:758
 #, c-format
 msgid "Failed to download %s"
 msgstr ""
 
-#: ../urpm/download.pm:853
+#: ../urpm/download.pm:854
 #, c-format
 msgid "        %s%% of %s completed, ETA = %s, speed = %s"
 msgstr ""
 
-#: ../urpm/download.pm:854
+#: ../urpm/download.pm:855
 #, c-format
 msgid "        %s%% completed, speed = %s"
 msgstr ""
 
-#: ../urpm/download.pm:939
+#: ../urpm/download.pm:940
 #, fuzzy, c-format
 msgid "retrieving %s"
 msgstr "กำลังติดตั้ง %s"
 
-#: ../urpm/download.pm:950
+#: ../urpm/download.pm:951
 #, fuzzy, c-format
 msgid "retrieved %s"
 msgstr "การอ่านข้อมูลล้มเหลว: %s"
 
-#: ../urpm/download.pm:1013
+#: ../urpm/download.pm:1014
 #, c-format
 msgid "unknown protocol defined for %s"
 msgstr "ไม่รู้จักโปรโตคอลที่ระบุไว้%s"
 
-#: ../urpm/download.pm:1027
+#: ../urpm/download.pm:1028
 #, c-format
 msgid "no webfetch found, supported webfetch are: %s\n"
 msgstr ""
 
-#: ../urpm/download.pm:1050
+#: ../urpm/download.pm:1051
 #, c-format
 msgid "unable to handle protocol: %s"
 msgstr "ไม่สามารถใช้งานโปรโตคอล: %s"
 
-#: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:558 ../urpmi:577 ../urpmi:700
+#: ../urpm/dudf.pm:71 ../urpm/msg.pm:77 ../urpmi:559 ../urpmi:578 ../urpmi:703
 #: ../urpmi.recover:323
 #, c-format
 msgid "Nn"
@@ -749,7 +759,7 @@ msgstr ""
 msgid "Do you want to generate and upload a report?"
 msgstr ""
 
-#: ../urpm/dudf.pm:79 ../urpmi:560 ../urpmi:579 ../urpmi:701
+#: ../urpm/dudf.pm:79 ../urpmi:561 ../urpmi:580 ../urpmi:704
 #: ../urpmi.addmedia:137 ../urpmi.recover:325
 #, c-format
 msgid " (Y/n) "
@@ -885,7 +895,7 @@ msgstr "ไม่สามารถติดตั้งแพ็คเกจ %s
 msgid "removing bad rpm (%s) from %s"
 msgstr "กำลังติดตั้ง %s\n"
 
-#: ../urpm/install.pm:250 ../urpm/install.pm:377
+#: ../urpm/install.pm:250 ../urpm/install.pm:383
 #, fuzzy, c-format
 msgid "removing %s failed: %s"
 msgstr "การอ่านข้อมูลล้มเหลว: %s"
@@ -895,23 +905,23 @@ msgstr "การอ่านข้อมูลล้มเหลว: %s"
 msgid "removing package %s"
 msgstr "กำลังติดตั้งแพ็คเก็จ %s"
 
-#: ../urpm/install.pm:345
+#: ../urpm/install.pm:351
 #, c-format
 msgid ""
 "created transaction for installing on %s (remove=%d, install=%d, upgrade=%d)"
 msgstr ""
 
-#: ../urpm/install.pm:348
+#: ../urpm/install.pm:354
 #, fuzzy, c-format
 msgid "unable to create transaction"
 msgstr "ไม่สามารถสร้างข้อมูลเฉพาะตัวของผู้ใช้สำหรับ ssh"
 
-#: ../urpm/install.pm:375
+#: ../urpm/install.pm:381
 #, fuzzy, c-format
 msgid "removing installed rpms (%s) from %s"
 msgstr "กำลังติดตั้ง %s\n"
 
-#: ../urpm/install.pm:384
+#: ../urpm/install.pm:390
 #, fuzzy, c-format
 msgid "More information on package %s"
 msgstr "ข้อมูลเพื่มเติมบนแพกเกจ..."
@@ -1356,7 +1366,7 @@ msgstr ""
 msgid "found geolocalisation %s %.2f %.2f from timezone %s"
 msgstr ""
 
-#: ../urpm/mirrors.pm:305
+#: ../urpm/mirrors.pm:307
 #, fuzzy, c-format
 msgid "getting mirror list from %s"
 msgstr "กำลังอ่านไฟล์ rpm จาก [%s]"
@@ -1742,12 +1752,12 @@ msgstr ""
 msgid "  --test         - verify if the removal can be achieved correctly.\n"
 msgstr "  --test         - ตรวจสอบว่าการติดตั้งสามารถทำได้ถูกต้องหรือไม่.\n"
 
-#: ../urpme:51 ../urpmi:125 ../urpmq:72
+#: ../urpme:51 ../urpmi:126 ../urpmq:72
 #, c-format
 msgid "  --parallel     - distributed urpmi across machines of alias.\n"
 msgstr "  --parallel     - distributed urpmi across machines of alias.\n"
 
-#: ../urpme:52 ../urpmi:171
+#: ../urpme:52 ../urpmi:172
 #, fuzzy, c-format
 msgid "  --repackage    - Re-package the files before erasing\n"
 msgstr "  --list         - แสดงรายชื่อแพ็คเกจที่มีอยู่\n"
@@ -1757,13 +1767,13 @@ msgstr "  --list         - แสดงรายชื่อแพ็คเก�
 msgid "  --root         - use another root for rpm removal.\n"
 msgstr "  --wget         - ใช้ wget เพื่อดึงไฟล์ที่อยู่ภายนอก\n"
 
-#: ../urpme:54 ../urpmf:40 ../urpmi:127 ../urpmi.addmedia:74
+#: ../urpme:54 ../urpmf:40 ../urpmi:128 ../urpmi.addmedia:74
 #: ../urpmi.removemedia:45 ../urpmi.update:48 ../urpmq:74
 #, fuzzy, c-format
 msgid "  --urpmi-root   - use another root for urpmi db & rpm installation.\n"
 msgstr "  --wget         - ใช้ wget เพื่อดึงไฟล์ที่อยู่ภายนอก\n"
 
-#: ../urpme:55 ../urpmi:115
+#: ../urpme:55 ../urpmi:116
 #, fuzzy, c-format
 msgid "  --justdb       - update only the rpm db, not the filesystem.\n"
 msgstr "  --update       - ใช้เพื่ออัพเดตมีเดีย\n"
@@ -1793,7 +1803,7 @@ msgid ""
 "                   to (un)install a chroot with --root option.\n"
 msgstr ""
 
-#: ../urpme:62 ../urpmi:182 ../urpmq:93
+#: ../urpme:62 ../urpmi:183 ../urpmq:93
 #, fuzzy, c-format
 msgid "  --verbose, -v  - verbose mode.\n"
 msgstr "  -v             - โหมดคำ\n"
@@ -1803,13 +1813,13 @@ msgstr "  -v             - โหมดคำ\n"
 msgid "  -a             - select all packages matching expression.\n"
 msgstr "  -a             - เลือกทั้งหมดที่ตรงกับคำสั่ง\n"
 
-#: ../urpme:64 ../urpmf:86 ../urpmi:184 ../urpmi.recover:52 ../urpmq:114
+#: ../urpme:64 ../urpmf:86 ../urpmi:185 ../urpmi.recover:52 ../urpmq:114
 #, c-format
 msgid ""
 "  --define, -D   - define macro after all the others have been defined.\n"
 msgstr ""
 
-#: ../urpme:65 ../urpmf:87 ../urpmi:185 ../urpmi.recover:53 ../urpmq:115
+#: ../urpme:65 ../urpmf:87 ../urpmi:186 ../urpmi.recover:53 ../urpmq:115
 #, c-format
 msgid ""
 "  --predefine    - predefine macro before any others have been defined.\n"
@@ -1901,12 +1911,12 @@ msgstr ""
 msgid "  --version      - print this tool's version number.\n"
 msgstr "  --help         - พิมพ์ข้อความช่วย\n"
 
-#: ../urpmf:37 ../urpmi:155 ../urpmq:84
+#: ../urpmf:37 ../urpmi:156 ../urpmq:84
 #, c-format
 msgid "  --env          - use specific environment (typically a bug report).\n"
 msgstr "  --env          - ใช้เอ็นไวลอนเม็นท์แบบเฉพาะ(โดยทั่วไปใช้กับการรายงาน บัก).\n"
 
-#: ../urpmf:38 ../urpmi:86 ../urpmq:51
+#: ../urpmf:38 ../urpmi:87 ../urpmq:51
 #, fuzzy, c-format
 msgid "  --excludemedia - do not use the given media, separated by comma.\n"
 msgstr "  --media        - เลือกใช้เฉพาะมีเดียที่ถูกขั้นด้วยเครื่องหมายลูกน้ำ\n"
@@ -1917,7 +1927,7 @@ msgid ""
 "  --literal, -l  - don't match patterns, use argument as a literal string.\n"
 msgstr ""
 
-#: ../urpmf:42 ../urpmi:89 ../urpmq:52
+#: ../urpmf:42 ../urpmi:90 ../urpmq:52
 #, fuzzy, c-format
 msgid ""
 "  --sortmedia    - sort media according to substrings separated by comma.\n"
@@ -1928,7 +1938,7 @@ msgstr "  --media        - เลือกใช้เฉพาะมีเด�
 msgid "  --use-distrib  - use the given path to access media\n"
 msgstr "  --synthesis    - use the synthesis given instead of urpmi db.\n"
 
-#: ../urpmf:44 ../urpmi:90 ../urpmq:53
+#: ../urpmf:44 ../urpmi:91 ../urpmq:53
 #, fuzzy, c-format
 msgid "  --synthesis    - use the given synthesis instead of urpmi db.\n"
 msgstr "  --synthesis    - use the synthesis given instead of urpmi db.\n"
@@ -1938,7 +1948,7 @@ msgstr "  --synthesis    - use the synthesis given instead of urpmi db.\n"
 msgid "  --uniq         - do not print identical lines twice.\n"
 msgstr "  -P             - ไม่จำเป็นต้องค้นในส่วนแพ็คเกจที่ไว้สำหรับค้นเท่านั้น\n"
 
-#: ../urpmf:46 ../urpmi:87 ../urpmq:48
+#: ../urpmf:46 ../urpmi:88 ../urpmq:48
 #, c-format
 msgid "  --update       - use only update media.\n"
 msgstr "  --update       - ใช้เพื่ออัพเดตมีเดีย\n"
@@ -2168,73 +2178,74 @@ msgstr "กำลังเขียน list file สำหรับอุปก�
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
+"Copyright (C) 2012-2015 OpenMandriva Association.\n"
 "This is free software and may be redistributed under the terms of the GNU "
 "GPL.\n"
 "\n"
 "usage:\n"
 msgstr ""
-"urpmi เวอร์ชั่นที่ %s\n"
-"Copyright (C) 1999-2008 Mandriva.\n"
+"urpmi.recover เวอร์ชั่นที่ %s\n"
+"Copyright (C) 2006 Mandriva.\n"
 "ซอฟท์แวร์นี่เป็นฟรีซอฟท์แวร์และแจกจ่ายภายใต้ระเบียบของ GNU GPL.\n"
 "\n"
 "วิธีใช้:\n"
 
-#: ../urpmi:93
+#: ../urpmi:94
 #, fuzzy, c-format
 msgid "  --auto-update  - update media then upgrade the system.\n"
 msgstr "  --auto-select  - เลือกแพ็คเกจที่ต้องการอัพเกรดอัตโนมัติ\n"
 
-#: ../urpmi:94
+#: ../urpmi:95
 #, c-format
 msgid "    --no-md5sum    - disable MD5SUM file checking.\n"
 msgstr ""
 
-#: ../urpmi:95
+#: ../urpmi:96
 #, c-format
 msgid "    --force-key    - force update of gpg key.\n"
 msgstr ""
 
-#: ../urpmi:96
+#: ../urpmi:97
 #, c-format
 msgid "  --auto-orphans - remove orphans without asking\n"
 msgstr ""
 
-#: ../urpmi:97 ../urpmq:58
+#: ../urpmi:98 ../urpmq:58
 #, fuzzy, c-format
 msgid "  --no-suggests  - do not auto select \"suggested\" packages.\n"
 msgstr "  --obsoletes    -พิมพ์ tag ไม่ใช้แล้ว:ใช้ไม่ได้ทั้งหมด(หลายบรรทัด)."
 
-#: ../urpmi:98
+#: ../urpmi:99
 #, c-format
 msgid ""
 "  --no-uninstall - never ask to uninstall a package, abort the "
 "installation.\n"
 msgstr ""
 
-#: ../urpmi:99
+#: ../urpmi:100
 #, c-format
 msgid "  --no-install   - don't install packages (only download)\n"
 msgstr ""
 
-#: ../urpmi:100 ../urpmq:60
+#: ../urpmi:101 ../urpmq:60
 #, c-format
 msgid ""
 "  --keep         - keep existing packages if possible, reject requested\n"
 "                   packages that lead to removals.\n"
 msgstr ""
 
-#: ../urpmi:102
+#: ../urpmi:103
 #, c-format
 msgid "  --force-req-update  - Try to update all of package requires.\n"
 msgstr ""
 
-#: ../urpmi:103
+#: ../urpmi:104
 #, c-format
 msgid ""
 "  --no-force-req-update  - Do not try to update all of package requires.\n"
 msgstr ""
 
-#: ../urpmi:104
+#: ../urpmi:105
 #, c-format
 msgid ""
 "  --split-level  - split in small transaction if more than given packages\n"
@@ -2242,50 +2253,50 @@ msgid ""
 "                   default is %d.\n"
 msgstr ""
 
-#: ../urpmi:108
+#: ../urpmi:109
 #, c-format
 msgid "  --split-length - small transaction length, default is %d.\n"
 msgstr ""
 
-#: ../urpmi:110
+#: ../urpmi:111
 #, fuzzy, c-format
 msgid "  --fuzzy, -y    - impose fuzzy search.\n"
 msgstr "  --fuzzy        - ค้นหาแบบไม่เจาะจง(เช่นเดียวกับ -y).\n"
 
-#: ../urpmi:111
+#: ../urpmi:112
 #, fuzzy, c-format
 msgid "  --buildrequires - install the buildrequires of the packages\n"
 msgstr "  --requires     - พิมพ์  tag ที่ต้องการ:ที่ต้องการทั้งหมด(หลายบรรทัด)."
 
-#: ../urpmi:112
+#: ../urpmi:113
 #, c-format
 msgid "  --install-src  - install only source package (no binaries).\n"
 msgstr ""
 
-#: ../urpmi:113
+#: ../urpmi:114
 #, fuzzy, c-format
 msgid "  --clean        - remove rpm from cache before anything else.\n"
 msgstr "  --noclean      - เก็บ rpm ซึ่งไม่ถูกใช้ใน cache.\n"
 
-#: ../urpmi:114
+#: ../urpmi:115
 #, fuzzy, c-format
 msgid "  --noclean      - don't clean rpms from cache.\n"
 msgstr "  --noclean      - เก็บ rpm ซึ่งไม่ถูกใช้ใน cache.\n"
 
-#: ../urpmi:116
+#: ../urpmi:117
 #, c-format
 msgid ""
 "  --downgrade    - dowgrade a package from the version currently installed\n"
 "                   to the previously highest version\n"
 msgstr ""
 
-#: ../urpmi:118
+#: ../urpmi:119
 #, c-format
 msgid ""
 "  --replacepkgs  - force installing packages which are already installed.\n"
 msgstr ""
 
-#: ../urpmi:120
+#: ../urpmi:121
 #, c-format
 msgid ""
 "  --allow-nodeps - allow asking user to install packages without\n"
@@ -2294,7 +2305,7 @@ msgstr ""
 "  --allow-nodeps - ยอมให้ผู้ใช้ติดตั้งแพ็คเกจโดยไม่ต้อง\n"
 "                   ตรวจสอบ ความเป็นอิสระ\n"
 
-#: ../urpmi:122
+#: ../urpmi:123
 #, c-format
 msgid ""
 "  --allow-force  - allow asking user to install packages without\n"
@@ -2303,89 +2314,89 @@ msgstr ""
 "  --allow-force  - ยอมให้ผู้ใช้สามารถติดตั้งแพ็คเกจโดยไม่จำเป็นต้อง\n"
 "                   มีการตรวจสอบความเป็นอิสระและความถูกต้อง\n"
 
-#: ../urpmi:124
+#: ../urpmi:125
 #, fuzzy, c-format
 msgid "  --allow-suggests - auto select \"suggested\" packages.\n"
 msgstr "  --obsoletes    -พิมพ์ tag ไม่ใช้แล้ว:ใช้ไม่ได้ทั้งหมด(หลายบรรทัด)."
 
-#: ../urpmi:128
+#: ../urpmi:129
 #, c-format
 msgid ""
 "  --use-distrib  - configure urpmi on the fly from a distrib tree, useful\n"
 "                   to install a chroot with --root option.\n"
 msgstr ""
 
-#: ../urpmi:130
+#: ../urpmi:131
 #, c-format
 msgid ""
 "  --target-arch  - generate and load /etc/rpm/platform within a chroot\n"
 "                           with --root option.\n"
 msgstr ""
 
-#: ../urpmi:132 ../urpmi.addmedia:61 ../urpmi.update:37
+#: ../urpmi:133 ../urpmi.addmedia:61 ../urpmi.update:37
 #, c-format
 msgid "  --metalink     - generate and use a local metalink.\n"
 msgstr ""
 
-#: ../urpmi:133
+#: ../urpmi:134
 #, c-format
 msgid ""
 "  --download-all - download all needed packages before trying to install "
 "them\n"
 msgstr ""
 
-#: ../urpmi:134
+#: ../urpmi:135
 #, c-format
 msgid ""
 "  --downloader   - program to use to retrieve distant files. \n"
 "                   known programs: %s\n"
 msgstr ""
 
-#: ../urpmi:137
+#: ../urpmi:138
 #, c-format
 msgid "  --curl-options - additional options to pass to curl\n"
 msgstr ""
 
-#: ../urpmi:138
+#: ../urpmi:139
 #, c-format
 msgid "  --rsync-options- additional options to pass to rsync\n"
 msgstr ""
 
-#: ../urpmi:139
+#: ../urpmi:140
 #, c-format
 msgid "  --wget-options - additional options to pass to wget\n"
 msgstr ""
 
-#: ../urpmi:140
+#: ../urpmi:141
 #, c-format
 msgid "  --prozilla-options - additional options to pass to prozilla\n"
 msgstr ""
 
-#: ../urpmi:141
+#: ../urpmi:142
 #, c-format
 msgid "  --aria2-options - additional options to pass to aria2\n"
 msgstr ""
 
-#: ../urpmi:142 ../urpmi.addmedia:62 ../urpmi.update:38
+#: ../urpmi:143 ../urpmi.addmedia:62 ../urpmi.update:38
 #, c-format
 msgid "  --limit-rate   - limit the download speed.\n"
 msgstr ""
 
-#: ../urpmi:143
+#: ../urpmi:144
 #, c-format
 msgid ""
 "  --retry-hard   - rerun downloader if it fails after timeout\n"
 "                   (specified by --download-timeout).\n"
 msgstr ""
 
-#: ../urpmi:145
+#: ../urpmi:146
 #, c-format
 msgid ""
 "  --download-timeout   - timeout before next attempt to invoke downloader\n"
 "                   (only if --retry-hard is used). \n"
 msgstr ""
 
-#: ../urpmi:147
+#: ../urpmi:148
 #, fuzzy, c-format
 msgid ""
 "  --resume       - resume transfer of partially-downloaded files\n"
@@ -2394,7 +2405,7 @@ msgstr ""
 "  --verify-rpm   - ตรวจสอบความถูกต้องของ rpm signature ก่อนการติดตั้ง\n"
 "                   (--no-verify-rpm disable it, default is enabled)\n"
 
-#: ../urpmi:149 ../urpmi.addmedia:63 ../urpmi.update:39 ../urpmq:80
+#: ../urpmi:150 ../urpmi.addmedia:63 ../urpmi.update:39 ../urpmq:80
 #, c-format
 msgid ""
 "  --proxy        - use specified HTTP proxy, the port number is assumed\n"
@@ -2403,7 +2414,7 @@ msgstr ""
 "  --proxy        - ใช้ในการกำหนดพร็อกซี่ HTTP หมายเลขพอร์ทสมมุติเป็น\n"
 "                    1080(รูปแบบคือ <proxyhost[:port]>)\n"
 
-#: ../urpmi:151 ../urpmi.addmedia:65 ../urpmi.update:41 ../urpmq:82
+#: ../urpmi:152 ../urpmi.addmedia:65 ../urpmi.update:41 ../urpmq:82
 #, c-format
 msgid ""
 "  --proxy-user   - specify user and password to use for proxy\n"
@@ -2412,7 +2423,7 @@ msgstr ""
 "  --proxy-user   - กำหนดชื่อผู้ใช้และรหัสผ่านเพื่อใช้พร็อกซี่\n"
 "                   ในการตรวจสอบ (รูปแบบเป็น <user:password>)\n"
 
-#: ../urpmi:153
+#: ../urpmi:154
 #, c-format
 msgid ""
 "  --bug          - output a bug report in directory indicated by\n"
@@ -2421,42 +2432,42 @@ msgstr ""
 "  --bug          - output a bug report in directory indicated by\n"
 "                   next arg.\n"
 
-#: ../urpmi:159
+#: ../urpmi:160
 #, fuzzy, c-format
 msgid "  --excludepath  - exclude path separated by comma.\n"
 msgstr "  --media        - เลือกใช้เฉพาะมีเดียที่ถูกขั้นด้วยเครื่องหมายลูกน้ำ\n"
 
-#: ../urpmi:160
+#: ../urpmi:161
 #, c-format
 msgid "  --excludedocs  - exclude doc files.\n"
 msgstr ""
 
-#: ../urpmi:161
+#: ../urpmi:162
 #, c-format
 msgid "  --ignoresize   - don't verify disk space before installation.\n"
 msgstr ""
 
-#: ../urpmi:162
+#: ../urpmi:163
 #, fuzzy, c-format
 msgid "  --ignorearch   - allow to install rpms for unmatched architectures.\n"
 msgstr "  --help         - พิมพ์ข้อความช่วย\n"
 
-#: ../urpmi:163
+#: ../urpmi:164
 #, fuzzy, c-format
 msgid "  --noscripts    - do not execute package scriptlet(s)\n"
 msgstr "  --description  - พิมพ์ tag รายละเอียด  : รายละเอียด"
 
-#: ../urpmi:164
+#: ../urpmi:165
 #, fuzzy, c-format
 msgid "  --notriggers   - do not execute package trigger(s)\n"
 msgstr "  --description  - พิมพ์ tag รายละเอียด  : รายละเอียด"
 
-#: ../urpmi:165
+#: ../urpmi:166
 #, fuzzy, c-format
 msgid "  --nofdigests   - do not verify digest of file(s)\n"
 msgstr "  --description  - พิมพ์ tag รายละเอียด  : รายละเอียด"
 
-#: ../urpmi:166
+#: ../urpmi:167
 #, c-format
 msgid ""
 "  --fastunsafe   - trade verification and reliability for performance, "
@@ -2466,104 +2477,104 @@ msgid ""
 "                   --no-verify-rpm\n"
 msgstr ""
 
-#: ../urpmi:170
+#: ../urpmi:171
 #, fuzzy, c-format
 msgid "  --replacefiles - ignore file conflicts\n"
 msgstr "  --conflicts    -พิมพ์ tag ที่เข้ากันไม่ได้:เข้ากันไม่ได้ทั้งหมด(หลายบรรทัด)."
 
-#: ../urpmi:172
+#: ../urpmi:173
 #, fuzzy, c-format
 msgid "  --skip         - packages which installation should be skipped\n"
 msgstr "  --test         - ตรวจสอบว่าการติดตั้งสามารถทำได้ถูกต้องหรือไม่.\n"
 
-#: ../urpmi:173
+#: ../urpmi:174
 #, fuzzy, c-format
 msgid "  --prefer       - packages which should be preferred\n"
 msgstr "  --test         - ตรวจสอบว่าการติดตั้งสามารถทำได้ถูกต้องหรือไม่.\n"
 
-#: ../urpmi:174
+#: ../urpmi:175
 #, c-format
 msgid ""
 "  --more-choices - when several packages are found, propose more choices\n"
 "                   than the default.\n"
 msgstr ""
 
-#: ../urpmi:176
+#: ../urpmi:177
 #, fuzzy, c-format
 msgid "  --nolock       - don't lock rpm db.\n"
 msgstr "  --noclean      - เก็บ rpm ซึ่งไม่ถูกใช้ใน cache.\n"
 
-#: ../urpmi:177
+#: ../urpmi:178
 #, c-format
 msgid "  --strict-arch  - upgrade only packages with the same architecture.\n"
 msgstr ""
 
-#: ../urpmi:178 ../urpmq:101
+#: ../urpmi:179 ../urpmq:101
 #, c-format
 msgid "  -a             - select all matches on command line.\n"
 msgstr "  -a             - เลือกทั้งหมดที่ตรงกับคำสั่งที่พิมพ์\n"
 
-#: ../urpmi:181
+#: ../urpmi:182
 #, fuzzy, c-format
 msgid "  --quiet, -q    - quiet mode.\n"
 msgstr "  -q             - โหมดเงียบ\n"
 
-#: ../urpmi:183
+#: ../urpmi:184
 #, fuzzy, c-format
 msgid "  --debug        - very verbose mode.\n"
 msgstr "  -v             - โหมดคำ\n"
 
-#: ../urpmi:186
+#: ../urpmi:187
 #, fuzzy, c-format
 msgid "  names or rpm files given on command line will be installed.\n"
 msgstr "ชื่อของไฟล์หรือของ rpm ที่ให้จากคำสั่งที่พิมพ์กำลังถูกค้นหา\n"
 
-#: ../urpmi:220
+#: ../urpmi:221
 #, c-format
 msgid "Error: can't use --auto-select along with package list.\n"
 msgstr ""
 
-#: ../urpmi:227
+#: ../urpmi:228
 #, c-format
 msgid ""
 "Error: To generate a bug report, specify the usual command-line arguments\n"
 "along with --bug.\n"
 msgstr ""
 
-#: ../urpmi:259
+#: ../urpmi:260
 #, c-format
 msgid "You can't install binary rpm files when using --install-src"
 msgstr ""
 
-#: ../urpmi:260
+#: ../urpmi:261
 #, c-format
 msgid "You can't install spec files"
 msgstr ""
 
-#: ../urpmi:267
+#: ../urpmi:268
 #, c-format
 msgid "defaulting to --buildrequires"
 msgstr ""
 
-#: ../urpmi:272
+#: ../urpmi:273
 #, c-format
 msgid ""
 "please use --buildrequires or --install-src, defaulting to --buildrequires"
 msgstr ""
 
-#: ../urpmi:292
+#: ../urpmi:293
 #, fuzzy, c-format
 msgid ""
 "Directory [%s] already exists, please use another directory for bug report "
 "or delete it"
 msgstr "ชื่อกลุ่มนี้มีอยู่แล้ว กรุณาเลือกชื่ออื่น"
 
-#: ../urpmi:293
+#: ../urpmi:294
 #, c-format
 msgid "Unable to create directory [%s] for bug report"
 msgstr "ไม่สามารถสร้างไดเร็คตอรี่ [%s] สำหรับรายงานบัก"
 
-#: ../urpmi:314
+#: ../urpmi:315
 #, c-format
 msgid ""
 "Error: %s appears to be mounted read-only.\n"
@@ -2571,42 +2582,42 @@ msgid ""
 msgstr ""
 
 #. -PO: here format is "<package_name>: <summary> (to upgrade)"
-#: ../urpmi:486
+#: ../urpmi:487
 #, c-format
 msgid "%s: %s (to upgrade)"
 msgstr ""
 
 #. -PO: here format is "<package_name> (to upgrade)"
-#: ../urpmi:488
+#: ../urpmi:489
 #, c-format
 msgid "%s (to upgrade)"
 msgstr ""
 
 #. -PO: here format is "<package_name>: <summary> (to install)"
-#: ../urpmi:492
+#: ../urpmi:493
 #, fuzzy, c-format
 msgid "%s: %s (to install)"
 msgstr "ออกจากการติดตั้ง"
 
 #. -PO: here format is "<package_name> (to install)"
-#: ../urpmi:494
+#: ../urpmi:495
 #, fuzzy, c-format
 msgid "%s (to install)"
 msgstr "ออกจากการติดตั้ง"
 
-#: ../urpmi:500
+#: ../urpmi:501
 #, fuzzy, c-format
 msgid ""
 "In order to satisfy the '%s' dependency, one of the following packages is "
 "needed:"
 msgstr "เพื่อความถูกต้องของการเป็นอิสระระหว่างโปรแกรมแพ็คเกจบางตัวจะถูกลบทิ้ง(%d MB)"
 
-#: ../urpmi:503
+#: ../urpmi:504
 #, c-format
 msgid "What is your choice? (1-%d) "
 msgstr "ต้องการเลือกอะไรครับ  (1-%d) "
 
-#: ../urpmi:551
+#: ../urpmi:552
 #, fuzzy, c-format
 msgid ""
 "The following package cannot be installed because it depends on packages\n"
@@ -2614,7 +2625,7 @@ msgid ""
 "%s"
 msgstr "ไม่สามารถ install บางเพกเกจได้"
 
-#: ../urpmi:553
+#: ../urpmi:554
 #, fuzzy, c-format
 msgid ""
 "The following packages can't be installed because they depend on packages\n"
@@ -2622,26 +2633,26 @@ msgid ""
 "%s"
 msgstr "ไม่สามารถ install บางเพกเกจได้"
 
-#: ../urpmi:559 ../urpmi:578
+#: ../urpmi:560 ../urpmi:579
 #, fuzzy, c-format
 msgid ""
 "\n"
 "Continue installation anyway?"
 msgstr "คุณยังต้องการจะติดตั้งอีกต่อไปหรือไม่ ?"
 
-#: ../urpmi:572
+#: ../urpmi:573
 #, fuzzy, c-format
 msgid ""
 "A requested package cannot be installed:\n"
 "%s"
 msgstr "ทุกอย่างได้ถูกติดตั้งเรียบร้อยแล้ว"
 
-#: ../urpmi:594
+#: ../urpmi:595
 #, fuzzy, c-format
 msgid "removing package %s will break your system"
 msgstr "แพ็คเกจ %s ที่กำลังลบอยู่จะทำให้ระบบเสียหายได้\n"
 
-#: ../urpmi:602
+#: ../urpmi:603
 #, fuzzy, c-format
 msgid ""
 "The installation cannot continue because the following package\n"
@@ -2652,7 +2663,7 @@ msgstr ""
 "%s\n"
 "คุณยอมให้ทำการลบทิ้งหรือไม่?"
 
-#: ../urpmi:604
+#: ../urpmi:605
 #, fuzzy, c-format
 msgid ""
 "The installation cannot continue because the following packages\n"
@@ -2663,12 +2674,12 @@ msgstr ""
 "%s\n"
 "คุณยอมให้ทำการลบทิ้งหรือไม่?"
 
-#: ../urpmi:613
+#: ../urpmi:614
 #, c-format
 msgid "(test only, removal will not be actually done)"
 msgstr ""
 
-#: ../urpmi:635
+#: ../urpmi:636
 #, fuzzy, c-format
 msgid ""
 "You must first call urpmi with --buildrequires to install the following "
@@ -2678,28 +2689,28 @@ msgstr ""
 "คุณจะต้องเป็นรูทในการติดตั้ง ความเป็นอิสระ :\n"
 "%s\n"
 
-#: ../urpmi:645
+#: ../urpmi:646
 #, fuzzy, c-format
 msgid "The following orphan package will be removed."
 msgid_plural "The following orphan packages will be removed."
 msgstr[0] "เพื่อความถูกต้องของการเป็นอิสระระหว่างโปรแกรมแพ็คเกจบางตัวจะถูกลบทิ้ง(%d MB)"
 
-#: ../urpmi:671
+#: ../urpmi:674
 #, c-format
 msgid "WARNING: %s option is in use. Some strange problems may happen"
 msgstr ""
 
-#: ../urpmi:683
+#: ../urpmi:686
 #, c-format
 msgid "(test only, installation will not be actually done)"
 msgstr ""
 
-#: ../urpmi:716
+#: ../urpmi:719
 #, fuzzy, c-format
 msgid "Press Enter when mounted..."
 msgstr "กรุณากด enter เมื่อพร้อม"
 
-#: ../urpmi:769
+#: ../urpmi:772
 #, c-format
 msgid "Updating urpmi database..."
 msgstr ""
@@ -3449,13 +3460,20 @@ msgstr "เครื่องมือติดตั้งโปรแกรม
 msgid "Graphical front end to install RPM files"
 msgstr "ส่วนติดต่อผู้ใช้แบบ graphic ของโปรแกรมเพิ่มแพคเก็จ"
 
-#: ../polkit/org.openmandriva.gurpmi2.policy.in.h:1
-msgid "Run DrakX Package Installer"
-msgstr ""
-
-#: ../polkit/org.openmandriva.gurpmi2.policy.in.h:2
-msgid "Authentication is required to run DrakX Package Installer"
-msgstr ""
+#, fuzzy
+#~ msgid ""
+#~ "urpmi version %s\n"
+#~ "Copyright (C) 1999-2011 Mandriva.\n"
+#~ "This is free software and may be redistributed under the terms of the GNU "
+#~ "GPL.\n"
+#~ "\n"
+#~ "usage:\n"
+#~ msgstr ""
+#~ "urpmi เวอร์ชั่นที่ %s\n"
+#~ "Copyright (C) 1999-2008 Mandriva.\n"
+#~ "ซอฟท์แวร์นี่เป็นฟรีซอฟท์แวร์และแจกจ่ายภายใต้ระเบียบของ GNU GPL.\n"
+#~ "\n"
+#~ "วิธีใช้:\n"
 
 #, fuzzy
 #~ msgid ""
