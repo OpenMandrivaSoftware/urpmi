@@ -31,9 +31,9 @@ merge:
 	done
 
 # there are better ways to do this, but..
-merge_openmandriva_translations: $(PGOAL).pot
+merge_mageia_translations: $(PGOAL).pot
 	@for n in $(POFILES); do \
-		echo "Merging $$n translations from OpenMandriva"; \
+		echo "Merging $$n translations from Mageia"; \
 		mv "$$n" "$$n.orig"; \
 		git checkout --theirs mageia/master "$$n"; \
 		if [ $$? -eq 0 ]; then \
