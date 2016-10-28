@@ -289,7 +289,6 @@ my %options_spec = (
 	sourcerpm => \$options{sourcerpm},
 	'summary|S' => \$options{summary},
 	suggests => sub { 
-	    $urpm->{error}("--suggests now displays the suggested packages, see --allow-suggests for previous behaviour");
 	    $options{suggests} = 1;
 	},
 	'list-media:s' => sub { $options{list_media} = $_[1] || 'all' },
@@ -304,7 +303,6 @@ my %options_spec = (
 	'parallel=s' => \$options{parallel},
 	'env=s' => \$options{env},
 	requires => sub {
-	    $urpm->{error}("--requires behaviour changed, use --requires-recursive to get the old behaviour");
 	    $options{requires} = 1;
 	},
 	'requires-recursive|d' => \$options{deps},
