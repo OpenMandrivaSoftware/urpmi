@@ -456,14 +456,14 @@ sub add_urpmf_parameter {
 
 # common options setup
 
-foreach my $k ('allow-medium-change', 'auto', 'auto-select', 'clean', 'download-all:s', 'force', 'expect-install!', 'justdb', 'no-priority-upgrade', 'noscripts', 'replacefiles', 'p', 'P', 'previous-priority-upgrade=s', 'root=s', 'test!', 'verify-rpm!', 'update',
+foreach my $k ('allow-medium-change', 'auto', 'auto-select', 'clean', 'restricted', 'download-all:s', 'force', 'expect-install!', 'justdb', 'no-priority-upgrade', 'noscripts', 'replacefiles', 'p', 'P', 'previous-priority-upgrade=s', 'root=s', 'test!', 'verify-rpm!', 'update',
 	       'split-level=s', 'split-length=s')
 {
     $options_spec{gurpmi}{$k} = $options_spec{urpmi}{$k};
 }
 $options_spec{gurpmi2} = $options_spec{gurpmi};
 
-foreach my $k ("test!", "force", "root=s", "use-distrib=s", 'env=s',
+foreach my $k ("test!", "force", "root=s", "restricted", "use-distrib=s", 'env=s',
     'repackage', 'noscripts', 'auto', 'auto-orphans', 'justdb',
     "parallel=s")
 {

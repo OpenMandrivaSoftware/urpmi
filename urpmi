@@ -217,6 +217,10 @@ eval {
     #$dudf = new urpm::dudf(\$urpm, $command_line, $force_dudf);
 };
 
+if ($urpm->{options}{restricted}) {
+    $restricted = 1;
+}
+
 if (@ARGV && $auto_select) {
     print STDERR N("Error: can't use --auto-select along with package list.\n");
     exit 1;

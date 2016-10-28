@@ -183,6 +183,7 @@ sub load_config_raw {
 	    |ignoresize
 	    |auto
 	    |repackage
+	    |restricted
 	    |strict-arch
 	    |nopubkey
 	    |no-force-req-update
