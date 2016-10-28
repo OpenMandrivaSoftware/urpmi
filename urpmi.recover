@@ -322,7 +322,7 @@ if ($rollback) {
 
         my $noexpr = N("Nn");
         my $msg = N("\nDo you want to proceed?");
-        my $confirm = message_input_($msg . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/;
+        my $confirm = message_input($msg . N(" (Y/n) "), boolean => 1) !~ /[$noexpr]/;
         if (!$confirm) {
             exit(1);
         }
