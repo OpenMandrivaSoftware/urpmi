@@ -22,7 +22,7 @@ our @EXPORT = '%options';
 
 # Configuration of Getopt. urpmf is a special case, because we need to
 # parse non-alphanumerical options (-! -( -))
-my @configuration = qw(bundling gnu_compat permute);
+my @configuration = qw(bundling no_ignore_case permute);
 push @configuration, 'pass_through'
     if $tool eq 'urpmf' || $tool eq 'urpmi.addmedia';
 Getopt::Long::Configure(@configuration);
@@ -218,6 +218,7 @@ my %options_spec = (
 	'nolock' => \$options{nolock},
 	restricted => \$::restricted,
 	'force-key' => \$::forcekey,
+	'ignore-missing' => sub { $urpm->{options}{'ignore-missing'} = 1 },
 	a => \$::all,
 	p => sub { $::use_provides = 1 },
 	P => sub { $::use_provides = 0 },
@@ -365,6 +366,7 @@ my %options_spec = (
 	'noa|d' => \my $_dummy, #- default, kept for compatibility
 	'norebuild!' => sub { $urpm->{options}{'build-hdlist-on-error'} = !$_[1]; $options{force} = 0 },
 	'probe-rpms' => sub { $options{probe_with} = 'rpms' },
+	'nolock' => \$options{nolock},
 	'<>' => sub {
 	    my ($p) = @_;
 	    if ($p =~ /^--?(.+)/) { # unrecognized option

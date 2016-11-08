@@ -304,15 +304,8 @@ sub _get_callbacks {
     $options->{callback_uninst} ||= $options->{verbose} >= 0 ? \&install_logger : $erase_logger;
 
     $options->{callback_error} ||= sub {
-	my ($urpm, undef, $id, $subtype) = @_;
-	my $n;
-        if(defined($id)) {
-          $n = $urpm->{depslist}[$id]->fullname;
-        }
-        else {
-          $n = "(unknown)";
-        }
-	$urpm->{error}("ERROR: '$subtype' failed for $n: ");
+	my ($urpm, undef, undef, $subtype, undef, undef) = @_;
+	$urpm->{error}("ERROR: '$subtype' failed for $current_pkg");
     };
 
     if ($options->{verbose} >= 0 && $have_pkgs) {
@@ -368,6 +361,7 @@ sub install {
 	$urpm->{readmes} = {};
 	_get_callbacks($urpm, $db, $trans, \%options, $install, $upgrade, scalar @trans_pkgs);
 
+	local $ENV{LD_PRELOAD}; # fix eatmydata & co
 	local $urpm->{trans} = $trans;
 	@errors = $trans->run($urpm, %options);
 	delete $urpm->{trans};

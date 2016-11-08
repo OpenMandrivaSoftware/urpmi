@@ -8,7 +8,7 @@ package gurpm::Gtk2RPMProgressDialog;
 # Gtk2 only (no ugtk2/mygtk2) as it's used by gurpmi too...
 #
 
-=head1 SYNOPSYS
+=head1 SYNOPSIS
 
 gurpm::RPMProgressDialog is a widget for gurpmi, rpmdrake (drakx already has its own)
 that presents a global progress bar.

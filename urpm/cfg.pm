@@ -98,7 +98,7 @@ sub expand_line {
     return $line;
 }
 
-my $no_para_option_regexp = 'update|ignore|synthesis|noreconfigure|no-suggests|no-media-info|static|virtual|disable-certificate-check';
+my $no_para_option_regexp = 'update|ignore|synthesis|noreconfigure|no-suggests|no-media-info|static|virtual|disable-certificate-check|ignore-missing';
 
 sub load_config_raw {
     my ($file, $b_norewrite) = @_;
