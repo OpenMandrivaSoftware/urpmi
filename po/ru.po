@@ -2618,7 +2618,7 @@ msgstr "  --noscripts    - не выполнять scriptlet'ы пакета\n"
 #: ../urpmi:165
 #, c-format
 msgid "  --notriggers   - do not execute package trigger(s)\n"
-msgstr "  --notriggers   - не зжапускать триггеры пакетов"
+msgstr "  --notriggers   - не запускать триггеры пакетов\n"
 
 #: ../urpmi:166
 #, c-format
@@ -3183,7 +3183,7 @@ msgstr ""
 #: ../urpmi.recover:46
 #, c-format
 msgid "  --list-all     - list all transactions in rpmdb (long)\n"
-msgstr "  --list-all     - показать все транзакции в базе rpm (долгая операция)"
+msgstr "  --list-all     - показать все транзакции в базе rpm (длинный)\n"
 
 #: ../urpmi.recover:47
 #, c-format
@@ -3942,23 +3942,3 @@ msgstr "Графический интерфейс для установки фа
 #~ "условиям GNU GPL.\n"
 #~ "\n"
 #~ "использование:\n"
-+"Использование: urpmi.addmedia [параметры] <название> <url>\n"
-+"где <url> один из:\n"
-+"       [file:/]/<путь>\n"
-+"       ftp://<логин>:<пароль>@<хост>/<путь>\n"
-+"       ftp://<хост>/<путь>\n"
-+"       http://<хост>/<путь>\n"
-+"       cdrom://<путь>\n"
-+"\n"
-+"Использование: urpmi.addmedia [параметры] --distrib --mirrorlist <url>\n"
-+"Использование: urpmi.addmedia [параметры] --mirrorlist <url> <название> "
-+"<относительный путь>\n"
-+"\n"
-+"Примеры:\n"
-+"\n"
-+"  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
-+"  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
-+" urpmi.addmedia --distrib --zeroconf\n"
-+"\n"
-+"\n"
-+"а [параметры] могут быть следующими\n"
