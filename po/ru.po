@@ -131,6 +131,12 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
+"gurpmi версия %s\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
+"Это свободное программное обеспечение и может распространяться согласно "
+"условиям GNU GPL.\n"
+"\n"
+"использование:\n"
 
 #: ../gurpmi.pm:60
 #, c-format
@@ -240,13 +246,13 @@ msgid ""
 "Some requested packages cannot be installed:\n"
 "%s"
 msgstr ""
-"Не удаётся установить некоторые из запрошенных пакетов:\n"
+"Некоторые из запрошенных пакетов не могут быть установлены:\n"
 "%s"
 
 #: ../gurpmi2:102
 #, c-format
 msgid "Continue installation anyway?"
-msgstr ""
+msgstr "Все равно продолжить установку?"
 
 #: ../gurpmi2:120
 #, c-format
@@ -546,24 +552,24 @@ msgid "chroot directory doesn't exist"
 msgstr "Каталог chroot не существует"
 
 #: ../urpm/args.pm:543
-#, fuzzy, c-format
+#, c-format
 msgid "--target-arch may only be used with --root and specified after"
-msgstr "--list-nodes может использоваться только с --parallel"
+msgstr "--target-arch может быть использована только вместе с --root и должна быть указана после нее"
 
 #: ../urpm/args.pm:555
 #, c-format
 msgid "%s is missing, please install qemu-static-%s"
-msgstr ""
+msgstr "отсутсвует %s, пожалуйста установите qemu-static-%s"
 
 #: ../urpm/args.pm:572
 #, c-format
 msgid "%s already exists, will load in stead of generating new for %s"
-msgstr ""
+msgstr "%s уже существует, для %s будет загружен уже существующий вместо генерации нового"
 
 #: ../urpm/args.pm:585
 #, c-format
 msgid "creating and mounting necessary system mount points under %s"
-msgstr ""
+msgstr "создаются и монтируются необходимые системные директории в %s"
 
 #: ../urpm/args.pm:614
 #, c-format
@@ -847,6 +853,8 @@ msgid ""
 "\n"
 "Command:"
 msgstr ""
+"\n"
+"Команда:"
 
 #: ../urpm/dudf.pm:314
 #, c-format
@@ -871,7 +879,7 @@ msgstr ""
 #: ../urpm/dudf.pm:324
 #, c-format
 msgid "Testing synthesis file presence ..."
-msgstr ""
+msgstr "Проверяем наличие файла synthesis ..."
 
 #: ../urpm/dudf.pm:343
 #, c-format
@@ -1153,7 +1161,7 @@ msgstr ""
 #: ../urpm/media.pm:565
 #, c-format
 msgid "wrote config file [%s and urpmicfg.d contents]"
-msgstr ""
+msgstr "записан конфигурацилнный файл [%s и содержимое urpmicfg.d]"
 
 #: ../urpm/media.pm:656
 #, c-format
@@ -1689,7 +1697,7 @@ msgstr "Пакет %s уже установлен"
 #: ../urpm/select.pm:711
 #, c-format
 msgid "Packages %s are already installed"
-msgstr "Пакеты %s уже установлен"
+msgstr "Пакеты %s уже установлены"
 
 #: ../urpm/select.pm:728 ../urpm/select.pm:815
 #, c-format
@@ -1767,12 +1775,12 @@ msgstr "Отсутствует подпись (%s)"
 #: ../urpm/signature.pm:107
 #, c-format
 msgid "SECURITY: Medium \"%s\" has no key (%s)!"
-msgstr "БЕЗОПАСНОСТЬ: Средний \"%s\" не имеет ключа (%s)!"
+msgstr "БЕЗОПАСНОСТЬ: Источник \"%s\" не имеет ключа (%s)!"
 
 #: ../urpm/signature.pm:109
 #, c-format
 msgid "Medium without key (%s)"
-msgstr "Средний без ключа (%s)"
+msgstr "Источник без ключа (%s)"
 
 #: ../urpm/sys.pm:188
 #, c-format
@@ -1819,6 +1827,12 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
+"urpme версия %s\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
+"Это свободное программное обеспечение и может распространяться согласно "
+"условиям GNU GPL.\n"
+"\n"
+"использование:\n"
 
 #: ../urpme:47
 #, c-format
@@ -1857,7 +1871,7 @@ msgstr ""
 #, c-format
 msgid "  --urpmi-root   - use another root for urpmi db & rpm installation.\n"
 msgstr ""
-"  --root-root    - использовать другой корень для базы данных urpmi\n"
+"  --urpmi-root    - использовать другой корень для базы данных urpmi\n"
 "                   и установки пакетов\n"
 
 #: ../urpme:55 ../urpmi:116
@@ -1874,7 +1888,7 @@ msgstr "  --noscripts    - не выполнять scriptlet'ы пакета\n"
 #: ../urpme:57
 #, c-format
 msgid "  --notriggers   - do not execute package trigger(s).\n"
-msgstr ""
+msgstr "  --notriggers   - не запускать триггеры пакетов.\n"
 
 #: ../urpme:58
 #, c-format
@@ -1883,6 +1897,9 @@ msgid ""
 "alias:\n"
 "                   --tune-rpm=nofsync\n"
 msgstr ""
+"  --fastunsafe   - предпочесть производительность надежности, "
+"синоним для:\n"
+"                   --tune-rpm=nofsync\n"
 
 #: ../urpme:60
 #, c-format
@@ -1908,12 +1925,14 @@ msgstr "  -a             - выбрать все пакеты, удовлетв�
 msgid ""
 "  --define, -D   - define macro after all the others have been defined.\n"
 msgstr ""
+"  --define, -D   - добавить определение макроса после определения других.\n"
 
 #: ../urpme:65 ../urpmf:87 ../urpmi:186 ../urpmi.recover:53 ../urpmq:115
 #, c-format
 msgid ""
 "  --predefine    - predefine macro before any others have been defined.\n"
 msgstr ""
+"  --predefine    - добавить предопределенный макрос перед определением других.\n"
 
 #: ../urpme:80
 #, c-format
@@ -1974,7 +1993,7 @@ msgstr[1] "Удалить %d пакетов?"
 #: ../urpme:173
 #, c-format
 msgid "testing removal of %s"
-msgstr "тестрование удаления из %s"
+msgstr "тестирование удаления из %s"
 
 #: ../urpme:190
 #, c-format
@@ -1996,6 +2015,12 @@ msgid ""
 "\n"
 "usage: urpmf [options] pattern-expression\n"
 msgstr ""
+"urpmf версия %s\n"
+"Copyright (C) 2002-2011 Mandriva.\n"
+"Это свободное программное обеспечение и может распространяться согласно "
+"условиям GNU GPL.\n"
+"\n"
+"использование: urpmf [options] pattern-expression\n"
 
 #: ../urpmf:36
 #, c-format
@@ -2276,7 +2301,7 @@ msgid "no xml-info available for medium \"%s\""
 msgstr "для источника «%s» не найден файл xml-info"
 
 #: ../urpmi:79
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "urpmi version %s\n"
 "Copyright (C) 1999-2011 Mandriva.\n"
@@ -2286,8 +2311,9 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
-"urpme версия %s\n"
-"%s\n"
+"urpmi версия %s\n"
+"Copyright (C) 1999-2011 Mandriva.\n"
+"Copyright (C) 2012-2015 OpenMandriva Association.\n"
 "Это свободное программное обеспечение и может распространяться согласно "
 "условиям GNU GPL.\n"
 "\n"
@@ -2316,7 +2342,7 @@ msgstr "  --auto-orphans - удалить сирот без вывода зап�
 #: ../urpmi:98 ../urpmq:58
 #, c-format
 msgid "  --no-suggests  - do not auto select \"suggested\" packages.\n"
-msgstr ""
+msgstr "  --no-suggests  - не выбирать автоматически рекомендованные пакеты.\n"
 
 #: ../urpmi:99
 #, c-format
@@ -2344,13 +2370,14 @@ msgstr ""
 #: ../urpmi:103
 #, c-format
 msgid "  --force-req-update  - Try to update all of package requires.\n"
-msgstr ""
+msgstr "  --force-req-update  - Пытаться обновить все зависимости пакета.\n"
 
 #: ../urpmi:104
 #, c-format
 msgid ""
 "  --no-force-req-update  - Do not try to update all of package requires.\n"
 msgstr ""
+"  --no-force-req-update  - Не пытаться обновить все зависимости пакета.\n"
 
 #: ../urpmi:105
 #, c-format
@@ -2429,7 +2456,7 @@ msgstr ""
 #: ../urpmi:125
 #, c-format
 msgid "  --allow-suggests - auto select \"suggested\" packages.\n"
-msgstr ""
+msgstr "  --allow-suggests - автоматически выбирать рекомендованные пакеты.\n"
 
 #: ../urpmi:129
 #, c-format
@@ -2512,6 +2539,8 @@ msgid ""
 "  --retry-hard   - rerun downloader if it fails after timeout\n"
 "                   (specified by --download-timeout).\n"
 msgstr ""
+"  --retry-hard   - перезапустить программу скачивания пакетов в случае ошибки,\n"
+"                   выждав время, заданное опцией --download-timeout.\n"
 
 #: ../urpmi:146
 #, c-format
@@ -2519,6 +2548,8 @@ msgid ""
 "  --download-timeout   - timeout before next attempt to invoke downloader\n"
 "                   (only if --retry-hard is used). \n"
 msgstr ""
+"  --download-timeout   - время ожидания перед очередной попыткой запустить программу скачивания\n"
+"                   пакета (только если указана опция --retry-hard). \n"
 
 #: ../urpmi:148
 #, c-format
@@ -2587,12 +2618,12 @@ msgstr "  --noscripts    - не выполнять scriptlet'ы пакета\n"
 #: ../urpmi:165
 #, c-format
 msgid "  --notriggers   - do not execute package trigger(s)\n"
-msgstr ""
+msgstr "  --notriggers   - не зжапускать триггеры пакетов"
 
 #: ../urpmi:166
 #, c-format
 msgid "  --nofdigests   - do not verify digest of file(s)\n"
-msgstr ""
+msgstr "  --nofdigests   - не проверять дайджест файлов\n"
 
 #: ../urpmi:167
 #, c-format
@@ -2603,11 +2634,16 @@ msgid ""
 "                   --nofdigests\n"
 "                   --no-verify-rpm\n"
 msgstr ""
+"  --fastunsafe   - предпочесть скорость надежности, "
+"синоним для:\n"
+"                   --tune-rpm=nofsync\n"
+"                   --nofdigests\n"
+"                   --no-verify-rpm\n"
 
 #: ../urpmi:171
 #, c-format
 msgid "  --replacefiles - ignore file conflicts\n"
-msgstr "  --conflicts    - игнорировать конфликты файлов\n"
+msgstr "  --replacefiles - игнорировать конфликты файлов\n"
 
 #: ../urpmi:173
 #, c-format
@@ -2868,7 +2904,7 @@ msgstr "После монтирования нажмите клавишу «Ente
 #: ../urpmi:772
 #, c-format
 msgid "Updating urpmi database..."
-msgstr ""
+msgstr "Обновляется база данных urpmi..."
 
 #. -PO: The URI types strings 'file:', 'ftp:', 'http:', and 'cdrom:' must not be translated!
 #. -PO: neither the ``with''.  Only what is between <brackets> can be translated.
@@ -2897,6 +2933,26 @@ msgid ""
 "\n"
 "and [options] are from\n"
 msgstr ""
+"Использование: urpmi.addmedia [параметры] <название> <url>\n"
+"где <url> один из:\n"
+"       [file:/]/<путь>\n"
+"       ftp://<логин>:<пароль>@<хост>/<путь>\n"
+"       ftp://<хост>/<путь>\n"
+"       http://<хост>/<путь>\n"
+"       cdrom://<путь>\n"
+"\n"
+"Использование: urpmi.addmedia [параметры] --distrib --mirrorlist <url>\n"
+"Использование: urpmi.addmedia [параметры] --mirrorlist <url> <название> "
+"<относительный путь>\n"
+"\n"
+"Примеры:\n"
+"\n"
+"  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
+"  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
+" urpmi.addmedia --distrib --zeroconf\n"
+"\n"
+"\n"
+"а [параметры] могут быть следующими\n"
 
 #: ../urpmi.addmedia:56 ../urpmi.update:33 ../urpmq:77
 #, c-format
@@ -2922,7 +2978,7 @@ msgstr "  --aria2        - использовать aria2 для загрузк�
 #: ../urpmi.addmedia:60
 #, c-format
 msgid "  --mirrorbrain  - use server side generated metalink.\n"
-msgstr ""
+msgstr "  --mirrorbrain  - использовать мета-ссылку, созданную на стороне сервера.\n"
 
 #: ../urpmi.addmedia:67
 #, c-format
@@ -3088,6 +3144,13 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
+"urpmi.recover версия %s\n"
+"Copyright (C) 2006-2011 Mandriva.\n"
+"Copyright (C) 2014 ROSA.\n"
+"Это свободное программное обеспечение и может распространяться согласно условиям GNU "
+"GPL.\n"
+"\n"
+"использование:\n"
 
 #: ../urpmi.recover:41
 #, c-format
@@ -3097,17 +3160,17 @@ msgstr "  --checkpoint   - установить точку для повторн
 #: ../urpmi.recover:42
 #, c-format
 msgid "  --noclean      - don't clean repackage directory on checkpoint\n"
-msgstr ""
+msgstr "  --noclean      - не очищать директорию перепаковки при создании контрольной точки\n"
 
 #: ../urpmi.recover:43
 #, c-format
 msgid "  --urpmi-root   - use another root for urpmi db & rpm installation\n"
-msgstr ""
+msgstr "  --urpmi-root   - использовать указанную лиректорию как корневую для базы urpmi и установки rpm\n"
 
 #: ../urpmi.recover:44
 #, c-format
 msgid "  --auto         - do not ask any questions\n"
-msgstr ""
+msgstr "  --auto         - не задавать вопросов\n"
 
 #: ../urpmi.recover:45
 #, c-format
@@ -3115,12 +3178,12 @@ msgid ""
 "  --list         - list transactions since provided date/duration argument\n"
 msgstr ""
 "  --list         - список транзакций относительно указанной\n"
-"                   даты/продолжительности\n"
+"                   даты/срока\n"
 
 #: ../urpmi.recover:46
 #, c-format
 msgid "  --list-all     - list all transactions in rpmdb (long)\n"
-msgstr ""
+msgstr "  --list-all     - показать все транзакции в базе rpm (долгая операция)"
 
 #: ../urpmi.recover:47
 #, c-format
@@ -3142,31 +3205,33 @@ msgid ""
 "  --transactions - treat rollback argument as number of transactions to be "
 "reverted\n"
 msgstr ""
+"  --transactions - трактовать аргумент как количество транзакций, которые "
+"надо откатить\n"
 
 #: ../urpmi.recover:51
 #, c-format
 msgid "  --disable      - turn off repackaging\n"
-msgstr ""
+msgstr "  --disable      - отключить перепакетовку\n"
 
 #: ../urpmi.recover:68
 #, c-format
 msgid "Invalid date or duration [%s]\n"
-msgstr ""
+msgstr "Некорректная дата или срок [%s]\n"
 
 #: ../urpmi.recover:76
 #, c-format
 msgid "Repackage directory not defined\n"
-msgstr ""
+msgstr "Не определена директория для перепакетовки\n"
 
 #: ../urpmi.recover:79
 #, c-format
 msgid "Can't write to repackage directory [%s]\n"
-msgstr ""
+msgstr "Невозможно записать в директорию перепакетовки [%s]\n"
 
 #: ../urpmi.recover:81
 #, c-format
 msgid "Cleaning up repackage directory [%s]...\n"
-msgstr ""
+msgstr "Рчистка директории перепакетовки [%s]...\n"
 
 #: ../urpmi.recover:140
 #, c-format
@@ -3196,7 +3261,7 @@ msgstr "Нельзя использовать --disable вместе с друг
 #: ../urpmi.recover:157
 #, c-format
 msgid "No transaction found since %s\n"
-msgstr "Не найдены транзакции от %s\n"
+msgstr "Не найдены транзакции после %s\n"
 
 #: ../urpmi.recover:172
 #, c-format
@@ -3206,17 +3271,17 @@ msgstr "Для этого нужны права суперпользовател
 #: ../urpmi.recover:185 ../urpmi.recover:366
 #, c-format
 msgid "Writing rpm macros file [%s]...\n"
-msgstr ""
+msgstr "Записываем файл [%s]... с макросами rpm\n"
 
 #: ../urpmi.recover:218
 #, c-format
 msgid "Invalid number of transactions to be reverted"
-msgstr ""
+msgstr "Некорректное число транзакций для отката"
 
 #: ../urpmi.recover:239
 #, c-format
 msgid "No rollback date found\n"
-msgstr ""
+msgstr "Не найдена дата отката\n"
 
 #: ../urpmi.recover:246
 #, c-format
@@ -3224,6 +3289,8 @@ msgid ""
 "The oldest available checkpoint is %d (%s), I will not revert to older "
 "stages (this can damage your system)"
 msgstr ""
+"Самая старая доступная точка отката - %d (%s), невозможно откатить систему "
+"к более старым состояниям"
 
 #: ../urpmi.recover:251
 #, c-format
@@ -3236,11 +3303,13 @@ msgid ""
 "\n"
 "Do you want to proceed?"
 msgstr ""
+"\n"
+"Продолжить?"
 
 #: ../urpmi.recover:352
 #, c-format
 msgid "Disabling repackaging\n"
-msgstr ""
+msgstr "Отключить перепакетовку\n"
 
 #: ../urpmi.removemedia:38
 #, c-format
@@ -3375,6 +3444,12 @@ msgid ""
 "\n"
 "usage:\n"
 msgstr ""
+"urpmq версия %s\n"
+"Copyright (C) 2000-2011 Mandriva.\n"
+"Это свободное программное обеспечение и может распространяться согласно условиям GNU "
+"GPL.\n"
+"\n"
+"использование:\n"
 
 #: ../urpmq:50
 #, c-format
@@ -3449,7 +3524,7 @@ msgstr ""
 #: ../urpmq:69
 #, c-format
 msgid "  --sources      - print source URLs of selected packages\n"
-msgstr "  --sourcerpm    - вывести адреса исходников выбранных пакетов\n"
+msgstr "  --source       - показать URL исходных кодов выбранных пакетов\n"
 
 #: ../urpmq:71
 #, c-format
@@ -3548,7 +3623,7 @@ msgstr "  -c             - показать все данные для удал�
 #: ../urpmq:103
 #, c-format
 msgid "  --evrd         - print epoch, version, release and distepoch.\n"
-msgstr ""
+msgstr "  --evrd         - показать эпоху, версию, релиз и дист-эпоху.\n"
 
 #: ../urpmq:105
 #, c-format
@@ -3867,3 +3942,23 @@ msgstr "Графический интерфейс для установки фа
 #~ "условиям GNU GPL.\n"
 #~ "\n"
 #~ "использование:\n"
++"Использование: urpmi.addmedia [параметры] <название> <url>\n"
++"где <url> один из:\n"
++"       [file:/]/<путь>\n"
++"       ftp://<логин>:<пароль>@<хост>/<путь>\n"
++"       ftp://<хост>/<путь>\n"
++"       http://<хост>/<путь>\n"
++"       cdrom://<путь>\n"
++"\n"
++"Использование: urpmi.addmedia [параметры] --distrib --mirrorlist <url>\n"
++"Использование: urpmi.addmedia [параметры] --mirrorlist <url> <название> "
++"<относительный путь>\n"
++"\n"
++"Примеры:\n"
++"\n"
++"  urpmi.addmedia --distrib --mirrorlist '$MIRRORLIST'\n"
++"  urpmi.addmedia --mirrorlist '$MIRRORLIST' backports media/main/backports\n"
++" urpmi.addmedia --distrib --zeroconf\n"
++"\n"
++"\n"
++"а [параметры] могут быть следующими\n"
