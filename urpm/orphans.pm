@@ -376,7 +376,7 @@ sub _kernel_callback {
     }
 
     # only consider real kernels (and not kernel-doc and the like):
-    return if $shortname =~ /-(?:source|doc|headers|firmware(?:|-extra))$/;
+    return if $shortname =~ /-(?:source|doc|headers|firmware(?:|-extra|-nonfree))$/;
 
     # ignore requested kernels (aka that are not in /var/lib/rpm/installed-through-deps.list)
     return if !$unreq_list->{$shortname} && $shortname !~ /latest/;
